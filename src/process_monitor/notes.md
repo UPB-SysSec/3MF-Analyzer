@@ -1,0 +1,3 @@
+- cura never loaded, aborted by hand (not responding)
+- lychee loads 216 objects
+- slic3r 216 copies

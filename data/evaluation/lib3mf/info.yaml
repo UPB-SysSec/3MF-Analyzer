@@ -1,0 +1,3964 @@
+name: lib3mf
+company: 3MF Consortium
+version: 2.1.1
+
+tests:
+  CS-DOID:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Duplicate Resource ID"
+  CS-DOR:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Too many values (>12) have been found in a matrix string"
+  CS-MUDT:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-SE:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-P-NEBS:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9690562646514227"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
+  CS-S-NEBS:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-P-SLLR:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-S-SLLR:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-S:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0000:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Could not read OPC Relationship Set"
+  CS-0001:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Could not create OPC Part"
+  CS-0010:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Could not read OPC Relationship Set"
+  CS-0011:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CYL
+        test_name: Cylinder Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0100:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Could not create OPC Part"
+  CS-0101:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Document contains a duplicate relationship ID."
+  CS-0110:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Could not create OPC Part"
+  CS-0111:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Document contains a duplicate relationship ID."
+  CS-1000:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Could not read OPC Relationship Set"
+  CS-1001:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Could not create OPC Part"
+  CS-1010:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Could not read OPC Relationship Set"
+  CS-1011:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CYL
+        test_name: Cylinder Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1100:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1101:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Document contains a duplicate relationship ID."
+  CS-1110:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1111:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  DOS-BL-MBR:
+    info: roughly 90 times higher execution duration
+    image_similarity:
+      similar_to:
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: "0.6659190229520996"
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  DOS-CR-SE:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Could not find Slicestack Resource"
+  DOS-FUZ-LIB3MF:
+    info: crashed
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    status: aborted
+    critical: true
+    problems:
+      - "exception: access violation reading 0x0000000000000000"
+  DOS-FUZ-SAVITAR-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Invalid model node index"
+  DOS-FUZ-SAVITAR-1:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Invalid XML attribute name"
+  DOS-FUZ-SLIC3R-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.6910473045231086"
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+  DOS-FUZ-SLIC3R-1:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Could not end XML element"
+  DOS-FUZ-SLIC3R-2:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Invalid Element in namespace."
+  R-CYL:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  R-PYR-0:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  R-PYR-1:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  R-CUB:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  R-HOU:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  R-SPEC-C-0:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  R-SPEC-M-0:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  R-SPEC-P-0:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  R-ERR:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Could not create OPC Part"
+  F-B-BAL:
+    image_similarity:
+      similar_to:
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: "1.0"
+    interpretation:
+      status: loaded nothing
+      is_outlier: false
+      confidence: high
+    status: image_similarity
+    has_server_log: true
+  F-B-MAT:
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.7652896084795875"
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    status: loaded
+    has_server_log: true
+  F-B-PRO:
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    status: aborted
+    critical: true
+    problems:
+      - "Lib3MFException 5: Could not create OPC Part"
+  F-B-SLI:
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    status: aborted
+    critical: true
+    problems:
+      - "Lib3MFException 5: Could not create OPC Part"
+  F-EAP:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  R-SPEC-SI-0:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  R-SPEC-CM-0:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  R-SPEC-SE-0:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  XML-MOD-ALT-B-EGE-L:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-MOD-ALT-B-EGE-R:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-MOD-ALT-B-EPE-L:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-MOD-ALT-B-EPE-R:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-MOD-ALT-B-IGE:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-MOD-ALT-B-IPE:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-MOD-ALT-DOS-BL:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-MOD-ALT-DOS-BL-PE-R:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-MOD-ALT-DOS-C:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-MOD-ALT-FBC-BPR-A:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-MOD-ALT-FBC-BPR-B:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-MOD-ALT-OOB-R:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-MOD-B-EGE-L:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-MOD-B-EGE-R:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-MOD-B-EPE-L:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-MOD-B-EPE-R:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-MOD-B-IGE:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-MOD-B-IPE:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-MOD-DOS-BL:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-MOD-DOS-BL-PE-R:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-MOD-DOS-C:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-MOD-DOS-PL:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-MOD-FBC-AV:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-MOD-FBC-BPR-A:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-MOD-FBC-BPR-B:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-MOD-FBC-E:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-MOD-FBC-E-L:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-MOD-OOB-NNSL:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-MOD-OOB-PE-R:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-MOD-OOB-R:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-MOD-OOB-SL:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-MOD-OOB-XI:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-MOD-SSRF-NNSL:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  XML-MOD-SSRF-SL:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  XML-MOD-SSRF-XI:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: No build section in model file"
+  XML-REL-B-EGE-L:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-REL-B-EGE-R:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-REL-B-EPE-L:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-REL-B-EPE-R:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-REL-B-IGE:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-REL-B-IPE:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-REL-DOS-BL:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-REL-DOS-BL-PE-R:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-REL-DOS-C:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-REL-DOS-PL:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-REL-FBC-AV:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-REL-FBC-BPR-A:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-REL-FBC-BPR-B:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-REL-FBC-E:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-REL-FBC-E-L:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-REL-OOB-NNSL:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-REL-OOB-PE-R:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-REL-OOB-R:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-REL-OOB-SL:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-REL-OOB-XI:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Space in XML attribute name"
+  XML-REL-SSRF-NNSL:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Could not read OPC Relationship Set"
+  XML-REL-SSRF-SL:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Resource not found"
+  XML-REL-SSRF-XI:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Resource not found"
+  GEN-C-ADA-BASE-DISPLAYCOLOR-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-ADA-BASEMATERIALS-ID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Duplicate Resource ID"
+  GEN-C-ADA-COMPONENT-OBJECTID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Component Object ID is ambiguous "
+  GEN-C-ADA-COMPONENT-TRANSFORM-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.6885521269035694"
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  GEN-C-ADA-ITEM-OBJECTID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Build item Object ID is ambiguous "
+  GEN-C-ADA-MODEL-UNIT-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-ADA-OBJECT-ID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Model Object ID was given twice"
+  GEN-C-ADA-OBJECT-PID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Duplicate Property ID."
+  GEN-C-ADA-OBJECT-PINDEX-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Duplicate Property Index."
+  GEN-C-ADA-OBJECT-TYPE-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Duplicate Object Type"
+  GEN-C-ADA-TRIANGLE-P1-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-ADA-TRIANGLE-PID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-ADA-TRIANGLE-V1-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Invalid model node index"
+  GEN-C-ADA-TRIANGLE-V2-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Invalid model node index"
+  GEN-C-ADA-TRIANGLE-V3-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Invalid model node index"
+  GEN-C-ADA-VERTEX-X-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9205956205929556"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
+  GEN-C-ADA-VERTEX-Y-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.6898193506730494"
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  GEN-C-ADA-VERTEX-Z-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9171435866089477"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
+  GEN-C-ADS-BASE-NAME-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-ADS-MODEL-XMLLANG-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-ADS-MODEL-XMLNS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-ADS-OBJECT-NAME-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AI-BASE-DISPLAYCOLOR-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AI-BASEMATERIALS-ID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Wanted to convert too large number string to integer"
+  GEN-C-AI-COMPONENT-OBJECTID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Wanted to convert too large number string to integer"
+  GEN-C-AI-COMPONENT-TRANSFORM-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Too many values (>12) have been found in a matrix string"
+  GEN-C-AI-ITEM-OBJECTID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Wanted to convert too large number string to integer"
+  GEN-C-AI-MODEL-UNIT-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AI-OBJECT-ID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Wanted to convert too large number string to integer"
+  GEN-C-AI-OBJECT-PID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Wanted to convert too large number string to integer"
+  GEN-C-AI-OBJECT-PINDEX-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Wanted to convert too large number string to integer"
+  GEN-C-AI-OBJECT-TYPE-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AI-TRIANGLE-P1-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AI-TRIANGLE-PID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AI-TRIANGLE-V1-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Invalid model node index"
+  GEN-C-AI-TRIANGLE-V2-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Invalid model node index"
+  GEN-C-AI-TRIANGLE-V3-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Invalid model node index"
+  GEN-C-AI-VERTEX-X-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9981650814685473"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AI-VERTEX-Y-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.6879301268036373"
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  GEN-C-AI-VERTEX-Z-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9940037268142498"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AR-BASE-DISPLAYCOLOR-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AR-BASE-NAME-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AR-BASEMATERIALS-ID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Missing Model Resource ID"
+  GEN-C-AR-COMPONENT-OBJECTID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: No Model Object ID has been given"
+  GEN-C-AR-COMPONENT-TRANSFORM-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9478034078108872"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
+  GEN-C-AR-ITEM-OBJECTID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Build item Object ID was not specified"
+  GEN-C-AR-MODEL-UNIT-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AR-MODEL-XMLLANG-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AR-MODEL-XMLNS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AR-OBJECT-ID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: No Model Object ID has been given"
+  GEN-C-AR-OBJECT-NAME-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AR-OBJECT-PID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AR-OBJECT-PINDEX-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AR-OBJECT-TYPE-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AR-TRIANGLE-P1-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AR-TRIANGLE-PID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AR-TRIANGLE-V1-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Invalid model node index"
+  GEN-C-AR-TRIANGLE-V2-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Invalid model node index"
+  GEN-C-AR-TRIANGLE-V3-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Invalid model node index"
+  GEN-C-AR-VERTEX-X-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Model Vertex is missing a coordinate"
+  GEN-C-AR-VERTEX-Y-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Model Vertex is missing a coordinate"
+  GEN-C-AR-VERTEX-Z-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Model Vertex is missing a coordinate"
+  GEN-C-CDA-BASEMATERIALS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CDA-BUILD-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9995745827130096"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CDA-COMPONENTS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9764204056079452"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
+  GEN-C-CDA-MESH-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-P-0
+        test_name: Full/Reference model for production specification (P)
+      score: "0.8551479580949959"
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: low
+    has_server_log: true
+  GEN-C-CDA-MESH-1:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9999999747981472"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CDA-MODEL-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Duplicate resources section in model file"
+  GEN-C-CDA-MODEL-1:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Duplicate build section in model file"
+  GEN-C-CDA-OBJECT-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Model Object Content was ambiguous"
+  GEN-C-CDA-OBJECT-1:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Model Object Content was ambiguous"
+  GEN-C-CDA-RESOURCES-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Duplicate Resource ID"
+  GEN-C-CDA-RESOURCES-1:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Duplicate Resource ID"
+  GEN-C-CDA-TRIANGLES-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9999999747981472"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CDA-VERTICES-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-P-0
+        test_name: Full/Reference model for production specification (P)
+      score: "0.8559538499123422"
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: low
+    has_server_log: true
+  GEN-C-CR-BASEMATERIALS-BASE-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: A Resource Index is invalid"
+  GEN-C-CR-COMPONENTS-COMPONENT-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9690562646514227"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
+  GEN-C-CR-MESH-TRIANGLES-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9690562646514227"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
+  GEN-C-CR-MESH-VERTICES-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Invalid model node index"
+  GEN-C-CR-MODEL-BUILD-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: No build section in model file"
+  GEN-C-CR-MODEL-RESOURCES-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Could not find Object associated to the Build item "
+  GEN-C-CR-RESOURCES-BASEMATERIALS-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Resource not found"
+  GEN-C-CR-RESOURCES-OBJECT-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Could not find Object associated to Component"
+  GEN-C-CR-TRIANGLES-TRIANGLE-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9999999616853991"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CR-VERTICES-VERTEX-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Invalid model node index"
+  GEN-C-CRA-BASEMATERIALS-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: A Resource Index is invalid"
+  GEN-C-CRA-BUILD-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: "1.0"
+    interpretation:
+      status: loaded nothing
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CRA-COMPONENTS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: "1.0"
+    interpretation:
+      status: loaded nothing
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CRA-MESH-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9690562646514227"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
+  GEN-C-CRA-MODEL-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: No resources in model file"
+  GEN-C-CRA-OBJECT-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: An object has no supported content type"
+  GEN-C-CRA-RESOURCES-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Could not find Object associated to the Build item "
+  GEN-C-CRA-TRIANGLES-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9690562646514227"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
+  GEN-C-CRA-VERTICES-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Invalid model node index"
+  GEN-CM-ADS-METADATA-NAME-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-CM-AR-METADATA-NAME-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-CM-CDA-ITEM-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-CM-CDA-METADATAGROUP-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-CM-CDA-MODEL-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-CM-CDA-OBJECT-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-CM-CR-MODEL-METADATA-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-CM-CR-OBJECT-MESH-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: An object has no supported content type"
+  GEN-CM-CR-OBJECT-METADATAGROUP-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-CM-CRA-ITEM-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-CM-CRA-METADATAGROUP-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADA-BASEMATERIALS-DISPLAYPROPERTIESID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADA-ITEM-TRANSFORM-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.6832659497064607"
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  GEN-M-ADA-MCOLOR-COLOR-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADA-MCOLORGROUP-ID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Duplicate Resource ID"
+  GEN-M-ADA-MPBMETALLIC-METALLICNESS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADA-MPBMETALLIC-ROUGHNESS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADA-MPBMETALLICDISPLAYPROPERTIES-ID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADA-MTEX2COORD-U-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADA-MTEX2COORD-V-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADA-MTEXTURE2D-CONTENTTYPE-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADA-MTEXTURE2D-ID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Duplicate Resource ID"
+  GEN-M-ADA-MTEXTURE2D-TILESTYLEU-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADA-MTEXTURE2D-TILESTYLEV-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADA-MTEXTURE2DGROUP-ID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Duplicate Resource ID"
+  GEN-M-ADA-MTEXTURE2DGROUP-TEXID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Duplicate Resource ID"
+  GEN-M-ADA-MTRANSLUCENT-ROUGHNESS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADA-MTRANSLUCENTDISPLAYPROPERTIES-ID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADA-TRIANGLE-P2-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADA-TRIANGLE-P3-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADS-MODEL-REQUIREDEXTENSIONS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADS-MODEL-XMLNSM-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADS-MPBMETALLIC-NAME-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADS-MTEXTURE2D-PATH-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADS-MTRANSLUCENT-ATTENUATION-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADS-MTRANSLUCENT-NAME-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADS-MTRANSLUCENT-REFRACTIVEINDEX-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AI-BASEMATERIALS-DISPLAYPROPERTIESID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AI-ITEM-TRANSFORM-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Too many values (>12) have been found in a matrix string"
+  GEN-M-AI-MCOLOR-COLOR-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AI-MCOLORGROUP-ID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Wanted to convert too large number string to integer"
+  GEN-M-AI-MPBMETALLIC-METALLICNESS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AI-MPBMETALLIC-ROUGHNESS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AI-MPBMETALLICDISPLAYPROPERTIES-ID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AI-MTEX2COORD-U-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AI-MTEX2COORD-V-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AI-MTEXTURE2D-CONTENTTYPE-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Invalid Content Type"
+  GEN-M-AI-MTEXTURE2D-ID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Wanted to convert too large number string to integer"
+  GEN-M-AI-MTEXTURE2D-PATH-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Invalid texture"
+  GEN-M-AI-MTEXTURE2D-TILESTYLEU-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AI-MTEXTURE2D-TILESTYLEV-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AI-MTEXTURE2DGROUP-ID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Wanted to convert too large number string to integer"
+  GEN-M-AI-MTEXTURE2DGROUP-TEXID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Wanted to convert too large number string to integer"
+  GEN-M-AI-MTRANSLUCENT-ROUGHNESS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AI-MTRANSLUCENTDISPLAYPROPERTIES-ID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AI-TRIANGLE-P2-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AI-TRIANGLE-P3-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-BASEMATERIALS-DISPLAYPROPERTIESID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-ITEM-TRANSFORM-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9662372933488255"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
+  GEN-M-AR-MCOLOR-COLOR-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MCOLORGROUP-ID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Missing Model Resource ID"
+  GEN-M-AR-MODEL-REQUIREDEXTENSIONS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MODEL-XMLNSM-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: The prefix of a required extension is invalid"
+  GEN-M-AR-MPBMETALLIC-METALLICNESS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MPBMETALLIC-NAME-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MPBMETALLIC-ROUGHNESS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MPBMETALLICDISPLAYPROPERTIES-ID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MTEX2COORD-U-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MTEX2COORD-V-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MTEXTURE2D-CONTENTTYPE-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Invalid Content Type"
+  GEN-M-AR-MTEXTURE2D-ID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Missing Model Resource ID"
+  GEN-M-AR-MTEXTURE2D-PATH-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Invalid texture"
+  GEN-M-AR-MTEXTURE2D-TILESTYLEU-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MTEXTURE2D-TILESTYLEV-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MTEXTURE2DGROUP-ID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Missing Model Resource ID"
+  GEN-M-AR-MTEXTURE2DGROUP-TEXID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Missing Model Resource ID"
+  GEN-M-AR-MTRANSLUCENT-ATTENUATION-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MTRANSLUCENT-NAME-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MTRANSLUCENT-REFRACTIVEINDEX-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MTRANSLUCENT-ROUGHNESS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MTRANSLUCENTDISPLAYPROPERTIES-ID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-TRIANGLE-P2-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-TRIANGLE-P3-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CDA-MCOLORGROUP-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CDA-MPBMETALLICDISPLAYPROPERTIES-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CDA-MTEXTURE2DGROUP-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CDA-MTRANSLUCENTDISPLAYPROPERTIES-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CDA-RESOURCES-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Duplicate Resource ID"
+  GEN-M-CDA-RESOURCES-1:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CDA-RESOURCES-2:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CDA-RESOURCES-3:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Duplicate Resource ID"
+  GEN-M-CDA-RESOURCES-4:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Duplicate Resource ID"
+  GEN-M-CR-BUILD-ITEM-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9522923709307685"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
+  GEN-M-CR-MCOLORGROUP-MCOLOR-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CR-MTEXTURE2DGROUP-MTEX2COORD-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CR-RESOURCES-MCOLORGROUP-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CR-RESOURCES-MPBMETALLICDISPLAYPROPERTIES-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CR-RESOURCES-MTEXTURE2D-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: No valid Model Resource has been given"
+  GEN-M-CR-RESOURCES-MTEXTURE2DGROUP-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CR-RESOURCES-MTRANSLUCENTDISPLAYPROPERTIES-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CRA-MCOLORGROUP-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CRA-MPBMETALLICDISPLAYPROPERTIES-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CRA-MTEXTURE2DGROUP-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CRA-MTRANSLUCENTDISPLAYPROPERTIES-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-P-ADA-BUILD-PUUID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Duplicate UUID attribute"
+  GEN-P-ADA-COMPONENT-PUUID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Duplicate UUID attribute"
+  GEN-P-ADA-ITEM-PUUID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Duplicate UUID attribute"
+  GEN-P-ADA-OBJECT-PUUID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-P-0
+        test_name: Full/Reference model for production specification (P)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-P-ADS-COMPONENT-PPATH-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Duplicate getPath attribute"
+  GEN-P-ADS-MODEL-XMLNSP-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-P-0
+        test_name: Full/Reference model for production specification (P)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-P-AI-BUILD-PUUID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-P-0
+        test_name: Full/Reference model for production specification (P)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-P-AI-COMPONENT-PPATH-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Could not find Object associated to Component"
+  GEN-P-AI-COMPONENT-PUUID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-P-0
+        test_name: Full/Reference model for production specification (P)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-P-AI-ITEM-PUUID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-P-0
+        test_name: Full/Reference model for production specification (P)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-P-AI-OBJECT-PUUID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-P-0
+        test_name: Full/Reference model for production specification (P)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-P-AR-BUILD-PUUID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-P-0
+        test_name: Full/Reference model for production specification (P)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-P-AR-COMPONENT-PPATH-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.6956519133873318"
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  GEN-P-AR-COMPONENT-PUUID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-P-0
+        test_name: Full/Reference model for production specification (P)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-P-AR-ITEM-PUUID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-P-0
+        test_name: Full/Reference model for production specification (P)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-P-AR-MODEL-XMLNSP-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: The prefix of a required extension is invalid"
+  GEN-P-AR-OBJECT-PUUID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-P-0
+        test_name: Full/Reference model for production specification (P)
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SE-ADA-SSLICEREF-SLICESTACKID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Could not find Slicestack Resource"
+  GEN-SE-ADS-SSLICEREF-SLICEPATH-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SE-AI-SSLICEREF-SLICEPATH-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Could not find Slicestack Resource"
+  GEN-SE-AI-SSLICEREF-SLICESTACKID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Wanted to convert too large number string to integer"
+  GEN-SE-AR-SSLICEREF-SLICEPATH-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Could not find Slicestack Resource"
+  GEN-SE-AR-SSLICEREF-SLICESTACKID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Could not find Slicestack Resource"
+  GEN-SE-CDA-SSLICESTACK-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: z-position of slicerefs is not increasing"
+  GEN-SI-ADA-OBJECT-SSLICESTACKID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Could not find Slicestack Resource"
+  GEN-SI-ADA-SPOLYGON-STARTV-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Invalid index for slice segment or polygon."
+  GEN-SI-ADA-SSEGMENT-V2-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Invalid index for slice segment or polygon."
+  GEN-SI-ADA-SSLICE-ZTOP-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Duplicate Z-top-value in a slice."
+  GEN-SI-ADA-SSLICESTACK-ID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Could not find Slicestack Resource"
+  GEN-SI-ADA-SSLICESTACK-ZBOTTOM-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-ADA-SVERTEX-X-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-ADA-SVERTEX-Y-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-ADS-MODEL-XMLNSS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-ADS-OBJECT-SMESHRESOLUTION-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-AI-OBJECT-SSLICESTACKID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Wanted to convert too large number string to integer"
+  GEN-SI-AI-SPOLYGON-STARTV-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Wanted to convert too large number string to integer"
+  GEN-SI-AI-SSEGMENT-V2-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Invalid index for slice segment or polygon."
+  GEN-SI-AI-SSLICE-ZTOP-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Wanted to convert string with non-numeric characters to\
+        \ double"
+  GEN-SI-AI-SSLICESTACK-ID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Wanted to convert too large number string to integer"
+  GEN-SI-AI-SSLICESTACK-ZBOTTOM-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Wanted to convert string with non-numeric characters to\
+        \ double"
+  GEN-SI-AI-SVERTEX-X-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Wanted to convert string with non-numeric characters to\
+        \ double"
+  GEN-SI-AI-SVERTEX-Y-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Wanted to convert string with non-numeric characters to\
+        \ double"
+  GEN-SI-AR-MODEL-XMLNSS-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: The prefix of a required extension is invalid"
+  GEN-SI-AR-OBJECT-SMESHRESOLUTION-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-AR-OBJECT-SSLICESTACKID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-AR-SPOLYGON-STARTV-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Invalid index for slice segment or polygon."
+  GEN-SI-AR-SSEGMENT-V2-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-AR-SSLICE-ZTOP-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Z-top-value is missing in a slice."
+  GEN-SI-AR-SSLICESTACK-ID-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Could not find Slicestack Resource"
+  GEN-SI-AR-SSLICESTACK-ZBOTTOM-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-AR-SVERTEX-X-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-AR-SVERTEX-Y-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-CDA-RESOURCES-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Duplicate Resource ID"
+  GEN-SI-CDA-SPOLYGON-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Invalid index for slice segment or polygon."
+  GEN-SI-CDA-SSLICE-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-CDA-SSLICE-1:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-CDA-SSLICESTACK-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: The z-coordinates of slices within a slicestack are not\
+        \ increasing."
+  GEN-SI-CDA-SVERTICES-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-CR-RESOURCES-SSLICESTACK-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Could not find Slicestack Resource"
+  GEN-SI-CR-SPOLYGON-SSEGMENT-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-CR-SSLICE-SPOLYGON-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-CR-SSLICE-SVERTICES-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Invalid index for slice segment or polygon."
+  GEN-SI-CR-SSLICESTACK-SSLICE-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-CR-SVERTICES-SVERTEX-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Invalid index for slice segment or polygon."
+  GEN-SI-CRA-SPOLYGON-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: A closed slice polygon is actually a line."
+  GEN-SI-CRA-SSLICE-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-CRA-SSLICESTACK-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-CRA-SVERTICES-0:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: Invalid index for slice segment or polygon."
+  ZIP-SL-S:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: No model node in XML Stream"
+  ZIP-SL-C:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+      - "Lib3MFException 5: No model node in XML Stream"
+  ZIP-CBR:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  ZIP-CLCVR:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  ZIP-CUCVR:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CYL
+        test_name: Cylinder Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  ZIP-SFT:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CYL
+        test_name: Cylinder Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  ZIP-64:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+deprecated: {}

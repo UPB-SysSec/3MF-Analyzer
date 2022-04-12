@@ -1,0 +1,95 @@
+scopes:
+  3D Manufacturing Format: |
+    Attacks/Tests that pertain to general properties of the 3MF specification.
+  3D Model Part: |
+    Attacks/Tests that affect the 3D model part (the `*.model` file(s)) of the 3MF specification.
+  XML: |
+    Attacks/Tests on/with the XML standard that don't work on specifics of the 3MF standard.
+    Using entities is explicitly forbidden in the 3MF standard.
+    Hence, all tests in this scope are invalid according to the 3MF specification.
+  ZIP: |
+    Attacks/Tests on/with the ZIP standard that don't work on specifics of the 3MF standard.
+
+types:
+  Functionality:
+    description: |
+      Tests that check whether a certain functionality/attack works at all/in general.
+  Denial of Service:
+    description: |
+      Attacks that try to interrupt the availability of the software.
+  Content Spoofing:
+    description: |
+      Attacks that try to present the user fake or modified data.
+    subtypes:
+      Reference Confusion:
+        description: |
+          General attacks to test the behavior of various invalid/weird references.
+        subtypes:
+          Referenced Object Duplication:
+            description: |
+              Some referenced object/ID is available two times.
+              The program might choose one or the other, or fail.
+          Referenced Object Broken:
+            description: |
+              Attacks where a property (e.g. an XML attribute/element) is referenced that does not exist/is invalid.
+              The program might ignore the reference, or fail.
+          Reference Broken:
+            description: |
+              Tests where a reference was removed/made invalid.
+              This might lead to an error (reference was required) or might simply change the output (referenced element no longer part of the model).
+          Model Reference Functionality:
+            description: |
+              Tests that check whether the software respects the `.rels` file in regard to the root 3D model part, or not.
+              There are two possible files in the compressed folder:
+              - 3dmodel means a file named `/3D/3dmodel.model`.
+              - other means a file named `/3D/other.model`.
+              The title of the testcase indicates whether the file exists and if it is referenced, or not.
+              The encoding is:
+              ```
+              E = file exists, R = file is referenced.
+              0 = statement is false, 1 = statement is true.
+              ```
+
+              Hence, `3dmodel: E0 R1` means that the file `/3D/3dmodel.model` does not exist, but is references in in the `.rels` files.
+      Property Confusion:
+        description: |
+          Attacks where a property of the model is manipulated so that parsers might react in different ways.
+
+          Attacks in this general category have properties that are represented in multiple different places.
+          These are not always invalid (but might be).
+          For example, a structure might have an alternative representation and the software chooses one depending on the context (thumbnails, extensions, ...).
+        subtypes:
+          Property Valid:
+            description: |
+              Tests where a property (e.g. an XML attribute/element) of the model is changed to another valid value.
+              Tests whether this is applied correctly by the program.
+          Property Invalid:
+            description: |
+              Attacks where a property (e.g. an XML attribute/element) of the model is invalid.
+              The program might ignore or sanitize the property, or fail.
+          Property Duplication:
+            description: |
+              Attacks where a property (e.g. an XML attribute/element) of the model is duplicated in the same place.
+              The program might choose the first or second, or fail.
+      Namespace Confusion:
+        description: |
+          XML namespaces invalid/mispleading.
+  Data Extraction:
+    description: |
+      Attacks where the file can be used to extract data from the system they are running on.
+    subtypes:
+      In-Band:
+        description: |
+          The extracted data is contained in the 3MF file itself or the attacker otherwise received direct feedback containing the extracted data.
+          The attacker can only access it if a 3MF file is returned, or the data from the file is displayed directly (e.g. in the Metadata).
+          This is mainly relevant for online services (e.g. a Mesh Repair Service).
+      Out-Of-Band:
+        description: |
+          The extracted data cannot be directly accessed.
+          The data is send to an attacker-controlled server through a request from the attacked software.
+  Miscellaneous:
+    description: |
+      Attacks/Tests that do not fit in with other categories, or are not yet sorted into one.
+  Reference:
+    description: |
+      Attacks/Tests that intent to be valid and act as a reference/comparison for other tests.

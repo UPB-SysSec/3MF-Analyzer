@@ -1,0 +1,2396 @@
+scope: 3D Model Part
+
+tests:
+  GEN-C-ADA-BASE-DISPLAYCOLOR-0:
+    name: |-
+      Added valid attribute 'displaycolor' to 'base' with: '#00000055'
+    created: true
+    further_infos: |-
+      The name is duplicate, the attribute was added after the old attribute.
+    conforms_to_spec:
+      core: Invalid XML
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-C-ADA-BASEMATERIALS-ID-0:
+    name: |-
+      Added valid attribute 'id' to 'basematerials' with: '43'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    type: Content Spoofing, Reference Confusion
+    further_infos: The name is duplicate, the attribute was added after the old attribute.
+
+  GEN-C-ADA-COMPONENT-OBJECTID-0:
+    name: |-
+      Added valid attribute 'objectid' to 'component' with: '116'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    type: Content Spoofing, Reference Confusion, Reference Broken
+    further_infos: The name is duplicate, the attribute was added after the old attribute.
+
+  GEN-C-ADA-COMPONENT-TRANSFORM-0:
+    name: |-
+      Added valid attribute 'transform' to 'component' with: '1 0 0 0 -1 0 0 0 -2 0 0 0'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    further_infos: |-
+      The name is duplicate, the attribute was added after the old attribute.
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-C-ADA-ITEM-OBJECTID-0:
+    name: |-
+      Added valid attribute 'objectid' to 'item' with: '118'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    type: Content Spoofing, Reference Confusion, Reference Broken
+    further_infos: The name is duplicate, the attribute was added after the old attribute.
+
+  GEN-C-ADA-MODEL-UNIT-0:
+    name: |-
+      Added valid attribute 'unit' to 'model' with: 'micron'
+    created: true
+    further_infos: |-
+      The name is duplicate, the attribute was added after the old attribute.
+    conforms_to_spec:
+      core: Invalid XML
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-C-ADA-OBJECT-ID-0:
+    name: |-
+      Added valid attribute 'id' to 'object' with: '45'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    type: Content Spoofing, Reference Confusion
+    further_infos: The name is duplicate, the attribute was added after the old attribute.
+
+  GEN-C-ADA-OBJECT-PID-0:
+    name: |-
+      Added valid attribute 'pid' to 'object' with: '46'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    type: Content Spoofing, Reference Confusion, Reference Broken
+    further_infos: The name is duplicate, the attribute was added after the old attribute.
+
+  GEN-C-ADA-OBJECT-PINDEX-0:
+    name: |-
+      Added valid attribute 'pindex' to 'object' with: '47'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    type: Content Spoofing, Reference Confusion, Reference Broken
+    further_infos: The name is duplicate, the attribute was added after the old attribute.
+
+  GEN-C-ADA-OBJECT-TYPE-0:
+    name: |-
+      Added valid attribute 'type' to 'object' with: 'solidsupport'
+    created: true
+    further_infos: |-
+      The name is duplicate, the attribute was added after the old attribute.
+    conforms_to_spec:
+      core: Invalid XML
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-C-ADA-TRIANGLE-P1-0:
+    name: |-
+      Added valid attribute 'p1' to 'triangle' with: '58'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    type: Content Spoofing, Reference Confusion, Reference Broken
+    further_infos: The name is duplicate, the attribute was added after the old attribute.
+
+  GEN-C-ADA-TRIANGLE-PID-0:
+    name: |-
+      Added valid attribute 'pid' to 'triangle' with: '57'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    type: Content Spoofing, Reference Confusion, Reference Broken
+    further_infos: The name is duplicate, the attribute was added after the old attribute.
+
+  GEN-C-ADA-TRIANGLE-V1-0:
+    name: |-
+      Added valid attribute 'v1' to 'triangle' with: '48'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    type: Content Spoofing, Reference Confusion, Reference Broken
+    further_infos: The name is duplicate, the attribute was added after the old attribute.
+
+  GEN-C-ADA-TRIANGLE-V2-0:
+    name: |-
+      Added valid attribute 'v2' to 'triangle' with: '49'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    type: Content Spoofing, Reference Confusion, Reference Broken
+    further_infos: The name is duplicate, the attribute was added after the old attribute.
+
+  GEN-C-ADA-TRIANGLE-V3-0:
+    name: |-
+      Added valid attribute 'v3' to 'triangle' with: '50'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    type: Content Spoofing, Reference Confusion, Reference Broken
+    further_infos: The name is duplicate, the attribute was added after the old attribute.
+
+  GEN-C-ADA-VERTEX-X-0:
+    name: |-
+      Added valid attribute 'x' to 'vertex' with: '-.5'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    further_infos: |-
+      The name is duplicate, the attribute was added after the old attribute.
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-C-ADA-VERTEX-Y-0:
+    name: |-
+      Added valid attribute 'y' to 'vertex' with: '-.5'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    further_infos: |-
+      The name is duplicate, the attribute was added after the old attribute.
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-C-ADA-VERTEX-Z-0:
+    name: |-
+      Added valid attribute 'z' to 'vertex' with: '-.5'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    further_infos: |-
+      The name is duplicate, the attribute was added after the old attribute.
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-C-ADS-BASE-NAME-0:
+    name: Duplicated valid attribute 'name' of 'base'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-C-ADS-MODEL-XMLLANG-0:
+    name: Duplicated valid attribute 'xml:lang' of 'model'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-C-ADS-MODEL-XMLNS-0:
+    name: Duplicated valid attribute 'xmlns' of 'model'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    type: Content Spoofing, Namespace Confusion
+
+  GEN-C-ADS-OBJECT-NAME-0:
+    name: Duplicated valid attribute 'name' of 'object'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-C-AI-BASE-DISPLAYCOLOR-0:
+    name: |-
+      Made attribute 'displaycolor' from 'base' invalid with: '#000'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute displaycolor='#000': value doesn't match any pattern of ['#[0-9|A-F|a-f][0-9|A-F|a-f][0-9|A-F|a-f][0-9|A-F|a-f][0-9|A-F|a-f][0-9|A-F|a-f]([0-9|A-F|a-f][0-9|A-F|a-f])?']
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-C-AI-BASEMATERIALS-ID-0:
+    name: |-
+      Made attribute 'id' from 'basematerials' invalid with: '-1'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute id='-1': value must be positive
+    type: Content Spoofing, Reference Confusion, Referenced Object Broken
+
+  GEN-C-AI-COMPONENT-OBJECTID-0:
+    name: |-
+      Made attribute 'objectid' from 'component' invalid with: '-1'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute objectid='-1': value must be positive
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-C-AI-COMPONENT-TRANSFORM-0:
+    name: |-
+      Made attribute 'transform' from 'component' invalid with: '1 0 0 0 2 0 0 0 3 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute transform='1 0 0 0 2 0 0 0 3 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0': value doesn't match any pattern of ['((\\-|\\+)?(([0-9]+(\\.[0-9]+)?)|(\\.[0-9]+))((e|E)(\\-|\\+)?[0-9]+)?) ((\\-|\\+)?(([0-9]+(\\.[0-9]+)?)|(\\.[0-9]+))((e|E)(\\-|\\+)?[0-9]+)?) ((\\-|\\+)?(([0-9]+(\\.[0-9]+)?)|(\\.[0-9]+))((e|E)(\\-|\\+)?[0-9]+)?) ((\\-|\\+)?(([0-9]+(\\.[0-9]+)?)|(\\.[0-9]+))((e|E)(\\-|\\+)?[0-9]+)?) ((\\-|\\+)?(([0-9]+(\\.[0-9]+)?)|(\\.[0-9]+))((e|E)(\\-|\\+)?[0-9]+)?) ((\\-|\\+)?(([0-9]+(\\.[0-9]+)?)|(\\.[0-9]+))((e|E)(\\-|\\+)?[0-9]+)?) ((\\-|\\+)?(([0-9]+(\\.[0-9]+)?)|(\\.[0-9]+))((e|E)(\\-|\\+)?[0-9]+)?) ((\\-|\\+)?(([0-9]+(\\.[0-9]+)?)|(\\.[0-9]+))((e|E)(\\-|\\+)?[0-9]+)?) ((\\-|\\+)?(([0-9]+(\\.[0-9]+)?)|(\\.[0-9]+))((e|E)(\\-|\\+)?[0-9]+)?) ((\\-|\\+)?(([0-9]+(\\.[0-9]+)?)|(\\.[0-9]+))((e|E)(\\-|\\+)?[0-9]+)?) ((\\-|\\+)?(([0-9]+(\\.[0-9]+)?)|(\\.[0-9]+))((e|E)(\\-|\\+)?[0-9]+)?) ((\\-|\\+)?(([0-9]+(\\.[0-9]+)?)|(\\.[0-9]+))((e|E)(\\-|\\+)?[0-9]+)?)']
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-C-AI-ITEM-OBJECTID-0:
+    name: |-
+      Made attribute 'objectid' from 'item' invalid with: '-1'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute objectid='-1': value must be positive
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-C-AI-MODEL-UNIT-0:
+    name: |-
+      Made attribute 'unit' from 'model' invalid with: 'kilometer'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute unit='kilometer': value must be one of ['micron', 'millimeter', 'centimeter', 'inch', 'foot', 'meter']
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-C-AI-OBJECT-ID-0:
+    name: |-
+      Made attribute 'id' from 'object' invalid with: '-1'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute id='-1': value must be positive
+    type: Content Spoofing, Reference Confusion, Referenced Object Broken
+
+  GEN-C-AI-OBJECT-PID-0:
+    name: |-
+      Made attribute 'pid' from 'object' invalid with: '-1'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute pid='-1': value must be non negative
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-C-AI-OBJECT-PINDEX-0:
+    name: |-
+      Made attribute 'pindex' from 'object' invalid with: '-1'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute pindex='-1': value must be non negative
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-C-AI-OBJECT-TYPE-0:
+    name: |-
+      Made attribute 'type' from 'object' invalid with: 'Model'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute type='Model': value must be one of ['model', 'solidsupport', 'support', 'surface', 'other']
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-C-AI-TRIANGLE-P1-0:
+    name: |-
+      Made attribute 'p1' from 'triangle' invalid with: '-1'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute p1='-1': value must be non negative
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-C-AI-TRIANGLE-PID-0:
+    name: |-
+      Made attribute 'pid' from 'triangle' invalid with: '-1'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute pid='-1': value must be positive
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-C-AI-TRIANGLE-V1-0:
+    name: |-
+      Made attribute 'v1' from 'triangle' invalid with: '-1'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute v1='-1': value must be non negative
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-C-AI-TRIANGLE-V2-0:
+    name: |-
+      Made attribute 'v2' from 'triangle' invalid with: '-1'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute v2='-1': value must be non negative
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-C-AI-TRIANGLE-V3-0:
+    name: |-
+      Made attribute 'v3' from 'triangle' invalid with: '-1'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute v3='-1': value must be non negative
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-C-AI-VERTEX-X-0:
+    name: |-
+      Made attribute 'x' from 'vertex' invalid with: '1,000.01'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute x='1,000.01': value doesn't match any pattern of ['((\\-|\\+)?(([0-9]+(\\.[0-9]+)?)|(\\.[0-9]+))((e|E)(\\-|\\+)?[0-9]+)?)']
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-C-AI-VERTEX-Y-0:
+    name: |-
+      Made attribute 'y' from 'vertex' invalid with: '1,000.01'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute y='1,000.01': value doesn't match any pattern of ['((\\-|\\+)?(([0-9]+(\\.[0-9]+)?)|(\\.[0-9]+))((e|E)(\\-|\\+)?[0-9]+)?)']
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-C-AI-VERTEX-Z-0:
+    name: |-
+      Made attribute 'z' from 'vertex' invalid with: '1,000.01'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute z='1,000.01': value doesn't match any pattern of ['((\\-|\\+)?(([0-9]+(\\.[0-9]+)?)|(\\.[0-9]+))((e|E)(\\-|\\+)?[0-9]+)?)']
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-C-AR-BASE-DISPLAYCOLOR-0:
+    name: Removed attribute 'displaycolor' from 'base'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: missing required attribute 'displaycolor'
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-C-AR-BASE-NAME-0:
+    name: Removed attribute 'name' from 'base'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: missing required attribute 'name'
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-C-AR-BASEMATERIALS-ID-0:
+    name: Removed attribute 'id' from 'basematerials'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: missing required attribute 'id'
+    type: Content Spoofing, Reference Confusion, Referenced Object Broken
+
+  GEN-C-AR-COMPONENT-OBJECTID-0:
+    name: Removed attribute 'objectid' from 'component'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: missing required attribute 'objectid'
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-C-AR-COMPONENT-TRANSFORM-0:
+    name: Removed attribute 'transform' from 'component'
+    created: true
+    conforms_to_spec:
+      core: Valid
+    type: Content Spoofing, Property Confusion, Property Valid
+
+  GEN-C-AR-ITEM-OBJECTID-0:
+    name: Removed attribute 'objectid' from 'item'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: missing required attribute 'objectid'
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-C-AR-MODEL-UNIT-0:
+    name: Removed attribute 'unit' from 'model'
+    created: true
+    conforms_to_spec:
+      core: Valid
+    type: Content Spoofing, Property Confusion, Property Valid
+
+  GEN-C-AR-MODEL-XMLLANG-0:
+    name: Removed attribute 'xml:lang' from 'model'
+    created: true
+    conforms_to_spec:
+      core: Valid
+    type: Content Spoofing, Property Confusion, Property Valid
+
+  GEN-C-AR-MODEL-XMLNS-0:
+    name: Removed attribute 'xmlns' from 'model'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: <Element 'model' at 0x00000208DBD209A0> is not an element of the schema
+    type: Content Spoofing, Namespace Confusion
+
+  GEN-C-AR-OBJECT-ID-0:
+    name: Removed attribute 'id' from 'object'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: missing required attribute 'id'
+    type: Content Spoofing, Reference Confusion, Referenced Object Broken
+
+  GEN-C-AR-OBJECT-NAME-0:
+    name: Removed attribute 'name' from 'object'
+    created: true
+    conforms_to_spec:
+      core: Valid
+    type: Content Spoofing, Property Confusion, Property Valid
+
+  GEN-C-AR-OBJECT-PID-0:
+    name: Removed attribute 'pid' from 'object'
+    created: true
+    conforms_to_spec:
+      core: Valid
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-C-AR-OBJECT-PINDEX-0:
+    name: Removed attribute 'pindex' from 'object'
+    created: true
+    conforms_to_spec:
+      core: Valid
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-C-AR-OBJECT-TYPE-0:
+    name: Removed attribute 'type' from 'object'
+    created: true
+    conforms_to_spec:
+      core: Valid
+    type: Content Spoofing, Property Confusion, Property Valid
+
+  GEN-C-AR-TRIANGLE-P1-0:
+    name: Removed attribute 'p1' from 'triangle'
+    created: true
+    conforms_to_spec:
+      core: Valid
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-C-AR-TRIANGLE-PID-0:
+    name: Removed attribute 'pid' from 'triangle'
+    created: true
+    conforms_to_spec:
+      core: Valid
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-C-AR-TRIANGLE-V1-0:
+    name: Removed attribute 'v1' from 'triangle'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: missing required attribute 'v1'
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-C-AR-TRIANGLE-V2-0:
+    name: Removed attribute 'v2' from 'triangle'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: missing required attribute 'v2'
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-C-AR-TRIANGLE-V3-0:
+    name: Removed attribute 'v3' from 'triangle'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: missing required attribute 'v3'
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-C-AR-VERTEX-X-0:
+    name: Removed attribute 'x' from 'vertex'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: missing required attribute 'x'
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-C-AR-VERTEX-Y-0:
+    name: Removed attribute 'y' from 'vertex'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: missing required attribute 'y'
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-C-AR-VERTEX-Z-0:
+    name: Removed attribute 'z' from 'vertex'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: missing required attribute 'z'
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-C-CDA-BASEMATERIALS-0:
+    name: Added valid child 'base' to 'basematerials'
+    created: true
+    further_infos: The child is a duplicate with the same ID as a sibling.
+    conforms_to_spec:
+      core: Valid
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-C-CDA-BUILD-0:
+    name: Added valid child 'item' to 'build'
+    created: true
+    conforms_to_spec:
+      core: Valid
+    further_infos: The child is a duplicate with the same ID as a sibling.
+    type: Content Spoofing, Reference Confusion
+
+  GEN-C-CDA-COMPONENTS-0:
+    name: Added valid child 'component' to 'components'
+    created: true
+    conforms_to_spec:
+      core: Valid
+    further_infos: The child is a duplicate with the same ID as a sibling.
+    type: Content Spoofing, Reference Confusion
+
+  GEN-C-CDA-MESH-0:
+    name: Added valid child 'vertices' to 'mesh'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: Unexpected child with tag '{http://schemas.microsoft.com/3dmanufacturing/core/2015/02}vertices' at position 2. Tag 'triangles' expected.
+    further_infos: The child is a duplicate with the same ID as a sibling.
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-C-CDA-MESH-1:
+    name: Added valid child 'triangles' to 'mesh'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: Unexpected child with tag '{http://schemas.microsoft.com/3dmanufacturing/core/2015/02}triangles' at position 3.
+    further_infos: The child is a duplicate with the same ID as a sibling.
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-C-CDA-MODEL-0:
+    name: Added valid child 'resources' to 'model'
+    created: true
+    further_infos: The child is a duplicate with the same ID as a sibling.
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: Unexpected child with tag '{http://schemas.microsoft.com/3dmanufacturing/core/2015/02}resources' at position 2. Tag 'build' expected.
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-C-CDA-MODEL-1:
+    name: Added valid child 'build' to 'model'
+    created: true
+    further_infos: The child is a duplicate with the same ID as a sibling.
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: Unexpected child with tag '{http://schemas.microsoft.com/3dmanufacturing/core/2015/02}build' at position 3.
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-C-CDA-OBJECT-0:
+    name: Added valid child 'mesh' to 'object'
+    created: true
+    further_infos: The child is a duplicate with the same ID as a sibling.
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: Unexpected child with tag '{http://schemas.microsoft.com/3dmanufacturing/core/2015/02}mesh' at position 2.
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-C-CDA-OBJECT-1:
+    name: Added valid child 'components' to 'object'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: Unexpected child with tag '{http://schemas.microsoft.com/3dmanufacturing/core/2015/02}components' at position 2.
+    further_infos: The child is a duplicate with the same ID as a sibling.
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-C-CDA-RESOURCES-0:
+    name: Added valid child 'basematerials' to 'resources'
+    created: true
+    further_infos: The child is a duplicate with the same ID as a sibling.
+    conforms_to_spec:
+      core: Valid
+    type: Content Spoofing, Reference Confusion, Referenced Object Duplication
+
+  GEN-C-CDA-RESOURCES-1:
+    name: Added valid child 'object' to 'resources'
+    created: true
+    further_infos: The child is a duplicate with the same ID as a sibling.
+    conforms_to_spec:
+      core: Valid
+    type: Content Spoofing, Reference Confusion, Referenced Object Duplication
+
+  GEN-C-CDA-TRIANGLES-0:
+    name: Added valid child 'triangle' to 'triangles'
+    created: true
+    conforms_to_spec:
+      core: Valid
+    further_infos: The child is a duplicate with the same ID as a sibling.
+    type: Content Spoofing, Reference Confusion
+
+  GEN-C-CDA-VERTICES-0:
+    name: Added valid child 'vertex' to 'vertices'
+    created: true
+    conforms_to_spec:
+      core: Valid
+    further_infos: The child is a duplicate with the same ID as a sibling.
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-C-CR-BASEMATERIALS-BASE-0:
+    name: Removed child 'base' from 'basematerials'
+    created: true
+    conforms_to_spec:
+      core: Valid
+    type: Content Spoofing, Property Confusion, Property Valid
+
+  GEN-C-CR-COMPONENTS-COMPONENT-0:
+    name: Removed child 'component' from 'components'
+    created: true
+    conforms_to_spec:
+      core: Valid
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-C-CR-MESH-TRIANGLES-0:
+    name: Removed child 'triangles' from 'mesh'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: The content of element '{http://schemas.microsoft.com/3dmanufacturing/core/2015/02}mesh' is not complete. Tag 'triangles' expected.
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-C-CR-MESH-VERTICES-0:
+    name: Removed child 'vertices' from 'mesh'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: Unexpected child with tag '{http://schemas.microsoft.com/3dmanufacturing/core/2015/02}triangles' at position 1. Tag 'vertices' expected.
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-C-CR-MODEL-BUILD-0:
+    name: Removed child 'build' from 'model'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: The content of element '{http://schemas.microsoft.com/3dmanufacturing/core/2015/02}model' is not complete. Tag 'build' expected.
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-C-CR-MODEL-RESOURCES-0:
+    name: Removed child 'resources' from 'model'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: Unexpected child with tag '{http://schemas.microsoft.com/3dmanufacturing/core/2015/02}build' at position 1. Tag 'resources' expected.
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-C-CR-RESOURCES-BASEMATERIALS-0:
+    name: Removed child 'basematerials' from 'resources'
+    created: true
+    conforms_to_spec:
+      core: Valid
+    type: Content Spoofing, Reference Confusion, Referenced Object Broken
+
+  GEN-C-CR-RESOURCES-OBJECT-0:
+    name: Removed child 'object' from 'resources'
+    created: true
+    conforms_to_spec:
+      core: Valid
+    type: Content Spoofing, Reference Confusion, Referenced Object Broken
+
+  GEN-C-CR-TRIANGLES-TRIANGLE-0:
+    name: Removed child 'triangle' from 'triangles'
+    created: true
+    conforms_to_spec:
+      core: Valid
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-C-CR-VERTICES-VERTEX-0:
+    name: Removed child 'vertex' from 'vertices'
+    created: true
+    conforms_to_spec:
+      core: Valid
+    type: Content Spoofing, Property Confusion, Property Valid
+
+  GEN-C-CRA-BASEMATERIALS-0:
+    name: Removed all children from 'basematerials'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: The content of element '{http://schemas.microsoft.com/3dmanufacturing/core/2015/02}basematerials' is not complete. Tag 'base' expected.
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-C-CRA-BUILD-0:
+    name: Removed all children from 'build'
+    created: true
+    conforms_to_spec:
+      core: Valid
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-C-CRA-COMPONENTS-0:
+    name: Removed all children from 'components'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: The content of element '{http://schemas.microsoft.com/3dmanufacturing/core/2015/02}components' is not complete. Tag 'component' expected.
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-C-CRA-MESH-0:
+    name: Removed all children from 'mesh'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: The content of element '{http://schemas.microsoft.com/3dmanufacturing/core/2015/02}mesh' is not complete. Tag 'vertices' expected.
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-C-CRA-MODEL-0:
+    name: Removed all children from 'model'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: The content of element '{http://schemas.microsoft.com/3dmanufacturing/core/2015/02}model' is not complete. Tag 'resources' expected.
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-C-CRA-OBJECT-0:
+    name: Removed all children from 'object'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: The content of element '{http://schemas.microsoft.com/3dmanufacturing/core/2015/02}object' is not complete. Tag ('mesh' | 'components') expected.
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-C-CRA-RESOURCES-0:
+    name: Removed all children from 'resources'
+    created: true
+    conforms_to_spec:
+      core: Valid
+    type: Content Spoofing, Reference Confusion, Referenced Object Broken
+
+  GEN-C-CRA-TRIANGLES-0:
+    name: Removed all children from 'triangles'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: The content of element '{http://schemas.microsoft.com/3dmanufacturing/core/2015/02}triangles' is not complete. Tag 'triangle' expected.
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-C-CRA-VERTICES-0:
+    name: Removed all children from 'vertices'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: The content of element '{http://schemas.microsoft.com/3dmanufacturing/core/2015/02}vertices' is not complete. Tag 'vertex' expected.
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-CM-ADS-METADATA-NAME-0:
+    name: Duplicated valid attribute 'name' of 'metadata'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-CM-AR-METADATA-NAME-0:
+    name: Removed attribute 'name' from 'metadata'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: missing required attribute 'name'
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-CM-CDA-ITEM-0:
+    name: Added valid child 'metadatagroup' to 'item'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: Unexpected child with tag '{http://schemas.microsoft.com/3dmanufacturing/core/2015/02}metadatagroup' at position 2.
+    further_infos: The child is a duplicate with the same ID as a sibling.
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-CM-CDA-METADATAGROUP-0:
+    name: Added valid child 'metadata' to 'metadatagroup'
+    created: true
+    conforms_to_spec:
+      core: Valid
+    further_infos: The child is a duplicate with the same ID as a sibling.
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-CM-CDA-MODEL-0:
+    name: Added valid child 'metadata' to 'model'
+    created: true
+    conforms_to_spec:
+      core: Valid
+    further_infos: The child is a duplicate with the same ID as a sibling.
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-CM-CDA-OBJECT-0:
+    name: Added valid child 'metadatagroup' to 'object'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: Unexpected child with tag '{http://schemas.microsoft.com/3dmanufacturing/core/2015/02}metadatagroup' at position 2. Tag ('mesh' | 'components') expected.
+    further_infos: The child is a duplicate with the same ID as a sibling.
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-CM-CR-MODEL-METADATA-0:
+    name: Removed child 'metadata' from 'model'
+    created: true
+    conforms_to_spec:
+      core: Valid
+    type: Content Spoofing, Property Confusion, Property Valid
+
+  GEN-CM-CR-OBJECT-MESH-0:
+    name: Removed child 'mesh' from 'object'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: The content of element '{http://schemas.microsoft.com/3dmanufacturing/core/2015/02}object' is not complete. Tag ('mesh' | 'components') expected.
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-CM-CR-OBJECT-METADATAGROUP-0:
+    name: Removed child 'metadatagroup' from 'object'
+    created: true
+    conforms_to_spec:
+      core: Valid
+    type: Content Spoofing, Property Confusion, Property Valid
+
+  GEN-CM-CRA-ITEM-0:
+    name: Removed all children from 'item'
+    created: true
+    conforms_to_spec:
+      core: Valid
+    type: Content Spoofing, Property Confusion, Property Valid
+
+  GEN-CM-CRA-METADATAGROUP-0:
+    name: Removed all children from 'metadatagroup'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: The content of element '{http://schemas.microsoft.com/3dmanufacturing/core/2015/02}metadatagroup' is not complete. Tag 'metadata' expected.
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-M-ADA-BASEMATERIALS-DISPLAYPROPERTIESID-0:
+    name: |-
+      Added valid attribute 'displaypropertiesid' to 'basematerials' with: '167'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      materials: Invalid XML
+    type: Content Spoofing, Reference Confusion, Reference Broken
+    further_infos: The name is duplicate, the attribute was added after the old attribute.
+
+  GEN-M-ADA-ITEM-TRANSFORM-0:
+    name: |-
+      Added valid attribute 'transform' to 'item' with: '1 0 0 0 -1 0 0 0 -2 0 0 0'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      materials: Invalid XML
+    further_infos: |-
+      The name is duplicate, the attribute was added after the old attribute.
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-M-ADA-MCOLOR-COLOR-0:
+    name: |-
+      Added valid attribute 'color' to 'm:color' with: '#00000055'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      materials: Invalid XML
+    further_infos: |-
+      The name is duplicate, the attribute was added after the old attribute.
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-M-ADA-MCOLORGROUP-ID-0:
+    name: |-
+      Added valid attribute 'id' to 'm:colorgroup' with: '162'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      materials: Invalid XML
+    type: Content Spoofing, Reference Confusion
+    further_infos: The name is duplicate, the attribute was added after the old attribute.
+
+  GEN-M-ADA-MPBMETALLIC-METALLICNESS-0:
+    name: |-
+      Added valid attribute 'metallicness' to 'm:pbmetallic' with: '-.5'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      materials: Invalid XML
+    further_infos: |-
+      The name is duplicate, the attribute was added after the old attribute.
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-M-ADA-MPBMETALLIC-ROUGHNESS-0:
+    name: |-
+      Added valid attribute 'roughness' to 'm:pbmetallic' with: '-.5'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      materials: Invalid XML
+    further_infos: |-
+      The name is duplicate, the attribute was added after the old attribute.
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-M-ADA-MPBMETALLICDISPLAYPROPERTIES-ID-0:
+    name: |-
+      Added valid attribute 'id' to 'm:pbmetallicdisplayproperties' with: '163'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      materials: Invalid XML
+    type: Content Spoofing, Reference Confusion
+    further_infos: The name is duplicate, the attribute was added after the old attribute.
+
+  GEN-M-ADA-MTEX2COORD-U-0:
+    name: |-
+      Added valid attribute 'u' to 'm:tex2coord' with: '-.5'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      materials: Invalid XML
+    further_infos: |-
+      The name is duplicate, the attribute was added after the old attribute.
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-M-ADA-MTEX2COORD-V-0:
+    name: |-
+      Added valid attribute 'v' to 'm:tex2coord' with: '-.5'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      materials: Invalid XML
+    further_infos: |-
+      The name is duplicate, the attribute was added after the old attribute.
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-M-ADA-MTEXTURE2D-CONTENTTYPE-0:
+    name: |-
+      Added valid attribute 'contenttype' to 'm:texture2d' with: 'image/png'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      materials: Invalid XML
+    further_infos: |-
+      The name is duplicate, the attribute was added after the old attribute.
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-M-ADA-MTEXTURE2D-ID-0:
+    name: |-
+      Added valid attribute 'id' to 'm:texture2d' with: '170'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      materials: Invalid XML
+    type: Content Spoofing, Reference Confusion
+    further_infos: The name is duplicate, the attribute was added after the old attribute.
+
+  GEN-M-ADA-MTEXTURE2D-TILESTYLEU-0:
+    name: |-
+      Added valid attribute 'tilestyleu' to 'm:texture2d' with: 'mirror'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      materials: Invalid XML
+    further_infos: |-
+      The name is duplicate, the attribute was added after the old attribute.
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-M-ADA-MTEXTURE2D-TILESTYLEV-0:
+    name: |-
+      Added valid attribute 'tilestylev' to 'm:texture2d' with: 'mirror'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      materials: Invalid XML
+    further_infos: |-
+      The name is duplicate, the attribute was added after the old attribute.
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-M-ADA-MTEXTURE2DGROUP-ID-0:
+    name: |-
+      Added valid attribute 'id' to 'm:texture2dgroup' with: '172'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      materials: Invalid XML
+    type: Content Spoofing, Reference Confusion
+    further_infos: The name is duplicate, the attribute was added after the old attribute.
+
+  GEN-M-ADA-MTEXTURE2DGROUP-TEXID-0:
+    name: |-
+      Added valid attribute 'texid' to 'm:texture2dgroup' with: '173'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      materials: Invalid XML
+    type: Content Spoofing, Reference Confusion, Reference Broken
+    further_infos: The name is duplicate, the attribute was added after the old attribute.
+
+  GEN-M-ADA-MTRANSLUCENT-ROUGHNESS-0:
+    name: |-
+      Added valid attribute 'roughness' to 'm:translucent' with: '-.5'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      materials: Invalid XML
+    further_infos: |-
+      The name is duplicate, the attribute was added after the old attribute.
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-M-ADA-MTRANSLUCENTDISPLAYPROPERTIES-ID-0:
+    name: |-
+      Added valid attribute 'id' to 'm:translucentdisplayproperties' with: '164'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      materials: Invalid XML
+    type: Content Spoofing, Reference Confusion
+    further_infos: The name is duplicate, the attribute was added after the old attribute.
+
+  GEN-M-ADA-TRIANGLE-P2-0:
+    name: |-
+      Added valid attribute 'p2' to 'triangle' with: '187'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      materials: Invalid XML
+    type: Content Spoofing, Reference Confusion, Reference Broken
+    further_infos: The name is duplicate, the attribute was added after the old attribute.
+
+  GEN-M-ADA-TRIANGLE-P3-0:
+    name: |-
+      Added valid attribute 'p3' to 'triangle' with: '188'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      materials: Invalid XML
+    type: Content Spoofing, Reference Confusion, Reference Broken
+    further_infos: The name is duplicate, the attribute was added after the old attribute.
+
+  GEN-M-ADS-MODEL-REQUIREDEXTENSIONS-0:
+    name: Duplicated valid attribute 'requiredextensions' of 'model'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      materials: Invalid XML
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-M-ADS-MODEL-XMLNSM-0:
+    name: Duplicated valid attribute 'xmlns:m' of 'model'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      materials: Invalid XML
+    type: Content Spoofing, Namespace Confusion
+
+  GEN-M-ADS-MPBMETALLIC-NAME-0:
+    name: Duplicated valid attribute 'name' of 'm:pbmetallic'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      materials: Invalid XML
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-M-ADS-MTEXTURE2D-PATH-0:
+    name: Duplicated valid attribute 'path' of 'm:texture2d'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      materials: Invalid XML
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-M-ADS-MTRANSLUCENT-ATTENUATION-0:
+    name: Duplicated valid attribute 'attenuation' of 'm:translucent'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      materials: Invalid XML
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-M-ADS-MTRANSLUCENT-NAME-0:
+    name: Duplicated valid attribute 'name' of 'm:translucent'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      materials: Invalid XML
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-M-ADS-MTRANSLUCENT-REFRACTIVEINDEX-0:
+    name: Duplicated valid attribute 'refractiveindex' of 'm:translucent'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      materials: Invalid XML
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-M-AI-BASEMATERIALS-DISPLAYPROPERTIESID-0:
+    name: |-
+      Made attribute 'displaypropertiesid' from 'basematerials' invalid with: '-1'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: attribute displaypropertiesid='-1': value must be positive
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-M-AI-ITEM-TRANSFORM-0:
+    name: |-
+      Made attribute 'transform' from 'item' invalid with: '1 0 0 0 2 0 0 0 3 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: attribute transform='1 0 0 0 2 0 0 0 3 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0': value doesn't match any pattern of ['((\\-|\\+)?(([0-9]+(\\.[0-9]+)?)|(\\.[0-9]+))((e|E)(\\-|\\+)?[0-9]+)?) ((\\-|\\+)?(([0-9]+(\\.[0-9]+)?)|(\\.[0-9]+))((e|E)(\\-|\\+)?[0-9]+)?) ((\\-|\\+)?(([0-9]+(\\.[0-9]+)?)|(\\.[0-9]+))((e|E)(\\-|\\+)?[0-9]+)?) ((\\-|\\+)?(([0-9]+(\\.[0-9]+)?)|(\\.[0-9]+))((e|E)(\\-|\\+)?[0-9]+)?) ((\\-|\\+)?(([0-9]+(\\.[0-9]+)?)|(\\.[0-9]+))((e|E)(\\-|\\+)?[0-9]+)?) ((\\-|\\+)?(([0-9]+(\\.[0-9]+)?)|(\\.[0-9]+))((e|E)(\\-|\\+)?[0-9]+)?) ((\\-|\\+)?(([0-9]+(\\.[0-9]+)?)|(\\.[0-9]+))((e|E)(\\-|\\+)?[0-9]+)?) ((\\-|\\+)?(([0-9]+(\\.[0-9]+)?)|(\\.[0-9]+))((e|E)(\\-|\\+)?[0-9]+)?) ((\\-|\\+)?(([0-9]+(\\.[0-9]+)?)|(\\.[0-9]+))((e|E)(\\-|\\+)?[0-9]+)?) ((\\-|\\+)?(([0-9]+(\\.[0-9]+)?)|(\\.[0-9]+))((e|E)(\\-|\\+)?[0-9]+)?) ((\\-|\\+)?(([0-9]+(\\.[0-9]+)?)|(\\.[0-9]+))((e|E)(\\-|\\+)?[0-9]+)?) ((\\-|\\+)?(([0-9]+(\\.[0-9]+)?)|(\\.[0-9]+))((e|E)(\\-|\\+)?[0-9]+)?)']
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-M-AI-MCOLOR-COLOR-0:
+    name: |-
+      Made attribute 'color' from 'm:color' invalid with: '#000'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: attribute color='#000': value doesn't match any pattern of ['#[0-9|A-F|a-f][0-9|A-F|a-f][0-9|A-F|a-f][0-9|A-F|a-f][0-9|A-F|a-f][0-9|A-F|a-f]([0-9|A-F|a-f][0-9|A-F|a-f])?']
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-M-AI-MCOLORGROUP-ID-0:
+    name: |-
+      Made attribute 'id' from 'm:colorgroup' invalid with: '-1'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: attribute id='-1': value must be positive
+    type: Content Spoofing, Reference Confusion, Referenced Object Broken
+
+  GEN-M-AI-MPBMETALLIC-METALLICNESS-0:
+    name: |-
+      Made attribute 'metallicness' from 'm:pbmetallic' invalid with: '1,000.01'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: attribute metallicness='1,000.01': value doesn't match any pattern of ['((\\-|\\+)?(([0-9]+(\\.[0-9]+)?)|(\\.[0-9]+))((e|E)(\\-|\\+)?[0-9]+)?)']
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-M-AI-MPBMETALLIC-ROUGHNESS-0:
+    name: |-
+      Made attribute 'roughness' from 'm:pbmetallic' invalid with: '1,000.01'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: attribute roughness='1,000.01': value doesn't match any pattern of ['((\\-|\\+)?(([0-9]+(\\.[0-9]+)?)|(\\.[0-9]+))((e|E)(\\-|\\+)?[0-9]+)?)']
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-M-AI-MPBMETALLICDISPLAYPROPERTIES-ID-0:
+    name: |-
+      Made attribute 'id' from 'm:pbmetallicdisplayproperties' invalid with: '-1'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: attribute id='-1': value must be positive
+    type: Content Spoofing, Reference Confusion, Referenced Object Broken
+
+  GEN-M-AI-MTEX2COORD-U-0:
+    name: |-
+      Made attribute 'u' from 'm:tex2coord' invalid with: '1,000.01'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: attribute u='1,000.01': value doesn't match any pattern of ['((\\-|\\+)?(([0-9]+(\\.[0-9]+)?)|(\\.[0-9]+))((e|E)(\\-|\\+)?[0-9]+)?)']
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-M-AI-MTEX2COORD-V-0:
+    name: |-
+      Made attribute 'v' from 'm:tex2coord' invalid with: '1,000.01'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: attribute v='1,000.01': value doesn't match any pattern of ['((\\-|\\+)?(([0-9]+(\\.[0-9]+)?)|(\\.[0-9]+))((e|E)(\\-|\\+)?[0-9]+)?)']
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-M-AI-MTEXTURE2D-CONTENTTYPE-0:
+    name: |-
+      Made attribute 'contenttype' from 'm:texture2d' invalid with: 'image/svg'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: attribute contenttype='image/svg': value must be one of ['image/jpeg', 'image/png']
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-M-AI-MTEXTURE2D-ID-0:
+    name: |-
+      Made attribute 'id' from 'm:texture2d' invalid with: '-1'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: attribute id='-1': value must be positive
+    type: Content Spoofing, Reference Confusion, Referenced Object Broken
+
+  GEN-M-AI-MTEXTURE2D-PATH-0:
+    name: |-
+      Made attribute 'path' from 'm:texture2d' invalid with: '/Metadata/thumbnail.png'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: Valid
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-M-AI-MTEXTURE2D-TILESTYLEU-0:
+    name: |-
+      Made attribute 'tilestyleu' from 'm:texture2d' invalid with: 'None'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: attribute tilestyleu='None': value must be one of ['clamp', 'wrap', 'mirror', 'none']
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-M-AI-MTEXTURE2D-TILESTYLEV-0:
+    name: |-
+      Made attribute 'tilestylev' from 'm:texture2d' invalid with: 'None'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: attribute tilestylev='None': value must be one of ['clamp', 'wrap', 'mirror', 'none']
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-M-AI-MTEXTURE2DGROUP-ID-0:
+    name: |-
+      Made attribute 'id' from 'm:texture2dgroup' invalid with: '-1'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: attribute id='-1': value must be positive
+    type: Content Spoofing, Reference Confusion, Referenced Object Broken
+
+  GEN-M-AI-MTEXTURE2DGROUP-TEXID-0:
+    name: |-
+      Made attribute 'texid' from 'm:texture2dgroup' invalid with: '-1'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: attribute texid='-1': value must be positive
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-M-AI-MTRANSLUCENT-ROUGHNESS-0:
+    name: |-
+      Made attribute 'roughness' from 'm:translucent' invalid with: '1,000.01'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: attribute roughness='1,000.01': value doesn't match any pattern of ['((\\-|\\+)?(([0-9]+(\\.[0-9]+)?)|(\\.[0-9]+))((e|E)(\\-|\\+)?[0-9]+)?)']
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-M-AI-MTRANSLUCENTDISPLAYPROPERTIES-ID-0:
+    name: |-
+      Made attribute 'id' from 'm:translucentdisplayproperties' invalid with: '-1'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: attribute id='-1': value must be positive
+    type: Content Spoofing, Reference Confusion, Referenced Object Broken
+
+  GEN-M-AI-TRIANGLE-P2-0:
+    name: |-
+      Made attribute 'p2' from 'triangle' invalid with: '-1'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: attribute p2='-1': value must be non negative
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-M-AI-TRIANGLE-P3-0:
+    name: |-
+      Made attribute 'p3' from 'triangle' invalid with: '-1'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: attribute p3='-1': value must be non negative
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-M-AR-BASEMATERIALS-DISPLAYPROPERTIESID-0:
+    name: Removed attribute 'displaypropertiesid' from 'basematerials'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: Valid
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-M-AR-ITEM-TRANSFORM-0:
+    name: Removed attribute 'transform' from 'item'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: Valid
+    type: Content Spoofing, Property Confusion, Property Valid
+
+  GEN-M-AR-MCOLOR-COLOR-0:
+    name: Removed attribute 'color' from 'm:color'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: missing required attribute 'color'
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-M-AR-MCOLORGROUP-ID-0:
+    name: Removed attribute 'id' from 'm:colorgroup'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: missing required attribute 'id'
+    type: Content Spoofing, Reference Confusion, Referenced Object Broken
+
+  GEN-M-AR-MODEL-REQUIREDEXTENSIONS-0:
+    name: Removed attribute 'requiredextensions' from 'model'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: Valid
+    type: Content Spoofing, Property Confusion, Property Valid
+
+  GEN-M-AR-MODEL-XMLNSM-0:
+    name: Removed attribute 'xmlns:m' from 'model'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      materials: Invalid XML
+    type: Content Spoofing, Namespace Confusion
+
+  GEN-M-AR-MPBMETALLIC-METALLICNESS-0:
+    name: Removed attribute 'metallicness' from 'm:pbmetallic'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: Valid
+    type: Content Spoofing, Property Confusion, Property Valid
+
+  GEN-M-AR-MPBMETALLIC-NAME-0:
+    name: Removed attribute 'name' from 'm:pbmetallic'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: missing required attribute 'name'
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-M-AR-MPBMETALLIC-ROUGHNESS-0:
+    name: Removed attribute 'roughness' from 'm:pbmetallic'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: Valid
+    type: Content Spoofing, Property Confusion, Property Valid
+
+  GEN-M-AR-MPBMETALLICDISPLAYPROPERTIES-ID-0:
+    name: Removed attribute 'id' from 'm:pbmetallicdisplayproperties'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: missing required attribute 'id'
+    type: Content Spoofing, Reference Confusion, Referenced Object Broken
+
+  GEN-M-AR-MTEX2COORD-U-0:
+    name: Removed attribute 'u' from 'm:tex2coord'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: missing required attribute 'u'
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-M-AR-MTEX2COORD-V-0:
+    name: Removed attribute 'v' from 'm:tex2coord'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: missing required attribute 'v'
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-M-AR-MTEXTURE2D-CONTENTTYPE-0:
+    name: Removed attribute 'contenttype' from 'm:texture2d'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: missing required attribute 'contenttype'
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-M-AR-MTEXTURE2D-ID-0:
+    name: Removed attribute 'id' from 'm:texture2d'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: missing required attribute 'id'
+    type: Content Spoofing, Reference Confusion, Referenced Object Broken
+
+  GEN-M-AR-MTEXTURE2D-PATH-0:
+    name: Removed attribute 'path' from 'm:texture2d'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: missing required attribute 'path'
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-M-AR-MTEXTURE2D-TILESTYLEU-0:
+    name: Removed attribute 'tilestyleu' from 'm:texture2d'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: Valid
+    type: Content Spoofing, Property Confusion, Property Valid
+
+  GEN-M-AR-MTEXTURE2D-TILESTYLEV-0:
+    name: Removed attribute 'tilestylev' from 'm:texture2d'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: Valid
+    type: Content Spoofing, Property Confusion, Property Valid
+
+  GEN-M-AR-MTEXTURE2DGROUP-ID-0:
+    name: Removed attribute 'id' from 'm:texture2dgroup'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: missing required attribute 'id'
+    type: Content Spoofing, Reference Confusion, Referenced Object Broken
+
+  GEN-M-AR-MTEXTURE2DGROUP-TEXID-0:
+    name: Removed attribute 'texid' from 'm:texture2dgroup'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: missing required attribute 'texid'
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-M-AR-MTRANSLUCENT-ATTENUATION-0:
+    name: Removed attribute 'attenuation' from 'm:translucent'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: missing required attribute 'attenuation'
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-M-AR-MTRANSLUCENT-NAME-0:
+    name: Removed attribute 'name' from 'm:translucent'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: missing required attribute 'name'
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-M-AR-MTRANSLUCENT-REFRACTIVEINDEX-0:
+    name: Removed attribute 'refractiveindex' from 'm:translucent'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: Valid
+    type: Content Spoofing, Property Confusion, Property Valid
+
+  GEN-M-AR-MTRANSLUCENT-ROUGHNESS-0:
+    name: Removed attribute 'roughness' from 'm:translucent'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: Valid
+    type: Content Spoofing, Property Confusion, Property Valid
+
+  GEN-M-AR-MTRANSLUCENTDISPLAYPROPERTIES-ID-0:
+    name: Removed attribute 'id' from 'm:translucentdisplayproperties'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: missing required attribute 'id'
+    type: Content Spoofing, Reference Confusion, Referenced Object Broken
+
+  GEN-M-AR-TRIANGLE-P2-0:
+    name: Removed attribute 'p2' from 'triangle'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: Valid
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-M-AR-TRIANGLE-P3-0:
+    name: Removed attribute 'p3' from 'triangle'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: Valid
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-M-CDA-MCOLORGROUP-0:
+    name: Added valid child 'm:color' to 'm:colorgroup'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: Valid
+    further_infos: The child is a duplicate with the same ID as a sibling.
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-M-CDA-MPBMETALLICDISPLAYPROPERTIES-0:
+    name: Added valid child 'm:pbmetallic' to 'm:pbmetallicdisplayproperties'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: Valid
+    further_infos: The child is a duplicate with the same ID as a sibling.
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-M-CDA-MTEXTURE2DGROUP-0:
+    name: Added valid child 'm:tex2coord' to 'm:texture2dgroup'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: Valid
+    further_infos: The child is a duplicate with the same ID as a sibling.
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-M-CDA-MTRANSLUCENTDISPLAYPROPERTIES-0:
+    name: Added valid child 'm:translucent' to 'm:translucentdisplayproperties'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: Valid
+    further_infos: The child is a duplicate with the same ID as a sibling.
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-M-CDA-RESOURCES-0:
+    name: Added valid child 'm:colorgroup' to 'resources'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: Valid
+    further_infos: The child is a duplicate with the same ID as a sibling.
+    type: Content Spoofing, Reference Confusion, Referenced Object Duplication
+
+  GEN-M-CDA-RESOURCES-1:
+    name: Added valid child 'm:pbmetallicdisplayproperties' to 'resources'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: Valid
+    further_infos: The child is a duplicate with the same ID as a sibling.
+    type: Content Spoofing, Reference Confusion, Referenced Object Duplication
+
+  GEN-M-CDA-RESOURCES-2:
+    name: Added valid child 'm:translucentdisplayproperties' to 'resources'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: Valid
+    further_infos: The child is a duplicate with the same ID as a sibling.
+    type: Content Spoofing, Reference Confusion, Referenced Object Duplication
+
+  GEN-M-CDA-RESOURCES-3:
+    name: Added valid child 'm:texture2d' to 'resources'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: Valid
+    further_infos: The child is a duplicate with the same ID as a sibling.
+    type: Content Spoofing, Reference Confusion, Referenced Object Duplication
+
+  GEN-M-CDA-RESOURCES-4:
+    name: Added valid child 'm:texture2dgroup' to 'resources'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: Valid
+    further_infos: The child is a duplicate with the same ID as a sibling.
+    type: Content Spoofing, Reference Confusion, Referenced Object Duplication
+
+  GEN-M-CR-BUILD-ITEM-0:
+    name: Removed child 'item' from 'build'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: Valid
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-M-CR-MCOLORGROUP-MCOLOR-0:
+    name: Removed child 'm:color' from 'm:colorgroup'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: Valid
+    type: Content Spoofing, Property Confusion, Property Valid
+
+  GEN-M-CR-MTEXTURE2DGROUP-MTEX2COORD-0:
+    name: Removed child 'm:tex2coord' from 'm:texture2dgroup'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: Valid
+    type: Content Spoofing, Property Confusion, Property Valid
+
+  GEN-M-CR-RESOURCES-MCOLORGROUP-0:
+    name: Removed child 'm:colorgroup' from 'resources'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: Valid
+    type: Content Spoofing, Reference Confusion, Referenced Object Broken
+
+  GEN-M-CR-RESOURCES-MPBMETALLICDISPLAYPROPERTIES-0:
+    name: Removed child 'm:pbmetallicdisplayproperties' from 'resources'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: Valid
+    type: Content Spoofing, Reference Confusion, Referenced Object Broken
+
+  GEN-M-CR-RESOURCES-MTEXTURE2D-0:
+    name: Removed child 'm:texture2d' from 'resources'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: Valid
+    type: Content Spoofing, Reference Confusion, Referenced Object Broken
+
+  GEN-M-CR-RESOURCES-MTEXTURE2DGROUP-0:
+    name: Removed child 'm:texture2dgroup' from 'resources'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: Valid
+    type: Content Spoofing, Reference Confusion, Referenced Object Broken
+
+  GEN-M-CR-RESOURCES-MTRANSLUCENTDISPLAYPROPERTIES-0:
+    name: Removed child 'm:translucentdisplayproperties' from 'resources'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: Valid
+    type: Content Spoofing, Reference Confusion, Referenced Object Broken
+
+  GEN-M-CRA-MCOLORGROUP-0:
+    name: Removed all children from 'm:colorgroup'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: The content of element '{http://schemas.microsoft.com/3dmanufacturing/material/2015/02}colorgroup' is not complete. Tag 'color' expected.
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-M-CRA-MPBMETALLICDISPLAYPROPERTIES-0:
+    name: Removed all children from 'm:pbmetallicdisplayproperties'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: The content of element '{http://schemas.microsoft.com/3dmanufacturing/material/2015/02}pbmetallicdisplayproperties' is not complete. Tag 'pbmetallic' expected.
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-M-CRA-MTEXTURE2DGROUP-0:
+    name: Removed all children from 'm:texture2dgroup'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: The content of element '{http://schemas.microsoft.com/3dmanufacturing/material/2015/02}texture2dgroup' is not complete. Tag 'tex2coord' expected.
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-M-CRA-MTRANSLUCENTDISPLAYPROPERTIES-0:
+    name: Removed all children from 'm:translucentdisplayproperties'
+    created: true
+    conforms_to_spec:
+      core: |-
+        Invalid 3MF: attribute 'displaypropertiesid' not allowed.
+      materials: |-
+        Invalid 3MF: The content of element '{http://schemas.microsoft.com/3dmanufacturing/material/2015/02}translucentdisplayproperties' is not complete. Tag 'translucent' expected.
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-P-ADA-BUILD-PUUID-0:
+    name: |-
+      Added valid attribute 'p:UUID' to 'build' with: '7f581f60-6857-41b6-9dd3-931a851b048d'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      production: Invalid XML
+    further_infos: |-
+      The name is duplicate, the attribute was added after the old attribute.
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-P-ADA-COMPONENT-PUUID-0:
+    name: |-
+      Added valid attribute 'p:UUID' to 'component' with: '7f581f60-6857-41b6-9dd3-931a851b048d'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      production: Invalid XML
+    further_infos: |-
+      The name is duplicate, the attribute was added after the old attribute.
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-P-ADA-ITEM-PUUID-0:
+    name: |-
+      Added valid attribute 'p:UUID' to 'item' with: '7f581f60-6857-41b6-9dd3-931a851b048d'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      production: Invalid XML
+    further_infos: |-
+      The name is duplicate, the attribute was added after the old attribute.
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-P-ADA-OBJECT-PUUID-0:
+    name: |-
+      Added valid attribute 'p:UUID' to 'object' with: '7f581f60-6857-41b6-9dd3-931a851b048d'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      production: Invalid XML
+    further_infos: |-
+      The name is duplicate, the attribute was added after the old attribute.
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-P-ADS-COMPONENT-PPATH-0:
+    name: Duplicated valid attribute 'p:path' of 'component'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      production: Invalid XML
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-P-ADS-MODEL-XMLNSP-0:
+    name: Duplicated valid attribute 'xmlns:p' of 'model'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      production: Invalid XML
+    type: Content Spoofing, Namespace Confusion
+
+  GEN-P-AI-BUILD-PUUID-0:
+    name: |-
+      Made attribute 'p:UUID' from 'build' invalid with: '7F581F60-6857-41B6-9DD3-931A851B048D'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      production: |-
+        Invalid 3MF: attribute UUID='7F581F60-6857-41B6-9DD3-931A851B048D': value doesn't match any pattern of ['[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}']
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-P-AI-COMPONENT-PPATH-0:
+    name: |-
+      Made attribute 'p:path' from 'component' invalid with: '../../../../../../etc/passwd'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      production: Valid
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-P-AI-COMPONENT-PUUID-0:
+    name: |-
+      Made attribute 'p:UUID' from 'component' invalid with: '7F581F60-6857-41B6-9DD3-931A851B048D'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      production: |-
+        Invalid 3MF: attribute p:UUID='7F581F60-6857-41B6-9DD3-931A851B048D': value doesn't match any pattern of ['[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}']
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-P-AI-ITEM-PUUID-0:
+    name: |-
+      Made attribute 'p:UUID' from 'item' invalid with: '7F581F60-6857-41B6-9DD3-931A851B048D'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      production: |-
+        Invalid 3MF: attribute p:UUID='7F581F60-6857-41B6-9DD3-931A851B048D': value doesn't match any pattern of ['[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}']
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-P-AI-OBJECT-PUUID-0:
+    name: |-
+      Made attribute 'p:UUID' from 'object' invalid with: '7F581F60-6857-41B6-9DD3-931A851B048D'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      production: |-
+        Invalid 3MF: attribute p:UUID='7F581F60-6857-41B6-9DD3-931A851B048D': value doesn't match any pattern of ['[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}']
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-P-AR-BUILD-PUUID-0:
+    name: Removed attribute 'p:UUID' from 'build'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      production: |-
+        Valid
+    type: Content Spoofing, Property Confusion, Property Valid
+
+  GEN-P-AR-COMPONENT-PPATH-0:
+    name: Removed attribute 'p:path' from 'component'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      production: |-
+        Valid
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-P-AR-COMPONENT-PUUID-0:
+    name: Removed attribute 'p:UUID' from 'component'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      production: |-
+        Invalid 3MF: missing required attribute '{http://schemas.microsoft.com/3dmanufacturing/production/2015/06}UUID'
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-P-AR-ITEM-PUUID-0:
+    name: Removed attribute 'p:UUID' from 'item'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      production: |-
+        Invalid 3MF: missing required attribute '{http://schemas.microsoft.com/3dmanufacturing/production/2015/06}UUID'
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-P-AR-MODEL-XMLNSP-0:
+    name: Removed attribute 'xmlns:p' from 'model'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      production: Invalid XML
+    type: Content Spoofing, Namespace Confusion
+
+  GEN-P-AR-OBJECT-PUUID-0:
+    name: Removed attribute 'p:UUID' from 'object'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      production: |-
+        Invalid 3MF: missing required attribute '{http://schemas.microsoft.com/3dmanufacturing/production/2015/06}UUID'
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-SE-ADA-SSLICEREF-SLICESTACKID-0:
+    name: "Added valid attribute 'slicestackid' to 's:sliceref' with: '509'"
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      slice: Invalid XML
+    type: Content Spoofing, Reference Confusion, Reference Broken
+    further_infos: The name is duplicate, the attribute was added after the old attribute.
+
+  GEN-SE-ADS-SSLICEREF-SLICEPATH-0:
+    name: Duplicated valid attribute 'slicepath' of 's:sliceref'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      slice: Invalid XML
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-SE-AI-SSLICEREF-SLICEPATH-0:
+    name: "Made attribute 'slicepath' from 's:sliceref' invalid with: '/Metadata/thumbnail.png'"
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice: Valid
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-SE-AI-SSLICEREF-SLICESTACKID-0:
+    name: "Made attribute 'slicestackid' from 's:sliceref' invalid with: '-1'"
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice: "Invalid 3MF: attribute slicestackid='-1': value must be positive"
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-SE-AR-SSLICEREF-SLICEPATH-0:
+    name: Removed attribute 'slicepath' from 's:sliceref'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice: "Invalid 3MF: missing required attribute 'slicepath'"
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-SE-AR-SSLICEREF-SLICESTACKID-0:
+    name: Removed attribute 'slicestackid' from 's:sliceref'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice: "Invalid 3MF: missing required attribute 'slicestackid'"
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-SE-CDA-SSLICESTACK-0:
+    name: Added valid child 's:sliceref' to 's:slicestack'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice: Valid
+    type: Content Spoofing, Reference Confusion
+    further_infos: The child is a duplicate with the same ID as a sibling.
+
+  GEN-SI-ADA-OBJECT-SSLICESTACKID-0:
+    name: "Added valid attribute 's:slicestackid' to 'object' with: '470'"
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      slice: Invalid XML
+    type: Content Spoofing, Property Confusion, Property Duplication
+    further_infos: The name is duplicate, the attribute was added after the old attribute.
+
+  GEN-SI-ADA-SPOLYGON-STARTV-0:
+    name: "Added valid attribute 'startv' to 's:polygon' with: '409'"
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      slice: Invalid XML
+    type: Content Spoofing, Reference Confusion, Reference Broken
+    further_infos: The name is duplicate, the attribute was added after the old attribute.
+
+  GEN-SI-ADA-SSEGMENT-V2-0:
+    name: "Added valid attribute 'v2' to 's:segment' with: '410'"
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      slice: Invalid XML
+    type: Content Spoofing, Reference Confusion, Reference Broken
+    further_infos: The name is duplicate, the attribute was added after the old attribute.
+
+  GEN-SI-ADA-SSLICE-ZTOP-0:
+    name: "Added valid attribute 'ztop' to 's:slice' with: '-.5'"
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      slice: Invalid XML
+    type: Content Spoofing, Property Confusion, Property Duplication
+    further_infos: The name is duplicate, the attribute was added after the old attribute.
+
+  GEN-SI-ADA-SSLICESTACK-ID-0:
+    name: "Added valid attribute 'id' to 's:slicestack' with: '408'"
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      slice: Invalid XML
+    type: Content Spoofing, Reference Confusion
+    further_infos: The name is duplicate, the attribute was added after the old attribute.
+
+  GEN-SI-ADA-SSLICESTACK-ZBOTTOM-0:
+    name: "Added valid attribute 'zbottom' to 's:slicestack' with: '-.5'"
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      slice: Invalid XML
+    type: Content Spoofing, Property Confusion, Property Duplication
+    further_infos: The name is duplicate, the attribute was added after the old attribute.
+
+  GEN-SI-ADA-SVERTEX-X-0:
+    name: "Added valid attribute 'x' to 's:vertex' with: '-.5'"
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      slice: Invalid XML
+    type: Content Spoofing, Property Confusion, Property Duplication
+    further_infos: The name is duplicate, the attribute was added after the old attribute.
+
+  GEN-SI-ADA-SVERTEX-Y-0:
+    name: "Added valid attribute 'y' to 's:vertex' with: '-.5'"
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      slice: Invalid XML
+    type: Content Spoofing, Property Confusion, Property Duplication
+    further_infos: The name is duplicate, the attribute was added after the old attribute.
+
+  GEN-SI-ADS-MODEL-XMLNSS-0:
+    name: Duplicated valid attribute 'xmlns:s' of 'model'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      slice: Invalid XML
+    type: Content Spoofing, Namespace Confusion
+
+  GEN-SI-ADS-OBJECT-SMESHRESOLUTION-0:
+    name: Duplicated valid attribute 's:meshresolution' of 'object'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      slice: Invalid XML
+    type: Content Spoofing, Property Confusion, Property Duplication
+
+  GEN-SI-AI-OBJECT-SSLICESTACKID-0:
+    name: "Made attribute 's:slicestackid' from 'object' invalid with: '-1'"
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice: "Invalid 3MF: attribute s:slicestackid='-1': value must be positive"
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-SI-AI-SPOLYGON-STARTV-0:
+    name: "Made attribute 'startv' from 's:polygon' invalid with: '-1'"
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice: "Invalid 3MF: attribute startv='-1': value must be non negative"
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-SI-AI-SSEGMENT-V2-0:
+    name: "Made attribute 'v2' from 's:segment' invalid with: '-1'"
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice: "Invalid 3MF: attribute v2='-1': value must be non negative"
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-SI-AI-SSLICE-ZTOP-0:
+    name: "Made attribute 'ztop' from 's:slice' invalid with: '1,000.01'"
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice:
+        "Invalid 3MF: attribute ztop='1,000.01': value doesn't match any pattern\
+        \ of ['((\\\\-|\\\\+)?(([0-9]+(\\\\.[0-9]+)?)|(\\\\.[0-9]+))((e|E)(\\\\-|\\\
+        \\+)?[0-9]+)?)']"
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-SI-AI-SSLICESTACK-ID-0:
+    name: "Made attribute 'id' from 's:slicestack' invalid with: '-1'"
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice: "Invalid 3MF: attribute id='-1': value must be positive"
+    type: Content Spoofing, Reference Confusion, Referenced Object Broken
+
+  GEN-SI-AI-SSLICESTACK-ZBOTTOM-0:
+    name: "Made attribute 'zbottom' from 's:slicestack' invalid with: '1,000.01'"
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice:
+        "Invalid 3MF: attribute zbottom='1,000.01': value doesn't match any pattern\
+        \ of ['((\\\\-|\\\\+)?(([0-9]+(\\\\.[0-9]+)?)|(\\\\.[0-9]+))((e|E)(\\\\-|\\\
+        \\+)?[0-9]+)?)']"
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-SI-AI-SVERTEX-X-0:
+    name: "Made attribute 'x' from 's:vertex' invalid with: '1,000.01'"
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice:
+        "Invalid 3MF: attribute x='1,000.01': value doesn't match any pattern\
+        \ of ['((\\\\-|\\\\+)?(([0-9]+(\\\\.[0-9]+)?)|(\\\\.[0-9]+))((e|E)(\\\\-|\\\
+        \\+)?[0-9]+)?)']"
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-SI-AI-SVERTEX-Y-0:
+    name: "Made attribute 'y' from 's:vertex' invalid with: '1,000.01'"
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice:
+        "Invalid 3MF: attribute y='1,000.01': value doesn't match any pattern\
+        \ of ['((\\\\-|\\\\+)?(([0-9]+(\\\\.[0-9]+)?)|(\\\\.[0-9]+))((e|E)(\\\\-|\\\
+        \\+)?[0-9]+)?)']"
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-SI-AR-MODEL-XMLNSS-0:
+    name: Removed attribute 'xmlns:s' from 'model'
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+      slice: Invalid XML
+    type: Content Spoofing, Namespace Confusion
+
+  GEN-SI-AR-OBJECT-SMESHRESOLUTION-0:
+    name: Removed attribute 's:meshresolution' from 'object'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice: Valid
+    type: Content Spoofing, Property Confusion, Property Valid
+
+  GEN-SI-AR-OBJECT-SSLICESTACKID-0:
+    name: Removed attribute 's:slicestackid' from 'object'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice: "Invalid 3MF: missing required attribute '{http://schemas.microsoft.com/3dmanufacturing/slice/2015/07}slicestackid'"
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-SI-AR-SPOLYGON-STARTV-0:
+    name: Removed attribute 'startv' from 's:polygon'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice: "Invalid 3MF: missing required attribute 'startv'"
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-SI-AR-SSEGMENT-V2-0:
+    name: Removed attribute 'v2' from 's:segment'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice: "Invalid 3MF: missing required attribute 'v2'"
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-SI-AR-SSLICE-ZTOP-0:
+    name: Removed attribute 'ztop' from 's:slice'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice: "Invalid 3MF: missing required attribute 'ztop'"
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-SI-AR-SSLICESTACK-ID-0:
+    name: Removed attribute 'id' from 's:slicestack'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice: "Invalid 3MF: missing required attribute 'id'"
+    type: Content Spoofing, Reference Confusion, Referenced Object Broken
+
+  GEN-SI-AR-SSLICESTACK-ZBOTTOM-0:
+    name: Removed attribute 'zbottom' from 's:slicestack'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice: Valid
+    type: Content Spoofing, Property Confusion, Property Valid
+
+  GEN-SI-AR-SVERTEX-X-0:
+    name: Removed attribute 'x' from 's:vertex'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice: "Invalid 3MF: missing required attribute 'x'"
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-SI-AR-SVERTEX-Y-0:
+    name: Removed attribute 'y' from 's:vertex'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice: "Invalid 3MF: missing required attribute 'y'"
+    type: Content Spoofing, Property Confusion, Property Invalid
+
+  GEN-SI-CDA-RESOURCES-0:
+    name: Added valid child 's:slicestack' to 'resources'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice: Valid
+    type: Content Spoofing, Reference Confusion, Referenced Object Duplication
+    further_infos: The child is a duplicate with the same ID as a sibling.
+
+  GEN-SI-CDA-SPOLYGON-0:
+    name: Added valid child 's:segment' to 's:polygon'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice: Valid
+    type: Content Spoofing, Reference Confusion
+    further_infos: The child is a duplicate with the same ID as a sibling.
+
+  GEN-SI-CDA-SSLICE-0:
+    name: Added valid child 's:vertices' to 's:slice'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice:
+        "Invalid 3MF: Unexpected child with tag '{http://schemas.microsoft.com/3dmanufacturing/slice/2015/07}vertices'\
+        \ at position 2."
+    type: Content Spoofing, Property Confusion, Property Duplication
+    further_infos: The child is a duplicate with the same ID as a sibling.
+
+  GEN-SI-CDA-SSLICE-1:
+    name: Added valid child 's:polygon' to 's:slice'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice: Valid
+    type: Content Spoofing, Reference Confusion
+    further_infos: The child is a duplicate with the same ID as a sibling.
+
+  GEN-SI-CDA-SSLICESTACK-0:
+    name: Added valid child 's:slice' to 's:slicestack'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice: Valid
+    type: Content Spoofing, Property Confusion, Property Duplication
+    further_infos: The child is a duplicate with the same ID as a sibling.
+
+  GEN-SI-CDA-SVERTICES-0:
+    name: Added valid child 's:vertex' to 's:vertices'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice: Valid
+    type: Content Spoofing, Property Confusion, Property Duplication
+    further_infos: The child is a duplicate with the same ID as a sibling.
+
+  GEN-SI-CR-RESOURCES-SSLICESTACK-0:
+    name: Removed child 's:slicestack' from 'resources'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice: Valid
+    type: Content Spoofing, Reference Confusion, Referenced Object Broken
+
+  GEN-SI-CR-SPOLYGON-SSEGMENT-0:
+    name: Removed child 's:segment' from 's:polygon'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice: Valid
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-SI-CR-SSLICE-SPOLYGON-0:
+    name: Removed child 's:polygon' from 's:slice'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice: Valid
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-SI-CR-SSLICE-SVERTICES-0:
+    name: Removed child 's:vertices' from 's:slice'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice: Valid
+    type: Content Spoofing, Property Confusion, Property Valid
+
+  GEN-SI-CR-SSLICESTACK-SSLICE-0:
+    name: Removed child 's:slice' from 's:slicestack'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice: Valid
+    type: Content Spoofing, Property Confusion, Property Valid
+
+  GEN-SI-CR-SVERTICES-SVERTEX-0:
+    name: Removed child 's:vertex' from 's:vertices'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice: Valid
+    type: Content Spoofing, Property Confusion, Property Valid
+
+  GEN-SI-CRA-SPOLYGON-0:
+    name: Removed all children from 's:polygon'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice:
+        "Invalid 3MF: The content of element '{http://schemas.microsoft.com/3dmanufacturing/slice/2015/07}polygon'\
+        \ is not complete. Tag 'segment' expected."
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-SI-CRA-SSLICE-0:
+    name: Removed all children from 's:slice'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice: Valid
+    type: Content Spoofing, Reference Confusion, Reference Broken
+
+  GEN-SI-CRA-SSLICESTACK-0:
+    name: Removed all children from 's:slicestack'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice: Valid
+    type: Content Spoofing, Property Confusion, Property Valid
+
+  GEN-SI-CRA-SVERTICES-0:
+    name: Removed all children from 's:vertices'
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice:
+        "Invalid 3MF: The content of element '{http://schemas.microsoft.com/3dmanufacturing/slice/2015/07}vertices'\
+        \ is not complete. Tag 'vertex' expected."
+    type: Content Spoofing, Property Confusion, Property Invalid

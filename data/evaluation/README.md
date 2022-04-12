@@ -1,0 +1,19 @@
+# Values Used
+
+| Program       | Fast      | Slow      | Notes                                                                                                                                                                                             |
+| ------------- | --------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 3D Builder    | 0,1       | 0,1,3,5   |                                                                                                                                                                                                   |
+| 3D Viewer     | 0,1       | 0,1,3,5   |                                                                                                                                                                                                   |
+| Craftware Pro | 1,2       | 0,1,3,5   |                                                                                                                                                                                                   |
+| Cura          | 1,2       | 0,1,3,5   | window isn't detected until model is loaded                                                                                                                                                       |
+| Flashprint    | 0,1       | 0,1,3,5   |                                                                                                                                                                                                   |
+| Fusion 360    | 0,1,2,5,7 | 0,1,2,5,7 |                                                                                                                                                                                                   |
+| ideaMaker     | 1,2       | 0,1,3,5   |                                                                                                                                                                                                   |
+| lib3mf        | -         | -         |                                                                                                                                                                                                   |
+| Lychee Slicer | 5,10,15   | 5,10,15   |                                                                                                                                                                                                   |
+| Paint 3D      | 0,1       | 0,1,3,5   |                                                                                                                                                                                                   |
+| PrusaSlicer   | 1,2       | 0,1,3,5   |                                                                                                                                                                                                   |
+| Simplify3D    | 0,1,2,5,7 | 0,1,2,5,7 |                                                                                                                                                                                                   |
+| Slic3r        | 1,2       | 0,1,3,5   | crashes while reading files: `"CS-DOR,GEN-C-AI-COMPONENT-TRANSFORM-*,GEN-C-CR-MESH-VERTICES-*,GEN-C-CR-MODEL-RESOURCES-*,GEN-C-CRA-RESOURCES-*,GEN-C-CRA-VERTICES-*,GEN-CM-AR-*,GEN-M-AI-ITEM-*"` |
+| Z-Suite       | 0,1,2,5,7 | 0,1,2,5,7 |                                                                                                                                                                                                   |
+
