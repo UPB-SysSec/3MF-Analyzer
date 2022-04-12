@@ -36,3 +36,13 @@ Folders without a type are used for nesting/organization.
 
 To run the script use Python 3.9 (I guess 3.8 would work as well, but I'm not sure) and make sure to run it from this directory.
 If something went wrong the script will try to tell you the name of the file involved in the error.
+
+# Misc
+
+If you cannot push to HitHub based on its maximal file size of 100MB, try running
+
+```
+git lfs migrate import --above="100MB"
+```
+
+this will rewrite the **local** commits (make sure everything is committed) to use LFS for all files larger than 100MB.
