@@ -195,6 +195,36 @@ TESTCASES = [
         "name": "External General Entity (remote)",
     },
     {
+        "id": "B-EGE-LX",
+        "prefixed_code": f"""\
+            <!DOCTYPE model [
+                <!ENTITY obj SYSTEM "file://{join(STATIC_FILE_DIR_DST, "3mf-object.xml")}">
+            ]>
+            """,
+        "postfixed_code": "",
+        "model_manipulation": [
+            _delete_children(CT_Resources().tag, [CT_Object]),
+            _set_value(CT_Resources().tag, "&obj;"),
+        ],
+        "type": "Functionality",
+        "name": "External General Entity (local, XML content)",
+    },
+    {
+        "id": "B-EGE-RX",
+        "prefixed_code": f"""\
+            <!DOCTYPE model [
+                <!ENTITY obj SYSTEM "{LOCAL_SERVER}/3mf-object.xml">
+            ]>
+            """,
+        "postfixed_code": "",
+        "model_manipulation": [
+            _delete_children(CT_Resources().tag, [CT_Object]),
+            _set_value(CT_Resources().tag, "&obj;"),
+        ],
+        "type": "Functionality",
+        "name": "External General Entity (remote, XML content)",
+    },
+    {
         "id": "B-EPE-L",
         "prefixed_code": f"""\
             <!DOCTYPE model [

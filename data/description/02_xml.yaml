@@ -113,8 +113,24 @@ tests:
     expected_behavior: Ignore DTD or Fail
     type: Functionality
 
+  XML-MOD-B-EGE-LX:
+    name: External General Entity (local, XML content) (in .model file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Functionality
+
   XML-MOD-B-EGE-R:
     name: External General Entity (remote) (in .model file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Functionality
+
+  XML-MOD-B-EGE-RX:
+    name: External General Entity (remote, XML content) (in .model file)
     created: true
     conforms_to_spec:
       core: Invalid XML
