@@ -21,8 +21,6 @@ ROOT_DIR = abspath(join(dirname(__file__), "..", ".."))
 # directories in the src folder
 SFTA_DIR = join(ROOT_DIR, "src", "PS-SFTA")
 LIB3MF_DIR = join(ROOT_DIR, "src", "lib3mf_sdk_v2.1.1")
-TESTFILE_SRC_DIR = join(ROOT_DIR, "src", "testcases")
-TESTFILE_GENERATED_SRC_DIR = join(TESTFILE_SRC_DIR, "generated")
 
 # build directory
 BUILD_DIR = join(ROOT_DIR, "build")
@@ -33,6 +31,8 @@ DESCRIPTION_DIR = join(DATA_DIR, "description")
 DESCRIPTION_GLOB = join(DESCRIPTION_DIR, "[0-9]*_*.yaml")
 EVALUATION_DIR = join(DATA_DIR, "evaluation")
 PROGRAMS_DIR = join(DATA_DIR, "programs")
+TESTFILE_SRC_DIR = join(ROOT_DIR, "data", "testcases")
+TESTFILE_GENERATED_SRC_DIR = join(TESTFILE_SRC_DIR, "generated")
 # maps the 3MF specifications to the existing XSD file paths
 XSD_FILES = {
     Path(path).stem.replace("3mf-", ""): path for path in glob(join(DATA_DIR, "xsd", "3mf-*.xsd"))
@@ -40,6 +40,7 @@ XSD_FILES = {
 
 # infos for the simple HTTP server (needed for some attacks)
 STATIC_FILE_DIR_SRC = join(TESTFILE_SRC_DIR, "server_files")
+# STATIC_FILE_DIR_SRC has to be in testcase folder so the build script pics it up
 STATIC_FILE_DIR_DST = join(BUILD_DIR, "server_files")
 SERVER_PORT = 8080
 SERVER_NAME = "localhost"
