@@ -30,7 +30,7 @@ tests:
       confidence: high
     missing_process_info: 3
     problems:
-      - No screenshot files.
+    - No screenshot files.
     critical: true
     has_server_log: true
   CS-MUDT:
@@ -397,7 +397,7 @@ tests:
     status: aborted
     critical: true
     problems:
-      - Process did not start in 5 seconds.
+    - Process did not start in 5 seconds.
   DOS-FUZ-SLIC3R-1:
     info: crashed after selecting the object
     image_similarity:
@@ -730,6 +730,13 @@ tests:
       is_outlier: false
       confidence: medium
     has_server_log: true
+  XML-MOD-B-EGE-LX:
+    info: TODO
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
+    has_server_log: true
   XML-MOD-B-EGE-R:
     info: TODO
     image_similarity:
@@ -741,6 +748,13 @@ tests:
       status: loaded
       is_outlier: false
       confidence: medium
+    has_server_log: true
+  XML-MOD-B-EGE-RX:
+    info: TODO
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-B-EPE-L:
     info: TODO
@@ -1578,7 +1592,7 @@ tests:
       confidence: high
     missing_process_info: 3
     problems:
-      - No screenshot files.
+    - No screenshot files.
     critical: true
     has_server_log: true
     status: aborted
@@ -2214,7 +2228,7 @@ tests:
       confidence: high
     missing_process_info: 2
     problems:
-      - No screenshot files.
+    - No screenshot files.
     critical: true
     has_server_log: true
     status: aborted
@@ -2238,7 +2252,7 @@ tests:
       confidence: high
     missing_process_info: 2
     problems:
-      - No screenshot files.
+    - No screenshot files.
     critical: true
     has_server_log: true
     status: aborted
@@ -2370,7 +2384,7 @@ tests:
       confidence: high
     missing_process_info: 2
     problems:
-      - No screenshot files.
+    - No screenshot files.
     critical: true
     has_server_log: true
     status: aborted
@@ -2394,7 +2408,7 @@ tests:
       confidence: high
     missing_process_info: 2
     problems:
-      - No screenshot files.
+    - No screenshot files.
     critical: true
     has_server_log: true
     status: aborted
@@ -2418,7 +2432,7 @@ tests:
       confidence: high
     missing_process_info: 2
     problems:
-      - No screenshot files.
+    - No screenshot files.
     critical: true
     has_server_log: true
     status: aborted
@@ -2862,7 +2876,7 @@ tests:
       confidence: high
     missing_process_info: 2
     problems:
-      - No screenshot files.
+    - No screenshot files.
     critical: true
     has_server_log: true
     status: aborted

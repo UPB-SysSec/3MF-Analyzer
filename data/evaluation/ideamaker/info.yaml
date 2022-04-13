@@ -24,7 +24,7 @@ tests:
       confidence: high
     status: aborted
     problems:
-      - No screenshot files.
+    - No screenshot files.
     critical: true
     has_server_log: true
   CS-MUDT:
@@ -313,7 +313,7 @@ tests:
     status: aborted
     missing_process_info: 5
     problems:
-      - No screenshot files.
+    - No screenshot files.
     critical: true
     has_server_log: true
   DOS-CR-SE:
@@ -697,6 +697,9 @@ tests:
       is_outlier: false
       confidence: high
     has_server_log: true
+  XML-MOD-B-EGE-LX:
+    info: TODO
+    has_server_log: true
   XML-MOD-B-EGE-R:
     info: TODO
     image_similarity:
@@ -708,6 +711,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
+    has_server_log: true
+  XML-MOD-B-EGE-RX:
+    info: TODO
     has_server_log: true
   XML-MOD-B-EPE-L:
     info: TODO

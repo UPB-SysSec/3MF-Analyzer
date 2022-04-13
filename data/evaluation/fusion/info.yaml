@@ -337,7 +337,7 @@ tests:
     info: crashed
     critical: true
     problems:
-      - Process did not start in 5 seconds.
+    - Process did not start in 5 seconds.
   DOS-FUZ-SAVITAR-0:
     info: TODO
     image_similarity:
@@ -694,6 +694,9 @@ tests:
       is_outlier: false
       confidence: high
     has_server_log: true
+  XML-MOD-B-EGE-LX:
+    info: TODO
+    has_server_log: true
   XML-MOD-B-EGE-R:
     info: TODO
     image_similarity:
@@ -705,6 +708,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    has_server_log: true
+  XML-MOD-B-EGE-RX:
+    info: TODO
     has_server_log: true
   XML-MOD-B-EPE-L:
     info: TODO

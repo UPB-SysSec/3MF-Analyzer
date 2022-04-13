@@ -75,7 +75,7 @@ tests:
       confidence: high
     critical: true
     problems:
-      - Window did not start in 30 seconds.
+    - Window did not start in 30 seconds.
   CS-S-NEBS:
     info: TODO
     image_similarity:
@@ -345,7 +345,7 @@ tests:
       confidence: high
     critical: true
     problems:
-      - Window did not start in 30 seconds.
+    - Window did not start in 30 seconds.
   DOS-CR-SE:
     status: loaded/sliced
     info: pyramid
@@ -379,7 +379,7 @@ tests:
     status: aborted
     critical: true
     problems:
-      - Window did not start in 30 seconds.
+    - Window did not start in 30 seconds.
   DOS-FUZ-SAVITAR-1:
     info: crashed
     interpretation:
@@ -389,7 +389,7 @@ tests:
     status: aborted
     critical: true
     problems:
-      - Window did not start in 30 seconds.
+    - Window did not start in 30 seconds.
   DOS-FUZ-SLIC3R-0:
     info: TODO
     image_similarity:
@@ -726,6 +726,9 @@ tests:
       is_outlier: false
       confidence: high
     has_server_log: true
+  XML-MOD-B-EGE-LX:
+    info: TODO
+    has_server_log: true
   XML-MOD-B-EGE-R:
     info: TODO
     image_similarity:
@@ -737,6 +740,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
+    has_server_log: true
+  XML-MOD-B-EGE-RX:
+    info: TODO
     has_server_log: true
   XML-MOD-B-EPE-L:
     info: TODO
@@ -1719,7 +1725,7 @@ tests:
       confidence: high
     critical: true
     problems:
-      - Window did not start in 30 seconds.
+    - Window did not start in 30 seconds.
   GEN-C-AI-VERTEX-Y-0:
     info: "crashes"
     status: aborted
@@ -1729,7 +1735,7 @@ tests:
       confidence: high
     critical: true
     problems:
-      - Window did not start in 30 seconds.
+    - Window did not start in 30 seconds.
   GEN-C-AI-VERTEX-Z-0:
     info: "crashes"
     status: aborted
@@ -1739,7 +1745,7 @@ tests:
       confidence: high
     critical: true
     problems:
-      - Window did not start in 30 seconds.
+    - Window did not start in 30 seconds.
   GEN-C-AR-BASE-DISPLAYCOLOR-0:
     info: TODO
     image_similarity:

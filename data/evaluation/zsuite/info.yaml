@@ -695,6 +695,13 @@ tests:
       is_outlier: false
       confidence: high
     has_server_log: true
+  XML-MOD-B-EGE-LX:
+    info: TODO
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
+    has_server_log: true
   XML-MOD-B-EGE-R:
     info: TODO
     image_similarity:
@@ -706,6 +713,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    has_server_log: true
+  XML-MOD-B-EGE-RX:
+    info: TODO
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-B-EPE-L:
     info: TODO

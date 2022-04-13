@@ -304,8 +304,7 @@ tests:
       confidence: medium
     has_server_log: true
   DOS-BL-MBR:
-    info:
-      loads a bit slower. rendering smooth. seems to load all objects, but are
+    info: loads a bit slower. rendering smooth. seems to load all objects, but are
       combined in one (hence the rendering smoothness)
     image_similarity:
       similar_to:
@@ -338,7 +337,7 @@ tests:
     status: aborted
     critical: true
     problems:
-      - Process did not start in 5 seconds.
+    - Process did not start in 5 seconds.
   DOS-FUZ-SAVITAR-0:
     interpretation:
       status: aborted
@@ -347,7 +346,7 @@ tests:
     status: aborted
     critical: true
     problems:
-      - Process did not start in 5 seconds.
+    - Process did not start in 5 seconds.
   DOS-FUZ-SAVITAR-1:
     interpretation:
       status: aborted
@@ -356,7 +355,7 @@ tests:
     status: aborted
     critical: true
     problems:
-      - Process did not start in 5 seconds.
+    - Process did not start in 5 seconds.
   DOS-FUZ-SLIC3R-0:
     info: TODO
     image_similarity:
@@ -694,6 +693,9 @@ tests:
       is_outlier: false
       confidence: high
     has_server_log: true
+  XML-MOD-B-EGE-LX:
+    info: TODO
+    has_server_log: true
   XML-MOD-B-EGE-R:
     info: TODO
     image_similarity:
@@ -705,6 +707,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    has_server_log: true
+  XML-MOD-B-EGE-RX:
+    info: TODO
     has_server_log: true
   XML-MOD-B-EPE-L:
     info: TODO
