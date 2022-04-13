@@ -426,7 +426,7 @@ tests:
     created: true
     conforms_to_spec:
       core: |-
-        Invalid 3MF: <Element 'model' at 0x00000208DBD209A0> is not an element of the schema
+        Invalid 3MF: <Element 'model' at 0x000002776282EE00> is not an element of the schema
     type: Content Spoofing, Namespace Confusion
 
   GEN-C-AR-OBJECT-ID-0:
@@ -2128,8 +2128,7 @@ tests:
     created: true
     conforms_to_spec:
       core: Valid
-      slice:
-        "Invalid 3MF: attribute ztop='1,000.01': value doesn't match any pattern\
+      slice: "Invalid 3MF: attribute ztop='1,000.01': value doesn't match any pattern\
         \ of ['((\\\\-|\\\\+)?(([0-9]+(\\\\.[0-9]+)?)|(\\\\.[0-9]+))((e|E)(\\\\-|\\\
         \\+)?[0-9]+)?)']"
     type: Content Spoofing, Property Confusion, Property Invalid
@@ -2147,8 +2146,7 @@ tests:
     created: true
     conforms_to_spec:
       core: Valid
-      slice:
-        "Invalid 3MF: attribute zbottom='1,000.01': value doesn't match any pattern\
+      slice: "Invalid 3MF: attribute zbottom='1,000.01': value doesn't match any pattern\
         \ of ['((\\\\-|\\\\+)?(([0-9]+(\\\\.[0-9]+)?)|(\\\\.[0-9]+))((e|E)(\\\\-|\\\
         \\+)?[0-9]+)?)']"
     type: Content Spoofing, Property Confusion, Property Invalid
@@ -2158,8 +2156,7 @@ tests:
     created: true
     conforms_to_spec:
       core: Valid
-      slice:
-        "Invalid 3MF: attribute x='1,000.01': value doesn't match any pattern\
+      slice: "Invalid 3MF: attribute x='1,000.01': value doesn't match any pattern\
         \ of ['((\\\\-|\\\\+)?(([0-9]+(\\\\.[0-9]+)?)|(\\\\.[0-9]+))((e|E)(\\\\-|\\\
         \\+)?[0-9]+)?)']"
     type: Content Spoofing, Property Confusion, Property Invalid
@@ -2169,8 +2166,7 @@ tests:
     created: true
     conforms_to_spec:
       core: Valid
-      slice:
-        "Invalid 3MF: attribute y='1,000.01': value doesn't match any pattern\
+      slice: "Invalid 3MF: attribute y='1,000.01': value doesn't match any pattern\
         \ of ['((\\\\-|\\\\+)?(([0-9]+(\\\\.[0-9]+)?)|(\\\\.[0-9]+))((e|E)(\\\\-|\\\
         \\+)?[0-9]+)?)']"
     type: Content Spoofing, Property Confusion, Property Invalid
@@ -2278,8 +2274,7 @@ tests:
     created: true
     conforms_to_spec:
       core: Valid
-      slice:
-        "Invalid 3MF: Unexpected child with tag '{http://schemas.microsoft.com/3dmanufacturing/slice/2015/07}vertices'\
+      slice: "Invalid 3MF: Unexpected child with tag '{http://schemas.microsoft.com/3dmanufacturing/slice/2015/07}vertices'\
         \ at position 2."
     type: Content Spoofing, Property Confusion, Property Duplication
     further_infos: The child is a duplicate with the same ID as a sibling.
@@ -2364,8 +2359,7 @@ tests:
     created: true
     conforms_to_spec:
       core: Valid
-      slice:
-        "Invalid 3MF: The content of element '{http://schemas.microsoft.com/3dmanufacturing/slice/2015/07}polygon'\
+      slice: "Invalid 3MF: The content of element '{http://schemas.microsoft.com/3dmanufacturing/slice/2015/07}polygon'\
         \ is not complete. Tag 'segment' expected."
     type: Content Spoofing, Reference Confusion, Reference Broken
 
@@ -2390,7 +2384,6 @@ tests:
     created: true
     conforms_to_spec:
       core: Valid
-      slice:
-        "Invalid 3MF: The content of element '{http://schemas.microsoft.com/3dmanufacturing/slice/2015/07}vertices'\
+      slice: "Invalid 3MF: The content of element '{http://schemas.microsoft.com/3dmanufacturing/slice/2015/07}vertices'\
         \ is not complete. Tag 'vertex' expected."
     type: Content Spoofing, Property Confusion, Property Invalid
