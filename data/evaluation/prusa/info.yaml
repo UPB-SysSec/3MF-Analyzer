@@ -1226,6 +1226,16 @@ tests:
       is_outlier: false
       confidence: medium
     has_server_log: true
+  XML-EGE-I-R:
+    info: TODO
+    critical: true
+    problems:
+    - Process did not start in 5 seconds.
+  XML-EGE-I-NR:
+    info: TODO
+    critical: true
+    problems:
+    - Window did not start in 30 seconds.
   GEN-C-ADA-BASE-DISPLAYCOLOR-0:
     info: TODO
     interpretation:
