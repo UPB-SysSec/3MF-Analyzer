@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE model [
+    <!ENTITY obj SYSTEM "file://cylinder.xml">
+]>
+
+<model xmlns="http://schemas.microsoft.com/3dmanufacturing/core/2015/02" unit="millimeter" xml:lang="en-US"
+	xmlns:m="http://schemas.microsoft.com/3dmanufacturing/material/2015/02">
+	<resources>
+		<object id="1" name="Pyramid" type="model">
+			<mesh>
+				<vertices>
+					<vertex x="160.00000" y="80.00000" z="0" />
+					<vertex x="104.72136" y="156.08452" z="0" />
+					<vertex x="15.27864" y="127.02281" z="0" />
+					<vertex x="15.27864" y="32.97717" z="0" />
+					<vertex x="104.72137" y="3.91548" z="0" />
+					<vertex x="80.00000" y="80.00000" z="100.00000" />
+					<vertex x="80.00000" y="80.00000" z="0" />
+				</vertices>
+				<triangles>
+					<triangle v1="6" v2="1" v3="0" />
+					<triangle v1="6" v2="2" v3="1" />
+					<triangle v1="6" v2="3" v3="2" />
+					<triangle v1="6" v2="4" v3="3" />
+					<triangle v1="6" v2="0" v3="4" />
+					<triangle v1="0" v2="1" v3="5" />
+					<triangle v1="1" v2="2" v3="5" />
+					<triangle v1="2" v2="3" v3="5" />
+					<triangle v1="3" v2="4" v3="5" />
+					<triangle v1="4" v2="0" v3="5" />
+				</triangles>
+			</mesh>
+		</object>
+		&obj;
+	</resources>
+	<build>
+		<item objectid="1" />
+	</build>
+</model>
