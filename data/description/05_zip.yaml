@@ -3,6 +3,10 @@ scope: ZIP
 footnotes:
   ZIP01: |
     Checks if program behaves differently for, e.g., `3Dmodel` vs `3dmodel` on Windows.
+  ZIP02: |
+    Source: https://www.bamsoftware.com/hacks/zipbomb/
+  ZIP03: |
+    Source: https://github.com/AyrA/ZipBomb
 
 tests:
   ZIP-SL-S:
@@ -68,3 +72,66 @@ tests:
     expected_behavior: Fail
     further_infos: |
       OPC requires it as a supported extension.
+
+  ZIP-zblg:
+    Name: ZIP Bomb zblg
+    type: Denial of Service
+    created: true
+    conforms_to_spec: n
+    expected_behavior: Fail
+    further_infos: |
+      [^ZIP02]
+
+  ZIP-zbsm:
+    Name: ZIP Bomb zbsm
+    type: Denial of Service
+    created: true
+    conforms_to_spec: n
+    expected_behavior: Fail
+    further_infos: |
+      [^ZIP02]
+
+  ZIP-zbxl:
+    Name: ZIP Bomb zbxl
+    type: Denial of Service
+    created: true
+    conforms_to_spec: n
+    expected_behavior: Fail
+    further_infos: |
+      [^ZIP02]
+
+  ZIP-10:
+    Name: ZIP Bomb 10
+    type: Denial of Service
+    created: true
+    conforms_to_spec: n
+    expected_behavior: Fail
+    further_infos: |
+      [^ZIP03]
+
+  ZIP-20:
+    Name: ZIP Bomb 20
+    type: Denial of Service
+    created: true
+    conforms_to_spec: n
+    expected_behavior: Fail
+    further_infos: |
+      [^ZIP03]
+
+  ZIP-30:
+    Name: ZIP Bomb 30
+    type: Denial of Service
+    created: true
+    conforms_to_spec: n
+    expected_behavior: Fail
+    further_infos: |
+      [^ZIP03]
+
+  ZIP-34:
+    Name: ZIP Bomb 34
+    type: Denial of Service
+    created: true
+    conforms_to_spec: n
+    expected_behavior: Fail
+    further_infos: |
+      [^ZIP03]
