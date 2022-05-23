@@ -1,5 +1,5 @@
 These tests are based on files from the <https://github.com/3MFConsortium/3mf-samples> repository
-and, hence, are licenced under the BSD 2-Clause license.
+and, hence, are licensed under the BSD 2-Clause license.
 
 Copyright (c) 2018 3MF Consortium
 
