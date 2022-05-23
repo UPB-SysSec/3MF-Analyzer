@@ -57,7 +57,7 @@ tests:
     created: true
     expected_behavior: Fail
     further_infos: |
-      Modify ZIP headers in binary so that there are two `3dmodel` files, see what happens.
+      Modify ZIP headers in binary so that there are two `3dmodel` files, see what happens.
       Add case A/B where one is the reversed (so we can test whether always the first is taken).
 
   ZIP-64:
