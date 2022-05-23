@@ -140,7 +140,9 @@ TESTCASES = [
     {
         "id": "B-IGE",
         "prefixed_code": """\
-            <!DOCTYPE model [
+            <!DOCTYPE {ROOT} [
+                {DTD}
+
                 <!ENTITY a0 "successful!" >
             ]>
             """,
@@ -154,7 +156,9 @@ TESTCASES = [
     {
         "id": "B-IPE",
         "prefixed_code": """\
-            <!DOCTYPE model [
+            <!DOCTYPE {ROOT} [
+                {DTD}
+
                 <!ENTITY % outer "<!ENTITY a0 'successful!'>">
                 %outer;
             ]>
@@ -169,7 +173,9 @@ TESTCASES = [
     {
         "id": "B-EGE-L",
         "prefixed_code": f"""\
-            <!DOCTYPE model [
+            <!DOCTYPE {{ROOT}} [
+                {{DTD}}
+
                 <!ENTITY a0 SYSTEM "file://{join(STATIC_FILE_DIR_DST, "test.txt")}">
             ]>
             """,
@@ -183,7 +189,9 @@ TESTCASES = [
     {
         "id": "B-EGE-R",
         "prefixed_code": f"""\
-            <!DOCTYPE model [
+            <!DOCTYPE {{ROOT}} [
+                {{DTD}}
+
                 <!ENTITY a0 SYSTEM "{LOCAL_SERVER}/test.txt">
             ]>
             """,
@@ -197,7 +205,9 @@ TESTCASES = [
     {
         "id": "B-EGE-LX",
         "prefixed_code": f"""\
-            <!DOCTYPE model [
+            <!DOCTYPE {{ROOT}} [
+                {{DTD}}
+
                 <!ENTITY obj SYSTEM "file://{join(STATIC_FILE_DIR_DST, "3mf-object.xml")}">
             ]>
             """,
@@ -212,7 +222,9 @@ TESTCASES = [
     {
         "id": "B-EGE-RX",
         "prefixed_code": f"""\
-            <!DOCTYPE model [
+            <!DOCTYPE {{ROOT}} [
+                {{DTD}}
+
                 <!ENTITY obj SYSTEM "{LOCAL_SERVER}/3mf-object.xml">
             ]>
             """,
@@ -227,7 +239,9 @@ TESTCASES = [
     {
         "id": "B-EPE-L",
         "prefixed_code": f"""\
-            <!DOCTYPE model [
+            <!DOCTYPE {{ROOT}} [
+                {{DTD}}
+
                 <!ENTITY % dtd SYSTEM "file://{join(STATIC_FILE_DIR_DST, "test.dtd")}">
                 %dtd;
             ]>
@@ -242,7 +256,9 @@ TESTCASES = [
     {
         "id": "B-EPE-R",
         "prefixed_code": f"""\
-            <!DOCTYPE model [
+            <!DOCTYPE {{ROOT}} [
+                {{DTD}}
+
                 <!ENTITY % dtd SYSTEM "{LOCAL_SERVER}/test.dtd" >
                 %dtd;
             ]>
@@ -257,17 +273,19 @@ TESTCASES = [
     {
         "id": "DOS-BL",
         "prefixed_code": """\
-            <!DOCTYPE model [
+            <!DOCTYPE {ROOT} [
+                {DTD}
+
                 <!ENTITY lol0 "lollollollollollollollollollol">
                 <!ENTITY lol1 "&lol0;&lol0;&lol0;&lol0;&lol0;&lol0;&lol0;&lol0;&lol0;&lol0;">
                 <!ENTITY lol2 "&lol1;&lol1;&lol1;&lol1;&lol1;&lol1;&lol1;&lol1;&lol1;&lol1;">
                 <!ENTITY lol3 "&lol2;&lol2;&lol2;&lol2;&lol2;&lol2;&lol2;&lol2;&lol2;&lol2;">
                 <!ENTITY lol4 "&lol3;&lol3;&lol3;&lol3;&lol3;&lol3;&lol3;&lol3;&lol3;&lol3;">
                 <!ENTITY lol5 "&lol4;&lol4;&lol4;&lol4;&lol4;&lol4;&lol4;&lol4;&lol4;&lol4;">
-                <!ENTITY lol6 "&lol6;&lol6;&lol6;&lol6;&lol6;&lol6;&lol6;&lol6;&lol6;&lol6;">
-                <!ENTITY lol7 "&lol7;&lol7;&lol7;&lol7;&lol7;&lol7;&lol7;&lol7;&lol7;&lol7;">
-                <!ENTITY lol8 "&lol8;&lol8;&lol8;&lol8;&lol8;&lol8;&lol8;&lol8;&lol8;&lol8;">
-                <!ENTITY lol9 "&lol9;&lol9;&lol9;&lol9;&lol9;&lol9;&lol9;&lol9;&lol9;&lol9;">
+                <!ENTITY lol6 "&lol5;&lol5;&lol5;&lol5;&lol5;&lol5;&lol5;&lol5;&lol5;&lol5;">
+                <!ENTITY lol7 "&lol6;&lol6;&lol6;&lol6;&lol6;&lol6;&lol6;&lol6;&lol6;&lol6;">
+                <!ENTITY lol8 "&lol7;&lol7;&lol7;&lol7;&lol7;&lol7;&lol7;&lol7;&lol7;&lol7;">
+                <!ENTITY lol9 "&lol8;&lol8;&lol8;&lol8;&lol8;&lol8;&lol8;&lol8;&lol8;&lol8;">
 
                 <!ENTITY lol "&lol9;">
             ]>
@@ -282,8 +300,8 @@ TESTCASES = [
     {
         "id": "DOS-BL-PE-R",
         "prefixed_code": f"""\
-            <!DOCTYPE model SYSTEM "{LOCAL_SERVER}/dos.dtd" [
-                <!ELEMENT model (#PCDATA)>
+            <!DOCTYPE {{ROOT}} SYSTEM "{LOCAL_SERVER}/dos.dtd" [
+                {{DTD}}
             ]>
             """,
         "postfixed_code": "",
@@ -296,7 +314,9 @@ TESTCASES = [
     {
         "id": "DOS-C",
         "prefixed_code": """\
-            <!DOCTYPE model [
+            <!DOCTYPE {ROOT} [
+                {DTD}
+
                 <!ENTITY a "a&b;" >
                 <!ENTITY b "&a;" >
             ]>
@@ -311,12 +331,19 @@ TESTCASES = [
     {
         "id": "DOS-PL",
         "prefixed_code": """\
-            <!DOCTYPE r [
-            <!ENTITY % pe_1 "<!---->">
-            <!ENTITY % pe_2 "&#37;pe_1;<!---->&#37;pe_1;">
-            <!ENTITY % pe_3 "&#37;pe_2;<!---->&#37;pe_2;">
-            %pe_3; <!-- not at full potential, increase towards "%pe40;"
-                        carefully -->
+            <!DOCTYPE {ROOT} [
+                {DTD}
+
+                <!ENTITY % pe_1 "<!---->">
+                <!ENTITY % pe_2 "&#37;pe_1;<!---->&#37;pe_1;">
+                <!ENTITY % pe_3 "&#37;pe_2;<!---->&#37;pe_2;">
+                <!ENTITY % pe_3 "&#37;pe_3;<!---->&#37;pe_3;">
+                <!ENTITY % pe_3 "&#37;pe_4;<!---->&#37;pe_4;">
+                <!ENTITY % pe_3 "&#37;pe_5;<!---->&#37;pe_5;">
+                <!ENTITY % pe_3 "&#37;pe_6;<!---->&#37;pe_6;">
+                <!ENTITY % pe_3 "&#37;pe_7;<!---->&#37;pe_7;">
+                <!ENTITY % pe_3 "&#37;pe_8;<!---->&#37;pe_8;">
+                <!ENTITY % pe_3 "&#37;pe_9;<!---->&#37;pe_9;">
             ]>
             """,
         "postfixed_code": "",
@@ -332,8 +359,9 @@ TESTCASES = [
     {
         "id": "FBC-BPR-A",
         "prefixed_code": f"""\
-            <!DOCTYPE model [
-                <!ELEMENT model (#ANY)>
+            <!DOCTYPE {{ROOT}} [
+                {{DTD}}
+
                 <!ENTITY % start "<![CDATA[">
                 <!ENTITY % goodies SYSTEM "file://{join(STATIC_FILE_DIR_DST, "test.txt")}">
                 <!ENTITY % end "]]>">
@@ -351,7 +379,7 @@ TESTCASES = [
     {
         "id": "FBC-BPR-B",
         "prefixed_code": f"""\
-            <!DOCTYPE model SYSTEM "{LOCAL_SERVER}/parameterEntity_doctype.dtd">
+            <!DOCTYPE {{ROOT}} SYSTEM "{LOCAL_SERVER}/parameterEntity_doctype.dtd">
         """,
         "postfixed_code": "",
         "model_manipulation": [_set_value(CT_Metadata().tag, "&all;")],
@@ -363,7 +391,9 @@ TESTCASES = [
     {
         "id": "FBC-AV",
         "prefixed_code": f"""\
-            <!DOCTYPE data [
+            <!DOCTYPE {{ROOT}} [
+                {{DTD}}
+
                 <!ENTITY % remote SYSTEM "{LOCAL_SERVER}/external_entity_attribute.dtd">
                 %remote;
             ]>
@@ -382,7 +412,9 @@ TESTCASES = [
     {
         "id": "FBC-E",
         "prefixed_code": f"""\
-            <!DOCTYPE message [
+            <!DOCTYPE {{ROOT}} [
+                {{DTD}}
+
                 <!ENTITY % ext SYSTEM "{LOCAL_SERVER}/error-based.dtd">
                 %ext;
             ]>
@@ -396,7 +428,9 @@ TESTCASES = [
     {
         "id": "FBC-E-L",
         "prefixed_code": f"""\
-            <!DOCTYPE message [
+            <!DOCTYPE {{ROOT}} [
+                {{DTD}}
+
                 <!ENTITY % local_dtd SYSTEM "file://{join(STATIC_FILE_DIR_DST, "error-based-local.dtd")}">
 
                 <!ENTITY % condition 'aaa)>
@@ -418,7 +452,7 @@ TESTCASES = [
     {
         "id": "OOB-R",
         "prefixed_code": f"""\
-            <!DOCTYPE data SYSTEM "{LOCAL_SERVER}/parameterEntity_oob.dtd">
+            <!DOCTYPE {{ROOT}} SYSTEM "{LOCAL_SERVER}/parameterEntity_oob.dtd">
         """,
         "postfixed_code": "",
         "model_manipulation": [_set_value(CT_Metadata().tag, "&send;")],
@@ -430,10 +464,12 @@ TESTCASES = [
     {
         "id": "OOB-PE-R",
         "prefixed_code": f"""\
-            <!DOCTYPE data [
-            <!ENTITY % remote SYSTEM "{LOCAL_SERVER}/parameterEntity_sendhttp.dtd">
-            %remote;
-            %send;
+            <!DOCTYPE {{ROOT}} [
+                {{DTD}}
+
+                <!ENTITY % remote SYSTEM "{LOCAL_SERVER}/parameterEntity_sendhttp.dtd">
+                %remote;
+                %send;
             ]>
         """,
         "postfixed_code": "",
@@ -445,9 +481,11 @@ TESTCASES = [
     {
         "id": "OOB-SL",
         "prefixed_code": f"""\
-            <!DOCTYPE data [
-            <!ENTITY % remote SYSTEM "{LOCAL_SERVER}/external_entity_attribute.dtd">
-            %remote;
+            <!DOCTYPE {{ROOT}} [
+                {{DTD}}
+
+                <!ENTITY % remote SYSTEM "{LOCAL_SERVER}/external_entity_attribute.dtd">
+                %remote;
             ]>
         """,
         "postfixed_code": "",
@@ -479,9 +517,11 @@ TESTCASES = [
     {
         "id": "OOB-NNSL",
         "prefixed_code": f"""\
-            <!DOCTYPE data [
-            <!ENTITY % remote SYSTEM "{LOCAL_SERVER}/external_entity_attribute.dtd">
-            %remote;
+            <!DOCTYPE {{ROOT}} [
+                {{DTD}}
+
+                <!ENTITY % remote SYSTEM "{LOCAL_SERVER}/external_entity_attribute.dtd">
+                %remote;
             ]>
         """,
         "postfixed_code": "",
@@ -511,9 +551,11 @@ TESTCASES = [
     {
         "id": "OOB-XI",
         "prefixed_code": f"""\
-            <!DOCTYPE data [
-            <!ENTITY % remote SYSTEM "{LOCAL_SERVER}/external_entity_attribute.dtd">
-            %remote;
+            <!DOCTYPE {{ROOT}} [
+                {{DTD}}
+
+                <!ENTITY % remote SYSTEM "{LOCAL_SERVER}/external_entity_attribute.dtd">
+                %remote;
             ]>
         """,
         "postfixed_code": "",

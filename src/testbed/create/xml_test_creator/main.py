@@ -5,7 +5,8 @@ from textwrap import dedent
 from typing import Dict, Generator
 
 from ... import STATIC_FILE_DIR_SRC, TESTFILE_GENERATED_SRC_DIR
-from .base_objects import BASE_MODEL, BASE_RELATIONSHIP
+from ..tmf_model_mutator.base import ComplexType
+from .base_objects import BASE_MODEL, BASE_MODEL_DTD, BASE_RELATIONSHIP, BASE_RELATIONSHIP_DTD
 from .server_files import SERVER_FILES
 from .test_cases import TESTCASES
 
@@ -14,22 +15,32 @@ def create_xml_testcases() -> Generator[Dict[str, str], None, None]:
     """Creates the defined test files."""
 
     def _create_xml_testcases(
-        base_element, folder_name, id_prefix, manipulation_property, file_suffix, description_addon
+        base_element: ComplexType,
+        dtd: str,
+        folder_name: str,
+        id_prefix: str,
+        manipulation_property: str,
+        file_suffix: str,
+        description_addon: str,
     ):
         destination_folder = join(TESTFILE_GENERATED_SRC_DIR, folder_name)
+        code_format_paramters = {
+            "ROOT": base_element.tag,
+            "DTD": dtd,
+        }
         for testcase in TESTCASES:
             if testcase.get(manipulation_property) is None:
                 continue
             xml = '<?xml version="1.0" encoding="utf-8"?>\n'
             xml += "\n"
-            xml += dedent(testcase.get("prefixed_code", "")) + "\n"
+            xml += dedent(testcase.get("prefixed_code", "")).format(**code_format_paramters) + "\n"
             xml += "\n"
             base = deepcopy(base_element)
             for function in testcase.get(manipulation_property, []):
                 base = function(base)
             xml += base.to_xml()
             xml += "\n"
-            xml += dedent(testcase.get("postfixed_code", "")) + "\n"
+            xml += dedent(testcase.get("postfixed_code", "")).format(**code_format_paramters) + "\n"
 
             while "\n\n\n" in xml:
                 xml = xml.replace("\n\n\n", "\n\n")
@@ -48,6 +59,7 @@ def create_xml_testcases() -> Generator[Dict[str, str], None, None]:
 
     yield from _create_xml_testcases(
         BASE_MODEL,
+        BASE_MODEL_DTD,
         "xml.3mf_models",
         "XML-MOD-",
         "model_manipulation",
@@ -56,6 +68,7 @@ def create_xml_testcases() -> Generator[Dict[str, str], None, None]:
     )
     yield from _create_xml_testcases(
         BASE_MODEL,
+        BASE_MODEL_DTD,
         "xml.3mf_models",
         "XML-MOD-ALT-",
         "model_alt_manipulation",
@@ -64,6 +77,7 @@ def create_xml_testcases() -> Generator[Dict[str, str], None, None]:
     )
     yield from _create_xml_testcases(
         BASE_RELATIONSHIP,
+        BASE_RELATIONSHIP_DTD,
         "xml.3mf_rels",
         "XML-REL-",
         "rels_manipulation",

@@ -109,3 +109,49 @@ BASE_RELATIONSHIP = CT_ANY(
         ),
     ],
 )
+
+# generated with <http://saxon.sourceforge.net/dtdgen.html>
+# explicitly for the model used in the generation
+BASE_MODEL_DTD = """<!ELEMENT model ANY >
+    <!ATTLIST model unit NMTOKEN 'millimeter'>
+    <!ATTLIST model xml:lang NMTOKEN 'en-US' >
+    <!ATTLIST model xmlns CDATA 'http://schemas.microsoft.com/3dmanufacturing/core/2015/02' >
+
+    <!ELEMENT metadata ANY >
+    <!ATTLIST metadata name NMTOKEN 'Title' >
+
+    <!ELEMENT resources ANY >
+
+    <!ELEMENT object ANY >
+    <!ATTLIST object id NMTOKEN '1' >
+    <!ATTLIST object type NMTOKEN 'model' >
+
+    <!ELEMENT mesh ANY >
+
+    <!ELEMENT vertices ANY >
+
+    <!ELEMENT vertex ANY >
+    <!ATTLIST vertex x NMTOKEN '0' >
+    <!ATTLIST vertex y NMTOKEN '0' >
+    <!ATTLIST vertex z NMTOKEN '0' >
+
+    <!ELEMENT triangles ANY >
+
+    <!ELEMENT triangle ANY >
+    <!ATTLIST triangle v1 NMTOKEN '0' >
+    <!ATTLIST triangle v2 NMTOKEN '0' >
+    <!ATTLIST triangle v3 NMTOKEN '0' >
+
+    <!ELEMENT build ANY >
+    <!ELEMENT item ANY >
+    <!ATTLIST item objectid NMTOKEN '1' >
+"""
+
+BASE_RELATIONSHIP_DTD = """<!ELEMENT Relationships ANY >
+    <!ATTLIST Relationships xmlns CDATA 'http://schemas.openxmlformats.org/package/2006/relationships' >
+
+    <!ELEMENT Relationship ANY >
+    <!ATTLIST Relationship Id NMTOKEN 'rel0' >
+    <!ATTLIST Relationship Target CDATA '/3D/3dmodel.model' >
+    <!ATTLIST Relationship Type CDATA 'http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel' >
+"""
