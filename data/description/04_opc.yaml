@@ -1,0 +1,146 @@
+scope: 3D Manufacturing Format
+
+tests:
+  CS-0000:
+    name: "3dmodel: E0 R0, other: E0 R0"
+    type: Content Spoofing, Reference Confusion, Model Reference Functionality
+    created: true
+    conforms_to_spec:
+      core: false
+    expected_behavior: Fail
+    further_infos: ""
+
+  CS-0001:
+    name: "3dmodel: E0 R0, other: E0 R1"
+    type: Content Spoofing, Reference Confusion, Model Reference Functionality
+    created: true
+    conforms_to_spec:
+      core: false
+    expected_behavior: Fail
+    further_infos: ""
+
+  CS-0010:
+    name: "3dmodel: E0 R0, other: E1 R0"
+    type: Content Spoofing, Reference Confusion, Model Reference Functionality
+    created: true
+    conforms_to_spec:
+      core: false
+    expected_behavior: Fail
+    further_infos: ""
+
+  CS-0011:
+    name: "3dmodel: E0 R0, other: E1 R1"
+    type: Content Spoofing, Reference Confusion, Model Reference Functionality
+    created: true
+    conforms_to_spec:
+      core: true
+    expected_behavior: output "other"
+    further_infos: ""
+
+  CS-0100:
+    name: "3dmodel: E0 R1, other: E0 R0"
+    type: Content Spoofing, Reference Confusion, Model Reference Functionality
+    created: true
+    conforms_to_spec:
+      core: false
+    expected_behavior: Fail
+    further_infos: ""
+
+  CS-0101:
+    name: "3dmodel: E0 R1, other: E0 R1"
+    type: Content Spoofing, Reference Confusion, Model Reference Functionality
+    created: true
+    conforms_to_spec:
+      core: false
+    expected_behavior: Fail
+    further_infos: ""
+
+  CS-0110:
+    name: "3dmodel: E0 R1, other: E1 R0"
+    type: Content Spoofing, Reference Confusion, Model Reference Functionality
+    created: true
+    conforms_to_spec:
+      core: false
+    expected_behavior: Fail
+    further_infos: ""
+
+  CS-0111:
+    name: "3dmodel: E0 R1, other: E1 R1"
+    type: Content Spoofing, Reference Confusion, Model Reference Functionality
+    created: true
+    conforms_to_spec:
+      core: false
+    expected_behavior: Fail, or output "other"
+    further_infos: ""
+
+  CS-1000:
+    name: "3dmodel: E1 R0, other: E0 R0"
+    type: Content Spoofing, Reference Confusion, Model Reference Functionality
+    created: true
+    conforms_to_spec:
+      core: false
+    expected_behavior: Fail
+    further_infos: ""
+
+  CS-1001:
+    name: "3dmodel: E1 R0, other: E0 R1"
+    type: Content Spoofing, Reference Confusion, Model Reference Functionality
+    created: true
+    conforms_to_spec:
+      core: false
+    expected_behavior: Fail
+    further_infos: ""
+
+  CS-1010:
+    name: "3dmodel: E1 R0, other: E1 R0"
+    type: Content Spoofing, Reference Confusion, Model Reference Functionality
+    created: true
+    conforms_to_spec:
+      core: false
+    expected_behavior: Fail
+    further_infos: ""
+
+  CS-1011:
+    name: "3dmodel: E1 R0, other: E1 R1"
+    type: Content Spoofing, Reference Confusion, Model Reference Functionality
+    created: true
+    conforms_to_spec:
+      core: true
+    expected_behavior: output "other"
+    further_infos: ""
+
+  CS-1100:
+    name: "3dmodel: E1 R1, other: E0 R0"
+    type: Content Spoofing, Reference Confusion, Model Reference Functionality
+    created: true
+    conforms_to_spec:
+      core: true
+    expected_behavior: output "3dmodel"
+    further_infos: ""
+
+  CS-1101:
+    name: "3dmodel: E1 R1, other: E0 R1"
+    type: Content Spoofing, Reference Confusion, Model Reference Functionality
+    created: true
+    conforms_to_spec:
+      core: false
+    expected_behavior: Fail, or output "3dmodel"
+    further_infos: ""
+
+  CS-1110:
+    name: "3dmodel: E1 R1, other: E1 R0"
+    type: Content Spoofing, Reference Confusion, Model Reference Functionality
+    created: true
+    conforms_to_spec:
+      core: true
+    expected_behavior: output "3dmodel"
+    further_infos: ""
+
+  CS-1111:
+    name: "3dmodel: E1 R1, other: E1 R1"
+    type: Content Spoofing, Reference Confusion, Model Reference Functionality
+    created: true
+    conforms_to_spec:
+      core: false
+    expected_behavior: not sure (?)
+    further_infos: ""

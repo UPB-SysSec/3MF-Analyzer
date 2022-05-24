@@ -38,10 +38,10 @@ tests:
     type: Content Spoofing, Property Confusion, Property Duplication
     created: true
     conforms_to_spec: n
-    expected_behavior: Fail or ignore wrong unit tags
+    expected_behavior: Fail or ignore wrong unit tags
     further_infos: |
-      Different unit attributes added to different tags.
-      Checks which one is taken by parser. Normally only allowed in model tag.
+      Different unit attributes added to different tags.
+      Checks which one is taken by parser. Normally only allowed in model tag.
 
   CS-SE:
     name: Slicing Extension
@@ -102,134 +102,6 @@ tests:
       House model, but the cube is of type "support". Checks if supports are used or ignored.
       And if they are used, how they are handled.
 
-  CS-0000:
-    name: "3dmodel: E0 R0, other: E0 R0"
-    type: Content Spoofing, Reference Confusion, Model Reference Functionality
-    created: true
-    conforms_to_spec: n
-    expected_behavior: Fail
-    further_infos: ""
-
-  CS-0001:
-    name: "3dmodel: E0 R0, other: E0 R1"
-    type: Content Spoofing, Reference Confusion, Model Reference Functionality
-    created: true
-    conforms_to_spec: n
-    expected_behavior: Fail
-    further_infos: ""
-
-  CS-0010:
-    name: "3dmodel: E0 R0, other: E1 R0"
-    type: Content Spoofing, Reference Confusion, Model Reference Functionality
-    created: true
-    conforms_to_spec: n
-    expected_behavior: Fail
-    further_infos: ""
-
-  CS-0011:
-    name: "3dmodel: E0 R0, other: E1 R1"
-    type: Content Spoofing, Reference Confusion, Model Reference Functionality
-    created: true
-    conforms_to_spec: y
-    expected_behavior: output "other"
-    further_infos: ""
-
-  CS-0100:
-    name: "3dmodel: E0 R1, other: E0 R0"
-    type: Content Spoofing, Reference Confusion, Model Reference Functionality
-    created: true
-    conforms_to_spec: n
-    expected_behavior: Fail
-    further_infos: ""
-
-  CS-0101:
-    name: "3dmodel: E0 R1, other: E0 R1"
-    type: Content Spoofing, Reference Confusion, Model Reference Functionality
-    created: true
-    conforms_to_spec: n
-    expected_behavior: Fail
-    further_infos: ""
-
-  CS-0110:
-    name: "3dmodel: E0 R1, other: E1 R0"
-    type: Content Spoofing, Reference Confusion, Model Reference Functionality
-    created: true
-    conforms_to_spec: n
-    expected_behavior: Fail
-    further_infos: ""
-
-  CS-0111:
-    name: "3dmodel: E0 R1, other: E1 R1"
-    type: Content Spoofing, Reference Confusion, Model Reference Functionality
-    created: true
-    conforms_to_spec: n
-    expected_behavior: Fail, or output "other"
-    further_infos: ""
-
-  CS-1000:
-    name: "3dmodel: E1 R0, other: E0 R0"
-    type: Content Spoofing, Reference Confusion, Model Reference Functionality
-    created: true
-    conforms_to_spec: n
-    expected_behavior: Fail
-    further_infos: ""
-
-  CS-1001:
-    name: "3dmodel: E1 R0, other: E0 R1"
-    type: Content Spoofing, Reference Confusion, Model Reference Functionality
-    created: true
-    conforms_to_spec: n
-    expected_behavior: Fail
-    further_infos: ""
-
-  CS-1010:
-    name: "3dmodel: E1 R0, other: E1 R0"
-    type: Content Spoofing, Reference Confusion, Model Reference Functionality
-    created: true
-    conforms_to_spec: n
-    expected_behavior: Fail
-    further_infos: ""
-
-  CS-1011:
-    name: "3dmodel: E1 R0, other: E1 R1"
-    type: Content Spoofing, Reference Confusion, Model Reference Functionality
-    created: true
-    conforms_to_spec: y
-    expected_behavior: output "other"
-    further_infos: ""
-
-  CS-1100:
-    name: "3dmodel: E1 R1, other: E0 R0"
-    type: Content Spoofing, Reference Confusion, Model Reference Functionality
-    created: true
-    conforms_to_spec: y
-    expected_behavior: output "3dmodel"
-    further_infos: ""
-
-  CS-1101:
-    name: "3dmodel: E1 R1, other: E0 R1"
-    type: Content Spoofing, Reference Confusion, Model Reference Functionality
-    created: true
-    conforms_to_spec: n
-    expected_behavior: Fail, or output "3dmodel"
-    further_infos: ""
-
-  CS-1110:
-    name: "3dmodel: E1 R1, other: E1 R0"
-    type: Content Spoofing, Reference Confusion, Model Reference Functionality
-    created: true
-    conforms_to_spec: y
-    expected_behavior: output "3dmodel"
-    further_infos: ""
-
-  CS-1111:
-    name: "3dmodel: E1 R1, other: E1 R1"
-    type: Content Spoofing, Reference Confusion, Model Reference Functionality
-    created: true
-    conforms_to_spec: n
-    expected_behavior: not sure (?)
-    further_infos: ""
-
   DOS-BL-MBR:
     name: Billion Laughs (Model Build References)
     type: Denial of Service
@@ -248,9 +120,9 @@ tests:
     conforms_to_spec: n
     expected_behavior: Fail
     further_infos: |
-      Have `sliceref` in `slicestack` definition of 2D model.
+      Have `sliceref` in `slicestack` definition of 2D model.
 
-      > A referenced slice stack MUST NOT contain any further `<sliceref>` elements – there can be
+      > A referenced slice stack MUST NOT contain any further `<sliceref>` elements - there can be
       > only a single layer of abstraction from the original `<slicestack>` to the slice contents.
 
   DOS-FUZ-LIB3MF:
