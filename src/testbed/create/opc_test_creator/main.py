@@ -5,6 +5,7 @@ from textwrap import dedent
 from typing import Dict, Generator
 
 from ... import TESTFILE_GENERATED_SRC_DIR
+from .lfi_testcases import create_lfi_testcases
 from .reference_testcases import create_opc_reference_testcases
 
 
@@ -12,7 +13,7 @@ def create_opc_testcases() -> Generator[Dict[str, str], None, None]:
     """Creates the defined test files."""
 
     testcase: dict
-    for testcase in itertools.chain(create_opc_reference_testcases()):
+    for testcase in itertools.chain(create_opc_reference_testcases(), create_lfi_testcases()):
         # each test case creates one folder
         # we thus yield the dict with the ID once, and all other files as simple files
         id_dict_yeilded = False

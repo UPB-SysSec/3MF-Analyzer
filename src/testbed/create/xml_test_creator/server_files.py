@@ -7,7 +7,7 @@ from os.path import join
 from ... import LOCAL_SERVER, STATIC_FILE_DIR_DST
 from ..tmf_model_mutator.complex_types import *
 from ..tmf_model_mutator.simple_types import *
-from .base_objects import BASE_MODEL_OBJECT
+from .base_objects import BASE_MODEL, BASE_MODEL_OBJECT
 
 SERVER_FILES = [
     {
@@ -318,5 +318,9 @@ SERVER_FILES = [
     {
         "name": "3mf-object.xml",
         "content": BASE_MODEL_OBJECT.to_xml(root=True),
+    },
+    {
+        "name": "3mf-model.model",
+        "content": BASE_MODEL.to_xml(root=True),
     },
 ]

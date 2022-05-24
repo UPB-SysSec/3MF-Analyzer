@@ -46,6 +46,17 @@ SERVER_PORT = 8080
 SERVER_NAME = "localhost"
 LOCAL_SERVER = f"http://{SERVER_NAME}:{SERVER_PORT}"
 
+# file that exists with a high probability on a local system
+import platform
+
+plt = platform.system()
+
+if plt == "Windows":
+    GUARANTEED_LOCAL_FILE_PATH = r"C:\Windows\boot.ini"
+elif plt == "Linux":
+    GUARANTEED_LOCAL_FILE_PATH = "/etc/passwd"
+else:
+    GUARANTEED_LOCAL_FILE_PATH = None
 
 from .build import build_main, build_parser
 from .create import create_main, create_parser

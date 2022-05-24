@@ -144,3 +144,27 @@ tests:
       core: false
     expected_behavior: not sure (?)
     further_infos: ""
+
+  OPC-LFI-0:
+    name: Local file inclusion using OPC references outside of the ZIP archive (variant
+      0).
+    created: true
+    conforms_to_spec:
+      core: false
+    type: Data Extraction, In-Band
+
+  OPC-LFI-1:
+    name: Local file inclusion using OPC references outside of the ZIP archive (variant
+      1).
+    created: true
+    conforms_to_spec:
+      core: false
+    type: Data Extraction, In-Band
+
+  OPC-LFI-2:
+    name: Local file inclusion using OPC references outside of the ZIP archive (variant
+      2).
+    created: true
+    conforms_to_spec:
+      core: false
+    type: Data Extraction, In-Band
