@@ -8,6 +8,7 @@ from textwrap import dedent
 from typing import Dict, List
 
 from .. import DESCRIPTION_DIR, yaml
+from .opc_test_creator import create_opc_testcases
 from .tmf_model_mutator import mutate_tmf_models
 from .xml_test_creator import create_xml_testcases, get_server_files
 
@@ -108,10 +109,12 @@ def create_testfiles(parsed_arguments: Dict[str, str]) -> None:
         ]
     if not parsed_arguments.get("disable_mutation_based"):
         _generators += [mutate_tmf_models()]
+    if not parsed_arguments.get("disable_opc_based"):
+        _generators += [create_opc_testcases()]
 
     # make sure files exists and read their content from yaml
     file_contents = {}
-    for filename in ["02_xml.yaml", "03_generated.yaml", "00_3mf.yaml"]:
+    for filename in ["02_xml.yaml", "03_generated.yaml", "00_3mf.yaml", "04_opc.yaml"]:
         path = join(DESCRIPTION_DIR, filename)
         if not isfile(path):
             with open(path, "w", encoding="utf-8") as yaml_file:
@@ -135,6 +138,8 @@ def create_testfiles(parsed_arguments: Dict[str, str]) -> None:
                 content = file_contents["03_generated.yaml"]
             elif obj["id"].startswith("R-"):
                 content = file_contents["00_3mf.yaml"]
+            elif obj["id"].startswith("CS-"):
+                content = file_contents["04_opc.yaml"]
 
             if obj["id"] not in content["tests"]:
                 content["tests"][obj["id"]] = {}
@@ -148,7 +153,7 @@ def create_testfiles(parsed_arguments: Dict[str, str]) -> None:
             )
             all_ids.append(obj["id"])
 
-    for filename in ["02_xml.yaml", "03_generated.yaml", "00_3mf.yaml"]:
+    for filename in ["02_xml.yaml", "03_generated.yaml", "00_3mf.yaml", "04_opc.yaml"]:
         path = join(DESCRIPTION_DIR, filename)
         with open(path, "w", encoding="utf-8") as yaml_file:
             yaml.dump(file_contents[filename], yaml_file)

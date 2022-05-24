@@ -22,5 +22,11 @@ def get_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="Disables the generation of the mutation-based testcases.",
     )
+    parser.add_argument(
+        "-o",
+        "--disable-opc-based",
+        action="store_true",
+        help="Disables the generation of the OPC-based testcases.",
+    )
 
     return parser
