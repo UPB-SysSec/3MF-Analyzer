@@ -1,5 +1,0 @@
-<!ELEMENT data (#PCDATA)>
-<!ENTITY % start "<![CDATA[">
-<!ENTITY % goodies SYSTEM "file://C:\Users\jostr\Documents\GitHub\3MF-Analyzer\build\server_files\test.txt">
-<!ENTITY % end "]]>">
-<!ENTITY all '%start;%goodies;%end;'>
