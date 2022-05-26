@@ -11,7 +11,7 @@ tests:
       similar_to:
         test_id: R-CYL
         test_name: Cylinder Model
-      score: "0.9999999999834268"
+      score: '0.9999999999834268'
     interpretation:
       status: loaded
       is_outlier: false
@@ -24,7 +24,7 @@ tests:
       similar_to:
         test_id: empty
         test_name: Manual reference screenshot
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded nothing
       is_outlier: false
@@ -35,7 +35,7 @@ tests:
       similar_to:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -47,7 +47,7 @@ tests:
       similar_to:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -59,7 +59,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -71,7 +71,7 @@ tests:
       similar_to:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -83,7 +83,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -95,7 +95,7 @@ tests:
       similar_to:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -107,7 +107,7 @@ tests:
       similar_to:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -118,7 +118,7 @@ tests:
       similar_to:
         test_id: empty
         test_name: Manual reference screenshot
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded nothing
       is_outlier: false
@@ -131,7 +131,7 @@ tests:
       similar_to:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -143,7 +143,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -154,7 +154,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -165,7 +165,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -176,7 +176,7 @@ tests:
       similar_to:
         test_id: loaded-partially-02
         test_name: Manual reference screenshot
-      score: "0.9139585848739258"
+      score: '0.9139585848739258'
     interpretation:
       status: loading
       is_outlier: false
@@ -187,7 +187,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -198,7 +198,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -271,7 +271,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -284,7 +284,7 @@ tests:
       similar_to:
         test_id: empty
         test_name: Manual reference screenshot
-      score: "0.9888748658245797"
+      score: '0.9888748658245797'
     interpretation:
       status: loaded nothing
       is_outlier: false
@@ -296,7 +296,7 @@ tests:
       similar_to:
         test_id: empty
         test_name: Manual reference screenshot
-      score: "0.9954577341116251"
+      score: '0.9954577341116251'
     interpretation:
       status: loaded nothing
       is_outlier: false
@@ -308,7 +308,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "0.9460491220907529"
+      score: '0.9460491220907529'
     interpretation:
       status: loaded
       is_outlier: false
@@ -322,7 +322,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "0.9999992056410816"
+      score: '0.9999992056410816'
     interpretation:
       status: loaded
       is_outlier: false
@@ -353,25 +353,25 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-CUB
-        test_name: Cube Model
-      score: "0.9999992056410816"
+        test_id: loaded-partially-00
+        test_name: Manual reference screenshot
+      score: '0.8742137143025057'
     interpretation:
-      status: loaded
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: low
     has_server_log: true
   XML-MOD-ALT-B-EGE-R:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-CUB
-        test_name: Cube Model
-      score: "1.0"
+        test_id: loaded-partially-00
+        test_name: Manual reference screenshot
+      score: '0.874213689215878'
     interpretation:
-      status: loaded
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: low
     has_server_log: true
   XML-MOD-ALT-B-EPE-L:
     info: TODO
@@ -379,11 +379,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.9460936143851814'
     interpretation:
       status: aborted
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-MOD-ALT-B-EPE-R:
     info: TODO
@@ -391,23 +391,23 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.9460936143851814'
     interpretation:
       status: aborted
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-MOD-ALT-B-IGE:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-CUB
-        test_name: Cube Model
-      score: "1.0"
+        test_id: loaded-partially-00
+        test_name: Manual reference screenshot
+      score: '0.8742135849225804'
     interpretation:
-      status: loaded
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: low
     has_server_log: true
   XML-MOD-ALT-B-IPE:
     info: TODO
@@ -415,35 +415,35 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.9460936143851814'
     interpretation:
       status: aborted
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-MOD-ALT-DOS-BL:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-CUB
-        test_name: Cube Model
-      score: "0.9999992056410816"
+        test_id: loaded-partially-00
+        test_name: Manual reference screenshot
+      score: '0.8742137391298584'
     interpretation:
-      status: loaded
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: low
     has_server_log: true
   XML-MOD-ALT-DOS-BL-PE-R:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-CUB
-        test_name: Cube Model
-      score: "0.9999992056410816"
+        test_id: loaded-partially-00
+        test_name: Manual reference screenshot
+      score: '0.8742137797831399'
     interpretation:
-      status: loaded
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: low
     has_server_log: true
   XML-MOD-ALT-DOS-C:
     info: TODO
@@ -451,11 +451,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.9460936143851814'
     interpretation:
       status: aborted
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-MOD-ALT-FBC-BPR-A:
     info: TODO
@@ -463,77 +463,95 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.9460936143851814'
     interpretation:
       status: aborted
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-MOD-ALT-FBC-BPR-B:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-CUB
-        test_name: Cube Model
-      score: "0.9999992056410816"
+        test_id: loaded-partially-00
+        test_name: Manual reference screenshot
+      score: '0.8742137983873304'
     interpretation:
-      status: loaded
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: low
     has_server_log: true
   XML-MOD-ALT-OOB-R:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-CUB
-        test_name: Cube Model
-      score: "0.9999992056410816"
+        test_id: loaded-partially-00
+        test_name: Manual reference screenshot
+      score: '0.8742136901145209'
     interpretation:
-      status: loaded
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: low
     has_server_log: true
   XML-MOD-B-EGE-L:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-CUB
-        test_name: Cube Model
-      score: "1.0"
+        test_id: loaded-partially-00
+        test_name: Manual reference screenshot
+      score: '0.874213789669511'
     interpretation:
-      status: loaded
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: low
     has_server_log: true
   XML-MOD-B-EGE-LX:
     info: TODO
     has_server_log: true
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: '0.9460936143851814'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: medium
   XML-MOD-B-EGE-R:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-CUB
-        test_name: Cube Model
-      score: "1.0"
+        test_id: loaded-partially-00
+        test_name: Manual reference screenshot
+      score: '0.8742137439000999'
     interpretation:
-      status: loaded
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: low
     has_server_log: true
   XML-MOD-B-EGE-RX:
     info: TODO
     has_server_log: true
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: '0.9460936143851814'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: medium
   XML-MOD-B-EPE-L:
     info: TODO
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.9460936143851814'
     interpretation:
       status: aborted
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-MOD-B-EPE-R:
     info: TODO
@@ -541,23 +559,23 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.7179806499829875'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   XML-MOD-B-IGE:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-CUB
-        test_name: Cube Model
-      score: "1.0"
+        test_id: loaded-partially-00
+        test_name: Manual reference screenshot
+      score: '0.874213793773642'
     interpretation:
-      status: loaded
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: low
     has_server_log: true
   XML-MOD-B-IPE:
     info: TODO
@@ -565,35 +583,35 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.9460936143851814'
     interpretation:
       status: aborted
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-MOD-DOS-BL:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-CUB
-        test_name: Cube Model
-      score: "1.0"
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: '0.7179806499829875'
     interpretation:
-      status: loaded
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   XML-MOD-DOS-BL-PE-R:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-CUB
-        test_name: Cube Model
-      score: "1.0"
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: '0.946087743341018'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-MOD-DOS-C:
     info: TODO
@@ -601,23 +619,23 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.9460936143851814'
     interpretation:
       status: aborted
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-MOD-DOS-PL:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: "1.0"
+        test_id: loaded-partially-00
+        test_name: Manual reference screenshot
+      score: '0.8742138051896153'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: low
     has_server_log: true
   XML-MOD-FBC-AV:
     info: TODO
@@ -625,11 +643,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.9460936143851814'
     interpretation:
       status: aborted
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-MOD-FBC-BPR-A:
     info: TODO
@@ -637,23 +655,23 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.9460936143851814'
     interpretation:
       status: aborted
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-MOD-FBC-BPR-B:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-CUB
-        test_name: Cube Model
-      score: "0.9999992056410816"
+        test_id: loaded-partially-00
+        test_name: Manual reference screenshot
+      score: '0.8742137983873304'
     interpretation:
-      status: loaded
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: low
     has_server_log: true
   XML-MOD-FBC-E:
     info: TODO
@@ -661,11 +679,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.9460936143851814'
     interpretation:
       status: aborted
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-MOD-FBC-E-L:
     info: TODO
@@ -673,11 +691,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.9460936186651233'
     interpretation:
       status: aborted
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-MOD-OOB-NNSL:
     info: TODO
@@ -685,11 +703,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.9460936186651233'
     interpretation:
       status: aborted
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-MOD-OOB-PE-R:
     info: TODO
@@ -697,23 +715,23 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.7179806499829875'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   XML-MOD-OOB-R:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-CUB
-        test_name: Cube Model
-      score: "1.0"
+        test_id: loaded-partially-00
+        test_name: Manual reference screenshot
+      score: '0.8742138255299499'
     interpretation:
-      status: loaded
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: low
     has_server_log: true
   XML-MOD-OOB-SL:
     info: TODO
@@ -721,11 +739,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.9460936143851814'
     interpretation:
       status: aborted
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-MOD-OOB-XI:
     info: TODO
@@ -733,23 +751,23 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.7179806499829875'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   XML-MOD-SSRF-NNSL:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-CUB
-        test_name: Cube Model
-      score: "1.0"
+        test_id: loaded-partially-00
+        test_name: Manual reference screenshot
+      score: '0.8742137483343979'
     interpretation:
-      status: loaded
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: low
     has_server_log: true
   XML-MOD-SSRF-SL:
     info: TODO
@@ -757,11 +775,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.9460936186651233'
     interpretation:
       status: aborted
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-MOD-SSRF-XI:
     info: TODO
@@ -769,11 +787,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.9460936143851814'
     interpretation:
       status: aborted
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-REL-B-EGE-L:
     info: TODO
@@ -781,11 +799,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.9460936143851814'
     interpretation:
       status: aborted
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-REL-B-EGE-R:
     info: TODO
@@ -793,11 +811,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.9460936143851814'
     interpretation:
       status: aborted
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-REL-B-EPE-L:
     info: TODO
@@ -805,11 +823,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.9460936143851814'
     interpretation:
       status: aborted
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-REL-B-EPE-R:
     info: TODO
@@ -817,11 +835,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.9460936143851814'
     interpretation:
       status: aborted
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-REL-B-IGE:
     info: TODO
@@ -829,11 +847,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "0.9999999941461325"
+      score: '0.9460936186651233'
     interpretation:
       status: aborted
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-REL-B-IPE:
     info: TODO
@@ -841,11 +859,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.9460936143851814'
     interpretation:
       status: aborted
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-REL-DOS-BL:
     info: TODO
@@ -853,11 +871,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.9460936143851814'
     interpretation:
       status: aborted
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-REL-DOS-BL-PE-R:
     info: TODO
@@ -865,11 +883,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.9460936186651233'
     interpretation:
       status: aborted
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-REL-DOS-C:
     info: TODO
@@ -877,11 +895,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.9460936186651233'
     interpretation:
       status: aborted
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-REL-DOS-PL:
     info: TODO
@@ -889,11 +907,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.7179806499829875'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   XML-REL-FBC-AV:
     info: TODO
@@ -901,11 +919,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.9461513571421349'
     interpretation:
       status: aborted
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-REL-FBC-BPR-A:
     info: TODO
@@ -913,11 +931,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.9460936186651233'
     interpretation:
       status: aborted
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-REL-FBC-BPR-B:
     info: TODO
@@ -925,11 +943,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.7179806499829875'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   XML-REL-FBC-E:
     info: TODO
@@ -937,11 +955,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.9460936143851814'
     interpretation:
       status: aborted
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-REL-FBC-E-L:
     info: TODO
@@ -949,11 +967,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.7179806499829875'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   XML-REL-OOB-NNSL:
     info: TODO
@@ -961,11 +979,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.9460936143851814'
     interpretation:
       status: aborted
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-REL-OOB-PE-R:
     info: TODO
@@ -973,11 +991,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.9460936143851814'
     interpretation:
       status: aborted
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-REL-OOB-R:
     info: TODO
@@ -985,11 +1003,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.9460936143851814'
     interpretation:
       status: aborted
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-REL-OOB-SL:
     info: TODO
@@ -997,11 +1015,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.9460936143851814'
     interpretation:
       status: aborted
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-REL-OOB-XI:
     info: TODO
@@ -1009,11 +1027,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.7179806499829875'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   XML-REL-SSRF-NNSL:
     info: TODO
@@ -1021,11 +1039,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.7179806499829875'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   XML-REL-SSRF-SL:
     info: TODO
@@ -1033,11 +1051,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.9460936143851814'
     interpretation:
       status: aborted
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-REL-SSRF-XI:
     info: TODO
@@ -1045,31 +1063,67 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '0.9460936143851814'
     interpretation:
       status: aborted
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-EGE-I-R:
     info: TODO
     has_server_log: true
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: '0.9460936186651233'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: medium
   XML-EGE-I-NR:
     info: TODO
     has_server_log: true
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: '0.7835613979738268'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
   XML-EGE-IL-R:
     info: TODO
     has_server_log: true
+    image_similarity:
+      similar_to:
+        test_id: loaded-partially-00
+        test_name: Manual reference screenshot
+      score: '0.8289805620349147'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: low
   XML-EGE-IL-NR:
     info: TODO
     has_server_log: true
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: '0.7835613527482215'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
   GEN-C-ADA-BASE-DISPLAYCOLOR-0:
     info: TODO
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1081,7 +1135,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1093,7 +1147,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1105,7 +1159,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1117,7 +1171,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1129,7 +1183,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1141,7 +1195,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1153,7 +1207,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1165,7 +1219,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1177,7 +1231,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1189,7 +1243,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1201,7 +1255,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1213,7 +1267,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1225,7 +1279,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1237,7 +1291,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1249,7 +1303,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1261,7 +1315,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1273,7 +1327,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1285,7 +1339,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1297,7 +1351,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1309,7 +1363,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1321,7 +1375,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1333,7 +1387,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1345,7 +1399,7 @@ tests:
       similar_to:
         test_id: empty
         test_name: Manual reference screenshot
-      score: "0.9892540741948389"
+      score: '0.9892540741948389'
     interpretation:
       status: loaded nothing
       is_outlier: false
@@ -1357,7 +1411,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1369,7 +1423,7 @@ tests:
       similar_to:
         test_id: empty
         test_name: Manual reference screenshot
-      score: "0.9622815408469035"
+      score: '0.9622815408469035'
     interpretation:
       status: loaded nothing
       is_outlier: false
@@ -1381,7 +1435,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1393,7 +1447,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1405,7 +1459,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1417,7 +1471,7 @@ tests:
       similar_to:
         test_id: empty
         test_name: Manual reference screenshot
-      score: "0.9892540741948389"
+      score: '0.9892540741948389'
     interpretation:
       status: loaded nothing
       is_outlier: false
@@ -1429,7 +1483,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1441,7 +1495,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1453,7 +1507,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1465,7 +1519,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: "0.9999143425865602"
+      score: '0.9999143425865602'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1477,7 +1531,7 @@ tests:
       similar_to:
         test_id: partially-loaded-with-popup
         test_name: Manual reference screenshot
-      score: "0.9971074448097372"
+      score: '0.9971074448097372'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1489,7 +1543,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: "0.9964242400443936"
+      score: '0.9964242400443936'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1501,7 +1555,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: "0.9964242400443936"
+      score: '0.9964242400443936'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1513,7 +1567,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: "0.998677482885905"
+      score: '0.998677482885905'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1525,7 +1579,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: "0.9905038321267383"
+      score: '0.9905038321267383'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1537,7 +1591,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: "0.9940165813712871"
+      score: '0.9940165813712871'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1549,7 +1603,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1561,7 +1615,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1573,7 +1627,7 @@ tests:
       similar_to:
         test_id: empty
         test_name: Manual reference screenshot
-      score: "0.9892540741948389"
+      score: '0.9892540741948389'
     interpretation:
       status: loaded nothing
       is_outlier: false
@@ -1585,7 +1639,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1597,7 +1651,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: "0.9999958125522614"
+      score: '0.9999958125522614'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1609,7 +1663,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1621,7 +1675,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1633,7 +1687,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1645,7 +1699,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1657,7 +1711,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1669,7 +1723,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1681,7 +1735,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: "0.999909989674"
+      score: '0.999909989674'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1693,7 +1747,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1705,7 +1759,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1717,7 +1771,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: "0.9999100686532195"
+      score: '0.9999100686532195'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1729,7 +1783,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: "0.9999100672656928"
+      score: '0.9999100672656928'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1741,7 +1795,7 @@ tests:
       similar_to:
         test_id: partially-loaded-with-popup
         test_name: Manual reference screenshot
-      score: "0.9971270080235789"
+      score: '0.9971270080235789'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1753,7 +1807,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "0.9988273279492633"
+      score: '0.9988273279492633'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1765,7 +1819,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: "0.9964200526506866"
+      score: '0.9964200526506866'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1777,7 +1831,7 @@ tests:
       similar_to:
         test_id: partially-loaded-with-popup
         test_name: Manual reference screenshot
-      score: "0.9972981435800081"
+      score: '0.9972981435800081'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1789,7 +1843,7 @@ tests:
       similar_to:
         test_id: partially-loaded-with-popup
         test_name: Manual reference screenshot
-      score: "0.9972717670031894"
+      score: '0.9972717670031894'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1801,7 +1855,7 @@ tests:
       similar_to:
         test_id: partially-loaded-with-popup
         test_name: Manual reference screenshot
-      score: "0.9969436198669619"
+      score: '0.9969436198669619'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1813,7 +1867,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1825,7 +1879,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.999971871657926"
+      score: '0.999971871657926'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1837,7 +1891,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1849,7 +1903,7 @@ tests:
       similar_to:
         test_id: empty
         test_name: Manual reference screenshot
-      score: "0.9809760676191979"
+      score: '0.9809760676191979'
     interpretation:
       status: loaded nothing
       is_outlier: false
@@ -1861,7 +1915,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1873,7 +1927,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1885,7 +1939,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1897,7 +1951,7 @@ tests:
       similar_to:
         test_id: empty
         test_name: Manual reference screenshot
-      score: "0.9999999998521325"
+      score: '0.9999999998521325'
     interpretation:
       status: loaded nothing
       is_outlier: false
@@ -1909,7 +1963,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1921,7 +1975,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1933,7 +1987,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1945,7 +1999,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1957,7 +2011,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: "0.9762205670496151"
+      score: '0.9762205670496151'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1969,7 +2023,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1981,7 +2035,7 @@ tests:
       similar_to:
         test_id: empty
         test_name: Manual reference screenshot
-      score: "0.9840567890681525"
+      score: '0.9840567890681525'
     interpretation:
       status: loaded nothing
       is_outlier: false
@@ -1993,7 +2047,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2005,7 +2059,7 @@ tests:
       similar_to:
         test_id: partially-loaded-with-popup
         test_name: Manual reference screenshot
-      score: "0.9971565996508139"
+      score: '0.9971565996508139'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2017,7 +2071,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2029,7 +2083,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2041,7 +2095,7 @@ tests:
       similar_to:
         test_id: empty
         test_name: Manual reference screenshot
-      score: "0.9892498580149627"
+      score: '0.9892498580149627'
     interpretation:
       status: loaded nothing
       is_outlier: false
@@ -2053,7 +2107,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2065,7 +2119,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "0.9917787481994708"
+      score: '0.9917787481994708'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2077,7 +2131,7 @@ tests:
       similar_to:
         test_id: partially-loaded-with-popup
         test_name: Manual reference screenshot
-      score: "0.997222787207943"
+      score: '0.997222787207943'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2089,7 +2143,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2101,7 +2155,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2113,7 +2167,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2125,7 +2179,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2137,7 +2191,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2149,7 +2203,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2161,7 +2215,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2173,7 +2227,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2185,7 +2239,7 @@ tests:
       similar_to:
         test_id: partially-loaded-with-popup
         test_name: Manual reference screenshot
-      score: "0.998895060062183"
+      score: '0.998895060062183'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2197,7 +2251,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2209,7 +2263,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2221,7 +2275,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2233,7 +2287,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2245,7 +2299,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2257,7 +2311,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2269,7 +2323,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "0.9999992056410816"
+      score: '0.9999992056410816'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2281,7 +2335,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2293,7 +2347,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2305,7 +2359,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "0.9999992055521318"
+      score: '0.9999992055521318'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2317,7 +2371,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2329,7 +2383,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2341,7 +2395,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: "0.9941055716487484"
+      score: '0.9941055716487484'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2353,7 +2407,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2365,7 +2419,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2377,7 +2431,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2389,7 +2443,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2401,7 +2455,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2413,7 +2467,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2425,7 +2479,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2437,7 +2491,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2449,7 +2503,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2461,7 +2515,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2473,7 +2527,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2485,7 +2539,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2497,7 +2551,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2509,7 +2563,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2521,7 +2575,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2533,7 +2587,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2545,7 +2599,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2557,7 +2611,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2569,7 +2623,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2581,7 +2635,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2593,7 +2647,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2605,7 +2659,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2617,7 +2671,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2629,7 +2683,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2641,7 +2695,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2653,7 +2707,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.962688198834017"
+      score: '0.962688198834017'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2665,7 +2719,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2677,7 +2731,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.9999110446401597"
+      score: '0.9999110446401597'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2689,7 +2743,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2701,7 +2755,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2713,7 +2767,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2725,7 +2779,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2737,7 +2791,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2749,7 +2803,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2761,7 +2815,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2773,7 +2827,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2785,7 +2839,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2797,7 +2851,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2809,7 +2863,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.9999152320338666"
+      score: '0.9999152320338666'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2821,7 +2875,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2833,7 +2887,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2845,7 +2899,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2857,7 +2911,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2869,7 +2923,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2881,7 +2935,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2893,7 +2947,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2905,7 +2959,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2917,7 +2971,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.9999110446401597"
+      score: '0.9999110446401597'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2929,7 +2983,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2941,7 +2995,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.9999590426366152"
+      score: '0.9999590426366152'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2953,7 +3007,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2965,7 +3019,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2977,7 +3031,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2989,7 +3043,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.9999999998221902"
+      score: '0.9999999998221902'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3001,7 +3055,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.9999999998724614"
+      score: '0.9999999998724614'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3013,7 +3067,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3025,7 +3079,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3037,7 +3091,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3049,7 +3103,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3061,7 +3115,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.9999999999256395"
+      score: '0.9999999999256395'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3073,7 +3127,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "0.9908592346693575"
+      score: '0.9908592346693575'
     interpretation:
       status: aborted
       is_outlier: false
@@ -3085,7 +3139,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.9999152320338666"
+      score: '0.9999152320338666'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3097,7 +3151,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3109,7 +3163,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3121,7 +3175,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3133,7 +3187,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3145,7 +3199,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3157,7 +3211,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3169,7 +3223,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.999999999872525"
+      score: '0.999999999872525'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3181,7 +3235,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.9999958125150453"
+      score: '0.9999958125150453'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3193,7 +3247,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3205,7 +3259,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3217,7 +3271,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3229,7 +3283,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3241,7 +3295,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3253,7 +3307,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3265,7 +3319,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3277,7 +3331,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3289,7 +3343,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3301,7 +3355,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.9999292716799062"
+      score: '0.9999292716799062'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3313,7 +3367,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3325,7 +3379,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3337,7 +3391,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.9999152222438178"
+      score: '0.9999152222438178'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3349,7 +3403,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3361,7 +3415,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3373,7 +3427,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.9999152320338666"
+      score: '0.9999152320338666'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3385,7 +3439,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3397,7 +3451,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3409,7 +3463,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3421,7 +3475,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3433,7 +3487,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3445,7 +3499,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -3457,7 +3511,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -3469,7 +3523,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -3481,7 +3535,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -3493,7 +3547,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -3505,7 +3559,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -3517,7 +3571,7 @@ tests:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3529,7 +3583,7 @@ tests:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3541,7 +3595,7 @@ tests:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3553,7 +3607,7 @@ tests:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3565,7 +3619,7 @@ tests:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3577,7 +3631,7 @@ tests:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
-      score: "0.9999999997663129"
+      score: '0.9999999997663129'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3589,7 +3643,7 @@ tests:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3601,7 +3655,7 @@ tests:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3613,7 +3667,7 @@ tests:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
-      score: "0.9999958126062931"
+      score: '0.9999958126062931'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3625,7 +3679,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -3637,7 +3691,7 @@ tests:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3649,7 +3703,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -3661,7 +3715,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -3673,7 +3727,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3685,7 +3739,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "0.999999999895626"
+      score: '0.999999999895626'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3697,7 +3751,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "0.9999992056410816"
+      score: '0.9999992056410816'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3709,7 +3763,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "0.9999992056410816"
+      score: '0.9999992056410816'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3721,7 +3775,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "0.9999992056410816"
+      score: '0.9999992056410816'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3733,7 +3787,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -3745,7 +3799,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -3757,7 +3811,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -3769,7 +3823,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -3781,7 +3835,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -3793,7 +3847,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -3805,7 +3859,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -3817,7 +3871,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -3829,7 +3883,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -3841,7 +3895,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -3853,7 +3907,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3865,7 +3919,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3877,7 +3931,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3889,7 +3943,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3901,7 +3955,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3913,7 +3967,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "0.9999992056410816"
+      score: '0.9999992056410816'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3925,7 +3979,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "0.9999992056410816"
+      score: '0.9999992056410816'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3937,7 +3991,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "0.9999992056410816"
+      score: '0.9999992056410816'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3949,7 +4003,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -3961,7 +4015,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "0.9999992056410816"
+      score: '0.9999992056410816'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3973,7 +4027,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "0.9999992056410816"
+      score: '0.9999992056410816'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3985,7 +4039,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "0.9999992056410816"
+      score: '0.9999992056410816'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3997,7 +4051,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -4009,7 +4063,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -4021,7 +4075,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -4033,7 +4087,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -4045,7 +4099,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -4057,7 +4111,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "0.9999992056410816"
+      score: '0.9999992056410816'
     interpretation:
       status: loaded
       is_outlier: false
@@ -4069,7 +4123,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -4081,7 +4135,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -4093,7 +4147,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "0.9999992056410816"
+      score: '0.9999992056410816'
     interpretation:
       status: loaded
       is_outlier: false
@@ -4105,7 +4159,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -4117,7 +4171,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -4129,7 +4183,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -4141,7 +4195,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -4153,7 +4207,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "0.9999992056410816"
+      score: '0.9999992056410816'
     interpretation:
       status: loaded
       is_outlier: false
@@ -4165,7 +4219,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -4177,7 +4231,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -4189,7 +4243,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "0.9999992056410816"
+      score: '0.9999992056410816'
     interpretation:
       status: loaded
       is_outlier: false
@@ -4201,7 +4255,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "0.9999992056410816"
+      score: '0.9999992056410816'
     interpretation:
       status: loaded
       is_outlier: false
@@ -4213,7 +4267,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -4225,7 +4279,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -4237,7 +4291,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -4249,7 +4303,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -4261,7 +4315,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -4273,7 +4327,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -4285,7 +4339,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -4297,7 +4351,7 @@ tests:
       similar_to:
         test_id: R-CYL
         test_name: Cylinder Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -4309,7 +4363,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -4321,7 +4375,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -4333,7 +4387,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -4345,7 +4399,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -4357,7 +4411,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -4369,7 +4423,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -4381,7 +4435,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -4393,7 +4447,7 @@ tests:
       similar_to:
         test_id: R-CYL
         test_name: Cylinder Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -4405,7 +4459,7 @@ tests:
       similar_to:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -4417,7 +4471,7 @@ tests:
       similar_to:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -4429,7 +4483,7 @@ tests:
       similar_to:
         test_id: R-CYL
         test_name: Cylinder Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -4441,7 +4495,7 @@ tests:
       similar_to:
         test_id: R-CYL
         test_name: Cylinder Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -4450,19 +4504,46 @@ tests:
   OPC-LFI-0:
     info: TODO
     has_server_log: true
+    image_similarity:
+      similar_to:
+        test_id: loaded-partially-01
+        test_name: Manual reference screenshot
+      score: '0.8509537123037282'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: low
   OPC-LFI-1:
     info: TODO
     has_server_log: true
+    image_similarity:
+      similar_to:
+        test_id: loaded-partially-01
+        test_name: Manual reference screenshot
+      score: '0.9525368551886699'
+    interpretation:
+      status: loading
+      is_outlier: false
+      confidence: medium
   OPC-LFI-2:
     info: TODO
     has_server_log: true
+    image_similarity:
+      similar_to:
+        test_id: loaded-partially-01
+        test_name: Manual reference screenshot
+      score: '0.8529554552782027'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: low
   ZIP-SL-S:
     info: TODO
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -4474,7 +4555,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -4486,7 +4567,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -4498,7 +4579,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -4510,7 +4591,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -4522,7 +4603,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -4534,7 +4615,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: aborted
       is_outlier: false
@@ -4543,19 +4624,63 @@ tests:
   ZIP-zblg:
     info: TODO
     has_server_log: true
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: '0.7179806499829875'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
   ZIP-zbsm:
     info: TODO
     has_server_log: true
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: '0.7179806499829875'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
   ZIP-10:
     info: TODO
     has_server_log: true
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: '0.7179806499829875'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
   ZIP-20:
     info: TODO
     has_server_log: true
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: '0.7179806499829875'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
   ZIP-30:
     info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
   ZIP-34:
     info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
 deprecated:
   CS-MUST:
     status: hang

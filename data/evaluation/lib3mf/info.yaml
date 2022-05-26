@@ -27,7 +27,7 @@ tests:
       similar_to:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -39,7 +39,7 @@ tests:
       similar_to:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -51,7 +51,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "0.9690562646514227"
+      score: '0.9690562646514227'
     interpretation:
       status: loaded
       is_outlier: false
@@ -63,7 +63,7 @@ tests:
       similar_to:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -75,7 +75,7 @@ tests:
       similar_to:
         test_id: R-PYR-1
         test_name: Pyramid Model 1
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -87,7 +87,7 @@ tests:
       similar_to:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -99,7 +99,7 @@ tests:
       similar_to:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -111,7 +111,7 @@ tests:
       similar_to:
         test_id: empty
         test_name: Manual reference screenshot
-      score: "0.6659190229520996"
+      score: '0.6659190229520996'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -160,7 +160,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.6910473045231086"
+      score: '0.6910473045231086'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -253,7 +253,7 @@ tests:
       similar_to:
         test_id: empty
         test_name: Manual reference screenshot
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded nothing
       is_outlier: false
@@ -265,7 +265,7 @@ tests:
       similar_to:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
-      score: "0.7652896084795875"
+      score: '0.7652896084795875'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -296,7 +296,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -445,6 +445,10 @@ tests:
     critical: true
     problems:
     - 'Lib3MFException 5: Space in XML attribute name'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-B-EGE-R:
     info: TODO
     interpretation:
@@ -459,6 +463,10 @@ tests:
     critical: true
     problems:
     - 'Lib3MFException 5: Space in XML attribute name'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-B-EPE-L:
     info: TODO
     interpretation:
@@ -627,7 +635,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -639,7 +647,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -866,28 +874,44 @@ tests:
     critical: true
     problems:
     - 'Lib3MFException 5: Space in XML attribute name'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-EGE-I-NR:
     info: TODO
     critical: true
     problems:
     - 'Lib3MFException 5: Space in XML attribute name'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-EGE-IL-R:
     info: TODO
     critical: true
     problems:
     - 'Lib3MFException 5: Space in XML attribute name'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-EGE-IL-NR:
     info: TODO
     critical: true
     problems:
     - 'Lib3MFException 5: Space in XML attribute name'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-ADA-BASE-DISPLAYCOLOR-0:
     info: TODO
     image_similarity:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -917,7 +941,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "0.6885521269035694"
+      score: '0.6885521269035694'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -938,7 +962,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -986,7 +1010,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -998,7 +1022,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1037,7 +1061,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "0.9205956205929556"
+      score: '0.9205956205929556'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1049,7 +1073,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.6898193506730494"
+      score: '0.6898193506730494'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -1061,7 +1085,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "0.9171435866089477"
+      score: '0.9171435866089477'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1073,7 +1097,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1085,7 +1109,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1097,7 +1121,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1109,7 +1133,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1121,7 +1145,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1169,7 +1193,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1208,7 +1232,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1220,7 +1244,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1232,7 +1256,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1271,7 +1295,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "0.9981650814685473"
+      score: '0.9981650814685473'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1283,7 +1307,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "0.6879301268036373"
+      score: '0.6879301268036373'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -1295,7 +1319,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "0.9940037268142498"
+      score: '0.9940037268142498'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1307,7 +1331,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1319,7 +1343,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1349,7 +1373,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "0.9478034078108872"
+      score: '0.9478034078108872'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1370,7 +1394,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1382,7 +1406,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1394,7 +1418,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1415,7 +1439,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1427,7 +1451,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1439,7 +1463,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1451,7 +1475,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1463,7 +1487,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1475,7 +1499,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1541,7 +1565,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1553,7 +1577,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "0.9995745827130096"
+      score: '0.9995745827130096'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1565,7 +1589,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "0.9764204056079452"
+      score: '0.9764204056079452'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1577,7 +1601,7 @@ tests:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
-      score: "0.8551479580949959"
+      score: '0.8551479580949959'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -1589,7 +1613,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "0.9999999747981472"
+      score: '0.9999999747981472'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1655,7 +1679,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "0.9999999747981472"
+      score: '0.9999999747981472'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1667,7 +1691,7 @@ tests:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
-      score: "0.8559538499123422"
+      score: '0.8559538499123422'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -1688,7 +1712,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "0.9690562646514227"
+      score: '0.9690562646514227'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1700,7 +1724,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "0.9690562646514227"
+      score: '0.9690562646514227'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1757,7 +1781,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "0.9999999616853991"
+      score: '0.9999999616853991'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1787,7 +1811,7 @@ tests:
       similar_to:
         test_id: empty
         test_name: Manual reference screenshot
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded nothing
       is_outlier: false
@@ -1799,7 +1823,7 @@ tests:
       similar_to:
         test_id: empty
         test_name: Manual reference screenshot
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded nothing
       is_outlier: false
@@ -1811,7 +1835,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "0.9690562646514227"
+      score: '0.9690562646514227'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1850,7 +1874,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "0.9690562646514227"
+      score: '0.9690562646514227'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1871,7 +1895,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1883,7 +1907,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1895,7 +1919,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1907,7 +1931,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1919,7 +1943,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1931,7 +1955,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1943,7 +1967,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1964,7 +1988,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1976,7 +2000,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1988,7 +2012,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2000,7 +2024,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2012,7 +2036,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: "0.6832659497064607"
+      score: '0.6832659497064607'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -2024,7 +2048,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2045,7 +2069,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2057,7 +2081,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2069,7 +2093,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2081,7 +2105,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2093,7 +2117,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2105,7 +2129,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2126,7 +2150,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2138,7 +2162,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2168,7 +2192,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2180,7 +2204,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2192,7 +2216,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2204,7 +2228,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2216,7 +2240,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2228,7 +2252,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2240,7 +2264,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2252,7 +2276,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2264,7 +2288,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2276,7 +2300,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2288,7 +2312,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2300,7 +2324,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2321,7 +2345,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2342,7 +2366,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2354,7 +2378,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2366,7 +2390,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2378,7 +2402,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2390,7 +2414,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2429,7 +2453,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2441,7 +2465,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2471,7 +2495,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2483,7 +2507,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2495,7 +2519,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2507,7 +2531,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2519,7 +2543,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2531,7 +2555,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.9662372933488255"
+      score: '0.9662372933488255'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2543,7 +2567,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2564,7 +2588,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2585,7 +2609,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2597,7 +2621,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2609,7 +2633,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2621,7 +2645,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2633,7 +2657,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2645,7 +2669,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2684,7 +2708,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2696,7 +2720,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2726,7 +2750,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2738,7 +2762,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2750,7 +2774,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2762,7 +2786,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2774,7 +2798,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2786,7 +2810,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2798,7 +2822,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2810,7 +2834,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2822,7 +2846,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2834,7 +2858,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2846,7 +2870,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2867,7 +2891,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2879,7 +2903,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2909,7 +2933,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.9522923709307685"
+      score: '0.9522923709307685'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2921,7 +2945,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2933,7 +2957,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2945,7 +2969,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2957,7 +2981,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2978,7 +3002,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2990,7 +3014,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3002,7 +3026,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3014,7 +3038,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3026,7 +3050,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3038,7 +3062,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3077,7 +3101,7 @@ tests:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3098,7 +3122,7 @@ tests:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3110,7 +3134,7 @@ tests:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3131,7 +3155,7 @@ tests:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3143,7 +3167,7 @@ tests:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3155,7 +3179,7 @@ tests:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3167,7 +3191,7 @@ tests:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3179,7 +3203,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: "0.6956519133873318"
+      score: '0.6956519133873318'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -3191,7 +3215,7 @@ tests:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3203,7 +3227,7 @@ tests:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3224,7 +3248,7 @@ tests:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3245,7 +3269,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3347,7 +3371,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3359,7 +3383,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3371,7 +3395,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3383,7 +3407,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3395,7 +3419,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3492,7 +3516,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3504,7 +3528,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3519,13 +3543,18 @@ tests:
     critical: true
     problems:
     - 'Lib3MFException 5: Invalid index for slice segment or polygon.'
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: '1.0'
   GEN-SI-AR-SSEGMENT-V2-0:
     info: TODO
     image_similarity:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3555,7 +3584,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3567,7 +3596,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3579,7 +3608,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3609,7 +3638,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3621,7 +3650,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3643,7 +3672,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3664,7 +3693,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3676,7 +3705,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3697,7 +3726,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3727,7 +3756,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3739,7 +3768,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3787,7 +3816,7 @@ tests:
       similar_to:
         test_id: R-CYL
         test_name: Cylinder Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3862,7 +3891,7 @@ tests:
       similar_to:
         test_id: R-CYL
         test_name: Cylinder Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3874,7 +3903,7 @@ tests:
       similar_to:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3889,13 +3918,18 @@ tests:
     critical: true
     problems:
     - 'Lib3MFException 5: Document contains a duplicate relationship ID.'
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: '1.0'
   CS-1110:
     info: TODO
     image_similarity:
       similar_to:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3907,7 +3941,7 @@ tests:
       similar_to:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3918,16 +3952,28 @@ tests:
     critical: true
     problems:
     - 'Lib3MFException 5: Could not find Object associated to Component'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   OPC-LFI-1:
     info: TODO
     critical: true
     problems:
     - 'Lib3MFException 5: Could not find Object associated to Component'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   OPC-LFI-2:
     info: TODO
     critical: true
     problems:
     - 'Lib3MFException 5: Could not find Object associated to Component'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   ZIP-SL-S:
     info: TODO
     interpretation:
@@ -3952,7 +3998,7 @@ tests:
       similar_to:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3964,7 +4010,7 @@ tests:
       similar_to:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3976,7 +4022,7 @@ tests:
       similar_to:
         test_id: R-CYL
         test_name: Cylinder Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3988,7 +4034,7 @@ tests:
       similar_to:
         test_id: R-CYL
         test_name: Cylinder Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -4000,7 +4046,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: "1.0"
+      score: '1.0'
     interpretation:
       status: loaded
       is_outlier: false
@@ -4011,31 +4057,55 @@ tests:
     critical: true
     problems:
     - 'Lib3MFException 5: The call parameter to the function was invalid'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   ZIP-zbsm:
     info: TODO
     critical: true
     problems:
     - 'Lib3MFException 5: The call parameter to the function was invalid'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   ZIP-10:
     info: TODO
     critical: true
     problems:
     - 'Lib3MFException 5: The call parameter to the function was invalid'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   ZIP-20:
     info: TODO
     critical: true
     problems:
     - 'Lib3MFException 5: The call parameter to the function was invalid'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   ZIP-30:
     info: TODO
     critical: true
     problems:
     - 'Lib3MFException 5: The call parameter to the function was invalid'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   ZIP-34:
     info: TODO
     critical: true
     problems:
     - 'Lib3MFException 5: The call parameter to the function was invalid'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
 deprecated:
   ZIP-zbxl:
     info: TODO
