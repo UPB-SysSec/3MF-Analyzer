@@ -91,14 +91,15 @@ tests:
     further_infos: |
       [^ZIP02]
 
-  ZIP-zbxl:
-    Name: ZIP Bomb zbxl
-    type: Denial of Service
-    created: true
-    conforms_to_spec: n
-    expected_behavior: Fail
-    further_infos: |
-      [^ZIP02]
+  # ZIP-zbxl:
+  #   Name: ZIP Bomb zbxl
+  #   type: Denial of Service
+  #   created: true
+  #   conforms_to_spec: n
+  #   expected_behavior: Fail
+  #   further_infos: |
+  #     [^ZIP02]
+  # detected by windows AV and automatically removed -> not tested
 
   ZIP-10:
     Name: ZIP Bomb 10
