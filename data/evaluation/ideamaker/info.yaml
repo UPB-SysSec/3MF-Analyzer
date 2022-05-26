@@ -14,8 +14,8 @@ tests:
       status: loaded
       is_outlier: false
       confidence: medium
-    has_server_log: true
     status: loaded
+    has_server_log: true
   CS-DOR:
     info: crashed
     interpretation:
@@ -106,199 +106,6 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: "0.9433133756067941"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: medium
-    has_server_log: true
-  CS-0000:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: "1.0"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0001:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: "1.0"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0010:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-CYL
-        test_name: Cylinder Model
-      score: "1.0"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0011:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-CYL
-        test_name: Cylinder Model
-      score: "1.0"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0100:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: "1.0"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0101:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: "1.0"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0110:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-CYL
-        test_name: Cylinder Model
-      score: "1.0"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0111:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-CYL
-        test_name: Cylinder Model
-      score: "1.0"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1000:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "1.0"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1001:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "1.0"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1010:
-    info: both
-    image_similarity:
-      similar_to:
-        test_id: R-SPEC-M-0
-        test_name: Full/Reference model for materials specification (M)
-      score: "0.9243760702350193"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: medium
-    has_server_log: true
-    status: loaded
-  CS-1011:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-SPEC-M-0
-        test_name: Full/Reference model for materials specification (M)
-      score: "0.9243760702350193"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: medium
-    has_server_log: true
-  CS-1100:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "1.0"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1101:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "1.0"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1110:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-SPEC-M-0
-        test_name: Full/Reference model for materials specification (M)
-      score: "0.9243760702350193"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: medium
-    has_server_log: true
-  CS-1111:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-SPEC-M-0
-        test_name: Full/Reference model for materials specification (M)
-      score: "0.9243760702350193"
     interpretation:
       status: loaded
       is_outlier: false
@@ -1245,8 +1052,16 @@ tests:
     has_server_log: true
   XML-EGE-I-R:
     info: TODO
+    has_server_log: true
   XML-EGE-I-NR:
     info: TODO
+    has_server_log: true
+  XML-EGE-IL-R:
+    info: TODO
+    has_server_log: true
+  XML-EGE-IL-NR:
+    info: TODO
+    has_server_log: true
   GEN-C-ADA-BASE-DISPLAYCOLOR-0:
     info: TODO
     image_similarity:
@@ -4439,6 +4254,208 @@ tests:
       is_outlier: false
       confidence: high
     has_server_log: true
+  CS-0000:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "1.0"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0001:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "1.0"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0010:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CYL
+        test_name: Cylinder Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0011:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CYL
+        test_name: Cylinder Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0100:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "1.0"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0101:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "1.0"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0110:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CYL
+        test_name: Cylinder Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0111:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CYL
+        test_name: Cylinder Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1000:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1001:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1010:
+    info: both
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9243760702350193"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: medium
+    status: loaded
+    has_server_log: true
+  CS-1011:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9243760702350193"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
+  CS-1100:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1101:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1110:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9243760702350193"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
+  CS-1111:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: "0.9243760702350193"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
+  OPC-LFI-0:
+    info: TODO
+    has_server_log: true
+  OPC-LFI-1:
+    info: TODO
+    has_server_log: true
+  OPC-LFI-2:
+    info: TODO
+    has_server_log: true
   ZIP-SL-S:
     info: TODO
     image_similarity:
@@ -4523,6 +4540,31 @@ tests:
       is_outlier: false
       confidence: high
     has_server_log: true
+  ZIP-zblg:
+    info: TODO
+    missing_process_info: 3
+    missing_screenshot: 6
+    problems:
+    - Too many missing/broken screenshot files.
+    critical: true
+    has_server_log: true
+  ZIP-zbsm:
+    info: TODO
+    missing_screenshot: 6
+    problems:
+    - Too many missing/broken screenshot files.
+    critical: true
+    has_server_log: true
+  ZIP-10:
+    info: TODO
+    has_server_log: true
+  ZIP-20:
+    info: TODO
+    has_server_log: true
+  ZIP-30:
+    info: TODO
+  ZIP-34:
+    info: TODO
 deprecated:
   CS-MUST:
     info: TODO
@@ -4554,3 +4596,10 @@ deprecated:
     missing_process_info: 0
     missing_screenshot: 0
     critical: false
+  ZIP-zbxl:
+    info: TODO
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
+    has_server_log: true

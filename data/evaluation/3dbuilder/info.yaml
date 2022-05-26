@@ -144,214 +144,6 @@ tests:
       is_outlier: false
       confidence: high
     has_server_log: true
-  CS-0000:
-    status: aborted
-    alert: E03
-    image_similarity:
-      similar_to:
-        test_id: error-message
-        test_name: Manual reference screenshot
-      score: "1.0"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0001:
-    status: aborted
-    alert: E03
-    image_similarity:
-      similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: "0.9933444677232167"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0010:
-    status: aborted
-    alert: E03
-    image_similarity:
-      similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: "0.9985448750958643"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0011:
-    status: loaded
-    info: cylinder
-    image_similarity:
-      similar_to:
-        test_id: R-CYL
-        test_name: Cylinder Model
-      score: "0.9982337973248795"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0100:
-    status: aborted
-    alert: E03
-    image_similarity:
-      similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: "0.9985095228362726"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0101:
-    status: aborted
-    alert: E04
-    image_similarity:
-      similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: "0.998261261289945"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0110:
-    status: aborted
-    alert: E03
-    image_similarity:
-      similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: "0.9985253260008309"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0111:
-    status: aborted
-    alert: E04
-    image_similarity:
-      similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: "0.9982772602170742"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1000:
-    status: aborted
-    alert: E03
-    image_similarity:
-      similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: "0.9985098404768453"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1001:
-    status: aborted
-    alert: E03
-    image_similarity:
-      similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: "0.9985217106252463"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1010:
-    status: aborted
-    alert: E03
-    image_similarity:
-      similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: "0.9985266497815096"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1011:
-    status: loaded
-    info: cylinder
-    image_similarity:
-      similar_to:
-        test_id: R-CYL
-        test_name: Cylinder Model
-      score: "0.9982542550885246"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1100:
-    status: loaded
-    info: pyramid
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "0.9983021825956669"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1101:
-    status: aborted
-    alert: E04
-    image_similarity:
-      similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: "0.998242793363631"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1110:
-    status: loaded
-    info: pyramid
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "0.9983097948487754"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1111:
-    status: loaded
-    info: pyramid
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "0.9983190972706981"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
   DOS-BL-MBR:
     status: loaded
     info: |-
@@ -1298,8 +1090,16 @@ tests:
     has_server_log: true
   XML-EGE-I-R:
     info: TODO
+    has_server_log: true
   XML-EGE-I-NR:
     info: TODO
+    has_server_log: true
+  XML-EGE-IL-R:
+    info: TODO
+    has_server_log: true
+  XML-EGE-IL-NR:
+    info: TODO
+    has_server_log: true
   GEN-C-ADA-BASE-DISPLAYCOLOR-0:
     info: TODO
     image_similarity:
@@ -4492,6 +4292,223 @@ tests:
       is_outlier: false
       confidence: high
     has_server_log: true
+  CS-0000:
+    status: aborted
+    alert: E03
+    image_similarity:
+      similar_to:
+        test_id: error-message
+        test_name: Manual reference screenshot
+      score: "1.0"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0001:
+    status: aborted
+    alert: E03
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9933444677232167"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0010:
+    status: aborted
+    alert: E03
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9985448750958643"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0011:
+    status: loaded
+    info: cylinder
+    image_similarity:
+      similar_to:
+        test_id: R-CYL
+        test_name: Cylinder Model
+      score: "0.9982337973248795"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0100:
+    status: aborted
+    alert: E03
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9985095228362726"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0101:
+    status: aborted
+    alert: E04
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.998261261289945"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0110:
+    status: aborted
+    alert: E03
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9985253260008309"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0111:
+    status: aborted
+    alert: E04
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9982772602170742"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1000:
+    status: aborted
+    alert: E03
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9985098404768453"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1001:
+    status: aborted
+    alert: E03
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9985217106252463"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1010:
+    status: aborted
+    alert: E03
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9985266497815096"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1011:
+    status: loaded
+    info: cylinder
+    image_similarity:
+      similar_to:
+        test_id: R-CYL
+        test_name: Cylinder Model
+      score: "0.9982542550885246"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1100:
+    status: loaded
+    info: pyramid
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.9983021825956669"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1101:
+    status: aborted
+    alert: E04
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.998242793363631"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1110:
+    status: loaded
+    info: pyramid
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.9983097948487754"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1111:
+    status: loaded
+    info: pyramid
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.9983190972706981"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  OPC-LFI-0:
+    info: TODO
+    has_server_log: true
+  OPC-LFI-1:
+    info: TODO
+    has_server_log: true
+  OPC-LFI-2:
+    info: TODO
+    has_server_log: true
   ZIP-SL-S:
     status: aborted
     alert: E06
@@ -4582,6 +4599,22 @@ tests:
       is_outlier: false
       confidence: high
     has_server_log: true
+  ZIP-zblg:
+    info: TODO
+    has_server_log: true
+  ZIP-zbsm:
+    info: TODO
+    has_server_log: true
+  ZIP-10:
+    info: TODO
+    has_server_log: true
+  ZIP-20:
+    info: TODO
+    has_server_log: true
+  ZIP-30:
+    info: TODO
+  ZIP-34:
+    info: TODO
 deprecated:
   CS-MUST:
     status: aborted
@@ -4624,3 +4657,6 @@ deprecated:
     missing_process_info: 0
     missing_screenshot: 0
     critical: false
+  ZIP-zbxl:
+    info: TODO
+    has_server_log: true

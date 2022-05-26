@@ -124,214 +124,6 @@ tests:
       is_outlier: false
       confidence: high
     has_server_log: true
-  CS-0000:
-    status: aborted
-    alert: E01
-    image_similarity:
-      similar_to:
-        test_id: error-message-file-not-opened
-        test_name: Manual reference screenshot
-      score: "1.0"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0001:
-    status: aborted
-    alert: E01
-    image_similarity:
-      similar_to:
-        test_id: error-message-file-not-opened
-        test_name: Manual reference screenshot
-      score: "0.9996203450844673"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0010:
-    status: aborted
-    alert: E01
-    image_similarity:
-      similar_to:
-        test_id: error-message-file-not-opened
-        test_name: Manual reference screenshot
-      score: "0.9974693546271672"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0011:
-    status: aborted
-    alert: E01
-    image_similarity:
-      similar_to:
-        test_id: error-message-file-not-opened
-        test_name: Manual reference screenshot
-      score: "0.9993084336008423"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0100:
-    status: aborted
-    alert: E01
-    image_similarity:
-      similar_to:
-        test_id: error-message-file-not-opened
-        test_name: Manual reference screenshot
-      score: "0.9996499938070377"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0101:
-    status: aborted
-    alert: E01
-    image_similarity:
-      similar_to:
-        test_id: error-message-file-not-opened
-        test_name: Manual reference screenshot
-      score: "0.9992703559332614"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0110:
-    status: aborted
-    alert: E01
-    image_similarity:
-      similar_to:
-        test_id: error-message-file-not-opened
-        test_name: Manual reference screenshot
-      score: "0.9993381864278508"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0111:
-    status: aborted
-    alert: E01
-    image_similarity:
-      similar_to:
-        test_id: error-message-file-not-opened
-        test_name: Manual reference screenshot
-      score: "0.9986571334977535"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1000:
-    status: loaded
-    info: pyramid
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "0.9922878690851958"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1001:
-    status: loaded
-    info: pyramid
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "0.9924409131450221"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1010:
-    status: loaded
-    info: pyramid
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "0.9923307030489612"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1011:
-    status: loaded
-    info: pyramid
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "0.9921841081129239"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1100:
-    status: loaded
-    info: pyramid
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "0.9922020141587957"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1101:
-    status: loaded
-    info: pyramid
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "0.9920558642105854"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1110:
-    status: loaded
-    info: pyramid
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "0.9922431458492036"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1111:
-    status: loaded
-    info: pyramid
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "0.9920965408007121"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
   DOS-BL-MBR:
     status: loaded
     alert: W01
@@ -1274,8 +1066,16 @@ tests:
     has_server_log: true
   XML-EGE-I-R:
     info: TODO
+    has_server_log: true
   XML-EGE-I-NR:
     info: TODO
+    has_server_log: true
+  XML-EGE-IL-R:
+    info: TODO
+    has_server_log: true
+  XML-EGE-IL-NR:
+    info: TODO
+    has_server_log: true
   GEN-C-ADA-BASE-DISPLAYCOLOR-0:
     info: TODO
     image_similarity:
@@ -4462,6 +4262,229 @@ tests:
       is_outlier: false
       confidence: high
     has_server_log: true
+  CS-0000:
+    status: aborted
+    alert: E01
+    image_similarity:
+      similar_to:
+        test_id: error-message-file-not-opened
+        test_name: Manual reference screenshot
+      score: "1.0"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0001:
+    status: aborted
+    alert: E01
+    image_similarity:
+      similar_to:
+        test_id: error-message-file-not-opened
+        test_name: Manual reference screenshot
+      score: "0.9996203450844673"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0010:
+    status: aborted
+    alert: E01
+    image_similarity:
+      similar_to:
+        test_id: error-message-file-not-opened
+        test_name: Manual reference screenshot
+      score: "0.9974693546271672"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0011:
+    status: aborted
+    alert: E01
+    image_similarity:
+      similar_to:
+        test_id: error-message-file-not-opened
+        test_name: Manual reference screenshot
+      score: "0.9993084336008423"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0100:
+    status: aborted
+    alert: E01
+    image_similarity:
+      similar_to:
+        test_id: error-message-file-not-opened
+        test_name: Manual reference screenshot
+      score: "0.9996499938070377"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0101:
+    status: aborted
+    alert: E01
+    image_similarity:
+      similar_to:
+        test_id: error-message-file-not-opened
+        test_name: Manual reference screenshot
+      score: "0.9992703559332614"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0110:
+    status: aborted
+    alert: E01
+    image_similarity:
+      similar_to:
+        test_id: error-message-file-not-opened
+        test_name: Manual reference screenshot
+      score: "0.9993381864278508"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0111:
+    status: aborted
+    alert: E01
+    image_similarity:
+      similar_to:
+        test_id: error-message-file-not-opened
+        test_name: Manual reference screenshot
+      score: "0.9986571334977535"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1000:
+    status: loaded
+    info: pyramid
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.9922878690851958"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1001:
+    status: loaded
+    info: pyramid
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.9924409131450221"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1010:
+    status: loaded
+    info: pyramid
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.9923307030489612"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1011:
+    status: loaded
+    info: pyramid
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.9921841081129239"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1100:
+    status: loaded
+    info: pyramid
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.9922020141587957"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1101:
+    status: loaded
+    info: pyramid
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.9920558642105854"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1110:
+    status: loaded
+    info: pyramid
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.9922431458492036"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1111:
+    status: loaded
+    info: pyramid
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.9920965408007121"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  OPC-LFI-0:
+    info: TODO
+    critical: true
+    problems:
+    - Window did not start in 30 seconds.
+  OPC-LFI-1:
+    info: TODO
+    critical: true
+    problems:
+    - Window did not start in 30 seconds.
+  OPC-LFI-2:
+    info: TODO
+    critical: true
+    problems:
+    - Window did not start in 30 seconds.
   ZIP-SL-S:
     status: aborted
     alert: E02
@@ -4552,6 +4575,22 @@ tests:
       is_outlier: false
       confidence: high
     has_server_log: true
+  ZIP-zblg:
+    info: TODO
+    has_server_log: true
+  ZIP-zbsm:
+    info: TODO
+    has_server_log: true
+  ZIP-10:
+    info: TODO
+    has_server_log: true
+  ZIP-20:
+    info: TODO
+    has_server_log: true
+  ZIP-30:
+    info: TODO
+  ZIP-34:
+    info: TODO
 deprecated:
   CS-MUST:
     status: loaded
@@ -4594,3 +4633,10 @@ deprecated:
     missing_process_info: 0
     missing_screenshot: 0
     critical: false
+  ZIP-zbxl:
+    info: TODO
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
+    has_server_log: true

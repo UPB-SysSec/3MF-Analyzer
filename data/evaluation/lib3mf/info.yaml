@@ -11,7 +11,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Duplicate Resource ID"
+    - 'Lib3MFException 5: Duplicate Resource ID'
   CS-DOR:
     info: TODO
     interpretation:
@@ -20,7 +20,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Too many values (>12) have been found in a matrix string"
+    - 'Lib3MFException 5: Too many values (>12) have been found in a matrix string'
   CS-MUDT:
     info: TODO
     image_similarity:
@@ -105,165 +105,6 @@ tests:
       is_outlier: false
       confidence: high
     has_server_log: true
-  CS-0000:
-    info: TODO
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    critical: true
-    problems:
-    - "Lib3MFException 5: Could not read OPC Relationship Set"
-  CS-0001:
-    info: TODO
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    critical: true
-    problems:
-    - "Lib3MFException 5: Could not create OPC Part"
-  CS-0010:
-    info: TODO
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    critical: true
-    problems:
-    - "Lib3MFException 5: Could not read OPC Relationship Set"
-  CS-0011:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-CYL
-        test_name: Cylinder Model
-      score: "1.0"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0100:
-    info: TODO
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    critical: true
-    problems:
-    - "Lib3MFException 5: Could not create OPC Part"
-  CS-0101:
-    info: TODO
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    critical: true
-    problems:
-    - "Lib3MFException 5: Document contains a duplicate relationship ID."
-  CS-0110:
-    info: TODO
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    critical: true
-    problems:
-    - "Lib3MFException 5: Could not create OPC Part"
-  CS-0111:
-    info: TODO
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    critical: true
-    problems:
-    - "Lib3MFException 5: Document contains a duplicate relationship ID."
-  CS-1000:
-    info: TODO
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    critical: true
-    problems:
-    - "Lib3MFException 5: Could not read OPC Relationship Set"
-  CS-1001:
-    info: TODO
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    critical: true
-    problems:
-    - "Lib3MFException 5: Could not create OPC Part"
-  CS-1010:
-    info: TODO
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    critical: true
-    problems:
-    - "Lib3MFException 5: Could not read OPC Relationship Set"
-  CS-1011:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-CYL
-        test_name: Cylinder Model
-      score: "1.0"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1100:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "1.0"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1101:
-    info: TODO
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    critical: true
-    problems:
-    - "Lib3MFException 5: Document contains a duplicate relationship ID."
-  CS-1110:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "1.0"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1111:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "1.0"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
   DOS-BL-MBR:
     info: roughly 90 times higher execution duration
     image_similarity:
@@ -284,7 +125,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Could not find Slicestack Resource"
+    - 'Lib3MFException 5: Could not find Slicestack Resource'
   DOS-FUZ-LIB3MF:
     info: crashed
     interpretation:
@@ -294,7 +135,7 @@ tests:
     status: aborted
     critical: true
     problems:
-    - "exception: access violation reading 0x0000000000000000"
+    - 'exception: access violation reading 0x0000000000000000'
   DOS-FUZ-SAVITAR-0:
     info: TODO
     interpretation:
@@ -303,7 +144,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Invalid model node index"
+    - 'Lib3MFException 5: Invalid model node index'
   DOS-FUZ-SAVITAR-1:
     info: TODO
     interpretation:
@@ -312,7 +153,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Invalid XML attribute name"
+    - 'Lib3MFException 5: Invalid XML attribute name'
   DOS-FUZ-SLIC3R-0:
     info: TODO
     image_similarity:
@@ -332,7 +173,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Could not end XML element"
+    - 'Lib3MFException 5: Could not end XML element'
   DOS-FUZ-SLIC3R-2:
     info: TODO
     interpretation:
@@ -341,7 +182,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Invalid Element in namespace."
+    - 'Lib3MFException 5: Invalid Element in namespace.'
   R-CYL:
     info: TODO
     interpretation:
@@ -406,7 +247,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Could not create OPC Part"
+    - 'Lib3MFException 5: Could not create OPC Part'
   F-B-BAL:
     image_similarity:
       similar_to:
@@ -439,7 +280,7 @@ tests:
     status: aborted
     critical: true
     problems:
-    - "Lib3MFException 5: Could not create OPC Part"
+    - 'Lib3MFException 5: Could not create OPC Part'
   F-B-SLI:
     interpretation:
       status: aborted
@@ -448,7 +289,7 @@ tests:
     status: aborted
     critical: true
     problems:
-    - "Lib3MFException 5: Could not create OPC Part"
+    - 'Lib3MFException 5: Could not create OPC Part'
   F-EAP:
     info: TODO
     image_similarity:
@@ -490,7 +331,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-MOD-ALT-B-EGE-R:
     info: TODO
     interpretation:
@@ -499,7 +340,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-MOD-ALT-B-EPE-L:
     info: TODO
     interpretation:
@@ -508,7 +349,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-MOD-ALT-B-EPE-R:
     info: TODO
     interpretation:
@@ -517,7 +358,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-MOD-ALT-B-IGE:
     info: TODO
     interpretation:
@@ -526,7 +367,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-MOD-ALT-B-IPE:
     info: TODO
     interpretation:
@@ -535,7 +376,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-MOD-ALT-DOS-BL:
     info: TODO
     interpretation:
@@ -544,7 +385,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-MOD-ALT-DOS-BL-PE-R:
     info: TODO
     interpretation:
@@ -553,7 +394,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-MOD-ALT-DOS-C:
     info: TODO
     interpretation:
@@ -562,7 +403,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-MOD-ALT-FBC-BPR-A:
     info: TODO
     interpretation:
@@ -571,7 +412,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-MOD-ALT-FBC-BPR-B:
     info: TODO
     interpretation:
@@ -580,7 +421,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-MOD-ALT-OOB-R:
     info: TODO
     interpretation:
@@ -589,7 +430,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-MOD-B-EGE-L:
     info: TODO
     interpretation:
@@ -598,7 +439,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-MOD-B-EGE-LX:
     info: TODO
     critical: true
@@ -612,7 +453,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-MOD-B-EGE-RX:
     info: TODO
     critical: true
@@ -626,7 +467,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-MOD-B-EPE-R:
     info: TODO
     interpretation:
@@ -635,7 +476,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-MOD-B-IGE:
     info: TODO
     interpretation:
@@ -644,7 +485,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-MOD-B-IPE:
     info: TODO
     interpretation:
@@ -653,7 +494,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-MOD-DOS-BL:
     info: TODO
     interpretation:
@@ -662,7 +503,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-MOD-DOS-BL-PE-R:
     info: TODO
     interpretation:
@@ -671,7 +512,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-MOD-DOS-C:
     info: TODO
     interpretation:
@@ -680,7 +521,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-MOD-DOS-PL:
     info: TODO
     interpretation:
@@ -689,7 +530,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-MOD-FBC-AV:
     info: TODO
     interpretation:
@@ -698,7 +539,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-MOD-FBC-BPR-A:
     info: TODO
     interpretation:
@@ -707,7 +548,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-MOD-FBC-BPR-B:
     info: TODO
     interpretation:
@@ -716,7 +557,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-MOD-FBC-E:
     info: TODO
     interpretation:
@@ -725,7 +566,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-MOD-FBC-E-L:
     info: TODO
     interpretation:
@@ -734,7 +575,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-MOD-OOB-NNSL:
     info: TODO
     interpretation:
@@ -743,7 +584,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-MOD-OOB-PE-R:
     info: TODO
     interpretation:
@@ -752,7 +593,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-MOD-OOB-R:
     info: TODO
     interpretation:
@@ -761,7 +602,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-MOD-OOB-SL:
     info: TODO
     interpretation:
@@ -770,7 +611,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-MOD-OOB-XI:
     info: TODO
     interpretation:
@@ -779,7 +620,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-MOD-SSRF-NNSL:
     info: TODO
     image_similarity:
@@ -812,7 +653,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: No build section in model file"
+    - 'Lib3MFException 5: No build section in model file'
   XML-REL-B-EGE-L:
     info: TODO
     interpretation:
@@ -821,7 +662,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-REL-B-EGE-R:
     info: TODO
     interpretation:
@@ -830,7 +671,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-REL-B-EPE-L:
     info: TODO
     interpretation:
@@ -839,7 +680,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-REL-B-EPE-R:
     info: TODO
     interpretation:
@@ -848,7 +689,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-REL-B-IGE:
     info: TODO
     interpretation:
@@ -857,7 +698,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-REL-B-IPE:
     info: TODO
     interpretation:
@@ -866,7 +707,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-REL-DOS-BL:
     info: TODO
     interpretation:
@@ -875,7 +716,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-REL-DOS-BL-PE-R:
     info: TODO
     interpretation:
@@ -884,7 +725,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-REL-DOS-C:
     info: TODO
     interpretation:
@@ -893,7 +734,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-REL-DOS-PL:
     info: TODO
     interpretation:
@@ -902,7 +743,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-REL-FBC-AV:
     info: TODO
     interpretation:
@@ -911,7 +752,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-REL-FBC-BPR-A:
     info: TODO
     interpretation:
@@ -920,7 +761,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-REL-FBC-BPR-B:
     info: TODO
     interpretation:
@@ -929,7 +770,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-REL-FBC-E:
     info: TODO
     interpretation:
@@ -938,7 +779,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-REL-FBC-E-L:
     info: TODO
     interpretation:
@@ -947,7 +788,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-REL-OOB-NNSL:
     info: TODO
     interpretation:
@@ -956,7 +797,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-REL-OOB-PE-R:
     info: TODO
     interpretation:
@@ -965,7 +806,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-REL-OOB-R:
     info: TODO
     interpretation:
@@ -974,7 +815,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-REL-OOB-SL:
     info: TODO
     interpretation:
@@ -983,7 +824,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-REL-OOB-XI:
     info: TODO
     interpretation:
@@ -992,7 +833,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Space in XML attribute name"
+    - 'Lib3MFException 5: Space in XML attribute name'
   XML-REL-SSRF-NNSL:
     info: TODO
     interpretation:
@@ -1001,7 +842,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Could not read OPC Relationship Set"
+    - 'Lib3MFException 5: Could not read OPC Relationship Set'
   XML-REL-SSRF-SL:
     info: TODO
     interpretation:
@@ -1010,7 +851,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Resource not found"
+    - 'Lib3MFException 5: Resource not found'
   XML-REL-SSRF-XI:
     info: TODO
     interpretation:
@@ -1019,13 +860,23 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Resource not found"
+    - 'Lib3MFException 5: Resource not found'
   XML-EGE-I-R:
     info: TODO
     critical: true
     problems:
     - 'Lib3MFException 5: Space in XML attribute name'
   XML-EGE-I-NR:
+    info: TODO
+    critical: true
+    problems:
+    - 'Lib3MFException 5: Space in XML attribute name'
+  XML-EGE-IL-R:
+    info: TODO
+    critical: true
+    problems:
+    - 'Lib3MFException 5: Space in XML attribute name'
+  XML-EGE-IL-NR:
     info: TODO
     critical: true
     problems:
@@ -1050,7 +901,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Duplicate Resource ID"
+    - 'Lib3MFException 5: Duplicate Resource ID'
   GEN-C-ADA-COMPONENT-OBJECTID-0:
     info: TODO
     interpretation:
@@ -1059,7 +910,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Component Object ID is ambiguous "
+    - 'Lib3MFException 5: Component Object ID is ambiguous '
   GEN-C-ADA-COMPONENT-TRANSFORM-0:
     info: TODO
     image_similarity:
@@ -1080,7 +931,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Build item Object ID is ambiguous "
+    - 'Lib3MFException 5: Build item Object ID is ambiguous '
   GEN-C-ADA-MODEL-UNIT-0:
     info: TODO
     image_similarity:
@@ -1101,7 +952,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Model Object ID was given twice"
+    - 'Lib3MFException 5: Model Object ID was given twice'
   GEN-C-ADA-OBJECT-PID-0:
     info: TODO
     interpretation:
@@ -1110,7 +961,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Duplicate Property ID."
+    - 'Lib3MFException 5: Duplicate Property ID.'
   GEN-C-ADA-OBJECT-PINDEX-0:
     info: TODO
     interpretation:
@@ -1119,7 +970,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Duplicate Property Index."
+    - 'Lib3MFException 5: Duplicate Property Index.'
   GEN-C-ADA-OBJECT-TYPE-0:
     info: TODO
     interpretation:
@@ -1128,7 +979,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Duplicate Object Type"
+    - 'Lib3MFException 5: Duplicate Object Type'
   GEN-C-ADA-TRIANGLE-P1-0:
     info: TODO
     image_similarity:
@@ -1161,7 +1012,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Invalid model node index"
+    - 'Lib3MFException 5: Invalid model node index'
   GEN-C-ADA-TRIANGLE-V2-0:
     info: TODO
     interpretation:
@@ -1170,7 +1021,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Invalid model node index"
+    - 'Lib3MFException 5: Invalid model node index'
   GEN-C-ADA-TRIANGLE-V3-0:
     info: TODO
     interpretation:
@@ -1179,7 +1030,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Invalid model node index"
+    - 'Lib3MFException 5: Invalid model node index'
   GEN-C-ADA-VERTEX-X-0:
     info: TODO
     image_similarity:
@@ -1284,7 +1135,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Wanted to convert too large number string to integer"
+    - 'Lib3MFException 5: Wanted to convert too large number string to integer'
   GEN-C-AI-COMPONENT-OBJECTID-0:
     info: TODO
     interpretation:
@@ -1293,7 +1144,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Wanted to convert too large number string to integer"
+    - 'Lib3MFException 5: Wanted to convert too large number string to integer'
   GEN-C-AI-COMPONENT-TRANSFORM-0:
     info: TODO
     interpretation:
@@ -1302,7 +1153,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Too many values (>12) have been found in a matrix string"
+    - 'Lib3MFException 5: Too many values (>12) have been found in a matrix string'
   GEN-C-AI-ITEM-OBJECTID-0:
     info: TODO
     interpretation:
@@ -1311,7 +1162,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Wanted to convert too large number string to integer"
+    - 'Lib3MFException 5: Wanted to convert too large number string to integer'
   GEN-C-AI-MODEL-UNIT-0:
     info: TODO
     image_similarity:
@@ -1332,7 +1183,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Wanted to convert too large number string to integer"
+    - 'Lib3MFException 5: Wanted to convert too large number string to integer'
   GEN-C-AI-OBJECT-PID-0:
     info: TODO
     interpretation:
@@ -1341,7 +1192,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Wanted to convert too large number string to integer"
+    - 'Lib3MFException 5: Wanted to convert too large number string to integer'
   GEN-C-AI-OBJECT-PINDEX-0:
     info: TODO
     interpretation:
@@ -1350,7 +1201,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Wanted to convert too large number string to integer"
+    - 'Lib3MFException 5: Wanted to convert too large number string to integer'
   GEN-C-AI-OBJECT-TYPE-0:
     info: TODO
     image_similarity:
@@ -1395,7 +1246,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Invalid model node index"
+    - 'Lib3MFException 5: Invalid model node index'
   GEN-C-AI-TRIANGLE-V2-0:
     info: TODO
     interpretation:
@@ -1404,7 +1255,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Invalid model node index"
+    - 'Lib3MFException 5: Invalid model node index'
   GEN-C-AI-TRIANGLE-V3-0:
     info: TODO
     interpretation:
@@ -1413,7 +1264,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Invalid model node index"
+    - 'Lib3MFException 5: Invalid model node index'
   GEN-C-AI-VERTEX-X-0:
     info: TODO
     image_similarity:
@@ -1482,7 +1333,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Missing Model Resource ID"
+    - 'Lib3MFException 5: Missing Model Resource ID'
   GEN-C-AR-COMPONENT-OBJECTID-0:
     info: TODO
     interpretation:
@@ -1491,7 +1342,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: No Model Object ID has been given"
+    - 'Lib3MFException 5: No Model Object ID has been given'
   GEN-C-AR-COMPONENT-TRANSFORM-0:
     info: TODO
     image_similarity:
@@ -1512,7 +1363,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Build item Object ID was not specified"
+    - 'Lib3MFException 5: Build item Object ID was not specified'
   GEN-C-AR-MODEL-UNIT-0:
     info: TODO
     image_similarity:
@@ -1557,7 +1408,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: No Model Object ID has been given"
+    - 'Lib3MFException 5: No Model Object ID has been given'
   GEN-C-AR-OBJECT-NAME-0:
     info: TODO
     image_similarity:
@@ -1638,7 +1489,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Invalid model node index"
+    - 'Lib3MFException 5: Invalid model node index'
   GEN-C-AR-TRIANGLE-V2-0:
     info: TODO
     interpretation:
@@ -1647,7 +1498,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Invalid model node index"
+    - 'Lib3MFException 5: Invalid model node index'
   GEN-C-AR-TRIANGLE-V3-0:
     info: TODO
     interpretation:
@@ -1656,7 +1507,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Invalid model node index"
+    - 'Lib3MFException 5: Invalid model node index'
   GEN-C-AR-VERTEX-X-0:
     info: TODO
     interpretation:
@@ -1665,7 +1516,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Model Vertex is missing a coordinate"
+    - 'Lib3MFException 5: Model Vertex is missing a coordinate'
   GEN-C-AR-VERTEX-Y-0:
     info: TODO
     interpretation:
@@ -1674,7 +1525,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Model Vertex is missing a coordinate"
+    - 'Lib3MFException 5: Model Vertex is missing a coordinate'
   GEN-C-AR-VERTEX-Z-0:
     info: TODO
     interpretation:
@@ -1683,7 +1534,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Model Vertex is missing a coordinate"
+    - 'Lib3MFException 5: Model Vertex is missing a coordinate'
   GEN-C-CDA-BASEMATERIALS-0:
     info: TODO
     image_similarity:
@@ -1752,7 +1603,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Duplicate resources section in model file"
+    - 'Lib3MFException 5: Duplicate resources section in model file'
   GEN-C-CDA-MODEL-1:
     info: TODO
     interpretation:
@@ -1761,7 +1612,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Duplicate build section in model file"
+    - 'Lib3MFException 5: Duplicate build section in model file'
   GEN-C-CDA-OBJECT-0:
     info: TODO
     interpretation:
@@ -1770,7 +1621,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Model Object Content was ambiguous"
+    - 'Lib3MFException 5: Model Object Content was ambiguous'
   GEN-C-CDA-OBJECT-1:
     info: TODO
     interpretation:
@@ -1779,7 +1630,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Model Object Content was ambiguous"
+    - 'Lib3MFException 5: Model Object Content was ambiguous'
   GEN-C-CDA-RESOURCES-0:
     info: TODO
     interpretation:
@@ -1788,7 +1639,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Duplicate Resource ID"
+    - 'Lib3MFException 5: Duplicate Resource ID'
   GEN-C-CDA-RESOURCES-1:
     info: TODO
     interpretation:
@@ -1797,7 +1648,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Duplicate Resource ID"
+    - 'Lib3MFException 5: Duplicate Resource ID'
   GEN-C-CDA-TRIANGLES-0:
     info: TODO
     image_similarity:
@@ -1830,7 +1681,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: A Resource Index is invalid"
+    - 'Lib3MFException 5: A Resource Index is invalid'
   GEN-C-CR-COMPONENTS-COMPONENT-0:
     info: TODO
     image_similarity:
@@ -1863,7 +1714,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Invalid model node index"
+    - 'Lib3MFException 5: Invalid model node index'
   GEN-C-CR-MODEL-BUILD-0:
     info: TODO
     interpretation:
@@ -1872,7 +1723,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: No build section in model file"
+    - 'Lib3MFException 5: No build section in model file'
   GEN-C-CR-MODEL-RESOURCES-0:
     info: TODO
     interpretation:
@@ -1881,7 +1732,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Could not find Object associated to the Build item "
+    - 'Lib3MFException 5: Could not find Object associated to the Build item '
   GEN-C-CR-RESOURCES-BASEMATERIALS-0:
     info: TODO
     interpretation:
@@ -1890,7 +1741,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Resource not found"
+    - 'Lib3MFException 5: Resource not found'
   GEN-C-CR-RESOURCES-OBJECT-0:
     info: TODO
     interpretation:
@@ -1899,7 +1750,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Could not find Object associated to Component"
+    - 'Lib3MFException 5: Could not find Object associated to Component'
   GEN-C-CR-TRIANGLES-TRIANGLE-0:
     info: TODO
     image_similarity:
@@ -1920,7 +1771,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Invalid model node index"
+    - 'Lib3MFException 5: Invalid model node index'
   GEN-C-CRA-BASEMATERIALS-0:
     info: TODO
     interpretation:
@@ -1929,7 +1780,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: A Resource Index is invalid"
+    - 'Lib3MFException 5: A Resource Index is invalid'
   GEN-C-CRA-BUILD-0:
     info: TODO
     image_similarity:
@@ -1974,7 +1825,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: No resources in model file"
+    - 'Lib3MFException 5: No resources in model file'
   GEN-C-CRA-OBJECT-0:
     info: TODO
     interpretation:
@@ -1983,7 +1834,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: An object has no supported content type"
+    - 'Lib3MFException 5: An object has no supported content type'
   GEN-C-CRA-RESOURCES-0:
     info: TODO
     interpretation:
@@ -1992,7 +1843,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Could not find Object associated to the Build item "
+    - 'Lib3MFException 5: Could not find Object associated to the Build item '
   GEN-C-CRA-TRIANGLES-0:
     info: TODO
     image_similarity:
@@ -2013,7 +1864,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Invalid model node index"
+    - 'Lib3MFException 5: Invalid model node index'
   GEN-CM-ADS-METADATA-NAME-0:
     info: TODO
     image_similarity:
@@ -2106,7 +1957,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: An object has no supported content type"
+    - 'Lib3MFException 5: An object has no supported content type'
   GEN-CM-CR-OBJECT-METADATAGROUP-0:
     info: TODO
     image_similarity:
@@ -2187,7 +2038,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Duplicate Resource ID"
+    - 'Lib3MFException 5: Duplicate Resource ID'
   GEN-M-ADA-MPBMETALLIC-METALLICNESS-0:
     info: TODO
     image_similarity:
@@ -2268,7 +2119,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Duplicate Resource ID"
+    - 'Lib3MFException 5: Duplicate Resource ID'
   GEN-M-ADA-MTEXTURE2D-TILESTYLEU-0:
     info: TODO
     image_similarity:
@@ -2301,7 +2152,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Duplicate Resource ID"
+    - 'Lib3MFException 5: Duplicate Resource ID'
   GEN-M-ADA-MTEXTURE2DGROUP-TEXID-0:
     info: TODO
     interpretation:
@@ -2310,7 +2161,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Duplicate Resource ID"
+    - 'Lib3MFException 5: Duplicate Resource ID'
   GEN-M-ADA-MTRANSLUCENT-ROUGHNESS-0:
     info: TODO
     image_similarity:
@@ -2463,7 +2314,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Too many values (>12) have been found in a matrix string"
+    - 'Lib3MFException 5: Too many values (>12) have been found in a matrix string'
   GEN-M-AI-MCOLOR-COLOR-0:
     info: TODO
     image_similarity:
@@ -2484,7 +2335,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Wanted to convert too large number string to integer"
+    - 'Lib3MFException 5: Wanted to convert too large number string to integer'
   GEN-M-AI-MPBMETALLIC-METALLICNESS-0:
     info: TODO
     image_similarity:
@@ -2553,7 +2404,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Invalid Content Type"
+    - 'Lib3MFException 5: Invalid Content Type'
   GEN-M-AI-MTEXTURE2D-ID-0:
     info: TODO
     interpretation:
@@ -2562,7 +2413,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Wanted to convert too large number string to integer"
+    - 'Lib3MFException 5: Wanted to convert too large number string to integer'
   GEN-M-AI-MTEXTURE2D-PATH-0:
     info: TODO
     interpretation:
@@ -2571,7 +2422,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Invalid texture"
+    - 'Lib3MFException 5: Invalid texture'
   GEN-M-AI-MTEXTURE2D-TILESTYLEU-0:
     info: TODO
     image_similarity:
@@ -2604,7 +2455,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Wanted to convert too large number string to integer"
+    - 'Lib3MFException 5: Wanted to convert too large number string to integer'
   GEN-M-AI-MTEXTURE2DGROUP-TEXID-0:
     info: TODO
     interpretation:
@@ -2613,7 +2464,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Wanted to convert too large number string to integer"
+    - 'Lib3MFException 5: Wanted to convert too large number string to integer'
   GEN-M-AI-MTRANSLUCENT-ROUGHNESS-0:
     info: TODO
     image_similarity:
@@ -2706,7 +2557,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Missing Model Resource ID"
+    - 'Lib3MFException 5: Missing Model Resource ID'
   GEN-M-AR-MODEL-REQUIREDEXTENSIONS-0:
     info: TODO
     image_similarity:
@@ -2727,7 +2578,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: The prefix of a required extension is invalid"
+    - 'Lib3MFException 5: The prefix of a required extension is invalid'
   GEN-M-AR-MPBMETALLIC-METALLICNESS-0:
     info: TODO
     image_similarity:
@@ -2808,7 +2659,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Invalid Content Type"
+    - 'Lib3MFException 5: Invalid Content Type'
   GEN-M-AR-MTEXTURE2D-ID-0:
     info: TODO
     interpretation:
@@ -2817,7 +2668,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Missing Model Resource ID"
+    - 'Lib3MFException 5: Missing Model Resource ID'
   GEN-M-AR-MTEXTURE2D-PATH-0:
     info: TODO
     interpretation:
@@ -2826,7 +2677,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Invalid texture"
+    - 'Lib3MFException 5: Invalid texture'
   GEN-M-AR-MTEXTURE2D-TILESTYLEU-0:
     info: TODO
     image_similarity:
@@ -2859,7 +2710,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Missing Model Resource ID"
+    - 'Lib3MFException 5: Missing Model Resource ID'
   GEN-M-AR-MTEXTURE2DGROUP-TEXID-0:
     info: TODO
     interpretation:
@@ -2868,7 +2719,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Missing Model Resource ID"
+    - 'Lib3MFException 5: Missing Model Resource ID'
   GEN-M-AR-MTRANSLUCENT-ATTENUATION-0:
     info: TODO
     image_similarity:
@@ -3009,7 +2860,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Duplicate Resource ID"
+    - 'Lib3MFException 5: Duplicate Resource ID'
   GEN-M-CDA-RESOURCES-1:
     info: TODO
     image_similarity:
@@ -3042,7 +2893,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Duplicate Resource ID"
+    - 'Lib3MFException 5: Duplicate Resource ID'
   GEN-M-CDA-RESOURCES-4:
     info: TODO
     interpretation:
@@ -3051,7 +2902,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Duplicate Resource ID"
+    - 'Lib3MFException 5: Duplicate Resource ID'
   GEN-M-CR-BUILD-ITEM-0:
     info: TODO
     image_similarity:
@@ -3120,7 +2971,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: No valid Model Resource has been given"
+    - 'Lib3MFException 5: No valid Model Resource has been given'
   GEN-M-CR-RESOURCES-MTEXTURE2DGROUP-0:
     info: TODO
     image_similarity:
@@ -3201,7 +3052,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Duplicate UUID attribute"
+    - 'Lib3MFException 5: Duplicate UUID attribute'
   GEN-P-ADA-COMPONENT-PUUID-0:
     info: TODO
     interpretation:
@@ -3210,7 +3061,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Duplicate UUID attribute"
+    - 'Lib3MFException 5: Duplicate UUID attribute'
   GEN-P-ADA-ITEM-PUUID-0:
     info: TODO
     interpretation:
@@ -3219,7 +3070,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Duplicate UUID attribute"
+    - 'Lib3MFException 5: Duplicate UUID attribute'
   GEN-P-ADA-OBJECT-PUUID-0:
     info: TODO
     image_similarity:
@@ -3240,7 +3091,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Duplicate getPath attribute"
+    - 'Lib3MFException 5: Duplicate getPath attribute'
   GEN-P-ADS-MODEL-XMLNSP-0:
     info: TODO
     image_similarity:
@@ -3273,7 +3124,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Could not find Object associated to Component"
+    - 'Lib3MFException 5: Could not find Object associated to Component'
   GEN-P-AI-COMPONENT-PUUID-0:
     info: TODO
     image_similarity:
@@ -3366,7 +3217,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: The prefix of a required extension is invalid"
+    - 'Lib3MFException 5: The prefix of a required extension is invalid'
   GEN-P-AR-OBJECT-PUUID-0:
     info: TODO
     image_similarity:
@@ -3387,7 +3238,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Could not find Slicestack Resource"
+    - 'Lib3MFException 5: Could not find Slicestack Resource'
   GEN-SE-ADS-SSLICEREF-SLICEPATH-0:
     info: TODO
     image_similarity:
@@ -3408,7 +3259,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Could not find Slicestack Resource"
+    - 'Lib3MFException 5: Could not find Slicestack Resource'
   GEN-SE-AI-SSLICEREF-SLICESTACKID-0:
     info: TODO
     interpretation:
@@ -3417,7 +3268,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Wanted to convert too large number string to integer"
+    - 'Lib3MFException 5: Wanted to convert too large number string to integer'
   GEN-SE-AR-SSLICEREF-SLICEPATH-0:
     info: TODO
     interpretation:
@@ -3426,7 +3277,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Could not find Slicestack Resource"
+    - 'Lib3MFException 5: Could not find Slicestack Resource'
   GEN-SE-AR-SSLICEREF-SLICESTACKID-0:
     info: TODO
     interpretation:
@@ -3435,7 +3286,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Could not find Slicestack Resource"
+    - 'Lib3MFException 5: Could not find Slicestack Resource'
   GEN-SE-CDA-SSLICESTACK-0:
     info: TODO
     interpretation:
@@ -3444,7 +3295,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: z-position of slicerefs is not increasing"
+    - 'Lib3MFException 5: z-position of slicerefs is not increasing'
   GEN-SI-ADA-OBJECT-SSLICESTACKID-0:
     info: TODO
     interpretation:
@@ -3453,7 +3304,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Could not find Slicestack Resource"
+    - 'Lib3MFException 5: Could not find Slicestack Resource'
   GEN-SI-ADA-SPOLYGON-STARTV-0:
     info: TODO
     interpretation:
@@ -3462,7 +3313,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Invalid index for slice segment or polygon."
+    - 'Lib3MFException 5: Invalid index for slice segment or polygon.'
   GEN-SI-ADA-SSEGMENT-V2-0:
     info: TODO
     interpretation:
@@ -3471,7 +3322,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Invalid index for slice segment or polygon."
+    - 'Lib3MFException 5: Invalid index for slice segment or polygon.'
   GEN-SI-ADA-SSLICE-ZTOP-0:
     info: TODO
     interpretation:
@@ -3480,7 +3331,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Duplicate Z-top-value in a slice."
+    - 'Lib3MFException 5: Duplicate Z-top-value in a slice.'
   GEN-SI-ADA-SSLICESTACK-ID-0:
     info: TODO
     interpretation:
@@ -3489,7 +3340,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Could not find Slicestack Resource"
+    - 'Lib3MFException 5: Could not find Slicestack Resource'
   GEN-SI-ADA-SSLICESTACK-ZBOTTOM-0:
     info: TODO
     image_similarity:
@@ -3558,7 +3409,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Wanted to convert too large number string to integer"
+    - 'Lib3MFException 5: Wanted to convert too large number string to integer'
   GEN-SI-AI-SPOLYGON-STARTV-0:
     info: TODO
     interpretation:
@@ -3567,7 +3418,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Wanted to convert too large number string to integer"
+    - 'Lib3MFException 5: Wanted to convert too large number string to integer'
   GEN-SI-AI-SSEGMENT-V2-0:
     info: TODO
     interpretation:
@@ -3576,7 +3427,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Invalid index for slice segment or polygon."
+    - 'Lib3MFException 5: Invalid index for slice segment or polygon.'
   GEN-SI-AI-SSLICE-ZTOP-0:
     info: TODO
     interpretation:
@@ -3585,8 +3436,8 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Wanted to convert string with non-numeric characters to\
-      \ double"
+    - 'Lib3MFException 5: Wanted to convert string with non-numeric characters to
+      double'
   GEN-SI-AI-SSLICESTACK-ID-0:
     info: TODO
     interpretation:
@@ -3595,7 +3446,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Wanted to convert too large number string to integer"
+    - 'Lib3MFException 5: Wanted to convert too large number string to integer'
   GEN-SI-AI-SSLICESTACK-ZBOTTOM-0:
     info: TODO
     interpretation:
@@ -3604,8 +3455,8 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Wanted to convert string with non-numeric characters to\
-      \ double"
+    - 'Lib3MFException 5: Wanted to convert string with non-numeric characters to
+      double'
   GEN-SI-AI-SVERTEX-X-0:
     info: TODO
     interpretation:
@@ -3614,8 +3465,8 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Wanted to convert string with non-numeric characters to\
-      \ double"
+    - 'Lib3MFException 5: Wanted to convert string with non-numeric characters to
+      double'
   GEN-SI-AI-SVERTEX-Y-0:
     info: TODO
     interpretation:
@@ -3624,8 +3475,8 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Wanted to convert string with non-numeric characters to\
-      \ double"
+    - 'Lib3MFException 5: Wanted to convert string with non-numeric characters to
+      double'
   GEN-SI-AR-MODEL-XMLNSS-0:
     info: TODO
     interpretation:
@@ -3634,7 +3485,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: The prefix of a required extension is invalid"
+    - 'Lib3MFException 5: The prefix of a required extension is invalid'
   GEN-SI-AR-OBJECT-SMESHRESOLUTION-0:
     info: TODO
     image_similarity:
@@ -3667,7 +3518,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Invalid index for slice segment or polygon."
+    - 'Lib3MFException 5: Invalid index for slice segment or polygon.'
   GEN-SI-AR-SSEGMENT-V2-0:
     info: TODO
     image_similarity:
@@ -3688,7 +3539,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Z-top-value is missing in a slice."
+    - 'Lib3MFException 5: Z-top-value is missing in a slice.'
   GEN-SI-AR-SSLICESTACK-ID-0:
     info: TODO
     interpretation:
@@ -3697,7 +3548,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Could not find Slicestack Resource"
+    - 'Lib3MFException 5: Could not find Slicestack Resource'
   GEN-SI-AR-SSLICESTACK-ZBOTTOM-0:
     info: TODO
     image_similarity:
@@ -3742,7 +3593,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Duplicate Resource ID"
+    - 'Lib3MFException 5: Duplicate Resource ID'
   GEN-SI-CDA-SPOLYGON-0:
     info: TODO
     interpretation:
@@ -3751,7 +3602,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Invalid index for slice segment or polygon."
+    - 'Lib3MFException 5: Invalid index for slice segment or polygon.'
   GEN-SI-CDA-SSLICE-0:
     info: TODO
     image_similarity:
@@ -3784,8 +3635,8 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: The z-coordinates of slices within a slicestack are not\
-      \ increasing."
+    - 'Lib3MFException 5: The z-coordinates of slices within a slicestack are not
+      increasing.'
   GEN-SI-CDA-SVERTICES-0:
     info: TODO
     image_similarity:
@@ -3806,7 +3657,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Could not find Slicestack Resource"
+    - 'Lib3MFException 5: Could not find Slicestack Resource'
   GEN-SI-CR-SPOLYGON-SSEGMENT-0:
     info: TODO
     image_similarity:
@@ -3839,7 +3690,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Invalid index for slice segment or polygon."
+    - 'Lib3MFException 5: Invalid index for slice segment or polygon.'
   GEN-SI-CR-SSLICESTACK-SSLICE-0:
     info: TODO
     image_similarity:
@@ -3860,7 +3711,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Invalid index for slice segment or polygon."
+    - 'Lib3MFException 5: Invalid index for slice segment or polygon.'
   GEN-SI-CRA-SPOLYGON-0:
     info: TODO
     interpretation:
@@ -3869,7 +3720,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: A closed slice polygon is actually a line."
+    - 'Lib3MFException 5: A closed slice polygon is actually a line.'
   GEN-SI-CRA-SSLICE-0:
     info: TODO
     image_similarity:
@@ -3902,7 +3753,181 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: Invalid index for slice segment or polygon."
+    - 'Lib3MFException 5: Invalid index for slice segment or polygon.'
+  CS-0000:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+    - 'Lib3MFException 5: Could not read OPC Relationship Set'
+  CS-0001:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+    - 'Lib3MFException 5: Could not create OPC Part'
+  CS-0010:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+    - 'Lib3MFException 5: Could not read OPC Relationship Set'
+  CS-0011:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CYL
+        test_name: Cylinder Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0100:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+    - 'Lib3MFException 5: Could not create OPC Part'
+  CS-0101:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+    - 'Lib3MFException 5: Could not create OPC Part'
+  CS-0110:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+    - 'Lib3MFException 5: Could not create OPC Part'
+  CS-0111:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+    - 'Lib3MFException 5: Could not create OPC Part'
+  CS-1000:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+    - 'Lib3MFException 5: Could not read OPC Relationship Set'
+  CS-1001:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+    - 'Lib3MFException 5: Could not create OPC Part'
+  CS-1010:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+    - 'Lib3MFException 5: Could not read OPC Relationship Set'
+  CS-1011:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CYL
+        test_name: Cylinder Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1100:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1101:
+    info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+    - 'Lib3MFException 5: Document contains a duplicate relationship ID.'
+  CS-1110:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1111:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  OPC-LFI-0:
+    info: TODO
+    critical: true
+    problems:
+    - 'Lib3MFException 5: Could not find Object associated to Component'
+  OPC-LFI-1:
+    info: TODO
+    critical: true
+    problems:
+    - 'Lib3MFException 5: Could not find Object associated to Component'
+  OPC-LFI-2:
+    info: TODO
+    critical: true
+    problems:
+    - 'Lib3MFException 5: Could not find Object associated to Component'
   ZIP-SL-S:
     info: TODO
     interpretation:
@@ -3911,7 +3936,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: No model node in XML Stream"
+    - 'Lib3MFException 5: No model node in XML Stream'
   ZIP-SL-C:
     info: TODO
     interpretation:
@@ -3920,7 +3945,7 @@ tests:
       confidence: high
     critical: true
     problems:
-    - "Lib3MFException 5: No model node in XML Stream"
+    - 'Lib3MFException 5: No model node in XML Stream'
   ZIP-CBR:
     info: TODO
     image_similarity:
@@ -3981,4 +4006,39 @@ tests:
       is_outlier: false
       confidence: high
     has_server_log: true
-deprecated: {}
+  ZIP-zblg:
+    info: TODO
+    critical: true
+    problems:
+    - 'Lib3MFException 5: The call parameter to the function was invalid'
+  ZIP-zbsm:
+    info: TODO
+    critical: true
+    problems:
+    - 'Lib3MFException 5: The call parameter to the function was invalid'
+  ZIP-10:
+    info: TODO
+    critical: true
+    problems:
+    - 'Lib3MFException 5: The call parameter to the function was invalid'
+  ZIP-20:
+    info: TODO
+    critical: true
+    problems:
+    - 'Lib3MFException 5: The call parameter to the function was invalid'
+  ZIP-30:
+    info: TODO
+    critical: true
+    problems:
+    - 'Lib3MFException 5: The call parameter to the function was invalid'
+  ZIP-34:
+    info: TODO
+    critical: true
+    problems:
+    - 'Lib3MFException 5: The call parameter to the function was invalid'
+deprecated:
+  ZIP-zbxl:
+    info: TODO
+    critical: true
+    problems:
+    - 'Lib3MFException 5: The specified file could not be opened'

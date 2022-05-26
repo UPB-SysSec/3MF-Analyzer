@@ -14,8 +14,8 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
     status: loaded
+    has_server_log: true
   CS-DOR:
     info: TODO
     image_similarity:
@@ -107,199 +107,6 @@ tests:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
       score: "0.9853166004416498"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: medium
-    has_server_log: true
-  CS-0000:
-    image_similarity:
-      similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: "0.9999999220735646"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-    status: aborted
-  CS-0001:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: "0.9999999220735646"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0010:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-CYL
-        test_name: Cylinder Model
-      score: "0.999508549072834"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0011:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-CYL
-        test_name: Cylinder Model
-      score: "0.9995218026134225"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0100:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: "0.999999943368039"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0101:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: "0.999999943368039"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0110:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-CYL
-        test_name: Cylinder Model
-      score: "0.9995048005231272"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0111:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-CYL
-        test_name: Cylinder Model
-      score: "0.9994905739106061"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1000:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "0.9994877857427762"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1001:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "0.9994726558773492"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1010:
-    info: both
-    image_similarity:
-      similar_to:
-        test_id: R-CYL
-        test_name: Cylinder Model
-      score: "0.975447379070633"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: medium
-    has_server_log: true
-    status: loaded
-  CS-1011:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-SPEC-C-0
-        test_name: Full/Reference model for core specification (C)
-      score: "0.95440592689176"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: medium
-    has_server_log: true
-  CS-1100:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "0.9995320457776085"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1101:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "0.999518992192117"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1110:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-CYL
-        test_name: Cylinder Model
-      score: "0.9754414800533818"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: medium
-    has_server_log: true
-  CS-1111:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-SPEC-C-0
-        test_name: Full/Reference model for core specification (C)
-      score: "0.9543910170952359"
     interpretation:
       status: loaded
       is_outlier: false
@@ -550,6 +357,10 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-ALT-B-EGE-R:
     info: TODO
@@ -562,6 +373,10 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-ALT-B-EPE-L:
     info: TODO
@@ -574,6 +389,10 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-ALT-B-EPE-R:
     info: TODO
@@ -586,6 +405,10 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-ALT-B-IGE:
     info: TODO
@@ -598,6 +421,10 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-ALT-B-IPE:
     info: TODO
@@ -610,6 +437,10 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-ALT-DOS-BL:
     image_similarity:
@@ -622,6 +453,10 @@ tests:
       is_outlier: false
       confidence: high
     status: aborted
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-ALT-DOS-BL-PE-R:
     image_similarity:
@@ -634,6 +469,10 @@ tests:
       is_outlier: false
       confidence: high
     status: aborted
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-ALT-DOS-C:
     image_similarity:
@@ -646,6 +485,10 @@ tests:
       is_outlier: false
       confidence: high
     status: aborted
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-ALT-FBC-BPR-A:
     info: TODO
@@ -658,6 +501,10 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-ALT-FBC-BPR-B:
     info: TODO
@@ -670,6 +517,10 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-ALT-OOB-R:
     info: TODO
@@ -682,6 +533,10 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-B-EGE-L:
     info: TODO
@@ -694,6 +549,10 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-B-EGE-LX:
     info: TODO
@@ -713,6 +572,10 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-B-EGE-RX:
     info: TODO
@@ -732,6 +595,10 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-B-EPE-R:
     info: TODO
@@ -744,6 +611,10 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-B-IGE:
     info: TODO
@@ -756,6 +627,10 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-B-IPE:
     info: TODO
@@ -768,6 +643,10 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-DOS-BL:
     image_similarity:
@@ -780,6 +659,10 @@ tests:
       is_outlier: false
       confidence: high
     status: aborted
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-DOS-BL-PE-R:
     info: TODO
@@ -792,6 +675,10 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-DOS-C:
     info: TODO
@@ -804,6 +691,10 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-DOS-PL:
     info: TODO
@@ -816,6 +707,10 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-FBC-AV:
     info: TODO
@@ -828,6 +723,10 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-FBC-BPR-A:
     info: TODO
@@ -840,6 +739,10 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-FBC-BPR-B:
     info: TODO
@@ -852,6 +755,10 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-FBC-E:
     info: TODO
@@ -864,6 +771,10 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-FBC-E-L:
     info: TODO
@@ -876,6 +787,10 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-OOB-NNSL:
     info: TODO
@@ -888,6 +803,10 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-OOB-PE-R:
     info: TODO
@@ -900,6 +819,10 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-OOB-R:
     info: TODO
@@ -912,6 +835,10 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-OOB-SL:
     info: TODO
@@ -924,6 +851,10 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-OOB-XI:
     info: TODO
@@ -936,6 +867,10 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-SSRF-NNSL:
     info: TODO
@@ -948,6 +883,10 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-SSRF-SL:
     info: TODO
@@ -960,6 +899,10 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-SSRF-XI:
     info: TODO
@@ -972,6 +915,10 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-B-EGE-L:
     info: TODO
@@ -984,6 +931,10 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-B-EGE-R:
     info: TODO
@@ -996,6 +947,10 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-B-EPE-L:
     info: TODO
@@ -1008,6 +963,10 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-B-EPE-R:
     info: TODO
@@ -1020,6 +979,10 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-B-IGE:
     info: TODO
@@ -1032,6 +995,10 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-B-IPE:
     info: TODO
@@ -1044,6 +1011,10 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-DOS-BL:
     image_similarity:
@@ -1055,6 +1026,10 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-DOS-BL-PE-R:
     image_similarity:
@@ -1066,6 +1041,10 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-DOS-C:
     image_similarity:
@@ -1077,6 +1056,10 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-DOS-PL:
     info: TODO
@@ -1089,6 +1072,10 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-FBC-AV:
     info: TODO
@@ -1101,6 +1088,10 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-FBC-BPR-A:
     info: TODO
@@ -1113,6 +1104,10 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-FBC-BPR-B:
     info: TODO
@@ -1125,6 +1120,10 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-FBC-E:
     info: TODO
@@ -1137,6 +1136,10 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-FBC-E-L:
     info: TODO
@@ -1149,6 +1152,10 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-OOB-NNSL:
     info: TODO
@@ -1161,6 +1168,10 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-OOB-PE-R:
     info: TODO
@@ -1173,6 +1184,10 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-OOB-R:
     info: TODO
@@ -1185,6 +1200,10 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-OOB-SL:
     info: TODO
@@ -1197,6 +1216,10 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-OOB-XI:
     info: TODO
@@ -1209,6 +1232,10 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-SSRF-NNSL:
     info: TODO
@@ -1221,6 +1248,10 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-SSRF-SL:
     info: TODO
@@ -1233,6 +1264,10 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-SSRF-XI:
     info: TODO
@@ -1245,6 +1280,10 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   XML-EGE-I-R:
     info: TODO
@@ -1252,7 +1291,22 @@ tests:
     - No process information files.
     - No screenshot files.
     critical: true
+    has_server_log: true
   XML-EGE-I-NR:
+    info: TODO
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
+    has_server_log: true
+  XML-EGE-IL-R:
+    info: TODO
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
+    has_server_log: true
+  XML-EGE-IL-NR:
     info: TODO
     problems:
     - No process information files.
@@ -4450,6 +4504,220 @@ tests:
       is_outlier: false
       confidence: high
     has_server_log: true
+  CS-0000:
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-SE-0
+        test_name: Full/Reference model for slice specification (SE)
+      score: "0.9999999220735646"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    status: aborted
+    has_server_log: true
+  CS-0001:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-SE-0
+        test_name: Full/Reference model for slice specification (SE)
+      score: "0.9999999220735646"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0010:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CYL
+        test_name: Cylinder Model
+      score: "0.999508549072834"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0011:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CYL
+        test_name: Cylinder Model
+      score: "0.9995218026134225"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0100:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-SE-0
+        test_name: Full/Reference model for slice specification (SE)
+      score: "0.999999943368039"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0101:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-SE-0
+        test_name: Full/Reference model for slice specification (SE)
+      score: "0.999999943368039"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0110:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CYL
+        test_name: Cylinder Model
+      score: "0.9995048005231272"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0111:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CYL
+        test_name: Cylinder Model
+      score: "0.9994905739106061"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1000:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.9994877857427762"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1001:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.9994726558773492"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1010:
+    info: both
+    image_similarity:
+      similar_to:
+        test_id: R-CYL
+        test_name: Cylinder Model
+      score: "0.975447379070633"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: medium
+    status: loaded
+    has_server_log: true
+  CS-1011:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-C-0
+        test_name: Full/Reference model for core specification (C)
+      score: "0.95440592689176"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
+  CS-1100:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.9995320457776085"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1101:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.999518992192117"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1110:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CYL
+        test_name: Cylinder Model
+      score: "0.9754414800533818"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
+  CS-1111:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-C-0
+        test_name: Full/Reference model for core specification (C)
+      score: "0.9543910170952359"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
+  OPC-LFI-0:
+    info: TODO
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
+    has_server_log: true
+  OPC-LFI-1:
+    info: TODO
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
+    has_server_log: true
+  OPC-LFI-2:
+    info: TODO
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
+    has_server_log: true
   ZIP-SL-S:
     info: TODO
     image_similarity:
@@ -4534,4 +4802,43 @@ tests:
       is_outlier: false
       confidence: high
     has_server_log: true
-deprecated: {}
+  ZIP-zblg:
+    info: TODO
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
+    has_server_log: true
+  ZIP-zbsm:
+    info: TODO
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
+    has_server_log: true
+  ZIP-10:
+    info: TODO
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
+    has_server_log: true
+  ZIP-20:
+    info: TODO
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
+    has_server_log: true
+  ZIP-30:
+    info: TODO
+  ZIP-34:
+    info: TODO
+deprecated:
+  ZIP-zbxl:
+    info: TODO
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
+    has_server_log: true

@@ -116,200 +116,6 @@ tests:
       is_outlier: false
       confidence: high
     has_server_log: true
-  CS-0000:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: "0.9953446634819125"
-    alert: E00
-    status: aborted
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0001:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: "0.9993314709457974"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0010:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: "0.9989610228430607"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0011:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-CYL
-        test_name: Cylinder Model
-      score: "0.9964310043935314"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0100:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: "0.9957177670938898"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0101:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: "0.9956986717986009"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0110:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: "0.9949723055780811"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0111:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: "0.9956976115341833"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1000:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: "0.9960416799978077"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1001:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: "0.995279645046536"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1010:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: "0.9960124501816096"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1011:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-CYL
-        test_name: Cylinder Model
-      score: "0.99644574609798"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1100:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "0.9966676008348939"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1101:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: "0.9957656281246169"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1110:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "0.996655341344317"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1111:
-    info: TODO
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "0.9966336319450009"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
   DOS-BL-MBR:
     info: Bit slower, but after a while redering smooth.
     image_similarity:
@@ -1258,6 +1064,12 @@ tests:
     critical: true
     problems:
     - Process did not start in 5 seconds.
+  XML-EGE-IL-R:
+    info: TODO
+    has_server_log: true
+  XML-EGE-IL-NR:
+    info: TODO
+    has_server_log: true
   GEN-C-ADA-BASE-DISPLAYCOLOR-0:
     info: TODO
     image_similarity:
@@ -4450,6 +4262,209 @@ tests:
       is_outlier: false
       confidence: high
     has_server_log: true
+  CS-0000:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9953446634819125"
+    alert: E00
+    status: aborted
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0001:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9993314709457974"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0010:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9989610228430607"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0011:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CYL
+        test_name: Cylinder Model
+      score: "0.9964310043935314"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0100:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9957177670938898"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0101:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9956986717986009"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0110:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9949723055780811"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0111:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9956976115341833"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1000:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9960416799978077"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1001:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.995279645046536"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1010:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9960124501816096"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1011:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-CYL
+        test_name: Cylinder Model
+      score: "0.99644574609798"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1100:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.9966676008348939"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1101:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9957656281246169"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1110:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.996655341344317"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1111:
+    info: TODO
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.9966336319450009"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  OPC-LFI-0:
+    info: TODO
+    has_server_log: true
+  OPC-LFI-1:
+    info: TODO
+    has_server_log: true
+  OPC-LFI-2:
+    info: TODO
+    has_server_log: true
   ZIP-SL-S:
     info: TODO
     image_similarity:
@@ -4534,6 +4549,22 @@ tests:
       is_outlier: false
       confidence: high
     has_server_log: true
+  ZIP-zblg:
+    info: TODO
+    has_server_log: true
+  ZIP-zbsm:
+    info: TODO
+    has_server_log: true
+  ZIP-10:
+    info: TODO
+    has_server_log: true
+  ZIP-20:
+    info: TODO
+    has_server_log: true
+  ZIP-30:
+    info: TODO
+  ZIP-34:
+    info: TODO
 deprecated:
   CS-MUST:
     info: TODO
@@ -4565,3 +4596,10 @@ deprecated:
     missing_process_info: 0
     missing_screenshot: 0
     critical: false
+  ZIP-zbxl:
+    info: TODO
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
+    has_server_log: true

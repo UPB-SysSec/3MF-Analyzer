@@ -19,8 +19,8 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
     info: 2nd
+    has_server_log: true
   CS-DOR:
     status: aborted
     info: crashed after short hang
@@ -114,214 +114,6 @@ tests:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
       score: "0.9990736238356869"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0000:
-    status: aborted
-    alert: E01
-    image_similarity:
-      similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: "0.9978383649798372"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0001:
-    status: aborted
-    alert: E01
-    image_similarity:
-      similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: "0.9978331348698266"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0010:
-    status: aborted
-    alert: E01
-    image_similarity:
-      similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: "0.9978419126187517"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0011:
-    status: aborted
-    alert: E01
-    image_similarity:
-      similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: "0.9978366839618691"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0100:
-    status: aborted
-    alert: E01
-    image_similarity:
-      similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: "0.9978257502966842"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0101:
-    status: aborted
-    alert: E01
-    image_similarity:
-      similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: "0.9978205196182977"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0110:
-    status: aborted
-    alert: E01
-    image_similarity:
-      similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: "0.9978291166423633"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0111:
-    status: aborted
-    alert: E01
-    image_similarity:
-      similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: "0.9978238873734089"
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1000:
-    status: loaded
-    info: pyramid
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "0.9991119709822178"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1001:
-    status: loaded
-    info: pyramid
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "0.9991090758711685"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1010:
-    status: loaded
-    info: pyramid
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "0.999114491107422"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1011:
-    status: loaded
-    info: pyramid
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "0.999111737752985"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1100:
-    status: loaded
-    info: pyramid
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "0.9991131414698949"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1101:
-    status: loaded
-    info: pyramid
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "0.9991102196339117"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1110:
-    status: loaded
-    info: pyramid
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "0.9991155110909488"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1111:
-    status: loaded
-    info: pyramid
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "0.9991127578612059"
     interpretation:
       status: loaded
       is_outlier: false
@@ -679,8 +471,6 @@ tests:
       is_outlier: true
       confidence: high
     status: aborted
-    missing_process_info: 2
-    missing_screenshot: 2
     has_server_log: true
   XML-MOD-ALT-FBC-BPR-A:
     info: TODO
@@ -732,8 +522,9 @@ tests:
     has_server_log: true
   XML-MOD-B-EGE-LX:
     info: TODO
+    missing_process_info: 2
     problems:
-    - No process information files.
+    - Too many missing process information files.
     - No screenshot files.
     critical: true
     has_server_log: true
@@ -751,8 +542,9 @@ tests:
     has_server_log: true
   XML-MOD-B-EGE-RX:
     info: TODO
+    missing_process_info: 2
     problems:
-    - No process information files.
+    - Too many missing process information files.
     - No screenshot files.
     critical: true
     has_server_log: true
@@ -1286,8 +1078,16 @@ tests:
     has_server_log: true
   XML-EGE-I-R:
     info: TODO
+    has_server_log: true
   XML-EGE-I-NR:
     info: TODO
+    has_server_log: true
+  XML-EGE-IL-R:
+    info: TODO
+    has_server_log: true
+  XML-EGE-IL-NR:
+    info: TODO
+    has_server_log: true
   GEN-C-ADA-BASE-DISPLAYCOLOR-0:
     info: TODO
     image_similarity:
@@ -1594,12 +1394,12 @@ tests:
       status: aborted
       is_outlier: true
       confidence: high
+    status: aborted
     missing_process_info: 3
     problems:
     - No screenshot files.
     critical: true
     has_server_log: true
-    status: aborted
   GEN-C-AI-ITEM-OBJECTID-0:
     info: TODO
     image_similarity:
@@ -2230,12 +2030,12 @@ tests:
       status: aborted
       is_outlier: true
       confidence: high
+    status: aborted
     missing_process_info: 2
     problems:
     - No screenshot files.
     critical: true
     has_server_log: true
-    status: aborted
   GEN-C-CR-MODEL-BUILD-0:
     info: TODO
     image_similarity:
@@ -2254,12 +2054,12 @@ tests:
       status: aborted
       is_outlier: true
       confidence: high
+    status: aborted
     missing_process_info: 2
     problems:
     - No screenshot files.
     critical: true
     has_server_log: true
-    status: aborted
   GEN-C-CR-RESOURCES-BASEMATERIALS-0:
     info: TODO
     image_similarity:
@@ -2386,12 +2186,12 @@ tests:
       status: aborted
       is_outlier: true
       confidence: high
+    status: aborted
     missing_process_info: 2
     problems:
     - No screenshot files.
     critical: true
     has_server_log: true
-    status: aborted
   GEN-C-CRA-TRIANGLES-0:
     info: TODO
     image_similarity:
@@ -2410,12 +2210,12 @@ tests:
       status: aborted
       is_outlier: true
       confidence: high
+    status: aborted
     missing_process_info: 2
     problems:
     - No screenshot files.
     critical: true
     has_server_log: true
-    status: aborted
   GEN-CM-ADS-METADATA-NAME-0:
     info: TODO
     image_similarity:
@@ -2434,12 +2234,12 @@ tests:
       status: aborted
       is_outlier: true
       confidence: high
+    status: aborted
     missing_process_info: 2
     problems:
     - No screenshot files.
     critical: true
     has_server_log: true
-    status: aborted
   GEN-CM-CDA-ITEM-0:
     info: TODO
     image_similarity:
@@ -2878,12 +2678,12 @@ tests:
       status: aborted
       is_outlier: true
       confidence: high
+    status: aborted
     missing_process_info: 2
     problems:
     - No screenshot files.
     critical: true
     has_server_log: true
-    status: aborted
   GEN-M-AI-MCOLOR-COLOR-0:
     info: TODO
     image_similarity:
@@ -4480,6 +4280,223 @@ tests:
       is_outlier: false
       confidence: high
     has_server_log: true
+  CS-0000:
+    status: aborted
+    alert: E01
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9978383649798372"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0001:
+    status: aborted
+    alert: E01
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9978331348698266"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0010:
+    status: aborted
+    alert: E01
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9978419126187517"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0011:
+    status: aborted
+    alert: E01
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9978366839618691"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0100:
+    status: aborted
+    alert: E01
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9978257502966842"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0101:
+    status: aborted
+    alert: E01
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9978205196182977"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0110:
+    status: aborted
+    alert: E01
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9978291166423633"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0111:
+    status: aborted
+    alert: E01
+    image_similarity:
+      similar_to:
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: "0.9978238873734089"
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1000:
+    status: loaded
+    info: pyramid
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.9991119709822178"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1001:
+    status: loaded
+    info: pyramid
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.9991090758711685"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1010:
+    status: loaded
+    info: pyramid
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.999114491107422"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1011:
+    status: loaded
+    info: pyramid
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.999111737752985"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1100:
+    status: loaded
+    info: pyramid
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.9991131414698949"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1101:
+    status: loaded
+    info: pyramid
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.9991102196339117"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1110:
+    status: loaded
+    info: pyramid
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.9991155110909488"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1111:
+    status: loaded
+    info: pyramid
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.9991127578612059"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  OPC-LFI-0:
+    info: TODO
+    has_server_log: true
+  OPC-LFI-1:
+    info: TODO
+    has_server_log: true
+  OPC-LFI-2:
+    info: TODO
+    has_server_log: true
   ZIP-SL-S:
     status: aborted
     alert: E01
@@ -4570,6 +4587,22 @@ tests:
       is_outlier: false
       confidence: high
     has_server_log: true
+  ZIP-zblg:
+    info: TODO
+    has_server_log: true
+  ZIP-zbsm:
+    info: TODO
+    has_server_log: true
+  ZIP-10:
+    info: TODO
+    has_server_log: true
+  ZIP-20:
+    info: TODO
+    has_server_log: true
+  ZIP-30:
+    info: TODO
+  ZIP-34:
+    info: TODO
 deprecated:
   CS-MUST:
     status: aborted
@@ -4611,3 +4644,10 @@ deprecated:
     missing_process_info: 0
     missing_screenshot: 0
     critical: false
+  ZIP-zbxl:
+    info: TODO
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
+    has_server_log: true

@@ -127,190 +127,6 @@ tests:
       is_outlier: false
       confidence: high
     has_server_log: true
-  CS-0000:
-    status: aborted
-    alert: E04
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    critical: true
-    problems:
-    - Process did not start in 5 seconds.
-  CS-0001:
-    status: aborted
-    alert: E04
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    critical: true
-    problems:
-    - Process did not start in 5 seconds.
-  CS-0010:
-    status: loaded
-    info: cylinder
-    image_similarity:
-      similar_to:
-        test_id: R-CYL
-        test_name: Cylinder Model
-      score: "1.0"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0011:
-    status: loaded
-    info: cylinder
-    image_similarity:
-      similar_to:
-        test_id: R-CYL
-        test_name: Cylinder Model
-      score: "1.0"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0100:
-    status: aborted
-    alert: E04
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    critical: true
-    problems:
-    - Process did not start in 5 seconds.
-  CS-0101:
-    status: aborted
-    alert: E04
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    critical: true
-    problems:
-    - Process did not start in 5 seconds.
-  CS-0110:
-    status: loaded
-    info: cylinder
-    image_similarity:
-      similar_to:
-        test_id: R-CYL
-        test_name: Cylinder Model
-      score: "1.0"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-0111:
-    status: loaded
-    info: cylinder
-    image_similarity:
-      similar_to:
-        test_id: R-CYL
-        test_name: Cylinder Model
-      score: "1.0"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1000:
-    status: loaded
-    info: pyramid
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "0.9999999917969442"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1001:
-    status: loaded
-    info: pyramid
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "1.0"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1010:
-    status: aborted
-    alert: E01
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    critical: true
-    problems:
-    - Process did not start in 5 seconds.
-  CS-1011:
-    status: aborted
-    alert: E01
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    critical: true
-    problems:
-    - Process did not start in 5 seconds.
-  CS-1100:
-    status: loaded
-    info: pyramid
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "1.0"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1101:
-    status: loaded
-    info: pyramid
-    image_similarity:
-      similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: "1.0"
-    interpretation:
-      status: loaded
-      is_outlier: false
-      confidence: high
-    has_server_log: true
-  CS-1110:
-    status: aborted
-    alert: E01
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    critical: true
-    problems:
-    - Process did not start in 5 seconds.
-  CS-1111:
-    status: aborted
-    alert: E01
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
-    critical: true
-    problems:
-    - Process did not start in 5 seconds.
   DOS-BL-MBR:
     status: loaded
     alert: W06
@@ -646,9 +462,7 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    critical: true
-    problems:
-    - Process did not start in 5 seconds.
+    has_server_log: true
   XML-MOD-ALT-FBC-BPR-B:
     info: TODO
     image_similarity:
@@ -818,9 +632,7 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    critical: true
-    problems:
-    - Process did not start in 5 seconds.
+    has_server_log: true
   XML-MOD-FBC-BPR-B:
     info: TODO
     image_similarity:
@@ -1233,9 +1045,15 @@ tests:
     - Process did not start in 5 seconds.
   XML-EGE-I-NR:
     info: TODO
+    has_server_log: true
+  XML-EGE-IL-R:
+    info: TODO
+    has_server_log: true
+  XML-EGE-IL-NR:
+    info: TODO
     critical: true
     problems:
-    - Window did not start in 30 seconds.
+    - Process did not start in 5 seconds.
   GEN-C-ADA-BASE-DISPLAYCOLOR-0:
     info: TODO
     interpretation:
@@ -4107,6 +3925,205 @@ tests:
       is_outlier: false
       confidence: high
     has_server_log: true
+  CS-0000:
+    status: aborted
+    alert: E04
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+    - Process did not start in 5 seconds.
+  CS-0001:
+    status: aborted
+    alert: E04
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+    - Process did not start in 5 seconds.
+  CS-0010:
+    status: loaded
+    info: cylinder
+    image_similarity:
+      similar_to:
+        test_id: R-CYL
+        test_name: Cylinder Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0011:
+    status: loaded
+    info: cylinder
+    image_similarity:
+      similar_to:
+        test_id: R-CYL
+        test_name: Cylinder Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0100:
+    status: aborted
+    alert: E04
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+    - Process did not start in 5 seconds.
+  CS-0101:
+    status: aborted
+    alert: E04
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+    - Process did not start in 5 seconds.
+  CS-0110:
+    status: loaded
+    info: cylinder
+    image_similarity:
+      similar_to:
+        test_id: R-CYL
+        test_name: Cylinder Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-0111:
+    status: loaded
+    info: cylinder
+    image_similarity:
+      similar_to:
+        test_id: R-CYL
+        test_name: Cylinder Model
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1000:
+    status: loaded
+    info: pyramid
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "0.9999999917969442"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1001:
+    status: loaded
+    info: pyramid
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1010:
+    status: aborted
+    alert: E01
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+    - Process did not start in 5 seconds.
+  CS-1011:
+    status: aborted
+    alert: E01
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+    - Process did not start in 5 seconds.
+  CS-1100:
+    status: loaded
+    info: pyramid
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1101:
+    status: loaded
+    info: pyramid
+    image_similarity:
+      similar_to:
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: "1.0"
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
+  CS-1110:
+    status: aborted
+    alert: E01
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+    - Process did not start in 5 seconds.
+  CS-1111:
+    status: aborted
+    alert: E01
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    critical: true
+    problems:
+    - Process did not start in 5 seconds.
+  OPC-LFI-0:
+    info: TODO
+    critical: true
+    problems:
+    - Process did not start in 5 seconds.
+  OPC-LFI-1:
+    info: TODO
+    critical: true
+    problems:
+    - Process did not start in 5 seconds.
+  OPC-LFI-2:
+    info: TODO
+    critical: true
+    problems:
+    - Process did not start in 5 seconds.
   ZIP-SL-S:
     status: aborted
     alert: E09
@@ -4179,6 +4196,30 @@ tests:
       is_outlier: false
       confidence: high
     has_server_log: true
+  ZIP-zblg:
+    info: TODO
+    critical: true
+    problems:
+    - Process did not start in 5 seconds.
+  ZIP-zbsm:
+    info: TODO
+    critical: true
+    problems:
+    - Process did not start in 5 seconds.
+  ZIP-10:
+    info: TODO
+    critical: true
+    problems:
+    - Process did not start in 5 seconds.
+  ZIP-20:
+    info: TODO
+    critical: true
+    problems:
+    - Process did not start in 5 seconds.
+  ZIP-30:
+    info: TODO
+  ZIP-34:
+    info: TODO
 deprecated:
   CS-MUST:
     status: aborted
@@ -4221,3 +4262,10 @@ deprecated:
 
   R-PYR:
     info: TODO
+  ZIP-zbxl:
+    info: TODO
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
+    has_server_log: true
