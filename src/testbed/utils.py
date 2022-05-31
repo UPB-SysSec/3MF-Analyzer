@@ -231,6 +231,7 @@ def parse_programs(program_ids: str) -> List[Program]:
                 logging.error(err)
 
     logging.info("Target programs: %s", programs)
+    assert len(programs) > 0, "No matching programs found"
     return programs
 
 
@@ -245,19 +246,40 @@ def parse_tests(test_ids: str) -> List[File]:
     def _add_file(_test_id: str, _files: set):
         filename = None
         filepath = None
-        for name, path in existing_filenames:
-            if name.lower().startswith(_test_id.lower()):
-                filename, filepath = name, path
-                break
+        possible_paths = [
+            (name, path)
+            for name, path in existing_filenames
+            if name.lower().startswith(_test_id.lower())
+        ]
 
-        if _test_id in all_tests and filepath and filename:
-            _files.add(
-                File(
-                    stem=filename.split(".")[0],
-                    name=filename,
-                    abspath=filepath,
-                    test_id=_test_id,
+        if len(possible_paths) == 1:
+            filename, filepath = possible_paths[0]
+        if len(possible_paths) > 1:
+            for name, path in possible_paths:
+                if f"{_test_id}.3mf" == name:
+                    filename, filepath = name, path
+                    break
+        logging.debug("Use file %s for testcase %s", filename, _test_id)
+
+        if _test_id in all_tests:
+            if filename and filepath:
+                _files.add(
+                    File(
+                        stem=filename.split(".")[0],
+                        name=filename,
+                        abspath=filepath,
+                        test_id=_test_id,
+                    )
                 )
+            else:
+                logging.warning(
+                    "Did not add test case %s, because the file does not exist in the build folder",
+                    _test_id,
+                )
+        else:
+            logging.warning(
+                "Did not add test case %s, because it is not defined in a description YAML",
+                _test_id,
             )
 
     files = set()
@@ -276,4 +298,5 @@ def parse_tests(test_ids: str) -> List[File]:
 
     files = sorted(list(files))
     logging.info("Target files: %s", files)
+    assert len(files) > 0, "No matching test files found"
     return files
