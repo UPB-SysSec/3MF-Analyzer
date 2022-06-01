@@ -61,6 +61,7 @@ def _run_program(
                 Path(output_dir).mkdir(parents=True, exist_ok=True)
 
                 stop(program)  # stop eventually running instances
+                logging.info("Testing %s with %s (%s)", program.name, file.stem, file.name)
                 _program_infos = test_program_on_file(
                     snapshot_intervals=snapshot_intervals,
                     program=program,

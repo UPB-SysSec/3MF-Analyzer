@@ -264,8 +264,6 @@ def test_program_on_file(
 ) -> Union[None, Dict[str, Dict[str, str]]]:
     """Runs a program with the given file and creates screenshots of the result."""
 
-    logging.info("Testing %s with %s", program.name, file.stem)
-
     window_title = program.window_title.format(
         filename=file.stem,
         filename_ext=file.name,
