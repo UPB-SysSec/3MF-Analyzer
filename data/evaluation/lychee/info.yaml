@@ -507,7 +507,6 @@ tests:
     has_server_log: true
   XML-MOD-B-EGE-LX:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
@@ -517,6 +516,7 @@ tests:
       status: aborted
       is_outlier: false
       confidence: medium
+    has_server_log: true
   XML-MOD-B-EGE-R:
     info: TODO
     image_similarity:
@@ -531,7 +531,6 @@ tests:
     has_server_log: true
   XML-MOD-B-EGE-RX:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
@@ -541,6 +540,7 @@ tests:
       status: aborted
       is_outlier: false
       confidence: medium
+    has_server_log: true
   XML-MOD-B-EPE-L:
     info: TODO
     image_similarity:
@@ -1071,7 +1071,6 @@ tests:
     has_server_log: true
   XML-EGE-I-R:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
@@ -1081,9 +1080,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: medium
+    has_server_log: true
   XML-EGE-I-NR:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-PYR-0
@@ -1093,9 +1092,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-EGE-IL-R:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: loaded-partially-00
@@ -1105,9 +1104,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: low
+    has_server_log: true
   XML-EGE-IL-NR:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-PYR-0
@@ -1117,6 +1116,7 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-C-ADA-BASE-DISPLAYCOLOR-0:
     info: TODO
     image_similarity:
@@ -4503,7 +4503,6 @@ tests:
     has_server_log: true
   OPC-LFI-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: loaded-partially-01
@@ -4513,9 +4512,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: low
+    has_server_log: true
   OPC-LFI-1:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: loaded-partially-01
@@ -4525,9 +4524,9 @@ tests:
       status: loading
       is_outlier: false
       confidence: medium
+    has_server_log: true
   OPC-LFI-2:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: loaded-partially-01
@@ -4537,6 +4536,7 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: low
+    has_server_log: true
   ZIP-SL-S:
     info: TODO
     image_similarity:
@@ -4623,7 +4623,6 @@ tests:
     has_server_log: true
   ZIP-zblg:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
@@ -4633,9 +4632,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   ZIP-zbsm:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
@@ -4645,9 +4644,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   ZIP-10:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
@@ -4657,9 +4656,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   ZIP-20:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
@@ -4669,12 +4668,14 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   ZIP-30:
     info: TODO
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    status: loading
   ZIP-34:
     info: TODO
     interpretation:

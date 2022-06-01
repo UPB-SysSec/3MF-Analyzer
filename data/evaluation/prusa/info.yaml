@@ -462,12 +462,12 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: none
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: object-too-large
         test_name: Manual reference screenshot
       score: '0.5717564755017098'
+    has_server_log: true
   XML-MOD-ALT-FBC-BPR-B:
     info: TODO
     image_similarity:
@@ -506,13 +506,13 @@ tests:
     has_server_log: true
   XML-MOD-B-EGE-LX:
     info: TODO
-    critical: true
-    problems:
-    - Process did not start in 5 seconds.
     interpretation:
       status: aborted
       is_outlier: false
       confidence: high
+    critical: true
+    problems:
+    - Process did not start in 5 seconds.
   XML-MOD-B-EGE-R:
     info: TODO
     image_similarity:
@@ -527,13 +527,13 @@ tests:
     has_server_log: true
   XML-MOD-B-EGE-RX:
     info: TODO
-    critical: true
-    problems:
-    - Process did not start in 5 seconds.
     interpretation:
       status: aborted
       is_outlier: false
       confidence: high
+    critical: true
+    problems:
+    - Process did not start in 5 seconds.
   XML-MOD-B-EPE-L:
     info: TODO
     image_similarity:
@@ -645,12 +645,12 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: none
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: object-too-large
         test_name: Manual reference screenshot
       score: '0.5720943739955137'
+    has_server_log: true
   XML-MOD-FBC-BPR-B:
     info: TODO
     image_similarity:
@@ -1058,16 +1058,15 @@ tests:
     has_server_log: true
   XML-EGE-I-R:
     info: TODO
-    critical: true
-    problems:
-    - Process did not start in 5 seconds.
     interpretation:
       status: aborted
       is_outlier: false
       confidence: high
+    critical: true
+    problems:
+    - Process did not start in 5 seconds.
   XML-EGE-I-NR:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CYL
@@ -1077,9 +1076,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-EGE-IL-R:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CYL
@@ -1089,15 +1088,16 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-EGE-IL-NR:
     info: TODO
-    critical: true
-    problems:
-    - Process did not start in 5 seconds.
     interpretation:
       status: aborted
       is_outlier: false
       confidence: high
+    critical: true
+    problems:
+    - Process did not start in 5 seconds.
   GEN-C-ADA-BASE-DISPLAYCOLOR-0:
     info: TODO
     interpretation:
@@ -4155,31 +4155,31 @@ tests:
     - Process did not start in 5 seconds.
   OPC-LFI-0:
     info: TODO
-    critical: true
-    problems:
-    - Process did not start in 5 seconds.
     interpretation:
       status: aborted
       is_outlier: false
       confidence: high
+    critical: true
+    problems:
+    - Process did not start in 5 seconds.
   OPC-LFI-1:
     info: TODO
-    critical: true
-    problems:
-    - Process did not start in 5 seconds.
     interpretation:
       status: aborted
       is_outlier: false
       confidence: high
+    critical: true
+    problems:
+    - Process did not start in 5 seconds.
   OPC-LFI-2:
     info: TODO
-    critical: true
-    problems:
-    - Process did not start in 5 seconds.
     interpretation:
       status: aborted
       is_outlier: false
       confidence: high
+    critical: true
+    problems:
+    - Process did not start in 5 seconds.
   ZIP-SL-S:
     status: aborted
     alert: E09
@@ -4254,52 +4254,54 @@ tests:
     has_server_log: true
   ZIP-zblg:
     info: TODO
-    critical: true
-    problems:
-    - Process did not start in 5 seconds.
     interpretation:
       status: aborted
       is_outlier: false
       confidence: high
+    critical: true
+    problems:
+    - Process did not start in 5 seconds.
   ZIP-zbsm:
     info: TODO
-    critical: true
-    problems:
-    - Process did not start in 5 seconds.
     interpretation:
       status: aborted
       is_outlier: false
       confidence: high
+    critical: true
+    problems:
+    - Process did not start in 5 seconds.
   ZIP-10:
     info: TODO
-    critical: true
-    problems:
-    - Process did not start in 5 seconds.
     interpretation:
       status: aborted
       is_outlier: false
       confidence: high
+    critical: true
+    problems:
+    - Process did not start in 5 seconds.
   ZIP-20:
     info: TODO
-    critical: true
-    problems:
-    - Process did not start in 5 seconds.
     interpretation:
       status: aborted
       is_outlier: false
       confidence: high
+    critical: true
+    problems:
+    - Process did not start in 5 seconds.
   ZIP-30:
     info: TODO
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    status: aborted
   ZIP-34:
     info: TODO
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    status: aborted
 deprecated:
   CS-MUST:
     status: aborted
