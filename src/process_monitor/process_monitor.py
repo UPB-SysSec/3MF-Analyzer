@@ -185,7 +185,11 @@ def plot(log, file_name):
         ax.grid()
 
         ax.vlines(
-            [val for val in [log["file_imported_at"], log["file_loaded_at"]] if val > 0],
+            [
+                val
+                for val in [log.get("file_imported_at", 0), log.get("file_loaded_at", 0)]
+                if val > 0
+            ],
             0.0,
             max(log["cpu"]) * 1.2,
             linestyle="dashed",
@@ -215,10 +219,10 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         name, log = monitor(int(sys.argv[1]), interval=None, include_children=True)
 
-        with open(f"process_log_{name}.json", "w") as out_file:
+        with open(f"{name}.json", "w") as out_file:
             json.dump(log, out_file, indent=4)
 
-        plot(log, f"process_log_{name}.png")
+        # plot(log, f"process_log_{name}.png")
 
     for path in glob("*.json"):
         log = json.load(open(path))
