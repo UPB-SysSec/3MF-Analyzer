@@ -236,7 +236,16 @@ def parse_programs(program_ids: str) -> List[Program]:
 
 
 def parse_tests(test_ids: str) -> List[File]:
-    """Parses given strings into File objects if possible. Ignores non-existing IDs."""
+    # this docstring is used as the description for the --tests argument
+    """\
+    ID's of the tests that should be run. Default `ALL`.
+    Will skip any test/ID that could not be found or that has not been created
+    (according to the yaml).
+    For multiple values use: "val1,val2,...".
+    Bash-like globbing is enabled, for example "XML-*" uses all test IDs with the prefix XML.
+    If the argument starts with "type:" all tests from a type are used, sub-types are
+    provided as a comma-separated list. You can't mix IDs with types in one call.
+    """
     existing_filenames = []
     for dirpath, _, filenames in os.walk(BUILD_DIR):
         existing_filenames += [(filename, join(dirpath, filename)) for filename in filenames]

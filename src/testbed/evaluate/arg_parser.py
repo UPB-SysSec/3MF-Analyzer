@@ -34,12 +34,7 @@ def get_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "-t",
         "--tests",
-        help="ID's of the tests that should be evaluated. Default `ALL`. "
-        "Will skip any test/ID that could not be found or that has not been created "
-        "(according to the yaml). "
-        'For multiple values use: "val1,val2,...". '
-        "Globbing is possible, but very restricted: * at the end of a partial ID will be "
-        "recognized and all matching tests will be added.",
+        help=parse_tests.__doc__,
         default="ALL",
     )
 
