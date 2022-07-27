@@ -73,7 +73,7 @@ def _remove_old_entries(all_ids: List[str]):
             "ids": [],
         },
         "GEN": {
-            "filename": "03_generated.yaml",
+            "filename": "03_3mf-mutated.yaml",
             "ids": [],
         },
     }
@@ -111,7 +111,7 @@ def create_testfiles(parsed_arguments: Dict[str, str]) -> None:
 
     # make sure files exists and read their content from yaml
     file_contents = {}
-    for filename in ["02_xml.yaml", "03_generated.yaml", "00_3mf.yaml", "04_opc.yaml"]:
+    for filename in ["02_xml.yaml", "03_3mf-mutated.yaml", "00_3mf.yaml", "04_opc.yaml"]:
         path = join(DESCRIPTION_DIR, filename)
         if not isfile(path):
             with open(path, "w", encoding="utf-8") as yaml_file:
@@ -132,7 +132,7 @@ def create_testfiles(parsed_arguments: Dict[str, str]) -> None:
             if obj["id"].startswith("XML-"):
                 content = file_contents["02_xml.yaml"]
             elif obj["id"].startswith("GEN-"):
-                content = file_contents["03_generated.yaml"]
+                content = file_contents["03_3mf-mutated.yaml"]
             elif obj["id"].startswith("R-"):
                 content = file_contents["00_3mf.yaml"]
             elif obj["id"].startswith("CS-"):
@@ -150,7 +150,7 @@ def create_testfiles(parsed_arguments: Dict[str, str]) -> None:
             )
             all_ids.append(obj["id"])
 
-    for filename in ["02_xml.yaml", "03_generated.yaml", "00_3mf.yaml", "04_opc.yaml"]:
+    for filename in ["02_xml.yaml", "03_3mf-mutated.yaml", "00_3mf.yaml", "04_opc.yaml"]:
         path = join(DESCRIPTION_DIR, filename)
         with open(path, "w", encoding="utf-8") as yaml_file:
             yaml.dump(file_contents[filename], yaml_file)

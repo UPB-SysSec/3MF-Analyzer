@@ -1,0 +1,46 @@
+scope: XML
+info: |
+  Attacks/Tests on/with the XML standard that don't work on specifics of the 3MF standard.
+  Using entities is explicitly forbidden in the 3MF standard.
+
+footnotes:
+  XML01: |
+    Based on <https://web-in-security.blogspot.com/2016/03/xxe-cheat-sheet.html>, references can
+    be found there.
+
+tests:
+  XML-EGE-I-R:
+    name: External General Entity (local within ZIP, XML content) (in .model file)
+      (included object is referenced)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Content Spoofing
+
+  XML-EGE-I-NR:
+    name: External General Entity (local within ZIP, XML content) (in .model file)
+      (included object is not referenced)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Content Spoofing
+
+  XML-EGE-IL-R:
+    name: External General Entity (local within DTD, XML content) (in .model file)
+      (included object is referenced)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Content Spoofing
+
+  XML-EGE-IL-NR:
+    name: External General Entity (local within DTD, XML content) (in .model file)
+      (included object is not referenced)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Content Spoofing
