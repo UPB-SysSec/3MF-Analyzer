@@ -32,7 +32,7 @@ def main():
     # define main parser
     _usage = dedent(
         """\
-        testbed <command> [<args>]
+        3mf-analyzer <command> [<args>]
 
         The available commands are (use <command> -h/--help for more information):
         """
@@ -56,7 +56,7 @@ def main():
     if _command is not None:
         _main, _parser = _command
         parser: argparse.ArgumentParser = _parser()
-        parser.prog = f"testbed {command}"
+        parser.prog = f"3mf-analyzer {command}"
         args = vars(parser.parse_args(raw_args))
         if args:
             logging.debug("Parsed arguments: %s", args)
