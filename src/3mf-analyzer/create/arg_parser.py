@@ -7,7 +7,7 @@ def get_parser() -> argparse.ArgumentParser:
     """Parses the arguments for this command"""
 
     parser = argparse.ArgumentParser(
-        description="Creates/Generates testcases into /src/testcases/generated "
+        description="Creates/Generates testcases into /data/testcases/generated "
         "(usually only required to run once on every system or if you change the generation code)."
     )
     parser.add_argument(
@@ -18,9 +18,9 @@ def get_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "-m",
-        "--disable-mutation-based",
+        "--disable-3mf-based",
         action="store_true",
-        help="Disables the generation of the mutation-based testcases.",
+        help="Disables the generation of the 3mf-(mutation)-based testcases.",
     )
     parser.add_argument(
         "-o",

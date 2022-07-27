@@ -101,13 +101,10 @@ def _remove_old_entries(all_ids: List[str]):
 def create_testfiles(parsed_arguments: Dict[str, str]) -> None:
     """Writes the generated testcases to disc and adds an entry in the correct YAML file for them."""
 
-    _generators = []
+    _generators = [get_server_files()]
     if not parsed_arguments.get("disable_xml_based"):
-        _generators += [
-            create_xml_testcases(),
-            get_server_files(),
-        ]
-    if not parsed_arguments.get("disable_mutation_based"):
+        _generators += [create_xml_testcases()]
+    if not parsed_arguments.get("disable_3mf_based"):
         _generators += [mutate_tmf_models()]
     if not parsed_arguments.get("disable_opc_based"):
         _generators += [create_opc_testcases()]
