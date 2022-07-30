@@ -267,5 +267,5 @@ def create_opc_reference_testcases():
                                 or (pe + pr + ce + cr == 4)
                             )
                         ),
-                        "type": "Content Spoofing, Reference Confusion, Model Reference Functionality",
+                        "type": "UI Spoofing, Reference Confusion, Model Reference Functionality",
                     }

@@ -1,4 +1,4 @@
-scope: ZIP
+scope: OPC
 
 footnotes:
   ZIP01: |
@@ -30,7 +30,7 @@ tests:
 
   ZIP-CBR:
     name: Capitalization Both Referenced
-    type: Content Spoofing, Reference Confusion
+    type: UI Spoofing, Reference Confusion
     created: true
     conforms_to_spec: n
     expected_behavior: not sure (?)
@@ -39,7 +39,7 @@ tests:
 
   ZIP-CLCVR:
     name: Capitalization Lower Case Version Referenced
-    type: Content Spoofing, Reference Confusion
+    type: UI Spoofing, Reference Confusion
     created: true
     conforms_to_spec: y
     expected_behavior: output "3dmodel"
@@ -48,7 +48,7 @@ tests:
 
   ZIP-CUCVR:
     name: Capitalization Upper Case Version Referenced
-    type: Content Spoofing, Reference Confusion
+    type: UI Spoofing, Reference Confusion
     created: true
     conforms_to_spec: y
     expected_behavior: output "3Dmodel"
@@ -57,7 +57,7 @@ tests:
 
   ZIP-SFT:
     name: Same File Twice
-    type: Content Spoofing, Reference Confusion
+    type: UI Spoofing, Reference Confusion
     created: true
     expected_behavior: Fail
     further_infos: |

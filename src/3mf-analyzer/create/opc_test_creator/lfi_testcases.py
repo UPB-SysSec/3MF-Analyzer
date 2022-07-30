@@ -73,5 +73,5 @@ def create_lfi_testcases():
             "files": files,
             "relative_folder": join("opc", f"OPC-LFI-{num}.3mf"),
             "is_valid": False,
-            "type": "Data Extraction, In-Band",
+            "type": "Data Exfiltration, In-Band",
         }

@@ -1,14 +1,14 @@
 scopes:
-  3D Manufacturing Format: |
-    Attacks/Tests that pertain to general properties of the 3MF specification.
-  3D Model Part: |
-    Attacks/Tests that affect the 3D model part (the `*.model` file(s)) of the 3MF specification.
+  3MF: |
+    This describes tests that affect the 3D model part of the 3MF specification.
+    Everything outside the 3D model part is categorized under OPC.
+  OPC: |
+    This category contains tests that pertain to general structure of the 3MF specification and its underlying OPC specification.
+    This includes attacks on the ZIP archive and other structure-giving elements of the specification.
   XML: |
-    Attacks/Tests on/with the XML standard that don't work on specifics of the 3MF standard.
-    Using entities is explicitly forbidden in the 3MF standard.
+    Here we consider attacks and tests using the XML standard that do not work on specifics of the 3MF standard.
+    These tests all use some form of DTD entities, which are explicitly forbidden in 3MF.
     Hence, all tests in this scope are invalid according to the 3MF specification.
-  ZIP: |
-    Attacks/Tests on/with the ZIP standard that don't work on specifics of the 3MF standard.
 
 types:
   Functionality:
@@ -17,7 +17,7 @@ types:
   Denial of Service:
     description: |
       Attacks that try to interrupt the availability of the software.
-  Content Spoofing:
+  UI Spoofing:
     description: |
       Attacks that try to present the user fake or modified data.
     subtypes:
@@ -74,7 +74,7 @@ types:
       Namespace Confusion:
         description: |
           XML namespaces invalid/mispleading.
-  Data Extraction:
+  Data Exfiltration:
     description: |
       Attacks where the file can be used to extract data from the system they are running on.
     subtypes:

@@ -86,7 +86,7 @@ def _create_type_tag(
     mutation_obj = mutation_infos["associated_object"]
 
     if "xmlns" in res["description"]:
-        return "Content Spoofing, Namespace Confusion"
+        return "UI Spoofing, Namespace Confusion"
 
     if mutation_type == "Attribute Dropped":
         dropped_attr = mutation_obj[0]
@@ -95,13 +95,13 @@ def _create_type_tag(
                 if dropped_attr == _id:
                     # dropped an attributed that identifies the element,
                     # a reference to this element is now broken
-                    return "Content Spoofing, Reference Confusion, Referenced Object Broken"
+                    return "UI Spoofing, Reference Confusion, Referenced Object Broken"
         if (_ids := _get_referencing_id(source_obj)) is not None:
             for _id in _ids:
                 if dropped_attr == _id:
                     # dropped an attributed that references an element,
                     # the no longer-referenced object should not be part of the output
-                    return "Content Spoofing, Reference Confusion, Reference Broken"
+                    return "UI Spoofing, Reference Confusion, Reference Broken"
 
     elif mutation_type.startswith("Attribute Replaced"):
         replaced_attr = mutation_obj[0]
@@ -111,16 +111,16 @@ def _create_type_tag(
                     if replaced_attr == _id:
                         # made an attributed invalid that identifies the element,
                         # a reference to this element is now broken
-                        return "Content Spoofing, Reference Confusion, Referenced Object Broken"
+                        return "UI Spoofing, Reference Confusion, Referenced Object Broken"
             if (_ids := _get_referencing_id(source_obj)) is not None:
                 for _id in _ids:
                     if replaced_attr == _id:
                         # made an attributed invalid that references an element,
                         # the no longer-referenced object should not be part of the output
-                        return "Content Spoofing, Reference Confusion, Reference Broken"
-            return "Content Spoofing, Property Confusion, Property Invalid"
+                        return "UI Spoofing, Reference Confusion, Reference Broken"
+            return "UI Spoofing, Property Confusion, Property Invalid"
         else:
-            return "Content Spoofing, Property Confusion, Property Valid"
+            return "UI Spoofing, Property Confusion, Property Valid"
 
     elif mutation_type.startswith("Attribute Duplicated"):
         duplicated_attr = mutation_obj[0]
@@ -129,51 +129,51 @@ def _create_type_tag(
                 if duplicated_attr == _id:
                     # dropped an attributed that identifies the element,
                     # a reference to this element is now broken
-                    return "Content Spoofing, Reference Confusion"
+                    return "UI Spoofing, Reference Confusion"
         if (_ids := _get_referencing_id(source_obj)) is not None:
             for _id in _ids:
                 if duplicated_attr == _id:
                     # dropped an attributed that references an element,
                     # the no longer-referenced object should not be part of the output
-                    return "Content Spoofing, Reference Confusion, Reference Broken"
-        return "Content Spoofing, Property Confusion, Property Duplication"
+                    return "UI Spoofing, Reference Confusion, Reference Broken"
+        return "UI Spoofing, Property Confusion, Property Duplication"
 
     elif mutation_type == "Child Dropped":
         if _get_referencable_id(mutation_obj) is not None:
             # dropped a child that is referencable
             # a reference to this child is now broken
-            return "Content Spoofing, Reference Confusion, Referenced Object Broken"
+            return "UI Spoofing, Reference Confusion, Referenced Object Broken"
         if _get_referencing_id(mutation_obj) is not None:
             # dropped a child that contained a reference
             # the no longer-referenced object should not be part of the output
-            return "Content Spoofing, Reference Confusion, Reference Broken"
+            return "UI Spoofing, Reference Confusion, Reference Broken"
 
     elif mutation_type == "All Children Dropped":
         for dropped_child in mutation_obj:
             if _get_referencable_id(dropped_child) is not None:
                 # dropped a child that is referencable
                 # a reference to this child is now broken
-                return "Content Spoofing, Reference Confusion, Referenced Object Broken"
+                return "UI Spoofing, Reference Confusion, Referenced Object Broken"
             if _get_referencing_id(dropped_child) is not None:
                 # dropped a child that contained a reference
                 # the no longer-referenced object should not be part of the output
-                return "Content Spoofing, Reference Confusion, Reference Broken"
+                return "UI Spoofing, Reference Confusion, Reference Broken"
 
     elif mutation_type.startswith("Child Duplicated"):
         if _get_referencable_id(mutation_obj) is not None:
             # duplicated a child that is referencable
-            return "Content Spoofing, Reference Confusion, Referenced Object Duplication"
+            return "UI Spoofing, Reference Confusion, Referenced Object Duplication"
         if _get_referencing_id(mutation_obj) is not None:
             # duplicated a child that contains a reference
             # this might break something, but doesn't have to
-            return "Content Spoofing, Reference Confusion"
-        return "Content Spoofing, Property Confusion, Property Duplication"
+            return "UI Spoofing, Reference Confusion"
+        return "UI Spoofing, Property Confusion, Property Duplication"
 
     # fallback case
     if _xml_valid(validity_information):
-        return "Content Spoofing, Property Confusion, Property Valid"
+        return "UI Spoofing, Property Confusion, Property Valid"
     else:
-        return "Content Spoofing, Property Confusion, Property Invalid"
+        return "UI Spoofing, Property Confusion, Property Invalid"
 
 
 def _get_infos(id_prefix: str, obj: ComplexType):

@@ -373,7 +373,7 @@ TESTCASES = [
         "model_manipulation": [_set_value(CT_Metadata().tag, "&all;")],
         "model_alt_manipulation": [_set_value(CT_Mesh().tag, "&all;")],
         "rels_manipulation": [_set_value("Relationship", "&all;")],
-        "type": "Data Extraction, In-Band",
+        "type": "Data Exfiltration, In-Band",
         "name": "ByPass Restrictions Variant A",
     },
     {
@@ -385,7 +385,7 @@ TESTCASES = [
         "model_manipulation": [_set_value(CT_Metadata().tag, "&all;")],
         "model_alt_manipulation": [_set_value(CT_Mesh().tag, "&all;")],
         "rels_manipulation": [_set_value("Relationship", "&all;")],
-        "type": "Data Extraction, In-Band",
+        "type": "Data Exfiltration, In-Band",
         "name": "ByPass Restrictions Variant B",
     },
     {
@@ -406,7 +406,7 @@ TESTCASES = [
             _delete_attributes("Relationship", ["id"]),
             _add_attributes("Relationship", [("id", XS_String("&internal;"))]),
         ],
-        "type": "Data Extraction, In-Band",
+        "type": "Data Exfiltration, In-Band",
         "name": "Attribute Values",
     },
     {
@@ -422,7 +422,7 @@ TESTCASES = [
         "postfixed_code": "",
         "model_manipulation": [],
         "rels_manipulation": [],
-        "type": "Data Extraction, In-Band",
+        "type": "Data Exfiltration, In-Band",
         "name": "Error Based",
     },
     {
@@ -446,7 +446,7 @@ TESTCASES = [
         "postfixed_code": "",
         "model_manipulation": [],
         "rels_manipulation": [],
-        "type": "Data Extraction, In-Band",
+        "type": "Data Exfiltration, In-Band",
         "name": "Error Based (local)",
     },
     {
@@ -458,7 +458,7 @@ TESTCASES = [
         "model_manipulation": [_set_value(CT_Metadata().tag, "&send;")],
         "model_alt_manipulation": [_set_value(CT_Mesh().tag, "&send;")],
         "rels_manipulation": [_set_value("Relationship", "&send;")],
-        "type": "Data Extraction, Out-Of-Band",
+        "type": "Data Exfiltration, Out-Of-Band",
         "name": "General (remote)",
     },
     {
@@ -475,7 +475,7 @@ TESTCASES = [
         "postfixed_code": "",
         "model_manipulation": [],
         "rels_manipulation": [],
-        "type": "Data Extraction, Out-Of-Band",
+        "type": "Data Exfiltration, Out-Of-Band",
         "name": "Parameter Entity (remote)",
     },
     {
@@ -511,7 +511,7 @@ TESTCASES = [
                 ],
             ),
         ],
-        "type": "Data Extraction, Out-Of-Band",
+        "type": "Data Exfiltration, Out-Of-Band",
         "name": "SchemaLocation (remote)",
     },
     {
@@ -545,7 +545,7 @@ TESTCASES = [
                 ],
             ),
         ],
-        "type": "Data Extraction, Out-Of-Band",
+        "type": "Data Exfiltration, Out-Of-Band",
         "name": "NoNamespaceSchemaLocation (remote)",
     },
     {
@@ -597,7 +597,7 @@ TESTCASES = [
                 ],
             ),
         ],
-        "type": "Data Extraction, Out-Of-Band",
+        "type": "Data Exfiltration, Out-Of-Band",
         "name": "XInclude (remote)",
     },
     {

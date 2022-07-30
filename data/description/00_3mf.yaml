@@ -1,4 +1,4 @@
-scope: 3D Manufacturing Format
+scope: 3MF
 
 footnotes:
   CS02: |
@@ -15,7 +15,7 @@ footnotes:
 tests:
   CS-DOID:
     name: Double Object ID
-    type: Content Spoofing, Reference Confusion, Referenced Object Duplication
+    type: UI Spoofing, Reference Confusion, Referenced Object Duplication
     created: true
     conforms_to_spec: n
     expected_behavior: Fail
@@ -24,7 +24,7 @@ tests:
 
   CS-DOR:
     name: Double Object Reference
-    type: Content Spoofing
+    type: UI Spoofing
     created: true
     conforms_to_spec: y
     expected_behavior: Output both items
@@ -35,7 +35,7 @@ tests:
 
   CS-MUDT:
     name: Multiple Units different Tags
-    type: Content Spoofing, Property Confusion, Property Duplication
+    type: UI Spoofing, Property Confusion, Property Duplication
     created: true
     conforms_to_spec: n
     expected_behavior: Fail or ignore wrong unit tags
@@ -45,7 +45,7 @@ tests:
 
   CS-SE:
     name: Slicing Extension
-    type: Content Spoofing, Property Confusion
+    type: UI Spoofing, Property Confusion
     created: true
     conforms_to_spec: y
     expected_behavior: None
@@ -54,7 +54,7 @@ tests:
 
   CS-P-NEBS:
     name: Non-Empty Build Section (Production Extension)
-    type: Content Spoofing, Reference Confusion
+    type: UI Spoofing, Reference Confusion
     created: true
     conforms_to_spec: n
     expected_behavior: Fail
@@ -64,7 +64,7 @@ tests:
 
   CS-S-NEBS:
     name: Non-Empty Build Section (Slice Extension)
-    type: Content Spoofing, Reference Confusion
+    type: UI Spoofing, Reference Confusion
     created: true
     conforms_to_spec: n
     expected_behavior: Fail
@@ -74,7 +74,7 @@ tests:
 
   CS-P-SLLR:
     name: Seconds-Level Model Lazy Resolve (Production Extension)
-    type: Content Spoofing, Reference Confusion
+    type: UI Spoofing, Reference Confusion
     created: true
     conforms_to_spec: n(?)
     expected_behavior: Fail
@@ -84,7 +84,7 @@ tests:
 
   CS-S-SLLR:
     name: Seconds-Level Model Lazy Resolve (Slice Extension)
-    type: Content Spoofing, Reference Confusion
+    type: UI Spoofing, Reference Confusion
     created: true
     conforms_to_spec: n(?)
     expected_behavior: Fail
@@ -94,7 +94,7 @@ tests:
 
   CS-S:
     name: Support
-    type: Content Spoofing
+    type: UI Spoofing
     created: true
     conforms_to_spec: n(?)
     expected_behavior: Fail
