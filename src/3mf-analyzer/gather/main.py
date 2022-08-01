@@ -16,10 +16,10 @@ def build_md_files():
         "\n\n"
     )
 
-    logging.info("Write attack/test descriptions")
-    description_md = build_descriptions_markdown()
-    with open(join(DATA_DIR, "test-descriptions.md"), "w", encoding="utf8") as out_file:
-        out_file.write(prefix + description_md)
+    # logging.info("Write attack/test descriptions")
+    # description_md = build_descriptions_markdown()
+    # with open(join(DATA_DIR, "test-descriptions.md"), "w", encoding="utf8") as out_file:
+    #     out_file.write(prefix + description_md)
 
     logging.info("Write attack/test evaluations")
     evaluation_md = build_evaluations_markdown()

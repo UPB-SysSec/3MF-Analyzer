@@ -18,6 +18,7 @@ def _types_to_markdown_sections(types: Dict) -> str:
 
         res = []
         for spec, value in conforms_to_spec.items():
+            value = str(value)
             res.append(f"{spec}: {value.split(':')[0]}")
         return "; ".join(res)
 
@@ -99,58 +100,28 @@ def _footnotes_to_markdown_text(footnotes: Dict) -> str:
 def _get_statistical_overview():
     """Creates an statistical overview of the tests in each type"""
 
-    def _type_to_section(
-        nesting_level: int,
-        type_name: str,
-        type_description: str,
-        contained_tests: Dict,
+    def _nr_tests_per_section(
+        nesting_level: int, type_name: str, type_description: str, contained_tests: Dict
     ) -> str:
-        # section = f'{"#" * (nesting_level + 2)} {type_name}\n\n'
-
-        stats = {
-            "Total Nr. Tests": len(contained_tests),
-            "Nr. Generated": 0,
-            "3D Manufacturing Format": 0,
-            "3D Model Part": 0,
-            "XML": 0,
-            "ZIP": 0,
-        }
-
-        for test_id, data in contained_tests.items():
-            if test_id.startswith("GEN"):
-                stats["Nr. Generated"] += 1
-            if data.get("scope") is not None:
-                stats[data["scope"]] += 1
-
-        # section += get_markdown_table(
-        #     ["Property", "Number of Tests"],
-        #     [[key, value] for key, value in stats.items()],
-        #     ["l", "l"],
-        # )
-
-        return (nesting_level, type_name, stats)
+        return (nesting_level, type_name, len(contained_tests))
 
     overall_stats = {}
     parent_type_name = ""
-    for nesting_level, type_name, stats in get_all_tests_by_type(callback=_type_to_section):
+    for nesting_level, type_name, nr_tests in get_all_tests_by_type(callback=_nr_tests_per_section):
         if nesting_level == 0:
             parent_type_name = type_name
-            overall_stats[type_name] = {}
-        for stat_name, stat_value in stats.items():
-            if stat_name not in overall_stats[parent_type_name]:
-                overall_stats[parent_type_name][stat_name] = 0
-            overall_stats[parent_type_name][stat_name] += stat_value
+            overall_stats[type_name] = 0
+        overall_stats[parent_type_name] += nr_tests
 
     result = "# Statistical Overview\n\n"
-    for type_name, stats in overall_stats.items():
-        result += (
-            get_markdown_table(
-                [type_name, "Amount"],
-                [[key, value] for key, value in stats.items()],
-                ["l", "l"],
-            )
-            + "\n"
+    result += (
+        get_markdown_table(
+            ["Type", "Amount"],
+            [list(item) for item in overall_stats.items()],
+            ["l", "l"],
         )
+        + "\n"
+    )
 
     return result
 
@@ -158,8 +129,10 @@ def _get_statistical_overview():
 def build_descriptions_markdown():
     """Builds a markdown representation of the testcase descriptions."""
 
-    output = _get_statistical_overview()
-    output += "\n\n"
+    output = ""
+
+    # output += _get_statistical_overview()
+    # output += "\n\n"
 
     with open(join(DESCRIPTION_DIR, "description_texts.yaml"), "r", encoding="utf-8") as in_file:
         description_texts = yaml.load(in_file)

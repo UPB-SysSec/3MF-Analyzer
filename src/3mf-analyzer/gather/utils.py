@@ -84,5 +84,5 @@ def format_spec_conformity(test_data):
 
     res = []
     for spec, value in conforms_to_spec.items():
-        res.append(f"{spec}: {value.split(':')[0]}")
+        res.append(f"{spec}: {str(value).split(':', maxsplit=1)[0]}")
     return "; ".join(res)

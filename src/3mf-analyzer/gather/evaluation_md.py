@@ -19,7 +19,7 @@ def _expect_fail(test_description):
         if spec_conform == "n" or spec_conform is False:
             return True
         if isinstance(spec_conform, dict):
-            vals = ["invalid" in value.lower() for _, value in spec_conform.items()]
+            vals = ["invalid" in str(value).lower() for _, value in spec_conform.items()]
             expect_fail = all(vals)
             if "materials" in spec_conform:
                 expect_fail = "invalid" in spec_conform["materials"].lower()
