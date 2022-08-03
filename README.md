@@ -25,7 +25,7 @@ This means, if you want to evaluate the programs, you have to execute `create`, 
 ## Setup
 
 There are three ways in which you can run the tool.
-To gather data only the first option (on a Windows machine) works.
+For the `run` command and the manual GUI-mode for the `evaluate` command only the first option works.
 The other options can be used to test the test case creation an evaluation.
 
 1. **On the machine directly**:
