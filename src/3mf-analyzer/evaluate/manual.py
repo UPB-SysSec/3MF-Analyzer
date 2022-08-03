@@ -1,20 +1,28 @@
 """Provides a simple GUI to manually evaluate test cases."""
 
 import logging
-import tkinter as tk
 from copy import deepcopy
 from functools import lru_cache
 from glob import glob
 from io import StringIO
 from os.path import join
 from pathlib import Path
-from tkinter import messagebox
 from typing import Any, Callable, Dict, List
 
 from PIL import Image, ImageTk
 
 from .. import EVALUATION_DIR, yaml
 from ..utils import get_all_tests
+
+try:
+    import tkinter as tk
+    from tkinter import messagebox
+except ImportError:
+    tk = None
+    logging.error(
+        "Cannot import tkinter. Is tk correctly installed?\nManual evaluation not possible."
+    )
+
 
 STATE = {
     "current_program_index": 0,
@@ -362,6 +370,9 @@ def _display_test(
 
 
 def show_screenshots(program_ids: List[str], test_ids: List[str]) -> None:
+    if tk is None:
+        return
+
     all_tests = get_all_tests()
     root = tk.Tk()
 
