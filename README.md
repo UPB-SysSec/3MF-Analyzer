@@ -4,7 +4,7 @@ This is project repository for our paper “Security Analysis of the 3MF Data Fo
 
 We created 3MF Analyzer to aid the automatic creation, execution, and evaluation of test cases.
 The test cases are a mixture of manually and automatically create 3MF files.
-The automatic test cases are creates using the `create` command of the tool.
+The automatic test cases are created using the `create` command of the tool.
 All resulting partial 3MF files and manually defined ones are bundled into 3MF archives (i.e. ZIPed) using the `build` command.
 
 The `run` command starts a (to be tested) program and loads a 3MF file with the program.
@@ -20,7 +20,7 @@ That means when executing set the working directory to the `src` folder and run:
 All of the commands (besides `run`) run under Linux as well as Windows.  
 *Please note*, that for the execution of the tested programs (using the `run` command) the program has to run natively on Windows.
 The `create` command executes within a Docker container, but the paths of some test cases will be wrong.
-This means, it you want to evaluate the programs, you have to execute `create`, `build`, and `run` on the Windows machine where the programs are installed.
+This means, if you want to evaluate the programs, you have to execute `create`, `build`, and `run` on the Windows machine where the programs are installed.
 
 ## Setup
 
@@ -30,9 +30,11 @@ The other options can be used to test the test case creation an evaluation.
 
 1. **On the machine directly**:
    - Install Python Version 3.8 (newer versions *should* work but are not tested).
-   - **Via Python Poetry**:
+   - Make sure [Tk](https://tkdocs.com/index.html) is installed.
+   - **Via Python Poetry** (only Python 3.8):
      - Install Python Poetry <https://python-poetry.org/>
      - Run `poetry install`
+     - Run `poetry shell`
    - **Manually**:
      - Install the requirements in `.devcontainer/requirements.txt` either
        - globally `python38 -m pip install -r .devcontainer/requirements.txt` or
@@ -42,6 +44,7 @@ The other options can be used to test the test case creation an evaluation.
           source .venv/bin/activate
           python38 -m pip install -r .devcontainer/requirements.txt
           ```
+       assuming the Python Version 3.8 executable is called `python38`.
    - `cd src/`
 2. **Docker using the .devcontainer**:
    - Install and setup [Docker](https://www.docker.com/).
@@ -76,19 +79,21 @@ In short, the following commands are available:
 - **create**: Creates/Generates testcases into /data/testcases/{generated,server_files} (usually only required to run once on every system or if you change the generation code).
 - **build**: Builds the existing testcases into the 3MF format.
 - **run**: Runs the given test file(s) with the given program(s) (only Windows).
-- **server**: Starts an HTTP Server. This should be executed in parallel to the run command.
+- **server**: Starts an HTTP Server. This should be executed in parallel to the run command (i.e. run `server` in a second terminal when you want to use `run`).
 - **evaluate**: Evaluates the data produced by the run command.
 - **gather**: Gathers the testcases and results into readable Markdown.
 
 ## Usage Notices for the `run` command
 
 - Make sure submodules are pulled.
-- Make sure that the `type_association_id`'s of the different tested programs match on your installation (see: `data/programs/config.yaml`).
-  You can do so by setting the Default File Association in Windows (through the file explorer "Always open with {program}") and afterwards checking the set value with the PowerShell script in `src/PS-SFTA`:
-  ```powershell
-  cd src/PS-SFTA
-  & { . .\SFTA.ps1; Get-FTA .3mf }
-  ```
+- Programs that you want to test have to be installed on the Windows machine and configured in `data/programs/config.yaml`.
+  The `run` command can then execute them given their `id` as a CLI flag.
+  - Make sure that the `type_association_id`'s of the different tested programs match on your installation.
+    You can do so by setting the Default File Association in Windows (through the file explorer "Always open with {program}") and afterwards checking the set value with the PowerShell script in `src/PS-SFTA`:
+    ```powershell
+    cd src/PS-SFTA
+    & { . .\SFTA.ps1; Get-FTA .3mf }
+    ```
 - Open the program(s) that you want to test prior to the test, adjust their size and move them to the primary monitor (if you have multiple monitors).
   The windows can be full screen, but this increases the execution time of the evaluation.
   We recommend you to drag the window in one corner of the screen (1/4th the size), as this is a reproducible scale (over multiple runs),
