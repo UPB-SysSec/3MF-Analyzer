@@ -66,6 +66,7 @@ The other options can be used to test the test case creation an evaluation.
        --entrypoint /bin/bash \
        --volume "$(pwd)/data:/workspace/data" \
        --volume "$(pwd)/src:/workspace/src" \
+       --volume "$(pwd)/build:/workspace/build" \
        3mf-analyzer
      ```
    - `cd /workspace/src`
