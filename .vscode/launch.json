@@ -1,0 +1,94 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "args": []
+        },
+        {
+            "name": "Create Tests",
+            "type": "python",
+            "request": "launch",
+            "module": "3mf-analyzer",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/src",
+            "args": [
+                "create",
+                "-x",
+                // "-m",
+            ]
+        },
+        {
+            "name": "Build Tests",
+            "type": "python",
+            "request": "launch",
+            "module": "3mf-analyzer",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/src",
+            "args": [
+                "build",
+            ]
+        },
+        {
+            "name": "Run Tests",
+            "type": "python",
+            "request": "launch",
+            "module": "3mf-analyzer",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/src",
+            "args": [
+                "run",
+                "-s",
+                "5",
+                "-t",
+                "XML-*,DOS-*,R-PYR-0,R-PYR-1",
+                "-p",
+                "flashprint",
+                "--data-update-only",
+            ]
+        },
+        {
+            "name": "Gather Data",
+            "type": "python",
+            "request": "launch",
+            "module": "3mf-analyzer",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/src",
+            "args": [
+                "gather",
+            ]
+        },
+        {
+            "name": "Start Server",
+            "type": "python",
+            "request": "launch",
+            "module": "3mf-analyzer",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/src",
+            "args": [
+                "server",
+            ]
+        },
+        {
+            "name": "Evaluate Data",
+            "type": "python",
+            "request": "launch",
+            "module": "3mf-analyzer",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/src",
+            "args": [
+                "evaluate",
+                "-m",
+                // "prusa",
+            ]
+        },
+    ]
+}

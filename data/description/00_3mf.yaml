@@ -1,0 +1,308 @@
+scope: 3MF
+
+footnotes:
+  CS02: |
+    Slice Extension p.6: Slice Data Processing Rules:
+
+    > Sliced model data extends the core 3MF mesh format's geometrical representation of objects to
+    > include vector-based layers. [...] The consumer can choose to process and use the included
+    > mesh representation in addition to, or instead of, slice data. Consumers should be aware that
+    > if the mesh representation is tagged as "lowres", the accuracy of the actual mesh might not
+    > be as rich as the attached slice data. [...] All slice models are referenced from `<object>`
+    > elements. The reference can be within the same model file as the `<object>` or from a
+    > different file in the same 3MF package.
+
+tests:
+  CS-DOID:
+    name: Double Object ID
+    type: UI Spoofing, Reference Confusion, Referenced Object Duplication
+    created: true
+    conforms_to_spec: n
+    expected_behavior: Fail
+    further_infos: |
+      Two objects with the same ID (that is referenced in build, IDs are supposed to be unique).
+
+  CS-DOR:
+    name: Double Object Reference
+    type: UI Spoofing
+    created: true
+    conforms_to_spec: y
+    expected_behavior: Output both items
+    further_infos: |
+      Same object referenced twice with different transformations.
+      If transformations are ignored, the two objects should be in the exact same spot
+      (i.e. they look like one).
+
+  CS-MUDT:
+    name: Multiple Units different Tags
+    type: UI Spoofing, Property Confusion, Property Duplication
+    created: true
+    conforms_to_spec: n
+    expected_behavior: Fail or ignore wrong unit tags
+    further_infos: |
+      Different unit attributes added to different tags.
+      Checks which one is taken by parser. Normally only allowed in model tag.
+
+  CS-SE:
+    name: Slicing Extension
+    type: UI Spoofing, Property Confusion
+    created: true
+    conforms_to_spec: y
+    expected_behavior: None
+    further_infos: |
+      Different model in the slices as in the faces/triangles definition. [^CS02]
+
+  CS-P-NEBS:
+    name: Non-Empty Build Section (Production Extension)
+    type: UI Spoofing, Reference Confusion
+    created: true
+    conforms_to_spec: n
+    expected_behavior: Fail
+    further_infos: |
+      A build section in secondary model files is required to be empty.
+      The Cube is referenced invalidly.
+
+  CS-S-NEBS:
+    name: Non-Empty Build Section (Slice Extension)
+    type: UI Spoofing, Reference Confusion
+    created: true
+    conforms_to_spec: n
+    expected_behavior: Fail
+    further_infos: |
+      A build section in secondary model files is required to be empty.
+      The Cube is referenced invalidly.
+
+  CS-P-SLLR:
+    name: Seconds-Level Model Lazy Resolve (Production Extension)
+    type: UI Spoofing, Reference Confusion
+    created: true
+    conforms_to_spec: n(?)
+    expected_behavior: Fail
+    further_infos: |
+      Checks if a file is loaded if it is only referenced in the .rels file, or only if it is used.
+      A broken file is referenced by the .rels file, but not in the root model.
+
+  CS-S-SLLR:
+    name: Seconds-Level Model Lazy Resolve (Slice Extension)
+    type: UI Spoofing, Reference Confusion
+    created: true
+    conforms_to_spec: n(?)
+    expected_behavior: Fail
+    further_infos: |
+      Checks if a file is loaded if it is only referenced in the .rels file, or only if it is used.
+      A broken file is referenced by the .rels file, but not in the root model.
+
+  CS-S:
+    name: Support
+    type: UI Spoofing
+    created: true
+    conforms_to_spec: n(?)
+    expected_behavior: Fail
+    further_infos: |
+      House model, but the cube is of type "support". Checks if supports are used or ignored.
+      And if they are used, how they are handled.
+
+  DOS-BL-MBR:
+    name: Billion Laughs (Model Build References)
+    type: Denial of Service
+    created: true
+    conforms_to_spec: y
+    expected_behavior: Long Execution/Crash
+    further_infos: |
+      Something like the billion laughs attack:
+      Large object, referenced many times in the build (possible with/-out production extension?)
+      TODO: scale model up (hard to see as its rather small)
+
+  DOS-CR-SE:
+    name: Circular References Slicing Extension
+    type: Denial of Service
+    created: true
+    conforms_to_spec: n
+    expected_behavior: Fail
+    further_infos: |
+      Have `sliceref` in `slicestack` definition of 2D model.
+
+      > A referenced slice stack MUST NOT contain any further `<sliceref>` elements - there can be
+      > only a single layer of abstraction from the original `<slicestack>` to the slice contents.
+
+  DOS-FUZ-LIB3MF:
+    name: Fuzzing-based Crash for lib3mf
+    type: Denial of Service
+    created: true
+    conforms_to_spec: n
+    expected_behavior: Fail
+
+  DOS-FUZ-SAVITAR-0:
+    name: Fuzzing-based Crash for Cura's Savitar
+    type: Denial of Service
+    created: true
+    conforms_to_spec: n
+    expected_behavior: Fail
+
+  DOS-FUZ-SAVITAR-1:
+    name: Fuzzing-based Crash for Cura's Savitar
+    type: Denial of Service
+    created: true
+    conforms_to_spec: n
+    expected_behavior: Fail
+
+  DOS-FUZ-SLIC3R-0:
+    name: Fuzzing-based Crash for Slic3r
+    type: Denial of Service
+    created: true
+    conforms_to_spec: n
+    expected_behavior: Fail
+
+  DOS-FUZ-SLIC3R-1:
+    name: Fuzzing-based Crash for Slic3r
+    type: Denial of Service
+    created: true
+    conforms_to_spec: n
+    expected_behavior: Fail
+
+  DOS-FUZ-SLIC3R-2:
+    name: Fuzzing-based Crash for Slic3r
+    type: Denial of Service
+    created: true
+    conforms_to_spec: n
+    expected_behavior: Fail
+
+  R-CYL:
+    name: Cylinder Model
+    type: Reference
+    created: true
+    conforms_to_spec: y
+    expected_behavior: Load
+
+  R-PYR-0:
+    name: Pyramid Model 0
+    type: Reference
+    created: true
+    conforms_to_spec: y
+    expected_behavior: Load
+
+  R-PYR-1:
+    name: Pyramid Model 1
+    type: Reference
+    created: true
+    conforms_to_spec: y
+    expected_behavior: Load
+
+  R-CUB:
+    name: Cube Model
+    type: Reference
+    created: true
+    conforms_to_spec: y
+    expected_behavior: Load
+
+  R-HOU:
+    name: House Model
+    type: Reference
+    created: true
+    conforms_to_spec: y
+    expected_behavior: Load
+
+  R-SPEC-C-0:
+    name: Full/Reference model for core specification (C)
+    created: true
+    conforms_to_spec:
+      core: Valid
+    type: Reference
+
+  R-SPEC-M-0:
+    name: Full/Reference model for materials specification (M)
+    created: true
+    conforms_to_spec:
+      core: "Invalid 3MF: attribute 'displaypropertiesid' not allowed."
+      materials: Valid
+    type: Reference
+
+  R-SPEC-P-0:
+    name: Full/Reference model for production specification (P)
+    created: true
+    conforms_to_spec:
+      core: Valid
+      production: Valid
+    type: Reference
+
+  R-ERR:
+    name: Error case, should fail always (no model)
+    created: true
+    conforms_to_spec: n
+    type: Reference
+
+  F-B-BAL:
+    name: Basic Functionality Beam Lattice
+    created: true
+    conforms_to_spec: y
+    type: Functionality
+    further_infos: |
+      Minimal example for this extension.
+      Tests if this extension works at all.
+      Based on example file from <https://github.com/3MFConsortium/3mf-samples>.
+      Copyright (c) 2018 3MF Consortium, BSD 2-Clause License
+
+  F-B-MAT:
+    name: Basic Functionality Materials
+    created: true
+    conforms_to_spec: y
+    type: Functionality
+    further_infos: |
+      Minimal example for this extension.
+      Tests if this extension works at all.
+      Based on example file from <https://github.com/3MFConsortium/3mf-samples>.
+      Copyright (c) 2018 3MF Consortium, BSD 2-Clause License
+
+  F-B-PRO:
+    name: Basic Functionality Production
+    created: true
+    conforms_to_spec: y
+    type: Functionality
+    further_infos: |
+      Minimal example for this extension.
+      Tests if this extension works at all.
+      Based on example file from <https://github.com/3MFConsortium/3mf-samples>.
+      Copyright (c) 2018 3MF Consortium, BSD 2-Clause License
+
+  F-B-SLI:
+    name: Basic Functionality Slice
+    created: true
+    conforms_to_spec: y
+    type: Functionality
+    further_infos: |
+      Minimal example for this extension.
+      Tests if this extension works at all.
+      Based on example file from <https://github.com/3MFConsortium/3mf-samples>.
+      Copyright (c) 2018 3MF Consortium, BSD 2-Clause License
+
+  F-EAP:
+    name: Elements Always Parsed
+    created: true
+    conforms_to_spec: y
+    type: Functionality
+    further_infos: |
+      Checks if resource elements are parsed in demand or not.
+      Basically, DOS-BL-MBR in an unused element. If it takes long, it is parsed.
+
+  R-SPEC-SI-0:
+    name: Full/Reference model for slice specification (SI)
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice: Valid
+    type: Reference
+
+  R-SPEC-CM-0:
+    name: Full/Reference model for core specification (CM)
+    created: true
+    conforms_to_spec:
+      core: Valid
+    type: Reference
+
+  R-SPEC-SE-0:
+    name: Full/Reference model for slice specification (SE)
+    created: true
+    conforms_to_spec:
+      core: Valid
+      slice: Valid
+    type: Reference

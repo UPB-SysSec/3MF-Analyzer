@@ -1,0 +1,138 @@
+scope: OPC
+
+footnotes:
+  ZIP01: |
+    Checks if program behaves differently for, e.g., `3Dmodel` vs `3dmodel` on Windows.
+  ZIP02: |
+    Source: https://www.bamsoftware.com/hacks/zipbomb/
+  ZIP03: |
+    Source: https://github.com/AyrA/ZipBomb
+
+tests:
+  ZIP-SL-S:
+    name: Symbolic Link Support
+    type: Functionality
+    created: true
+    conforms_to_spec: n(?)
+    expected_behavior: output "other"
+    further_infos: |
+      Does ZIP support soft links? Does the software follow them?
+      Not specified explicitly, the standard implementation on GNU/Linux supports it.
+
+  ZIP-SL-C:
+    name: Symbolic Link Circle
+    type: Denial of Service
+    created: true
+    conforms_to_spec: n
+    expected_behavior: Fail
+    further_infos: |
+      If soft links are supported, can we create an infinite circle of links?
+
+  ZIP-CBR:
+    name: Capitalization Both Referenced
+    type: UI Spoofing, Reference Confusion
+    created: true
+    conforms_to_spec: n
+    expected_behavior: not sure (?)
+    further_infos: |
+      [^ZIP01]
+
+  ZIP-CLCVR:
+    name: Capitalization Lower Case Version Referenced
+    type: UI Spoofing, Reference Confusion
+    created: true
+    conforms_to_spec: y
+    expected_behavior: output "3dmodel"
+    further_infos: |
+      [^ZIP01]
+
+  ZIP-CUCVR:
+    name: Capitalization Upper Case Version Referenced
+    type: UI Spoofing, Reference Confusion
+    created: true
+    conforms_to_spec: y
+    expected_behavior: output "3Dmodel"
+    further_infos: |
+      [^ZIP01]
+
+  ZIP-SFT:
+    name: Same File Twice
+    type: UI Spoofing, Reference Confusion
+    created: true
+    expected_behavior: Fail
+    further_infos: |
+      Modify ZIP headers in binary so that there are two `3dmodel` files, see what happens.
+      Add case A/B where one is the reversed (so we can test whether always the first is taken).
+
+  ZIP-64:
+    name: ZIP64 Usage
+    type: Functionality
+    created: true
+    conforms_to_spec: y
+    expected_behavior: Fail
+    further_infos: |
+      OPC requires it as a supported extension.
+
+  ZIP-zblg:
+    name: ZIP Bomb zblg
+    type: Denial of Service
+    created: true
+    conforms_to_spec: n
+    expected_behavior: Fail
+    further_infos: |
+      [^ZIP02]
+
+  ZIP-zbsm:
+    name: ZIP Bomb zbsm
+    type: Denial of Service
+    created: true
+    conforms_to_spec: n
+    expected_behavior: Fail
+    further_infos: |
+      [^ZIP02]
+
+  # ZIP-zbxl:
+  #   name: ZIP Bomb zbxl
+  #   type: Denial of Service
+  #   created: true
+  #   conforms_to_spec: n
+  #   expected_behavior: Fail
+  #   further_infos: |
+  #     [^ZIP02]
+  # detected by windows AV and automatically removed -> not tested
+
+  ZIP-10:
+    name: ZIP Bomb 10
+    type: Denial of Service
+    created: true
+    conforms_to_spec: n
+    expected_behavior: Fail
+    further_infos: |
+      [^ZIP03]
+
+  ZIP-20:
+    name: ZIP Bomb 20
+    type: Denial of Service
+    created: true
+    conforms_to_spec: n
+    expected_behavior: Fail
+    further_infos: |
+      [^ZIP03]
+
+  ZIP-30:
+    name: ZIP Bomb 30
+    type: Denial of Service
+    created: true
+    conforms_to_spec: n
+    expected_behavior: Fail
+    further_infos: |
+      [^ZIP03]
+
+  ZIP-34:
+    name: ZIP Bomb 34
+    type: Denial of Service
+    created: true
+    conforms_to_spec: n
+    expected_behavior: Fail
+    further_infos: |
+      [^ZIP03]

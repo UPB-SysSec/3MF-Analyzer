@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE model [
+    <!ELEMENT model ANY >
+    <!ATTLIST model unit NMTOKEN 'millimeter'>
+    <!ATTLIST model xml:lang NMTOKEN 'en-US' >
+    <!ATTLIST model xmlns CDATA 'http://schemas.microsoft.com/3dmanufacturing/core/2015/02' >
+
+    <!ELEMENT metadata ANY >
+    <!ATTLIST metadata name NMTOKEN 'Title' >
+
+    <!ELEMENT resources ANY >
+
+    <!ELEMENT object ANY >
+    <!ATTLIST object id NMTOKEN '1' >
+    <!ATTLIST object type NMTOKEN 'model' >
+
+    <!ELEMENT mesh ANY >
+
+    <!ELEMENT vertices ANY >
+
+    <!ELEMENT vertex ANY >
+    <!ATTLIST vertex x NMTOKEN '0' >
+    <!ATTLIST vertex y NMTOKEN '0' >
+    <!ATTLIST vertex z NMTOKEN '0' >
+
+    <!ELEMENT triangles ANY >
+
+    <!ELEMENT triangle ANY >
+    <!ATTLIST triangle v1 NMTOKEN '0' >
+    <!ATTLIST triangle v2 NMTOKEN '0' >
+    <!ATTLIST triangle v3 NMTOKEN '0' >
+
+    <!ELEMENT build ANY >
+    <!ELEMENT item ANY >
+    <!ATTLIST item objectid NMTOKEN '1' >
+    
+    <!ENTITY obj SYSTEM "file://cylinder.xml">
+]>
+
+<model xmlns="http://schemas.microsoft.com/3dmanufacturing/core/2015/02" unit="millimeter" xml:lang="en-US">
+    <resources>
+        <object id="1" type="model">
+            <mesh>
+                <vertices>
+                    <vertex x="160.00000" y="80.00000" z="0" />
+                    <vertex x="104.72136" y="156.08452" z="0" />
+                    <vertex x="15.27864" y="127.02281" z="0" />
+                    <vertex x="15.27864" y="32.97717" z="0" />
+                    <vertex x="104.72137" y="3.91548" z="0" />
+                    <vertex x="80.00000" y="80.00000" z="100.00000" />
+                    <vertex x="80.00000" y="80.00000" z="0" />
+                </vertices>
+                <triangles>
+                    <triangle v1="6" v2="1" v3="0" />
+                    <triangle v1="6" v2="2" v3="1" />
+                    <triangle v1="6" v2="3" v3="2" />
+                    <triangle v1="6" v2="4" v3="3" />
+                    <triangle v1="6" v2="0" v3="4" />
+                    <triangle v1="0" v2="1" v3="5" />
+                    <triangle v1="1" v2="2" v3="5" />
+                    <triangle v1="2" v2="3" v3="5" />
+                    <triangle v1="3" v2="4" v3="5" />
+                    <triangle v1="4" v2="0" v3="5" />
+                </triangles>
+            </mesh>
+        </object>
+        &obj;
+    </resources>
+    <build>
+        <item objectid="1" />
+    </build>
+</model>

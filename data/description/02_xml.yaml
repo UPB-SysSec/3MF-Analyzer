@@ -1,0 +1,493 @@
+scope: XML
+
+footnotes:
+  XML01: |
+    Based on <https://web-in-security.blogspot.com/2016/03/xxe-cheat-sheet.html>, references can
+    be found there.
+
+tests:
+  XML-MOD-ALT-B-EGE-L:
+    name: External General Entity (local) (in .model file; alternative)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Functionality
+
+  XML-MOD-ALT-B-EGE-R:
+    name: External General Entity (remote) (in .model file; alternative)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Functionality
+
+  XML-MOD-ALT-B-EPE-L:
+    name: External Parameter Entity (local) (in .model file; alternative)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Functionality
+
+  XML-MOD-ALT-B-EPE-R:
+    name: External Parameter Entity (remote) (in .model file; alternative)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Functionality
+
+  XML-MOD-ALT-B-IGE:
+    name: Internal General Entity (in .model file; alternative)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Functionality
+
+  XML-MOD-ALT-B-IPE:
+    name: Internal Parameter Entity (in .model file; alternative)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Functionality
+
+  XML-MOD-ALT-DOS-BL:
+    name: Billion Laughs (in .model file; alternative)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Denial of Service
+
+  XML-MOD-ALT-DOS-BL-PE-R:
+    name: Billion Laughs Parameter Entity (remote) (in .model file; alternative)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Denial of Service
+
+  XML-MOD-ALT-DOS-C:
+    name: Circular Reference (in .model file; alternative)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Denial of Service
+
+  XML-MOD-ALT-FBC-BPR-A:
+    name: ByPass Restrictions Variant A (in .model file; alternative)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Data Exfiltration, In-Band
+
+  XML-MOD-ALT-FBC-BPR-B:
+    name: ByPass Restrictions Variant B (in .model file; alternative)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Data Exfiltration, In-Band
+
+  XML-MOD-ALT-OOB-R:
+    name: General (remote) (in .model file; alternative)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Data Exfiltration, Out-Of-Band
+
+  XML-MOD-B-EGE-L:
+    name: External General Entity (local) (in .model file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Functionality
+
+  XML-MOD-B-EGE-LX:
+    name: External General Entity (local, XML content) (in .model file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Functionality
+
+  XML-MOD-B-EGE-R:
+    name: External General Entity (remote) (in .model file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Functionality
+
+  XML-MOD-B-EGE-RX:
+    name: External General Entity (remote, XML content) (in .model file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Functionality
+
+  XML-MOD-B-EPE-L:
+    name: External Parameter Entity (local) (in .model file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Functionality
+
+  XML-MOD-B-EPE-R:
+    name: External Parameter Entity (remote) (in .model file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Functionality
+
+  XML-MOD-B-IGE:
+    name: Internal General Entity (in .model file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Functionality
+
+  XML-MOD-B-IPE:
+    name: Internal Parameter Entity (in .model file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Functionality
+
+  XML-MOD-DOS-BL:
+    name: Billion Laughs (in .model file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Denial of Service
+
+  XML-MOD-DOS-BL-PE-R:
+    name: Billion Laughs Parameter Entity (remote) (in .model file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Denial of Service
+
+  XML-MOD-DOS-C:
+    name: Circular Reference (in .model file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Denial of Service
+
+  XML-MOD-DOS-PL:
+    name: Parameter Laughs (in .model file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    further_infos: |-
+      variant of Billion Laughs Attack using delayed interpretation of
+      parameter entities Copyright (C) Sebastian Pipping <sebastian@pipping.org>
+    type: Denial of Service
+
+  XML-MOD-FBC-AV:
+    name: Attribute Values (in .model file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Data Exfiltration, In-Band
+
+  XML-MOD-FBC-BPR-A:
+    name: ByPass Restrictions Variant A (in .model file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Data Exfiltration, In-Band
+
+  XML-MOD-FBC-BPR-B:
+    name: ByPass Restrictions Variant B (in .model file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Data Exfiltration, In-Band
+
+  XML-MOD-FBC-E:
+    name: Error Based (in .model file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Data Exfiltration, In-Band
+
+  XML-MOD-FBC-E-L:
+    name: Error Based (local) (in .model file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Data Exfiltration, In-Band
+
+  XML-MOD-OOB-NNSL:
+    name: NoNamespaceSchemaLocation (remote) (in .model file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Data Exfiltration, Out-Of-Band
+
+  XML-MOD-OOB-PE-R:
+    name: Parameter Entity (remote) (in .model file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Data Exfiltration, Out-Of-Band
+
+  XML-MOD-OOB-R:
+    name: General (remote) (in .model file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Data Exfiltration, Out-Of-Band
+
+  XML-MOD-OOB-SL:
+    name: SchemaLocation (remote) (in .model file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Data Exfiltration, Out-Of-Band
+
+  XML-MOD-OOB-XI:
+    name: XInclude (remote) (in .model file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Data Exfiltration, Out-Of-Band
+
+  XML-MOD-SSRF-NNSL:
+    name: NoNamespaceSchemaLocation (remote) (in .model file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Functionality
+
+  XML-MOD-SSRF-SL:
+    name: SchemaLocation (remote) (in .model file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Functionality
+
+  XML-MOD-SSRF-XI:
+    name: XInclude (remote) (in .model file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Functionality
+
+  XML-REL-B-EGE-L:
+    name: External General Entity (local) (in .rels file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Functionality
+
+  XML-REL-B-EGE-R:
+    name: External General Entity (remote) (in .rels file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Functionality
+
+  XML-REL-B-EPE-L:
+    name: External Parameter Entity (local) (in .rels file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Functionality
+
+  XML-REL-B-EPE-R:
+    name: External Parameter Entity (remote) (in .rels file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Functionality
+
+  XML-REL-B-IGE:
+    name: Internal General Entity (in .rels file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Functionality
+
+  XML-REL-B-IPE:
+    name: Internal Parameter Entity (in .rels file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Functionality
+
+  XML-REL-DOS-BL:
+    name: Billion Laughs (in .rels file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Denial of Service
+
+  XML-REL-DOS-BL-PE-R:
+    name: Billion Laughs Parameter Entity (remote) (in .rels file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Denial of Service
+
+  XML-REL-DOS-C:
+    name: Circular Reference (in .rels file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Denial of Service
+
+  XML-REL-DOS-PL:
+    name: Parameter Laughs (in .rels file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    further_infos: |-
+      variant of Billion Laughs Attack using delayed interpretation of
+      parameter entities Copyright (C) Sebastian Pipping <sebastian@pipping.org>
+    type: Denial of Service
+
+  XML-REL-FBC-AV:
+    name: Attribute Values (in .rels file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Data Exfiltration, In-Band
+
+  XML-REL-FBC-BPR-A:
+    name: ByPass Restrictions Variant A (in .rels file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Data Exfiltration, In-Band
+
+  XML-REL-FBC-BPR-B:
+    name: ByPass Restrictions Variant B (in .rels file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Data Exfiltration, In-Band
+
+  XML-REL-FBC-E:
+    name: Error Based (in .rels file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Data Exfiltration, In-Band
+
+  XML-REL-FBC-E-L:
+    name: Error Based (local) (in .rels file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Data Exfiltration, In-Band
+
+  XML-REL-OOB-NNSL:
+    name: NoNamespaceSchemaLocation (remote) (in .rels file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Data Exfiltration, Out-Of-Band
+
+  XML-REL-OOB-PE-R:
+    name: Parameter Entity (remote) (in .rels file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Data Exfiltration, Out-Of-Band
+
+  XML-REL-OOB-R:
+    name: General (remote) (in .rels file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Data Exfiltration, Out-Of-Band
+
+  XML-REL-OOB-SL:
+    name: SchemaLocation (remote) (in .rels file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Data Exfiltration, Out-Of-Band
+
+  XML-REL-OOB-XI:
+    name: XInclude (remote) (in .rels file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Data Exfiltration, Out-Of-Band
+
+  XML-REL-SSRF-NNSL:
+    name: NoNamespaceSchemaLocation (remote) (in .rels file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Functionality
+
+  XML-REL-SSRF-SL:
+    name: SchemaLocation (remote) (in .rels file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Functionality
+
+  XML-REL-SSRF-XI:
+    name: XInclude (remote) (in .rels file)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: Functionality

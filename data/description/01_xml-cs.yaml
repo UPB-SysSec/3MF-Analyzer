@@ -1,0 +1,38 @@
+scope: XML
+
+tests:
+  XML-EGE-I-R:
+    name: External General Entity (local within ZIP, XML content) (in .model file)
+      (included object is referenced)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: UI Spoofing
+
+  XML-EGE-I-NR:
+    name: External General Entity (local within ZIP, XML content) (in .model file)
+      (included object is not referenced)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: UI Spoofing
+
+  XML-EGE-IL-R:
+    name: External General Entity (local within DTD, XML content) (in .model file)
+      (included object is referenced)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: UI Spoofing
+
+  XML-EGE-IL-NR:
+    name: External General Entity (local within DTD, XML content) (in .model file)
+      (included object is not referenced)
+    created: true
+    conforms_to_spec:
+      core: Invalid XML
+    expected_behavior: Ignore DTD or Fail
+    type: UI Spoofing
