@@ -1,9 +1,12 @@
 """Base classes for programs."""
 
+import atexit
 import json
 import logging
 import os
+import shutil
 import subprocess
+import tempfile
 from abc import ABC, ABCMeta, abstractmethod
 from copy import copy
 from enum import Enum
@@ -27,6 +30,7 @@ from selenium.webdriver.remote.webelement import WebElement
 
 # from threemf_analyzer import LOCAL_SERVER, SFTA_DIR
 from threemf_analyzer.dataclasses import DiskFile, File
+from threemf_analyzer.evaluate.screenshots import _compare_images, _convert_image_to_ndarray
 
 # from selenium.webdriver.common.action_chains import ActionChains
 # from selenium.webdriver.common.keys import Keys
@@ -478,6 +482,36 @@ class AutomatedProgram(ABCMeta):
                 ActionChains(self.driver).send_keys(Keys.ALT + "o" + Keys.ALT).perform()
 
             attributes["_load_model"] = _load_model
+
+        if Capabilities.DETECT_CHANGE_SCREENSHOT in capabilities:
+
+            attributes["tempdir"] = tempfile.mkdtemp()
+            logging.debug("Using temporary directory %s for screenshots", attributes["tempdir"])
+            atexit.register(lambda: shutil.rmtree(attributes["tempdir"], ignore_errors=True))
+            attributes["last_screenshot_path"] = str(
+                Path(attributes["tempdir"], "last.png").resolve()
+            )
+            attributes["current_screenshot_path"] = str(
+                Path(attributes["tempdir"], "current.png").resolve()
+            )
+
+            def _post_load_model(self):
+                self.driver.save_screenshot(self.last_screenshot_path)
+                sleep(2)
+
+            def _screen_changed(self):
+                """Checks if the screen updated."""
+                self.driver.save_screenshot(self.current_screenshot_path)
+                score = _compare_images(
+                    _convert_image_to_ndarray(self.last_screenshot_path),
+                    _convert_image_to_ndarray(self.current_screenshot_path),
+                )
+                shutil.copyfile(self.current_screenshot_path, self.last_screenshot_path)
+                logging.debug("Screenshots compared to: %s", score)
+                return score < 0.99999
+
+            attributes["_post_load_model"] = _post_load_model
+            attributes["_screen_changed"] = _screen_changed
 
         return super().__new__(cls, clsname, bases, attributes)
 

@@ -53,7 +53,7 @@ class Tdbuilder(
 class Tdviewer(
     WinAppDriverProgram,
     metaclass=AutomatedProgram,
-    capabilities=[Capabilities.OPEN_MODEL_VIA_FILE_DIALOGUE],
+    capabilities=[Capabilities.OPEN_MODEL_VIA_FILE_DIALOGUE, Capabilities.DETECT_CHANGE_SCREENSHOT],
     additional_attributes={"open_file_dialogue_keys": Keys.CONTROL + "o" + Keys.CONTROL},
 ):
     def __init__(self) -> None:
@@ -74,22 +74,6 @@ class Tdviewer(
 
     def _wait_model_load(self, model: File, file_load_timeout: int):
         # wait until nothing changes any more (loaded model or hang) or error detected
-        last_screenshot_path = str(Path(self.tempdir, "last.png").resolve())
-        current_screenshot_path = str(Path(self.tempdir, "current.png"))
-        self.driver.save_screenshot(last_screenshot_path)
-
-        sleep(2)
-
-        def __screen_changed():
-            """Checks if the screen updated."""
-            self.driver.save_screenshot(current_screenshot_path)
-            score = _compare_images(
-                _convert_image_to_ndarray(last_screenshot_path),
-                _convert_image_to_ndarray(current_screenshot_path),
-            )
-            shutil.copyfile(current_screenshot_path, last_screenshot_path)
-            logging.debug("Screenshots compared to: %s", score)
-            return score < 0.99999
 
         def __callback():
             try:
@@ -104,7 +88,7 @@ class Tdviewer(
                     )
                 )
             except WebDriverException:
-                if not __screen_changed() and not __screen_changed():
+                if not self._screen_changed() and not self._screen_changed():
                     return "screen not changed"
             raise ActionUnsuccessful("screen still changes and no error detected")
 
@@ -122,7 +106,7 @@ class Tdviewer(
         self.driver.find_element(By.NAME, "Jump & Turn").click()
 
         def __callback():
-            if __screen_changed():
+            if self._screen_changed():
                 return
             try:
                 self._find_elements(
