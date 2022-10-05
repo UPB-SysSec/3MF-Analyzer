@@ -4,7 +4,7 @@ import json
 import logging
 import os
 import subprocess
-from abc import ABC, abstractmethod
+from abc import ABC, ABCMeta, abstractmethod
 from copy import copy
 from enum import Enum
 from os.path import join
@@ -121,7 +121,7 @@ def _try_action_until_timeout(
 
     if timed_out and timeout > 0:
         raise ActionUnsuccessful(
-            f"Could not finish action: '{action_name}' bacuase it timed out"
+            f"Could not finish action: '{action_name}' because it timed out"
         ) from TimeoutExpired(f"Screenshot for {action_name} timed out", timeout=timeout)
 
     if not successful:
@@ -251,7 +251,7 @@ class WinAppDriverProgram(Program):
         self.status_change_names = status_change_names
         self.driver: RemoteDriver = None
 
-    def __find_elements(self, names: dict[str, list[tuple[By, str, Be]]]):
+    def _find_elements(self, names: dict[str, list[tuple[By, str, Be]]]):
         """Finds an element in any window associated with the process.
         The driver focuses the window where the element was first found after this."""
         for handle in self.driver.window_handles:
@@ -290,7 +290,7 @@ class WinAppDriverProgram(Program):
 
         return _try_action_until_timeout(
             "detect change",
-            lambda: self.__find_elements(names),
+            lambda: self._find_elements(names),
             timeout,
             catch=(WebDriverException,),
             rate=1,
@@ -311,12 +311,18 @@ class WinAppDriverProgram(Program):
                     result[k].append((identifier, value.format(**format_values), expect))
         return result
 
+    def _pre_start_program(self):
+        """Function that is called before _start_program"""
+
     def _start_program(self):
         """Starts the program without CLI arguments."""
         self.driver = RemoteDriver(
             command_executor="http://127.0.0.1:4723",
             desired_capabilities={"app": self.executable_path},
         )
+
+    def _post_start_program(self):
+        """Function that is called after _start_program"""
 
     def _wait_program_load(self, model: File, program_start_timeout: int):
         """Busy-wait for the program to load."""
@@ -332,9 +338,15 @@ class WinAppDriverProgram(Program):
             timeout=program_start_timeout,
         )
 
+    def _pre_load_model(self):
+        """Function that is called before _load_model"""
+
     @abstractmethod
     def _load_model(self, model: File):
         """Loads the model file in the program."""
+
+    def _post_load_model(self):
+        """Function that is called after _load_model"""
 
     def _wait_model_load(self, model: File, file_load_timeout: int):
         """Busy-wait for the model to load.
@@ -386,7 +398,9 @@ class WinAppDriverProgram(Program):
 
         yield __create_timestamp("01 start-program", take_screenshot=False)
 
+        self._pre_start_program()
         self._start_program()
+        self._post_start_program()
 
         try:
             self._wait_program_load(file, program_start_timeout)
@@ -401,7 +415,9 @@ class WinAppDriverProgram(Program):
 
         yield __create_timestamp("03 start-file-loading", take_screenshot=False)
 
+        self._pre_load_model()
         self._load_model(model=file)
+        self._post_load_model()
 
         try:
             self._wait_model_load(file, file_load_timeout)
@@ -431,43 +447,13 @@ class WinAppDriverProgram(Program):
         return finished_proc.stdout
 
 
-class DefaultWinAppDriverProgram(WinAppDriverProgram):
-    """WinAppDriverProgram with a default load_model function and
-    an additional init parameter."""
-
-    def __init__(
-        self,
-        name: str,
-        executable_path: str,
-        process_name: str,
-        status_change_names: dict[str, list[str]],
-        open_file_dialogue_keys: str,
-        screenshot_timeout: int = 10,
-        snapshot_timeout: int = 10,
-    ) -> None:
-        super().__init__(
-            name,
-            executable_path,
-            process_name,
-            status_change_names,
-            screenshot_timeout,
-            snapshot_timeout,
-        )
-        self.open_file_dialogue_keys = open_file_dialogue_keys
-
-    def _load_model(self, model: File):
-        ActionChains(self.driver).send_keys(self.open_file_dialogue_keys).perform()
-        sleep(2)
-        self.driver.find_element_by_name("File name:").click()
-        ActionChains(self.driver).send_keys(model.abspath).perform()
-        ActionChains(self.driver).send_keys(Keys.ALT + "o" + Keys.ALT).perform()
-
-
 class Capabilities(Enum):
-    OPEN_VIA_FILE_DIALOGUE = "OPEN_VIA_FILE_DIALOGUE"
+    OPEN_MODEL_VIA_FILE_DIALOGUE = "OPEN_MODEL_VIA_FILE_DIALOGUE"
+    DETECT_CHANGE_SCREENSHOT = "DETECT_CHANGE_SCREENSHOT"
+    DETECT_CHANGE_OCR = "DETECT_CHANGE_OCR"
 
 
-class AutomatedProgram(type):
+class AutomatedProgram(ABCMeta):
     """Metaclass (i.e. 'class factory') that creates an automated program class
     with the specified capabilities."""
 
@@ -482,7 +468,7 @@ class AutomatedProgram(type):
         if additional_attributes:
             attributes.update(additional_attributes)
 
-        if Capabilities.OPEN_VIA_FILE_DIALOGUE in capabilities:
+        if Capabilities.OPEN_MODEL_VIA_FILE_DIALOGUE in capabilities:
 
             def _load_model(self, model: File):
                 ActionChains(self.driver).send_keys(self.open_file_dialogue_keys).perform()
