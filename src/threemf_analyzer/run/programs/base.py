@@ -463,6 +463,39 @@ class DefaultWinAppDriverProgram(WinAppDriverProgram):
         ActionChains(self.driver).send_keys(Keys.ALT + "o" + Keys.ALT).perform()
 
 
+class Capabilities(Enum):
+    OPEN_VIA_FILE_DIALOGUE = "OPEN_VIA_FILE_DIALOGUE"
+
+
+class AutomatedProgram(type):
+    """Metaclass (i.e. 'class factory') that creates an automated program class
+    with the specified capabilities."""
+
+    def __new__(
+        cls,
+        clsname,
+        bases,
+        attributes: dict[str, Any],
+        capabilities: list[str] = None,
+        additional_attributes: dict[str, Any] = None,
+    ):
+        if additional_attributes:
+            attributes.update(additional_attributes)
+
+        if Capabilities.OPEN_VIA_FILE_DIALOGUE in capabilities:
+
+            def _load_model(self, model: File):
+                ActionChains(self.driver).send_keys(self.open_file_dialogue_keys).perform()
+                sleep(2)
+                self.driver.find_element_by_name("File name:").click()
+                ActionChains(self.driver).send_keys(model.abspath).perform()
+                ActionChains(self.driver).send_keys(Keys.ALT + "o" + Keys.ALT).perform()
+
+            attributes["_load_model"] = _load_model
+
+        return super().__new__(cls, clsname, bases, attributes)
+
+
 # class PowerShellProgram(Program):
 #     """Program that is controlled via PowerShell/CLI commands.
 #     This class offers general functions for this control method.

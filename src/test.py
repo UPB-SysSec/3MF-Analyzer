@@ -9,7 +9,9 @@ from selenium.webdriver.common.keys import Keys
 from threemf_analyzer.dataclasses import DiskFile, File
 from threemf_analyzer.run.programs.base import (
     ActionUnsuccessful,
+    AutomatedProgram,
     Be,
+    Capabilities,
     DefaultWinAppDriverProgram,
     WinAppDriverProgram,
 )
@@ -18,7 +20,12 @@ from threemf_analyzer.utils import parse_tests
 logging.getLogger().setLevel("DEBUG")
 
 
-class Tdbuilder(WinAppDriverProgram):
+class Tdbuilder(
+    WinAppDriverProgram,
+    metaclass=AutomatedProgram,
+    capabilities=[Capabilities.OPEN_VIA_FILE_DIALOGUE],
+    additional_attributes={"open_file_dialogue_keys": Keys.CONTROL + "l" + Keys.CONTROL},
+):
     def __init__(self) -> None:
         super().__init__(
             "3dbuilder",
@@ -36,14 +43,15 @@ class Tdbuilder(WinAppDriverProgram):
             Keys.ESCAPE + Keys.ESCAPE + Keys.ESCAPE + Keys.ESCAPE
         ).perform()
         sleep(2)
-        ActionChains(self.driver).send_keys(Keys.CONTROL + "l" + Keys.CONTROL).perform()
-        sleep(2)
-        self.driver.find_element_by_name("File name:").click()
-        ActionChains(self.driver).send_keys(model.abspath).perform()
-        ActionChains(self.driver).send_keys(Keys.ALT + "o" + Keys.ALT).perform()
+        super()._load_model(model)
 
 
-class Tdviewer(WinAppDriverProgram):
+class Tdviewer(
+    WinAppDriverProgram,
+    metaclass=AutomatedProgram,
+    capabilities=[Capabilities.OPEN_VIA_FILE_DIALOGUE],
+    additional_attributes={"open_file_dialogue_keys": Keys.CONTROL + "o" + Keys.CONTROL},
+):
     def __init__(self) -> None:
         super().__init__(
             "3dviewer",
@@ -61,11 +69,7 @@ class Tdviewer(WinAppDriverProgram):
     def _load_model(self, model: File):
         self.driver.find_element_by_name("Close").click()
         sleep(2)
-        ActionChains(self.driver).send_keys(Keys.CONTROL + "o" + Keys.CONTROL).perform()
-        sleep(2)
-        self.driver.find_element_by_name("File name:").click()
-        ActionChains(self.driver).send_keys(model.abspath).perform()
-        ActionChains(self.driver).send_keys(Keys.ALT + "o" + Keys.ALT).perform()
+        super()._load_model(model)
 
 
 #########
@@ -96,7 +100,12 @@ class Tdviewer(WinAppDriverProgram):
 #         ActionChains(self.driver).send_keys(Keys.ALT + "o" + Keys.ALT).perform()
 
 
-class Cura(DefaultWinAppDriverProgram):
+class Cura(
+    WinAppDriverProgram,
+    metaclass=AutomatedProgram,
+    capabilities=[Capabilities.OPEN_VIA_FILE_DIALOGUE],
+    additional_attributes={"open_file_dialogue_keys": Keys.CONTROL + "o" + Keys.CONTROL},
+):
     def __init__(self) -> None:
         super().__init__(
             "cura",
@@ -111,12 +120,16 @@ class Cura(DefaultWinAppDriverProgram):
                     (By.NAME, "No Models in File", Be.AVAILABLE),
                 ],
             },
-            Keys.CONTROL + "o" + Keys.CONTROL,
         )
 
 
 # test if object loaded via undo button
-class FlashPrint(DefaultWinAppDriverProgram):
+class FlashPrint(
+    WinAppDriverProgram,
+    metaclass=AutomatedProgram,
+    capabilities=[Capabilities.OPEN_VIA_FILE_DIALOGUE],
+    additional_attributes={"open_file_dialogue_keys": Keys.CONTROL + "i" + Keys.CONTROL},
+):
     def __init__(self) -> None:
         super().__init__(
             "flashprint",
@@ -132,7 +145,12 @@ class FlashPrint(DefaultWinAppDriverProgram):
 
 
 # use save state for detection
-class Fusion(DefaultWinAppDriverProgram):
+class Fusion(
+    WinAppDriverProgram,
+    metaclass=AutomatedProgram,
+    capabilities=[Capabilities.OPEN_VIA_FILE_DIALOGUE],
+    additional_attributes={"open_file_dialogue_keys": Keys.CONTROL + "i" + Keys.CONTROL},
+):
     """
     Problems: file loaded sometimes pops up before the model is loaded.
     Program Changes: Set the keyboard shortcut CTRL+i to "Insert Mesh".
@@ -150,7 +168,6 @@ class Fusion(DefaultWinAppDriverProgram):
                 #     (By.NAME, "Load file failed {abspath}", Be.AVAILABLE),
                 # ], TODO element to focusable (idea OCR?)
             },
-            Keys.CONTROL + "i" + Keys.CONTROL,
         )
 
     def _wait_model_load(self, model: File, file_load_timeout: int):
@@ -167,7 +184,12 @@ class Fusion(DefaultWinAppDriverProgram):
         self.status_change_names["file loaded"] = [(By.NAME, "INSERT MESH", Be.AVAILABLE)]
 
 
-class IdeaMaker(WinAppDriverProgram):
+class IdeaMaker(
+    WinAppDriverProgram,
+    metaclass=AutomatedProgram,
+    capabilities=[Capabilities.OPEN_VIA_FILE_DIALOGUE],
+    additional_attributes={"open_file_dialogue_keys": Keys.CONTROL + "o" + Keys.CONTROL},
+):
     def __init__(self) -> None:
         super().__init__(
             "ideamaker",
@@ -180,7 +202,6 @@ class IdeaMaker(WinAppDriverProgram):
                 #     (By.NAME, "Load file failed {abspath}", Be.AVAILABLE),
                 # ], TODO element to focusable (idea OCR?)
             },
-            Keys.CONTROL + "o" + Keys.CONTROL,
         )
 
 
