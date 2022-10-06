@@ -17,6 +17,8 @@ from threemf_analyzer.run.programs.base import (
     AutomatedProgram,
     Be,
     Capabilities,
+    Context,
+    ExpectElement,
     WinAppDriverProgram,
     _try_action_until_timeout,
 )
@@ -180,12 +182,11 @@ class Cura(
         )
 
 
-# test if object loaded via undo button
 class FlashPrint(
     WinAppDriverProgram,
     metaclass=AutomatedProgram,
     capabilities=[Capabilities.OPEN_MODEL_VIA_FILE_DIALOGUE],
-    additional_attributes={"open_file_dialogue_keys": Keys.CONTROL + "i" + Keys.CONTROL},
+    additional_attributes={"open_file_dialogue_keys": Keys.CONTROL + "o" + Keys.CONTROL},
 ):
     def __init__(self) -> None:
         super().__init__(
@@ -193,12 +194,35 @@ class FlashPrint(
             r"C:\Users\jrossel\Desktop\programs\flashprint.lnk",
             "FlashPrint",
             {
-                "program loaded": [("accessibility id", "TitleBar", Be.AVAILABLE)],
-                # "file loaded": [(By.NAME, "Slice", Be.AVAILABLE)], TODO
-                "error": [(By.NAME, "Load file failed {abspath}", Be.AVAILABLE)],
+                "program loaded": [ExpectElement("accessibility id", "TitleBar")],
+                "file loaded": [
+                    ExpectElement(
+                        By.NAME,
+                        "Undo Ctrl+Z",
+                        Be.AVAILABLE_ENABLED,
+                        parents=[
+                            ExpectElement(By.NAME, "Desktop 1", context=Context.ROOT),
+                            ExpectElement(By.CLASS_NAME, "Qt5QWindowPopupDropShadowSaveBits"),
+                        ],
+                    )
+                ],
+                "error": [ExpectElement(By.NAME, "OK Enter")],
             },
-            Keys.CONTROL + "i" + Keys.CONTROL,
         )
+
+    def _pre_wait_model_load(self):
+        self.driver.find_element(By.NAME, "Edit Alt+E").click()
+        sleep(2)
+
+    def _post_wait_model_load(self):
+        ActionChains(self.driver).send_keys(
+            Keys.ESCAPE + Keys.ESCAPE + Keys.ESCAPE + Keys.ESCAPE
+        ).perform()
+        sleep(1)
+
+    def _post_stop(self):
+        # stop closes the winappdriver connection, but there is still a "save changes" dialogue
+        self.force_stop_all()
 
 
 # use save state for detection
@@ -282,7 +306,7 @@ class IdeaMaker(
 #         )
 
 
-for program_cls in [Tdviewer]:
+for program_cls in [FlashPrint]:
     program = program_cls()
     for test in parse_tests("R-HOU,R-ERR"):
         print(f"============== Test {test} ==============")

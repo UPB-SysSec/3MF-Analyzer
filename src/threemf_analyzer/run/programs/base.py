@@ -9,6 +9,7 @@ import subprocess
 import tempfile
 from abc import ABC, ABCMeta, abstractmethod
 from copy import copy
+from dataclasses import dataclass, field
 from enum import Enum
 from os.path import join
 from pathlib import Path
@@ -55,6 +56,37 @@ class Be(Enum):
     AVAILABLE = "available"
     AVAILABLE_NOTENABLED = "available and not enabled"
     AVAILABLE_ENABLED = "available and enabled"
+
+
+class Context(Enum):
+    """WinAppDriver session to use, where
+    ROOT is the global session and
+    SELF is the specific session for this program."""
+
+    ROOT = "ROOT"
+    SELF = "SELF"
+
+
+@dataclass
+class ExpectElement:
+    """
+    Holds the values with which we can check whether the element is there or not.
+
+    by: the type of property we check by
+    value: the string value we check the property against to identify the element
+    expect: the state we expect the element to be in
+    parents: a list of elements that are parent to this element
+        (might be needed to find the element)
+        Parents overwrite the context (i.e. the context of the first parent is the
+        only one used.)
+    context: WinAppDriver session that is used to find the element
+    """
+
+    by: By
+    value: str
+    expect: Be = Be.AVAILABLE
+    parents: list["ExpectElement"] = field(default_factory=lambda: [])
+    context: Context = Context.SELF
 
 
 # def _switch_server_logfile(program: "Program", file: File, output_dir: str) -> None:
@@ -254,32 +286,50 @@ class WinAppDriverProgram(Program):
         self.process_name = process_name
         self.status_change_names = status_change_names
         self.driver: RemoteDriver = None
+        self.root: RemoteDriver = None
 
-    def _find_elements(self, names: dict[str, list[tuple[By, str, Be]]]):
+    def _get_context(self, context: Context) -> RemoteDriver:
+        """Returns the matching session for the required context."""
+        if context == Context.ROOT:
+            return self.root
+        if context == Context.SELF:
+            return self.driver
+
+    def _find_elements(self, names: dict[str, list[ExpectElement]]):
         """Finds an element in any window associated with the process.
         The driver focuses the window where the element was first found after this."""
         for handle in self.driver.window_handles:
             self.driver.switch_to.window(handle)
-            for change_type, values in names.items():
-                for by, name, expect in values:
+            for change_type, elements in names.items():
+                for element in elements:
                     try:
-                        element = self.driver.find_element(by, name)
+                        current_parent = self._get_context(element.context)
+                        if element.parents:
+                            current_parent = self._get_context(element.parents[0].context)
+                        for parent_element in element.parents:
+                            current_parent = current_parent.find_element(
+                                parent_element.by, parent_element.value
+                            )
+                        target = current_parent.find_element(element.by, element.value)
                     except WebDriverException:
-                        element = None
-                    if element is None and expect == Be.NOTAVAILABLE:
+                        target = None
+                    if target is None and element.expect == Be.NOTAVAILABLE:
                         return change_type
-                    if element is not None:
-                        element: WebElement
+                    if target is not None:
+                        target: WebElement
                         if (
-                            (expect == Be.AVAILABLE)
-                            or (expect == Be.AVAILABLE_ENABLED and element.is_enabled())
-                            or (expect == Be.AVAILABLE_NOTENABLED and not element.is_enabled())
+                            (element.expect == Be.AVAILABLE)
+                            or (element.expect == Be.AVAILABLE_ENABLED and target.is_enabled())
+                            or (
+                                element.expect == Be.AVAILABLE_NOTENABLED
+                                and not target.is_enabled()
+                            )
                         ):
                             return change_type
 
         raise WebDriverException("Cannot find any of the elements in any window")
 
-    def _wait_for_change(self, names: dict[str, list[tuple[By, str]]], timeout: int = 30) -> str:
+    def _wait_for_change(self, names: dict[str, list[ExpectElement]], timeout: int = 30) -> str:
         """Busy-waits while the program is loading something.
 
         Uses the strings in <names> to determine whether the program state changed accordingly.
@@ -302,8 +352,8 @@ class WinAppDriverProgram(Program):
 
     def _transform_status_names(self, keys: list[str], format_values: dict[str, str] = None):
         """Creates a new dict with only the given keys, if they are in the original.
-        Formats each value string of this the input dict with the values from the format_values dict,
-        if given."""
+        Formats each value string of this the input dict with the values from the
+        format_values dict, if given."""
         if format_values is None:
             return {k: self.status_change_names[k] for k in keys if k in self.status_change_names}
 
@@ -311,8 +361,16 @@ class WinAppDriverProgram(Program):
         for k in keys:
             if k in self.status_change_names:
                 result[k] = []
-                for (identifier, value, expect) in self.status_change_names[k]:
-                    result[k].append((identifier, value.format(**format_values), expect))
+                element: ExpectElement
+                for element in self.status_change_names[k]:
+                    result[k].append(
+                        ExpectElement(
+                            by=element.by,
+                            value=element.value.format(**format_values),
+                            expect=element.expect,
+                            parents=element.parents,
+                        )
+                    )
         return result
 
     def _pre_start_program(self):
@@ -323,6 +381,10 @@ class WinAppDriverProgram(Program):
         self.driver = RemoteDriver(
             command_executor="http://127.0.0.1:4723",
             desired_capabilities={"app": self.executable_path},
+        )
+        self.root = RemoteDriver(
+            command_executor="http://127.0.0.1:4723",
+            desired_capabilities={"app": "Root"},
         )
 
     def _post_start_program(self):
@@ -335,6 +397,7 @@ class WinAppDriverProgram(Program):
                 ["program loaded"],
                 {
                     "abspath": model.abspath,
+                    "abspath_unix": model.abspath.replace("\\", "/"),
                     "name": model.name,
                     "stem": model.stem,
                 },
@@ -352,6 +415,9 @@ class WinAppDriverProgram(Program):
     def _post_load_model(self):
         """Function that is called after _load_model"""
 
+    def _pre_wait_model_load(self):
+        """Function that is called before _wait_model_load"""
+
     def _wait_model_load(self, model: File, file_load_timeout: int):
         """Busy-wait for the model to load.
         ActionUnsuccessful is raised if the model cannot be loaded."""
@@ -360,6 +426,7 @@ class WinAppDriverProgram(Program):
                 ["file loaded", "error"],
                 {
                     "abspath": model.abspath,
+                    "abspath_unix": model.abspath.replace("\\", "/"),
                     "name": model.name,
                     "stem": model.stem,
                 },
@@ -368,6 +435,21 @@ class WinAppDriverProgram(Program):
         )
         if change_type == "error":
             raise ActionUnsuccessful("error msg detected in window")
+
+    def _post_wait_model_load(self):
+        """Function that is called after _wait_model_load"""
+
+    def _pre_stop(self):
+        """Function that is called before stop"""
+
+    def stop(self) -> None:
+        self.driver.quit()
+
+    def force_stop_all(self) -> None:
+        _stop_process(self.process_name)
+
+    def _post_stop(self):
+        """Function that is called after stop"""
 
     def test(
         self,
@@ -378,6 +460,9 @@ class WinAppDriverProgram(Program):
     ) -> Iterable[tuple[str, float, Iterable[DiskFile]]]:
 
         self.force_stop_all()
+        # sometimes stopping via PowerShell is too slow and
+        # we connected to the already running instance, that is then closed.
+        sleep(1)
 
         def __create_timestamp(name: str, take_screenshot: bool = True):
             current_time = time()
@@ -424,20 +509,18 @@ class WinAppDriverProgram(Program):
         self._post_load_model()
 
         try:
+            self._pre_wait_model_load()
             self._wait_model_load(file, file_load_timeout)
+            self._post_wait_model_load()
         except ActionUnsuccessful as err:
             logging.error("model not loaded, because: %s", err)
             yield __create_timestamp("04 model-not-loaded")
         else:
             yield __create_timestamp("04 model-loaded")
 
+        self._pre_stop()
         self.stop()
-
-    def stop(self) -> None:
-        self.driver.quit()
-
-    def force_stop_all(self) -> None:
-        _stop_process(self.process_name)
+        self._post_stop()
 
     def _take_screenshot(self) -> Union[bytes, Iterable[bytes]]:
         for handle in self.driver.window_handles:
