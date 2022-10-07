@@ -2,11 +2,11 @@ import logging
 import shutil
 import tempfile
 from pathlib import Path
-from time import sleep
+from time import sleep, time
 
+from appium.webdriver import Remote as RemoteDriver
 from selenium.common.exceptions import WebDriverException
 from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.remote.webelement import WebElement
 
@@ -16,10 +16,12 @@ from threemf_analyzer.run.programs.base import (
     ActionUnsuccessful,
     AutomatedProgram,
     Be,
+    By,
     Capabilities,
     Context,
     ExpectElement,
     WinAppDriverProgram,
+    _run_ps_command,
     _try_action_until_timeout,
 )
 from threemf_analyzer.utils import parse_tests
@@ -39,8 +41,8 @@ class Tdbuilder(
             r"Microsoft.3DBuilder_8wekyb3d8bbwe!App",
             "Builder3D",
             {
-                "program loaded": [("accessibility id", "StartUpControlView", Be.AVAILABLE)],
-                "file loaded": [("accessibility id", "Root3D", Be.AVAILABLE)],
+                "program loaded": [(By.AUTOMATION_ID, "StartUpControlView", Be.AVAILABLE)],
+                "file loaded": [(By.AUTOMATION_ID, "Root3D", Be.AVAILABLE)],
                 "error": [(By.NAME, "OK", Be.AVAILABLE)],
             },
         )
@@ -64,14 +66,14 @@ class Tdviewer(
             r"Microsoft.Microsoft3DViewer_8wekyb3d8bbwe!Microsoft.Microsoft3DViewer",
             "3DViewer",
             {
-                "program loaded": [("accessibility id", "WelcomeCloseButton", Be.AVAILABLE)],
+                "program loaded": [(By.AUTOMATION_ID, "WelcomeCloseButton", Be.AVAILABLE)],
                 "error": [(By.NAME, "Couldn't load 3D model", Be.AVAILABLE)],
             },
         )
         self.tempdir = tempfile.mkdtemp()
 
     def _pre_load_model(self):
-        self.driver.find_element("accessibility id", "WelcomeCloseButton").click()
+        self.driver.find_element(By.AUTOMATION_ID, "WelcomeCloseButton").click()
         sleep(2)
 
     def _wait_model_load(self, model: File, file_load_timeout: int):
@@ -104,7 +106,7 @@ class Tdviewer(
         if change_type == "error":
             raise ActionUnsuccessful("error msg detected in window")
 
-        self.driver.find_element("accessibility id", "SelectedAnimationText").click()
+        self.driver.find_element(By.AUTOMATION_ID, "SelectedAnimationText").click()
         self.driver.find_element(By.NAME, "Jump & Turn").click()
 
         def __callback():
@@ -194,7 +196,7 @@ class FlashPrint(
             r"C:\Users\jrossel\Desktop\programs\flashprint.lnk",
             "FlashPrint",
             {
-                "program loaded": [ExpectElement("accessibility id", "TitleBar")],
+                "program loaded": [ExpectElement(By.AUTOMATION_ID, "TitleBar")],
                 "file loaded": [
                     ExpectElement(
                         By.NAME,
@@ -225,44 +227,72 @@ class FlashPrint(
         self.force_stop_all()
 
 
-# use save state for detection
 class Fusion(
     WinAppDriverProgram,
     metaclass=AutomatedProgram,
-    capabilities=[Capabilities.OPEN_MODEL_VIA_FILE_DIALOGUE],
-    additional_attributes={"open_file_dialogue_keys": Keys.CONTROL + "i" + Keys.CONTROL},
+    capabilities=[
+        Capabilities.OPEN_MODEL_VIA_FILE_DIALOGUE,
+        Capabilities.START_PROGRAM_LEGACY,
+        Capabilities.DETECT_CHANGE_OCR,
+    ],
+    additional_attributes={
+        "open_file_dialogue_keys": Keys.CONTROL + "i" + Keys.CONTROL,
+        "window_title": "Autodesk Fusion 360",
+        "window_load_timeout": 20,
+        "ocr_bounding_box": lambda self, left, upper, right, lower: (
+            right // 2,
+            lower // 2,
+            right,
+            lower,
+        ),
+    },
 ):
     """
-    Problems: file loaded sometimes pops up before the model is loaded.
     Program Changes: Set the keyboard shortcut CTRL+i to "Insert Mesh".
     """
 
     def __init__(self) -> None:
         super().__init__(
             "fusion",
-            r"C:\Users\jrossel\Desktop\programs\fusion.lnk",
+            r"C:\Users\jrossel\AppData\Local\Autodesk\webdeploy"
+            r"\production\6a0c9611291d45bb9226980209917c3d\FusionLauncher.exe",
             "Fusion*",
             {
-                "program loaded": [(By.NAME, "BROWSER", Be.AVAILABLE)],
-                "file loaded": [(By.NAME, "INSERT MESH", Be.AVAILABLE)],
-                # "error": [
-                #     (By.NAME, "Load file failed {abspath}", Be.AVAILABLE),
-                # ], TODO element to focusable (idea OCR?)
+                "program starting": [
+                    ExpectElement(
+                        By.AUTOMATION_ID,
+                        "MW1",
+                        Be.AVAILABLE,
+                        parents=[
+                            ExpectElement(By.NAME, "Desktop 1", context=Context.ROOT),
+                        ],
+                    )
+                ],
+                "program loaded": [ExpectElement(By.NAME, "BROWSER", Be.AVAILABLE)],
+                "file loaded": [ExpectElement(By.NAME, "INSERT MESH", Be.AVAILABLE)],
+                "error": [ExpectElement(By.OCR, "error")],
             },
         )
 
     def _wait_model_load(self, model: File, file_load_timeout: int):
-        """Busy-wait for the model to load.
-        ActionUnsuccessful is raised if the model cannot be loaded."""
         start = time()
-        self.status_change_names["file loaded"] = [(By.NAME, "INSERT MESH", Be.AVAILABLE)]
+        self.status_change_names["file loaded"] = [
+            ExpectElement(By.NAME, "INSERT MESH", Be.AVAILABLE)
+        ]
         super()._wait_model_load(model, file_load_timeout)
         end = time()
-        self.status_change_names["file loaded"] = [(By.NAME, "Ok", Be.AVAILABLE_ENABLED)]
+        self.status_change_names["file loaded"] = [
+            ExpectElement(By.NAME, "OK", Be.AVAILABLE_ENABLED)
+        ]
         super()._wait_model_load(model, int(file_load_timeout - (end - start)))
 
         # reset
-        self.status_change_names["file loaded"] = [(By.NAME, "INSERT MESH", Be.AVAILABLE)]
+        self.status_change_names["file loaded"] = [
+            ExpectElement(By.NAME, "INSERT MESH", Be.AVAILABLE)
+        ]
+
+    def _post_stop(self):
+        self.force_stop_all()
 
 
 class IdeaMaker(
@@ -306,14 +336,14 @@ class IdeaMaker(
 #         )
 
 
-for program_cls in [FlashPrint]:
+for program_cls in [Fusion]:
     program = program_cls()
     for test in parse_tests("R-HOU,R-ERR"):
         print(f"============== Test {test} ==============")
         path = Path(r"C:\Users\jrossel\AppData\Local\Temp\3mftest", program.name, test.stem)
         path.mkdir(parents=True, exist_ok=True)
-        for state, time, screenshots in program.test(test, str(path.absolute())):
-            print("=======", state, time)
+        for state, _time, screenshots in program.test(test, str(path.absolute())):
+            print("=======", state, _time)
             screenshot: DiskFile
             for screenshot in screenshots:
                 screenshot.write()

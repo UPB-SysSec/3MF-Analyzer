@@ -11,21 +11,25 @@ from abc import ABC, ABCMeta, abstractmethod
 from copy import copy
 from dataclasses import dataclass, field
 from enum import Enum
+from io import BytesIO
 from os.path import join
 from pathlib import Path
 from subprocess import CompletedProcess, TimeoutExpired
 from time import sleep, time
 from typing import Any, Callable, Iterable, Union
 
+import easyocr
 import requests
+import win32gui
 from appium.webdriver import Remote as RemoteDriver
+from PIL import Image
 
 # https://github.com/ponty/pyscreenshot (past alternative) states that it
 # should work on (up-to-date) linux distros (Ubuntu currently: no, Arch currently: yes)
 # from PIL import ImageGrab
 from selenium.common.exceptions import WebDriverException
 from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.common.by import By
+from selenium.webdriver.common.by import By as _By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.remote.webelement import WebElement
 
@@ -37,12 +41,19 @@ from threemf_analyzer.evaluate.screenshots import _compare_images, _convert_imag
 # from selenium.webdriver.common.keys import Keys
 
 
-# if sys.platform == "win32":
-# import win32gui
-
-
 # set powershell as executable for shell calls
 os.environ["COMSPEC"] = "powershell"
+
+
+# load easyocr reader
+ocr_reader = easyocr.Reader(["en"])
+
+
+class By(_By):
+    """Extended version of the By class from selenium."""
+
+    AUTOMATION_ID = "accessibility id"
+    OCR = "ocr"
 
 
 class ActionUnsuccessful(Exception):
@@ -155,6 +166,9 @@ def _try_action_until_timeout(
         timed_out = time() - start_time > timeout
         sleep(rate)
 
+    if successful:
+        return result
+
     if timed_out and timeout > 0:
         raise ActionUnsuccessful(
             f"Could not finish action: '{action_name}' because it timed out"
@@ -225,7 +239,8 @@ class Program(ABC):
 
     def screenshot(self, write_to: DiskFile = None) -> Union[Iterable[DiskFile], Iterable[bytes]]:
         """Takes a screenshot of all open windows of the program and either writes it to the given
-        file, or (if not DiskFile was provided) returns the bytes of the screenshot that
+        file (you still need to call .write on the DiskFile),
+        or (if not DiskFile was provided) returns the bytes of the screenshot that
         would have been written to the file.
         If no screenshot can be taken, raise ActionUnsuccessful."""
 
@@ -240,7 +255,7 @@ class Program(ABC):
                 res.content = screenshot
                 yield res
         else:
-            yield from screenshot
+            yield from screenshots
 
     @abstractmethod
     def _take_snapshot(self) -> bytes:
@@ -286,7 +301,10 @@ class WinAppDriverProgram(Program):
         self.process_name = process_name
         self.status_change_names = status_change_names
         self.driver: RemoteDriver = None
-        self.root: RemoteDriver = None
+        self.root = RemoteDriver(
+            command_executor="http://127.0.0.1:4723",
+            desired_capabilities={"app": "Root"},
+        )
 
     def _get_context(self, context: Context) -> RemoteDriver:
         """Returns the matching session for the required context."""
@@ -295,41 +313,53 @@ class WinAppDriverProgram(Program):
         if context == Context.SELF:
             return self.driver
 
-    def _find_elements(self, names: dict[str, list[ExpectElement]]):
+    def _find_elements(
+        self,
+        names: dict[str, list[ExpectElement]],
+        return_change_type: bool = True,
+    ):
         """Finds an element in any window associated with the process.
-        The driver focuses the window where the element was first found after this."""
-        for handle in self.driver.window_handles:
-            self.driver.switch_to.window(handle)
-            for change_type, elements in names.items():
-                for element in elements:
-                    try:
-                        current_parent = self._get_context(element.context)
-                        if element.parents:
-                            current_parent = self._get_context(element.parents[0].context)
-                        for parent_element in element.parents:
-                            current_parent = current_parent.find_element(
-                                parent_element.by, parent_element.value
-                            )
-                        target = current_parent.find_element(element.by, element.value)
-                    except WebDriverException:
-                        target = None
-                    if target is None and element.expect == Be.NOTAVAILABLE:
-                        return change_type
-                    if target is not None:
-                        target: WebElement
-                        if (
-                            (element.expect == Be.AVAILABLE)
-                            or (element.expect == Be.AVAILABLE_ENABLED and target.is_enabled())
-                            or (
-                                element.expect == Be.AVAILABLE_NOTENABLED
-                                and not target.is_enabled()
-                            )
-                        ):
-                            return change_type
+        The driver focuses the window where the element was first found after this.
+        If return_change_type is False whatever type of element was found is returned."""
+        # for handle in self.driver.window_handles:
+        #     self.driver.switch_to.window(handle)
+        for change_type, elements in names.items():
+            for element in elements:
+                if element.by == By.OCR:
+                    if self._text_on_screen(element.value):
+                        return change_type if return_change_type else element.value
+                    else:
+                        continue
+                try:
+                    current_parent = self._get_context(element.context)
+                    if element.parents:
+                        current_parent = self._get_context(element.parents[0].context)
+                    for parent_element in element.parents:
+                        current_parent = current_parent.find_element(
+                            parent_element.by, parent_element.value
+                        )
+                    target = current_parent.find_element(element.by, element.value)
+                except WebDriverException:
+                    target = None
+                if target is None and element.expect == Be.NOTAVAILABLE:
+                    return change_type if return_change_type else target
+                if target is not None:
+                    target: WebElement
+                    if (
+                        (element.expect == Be.AVAILABLE)
+                        or (element.expect == Be.AVAILABLE_ENABLED and target.is_enabled())
+                        or (element.expect == Be.AVAILABLE_NOTENABLED and not target.is_enabled())
+                    ):
+                        return change_type if return_change_type else target
 
         raise WebDriverException("Cannot find any of the elements in any window")
 
-    def _wait_for_change(self, names: dict[str, list[ExpectElement]], timeout: int = 30) -> str:
+    def _wait_for_change(
+        self,
+        names: dict[str, list[ExpectElement]],
+        timeout: int = 30,
+        return_change_type: bool = True,
+    ) -> str:
         """Busy-waits while the program is loading something.
 
         Uses the strings in <names> to determine whether the program state changed accordingly.
@@ -344,7 +374,7 @@ class WinAppDriverProgram(Program):
 
         return _try_action_until_timeout(
             "detect change",
-            lambda: self._find_elements(names),
+            lambda: self._find_elements(names, return_change_type=return_change_type),
             timeout,
             catch=(WebDriverException,),
             rate=1,
@@ -381,10 +411,6 @@ class WinAppDriverProgram(Program):
         self.driver = RemoteDriver(
             command_executor="http://127.0.0.1:4723",
             desired_capabilities={"app": self.executable_path},
-        )
-        self.root = RemoteDriver(
-            command_executor="http://127.0.0.1:4723",
-            desired_capabilities={"app": "Root"},
         )
 
     def _post_start_program(self):
@@ -533,11 +559,15 @@ class WinAppDriverProgram(Program):
         )
         return finished_proc.stdout
 
+    def __del__(self):
+        self.root.close()
+
 
 class Capabilities(Enum):
     OPEN_MODEL_VIA_FILE_DIALOGUE = "OPEN_MODEL_VIA_FILE_DIALOGUE"
     DETECT_CHANGE_SCREENSHOT = "DETECT_CHANGE_SCREENSHOT"
     DETECT_CHANGE_OCR = "DETECT_CHANGE_OCR"
+    START_PROGRAM_LEGACY = "START_PROGRAM_LEGACY"
 
 
 class AutomatedProgram(ABCMeta):
@@ -552,6 +582,14 @@ class AutomatedProgram(ABCMeta):
         capabilities: list[str] = None,
         additional_attributes: dict[str, Any] = None,
     ):
+        def __require_attribute(capability: Capabilities, req_attributes: list[str]):
+            """Raises an error if the defined attributes are not present."""
+            for attribute in req_attributes:
+                if attribute not in attributes:
+                    raise ValueError(
+                        f"attribute '{attribute}' is required for capability {capability}"
+                    )
+
         if additional_attributes:
             attributes.update(additional_attributes)
 
@@ -566,7 +604,14 @@ class AutomatedProgram(ABCMeta):
 
             attributes["_load_model"] = _load_model
 
-        if Capabilities.DETECT_CHANGE_SCREENSHOT in capabilities:
+            __require_attribute(
+                Capabilities.OPEN_MODEL_VIA_FILE_DIALOGUE, ["open_file_dialogue_keys"]
+            )
+
+        if (
+            Capabilities.DETECT_CHANGE_SCREENSHOT in capabilities
+            or Capabilities.DETECT_CHANGE_OCR in capabilities
+        ):
 
             attributes["tempdir"] = tempfile.mkdtemp()
             logging.debug("Using temporary directory %s for screenshots", attributes["tempdir"])
@@ -577,6 +622,8 @@ class AutomatedProgram(ABCMeta):
             attributes["current_screenshot_path"] = str(
                 Path(attributes["tempdir"], "current.png").resolve()
             )
+
+        if Capabilities.DETECT_CHANGE_SCREENSHOT in capabilities:
 
             def _post_load_model(self):
                 self.driver.save_screenshot(self.last_screenshot_path)
@@ -595,6 +642,73 @@ class AutomatedProgram(ABCMeta):
 
             attributes["_post_load_model"] = _post_load_model
             attributes["_screen_changed"] = _screen_changed
+
+        if Capabilities.DETECT_CHANGE_OCR in capabilities:
+
+            def _text_on_screen(self, text: str):
+                """Checks if the specified text appears on the screenshot of the program."""
+                for screenshot in self.screenshot():
+                    with open(self.current_screenshot_path, "wb") as file:
+                        file.write(screenshot)
+                    img = Image.open(self.current_screenshot_path)
+                    img = img.crop(self.ocr_bounding_box(*img.getbbox()))
+                    img.save(self.current_screenshot_path)
+                    detected_text = " ".join(
+                        ocr_reader.readtext(self.current_screenshot_path, detail=0)
+                    )
+                    logging.debug("target text is: '%s'", text)
+                    logging.debug("detected text is: '%s'", detected_text)
+                    if text.lower() in detected_text.lower():
+                        return True
+
+            attributes["_text_on_screen"] = _text_on_screen
+
+            __require_attribute(Capabilities.OPEN_MODEL_VIA_FILE_DIALOGUE, ["ocr_bounding_box"])
+
+        if Capabilities.START_PROGRAM_LEGACY in capabilities:
+
+            def _get_windows_by_title(self):
+                """Based on: https://stackoverflow.com/a/3278356 (c) 2010 KobeJohn"""
+
+                def _window_callback(hwnd, all_windows):
+                    all_windows.append((hwnd, win32gui.GetWindowText(hwnd)))
+
+                windows = []
+                win32gui.EnumWindows(_window_callback, windows)
+                handles = [
+                    hwnd for hwnd, title in windows if self.window_title in title and hwnd != 0
+                ]
+                if handles:
+                    return handles[0]
+                raise ActionUnsuccessful(f"Could not find window with title {self.window_title}")
+
+            def _start_program(self):
+                _run_ps_command(["Start-Process", "-FilePath", self.executable_path])
+                window_handle = _try_action_until_timeout(
+                    "wait for window",
+                    self._get_windows_by_title,
+                    timeout=30,
+                    catch=(ActionUnsuccessful,),
+                    rate=1,
+                )
+                if hasattr(self, "window_load_timeout"):
+                    sleep(self.window_load_timeout)
+                if "program starting" in self.status_change_names:
+                    window_element: WebElement = self._wait_for_change(
+                        names=self._transform_status_names(["program starting"]),
+                        timeout=30,
+                        return_change_type=False,
+                    )
+                    window_handle = window_element.get_attribute("NativeWindowHandle")
+                self.driver = RemoteDriver(
+                    command_executor="http://127.0.0.1:4723",
+                    desired_capabilities={"appTopLevelWindow": f"0x{int(window_handle):X}"},
+                )
+
+            attributes["_get_windows_by_title"] = _get_windows_by_title
+            attributes["_start_program"] = _start_program
+
+            __require_attribute(Capabilities.OPEN_MODEL_VIA_FILE_DIALOGUE, ["window_title"])
 
         return super().__new__(cls, clsname, bases, attributes)
 
