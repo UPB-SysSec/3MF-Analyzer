@@ -5,179 +5,31 @@ import json
 import logging
 import os
 import shutil
-import subprocess
 import tempfile
 from abc import ABC, ABCMeta, abstractmethod
 from copy import copy
-from dataclasses import dataclass, field
 from enum import Enum
-from io import BytesIO
-from os.path import join
 from pathlib import Path
-from subprocess import CompletedProcess, TimeoutExpired
 from time import sleep, time
-from typing import Any, Callable, Iterable, Union
+from typing import Any, Iterable, Union
 
 import easyocr
-import requests
 import win32gui
 from appium.webdriver import Remote as RemoteDriver
 from PIL import Image
-
-# https://github.com/ponty/pyscreenshot (past alternative) states that it
-# should work on (up-to-date) linux distros (Ubuntu currently: no, Arch currently: yes)
-# from PIL import ImageGrab
 from selenium.common.exceptions import WebDriverException
 from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.common.by import By as _By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.remote.webelement import WebElement
 
-# from threemf_analyzer import LOCAL_SERVER, SFTA_DIR
-from threemf_analyzer.dataclasses import DiskFile, File
-from threemf_analyzer.evaluate.screenshots import _compare_images, _convert_image_to_ndarray
+from ...dataclasses import DiskFile, File
+from ...evaluate.screenshots import _compare_images, _convert_image_to_ndarray
+from .utilclasses import ActionUnsuccessful, Be, By, Context, ExpectElement
+from .utils import _run_ps_command, _stop_process, _try_action_until_timeout
 
-# from selenium.webdriver.common.action_chains import ActionChains
-# from selenium.webdriver.common.keys import Keys
-
-
-# set powershell as executable for shell calls
-os.environ["COMSPEC"] = "powershell"
-
-
-# load easyocr reader
-ocr_reader = easyocr.Reader(["en"])
-
-
-class By(_By):
-    """Extended version of the By class from selenium."""
-
-    AUTOMATION_ID = "accessibility id"
-    OCR = "ocr"
-
-
-class ActionUnsuccessful(Exception):
-    """Raised if an action (on a program) was not successful"""
-
-
-class Be(Enum):
-    """State of an element to select."""
-
-    NOTAVAILABLE = "not available"
-    AVAILABLE = "available"
-    AVAILABLE_NOTENABLED = "available and not enabled"
-    AVAILABLE_ENABLED = "available and enabled"
-
-
-class Context(Enum):
-    """WinAppDriver session to use, where
-    ROOT is the global session and
-    SELF is the specific session for this program."""
-
-    ROOT = "ROOT"
-    SELF = "SELF"
-
-
-@dataclass
-class ExpectElement:
-    """
-    Holds the values with which we can check whether the element is there or not.
-
-    by: the type of property we check by
-    value: the string value we check the property against to identify the element
-    expect: the state we expect the element to be in
-    parents: a list of elements that are parent to this element
-        (might be needed to find the element)
-        Parents overwrite the context (i.e. the context of the first parent is the
-        only one used.)
-    context: WinAppDriver session that is used to find the element
-    """
-
-    by: By
-    value: str
-    expect: Be = Be.AVAILABLE
-    parents: list["ExpectElement"] = field(default_factory=lambda: [])
-    context: Context = Context.SELF
-
-
-# def _switch_server_logfile(program: "Program", file: File, output_dir: str) -> None:
-#     """Utility function that sends a POST request to the logging server
-#     to set the logfile location."""
-
-#     logfile_path = join(output_dir, "local-server.log")
-#     log_init_msg = f"Start server log for {program.name} running {file.test_id}"
-#     try:
-#         result = requests.post(LOCAL_SERVER, json={"logfile": logfile_path}, timeout=10)
-#         if result.status_code != 200:
-#             raise requests.ConnectionError()
-#         logging.debug("Send post to set logfile path to %s", logfile_path)
-#         requests.get(LOCAL_SERVER + "/" + log_init_msg, timeout=10)
-#     except requests.RequestException:
-#         logging.warning("Logging server seems unresponsive")
-
-
-def _run_ps_command(
-    command: list[str],
-    cwd: str = None,
-    check: bool = True,
-    timeout: float = None,
-) -> CompletedProcess:
-    """Runs a given command in powershell."""
-    logging.debug("Calling command: %s", command)
-
-    return subprocess.run(
-        command,
-        capture_output=True,
-        check=check,
-        cwd=cwd,
-        timeout=timeout,
-        shell=True,
-    )
-
-
-def _stop_process(process_name: str):
-    _run_ps_command(["Stop-Process", "-Name", process_name], check=False)
-
-
-def _try_action_until_timeout(
-    action_name: str,
-    action: Callable,
-    timeout: int,
-    catch: tuple[type[Exception]] = (Exception,),
-    rate: float = 0.1,
-) -> Any:
-    """Tries to do an action until it succeeds (i.e. does not raise an error)
-    or until the timeout runs out.
-    Returns whatever the action returns.
-    Rate is the time the process sleeps before trying to do the action again."""
-    successful = False
-    start_time = time()
-    timed_out = False
-    while not successful and not timed_out:
-        try:
-            result = action()
-            successful = True
-        except catch as err:  # pylint:disable = broad-except
-            logging.debug(
-                "Could not finish action: %s\n%s",
-                action_name,
-                err,
-            )
-        timed_out = time() - start_time > timeout
-        sleep(rate)
-
-    if successful:
-        return result
-
-    if timed_out and timeout > 0:
-        raise ActionUnsuccessful(
-            f"Could not finish action: '{action_name}' because it timed out"
-        ) from TimeoutExpired(f"Screenshot for {action_name} timed out", timeout=timeout)
-
-    if not successful:
-        raise ActionUnsuccessful("Could not finish action: %s")
-
-    return result
+# global inits
+os.environ["COMSPEC"] = "powershell"  # set powershell as executable for shell calls
+ocr_reader = easyocr.Reader(["en"])  # load easyocr reader
 
 
 class Program(ABC):
