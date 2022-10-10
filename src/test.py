@@ -494,7 +494,45 @@ class MeshMixer(
         self.force_stop_all()
 
 
-for program_cls in [MeshMixer]:
+class Paint3d(
+    WinAppDriverProgram,
+    metaclass=AutomatedProgram,
+):
+    def __init__(self) -> None:
+        super().__init__(
+            "paint3d",
+            r"Microsoft.MSPaint_8wekyb3d8bbwe!Microsoft.MSPaint",
+            "PaintStudio.View",
+            {
+                "program loaded": [ExpectElement(By.NAME, "Show welcome screen", Be.AVAILABLE)],
+                "file loaded": [ExpectElement(By.NAME, "Undo", Be.AVAILABLE_ENABLED)],
+                "error": [
+                    ExpectElement(By.NAME, "Couldn't import model", Be.AVAILABLE),
+                    ExpectElement(By.NAME, "Paint 3D needs to close", Be.AVAILABLE),
+                ],
+            },
+        )
+
+    def _pre_load_model(self):
+        ActionChains(self.driver).send_keys(
+            Keys.ESCAPE + Keys.ESCAPE + Keys.ESCAPE + Keys.ESCAPE
+        ).perform()
+        sleep(2)
+
+    def _load_model(self, model: File):
+        ActionChains(self.driver).send_keys(Keys.ALT + "f" + Keys.ALT).perform()
+        sleep(1)
+        ActionChains(self.driver).send_keys(Keys.ALT + "i" + Keys.ALT).perform()
+        sleep(2)
+        self.driver.find_element_by_name("File name:").click()
+        ActionChains(self.driver).send_keys(model.abspath).perform()
+        ActionChains(self.driver).send_keys(Keys.ALT + "o" + Keys.ALT).perform()
+
+    def _post_stop(self):
+        self.force_stop_all()
+
+
+for program_cls in [Paint3d]:
     program = program_cls()
     for test in parse_tests("R-HOU,R-ERR"):
         print(f"============== Test {test} ==============")

@@ -624,6 +624,9 @@ class AutomatedProgram(ABCMeta):
         if additional_attributes:
             attributes.update(additional_attributes)
 
+        if capabilities is None:
+            capabilities = []
+
         if Capabilities.OPEN_MODEL_VIA_FILE_DIALOGUE in capabilities:
 
             def _load_model(self, model: File):
