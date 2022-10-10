@@ -556,7 +556,28 @@ class Prusa(
             super()._wait_model_load(model, file_load_timeout)
 
 
-for program_cls in [Prusa]:
+class Simplify(
+    WinAppDriverProgram,
+    metaclass=AutomatedProgram,
+    capabilities=[Capabilities.OPEN_MODEL_VIA_FILE_DIALOGUE],
+    additional_attributes={"open_file_dialogue_keys": Keys.CONTROL + "i" + Keys.CONTROL},
+):
+    def __init__(self) -> None:
+        super().__init__(
+            "simplify",
+            r"C:\Users\jrossel\Desktop\programs\simplify.lnk",
+            "Simplify3D",
+            {
+                "program loaded": [ExpectElement(By.NAME, "Prepare to Print!")],
+                "file loaded": [ExpectElement(By.NAME, "{stem}")],
+                "error": [
+                    ExpectElement(By.XPATH, "//*[contains(@Name, 'Error parsing 3MF file')]")
+                ],
+            },
+        )
+
+
+for program_cls in [Simplify]:
     program = program_cls()
     for test in parse_tests("R-HOU,R-ERR"):
         print(f"============== Test {test} ==============")
