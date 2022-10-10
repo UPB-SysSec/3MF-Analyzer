@@ -54,6 +54,9 @@ class Tdbuilder(
         ).perform()
         sleep(2)
 
+    def _post_wait_program_load(self):
+        sleep(2)
+
 
 class Tdviewer(
     WinAppDriverProgram,
@@ -171,8 +174,8 @@ class Cura(
     def __init__(self) -> None:
         super().__init__(
             "cura",
-            # r"E:\Program Files\Ultimaker Cura 5.1.1\Ultimaker-Cura.exe",
-            r"C:\Users\jrossel\Desktop\programs\cura.lnk",
+            r"E:\Program Files\Ultimaker Cura 5.1.1\Ultimaker-Cura.exe",
+            # r"C:\Users\jrossel\Desktop\programs\cura.lnk",
             "Ultimaker-Cura",
             {
                 "program loaded": [ExpectElement(By.NAME, "Marketplace")],
@@ -183,6 +186,9 @@ class Cura(
                 ],
             },
         )
+
+    def _post_stop(self):
+        self.force_stop_all()
 
 
 class FlashPrint(
@@ -312,16 +318,18 @@ class IdeaMaker(
     def __init__(self) -> None:
         super().__init__(
             "ideamaker",
-            r"C:\Users\jrossel\Desktop\programs\ideamaker.lnk",
+            r"E:\Program Files\Raise3D\ideaMaker\ideaMaker.exe",
             "ideaMaker",
             {
                 "program loaded": [ExpectElement(By.NAME, "RaiseCloud")],
                 "file loaded": [ExpectElement(By.NAME, "Move", Be.AVAILABLE_ENABLED)],
-                "error": [
-                    ExpectElement(By.OCR, "invalid"),
-                ],
+                "error": [ExpectElement(By.OCR, "invalid")],
             },
         )
+
+    def _start_program(self):
+        sleep(3)
+        super()._start_program()
 
 
 #########
@@ -612,14 +620,32 @@ class SuperSlicer(Prusa):
         self.status_change_names["error"] = [ExpectElement(By.NAME, "SuperSlicer error")]
 
 
-for program_cls in [SuperSlicer]:
+for program_cls in [
+    # Tdbuilder,
+    # Tdviewer,
+    # Cura,
+    # FlashPrint,
+    # Fusion,
+    IdeaMaker,
+    MeshMagic,
+    MeshMixer,
+    Paint3d,
+    Prusa,
+    Simplify,
+    Slic3r,
+    SuperSlicer,
+]:
     program = program_cls()
-    for test in parse_tests("R-HOU,R-ERR"):
-        print(f"============== Test {test} ==============")
+    for test in parse_tests("R-HOU,R-ERR,CS-0110,XML-MOD-ALT-OOB-R"):
+        print()
+        print(f"=============================== Test {test} ===============================")
+        print()
         path = Path(r"C:\Users\jrossel\AppData\Local\Temp\3mftest", program.name, test.stem)
         path.mkdir(parents=True, exist_ok=True)
         for state, _time, screenshots in program.test(test, str(path.absolute())):
+            print()
             print("=======", state, _time)
+            print()
             screenshot: DiskFile
             for screenshot in screenshots:
                 screenshot.write()

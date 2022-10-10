@@ -512,7 +512,7 @@ class WinAppDriverProgram(Program):
         self.force_stop_all()
         # sometimes stopping via PowerShell is too slow and
         # we connected to the already running instance, that is then closed.
-        sleep(1)
+        sleep(2)
 
         def __create_timestamp(name: str, take_screenshot: bool = True):
             current_time = time()
@@ -537,34 +537,48 @@ class WinAppDriverProgram(Program):
 
         yield __create_timestamp("01 start-program", take_screenshot=False)
 
-        self._pre_start_program()
-        self._start_program()
-        self._post_start_program()
-
         try:
+            self._pre_start_program()
+            self._start_program()
+            self._post_start_program()
+
+            self._focus_window()
+
             self._pre_wait_program_load()
             self._wait_program_load(file, program_start_timeout)
             self._post_wait_program_load()
-        except ActionUnsuccessful as err:
+        except (ActionUnsuccessful, WebDriverException) as err:
             logging.error("program not loaded, because: %s", err)
+            if self.driver:
+                yield __create_timestamp("02 program-not-loaded")
+            else:
+                yield __create_timestamp("02 program-not-loaded", take_screenshot=False)
+            return
+        except Exception as err:  # pylint:disable=broad-except
+            logging.error("program not loaded, due to unexpected error")
+            logging.error(err)
             yield __create_timestamp("02 program-not-loaded")
             return
         else:
             yield __create_timestamp("02 program-loaded")
 
         self._focus_window()
+        self.driver.maximize_window()
+        sleep(5)  # sometimes maximizing freezes the window, this makes sure its no problem
 
         yield __create_timestamp("03 start-file-loading", take_screenshot=False)
 
-        self._pre_load_model()
-        self._load_model(model=file)
-        self._post_load_model()
-
         try:
+            self._pre_load_model()
+            self._load_model(model=file)
+            self._post_load_model()
+
+            self._focus_window()
+
             self._pre_wait_model_load()
             self._wait_model_load(file, file_load_timeout)
             self._post_wait_model_load()
-        except ActionUnsuccessful as err:
+        except (ActionUnsuccessful, WebDriverException) as err:
             logging.info("model not loaded, because: %s", err)
             yield __create_timestamp("04 model-not-loaded")
             self._post_model_load_failure()
@@ -575,9 +589,13 @@ class WinAppDriverProgram(Program):
             yield __create_timestamp("04 model-loaded")
             self._post_model_load_success()
 
-        self._pre_stop()
-        self.stop()
-        self._post_stop()
+        try:
+            self._pre_stop()
+            self.stop()
+            self._post_stop()
+        except (ActionUnsuccessful, WebDriverException) as err:
+            logging.error("program could not be stopped: %s", err)
+            self.force_stop_all()
 
     def _take_screenshot(self) -> Union[bytes, Iterable[bytes]]:
         for handle in self.driver.window_handles:
