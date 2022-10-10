@@ -41,9 +41,11 @@ class Tdbuilder(
             r"Microsoft.3DBuilder_8wekyb3d8bbwe!App",
             "Builder3D",
             {
-                "program loaded": [(By.AUTOMATION_ID, "StartUpControlView", Be.AVAILABLE)],
-                "file loaded": [(By.AUTOMATION_ID, "Root3D", Be.AVAILABLE)],
-                "error": [(By.NAME, "OK", Be.AVAILABLE)],
+                "program loaded": [
+                    ExpectElement(By.AUTOMATION_ID, "StartUpControlView", Be.AVAILABLE)
+                ],
+                "file loaded": [ExpectElement(By.AUTOMATION_ID, "Root3D", Be.AVAILABLE)],
+                "error": [ExpectElement(By.NAME, "OK", Be.AVAILABLE)],
             },
         )
 
@@ -66,8 +68,10 @@ class Tdviewer(
             r"Microsoft.Microsoft3DViewer_8wekyb3d8bbwe!Microsoft.Microsoft3DViewer",
             "3DViewer",
             {
-                "program loaded": [(By.AUTOMATION_ID, "WelcomeCloseButton", Be.AVAILABLE)],
-                "error": [(By.NAME, "Couldn't load 3D model", Be.AVAILABLE)],
+                "program loaded": [
+                    ExpectElement(By.AUTOMATION_ID, "WelcomeCloseButton", Be.AVAILABLE)
+                ],
+                "error": [ExpectElement(By.NAME, "Couldn't load 3D model", Be.AVAILABLE)],
             },
         )
         self.tempdir = tempfile.mkdtemp()
@@ -174,11 +178,11 @@ class Cura(
             r"C:\Users\jrossel\Desktop\programs\cura.lnk",
             "Ultimaker-Cura",
             {
-                "program loaded": [(By.NAME, "Marketplace", Be.AVAILABLE)],
-                "file loaded": [(By.NAME, "Slice", Be.AVAILABLE)],
+                "program loaded": [ExpectElement(By.NAME, "Marketplace", Be.AVAILABLE)],
+                "file loaded": [ExpectElement(By.NAME, "Slice", Be.AVAILABLE)],
                 "error": [
-                    (By.NAME, "Unable to Open File", Be.AVAILABLE),
-                    (By.NAME, "No Models in File", Be.AVAILABLE),
+                    ExpectElement(By.NAME, "Unable to Open File", Be.AVAILABLE),
+                    ExpectElement(By.NAME, "No Models in File", Be.AVAILABLE),
                 ],
             },
         )
@@ -298,8 +302,19 @@ class Fusion(
 class IdeaMaker(
     WinAppDriverProgram,
     metaclass=AutomatedProgram,
-    capabilities=[Capabilities.OPEN_MODEL_VIA_FILE_DIALOGUE],
-    additional_attributes={"open_file_dialogue_keys": Keys.CONTROL + "o" + Keys.CONTROL},
+    capabilities=[
+        Capabilities.OPEN_MODEL_VIA_FILE_DIALOGUE,
+        Capabilities.DETECT_CHANGE_OCR,
+    ],
+    additional_attributes={
+        "open_file_dialogue_keys": Keys.CONTROL + "i" + Keys.CONTROL,
+        "ocr_bounding_box": lambda self, left, upper, right, lower: (
+            right // 3,
+            lower // 3,
+            right,
+            lower,
+        ),
+    },
 ):
     def __init__(self) -> None:
         super().__init__(
@@ -307,11 +322,11 @@ class IdeaMaker(
             r"C:\Users\jrossel\Desktop\programs\ideamaker.lnk",
             "ideaMaker",
             {
-                "program loaded": [(By.NAME, "RaiseCloud", Be.AVAILABLE)],
-                "file loaded": [(By.NAME, "Move", Be.AVAILABLE_ENABLED)],
-                # "error": [
-                #     (By.NAME, "Load file failed {abspath}", Be.AVAILABLE),
-                # ], TODO element to focusable (idea OCR?)
+                "program loaded": [ExpectElement(By.NAME, "RaiseCloud", Be.AVAILABLE)],
+                "file loaded": [ExpectElement(By.NAME, "Move", Be.AVAILABLE_ENABLED)],
+                "error": [
+                    ExpectElement(By.OCR, "invalid"),
+                ],
             },
         )
 
@@ -336,7 +351,92 @@ class IdeaMaker(
 #         )
 
 
-for program_cls in [Fusion]:
+class MeshMagic(
+    WinAppDriverProgram,
+    metaclass=AutomatedProgram,
+    capabilities=[Capabilities.OPEN_MODEL_VIA_FILE_DIALOGUE],
+    additional_attributes={
+        "open_file_dialogue_keys": Keys.CONTROL + "o" + Keys.CONTROL,
+    },
+):
+    def __init__(self) -> None:
+        super().__init__(
+            "meshmagic",
+            r"C:\Users\jrossel\Desktop\programs\meshmagic.lnk",
+            "meshmagic",
+            {
+                "program loaded": [
+                    ExpectElement(By.NAME, "MeshMagic by NCH Software - Untitled.stl")
+                ],
+                "program loaded autosave": [ExpectElement(By.NAME, "Autosave")],
+                "file loaded": [ExpectElement(By.NAME, "MeshMagic by NCH Software - {name}")],
+                "error": [ExpectElement(By.NAME, "File Open Failed")],
+            },
+        )
+        self.last_load_successful = None
+
+    def _wait_program_load(self, model: File, program_start_timeout: int, retry=0):
+        try:
+            change_type = self._wait_for_change(
+                names=self._transform_status_names(
+                    ["program loaded", "program loaded autosave"],
+                    self._get_format_strings(model),
+                ),
+                timeout=10,
+            )
+            if change_type == "program loaded autosave":
+                self.driver.find_element(By.NAME, "OK").click()
+                ActionChains(self.driver).send_keys(Keys.CONTROL + "n" + Keys.CONTROL).perform()
+                ActionChains(self.driver).send_keys(Keys.CONTROL + "n" + Keys.CONTROL).perform()
+                super()._wait_program_load(model, program_start_timeout)
+        except ActionUnsuccessful as err:
+            if retry > 2:
+                raise err
+
+            self.stop()
+            self.force_stop_all()
+            self._start_program()
+            self._wait_program_load(model, program_start_timeout, retry=retry + 1)
+
+    def _post_wait_model_load(self):
+        # move the model so it is in view
+        # ActionChains(self.driver).send_keys(Keys.CONTROL + "a" + Keys.CONTROL).perform()
+        # ActionChains(self.driver).send_keys(Keys.CONTROL + "p" + Keys.CONTROL).perform()
+        # for pos_elem in ["109", "111", "113"]:
+        #     self.driver.find_element(By.NAME, pos_elem).click()
+        #     ActionChains(self.driver).send_keys("0" + Keys.ENTER + Keys.ENTER).perform()
+        # for scale_elem in ["127", "129", "131"]:
+        #     self.driver.find_element(By.NAME, scale_elem).click()
+        #     ActionChains(self.driver).send_keys("0.1" + Keys.ENTER + Keys.ENTER).perform()
+        # self.driver.find_element(By.NAME, "Accept").click()
+        self._focus_window()
+        ActionChains(self.driver).send_keys(*[Keys.END + Keys.END] * 10).perform()
+
+    def _post_model_load_success(self):
+        # discard the changes to the model
+        # otherwise it is loaded the next time meshmagic is started
+        # ActionChains(self.driver).send_keys(Keys.CONTROL + "zzz" + Keys.CONTROL).perform()
+        # ActionChains(self.driver).send_keys(Keys.CONTROL + "zzz" + Keys.CONTROL).perform()
+        self.last_load_successful = True
+
+    def _post_model_load_failure(self):
+        self.last_load_successful = False
+
+    # def _pre_stop(self):
+    #     ActionChains(self.driver).send_keys(Keys.ALT + Keys.F4 + Keys.ALT).perform()
+
+    def _post_stop(self):
+        if self.last_load_successful:
+            return
+
+        self.force_stop_all()
+        sleep(2)
+        _run_ps_command(["Start-Process", "-FilePath", self.executable_path])
+        sleep(10)
+        self.force_stop_all()
+
+
+for program_cls in [MeshMagic]:
     program = program_cls()
     for test in parse_tests("R-HOU,R-ERR"):
         print(f"============== Test {test} ==============")

@@ -326,7 +326,9 @@ class WinAppDriverProgram(Program):
         for change_type, elements in names.items():
             for element in elements:
                 if element.by == By.OCR:
+                    logging.info("Try to find '%s' using OCR", element.value)
                     if self._text_on_screen(element.value):
+                        logging.info("Found '%s' using OCR", element.value)
                         return change_type if return_change_type else element.value
                     else:
                         continue
@@ -334,10 +336,12 @@ class WinAppDriverProgram(Program):
                     current_parent = self._get_context(element.context)
                     if element.parents:
                         current_parent = self._get_context(element.parents[0].context)
+                    logging.debug("Using WinAppDriver: %s", current_parent)
                     for parent_element in element.parents:
                         current_parent = current_parent.find_element(
                             parent_element.by, parent_element.value
                         )
+                    logging.info("Try to find '%s' using '%s'", element, current_parent)
                     target = current_parent.find_element(element.by, element.value)
                 except WebDriverException:
                     target = None
@@ -353,6 +357,16 @@ class WinAppDriverProgram(Program):
                         return change_type if return_change_type else target
 
         raise WebDriverException("Cannot find any of the elements in any window")
+
+    def _get_format_strings(self, model: File):
+        """Returns a dict of format strings for the current model
+        to be used in the find_elements strings."""
+        return {
+            "abspath": model.abspath,
+            "abspath_unix": model.abspath.replace("\\", "/"),
+            "name": model.name,
+            "stem": model.stem,
+        }
 
     def _wait_for_change(
         self,
@@ -421,12 +435,7 @@ class WinAppDriverProgram(Program):
         self._wait_for_change(
             names=self._transform_status_names(
                 ["program loaded"],
-                {
-                    "abspath": model.abspath,
-                    "abspath_unix": model.abspath.replace("\\", "/"),
-                    "name": model.name,
-                    "stem": model.stem,
-                },
+                self._get_format_strings(model),
             ),
             timeout=program_start_timeout,
         )
@@ -449,13 +458,8 @@ class WinAppDriverProgram(Program):
         ActionUnsuccessful is raised if the model cannot be loaded."""
         change_type = self._wait_for_change(
             names=self._transform_status_names(
-                ["file loaded", "error"],
-                {
-                    "abspath": model.abspath,
-                    "abspath_unix": model.abspath.replace("\\", "/"),
-                    "name": model.name,
-                    "stem": model.stem,
-                },
+                ["error", "file loaded"],
+                self._get_format_strings(model),
             ),
             timeout=file_load_timeout,
         )
@@ -464,6 +468,12 @@ class WinAppDriverProgram(Program):
 
     def _post_wait_model_load(self):
         """Function that is called after _wait_model_load"""
+
+    def _post_model_load_failure(self):
+        """Function that is called after the model failed to load."""
+
+    def _post_model_load_success(self):
+        """Function that is called after the model is successfully loaded."""
 
     def _pre_stop(self):
         """Function that is called before stop"""
@@ -476,6 +486,10 @@ class WinAppDriverProgram(Program):
 
     def _post_stop(self):
         """Function that is called after stop"""
+
+    def _focus_window(self):
+        """Focuses the current window, in case focus was lost."""
+        self.driver.switch_to.window(self.driver.current_window_handle)
 
     def test(
         self,
@@ -526,7 +540,7 @@ class WinAppDriverProgram(Program):
         else:
             yield __create_timestamp("02 program-loaded")
 
-        self.driver.switch_to.window(self.driver.current_window_handle)  # focus window
+        self._focus_window()
 
         yield __create_timestamp("03 start-file-loading", take_screenshot=False)
 
@@ -539,10 +553,15 @@ class WinAppDriverProgram(Program):
             self._wait_model_load(file, file_load_timeout)
             self._post_wait_model_load()
         except ActionUnsuccessful as err:
-            logging.error("model not loaded, because: %s", err)
+            logging.info("model not loaded, because: %s", err)
             yield __create_timestamp("04 model-not-loaded")
+            self._post_model_load_failure()
+        except Exception as err:  # pylint:disable=broad-except
+            logging.error("model not loaded, due to unexpected error")
+            logging.error(err)
         else:
             yield __create_timestamp("04 model-loaded")
+            self._post_model_load_success()
 
         self._pre_stop()
         self.stop()
