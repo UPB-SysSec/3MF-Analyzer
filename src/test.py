@@ -577,7 +577,33 @@ class Simplify(
         )
 
 
-for program_cls in [Simplify]:
+class Slic3r(
+    WinAppDriverProgram,
+    metaclass=AutomatedProgram,
+    capabilities=[Capabilities.OPEN_MODEL_VIA_FILE_DIALOGUE],
+    additional_attributes={"open_file_dialogue_keys": Keys.CONTROL + "o" + Keys.CONTROL},
+):
+    def __init__(self) -> None:
+        super().__init__(
+            "slic3r",
+            r"C:\Users\jrossel\Desktop\programs\slic3r.lnk",
+            "Slic3r",
+            {
+                "program loaded": [ExpectElement(By.NAME, "Add…")],
+                "file loaded": [
+                    ExpectElement(By.NAME, "Loaded {name}"),
+                    ExpectElement(
+                        By.NAME,
+                        "Some of your object(s) appear to be outside the print bed. "
+                        "Use the arrange button to correct this.",
+                    ),
+                ],
+                "error": [ExpectElement(By.NAME, "Error")],
+            },
+        )
+
+
+for program_cls in [Slic3r]:
     program = program_cls()
     for test in parse_tests("R-HOU,R-ERR"):
         print(f"============== Test {test} ==============")
