@@ -327,8 +327,12 @@ class WinAppDriverProgram(Program):
             for element in elements:
                 if element.by == By.OCR:
                     logging.info("Try to find '%s' using OCR", element.value)
-                    if self._text_on_screen(element.value):
+                    target = self._text_on_screen(element.value)
+                    if target is True and element.expect == Be.AVAILABLE:
                         logging.info("Found '%s' using OCR", element.value)
+                        return change_type if return_change_type else element.value
+                    elif target is False and element.expect == Be.NOTAVAILABLE:
+                        logging.info("Did not find '%s' using OCR", element.value)
                         return change_type if return_change_type else element.value
                     else:
                         continue
@@ -430,6 +434,9 @@ class WinAppDriverProgram(Program):
     def _post_start_program(self):
         """Function that is called after _start_program"""
 
+    def _pre_wait_program_load(self):
+        """Function that is called before _wait_program_load"""
+
     def _wait_program_load(self, model: File, program_start_timeout: int):
         """Busy-wait for the program to load."""
         self._wait_for_change(
@@ -439,6 +446,9 @@ class WinAppDriverProgram(Program):
             ),
             timeout=program_start_timeout,
         )
+
+    def _post_wait_program_load(self):
+        """Function that is called after _waitprograml_load"""
 
     def _pre_load_model(self):
         """Function that is called before _load_model"""
@@ -532,7 +542,9 @@ class WinAppDriverProgram(Program):
         self._post_start_program()
 
         try:
+            self._pre_wait_program_load()
             self._wait_program_load(file, program_start_timeout)
+            self._post_wait_program_load()
         except ActionUnsuccessful as err:
             logging.error("program not loaded, because: %s", err)
             yield __create_timestamp("02 program-not-loaded")
@@ -679,6 +691,7 @@ class AutomatedProgram(ABCMeta):
                     logging.debug("detected text is: '%s'", detected_text)
                     if text.lower() in detected_text.lower():
                         return True
+                return False
 
             attributes["_text_on_screen"] = _text_on_screen
 

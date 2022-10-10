@@ -1,6 +1,7 @@
 import logging
 import shutil
 import tempfile
+from ast import expr_context
 from pathlib import Path
 from time import sleep, time
 
@@ -436,7 +437,64 @@ class MeshMagic(
         self.force_stop_all()
 
 
-for program_cls in [MeshMagic]:
+class MeshMixer(
+    WinAppDriverProgram,
+    metaclass=AutomatedProgram,
+    capabilities=[Capabilities.DETECT_CHANGE_OCR],
+    additional_attributes={
+        "ocr_bounding_box": lambda self, left, upper, right, lower: (
+            right // 4,
+            lower // 4,
+            (right // 4) * 3,
+            (lower // 4) * 3,
+        ),
+    },
+):
+    def __init__(self) -> None:
+        super().__init__(
+            "meshmixer",
+            r"C:\Users\jrossel\Desktop\programs\meshmixer.lnk",
+            "meshmixer",
+            {
+                "program loaded": [ExpectElement(By.NAME, "Autodesk Meshmixer")],
+                "file loading": [ExpectElement(By.OCR, "computing...", Be.NOTAVAILABLE)],
+                "file loaded": [ExpectElement(By.NAME, "Autodesk Meshmixer - {name}")],
+                "error": [ExpectElement(By.NAME, "Error opening file :")],
+            },
+        )
+
+    def _post_wait_program_load(self):
+        try:
+            self._wait_for_change(
+                names={"recovery": [ExpectElement(By.NAME, "Don't Restore")]},
+                timeout=5,
+            )
+            self.driver.find_element(By.NAME, "Don't Restore").click()
+        except (WebDriverException, ActionUnsuccessful):
+            pass
+
+    def _load_model(self, model: File):
+        self.driver.find_element(By.NAME, "Import").click()
+        sleep(2)
+        self.driver.find_element_by_name("File name:").click()
+        ActionChains(self.driver).send_keys(model.abspath).perform()
+        ActionChains(self.driver).send_keys(Keys.ALT + "o" + Keys.ALT).perform()
+
+    def _wait_model_load(self, model: File, file_load_timeout: int):
+        self._wait_for_change(
+            names=self._transform_status_names(
+                ["file loading"],
+                self._get_format_strings(model),
+            ),
+            timeout=file_load_timeout,
+        )
+        super()._wait_model_load(model, file_load_timeout)
+
+    def _post_stop(self):
+        self.force_stop_all()
+
+
+for program_cls in [MeshMixer]:
     program = program_cls()
     for test in parse_tests("R-HOU,R-ERR"):
         print(f"============== Test {test} ==============")
