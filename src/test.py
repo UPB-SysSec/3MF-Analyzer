@@ -42,9 +42,7 @@ class Tdbuilder(
             r"Microsoft.3DBuilder_8wekyb3d8bbwe!App",
             "Builder3D",
             {
-                "program loaded": [
-                    ExpectElement(By.AUTOMATION_ID, "StartUpControlView")
-                ],
+                "program loaded": [ExpectElement(By.AUTOMATION_ID, "StartUpControlView")],
                 "file loaded": [ExpectElement(By.AUTOMATION_ID, "Root3D")],
                 "error": [ExpectElement(By.NAME, "OK")],
             },
@@ -69,9 +67,7 @@ class Tdviewer(
             r"Microsoft.Microsoft3DViewer_8wekyb3d8bbwe!Microsoft.Microsoft3DViewer",
             "3DViewer",
             {
-                "program loaded": [
-                    ExpectElement(By.AUTOMATION_ID, "WelcomeCloseButton")
-                ],
+                "program loaded": [ExpectElement(By.AUTOMATION_ID, "WelcomeCloseButton")],
                 "error": [ExpectElement(By.NAME, "Couldn't load 3D model")],
             },
         )
@@ -281,9 +277,7 @@ class Fusion(
 
     def _wait_model_load(self, model: File, file_load_timeout: int):
         start = time()
-        self.status_change_names["file loaded"] = [
-            ExpectElement(By.NAME, "INSERT MESH")
-        ]
+        self.status_change_names["file loaded"] = [ExpectElement(By.NAME, "INSERT MESH")]
         super()._wait_model_load(model, file_load_timeout)
         end = time()
         self.status_change_names["file loaded"] = [
@@ -292,9 +286,7 @@ class Fusion(
         super()._wait_model_load(model, int(file_load_timeout - (end - start)))
 
         # reset
-        self.status_change_names["file loaded"] = [
-            ExpectElement(By.NAME, "INSERT MESH")
-        ]
+        self.status_change_names["file loaded"] = [ExpectElement(By.NAME, "INSERT MESH")]
 
     def _post_stop(self):
         self.force_stop_all()
@@ -532,7 +524,39 @@ class Paint3d(
         self.force_stop_all()
 
 
-for program_cls in [Paint3d]:
+class Prusa(
+    WinAppDriverProgram,
+    metaclass=AutomatedProgram,
+    capabilities=[Capabilities.OPEN_MODEL_VIA_FILE_DIALOGUE],
+    additional_attributes={"open_file_dialogue_keys": Keys.CONTROL + "o" + Keys.CONTROL},
+):
+    def __init__(self) -> None:
+        super().__init__(
+            "prusa",
+            r"C:\Users\jrossel\Desktop\programs\prusa.lnk",
+            "prusa-slicer",
+            {
+                "program loaded": [ExpectElement(By.NAME, "GLCanvas")],
+                "file loaded": [ExpectElement(By.NAME, "{stem}")],
+                "question asked": [ExpectElement(By.NAME, "Multi-part object detected")],
+                "error": [ExpectElement(By.NAME, "PrusaSlicer error")],
+            },
+        )
+
+    def _wait_model_load(self, model: File, file_load_timeout: int):
+        change_type = self._wait_for_change(
+            names=self._transform_status_names(
+                ["error", "file loaded", "question asked"],
+                self._get_format_strings(model),
+            ),
+            timeout=file_load_timeout,
+        )
+        if change_type == "question asked":
+            ActionChains(self.driver).send_keys(Keys.ALT + "y" + Keys.ALT).perform()
+            super()._wait_model_load(model, file_load_timeout)
+
+
+for program_cls in [Prusa]:
     program = program_cls()
     for test in parse_tests("R-HOU,R-ERR"):
         print(f"============== Test {test} ==============")
