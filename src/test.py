@@ -603,7 +603,16 @@ class Slic3r(
         )
 
 
-for program_cls in [Slic3r]:
+class SuperSlicer(Prusa):
+    def __init__(self) -> None:
+        super().__init__()
+        self.name = "superslicer"
+        self.executable_path = r"C:\Users\jrossel\Desktop\programs\superslicer.lnk"
+        self.process_name = "superslicer"
+        self.status_change_names["error"] = [ExpectElement(By.NAME, "SuperSlicer error")]
+
+
+for program_cls in [SuperSlicer]:
     program = program_cls()
     for test in parse_tests("R-HOU,R-ERR"):
         print(f"============== Test {test} ==============")
