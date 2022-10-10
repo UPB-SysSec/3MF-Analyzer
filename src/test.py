@@ -43,10 +43,10 @@ class Tdbuilder(
             "Builder3D",
             {
                 "program loaded": [
-                    ExpectElement(By.AUTOMATION_ID, "StartUpControlView", Be.AVAILABLE)
+                    ExpectElement(By.AUTOMATION_ID, "StartUpControlView")
                 ],
-                "file loaded": [ExpectElement(By.AUTOMATION_ID, "Root3D", Be.AVAILABLE)],
-                "error": [ExpectElement(By.NAME, "OK", Be.AVAILABLE)],
+                "file loaded": [ExpectElement(By.AUTOMATION_ID, "Root3D")],
+                "error": [ExpectElement(By.NAME, "OK")],
             },
         )
 
@@ -70,9 +70,9 @@ class Tdviewer(
             "3DViewer",
             {
                 "program loaded": [
-                    ExpectElement(By.AUTOMATION_ID, "WelcomeCloseButton", Be.AVAILABLE)
+                    ExpectElement(By.AUTOMATION_ID, "WelcomeCloseButton")
                 ],
-                "error": [ExpectElement(By.NAME, "Couldn't load 3D model", Be.AVAILABLE)],
+                "error": [ExpectElement(By.NAME, "Couldn't load 3D model")],
             },
         )
         self.tempdir = tempfile.mkdtemp()
@@ -149,11 +149,11 @@ class Tdviewer(
 #             r"C:\Program Files\Craftunique\CraftWare Pro\bin\craftApp.exe",
 #             "Ultimaker-Cura",
 #             {
-#                 "program loaded": [(By.NAME, "Marketplace", Be.AVAILABLE)],
-#                 "file loaded": [(By.NAME, "Slice", Be.AVAILABLE)],
+#                 "program loaded": [(By.NAME, "Marketplace")],
+#                 "file loaded": [(By.NAME, "Slice")],
 #                 "error": [
-#                     (By.NAME, "Unable to Open File", Be.AVAILABLE),
-#                     (By.NAME, "No Models in File", Be.AVAILABLE),
+#                     (By.NAME, "Unable to Open File"),
+#                     (By.NAME, "No Models in File"),
 #                 ],
 #             },
 #         )
@@ -179,11 +179,11 @@ class Cura(
             r"C:\Users\jrossel\Desktop\programs\cura.lnk",
             "Ultimaker-Cura",
             {
-                "program loaded": [ExpectElement(By.NAME, "Marketplace", Be.AVAILABLE)],
-                "file loaded": [ExpectElement(By.NAME, "Slice", Be.AVAILABLE)],
+                "program loaded": [ExpectElement(By.NAME, "Marketplace")],
+                "file loaded": [ExpectElement(By.NAME, "Slice")],
                 "error": [
-                    ExpectElement(By.NAME, "Unable to Open File", Be.AVAILABLE),
-                    ExpectElement(By.NAME, "No Models in File", Be.AVAILABLE),
+                    ExpectElement(By.NAME, "Unable to Open File"),
+                    ExpectElement(By.NAME, "No Models in File"),
                 ],
             },
         )
@@ -273,8 +273,8 @@ class Fusion(
                         ],
                     )
                 ],
-                "program loaded": [ExpectElement(By.NAME, "BROWSER", Be.AVAILABLE)],
-                "file loaded": [ExpectElement(By.NAME, "INSERT MESH", Be.AVAILABLE)],
+                "program loaded": [ExpectElement(By.NAME, "BROWSER")],
+                "file loaded": [ExpectElement(By.NAME, "INSERT MESH")],
                 "error": [ExpectElement(By.OCR, "error")],
             },
         )
@@ -282,7 +282,7 @@ class Fusion(
     def _wait_model_load(self, model: File, file_load_timeout: int):
         start = time()
         self.status_change_names["file loaded"] = [
-            ExpectElement(By.NAME, "INSERT MESH", Be.AVAILABLE)
+            ExpectElement(By.NAME, "INSERT MESH")
         ]
         super()._wait_model_load(model, file_load_timeout)
         end = time()
@@ -293,7 +293,7 @@ class Fusion(
 
         # reset
         self.status_change_names["file loaded"] = [
-            ExpectElement(By.NAME, "INSERT MESH", Be.AVAILABLE)
+            ExpectElement(By.NAME, "INSERT MESH")
         ]
 
     def _post_stop(self):
@@ -323,7 +323,7 @@ class IdeaMaker(
             r"C:\Users\jrossel\Desktop\programs\ideamaker.lnk",
             "ideaMaker",
             {
-                "program loaded": [ExpectElement(By.NAME, "RaiseCloud", Be.AVAILABLE)],
+                "program loaded": [ExpectElement(By.NAME, "RaiseCloud")],
                 "file loaded": [ExpectElement(By.NAME, "Move", Be.AVAILABLE_ENABLED)],
                 "error": [
                     ExpectElement(By.OCR, "invalid"),
@@ -342,10 +342,10 @@ class IdeaMaker(
 #             r"C:\Users\jrossel\Desktop\programs\lychee.lnk",
 #             "LycheeSlicer",
 #             {
-#                 # "program loaded": [(By.NAME, "RaiseCloud", Be.AVAILABLE)],
+#                 # "program loaded": [(By.NAME, "RaiseCloud")],
 #                 # "file loaded": [(By.NAME, "Move", Be.AVAILABLE_ENABLED)],
 #                 # "error": [
-#                 #     (By.NAME, "Load file failed {abspath}", Be.AVAILABLE),
+#                 #     (By.NAME, "Load file failed {abspath}"),
 #                 # ], TODO element to focusable (idea OCR?)
 #             },
 #             Keys.CONTROL + "o" + Keys.CONTROL,
@@ -504,11 +504,11 @@ class Paint3d(
             r"Microsoft.MSPaint_8wekyb3d8bbwe!Microsoft.MSPaint",
             "PaintStudio.View",
             {
-                "program loaded": [ExpectElement(By.NAME, "Show welcome screen", Be.AVAILABLE)],
+                "program loaded": [ExpectElement(By.NAME, "Show welcome screen")],
                 "file loaded": [ExpectElement(By.NAME, "Undo", Be.AVAILABLE_ENABLED)],
                 "error": [
-                    ExpectElement(By.NAME, "Couldn't import model", Be.AVAILABLE),
-                    ExpectElement(By.NAME, "Paint 3D needs to close", Be.AVAILABLE),
+                    ExpectElement(By.NAME, "Couldn't import model"),
+                    ExpectElement(By.NAME, "Paint 3D needs to close"),
                 ],
             },
         )
