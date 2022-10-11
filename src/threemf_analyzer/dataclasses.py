@@ -58,7 +58,7 @@ class DiskFile:
 
     def write(self):
         """Write the content of this object to disk."""
-        path = join(self.abspath, self.stem, f".{self.extension}")
+        path = join(self.abspath, f"{self.stem}.{self.extension}")
         if isinstance(self.content, bytes):
             with open(path, "wb") as file:
                 file.write(self.content)

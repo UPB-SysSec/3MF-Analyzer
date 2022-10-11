@@ -10,15 +10,13 @@ from glob import glob
 from os.path import join
 from typing import Any, Dict, Generator, List
 
-from . import yaml
-from .dataclasses import File, Program
-
-logging.getLogger("xmlschema").setLevel(logging.WARNING)
-
 import xmlschema
 from elementpath.etree import ElementTree
 
-from . import BUILD_DIR, DESCRIPTION_DIR, DESCRIPTION_GLOB, PROGRAMS_DIR, XSD_FILES
+from . import BUILD_DIR, DESCRIPTION_DIR, DESCRIPTION_GLOB, PROGRAMS_DIR, XSD_FILES, yaml
+from .dataclasses import File, Program
+
+logging.getLogger("xmlschema").setLevel(logging.WARNING)
 
 
 def pprint_information(infos: Dict[str, str]) -> None:
