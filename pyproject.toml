@@ -7,7 +7,7 @@ multi_line_output = 3
 line_length = 100
 
 [tool.pylint.messages_control]
-disable = "C0330, C0326, E1136, too-many-arguments"
+disable = "C0326, E1136, too-many-arguments"
 
 [tool.pylint.format]
 max-line-length = "100"
