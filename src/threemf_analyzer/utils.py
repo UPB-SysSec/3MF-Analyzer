@@ -16,7 +16,7 @@ from .dataclasses import File, Program
 logging.getLogger("xmlschema").setLevel(logging.WARNING)
 
 import xmlschema
-from xmlschema.etree import ParseError
+from elementpath.etree import ElementTree
 
 from . import BUILD_DIR, DESCRIPTION_DIR, DESCRIPTION_GLOB, PROGRAMS_DIR, XSD_FILES
 
@@ -57,7 +57,7 @@ def validate_tmf_model_xml(xml: str, specification_id: str) -> Dict[str, str]:
         except xmlschema.XMLSchemaException:
             # most general error validate raises, not sure if it can happen
             res[name] = "Invalid 3MF"
-        except ParseError:
+        except ElementTree.ParseError:
             res[name] = "Invalid XML"
 
     return res
