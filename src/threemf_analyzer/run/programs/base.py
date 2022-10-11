@@ -68,10 +68,7 @@ class Program(ABC):
         returns only when we think the program has been started and the file is loaded.
         That means this function block while the program is tested.
         It will timeout the loading of the file according to the parameters (infinite if None).
-        Return value is a generator of timestamps, with (<name of timestamp>, <time>). Currently:
-            <program start loading>
-            <program finish loading>/<file start loading>
-            <file finish loading>
+        Return value is a generator of timestamps.
         Depending on the method of starting the program and loading the file these values might not
         be available, they are None in these cases."""
 
@@ -399,24 +396,21 @@ class WinAppDriverProgram(Program):
             self._post_wait_program_load()
         except (ActionUnsuccessful, WebDriverException) as err:
             logging.error("program not loaded, because: %s", err)
-            if self.driver:
-                yield __create_timestamp("02 program-not-loaded")
-            else:
-                yield __create_timestamp("02 program-not-loaded", take_screenshot=False)
+            yield __create_timestamp("02 program-not-loaded", take_screenshot=False)
             return
         except Exception as err:  # pylint:disable=broad-except
             logging.error("program not loaded, due to unexpected error")
             logging.error(err)
-            yield __create_timestamp("02 program-not-loaded")
+            yield __create_timestamp("02 program-not-loaded", take_screenshot=False)
             return
         else:
-            yield __create_timestamp("02 program-loaded")
+            yield __create_timestamp("02 program-loaded", take_screenshot=False)
 
         self._focus_window()
         self.driver.maximize_window()
         sleep(5)  # sometimes maximizing freezes the window, this makes sure its no problem
 
-        yield __create_timestamp("03 start-file-loading", take_screenshot=False)
+        yield __create_timestamp("03 program-prepared")
 
         try:
             self._pre_load_model()
@@ -424,19 +418,22 @@ class WinAppDriverProgram(Program):
             self._post_load_model()
 
             self._focus_window()
+            yield __create_timestamp("04 model-started-loading", take_screenshot=False)
 
             self._pre_wait_model_load()
             self._wait_model_load(file, file_load_timeout)
             self._post_wait_model_load()
         except (ActionUnsuccessful, WebDriverException) as err:
             logging.info("model not loaded, because: %s", err)
-            yield __create_timestamp("04 model-not-loaded")
+            yield __create_timestamp("05 model-not-loaded")
             self._post_model_load_failure()
         except Exception as err:  # pylint:disable=broad-except
             logging.error("model not loaded, due to unexpected error")
             logging.error(err)
+            yield __create_timestamp("05 model-not-loaded", take_screenshot=False)
+            self._post_model_load_failure()
         else:
-            yield __create_timestamp("04 model-loaded")
+            yield __create_timestamp("05 model-loaded")
             self._post_model_load_success()
 
         try:
