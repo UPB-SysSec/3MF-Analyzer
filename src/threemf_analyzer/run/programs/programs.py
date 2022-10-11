@@ -480,6 +480,47 @@ class MeshMixer(
         self.force_stop_all()
 
 
+class Office(
+    WinAppDriverProgram,
+    metaclass=AutomatedProgram,
+    capabilities=[Capabilities.OPEN_MODEL_VIA_FILE_DIALOGUE],
+    additional_attributes={
+        "open_file_dialogue_keys": Keys.ALT + Keys.ALT + "n" + "s3" + "d",
+    },
+):
+    def __init__(self) -> None:
+        super().__init__(
+            "office",
+            r"C:\Program Files\Microsoft Office\root\Office16\POWERPNT.EXE",
+            "POWERPNT",
+            {
+                "program loaded": [ExpectElement(By.NAME, "PowerPoint")],
+                "file loaded": [ExpectElement(By.NAME, "3D Model")],
+                "error": [
+                    ExpectElement(
+                        By.XPATH,
+                        "//*[contains(@Name, 'An error occurred while importing this file')]",
+                    )
+                ],
+            },
+        )
+
+    def _start_program(self):
+        self.driver = RemoteDriver(
+            command_executor="http://127.0.0.1:4723",
+            desired_capabilities={
+                "app": self.executable_path,
+                "appArguments": "/s",
+            },
+        )
+
+    def _pre_load_model(self):
+        """Open empty slide set"""
+        ActionChains(self.driver).send_keys(
+            Keys.ESCAPE + Keys.ESCAPE + Keys.ESCAPE + Keys.ESCAPE
+        ).perform()
+
+
 class Paint3d(
     WinAppDriverProgram,
     metaclass=AutomatedProgram,
