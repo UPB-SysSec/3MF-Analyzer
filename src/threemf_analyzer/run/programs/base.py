@@ -168,8 +168,6 @@ class WinAppDriverProgram(Program):
         """Finds an element in any window associated with the process.
         The driver focuses the window where the element was first found after this.
         If return_change_type is False whatever type of element was found is returned."""
-        # for handle in self.driver.window_handles:
-        #     self.driver.switch_to.window(handle)
         for change_type, elements in names.items():
             for element in elements:
                 if element.by == By.OCR:
@@ -183,29 +181,35 @@ class WinAppDriverProgram(Program):
                         return change_type if return_change_type else element.value
                     else:
                         continue
-                try:
-                    current_parent = self._get_context(element.context)
-                    if element.parents:
-                        current_parent = self._get_context(element.parents[0].context)
-                    logging.debug("Using WinAppDriver: %s", current_parent)
-                    for parent_element in element.parents:
-                        current_parent = current_parent.find_element(
-                            parent_element.by, parent_element.value
-                        )
-                    logging.info("Try to find '%s' using '%s'", element, current_parent)
-                    target = current_parent.find_element(element.by, element.value)
-                except WebDriverException:
-                    target = None
-                if target is None and element.expect == Be.NOTAVAILABLE:
-                    return change_type if return_change_type else target
-                if target is not None:
-                    target: WebElement
-                    if (
-                        (element.expect == Be.AVAILABLE)
-                        or (element.expect == Be.AVAILABLE_ENABLED and target.is_enabled())
-                        or (element.expect == Be.AVAILABLE_NOTENABLED and not target.is_enabled())
-                    ):
+
+                for handle in self.driver.window_handles:
+                    self.driver.switch_to.window(handle)
+                    try:
+                        current_parent = self._get_context(element.context)
+                        if element.parents:
+                            current_parent = self._get_context(element.parents[0].context)
+                        logging.debug("Using WinAppDriver: %s", current_parent)
+                        for parent_element in element.parents:
+                            current_parent = current_parent.find_element(
+                                parent_element.by, parent_element.value
+                            )
+                        logging.info("Try to find '%s' using '%s'", element, current_parent)
+                        target = current_parent.find_element(element.by, element.value)
+                    except WebDriverException:
+                        target = None
+                    if target is None and element.expect == Be.NOTAVAILABLE:
                         return change_type if return_change_type else target
+                    if target is not None:
+                        target: WebElement
+                        if (
+                            (element.expect == Be.AVAILABLE)
+                            or (element.expect == Be.AVAILABLE_ENABLED and target.is_enabled())
+                            or (
+                                element.expect == Be.AVAILABLE_NOTENABLED
+                                and not target.is_enabled()
+                            )
+                        ):
+                            return change_type if return_change_type else target
 
         raise WebDriverException("Cannot find any of the elements in any window")
 
