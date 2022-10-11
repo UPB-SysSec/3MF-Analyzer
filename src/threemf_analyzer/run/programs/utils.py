@@ -1,6 +1,7 @@
 """Utility functions for program implementation."""
 
 import logging
+import os
 import subprocess
 from subprocess import CompletedProcess, TimeoutExpired
 from time import sleep, time
@@ -9,6 +10,8 @@ from typing import Any, Callable
 from .utilclasses import ActionUnsuccessful
 
 # from threemf_analyzer import LOCAL_SERVER
+
+os.environ["COMSPEC"] = "powershell"  # set powershell as executable for shell calls
 
 # def _switch_server_logfile(program: "Program", file: File, output_dir: str) -> None:
 #     """Utility function that sends a POST request to the logging server

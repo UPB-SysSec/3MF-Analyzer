@@ -287,6 +287,7 @@ class IdeaMaker(
     capabilities=[
         Capabilities.OPEN_MODEL_VIA_FILE_DIALOGUE,
         Capabilities.DETECT_CHANGE_OCR,
+        Capabilities.START_PROGRAM_LEGACY,
     ],
     additional_attributes={
         "open_file_dialogue_keys": Keys.CONTROL + "i" + Keys.CONTROL,
@@ -296,6 +297,8 @@ class IdeaMaker(
             right,
             lower,
         ),
+        "window_title": "ideaMaker 4.2.3 (RAISE3D E2)",
+        "window_load_timeout": 5,
     },
 ):
     def __init__(self) -> None:

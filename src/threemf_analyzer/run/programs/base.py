@@ -27,8 +27,6 @@ from ...evaluate.screenshots import _compare_images, _convert_image_to_ndarray
 from .utilclasses import ActionUnsuccessful, Be, By, Context, ExpectElement
 from .utils import _run_ps_command, _stop_process, _try_action_until_timeout
 
-# global inits
-os.environ["COMSPEC"] = "powershell"  # set powershell as executable for shell calls
 ocr_reader = easyocr.Reader(["en"])  # load easyocr reader
 
 
@@ -588,7 +586,7 @@ class AutomatedProgram(ABCMeta):
                 raise ActionUnsuccessful(f"Could not find window with title {self.window_title}")
 
             def _start_program(self):
-                _run_ps_command(["Start-Process", "-FilePath", self.executable_path])
+                _run_ps_command(["Start-Process", "-FilePath", f"'{self.executable_path}'"])
                 window_handle = _try_action_until_timeout(
                     "wait for window",
                     self._get_windows_by_title,
