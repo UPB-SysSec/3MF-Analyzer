@@ -1,16 +1,18 @@
 """Specific implementations of behavior for specific programs."""
 
 import tempfile
-from time import sleep, time
+from time import time
 
+from appium.webdriver import Remote as RemoteDriver
 from selenium.common.exceptions import WebDriverException
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.remote.webelement import WebElement
 
 from ...dataclasses import File
 from .base import AutomatedProgram, Capabilities, WinAppDriverProgram
 from .utilclasses import ActionUnsuccessful, Be, By, Context, ExpectElement
-from .utils import _run_ps_command, _try_action_until_timeout
+from .utils import _run_ps_command, _try_action_until_timeout, sleep
 
 
 class Tdbuilder(
@@ -120,6 +122,67 @@ class Tdviewer(
         )
 
 
+class Chitubox(
+    WinAppDriverProgram,
+    metaclass=AutomatedProgram,
+    capabilities=[
+        Capabilities.OPEN_MODEL_VIA_FILE_DIALOGUE,
+        Capabilities.DETECT_CHANGE_OCR,
+        Capabilities.START_PROGRAM_LEGACY,
+    ],
+    additional_attributes={
+        "open_file_dialogue_keys": Keys.CONTROL + "o" + Keys.CONTROL,
+        "ocr_bounding_box": lambda self, left, upper, right, lower: (
+            0,
+            lower - (lower // 8),
+            right // 2,
+            lower,
+        ),
+        "window_title": "CHITUBOXPro",
+        "window_load_timeout": 15,
+    },
+):
+    def __init__(self) -> None:
+        super().__init__(
+            "chitubox",
+            r"C:\Program Files\CHITUBOXPro V1.2.0\CHITUBOXPro.exe",
+            "CHITUBOXPro",
+            {
+                "program starting": [
+                    ExpectElement(
+                        By.NAME,
+                        "CHITUBOXPro",
+                        parents=[
+                            ExpectElement(By.NAME, "Desktop 1", context=Context.ROOT),
+                        ],
+                    )
+                ],
+                "program loaded": [ExpectElement(By.NAME, "Select")],
+                "file loaded": [ExpectElement(By.XPATH, "//*[contains(@Name, '{name}')]")],
+                "error": [ExpectElement(By.OCR, "Cann't open file")],
+            },
+        )
+
+    def _post_wait_program_load(self):
+        sleep(2)
+
+    def _pre_load_model(self):
+        try:
+            updates_window: WebElement = self.driver.find_element(By.NAME, "Check For Updates")
+            ActionChains(self.driver).move_to_element_with_offset(
+                updates_window, 420, 5
+            ).click().perform()
+        except WebDriverException:
+            pass
+        else:
+            sleep(1)
+        element = self.driver.find_element(By.NAME, "CHITUBOX Pro V1.2.0")
+        ActionChains(self.driver).move_to_element_with_offset(element, 0, 30).click().perform()
+        sleep(2)
+        ActionChains(self.driver).move_to_element_with_offset(element, 50, 150).click().perform()
+        sleep(2)
+
+
 #########
 # Does not start on VM... (no OpenGL 4 support, only 3.3)
 #########
@@ -158,10 +221,9 @@ class Cura(
         super().__init__(
             "cura",
             r"E:\Program Files\Ultimaker Cura 5.1.1\Ultimaker-Cura.exe",
-            # r"C:\Users\jrossel\Desktop\programs\cura.lnk",
             "Ultimaker-Cura",
             {
-                "program loaded": [ExpectElement(By.NAME, "Marketplace")],
+                "program loaded": [ExpectElement(By.NAME, "PREPARE")],
                 "file loaded": [ExpectElement(By.NAME, "Slice")],
                 "error": [
                     ExpectElement(By.NAME, "Unable to Open File"),

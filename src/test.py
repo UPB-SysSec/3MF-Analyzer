@@ -3,12 +3,14 @@ from pathlib import Path
 
 from threemf_analyzer.run.programs.base import Program
 from threemf_analyzer.run.programs.programs import (
+    Chitubox,
     Cura,
     FlashPrint,
     Fusion,
     IdeaMaker,
     MeshMagic,
     MeshMixer,
+    Office,
     Paint3d,
     Prusa,
     Simplify,
@@ -22,25 +24,27 @@ from threemf_analyzer.utils import parse_tests
 logging.getLogger().setLevel("DEBUG")
 
 for program_cls in [
-    Tdbuilder,
-    Tdviewer,
-    Cura,
-    FlashPrint,
-    Fusion,
-    IdeaMaker,
-    MeshMagic,
-    MeshMixer,
-    Paint3d,
-    Prusa,
-    Simplify,
-    Slic3r,
-    SuperSlicer,
+    Chitubox,
+    # Office,
+    # Tdbuilder,
+    # Tdviewer,
+    # Cura,
+    # FlashPrint,
+    # Fusion,
+    # IdeaMaker,
+    # MeshMagic,
+    # MeshMixer,
+    # Paint3d,
+    # Prusa,
+    # Simplify,
+    # Slic3r,
+    # SuperSlicer,
 ]:
-    program: Program = program_cls()
     print()
-    print(f"============== Program {program.name} ==============")
+    print(f"============== Program {program_cls().name} ==============")
     print()
-    for test in parse_tests("R-HOU,R-ERR,CS-0110,XML-MOD-ALT-OOB-R"):
+    for test in parse_tests("R-HOU,R-ERR"):  # ,CS-0110,XML-MOD-ALT-OOB-R"):
+        program: Program = program_cls()
         print()
         print(f"======= Test {test} =======")
         print()

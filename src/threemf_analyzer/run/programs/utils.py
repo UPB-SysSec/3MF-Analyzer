@@ -4,7 +4,8 @@ import logging
 import os
 import subprocess
 from subprocess import CompletedProcess, TimeoutExpired
-from time import sleep, time
+from time import sleep as _sleep
+from time import time
 from typing import Any, Callable
 
 from .utilclasses import ActionUnsuccessful
@@ -27,6 +28,12 @@ os.environ["COMSPEC"] = "powershell"  # set powershell as executable for shell c
 #         requests.get(LOCAL_SERVER + "/" + log_init_msg, timeout=10)
 #     except requests.RequestException:
 #         logging.warning("Logging server seems unresponsive")
+
+
+def sleep(seconds: int):
+    """Hooking sleep to log the usage."""
+    logging.debug("Sleeping for %s seconds", seconds)
+    _sleep(seconds)
 
 
 def _run_ps_command(
@@ -77,7 +84,7 @@ def _try_action_until_timeout(
                 err,
             )
         timed_out = time() - start_time > timeout
-        sleep(rate)
+        _sleep(rate)
 
     if successful:
         return result
