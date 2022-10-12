@@ -168,48 +168,63 @@ class WinAppDriverProgram(Program):
         """Finds an element in any window associated with the process.
         The driver focuses the window where the element was first found after this.
         If return_change_type is False whatever type of element was found is returned."""
+
+        def __by_ocr(element: ExpectElement):
+            logging.info("Try to find '%s' using OCR", element.value)
+            target = self._text_on_screen(element.value)
+            if target is True and element.expect == Be.AVAILABLE:
+                logging.info("Found '%s' using OCR", element.value)
+                return change_type if return_change_type else element.value
+            elif target is False and element.expect == Be.NOTAVAILABLE:
+                logging.info("Did not find '%s' using OCR", element.value)
+                return change_type if return_change_type else element.value
+
+        def __by_wad(element: ExpectElement):
+            try:
+                current_parent = self._get_context(element.context)
+                if element.parents:
+                    current_parent = self._get_context(element.parents[0].context)
+                logging.debug("Using WinAppDriver: %s", current_parent)
+                for parent_element in element.parents:
+                    current_parent = current_parent.find_element(
+                        parent_element.by, parent_element.value
+                    )
+                logging.info("Try to find '%s' using '%s'", element, current_parent)
+                target = current_parent.find_element(element.by, element.value)
+            except WebDriverException:
+                target = None
+            if target is None and element.expect == Be.NOTAVAILABLE:
+                return change_type if return_change_type else target
+            if target is not None:
+                target: WebElement
+                if (
+                    (element.expect == Be.AVAILABLE)
+                    or (element.expect == Be.AVAILABLE_ENABLED and target.is_enabled())
+                    or (element.expect == Be.AVAILABLE_NOTENABLED and not target.is_enabled())
+                ):
+                    return change_type if return_change_type else target
+
         for change_type, elements in names.items():
             for element in elements:
+
                 if element.by == By.OCR:
-                    logging.info("Try to find '%s' using OCR", element.value)
-                    target = self._text_on_screen(element.value)
-                    if target is True and element.expect == Be.AVAILABLE:
-                        logging.info("Found '%s' using OCR", element.value)
-                        return change_type if return_change_type else element.value
-                    elif target is False and element.expect == Be.NOTAVAILABLE:
-                        logging.info("Did not find '%s' using OCR", element.value)
-                        return change_type if return_change_type else element.value
+                    if (result := __by_ocr(element)) is not None:
+                        return result
                     else:
                         continue
 
-                for handle in self.driver.window_handles:
-                    self.driver.switch_to.window(handle)
-                    try:
-                        current_parent = self._get_context(element.context)
-                        if element.parents:
-                            current_parent = self._get_context(element.parents[0].context)
-                        logging.debug("Using WinAppDriver: %s", current_parent)
-                        for parent_element in element.parents:
-                            current_parent = current_parent.find_element(
-                                parent_element.by, parent_element.value
-                            )
-                        logging.info("Try to find '%s' using '%s'", element, current_parent)
-                        target = current_parent.find_element(element.by, element.value)
-                    except WebDriverException:
-                        target = None
-                    if target is None and element.expect == Be.NOTAVAILABLE:
-                        return change_type if return_change_type else target
-                    if target is not None:
-                        target: WebElement
-                        if (
-                            (element.expect == Be.AVAILABLE)
-                            or (element.expect == Be.AVAILABLE_ENABLED and target.is_enabled())
-                            or (
-                                element.expect == Be.AVAILABLE_NOTENABLED
-                                and not target.is_enabled()
-                            )
-                        ):
-                            return change_type if return_change_type else target
+                if self.driver:
+                    for handle in self.driver.window_handles:
+                        self.driver.switch_to.window(handle)
+                        if (result := __by_wad(element)) is not None:
+                            return result
+                        else:
+                            continue
+                else:
+                    if (result := __by_wad(element)) is not None:
+                        return result
+                    else:
+                        continue
 
         raise WebDriverException("Cannot find any of the elements in any window")
 
@@ -240,6 +255,8 @@ class WinAppDriverProgram(Program):
         string that is used as an id (returned to you so you know what happened).
 
         Times out it no element was found in any window after <timeout> seconds."""
+
+        logging.debug("started 'detect change' with '%s'", "', '".join(names.keys()))
 
         return _try_action_until_timeout(
             "detect change",
@@ -402,9 +419,8 @@ class WinAppDriverProgram(Program):
             logging.error("program not loaded, because: %s", err)
             yield __create_timestamp("02 program-not-loaded", take_screenshot=False)
             return
-        except Exception as err:  # pylint:disable=broad-except
-            logging.error("program not loaded, due to unexpected error")
-            logging.error(err)
+        except Exception:  # pylint:disable=broad-except
+            logging.exception("program not loaded, due to unexpected error")
             yield __create_timestamp("02 program-not-loaded", take_screenshot=False)
             return
         else:
@@ -431,9 +447,8 @@ class WinAppDriverProgram(Program):
             logging.info("model not loaded, because: %s", err)
             yield __create_timestamp("05 model-not-loaded")
             self._post_model_load_failure()
-        except Exception as err:  # pylint:disable=broad-except
-            logging.error("model not loaded, due to unexpected error")
-            logging.error(err)
+        except Exception:  # pylint:disable=broad-except
+            logging.exception("model not loaded, due to unexpected error")
             yield __create_timestamp("05 model-not-loaded", take_screenshot=False)
             self._post_model_load_failure()
         else:
