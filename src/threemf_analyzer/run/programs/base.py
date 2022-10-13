@@ -475,7 +475,8 @@ class WinAppDriverProgram(Program):
         return finished_proc.stdout
 
     def __del__(self):
-        self.root.close()
+        if self.root:
+            self.root.close()
 
 
 class Capabilities(Enum):

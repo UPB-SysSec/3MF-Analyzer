@@ -78,11 +78,7 @@ def _try_action_until_timeout(
             result = action()
             successful = True
         except catch as err:  # pylint:disable = broad-except
-            logging.debug(
-                "Could not finish action: %s\n%s",
-                action_name,
-                err,
-            )
+            logging.debug("Could not finish action '%s': %s", action_name, err)
         timed_out = time() - start_time > timeout
         _sleep(rate)
 
