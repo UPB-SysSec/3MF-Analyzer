@@ -382,7 +382,7 @@ class WinAppDriverProgram(Program):
         self.force_stop_all()
         # sometimes stopping via PowerShell is too slow and
         # we connected to the already running instance, that is then closed.
-        sleep(2)
+        sleep(5)
 
         def __create_timestamp(name: str, take_screenshot: bool = True):
             current_time = time()

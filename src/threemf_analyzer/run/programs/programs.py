@@ -693,7 +693,7 @@ class Repetier(
         _try_action_until_timeout("screen stopped changing", __callback, file_load_timeout)
         duration = time() - now
 
-        super()._wait_model_load(model, max(10, file_load_timeout-duration))
+        super()._wait_model_load(model, max(10, file_load_timeout - duration))
 
 
 class Simplify(
@@ -750,3 +750,60 @@ class SuperSlicer(Prusa):
         self.executable_path = r"C:\Users\jrossel\Desktop\programs\superslicer.lnk"
         self.process_name = "superslicer"
         self.status_change_names["error"] = [ExpectElement(By.NAME, "SuperSlicer error")]
+
+
+class Zsuite(
+    WinAppDriverProgram,
+    metaclass=AutomatedProgram,
+    capabilities=[
+        Capabilities.START_PROGRAM_LEGACY,
+    ],
+    additional_attributes={
+        "window_title": "Z-SUITE",
+        "window_load_timeout": 10,
+    },
+):
+    def __init__(self) -> None:
+        super().__init__(
+            "zsuite",
+            r"C:\Users\jrossel\AppData\Local\Programs\Zortrax\Z-Suite\Z-SUITE.exe",
+            "Z-SUITE",
+            {
+                "program starting": [
+                    ExpectElement(
+                        By.NAME,
+                        "Z-SUITE",
+                        parents=[
+                            ExpectElement(By.NAME, "Desktop 1", context=Context.ROOT),
+                        ],
+                    )
+                ],
+                "program loaded": [ExpectElement(By.NAME, "Z-SUITE")],
+                "file loaded": [
+                    ExpectElement(By.NAME, "The model has been successfully loaded."),
+                ],
+                "error": [ExpectElement(By.NAME, "File is used by another program")],
+            },
+        )
+
+    def _pre_load_model(self):
+        sleep(2)
+        self.driver.find_element(By.NAME, "LPD").click()
+        self._wait_for_change(
+            {
+                "file load ready": [
+                    ExpectElement(
+                        By.NAME,
+                        "DRAG & DROP Drag & Drop files here to start working in Z-SUITE ADD FILES",
+                    )
+                ]
+            },
+            20,
+        )
+
+    def _load_model(self, model: File):
+        self.driver.find_element(By.NAME, "ADD FILES").click()
+        sleep(2)
+        self.driver.find_element_by_name("File name:").click()
+        ActionChains(self.driver).send_keys(model.abspath).perform()
+        ActionChains(self.driver).send_keys(Keys.ALT + "o" + Keys.ALT).perform()
