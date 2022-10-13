@@ -148,10 +148,7 @@ class WinAppDriverProgram(Program):
         self.process_name = process_name
         self.status_change_names = status_change_names
         self.driver: RemoteDriver = None
-        self.root = RemoteDriver(
-            command_executor="http://127.0.0.1:4723",
-            desired_capabilities={"app": "Root"},
-        )
+        self.root: RemoteDriver = None
 
     def _get_context(self, context: Context) -> RemoteDriver:
         """Returns the matching session for the required context."""
@@ -377,6 +374,11 @@ class WinAppDriverProgram(Program):
         file_load_timeout: int = 30,
     ) -> Iterable[tuple[str, float, Iterable[DiskFile]]]:
 
+        self.root = RemoteDriver(
+            command_executor="http://127.0.0.1:4723",
+            desired_capabilities={"app": "Root"},
+        )
+
         self.force_stop_all()
         # sometimes stopping via PowerShell is too slow and
         # we connected to the already running instance, that is then closed.
@@ -463,6 +465,8 @@ class WinAppDriverProgram(Program):
             logging.error("program could not be stopped: %s", err)
             self.force_stop_all()
 
+        self.root.stop()
+
     def _take_screenshot(self) -> Union[bytes, Iterable[bytes]]:
         for handle in self.driver.window_handles:
             self.driver.switch_to.window(handle)
@@ -473,10 +477,6 @@ class WinAppDriverProgram(Program):
             ["Get-Process", "-Name", self.process_name, "|", "ConvertTo-Json"]
         )
         return finished_proc.stdout
-
-    def __del__(self):
-        if self.root:
-            self.root.close()
 
 
 class Capabilities(Enum):
