@@ -465,7 +465,7 @@ class WinAppDriverProgram(Program):
             logging.error("program could not be stopped: %s", err)
             self.force_stop_all()
 
-        self.root.stop()
+        self.root.quit()
 
     def _take_screenshot(self) -> Union[bytes, Iterable[bytes]]:
         for handle in self.driver.window_handles:

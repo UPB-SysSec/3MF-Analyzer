@@ -663,6 +663,39 @@ class Prusa(
             super()._wait_model_load(model, file_load_timeout)
 
 
+class Repetier(
+    WinAppDriverProgram,
+    metaclass=AutomatedProgram,
+    capabilities=[Capabilities.OPEN_MODEL_VIA_FILE_DIALOGUE, Capabilities.DETECT_CHANGE_SCREENSHOT],
+    additional_attributes={"open_file_dialogue_keys": Keys.CONTROL + "o" + Keys.CONTROL},
+):
+    def __init__(self) -> None:
+        super().__init__(
+            "repetier",
+            r"C:\Program Files\Repetier-Host\RepetierHost.exe",
+            "RepetierHost",
+            {
+                "program loaded": [ExpectElement(By.NAME, "Load")],
+                "file loaded": [ExpectElement(By.NAME, "Repetier-Host V2.2.4 - {name}")],
+                "error": [
+                    ExpectElement(By.XPATH, "//*[contains(@Name, 'Error parsing 3MF file')]")
+                ],
+            },
+        )
+
+    def _wait_model_load(self, model, file_load_timeout):
+        # wait until the screen doesn't change anymore (i.e. while still loading)
+        def __callback():
+            if self._screen_changed():
+                raise ActionUnsuccessful("screen still changing")
+
+        now = time()
+        _try_action_until_timeout("screen stopped changing", __callback, file_load_timeout)
+        duration = time() - now
+
+        super()._wait_model_load(model, max(10, file_load_timeout-duration))
+
+
 class Simplify(
     WinAppDriverProgram,
     metaclass=AutomatedProgram,
