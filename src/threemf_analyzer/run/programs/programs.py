@@ -649,6 +649,16 @@ class Prusa(
             timeout=file_load_timeout,
         )
         if change_type == "question asked":
+            element = self._wait_for_change(
+                names=self._transform_status_names(
+                    ["question asked"],
+                    self._get_format_strings(model),
+                ),
+                timeout=file_load_timeout,
+                return_change_type=False,
+            )
+            ActionChains(self.driver).click(on_element=element).perform()
+            ActionChains(self.driver).send_keys(Keys.ALT + "y" + Keys.ALT).perform()
             ActionChains(self.driver).send_keys(Keys.ALT + "y" + Keys.ALT).perform()
             super()._wait_model_load(model, file_load_timeout)
 
