@@ -3,7 +3,7 @@
 # pylint: disable=wildcard-import,unused-wildcard-import
 
 from os.path import join
-from typing import Dict, Generator, List, Union
+from typing import Generator, Union
 
 from ... import TESTFILE_GENERATED_SRC_DIR
 from ...utils import validate_tmf_model_xml
@@ -49,8 +49,8 @@ TYPES_WITH_REFERENCING_ID = {
 
 
 def _create_type_tag(
-    res: Dict[str, str],
-    validity_information: Dict[str, str],
+    res: dict[str, str],
+    validity_information: dict[str, str],
 ) -> str:
     """Where possible determine a type tag for this attack/test.
     Only intended to tag the majority of cases, corner-cases still need to be typed manually.
@@ -58,15 +58,15 @@ def _create_type_tag(
     Returns a comma-separated list that should match the types/subtypes defined
     in description_texts.yaml"""
 
-    def _get_referencable_id(obj) -> Union[None, List[str]]:
+    def _get_referencable_id(obj) -> Union[None, list[str]]:
         """returns the name(s) of attributes that can be referenced, if there are any"""
         return TYPES_WITH_REFERENCABLE_ID.get(type(obj))
 
-    def _get_referencing_id(obj) -> Union[None, List[str]]:
+    def _get_referencing_id(obj) -> Union[None, list[str]]:
         """returns the name(s) of attributes that can reference others, if there are any"""
         return TYPES_WITH_REFERENCING_ID.get(type(obj))
 
-    def _xml_valid(validity_information: Dict[str, str]) -> bool:
+    def _xml_valid(validity_information: dict[str, str]) -> bool:
         """Checks if the xml is valid or not"""
         if "materials" in validity_information:
             # for materials core does not validate... (as per 3MF's definition)
@@ -279,7 +279,7 @@ def _generate_models(specification_id: str, starting_model: ComplexType, destina
     )
 
 
-def mutate_tmf_models() -> Generator[Dict[str, str], None, None]:
+def mutate_tmf_models() -> Generator[dict[str, str], None, None]:
     """Yields Model XMLs and their information.
 
     Resulting dicts contain:
@@ -287,7 +287,7 @@ def mutate_tmf_models() -> Generator[Dict[str, str], None, None]:
         description (str): short description what has been mutated
         content (str): the full XML as a string
         destination_path (str): absolute path where to store the XML as a file
-        is_valid (Dict):  result of utils.validate_xml for the XML
+        is_valid (dict):  result of utils.validate_xml for the XML
         type (str): attack type information generated for the testcase
     """
 

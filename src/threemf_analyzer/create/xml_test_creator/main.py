@@ -2,7 +2,7 @@
 from copy import deepcopy
 from os.path import join
 from textwrap import dedent
-from typing import Dict, Generator
+from typing import Generator
 
 from ... import STATIC_FILE_DIR_SRC, TESTFILE_GENERATED_SRC_DIR
 from ..tmf_model_mutator.base import ComplexType
@@ -11,7 +11,7 @@ from .server_files import SERVER_FILES
 from .test_cases import TESTCASES
 
 
-def create_xml_testcases() -> Generator[Dict[str, str], None, None]:
+def create_xml_testcases() -> Generator[dict[str, str], None, None]:
     """Creates the defined test files."""
 
     def _create_xml_testcases(
@@ -86,7 +86,7 @@ def create_xml_testcases() -> Generator[Dict[str, str], None, None]:
     )
 
 
-def get_server_files() -> Generator[Dict[str, str], None, None]:
+def get_server_files() -> Generator[dict[str, str], None, None]:
     """Yields the different server files."""
     for file in SERVER_FILES:
         yield {

@@ -7,7 +7,7 @@ from glob import glob
 from io import StringIO
 from os.path import join
 from pathlib import Path
-from typing import Any, Callable, Dict, List
+from typing import Any, Callable
 
 from PIL import Image, ImageTk
 
@@ -33,7 +33,7 @@ STATE = {
 class Switcher:
     """Simple iterator that can give the previous or the next item."""
 
-    def __init__(self, name: str, items: List[Any], start_at: int = 0) -> None:
+    def __init__(self, name: str, items: list[Any], start_at: int = 0) -> None:
         self.name = name
         self.items = items
         self.index = start_at
@@ -195,7 +195,7 @@ def _display_test(
     button_frame: tk.Frame,
     program_id: str,
     test_id: str,
-    all_tests: Dict,
+    all_tests: dict,
 ) -> None:
     """"""
     root.title(f"{program_id} - {test_id}")
@@ -369,7 +369,7 @@ def _display_test(
     # root.bind("<Control-s>", lambda _: save())
 
 
-def show_screenshots(program_ids: List[str], test_ids: List[str]) -> None:
+def show_screenshots(program_ids: list[str], test_ids: list[str]) -> None:
     if tk is None:
         return
 

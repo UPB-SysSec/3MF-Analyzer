@@ -1,16 +1,14 @@
 """Builds a markdown representation of the testcase descriptions."""
 
-from glob import glob
 from os.path import join
 from textwrap import dedent, indent
-from typing import Dict, overload
 
-from .. import DESCRIPTION_DIR, DESCRIPTION_GLOB, yaml
+from .. import DESCRIPTION_DIR, yaml
 from ..utils import get_all_tests_by_type
 from .utils import get_markdown_table
 
 
-def _types_to_markdown_sections(types: Dict) -> str:
+def _types_to_markdown_sections(types: dict) -> str:
     def _format_spec_conformity(data):
         conforms_to_spec = data.get("conforms_to_spec", "")
         if isinstance(conforms_to_spec, str):
@@ -22,7 +20,7 @@ def _types_to_markdown_sections(types: Dict) -> str:
             res.append(f"{spec}: {value.split(':')[0]}")
         return "; ".join(res)
 
-    def _types_to_sections(types: Dict, section_level: int = 2, is_top_leven_section=False) -> str:
+    def _types_to_sections(types: dict, section_level: int = 2, is_top_leven_section=False) -> str:
         res = ""
         for type_name, infos in types.items():
             res += _type_to_section(
@@ -51,7 +49,7 @@ def _types_to_markdown_sections(types: Dict) -> str:
         section_level: int,
         type_name: str,
         type_description: str,
-        tests: Dict,
+        tests: dict,
         is_top_leven_section=False,
     ) -> str:
         section = f'{"#" * section_level} {type_name}\n\n{type_description}\n'
@@ -79,7 +77,7 @@ def _types_to_markdown_sections(types: Dict) -> str:
     return _types_to_sections(types, is_top_leven_section=True)
 
 
-def _scopes_to_markdown_text(scopes: Dict) -> str:
+def _scopes_to_markdown_text(scopes: dict) -> str:
     res = ""
     for scope, description in scopes.items():
         res += f"- **{scope}**:\n"
@@ -88,7 +86,7 @@ def _scopes_to_markdown_text(scopes: Dict) -> str:
     return res
 
 
-def _footnotes_to_markdown_text(footnotes: Dict) -> str:
+def _footnotes_to_markdown_text(footnotes: dict) -> str:
     res = ""
     for fn_id, info in footnotes.items():
         res += f"[^{fn_id}]:\n"
@@ -101,7 +99,7 @@ def _get_statistical_overview():
     """Creates an statistical overview of the tests in each type"""
 
     def _nr_tests_per_section(
-        nesting_level: int, type_name: str, type_description: str, contained_tests: Dict
+        nesting_level: int, type_name: str, type_description: str, contained_tests: dict
     ) -> str:
         return (nesting_level, type_name, len(contained_tests))
 

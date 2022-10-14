@@ -5,7 +5,6 @@ import logging
 from os.path import dirname, isfile, join
 from pathlib import Path
 from textwrap import dedent
-from typing import Dict, List
 
 from .. import DESCRIPTION_DIR, yaml
 from .opc_test_creator import create_opc_testcases
@@ -30,8 +29,8 @@ def _unify_str(string: str):
 def _create_testcase_entry(
     test_id: str,
     description: str,
-    test_content: Dict,
-    is_valid: Dict[str, str] = None,
+    test_content: dict,
+    is_valid: dict[str, str] = None,
     expected_behavior: str = None,
     type_str: str = None,
 ) -> None:
@@ -65,7 +64,7 @@ def _create_testcase_entry(
         test_content["further_infos"] = _orig
 
 
-def _remove_old_entries(all_ids: List[str]):
+def _remove_old_entries(all_ids: list[str]):
     """Removes all entries that are not in the given list."""
     mappings = {
         "XML": {
@@ -98,7 +97,7 @@ def _remove_old_entries(all_ids: List[str]):
             yaml.dump(content, yaml_file)
 
 
-def create_testfiles(parsed_arguments: Dict[str, str]) -> None:
+def create_testfiles(parsed_arguments: dict[str, str]) -> None:
     """Writes the generated testcases to disc and adds an entry in the correct YAML file for them."""
 
     _generators = [get_server_files()]

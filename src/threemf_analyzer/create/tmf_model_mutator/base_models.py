@@ -2,14 +2,12 @@
 
 # pylint: disable=wildcard-import,unused-wildcard-import
 
-from typing import List
-
 from .base import ComplexType
 from .complex_types import *
 from .simple_types import *
 
 
-def _set_extension(element: ComplexType, extensions: List[str]):
+def _set_extension(element: ComplexType, extensions: list[str]):
     element.active_extensions = extensions
     new_element = type(element)(extensions=extensions)
     element.allowed_attributes = new_element.allowed_attributes

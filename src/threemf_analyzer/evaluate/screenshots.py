@@ -7,7 +7,6 @@ from multiprocessing import Manager, Pool, Queue
 from os import listdir
 from os.path import isdir, join
 from pathlib import Path
-from typing import Dict, List, Tuple
 
 import numpy as np
 from skimage.io import imread
@@ -17,7 +16,7 @@ from skimage.transform import resize
 from .. import DESCRIPTION_GLOB, EVALUATION_DIR, yaml
 
 
-def _convert_image_to_ndarray(image_path: str, new_shape: Tuple[int, int] = None) -> np.ndarray:
+def _convert_image_to_ndarray(image_path: str, new_shape: tuple[int, int] = None) -> np.ndarray:
     image = imread(image_path, as_gray=True)
     if new_shape is not None and image.shape != new_shape:
         image = resize(image, new_shape)
@@ -56,7 +55,7 @@ def _get_reference_tests():
 
 
 def _get_reference_images(
-    test_ids: str, reference_tests: Dict, snapshots_dir: str, reference_screenshots_dir: str
+    test_ids: str, reference_tests: dict, snapshots_dir: str, reference_screenshots_dir: str
 ):
     for test_id in test_ids:
         if test_id in reference_tests:
@@ -80,7 +79,7 @@ def _get_reference_images(
         }
 
 
-def _get_images_to_compare(test_ids: str, reference_tests: Dict, snapshots_dir: str):
+def _get_images_to_compare(test_ids: str, reference_tests: dict, snapshots_dir: str):
     for test_id in test_ids:
         if test_id in reference_tests:
             continue
@@ -89,7 +88,7 @@ def _get_images_to_compare(test_ids: str, reference_tests: Dict, snapshots_dir: 
             yield (test_id, image_paths[-1])
 
 
-def _compare_worker(reference_images_cache: Dict, input_queue: Queue, result_queue: Queue):
+def _compare_worker(reference_images_cache: dict, input_queue: Queue, result_queue: Queue):
     logging.debug("Start compare worker")
     while True:
 
@@ -117,7 +116,7 @@ def _compare_worker(reference_images_cache: Dict, input_queue: Queue, result_que
         input_queue.task_done()
 
 
-def _compare_to_reference_cases(program_id: str, test_ids: List[str], pool_size: int = 16) -> None:
+def _compare_to_reference_cases(program_id: str, test_ids: list[str], pool_size: int = 16) -> None:
     """Takes every testcase in test_ids compares them with the reference testcases
     (those need to be available in the snapshots directory as well).
     Given a certain similarity threshold the highest matching reference screenshot is linked to the
@@ -205,7 +204,7 @@ def _compare_to_reference_cases(program_id: str, test_ids: List[str], pool_size:
         pool.join()
 
 
-def compare_screenshots(program_ids: List[str], test_ids: List[str]) -> None:
+def compare_screenshots(program_ids: list[str], test_ids: list[str]) -> None:
     """Compares all testcases of all given programs with the references cases.
     For more infos see: `_compare_to_reference_cases` function."""
 

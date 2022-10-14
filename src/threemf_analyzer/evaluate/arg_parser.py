@@ -1,12 +1,11 @@
 """Handles the CLI arguments for this command."""
 
 import argparse
-from typing import List, Tuple
 
 from ..utils import parse_programs, parse_tests
 
 
-def sanitize_args(args: dict) -> Tuple[List[str], List[str]]:
+def sanitize_args(args: dict) -> tuple[list[str], list[str]]:
     """Sanitizes the program and test args."""
     programs = parse_programs(args["programs"])
     files = parse_tests(args["tests"])

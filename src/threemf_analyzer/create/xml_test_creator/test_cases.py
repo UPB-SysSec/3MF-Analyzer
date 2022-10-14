@@ -3,7 +3,7 @@
 # pylint: disable=wildcard-import,unused-wildcard-import
 
 from os.path import join
-from typing import Callable, List, Tuple
+from typing import Callable
 
 from ... import LOCAL_SERVER, STATIC_FILE_DIR_DST
 from ..tmf_model_mutator.base import ComplexType, SimpleType
@@ -34,7 +34,7 @@ def __modify_first_element(
 
 
 def _add_attributes(
-    target_tag: str, attributes: List[Tuple[str, SimpleType]]
+    target_tag: str, attributes: list[tuple[str, SimpleType]]
 ) -> Callable[[ComplexType], ComplexType]:
     """Returned function adds the given attributes to the first (child)-object of target_type."""
 
@@ -50,7 +50,7 @@ def _add_attributes(
 
 
 def _delete_attributes(
-    target_tag: str, attribute_names: List[str]
+    target_tag: str, attribute_names: list[str]
 ) -> Callable[[ComplexType], ComplexType]:
     """Returned function deletes the given attributes from the first (child)-object of
     target_type."""
@@ -71,7 +71,7 @@ def _delete_attributes(
 
 
 def _add_children(
-    target_tag: str, children: List[Tuple[str, SimpleType]]
+    target_tag: str, children: list[tuple[str, SimpleType]]
 ) -> Callable[[ComplexType], ComplexType]:
     """Returned function adds the given children to the first (child)-object of target_type."""
 
@@ -87,7 +87,7 @@ def _add_children(
 
 
 def _delete_children(
-    target_tag: str, children_target_types: List[ComplexType]
+    target_tag: str, children_target_types: list[ComplexType]
 ) -> Callable[[ComplexType], ComplexType]:
     """Returned function removes the given children_target_types from the first (child)-object
     of target_type."""

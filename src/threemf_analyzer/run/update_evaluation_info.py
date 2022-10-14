@@ -2,7 +2,7 @@ import os
 from glob import glob
 from os.path import isdir, isfile, join
 from textwrap import dedent
-from typing import Any, Dict, List
+from typing import Any
 
 from .. import DESCRIPTION_GLOB, EVALUATION_DIR, yaml
 from ..dataclasses import Program
@@ -85,9 +85,9 @@ def _modify_eval_info(
 
 
 def modify_all_eval_info(
-    verification_results: Dict[str, Dict[str, Dict[str, Any]]] = None,
-    programs_infos: Dict[str, Dict[str, str]] = None,
-    programs: List[Program] = None,
+    verification_results: dict[str, dict[str, dict[str, Any]]] = None,
+    programs_infos: dict[str, dict[str, str]] = None,
+    programs: list[Program] = None,
 ):
     """Updates the evaluation info.yaml and the description yaml files with new data.
     programs is only needed if program_infos is also given."""

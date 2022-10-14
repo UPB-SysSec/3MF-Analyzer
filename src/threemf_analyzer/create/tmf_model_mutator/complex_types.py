@@ -3,9 +3,8 @@
 # pylint: disable=too-few-public-methods,missing-class-docstring,invalid-name
 # pylint: disable=wildcard-import,unused-wildcard-import
 
-from typing import List, Tuple
 
-from .base import ComplexType, SimpleType, TmfType
+from .base import ComplexType, SimpleType
 from .simple_types import *
 
 __all__ = [
@@ -58,9 +57,9 @@ class CT_ANY(ComplexType):
         self,
         tag,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             tag,
@@ -75,9 +74,9 @@ class CT_Base(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "base",
@@ -105,9 +104,9 @@ class CT_BaseMaterials(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         allowed_attribtues = [("id", ST_ResourceID, True)]
         if extensions is not None and "materials" in extensions:
@@ -141,9 +140,9 @@ class CT_Build(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "build",
@@ -171,9 +170,9 @@ class CT_Component(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         allowed_attributes = [
             ("objectid", ST_ResourceID, True),
@@ -212,9 +211,9 @@ class CT_Components(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "components",
@@ -248,9 +247,9 @@ class CT_Item(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         allowed_attributes = [
             ("objectid", ST_ResourceID, True),
@@ -291,9 +290,9 @@ class CT_Mesh(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "mesh",
@@ -312,9 +311,9 @@ class CT_Metadata(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "metadata",
@@ -343,9 +342,9 @@ class CT_MetadataGroup(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "metadatagroup",
@@ -361,9 +360,9 @@ class CT_Model(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "model",
@@ -399,9 +398,9 @@ class CT_Object(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         allowed_attributes = [
             ("id", ST_ResourceID, True),
@@ -499,9 +498,9 @@ class CT_Resources(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "resources",
@@ -520,9 +519,9 @@ class CT_Triangle(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "triangle",
@@ -558,9 +557,9 @@ class CT_Triangles(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "triangles",
@@ -577,9 +576,9 @@ class CT_Vertex(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "vertex",
@@ -611,9 +610,9 @@ class CT_Vertices(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "vertices",
@@ -651,9 +650,9 @@ class CT_Texture2D(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "m:texture2d",
@@ -687,9 +686,9 @@ class CT_ColorGroup(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "m:colorgroup",
@@ -719,9 +718,9 @@ class CT_Color(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "m:color",
@@ -746,9 +745,9 @@ class CT_Texture2DGroup(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "m:texture2dgroup",
@@ -797,9 +796,9 @@ class CT_Tex2Coord(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "m:tex2coord",
@@ -828,9 +827,9 @@ class CT_CompositeMaterials(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "m:compositematerials",
@@ -858,9 +857,9 @@ class CT_Composite(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "m:composite",
@@ -883,9 +882,9 @@ class CT_MultiProperties(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "m:multiproperties",
@@ -912,9 +911,9 @@ class CT_Multi(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "m:multi",
@@ -937,9 +936,9 @@ class CT_PBSpecularDisplayProperties(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "m:pbspeculardisplayproperties",
@@ -963,9 +962,9 @@ class CT_PBSpecular(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "m:pbspecular",
@@ -996,9 +995,9 @@ class CT_PBMetallicDisplayProperties(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "m:pbmetallicdisplayproperties",
@@ -1022,9 +1021,9 @@ class CT_PBMetallic(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "m:pbmetallic",
@@ -1055,9 +1054,9 @@ class CT_PBSpecularTextureDisplayProperties(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "m:pbspeculartexturedisplayproperties",
@@ -1088,9 +1087,9 @@ class CT_PBMetallicTextureDisplayProperties(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "m:pbmetallictexturedisplayproperties",
@@ -1120,9 +1119,9 @@ class CT_Translucent(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "m:translucent",
@@ -1155,9 +1154,9 @@ class CT_TranslucentDisplayProperties(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "m:translucentdisplayproperties",
@@ -1181,9 +1180,9 @@ class CT_SliceStack(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "s:slicestack",
@@ -1213,9 +1212,9 @@ class CT_Slice(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "s:slice",
@@ -1245,9 +1244,9 @@ class CT_SliceRef(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "s:sliceref",
@@ -1276,9 +1275,9 @@ class CT_2DVertices(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "s:vertices",
@@ -1317,9 +1316,9 @@ class CT_2DVertex(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "s:vertex",
@@ -1351,9 +1350,9 @@ class CT_Polygon(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "s:polygon",
@@ -1382,9 +1381,9 @@ class CT_Segment(ComplexType):
     def __init__(
         self,
         value: str = None,
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
-        extensions: List[str] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
+        extensions: list[str] = None,
     ) -> None:
         super().__init__(
             "s:segment",

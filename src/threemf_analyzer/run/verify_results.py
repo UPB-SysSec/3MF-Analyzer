@@ -7,7 +7,6 @@ import logging
 from copy import copy
 from glob import glob
 from os.path import getsize, isfile, join
-from typing import Any, Dict, List
 
 from PIL import Image
 
@@ -72,7 +71,7 @@ def _trivial_server_log(file_path) -> bool:
     return True
 
 
-def _verify_lib3mf(program: Program, files: List[File], results: Dict, rerun_tests: Dict):
+def _verify_lib3mf(program: Program, files: list[File], results: dict, rerun_tests: dict):
     for file in files:
         output_dir = join(EVALUATION_DIR, program.id, "snapshots", file.test_id)
         if isfile(join(output_dir, "error-info.txt")):
@@ -107,7 +106,7 @@ def _verify_lib3mf(program: Program, files: List[File], results: Dict, rerun_tes
 
 
 def _verify_graphical_programs(
-    program: Program, files: List[File], results: Dict, rerun_tests: Dict
+    program: Program, files: list[File], results: dict, rerun_tests: dict
 ):
     for file in files:
         output_dir = join(EVALUATION_DIR, program.id, "snapshots", file.test_id)
@@ -193,8 +192,8 @@ def _verify_graphical_programs(
 
 
 def verify_results(
-    programs: List[Program], files: List[File]
-) -> Dict[str, Dict[str, Dict[str, Any]]]:
+    programs: list[Program], files: list[File]
+) -> dict[str, dict[str, dict[str, Any]]]:
     """Ensures that all tests run successfully, if not return arguments to re-run them."""
 
     results = {}
@@ -220,7 +219,7 @@ def verify_results(
                         return True
                 return False
 
-            def _prefix_rates(ids: List[str]):
+            def _prefix_rates(ids: list[str]):
                 prefix_occurrences = {}
                 for test_id in ids:
                     prefix = ""
@@ -240,7 +239,7 @@ def verify_results(
                 }
                 return prefix_occurrences
 
-            def _reduce_to_globs(rerun_test_ids: List[str]) -> List[str]:
+            def _reduce_to_globs(rerun_test_ids: list[str]) -> list[str]:
                 """Reduces the list of test ids using globs if possible"""
                 prefix_occurrences_rerun = _prefix_rates(rerun_test_ids)
                 prefix_occurrences_all = _prefix_rates(all_test_ids)

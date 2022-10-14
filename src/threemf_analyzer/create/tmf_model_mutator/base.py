@@ -4,7 +4,7 @@ import re
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
 from textwrap import indent
-from typing import Any, Generator, List, Tuple, Union
+from typing import Any, Generator, Union
 
 
 class TmfType(ABC):
@@ -26,8 +26,8 @@ class SimpleType(TmfType, ABC):
     def __init__(
         self,
         value: str,
-        invalid_values: List[str] = None,
-        valid_values: List[str] = None,
+        invalid_values: list[str] = None,
+        valid_values: list[str] = None,
     ) -> None:
         super().__init__()
         self.value = value
@@ -66,8 +66,8 @@ class PatternType(SimpleType, ABC):
         self,
         value,
         pattern: str,
-        invalid_values: List[str] = None,
-        valid_values: List[str] = None,
+        invalid_values: list[str] = None,
+        valid_values: list[str] = None,
     ) -> None:
         super().__init__(value, invalid_values, valid_values)
         self.pattern = pattern
@@ -86,8 +86,8 @@ class ReferencNumberType(SimpleType):
     def __init__(
         self,
         value: str,
-        invalid_values: List[str] = None,
-        valid_values: List[str] = None,
+        invalid_values: list[str] = None,
+        valid_values: list[str] = None,
     ) -> None:
         super().__init__(value, invalid_values=invalid_values, valid_values=valid_values)
 
@@ -121,8 +121,8 @@ class ReferencNumbersType(PatternType):
         self,
         value,
         pattern: str,
-        invalid_values: List[str] = None,
-        valid_values: List[str] = None,
+        invalid_values: list[str] = None,
+        valid_values: list[str] = None,
     ) -> None:
         super().__init__(value, pattern, invalid_values=invalid_values, valid_values=valid_values)
 
@@ -168,7 +168,7 @@ class Breach:
 
     id: str
     description: str
-    associated_objects: List[Any]
+    associated_objects: list[Any]
 
     def __repr__(self) -> str:
         ao_repr = "><".join([repr(obj) for obj in self.associated_objects])
@@ -185,7 +185,7 @@ class BreachCollector:
         self.raise_exception = raise_exception
         self.breaches = []
 
-    def _add_breach(self, description: Tuple[str, ...], identifier="", associated_objects=None):
+    def _add_breach(self, description: tuple[str, ...], identifier="", associated_objects=None):
         description = description[0] % description[1:]
         if identifier == "":
             identifier = "".join(
@@ -285,13 +285,13 @@ class ComplexType(TmfType, ABC):
         self,
         tag: str,
         value: str = "",
-        children: List["ComplexType"] = None,
-        attributes: List[Tuple[str, SimpleType]] = None,
+        children: list["ComplexType"] = None,
+        attributes: list[tuple[str, SimpleType]] = None,
         value_allowed: bool = False,
         mixed_content_allowed: bool = False,
-        allowed_children: Tuple[Tuple[List[TmfType], int, int]] = tuple(),
-        allowed_attributes: Tuple[Tuple[str, SimpleType, bool]] = tuple(),
-        active_extensions: List[str] = None,
+        allowed_children: tuple[tuple[list[TmfType], int, int]] = tuple(),
+        allowed_attributes: tuple[tuple[str, SimpleType, bool]] = tuple(),
+        active_extensions: list[str] = None,
     ) -> None:
         super().__init__()
         self.tag = tag
@@ -309,7 +309,7 @@ class ComplexType(TmfType, ABC):
 
     def get_attributes(
         self, target_name
-    ) -> Generator[Tuple[int, Tuple[str, SimpleType]], None, None]:
+    ) -> Generator[tuple[int, tuple[str, SimpleType]], None, None]:
         """Gets all attributes with a given name and their indices."""
         for index, (name, value) in enumerate(self.attributes):
             if name == target_name:
@@ -411,7 +411,7 @@ class ComplexType(TmfType, ABC):
         pass
         # check references objectid id pid pindex p1 p2 p3
 
-    def validate(self, get_breaches: bool) -> Union[bool, List[Breach]]:
+    def validate(self, get_breaches: bool) -> Union[bool, list[Breach]]:
 
         test = BreachCollector(raise_exception=not get_breaches)
 

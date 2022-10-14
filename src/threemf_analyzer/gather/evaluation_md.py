@@ -1,8 +1,6 @@
 """Builds a markdown representation of the testcase evaluations."""
 
 from os.path import join
-from textwrap import dedent, indent
-from typing import Dict
 
 from .. import EVALUATION_DIR, PROGRAMS_DIR, yaml
 from ..utils import get_all_tests, get_all_tests_by_type
@@ -222,7 +220,7 @@ def _get_full_results(infos):
         nesting_level: int,
         type_name: str,
         type_description: str,
-        contained_tests: Dict,
+        contained_tests: dict,
     ) -> str:
         section = f'{"#" * (nesting_level + 3)} {type_name}\n\n{type_description}\n'
 

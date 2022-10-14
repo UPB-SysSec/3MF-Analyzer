@@ -1,12 +1,10 @@
-from typing import Dict
-
 from .arg_parser import sanitize_args
 from .interpret import interpret_data
 from .manual import show_screenshots
 from .screenshots import compare_screenshots
 
 
-def main(parsed_arguments: Dict[str, str]) -> None:
+def main(parsed_arguments: dict[str, str]) -> None:
     program_ids, test_ids = sanitize_args(parsed_arguments)
 
     if parsed_arguments["enable_automatic"]:

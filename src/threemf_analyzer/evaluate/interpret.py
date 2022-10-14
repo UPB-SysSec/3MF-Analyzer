@@ -1,7 +1,6 @@
 """Interprets the information collected by the automatic and manual evaluation."""
 import logging
 from os.path import isfile, join
-from typing import List
 
 from .. import EVALUATION_DIR, yaml
 
@@ -90,7 +89,7 @@ def _is_outlier(stats, test_id, test_data):
     return False
 
 
-def _interpret(program_id: str, test_ids: List[str]) -> None:
+def _interpret(program_id: str, test_ids: list[str]) -> None:
     """"""
     logging.info("%s | Start interpretation", program_id)
     program_dir_path = join(EVALUATION_DIR, program_id)
@@ -126,7 +125,7 @@ def _interpret(program_id: str, test_ids: List[str]) -> None:
         yaml.dump(content, yaml_file)
 
 
-def interpret_data(program_ids: List[str], test_ids: List[str]) -> None:
+def interpret_data(program_ids: list[str], test_ids: list[str]) -> None:
     """Compares all testcases of all given programs with the references cases.
     For more infos see: `_compare_to_reference_cases` function."""
 
