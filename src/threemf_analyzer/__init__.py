@@ -30,7 +30,6 @@ DATA_DIR = join(ROOT_DIR, "data")
 DESCRIPTION_DIR = join(DATA_DIR, "description")
 DESCRIPTION_GLOB = join(DESCRIPTION_DIR, "[0-9]*_*.yaml")
 EVALUATION_DIR = join(DATA_DIR, "evaluation")
-PROGRAMS_DIR = join(DATA_DIR, "programs")
 TESTFILE_SRC_DIR = join(ROOT_DIR, "data", "testcases")
 TESTFILE_GENERATED_SRC_DIR = join(TESTFILE_SRC_DIR, "generated")
 # maps the 3MF specifications to the existing XSD file paths

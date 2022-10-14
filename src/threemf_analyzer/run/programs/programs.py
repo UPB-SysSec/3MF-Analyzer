@@ -1,18 +1,30 @@
 """Specific implementations of behavior for specific programs."""
 
+import logging
+import sys
 import tempfile
+from io import BytesIO
+from os.path import join
+from pathlib import Path
 from time import time
+from typing import Iterable
 
 from appium.webdriver import Remote as RemoteDriver
+from matplotlib import pyplot
+from mpl_toolkits import mplot3d
 from selenium.common.exceptions import WebDriverException
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.remote.webelement import WebElement
+from stl import mesh
 
+from ... import LIB3MF_DIR
 from ...dataclasses import File
-from .base import AutomatedProgram, Capabilities, WinAppDriverProgram
-from .utilclasses import ActionUnsuccessful, Be, By, Context, ExpectElement
+from .base import AutomatedProgram, Program, WinAppDriverProgram
+from .utilclasses import ActionUnsuccessful, Be, By, Capabilities, Context, ExpectElement, State
 from .utils import _run_ps_command, _try_action_until_timeout, sleep
+
+sys.path.append(join(LIB3MF_DIR, "Bindings", "Python"))
 
 
 class Tdbuilder(
@@ -378,6 +390,90 @@ class IdeaMaker(
     def _start_program(self):
         sleep(3)
         super()._start_program()
+
+
+class Lib3mf(Program):
+    def __init__(self) -> None:
+        super().__init__("lib3mf", None, None)
+        self.stl_file_path = None
+
+    def test(
+        self,
+        file: File,
+        output_dir: str,
+        program_start_timeout: int = None,
+        file_load_timeout: int = None,
+    ) -> Iterable[tuple[str, float]]:
+        yield self.timestamp(State.PROGRAM_NOT_STARTED, output_dir, only_timestamp=True)
+
+        wrapper = None
+
+        try:
+            import Lib3MF
+
+            wrapper = Lib3MF.Wrapper(join(LIB3MF_DIR, "Bin", "lib3mf"))
+        except ImportError as err:
+            logging.error("lib3mf not imported, because: %s", err)
+            yield self.timestamp(State.PROGRAM_NOT_LOADED, output_dir, only_timestamp=True)
+            return
+        except Exception as err:  # pylint:disable=broad-except
+            logging.error("lib3mf not loaded, due to unexpected error")
+            logging.error(err)
+            yield self.timestamp(State.PROGRAM_NOT_LOADED, output_dir, only_timestamp=True)
+            return
+        else:
+            yield self.timestamp(State.PROGRAM_LOADED, output_dir, only_timestamp=True)
+
+        yield self.timestamp(State.PROGRAM_PREPARED, output_dir, only_timestamp=True)
+
+        try:
+            model = wrapper.CreateModel()
+            reader = model.QueryReader("3mf")
+            reader.ReadFromFile(file.abspath)
+            writer = model.QueryWriter("stl")
+            self.stl_file_path = join(output_dir, f"{file.stem}.stl")
+            writer.WriteToFile(self.stl_file_path)
+        except (ActionUnsuccessful, WebDriverException) as err:
+            logging.info("model not loaded, because: %s", err)
+            yield self.timestamp(State.MODEL_NOT_LOADED, output_dir)
+        except Exception as err:  # pylint:disable=broad-except
+            logging.error("model not loaded, due to unexpected error")
+            logging.error(err)
+            yield self.timestamp(State.MODEL_NOT_LOADED, output_dir, only_timestamp=True)
+        else:
+            yield self.timestamp(State.MODEL_LOADED, output_dir)
+
+        yield self.timestamp(State.PROGRAM_STOPPED, output_dir, only_timestamp=True)
+
+    def stop(self) -> None:
+        pass
+
+    def force_stop_all(self) -> None:
+        pass
+
+    def _take_screenshot(self) -> bytes:
+        """Uses matplotlib to render the STL and saves it as PNG"""
+
+        if self.stl_file_path is None:
+            return b""
+
+        figure = pyplot.figure()
+        axes = mplot3d.Axes3D(figure)
+
+        your_mesh = mesh.Mesh.from_file(self.stl_file_path)
+        mpl_collection = mplot3d.art3d.Poly3DCollection(your_mesh.vectors)
+        mpl_collection.set_edgecolor("black")
+        axes.add_collection3d(mpl_collection)
+
+        scale = your_mesh.points.flatten()
+        axes.auto_scale_xyz(scale, scale, scale)
+
+        with BytesIO() as file:
+            figure.savefig(file, format="png")
+            return file.getvalue()
+
+    def _take_snapshot(self) -> bytes:
+        return {}
 
 
 #########
@@ -807,3 +903,25 @@ class Zsuite(
         self.driver.find_element_by_name("File name:").click()
         ActionChains(self.driver).send_keys(model.abspath).perform()
         ActionChains(self.driver).send_keys(Keys.ALT + "o" + Keys.ALT).perform()
+
+
+ALL_PROGRAMS = [
+    Chitubox,
+    Cura,
+    FlashPrint,
+    Fusion,
+    IdeaMaker,
+    Lib3mf,
+    MeshMagic,
+    MeshMixer,
+    Office,
+    Paint3d,
+    Prusa,
+    Repetier,
+    Simplify,
+    Slic3r,
+    SuperSlicer,
+    Tdbuilder,
+    Tdviewer,
+    Zsuite,
+]

@@ -10,24 +10,7 @@ from typing import Any, Callable
 
 from .utilclasses import ActionUnsuccessful
 
-# from threemf_analyzer import LOCAL_SERVER
-
 os.environ["COMSPEC"] = "powershell"  # set powershell as executable for shell calls
-
-# def _switch_server_logfile(program: "Program", file: File, output_dir: str) -> None:
-#     """Utility function that sends a POST request to the logging server
-#     to set the logfile location."""
-
-#     logfile_path = join(output_dir, "local-server.log")
-#     log_init_msg = f"Start server log for {program.name} running {file.test_id}"
-#     try:
-#         result = requests.post(LOCAL_SERVER, json={"logfile": logfile_path}, timeout=10)
-#         if result.status_code != 200:
-#             raise requests.ConnectionError()
-#         logging.debug("Send post to set logfile path to %s", logfile_path)
-#         requests.get(LOCAL_SERVER + "/" + log_init_msg, timeout=10)
-#     except requests.RequestException:
-#         logging.warning("Logging server seems unresponsive")
 
 
 def sleep(seconds: int):

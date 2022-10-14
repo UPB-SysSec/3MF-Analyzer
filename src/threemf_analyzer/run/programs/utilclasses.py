@@ -55,3 +55,26 @@ class ExpectElement:
     expect: Be = Be.AVAILABLE
     parents: list["ExpectElement"] = field(default_factory=lambda: [])
     context: Context = Context.SELF
+
+
+class Capabilities(Enum):
+    """Capabilities a program class can have when using the metaclass."""
+
+    OPEN_MODEL_VIA_FILE_DIALOGUE = "OPEN_MODEL_VIA_FILE_DIALOGUE"
+    DETECT_CHANGE_SCREENSHOT = "DETECT_CHANGE_SCREENSHOT"
+    DETECT_CHANGE_OCR = "DETECT_CHANGE_OCR"
+    START_PROGRAM_LEGACY = "START_PROGRAM_LEGACY"
+
+
+class State(Enum):
+    """State of the program. Used for timestamps."""
+
+    PROGRAM_NOT_STARTED = "00 program-not-started"
+    PROGRAM_STARTED = "01 program-started"
+    PROGRAM_NOT_LOADED = "02 program-not-loaded"
+    PROGRAM_LOADED = "02 program-loaded"
+    PROGRAM_PREPARED = "03 program-prepared"
+    MODEL_LOAD_STARTED = "04 model-started-loading"
+    MODEL_NOT_LOADED = "05 model-not-loaded"
+    MODEL_LOADED = "05 model-loaded"
+    PROGRAM_STOPPED = "06 program-stopped"

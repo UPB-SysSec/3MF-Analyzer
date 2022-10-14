@@ -1,4 +1,4 @@
-"""Differrent utility functions."""
+"""Different utility functions."""
 
 import fnmatch
 import logging
@@ -8,19 +8,22 @@ import threading
 from functools import lru_cache
 from glob import glob
 from os.path import join
-from typing import Any, Dict, Generator, List
+from typing import TYPE_CHECKING, Any, Generator
 
 import xmlschema
 from elementpath.etree import ElementTree
 
-from . import BUILD_DIR, DESCRIPTION_DIR, DESCRIPTION_GLOB, PROGRAMS_DIR, XSD_FILES, yaml
-from .dataclasses import File, Program
+from . import BUILD_DIR, DESCRIPTION_DIR, DESCRIPTION_GLOB, XSD_FILES, yaml
+from .dataclasses import File
+
+if TYPE_CHECKING:
+    from .run.programs.base import Program
 
 logging.getLogger("xmlschema").setLevel(logging.WARNING)
 
 
-def pprint_information(infos: Dict[str, str]) -> None:
-    """Pretty prints all the information given in the dict about a testcase."""
+def pprint_information(infos: dict[str, str]) -> None:
+    """Pretty prints all the information given in the dict about a test case."""
 
     print(
         "-" * 80,
@@ -34,7 +37,7 @@ def pprint_information(infos: Dict[str, str]) -> None:
     )
 
 
-def validate_tmf_model_xml(xml: str, specification_id: str) -> Dict[str, str]:
+def validate_tmf_model_xml(xml: str, specification_id: str) -> dict[str, str]:
     """Validates the given XML string (or path to file) against all 3MF XSD Schemas.
     Returns a dict that tells you for each schema if the XML is valid, or not."""
     from .create.tmf_model_mutator.base_models import INITIAL_MODELS
@@ -62,7 +65,7 @@ def validate_tmf_model_xml(xml: str, specification_id: str) -> Dict[str, str]:
 
 
 def multithread_generators(
-    generators: List[Generator[Any, Any, Any]], keep_order: bool = True
+    generators: list[Generator[Any, Any, Any]], keep_order: bool = True
 ) -> Generator[Any, Any, Any]:
     """Takes a list of generators, executes them in parallel, and yields the results.
     If keep_order is True the results are cached (might be extremely memory hungry,
@@ -122,7 +125,7 @@ def get_worker(func):
     return worker
 
 
-def get_all_tests() -> Dict[str, Dict]:
+def get_all_tests() -> dict[str, dict]:
     """Returns a dict with all tests in it."""
     all_tests = {}
     for file_path in glob(DESCRIPTION_GLOB):
@@ -143,7 +146,7 @@ def _get_all_tests_by_type():
     footnotes = {}
 
     for file_path in description_files:
-        # Sorts the tests descripted in the yaml (that belongs to the path) into the types obj.
+        # Sorts the tests description in the yaml (that belongs to the path) into the types obj.
         # Does the same with footnotes
 
         with open(file_path, "r", encoding="utf8") as yaml_file:
@@ -191,7 +194,7 @@ def get_all_tests_by_type(get_footnotes: bool = False, callback=None):
         return types, footnotes
     if callback is not None:
 
-        def _types_to_sections(types: Dict, section_level: int = 0) -> List:
+        def _types_to_sections(types: dict, section_level: int = 0) -> list:
             res = []
             for type_name, infos in types.items():
                 res.append(
@@ -211,29 +214,24 @@ def get_all_tests_by_type(get_footnotes: bool = False, callback=None):
     return types
 
 
-def parse_programs(program_ids: str) -> List[Program]:
-    """Parses given strings into Program objects if possible. Ignores non-existing IDs."""
-    programs = []
-    with open(join(PROGRAMS_DIR, "config.yaml"), "r", encoding="utf-8") as in_file:
-        for program in yaml.load(in_file):
-            try:
-                if program["id"] in program_ids.split(",") or program_ids == "ALL":
-                    if not program.get("window_title"):
-                        program["window_title"] = program["name"]
-                    if not program.get("type_association_id"):
-                        program["type_association_id"] = None
-                    if not program.get("exec_path"):
-                        program["exec_path"] = None
-                    programs.append(Program(**program))
-            except (KeyError, TypeError) as err:
-                logging.error(err)
+def parse_programs(program_ids: str) -> list[type["Program"]]:
+    # this docstring is used as the description for the --programs argument
+    """ID's of the programs that should run the test files. Default `ALL`. "
+    Will skip any program/ID that does not exist. For multiple values use: "val1,val2,..."
+    """
+    from .run.programs.programs import ALL_PROGRAMS
 
-    logging.info("Target programs: %s", programs)
+    programs = []
+    for program_cls in ALL_PROGRAMS:
+        if program_cls().name in program_ids.split(",") or program_ids == "ALL":
+            programs.append(program_cls)
+
+    logging.info("Target programs: %s", [program_cls().name for program_cls in programs])
     assert len(programs) > 0, "No matching programs found"
     return programs
 
 
-def parse_tests(test_ids: str) -> List[File]:
+def parse_tests(test_ids: str) -> list[File]:
     # this docstring is used as the description for the --tests argument
     """\
     ID's of the tests that should be run. Default `ALL`.
@@ -266,7 +264,7 @@ def parse_tests(test_ids: str) -> List[File]:
                 if f"{_test_id}.3mf" == name:
                     filename, filepath = name, path
                     break
-        logging.debug("Use file %s for testcase %s", filename, _test_id)
+        logging.debug("Use file %s for test case %s", filename, _test_id)
 
         if _test_id in all_tests:
             if filename and filepath:
