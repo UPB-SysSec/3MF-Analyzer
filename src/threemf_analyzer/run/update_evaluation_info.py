@@ -5,7 +5,6 @@ from textwrap import dedent
 from typing import Any
 
 from .. import DESCRIPTION_GLOB, EVALUATION_DIR, yaml
-from ..dataclasses import Program
 
 
 def _modify_eval_info(
@@ -87,7 +86,6 @@ def _modify_eval_info(
 def modify_all_eval_info(
     verification_results: dict[str, dict[str, dict[str, Any]]] = None,
     programs_infos: dict[str, dict[str, str]] = None,
-    programs: list[Program] = None,
 ):
     """Updates the evaluation info.yaml and the description yaml files with new data.
     programs is only needed if program_infos is also given."""
@@ -108,11 +106,6 @@ def modify_all_eval_info(
                     yaml_file.write(dedent(stem))
             if programs_infos is not None:
                 program_infos = programs_infos.get(entry)
-                if program_infos is not None and not program_infos.get("product"):
-                    for program in programs:
-                        if program.id == entry:
-                            program_infos["product"] = program.name
-                            break
             if verification_results:
                 _modify_eval_info(
                     folder,

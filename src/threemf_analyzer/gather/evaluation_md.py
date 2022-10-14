@@ -2,7 +2,7 @@
 
 from os.path import join
 
-from .. import EVALUATION_DIR, PROGRAMS_DIR, yaml
+from .. import EVALUATION_DIR, yaml
 from ..utils import get_all_tests, get_all_tests_by_type
 from .utils import format_spec_conformity, get_markdown_table
 
@@ -250,11 +250,11 @@ def _get_full_results(infos):
 
 
 def build_evaluations_markdown():
-    """Builds a markdown representation of the testcase evaluations."""
+    """Builds a markdown representation of the test case evaluations."""
 
-    with open(join(PROGRAMS_DIR, "config.yaml"), "r", encoding="utf8") as in_file:
-        programs = yaml.load(in_file)
-        program_ids = sorted([program["id"] for program in programs])
+    from ..run.programs.programs import ALL_PROGRAMS
+
+    program_ids = [program_cls().name for program_cls in ALL_PROGRAMS]
 
     all_test_descriptions = get_all_tests()
 
@@ -269,7 +269,5 @@ def build_evaluations_markdown():
     output += _get_summary(infos, all_test_descriptions)
 
     output += _get_full_results(infos)
-    # for program_id, content in infos.items():
-    #     output += _get_evaluation_markdown_subsections(program_id, content)
 
     return output

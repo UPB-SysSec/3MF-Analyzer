@@ -7,12 +7,14 @@ import logging
 from copy import copy
 from glob import glob
 from os.path import getsize, isfile, join
+from typing import Any
 
 from PIL import Image
 
-from .. import EVALUATION_DIR, yaml
-from ..dataclasses import File, Program
+from .. import EVALUATION_DIR
+from ..dataclasses import File
 from ..utils import get_all_tests
+from .programs.base import Program
 
 
 def _empty_file(file_path) -> bool:
@@ -71,128 +73,94 @@ def _trivial_server_log(file_path) -> bool:
     return True
 
 
-def _verify_lib3mf(program: Program, files: list[File], results: dict, rerun_tests: dict):
-    for file in files:
-        output_dir = join(EVALUATION_DIR, program.id, "snapshots", file.test_id)
-        if isfile(join(output_dir, "error-info.txt")):
-            with open(join(output_dir, "error-info.txt"), "r", encoding="utf-8") as err_file:
-                results[program.id][file.test_id] = {
-                    "critical": True,
-                    "problems": [err_file.read()],
-                }
-                rerun_tests.append(file.test_id)
-                continue
+def _verify_programs(program: Program, files: list[File], results: dict, rerun_tests: dict):
+    ...
+    # TODO
+    # for file in files:
+    #     output_dir = join(EVALUATION_DIR, program.name, "snapshots", file.test_id)
+    #     try:
+    #         with open(join(output_dir, "snapshot_intervals.txt"), "r", encoding="utf-8") as infile:
+    #             snapshot_intervals = [int(ival) for ival in infile.read().split(",")]
+    #     except OSError:
+    #         logging.warning(
+    #             "%s with %s has not snapshot_interval.txt file. Aborting.",
+    #             program.id,
+    #             file.test_id,
+    #         )
+    #         rerun_tests.append(file.test_id)
+    #         continue
 
-        res = {
-            "problems": [],
-        }
+    #     if isfile(join(output_dir, "error-info.txt")):
+    #         with open(join(output_dir, "error-info.txt"), "r", encoding="utf-8") as err_file:
+    #             results[program.id][file.test_id] = {
+    #                 "critical": True,
+    #                 "problems": [err_file.read()],
+    #             }
+    #             rerun_tests.append(file.test_id)
+    #             continue
 
-        if len(glob(join(output_dir, "*.png"))) == 0:
-            res["critical"] = True
-            res["problems"].append("No rendered model.")
-            rerun_tests.append(file.test_id)
+    #     res = {
+    #         "missing_process_info": 0,
+    #         "missing_screenshot": 0,
+    #         "problems": [],
+    #     }
 
-        # check server log
-        serverlog_file_path = join(output_dir, "local-server.log")
-        res["has_server_log"] = not _empty_file(serverlog_file_path)
-        res["server_log_interesting"] = not _trivial_server_log(serverlog_file_path)
+    #     interval_filenames = [
+    #         f"{number+1:02}_{timeinterval}s-after-start"
+    #         for number, timeinterval in enumerate(snapshot_intervals)
+    #     ]
 
-        # remove superfluous information (not there == falsy)
-        for key, value in copy(res).items():
-            if not value:
-                del res[key]
+    #     # check generated JSON process information
+    #     if len(glob(join(output_dir, "*.json"))) == 0:
+    #         res["critical"] = True
+    #         res["problems"].append("No process information files.")
+    #         del res["missing_process_info"]
+    #     else:
+    #         for filename in ["00_at-init"] + interval_filenames:
+    #             if _empty_json(join(output_dir, filename + ".json")):
+    #                 logging.info(
+    #                     "%s with %s is missing %s.json", program.name, file.test_id, filename
+    #                 )
+    #                 res["missing_process_info"] += 1
+    #         if res["missing_process_info"] >= len(["00_at-init"] + interval_filenames) - 1:
+    #             res["critical"] = True
+    #             res["problems"].append("Too many missing process information files.")
 
-        results[program.id][file.test_id] = res
+    #     # check generated screenshots
+    #     if len(glob(join(output_dir, "*.png"))) == 0:
+    #         res["critical"] = True
+    #         res["problems"].append("No screenshot files.")
+    #         del res["missing_screenshot"]
+    #     else:
+    #         for filename in interval_filenames:
+    #             if _empty_screenshot(join(output_dir, filename + ".png")):
+    #                 logging.info(
+    #                     "%s with %s is missing %s.png", program.name, file.test_id, filename
+    #                 )
+    #                 res["missing_screenshot"] += 1
+    #         if res["missing_screenshot"] >= len(interval_filenames) - 1:
+    #             res["critical"] = True
+    #             res["problems"].append("Too many missing/broken screenshot files.")
 
+    #     if res.get("critical"):
+    #         rerun_tests.append(file.test_id)
 
-def _verify_graphical_programs(
-    program: Program, files: list[File], results: dict, rerun_tests: dict
-):
-    for file in files:
-        output_dir = join(EVALUATION_DIR, program.id, "snapshots", file.test_id)
-        try:
-            with open(join(output_dir, "snapshot_intervals.txt"), "r", encoding="utf-8") as infile:
-                snapshot_intervals = [int(ival) for ival in infile.read().split(",")]
-        except OSError:
-            logging.warning(
-                "%s with %s has not snapshot_interval.txt file. Aborting.",
-                program.id,
-                file.test_id,
-            )
-            rerun_tests.append(file.test_id)
-            continue
+    #     # check server log
+    #     serverlog_file_path = join(output_dir, "local-server.log")
+    #     res["has_server_log"] = not _empty_file(serverlog_file_path)
+    #     res["server_log_interesting"] = not _trivial_server_log(serverlog_file_path)
 
-        if isfile(join(output_dir, "error-info.txt")):
-            with open(join(output_dir, "error-info.txt"), "r", encoding="utf-8") as err_file:
-                results[program.id][file.test_id] = {
-                    "critical": True,
-                    "problems": [err_file.read()],
-                }
-                rerun_tests.append(file.test_id)
-                continue
+    #     # remove superfluous information (not there == falsy)
+    #     for key, value in copy(res).items():
+    #         if not value:
+    #             del res[key]
 
-        res = {
-            "missing_process_info": 0,
-            "missing_screenshot": 0,
-            "problems": [],
-        }
-
-        interval_filenames = [
-            f"{number+1:02}_{timeinterval}s-after-start"
-            for number, timeinterval in enumerate(snapshot_intervals)
-        ]
-
-        # check generated JSON process information
-        if len(glob(join(output_dir, "*.json"))) == 0:
-            res["critical"] = True
-            res["problems"].append("No process information files.")
-            del res["missing_process_info"]
-        else:
-            for filename in ["00_at-init"] + interval_filenames:
-                if _empty_json(join(output_dir, filename + ".json")):
-                    logging.info(
-                        "%s with %s is missing %s.json", program.name, file.test_id, filename
-                    )
-                    res["missing_process_info"] += 1
-            if res["missing_process_info"] >= len(["00_at-init"] + interval_filenames) - 1:
-                res["critical"] = True
-                res["problems"].append("Too many missing process information files.")
-
-        # check generated screenshots
-        if len(glob(join(output_dir, "*.png"))) == 0:
-            res["critical"] = True
-            res["problems"].append("No screenshot files.")
-            del res["missing_screenshot"]
-        else:
-            for filename in interval_filenames:
-                if _empty_screenshot(join(output_dir, filename + ".png")):
-                    logging.info(
-                        "%s with %s is missing %s.png", program.name, file.test_id, filename
-                    )
-                    res["missing_screenshot"] += 1
-            if res["missing_screenshot"] >= len(interval_filenames) - 1:
-                res["critical"] = True
-                res["problems"].append("Too many missing/broken screenshot files.")
-
-        if res.get("critical"):
-            rerun_tests.append(file.test_id)
-
-        # check server log
-        serverlog_file_path = join(output_dir, "local-server.log")
-        res["has_server_log"] = not _empty_file(serverlog_file_path)
-        res["server_log_interesting"] = not _trivial_server_log(serverlog_file_path)
-
-        # remove superfluous information (not there == falsy)
-        for key, value in copy(res).items():
-            if not value:
-                del res[key]
-
-        # set result to actual object
-        results[program.id][file.test_id] = res
+    #     # set result to actual object
+    #     results[program.id][file.test_id] = res
 
 
 def verify_results(
-    programs: list[Program], files: list[File]
+    programs: list[type[Program]], files: list[File]
 ) -> dict[str, dict[str, dict[str, Any]]]:
     """Ensures that all tests run successfully, if not return arguments to re-run them."""
 
@@ -200,14 +168,12 @@ def verify_results(
     rerun_flags = []
     all_test_ids = get_all_tests().keys()
 
-    for program in programs:
-        results[program.id] = {}  # remember tests for this program to redo
+    for program_cls in programs:
+        program = program_cls()
+        results[program.name] = {}  # remember tests for this program to redo
         rerun_tests = []
 
-        if program.id == "lib3mf":
-            _verify_lib3mf(program, files, results, rerun_tests)
-        else:
-            _verify_graphical_programs(program, files, results, rerun_tests)
+        _verify_programs(program, files, results, rerun_tests)
 
         if rerun_tests:
 
@@ -258,7 +224,7 @@ def verify_results(
                 ]
 
             rerun_flags.append(
-                f"-p \"{program.id}\" -t \"{','.join(_reduce_to_globs(rerun_tests))}\""
+                f"-p \"{program.name}\" -t \"{','.join(_reduce_to_globs(rerun_tests))}\""
             )
 
     if rerun_flags:

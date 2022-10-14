@@ -79,4 +79,4 @@ def run_tests(parsed_arguments: dict[str, str]) -> None:
             _run_program(program, files, run_flag, clear_flag)
 
     verification_results = verify_results(programs, files)
-    modify_all_eval_info(verification_results, None, programs)
+    modify_all_eval_info(verification_results)

@@ -7,7 +7,7 @@ from ..utils import parse_programs, parse_tests
 from .programs.base import Program
 
 
-def sanitize_args(args: dict) -> tuple[list[int], list[Program], list[File]]:
+def sanitize_args(args: dict) -> tuple[list[int], list[type[Program]], list[File]]:
     """Verifies the parsed arguments and converts glob and
     "all" statements to actual tests/programs."""
 
