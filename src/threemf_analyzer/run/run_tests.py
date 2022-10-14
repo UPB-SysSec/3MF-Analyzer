@@ -1,3 +1,4 @@
+import json
 import logging
 import shutil
 import sys
@@ -29,6 +30,8 @@ def switch_server_logfile(program: Program, file: File, output_dir: str) -> None
         requests.get(LOCAL_SERVER + "/" + log_init_msg, timeout=5)
     except requests.RequestException:
         logging.warning("Logging server seems unresponsive")
+    else:
+        return logfile_path
 
 
 def _run_program(
@@ -40,23 +43,33 @@ def _run_program(
     program_dir = join(EVALUATION_DIR, program_cls().name)
 
     for file in files:
-        try:
-            output_dir = join(program_dir, "snapshots", file.test_id)
-            if clear_flag and isdir(output_dir):
-                logging.debug("Removing directory: %s", output_dir)
-                shutil.rmtree(output_dir)
-            if run_flag:
+        output_dir = join(program_dir, "snapshots", file.test_id)
+        if clear_flag and isdir(output_dir):
+            logging.debug("Removing directory: %s", output_dir)
+            shutil.rmtree(output_dir)
+
+        if run_flag:
+            test_run_data = {}
+
+            try:
                 Path(output_dir).mkdir(parents=True, exist_ok=True)
                 program: Program = program_cls()
-                switch_server_logfile(program, file, output_dir)
+                server_logfile_path = switch_server_logfile(program, file, output_dir)
+                if server_logfile_path:
+                    test_run_data["server_logfile_path"] = server_logfile_path
 
                 logging.info("Testing %s with %s (%s)", program.name, file.stem, file.name)
-                for state, timestamp in program.test(file=file, output_dir=output_dir):
-                    logging.info("======= %s %s", state, timestamp)
+                test_run_data["states"] = {}
+                for state, data in program.test(file=file, output_dir=output_dir):
+                    logging.info("======= %s %s", state, data["timestamp"])
+                    test_run_data["states"][state] = data
 
-        except Exception as err:  # pylint:disable = broad-except
-            logging.error("Error while testing %s with %s: %s", program.name, file.name, err)
-            traceback.print_tb(err.__traceback__)
+            except Exception as err:  # pylint:disable = broad-except
+                logging.error("Error while testing %s with %s: %s", program.name, file.name, err)
+                traceback.print_tb(err.__traceback__)
+
+            with open(join(output_dir, "test_run_data.json"), "w", encoding="utf-8") as out_file:
+                json.dump(test_run_data, out_file)
 
     if run_flag:
         program_cls().force_stop_all()

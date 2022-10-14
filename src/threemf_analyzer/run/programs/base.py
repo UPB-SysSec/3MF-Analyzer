@@ -125,9 +125,10 @@ class Program(ABC):
             take_screenshot = False
             take_snapshot = False
 
-        current_time = time()
+        data = {"timestamp": time()}
 
         if take_screenshot:
+            data["screenshot"] = True
             try:
                 screenshots = list(
                     self.screenshot(
@@ -144,13 +145,16 @@ class Program(ABC):
                 logging.error(
                     "Tried to take screenshot for timestamp '%s', but failed with '%s'", name, err
                 )
+                data["screenshot_error"] = str(err)
 
         if take_snapshot:
+            data["snapshot"] = True
             try:
                 self.snapshot(str(Path(output_directory, f"snapshot_{name.replace(' ','_')}")))
             except ActionUnsuccessful as err:
                 logging.error(
                     "Tried to take snapshot for timestamp '%s', but failed with '%s'", name, err
                 )
+                data["snapshot_error"] = str(err)
 
-        return (name, current_time)
+        return (name, data)
