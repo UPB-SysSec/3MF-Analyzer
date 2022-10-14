@@ -28,7 +28,7 @@ if sys.platform == "win32":
     import win32gui
 
     # load easyocr reader (done only on windows because it is so slow and we only need it there)
-    ocr_reader = easyocr.Reader(["en"])
+    OCR_READER = easyocr.Reader(["en"])
 
     try:
         _driver = RemoteDriver(
@@ -204,6 +204,13 @@ class WinAppDriverProgram(Program):
                     )
         return result
 
+    def _text_on_screen(self, text: str):
+        """Uses OCR to detect text on screen.
+        Requires Capabilities.DETECT_CHANGE_OCR and an ocr_bounding_box function."""
+        raise NotImplementedError(
+            "Use Capabilities.DETECT_CHANGE_OCR to enable OCR text detection."
+        )
+
     def _pre_start_program(self):
         """Function that is called before _start_program"""
 
@@ -231,7 +238,7 @@ class WinAppDriverProgram(Program):
         )
 
     def _post_wait_program_load(self):
-        """Function that is called after _waitprograml_load"""
+        """Function that is called after _wait_program_load"""
 
     def _pre_load_model(self):
         """Function that is called before _load_model"""
@@ -471,7 +478,7 @@ class AutomatedProgram(ABCMeta):
                     img = img.crop(self.ocr_bounding_box(*img.getbbox()))
                     img.save(self.current_screenshot_path)
                     detected_text = " ".join(
-                        ocr_reader.readtext(self.current_screenshot_path, detail=0)
+                        OCR_READER.readtext(self.current_screenshot_path, detail=0)
                     )
                     logging.debug("target text is: '%s'", text)
                     logging.debug("detected text is: '%s'", detected_text)
