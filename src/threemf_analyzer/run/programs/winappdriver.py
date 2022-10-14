@@ -31,12 +31,16 @@ if sys.platform == "win32":
     ocr_reader = easyocr.Reader(["en"])
 
     try:
-        test_driver = RemoteDriver(
+        _driver = RemoteDriver(
             command_executor="http://127.0.0.1:4723",
             desired_capabilities={"app": "Root"},
         )
-    except WebDriverException as err:
-        raise ImportError("WinAppDriver is not able to connect. It needs to be running!") from err
+        if _driver:
+            _driver.quit()
+    except WebDriverException as _err:
+        raise ImportError("WinAppDriver is not able to connect. It needs to be running!") from _err
+    del _driver
+    del _err
 
 
 class WinAppDriverProgram(Program):
