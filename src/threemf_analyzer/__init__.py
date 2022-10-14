@@ -1,6 +1,7 @@
 """Exposes all relevant functions to the outside and provides paths for the package."""
 
 import logging
+import sys
 from glob import glob
 from os.path import abspath, dirname, join
 from pathlib import Path
@@ -8,8 +9,9 @@ from pathlib import Path
 from ruamel.yaml import YAML
 
 logging.basicConfig(
-    level=logging.INFO,
+    level=logging.DEBUG,
     format="%(asctime)s %(levelname)8s | %(name)s: %(message)s",
+    handlers=[logging.FileHandler(".log", "w"), logging.StreamHandler(sys.stdout)],
 )
 
 yaml = YAML()
