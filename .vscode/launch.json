@@ -17,7 +17,7 @@
             "name": "Create Tests",
             "type": "python",
             "request": "launch",
-            "module": "3mf-analyzer",
+            "module": "threemf_analyzer",
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}/src",
             "args": [
@@ -30,7 +30,7 @@
             "name": "Build Tests",
             "type": "python",
             "request": "launch",
-            "module": "3mf-analyzer",
+            "module": "threemf_analyzer",
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}/src",
             "args": [
@@ -41,25 +41,22 @@
             "name": "Run Tests",
             "type": "python",
             "request": "launch",
-            "module": "3mf-analyzer",
+            "module": "threemf_analyzer",
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}/src",
             "args": [
                 "run",
-                "-s",
-                "5",
-                "-t",
-                "XML-*,DOS-*,R-PYR-0,R-PYR-1",
                 "-p",
-                "flashprint",
-                "--data-update-only",
+                "chitubox,cura,flashprint,fusion,ideamaker,lib3mf",
+                // "meshmagic,meshmixer,office,paint3d,prusa,repetier",
+                // "simplify,slic3r,superslicer,3dbuilder,3dviewer,zsuite",
             ]
         },
         {
             "name": "Gather Data",
             "type": "python",
             "request": "launch",
-            "module": "3mf-analyzer",
+            "module": "threemf_analyzer",
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}/src",
             "args": [
@@ -70,7 +67,7 @@
             "name": "Start Server",
             "type": "python",
             "request": "launch",
-            "module": "3mf-analyzer",
+            "module": "threemf_analyzer",
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}/src",
             "args": [
@@ -81,7 +78,7 @@
             "name": "Evaluate Data",
             "type": "python",
             "request": "launch",
-            "module": "3mf-analyzer",
+            "module": "threemf_analyzer",
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}/src",
             "args": [
