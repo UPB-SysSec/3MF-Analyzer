@@ -27,6 +27,9 @@ class Program(ABC):
         self.snapshot_timeout = snapshot_timeout
         self._output_directory = None
 
+    def __str__(self) -> str:
+        return self.__repr__()
+
     def __repr__(self) -> str:
         return f"{type(self)}({self.name})"
 

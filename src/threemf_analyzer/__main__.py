@@ -54,6 +54,7 @@ def main():
     # parse command's arguments and call appropriate functions
     _command = command_mapping.get(command)
     if _command is not None:
+        logging.info("Running command '%s'", command)
         _main, _parser = _command
         parser: argparse.ArgumentParser = _parser()
         parser.prog = f"3mf-analyzer {command}"
@@ -64,7 +65,7 @@ def main():
         else:
             _main()
     else:
-        print(f"No such {command=}")
+        logging.error("No such command '%s'", command)
 
 
 if __name__ == "__main__":

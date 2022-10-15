@@ -61,15 +61,16 @@ def _run_program(
                 logging.info("Testing %s with %s (%s)", program.name, file.stem, file.name)
                 test_run_data["states"] = {}
                 for state, data in program.test(file=file, output_dir=output_dir):
-                    logging.info("======= %s %s", state, data["timestamp"])
+                    logging.info("Recorded state %s (at %s)", state, data["timestamp"])
                     test_run_data["states"][state] = data
 
             except Exception as err:  # pylint:disable = broad-except
                 logging.error("Error while testing %s with %s: %s", program.name, file.name, err)
                 traceback.print_tb(err.__traceback__)
+                test_run_data["unhandled_exception"] = list(err.args)
 
             with open(join(output_dir, "test_run_data.json"), "w", encoding="utf-8") as out_file:
-                json.dump(test_run_data, out_file)
+                json.dump(test_run_data, out_file, indent=4)
 
     if run_flag:
         program_cls().force_stop_all()

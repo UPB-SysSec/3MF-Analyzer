@@ -66,7 +66,7 @@ class Capabilities(Enum):
     START_PROGRAM_LEGACY = "START_PROGRAM_LEGACY"
 
 
-class State(Enum):
+class State:
     """State of the program. Used for timestamps."""
 
     PROGRAM_NOT_STARTED = "00 program-not-started"

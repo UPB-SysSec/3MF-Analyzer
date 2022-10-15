@@ -20,9 +20,10 @@ from stl import mesh
 
 from ... import LIB3MF_DIR
 from ...dataclasses import File
-from .base import AutomatedProgram, Program, WinAppDriverProgram
+from .base import Program
 from .utilclasses import ActionUnsuccessful, Be, By, Capabilities, Context, ExpectElement, State
 from .utils import _run_ps_command, _try_action_until_timeout, sleep
+from .winappdriver import AutomatedProgram, WinAppDriverProgram
 
 sys.path.append(join(LIB3MF_DIR, "Bindings", "Python"))
 

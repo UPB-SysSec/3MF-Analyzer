@@ -264,7 +264,7 @@ def parse_tests(test_ids: str) -> list[File]:
                 if f"{_test_id}.3mf" == name:
                     filename, filepath = name, path
                     break
-        logging.debug("Use file %s for test case %s", filename, _test_id)
+        logging.debug("Use file %s for test case %s", filepath, _test_id)
 
         if _test_id in all_tests:
             if filename and filepath:

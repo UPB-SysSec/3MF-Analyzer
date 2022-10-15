@@ -2,23 +2,29 @@
 
 import logging
 import sys
+from datetime import datetime
 from glob import glob
 from os.path import abspath, dirname, join
 from pathlib import Path
 
 from ruamel.yaml import YAML
 
-logging.basicConfig(
-    level=logging.DEBUG,
-    format="%(asctime)s %(levelname)8s | %(name)s: %(message)s",
-    handlers=[logging.FileHandler(".log", "w"), logging.StreamHandler(sys.stdout)],
-)
-
 yaml = YAML()
 yaml.preserve_quotes = True
 
 # root directory of this repository
 ROOT_DIR = abspath(join(dirname(__file__), "..", ".."))
+
+# setup logging
+LOG_DIR = join(ROOT_DIR, ".logs")
+Path(LOG_DIR).mkdir(parents=True, exist_ok=True)
+fh = logging.FileHandler(join(LOG_DIR, f"{datetime.now().strftime('%Y%m%dT%H%M%S')}.log"), mode="w")
+fh.setLevel(logging.DEBUG)
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s %(levelname)8s | %(name)s: %(message)s",
+    handlers=[fh, logging.StreamHandler(sys.stdout)],
+)
 
 # directories in the src folder
 SFTA_DIR = join(ROOT_DIR, "src", "PS-SFTA")

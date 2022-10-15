@@ -40,7 +40,6 @@ if sys.platform == "win32":
     except WebDriverException as _err:
         raise ImportError("WinAppDriver is not able to connect. It needs to be running!") from _err
     del _driver
-    del _err
 
 
 class WinAppDriverProgram(Program):
@@ -385,9 +384,6 @@ class WinAppDriverProgram(Program):
         )
         return finished_proc.stdout
 
-    def __del__(self):
-        self.root.close()
-
 
 class AutomatedProgram(ABCMeta):
     """Metaclass (i.e. 'class factory') that creates an automated program class
@@ -438,7 +434,9 @@ class AutomatedProgram(ABCMeta):
         ):
 
             attributes["tempdir"] = tempfile.mkdtemp()
-            logging.debug("Using temporary directory %s for screenshots", attributes["tempdir"])
+            logging.debug(
+                "Use '%s' for temporary screenshots of '%s'", attributes["tempdir"], clsname
+            )
             atexit.register(lambda: shutil.rmtree(attributes["tempdir"], ignore_errors=True))
             attributes["last_screenshot_path"] = str(
                 Path(attributes["tempdir"], "last.png").resolve()
