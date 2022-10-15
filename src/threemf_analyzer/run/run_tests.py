@@ -67,7 +67,7 @@ def _run_program(
             except Exception as err:  # pylint:disable = broad-except
                 logging.error("Error while testing %s with %s: %s", program.name, file.name, err)
                 traceback.print_tb(err.__traceback__)
-                test_run_data["unhandled_exception"] = list(err.args)
+                test_run_data["unhandled_exception"] = [str(type(err)), *err.args]
 
             with open(join(output_dir, "test_run_data.json"), "w", encoding="utf-8") as out_file:
                 json.dump(test_run_data, out_file, indent=4)

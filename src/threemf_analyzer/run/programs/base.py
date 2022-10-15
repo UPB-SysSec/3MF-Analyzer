@@ -120,6 +120,7 @@ class Program(ABC):
         only_timestamp: bool = False,
         take_screenshot: bool = True,
         take_snapshot: bool = True,
+        capture_exception: Exception = None,
     ) -> tuple[str, float]:
         """Takes a screenshot and snapshot,
         returns the data with the time it was taken and the given name."""
@@ -148,7 +149,7 @@ class Program(ABC):
                 logging.error(
                     "Tried to take screenshot for timestamp '%s', but failed with '%s'", name, err
                 )
-                data["screenshot_error"] = str(err)
+                data["screenshot_error"] = [str(type(err)), *err.args]
 
         if take_snapshot:
             data["snapshot"] = True
@@ -158,6 +159,9 @@ class Program(ABC):
                 logging.error(
                     "Tried to take snapshot for timestamp '%s', but failed with '%s'", name, err
                 )
-                data["snapshot_error"] = str(err)
+                data["snapshot_error"] = [str(type(err)), *err.args]
+
+        if capture_exception:
+            data["related_exception"] = [str(type(capture_exception)), *capture_exception.args]
 
         return (name, data)

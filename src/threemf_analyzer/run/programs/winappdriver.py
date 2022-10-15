@@ -323,11 +323,15 @@ class WinAppDriverProgram(Program):
             self._post_wait_program_load()
         except (ActionUnsuccessful, WebDriverException) as err:
             logging.error("program not loaded, because: %s", err)
-            yield self.timestamp(State.PROGRAM_NOT_LOADED, output_dir, only_timestamp=True)
+            yield self.timestamp(
+                State.PROGRAM_NOT_LOADED, output_dir, only_timestamp=True, capture_exception=err
+            )
             return
-        except Exception:  # pylint:disable=broad-except
+        except Exception as err:  # pylint:disable=broad-except
             logging.exception("program not loaded, due to unexpected error")
-            yield self.timestamp(State.PROGRAM_NOT_LOADED, output_dir, only_timestamp=True)
+            yield self.timestamp(
+                State.PROGRAM_NOT_LOADED, output_dir, only_timestamp=True, capture_exception=err
+            )
             return
         else:
             yield self.timestamp(State.PROGRAM_LOADED, output_dir, only_timestamp=True)
@@ -351,11 +355,13 @@ class WinAppDriverProgram(Program):
             self._post_wait_model_load()
         except (ActionUnsuccessful, WebDriverException) as err:
             logging.info("model not loaded, because: %s", err)
-            yield self.timestamp(State.MODEL_NOT_LOADED, output_dir)
+            yield self.timestamp(State.MODEL_NOT_LOADED, output_dir, capture_exception=err)
             self._post_model_load_failure()
-        except Exception:  # pylint:disable=broad-except
+        except Exception as err:  # pylint:disable=broad-except
             logging.exception("model not loaded, due to unexpected error")
-            yield self.timestamp(State.MODEL_NOT_LOADED, output_dir, only_timestamp=True)
+            yield self.timestamp(
+                State.MODEL_NOT_LOADED, output_dir, only_timestamp=True, capture_exception=err
+            )
             self._post_model_load_failure()
         else:
             yield self.timestamp(State.MODEL_LOADED, output_dir)
