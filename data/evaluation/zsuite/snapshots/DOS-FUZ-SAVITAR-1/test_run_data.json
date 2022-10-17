@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\zsuite\\snapshots\\DOS-FUZ-SAVITAR-1\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665955585.8405197
+        },
+        "01 program-started": {
+            "timestamp": 1665955600.6805024
+        },
+        "02 program-loaded": {
+            "timestamp": 1665955602.1463463
+        },
+        "03 program-prepared": {
+            "timestamp": 1665955607.383303,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665955624.8594117
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665955659.9020815,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665955662.088289
+        }
+    }
+}

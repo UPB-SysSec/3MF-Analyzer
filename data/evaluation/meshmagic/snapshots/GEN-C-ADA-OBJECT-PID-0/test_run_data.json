@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\meshmagic\\snapshots\\GEN-C-ADA-OBJECT-PID-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665841400.1496458
+        },
+        "01 program-started": {
+            "timestamp": 1665841400.4967806
+        },
+        "02 program-loaded": {
+            "timestamp": 1665841420.2908237
+        },
+        "03 program-prepared": {
+            "timestamp": 1665841425.4783347,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665841434.708206
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665841466.3359177,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665841485.765779
+        }
+    }
+}

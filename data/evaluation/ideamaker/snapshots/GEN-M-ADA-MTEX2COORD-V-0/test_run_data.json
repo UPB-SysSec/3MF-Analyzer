@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\ideamaker\\snapshots\\GEN-M-ADA-MTEX2COORD-V-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665860867.0346696
+        },
+        "01 program-started": {
+            "timestamp": 1665860876.5555024
+        },
+        "02 program-loaded": {
+            "timestamp": 1665860878.492807
+        },
+        "03 program-prepared": {
+            "timestamp": 1665860883.761376,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665861148.1331506
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665861205.8077762,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665861210.564018
+        }
+    }
+}

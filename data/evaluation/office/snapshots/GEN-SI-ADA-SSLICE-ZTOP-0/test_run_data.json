@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\office\\snapshots\\GEN-SI-ADA-SSLICE-ZTOP-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665889748.5938702
+        },
+        "01 program-started": {
+            "timestamp": 1665889750.066081
+        },
+        "02 program-loaded": {
+            "timestamp": 1665889751.5923066
+        },
+        "03 program-prepared": {
+            "timestamp": 1665889756.8149188,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665889768.8182535
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665889772.1179643,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665889780.350083
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\office\\snapshots\\GEN-C-CR-MODEL-BUILD-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665883534.8327641
+        },
+        "01 program-started": {
+            "timestamp": 1665883536.3525143
+        },
+        "02 program-loaded": {
+            "timestamp": 1665883537.926015
+        },
+        "03 program-prepared": {
+            "timestamp": 1665883543.1638923,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665883554.4869504
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665883557.8050778,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665883565.9916549
+        }
+    }
+}

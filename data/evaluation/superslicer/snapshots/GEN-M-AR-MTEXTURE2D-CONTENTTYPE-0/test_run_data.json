@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\superslicer\\snapshots\\GEN-M-AR-MTEXTURE2D-CONTENTTYPE-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665912355.8527539
+        },
+        "01 program-started": {
+            "timestamp": 1665912359.7788234
+        },
+        "02 program-loaded": {
+            "timestamp": 1665912362.2213376
+        },
+        "03 program-prepared": {
+            "timestamp": 1665912367.4439478,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665912378.0278916
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665912419.227081,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665912420.9696836
+        }
+    }
+}

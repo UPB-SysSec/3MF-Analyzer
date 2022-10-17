@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\prusa\\snapshots\\GEN-M-AR-MPBMETALLIC-ROUGHNESS-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665934986.7275264
+        },
+        "01 program-started": {
+            "timestamp": 1665934990.8405583
+        },
+        "02 program-loaded": {
+            "timestamp": 1665934992.9830496
+        },
+        "03 program-prepared": {
+            "timestamp": 1665934998.2210507,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665935010.1510348
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665935050.3609924,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665935052.1861827
+        }
+    }
+}

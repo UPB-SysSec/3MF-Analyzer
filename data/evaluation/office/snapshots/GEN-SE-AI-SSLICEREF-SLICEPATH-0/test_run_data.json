@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\office\\snapshots\\GEN-SE-AI-SSLICEREF-SLICEPATH-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665889416.2814267
+        },
+        "01 program-started": {
+            "timestamp": 1665889417.7537367
+        },
+        "02 program-loaded": {
+            "timestamp": 1665889419.2473013
+        },
+        "03 program-prepared": {
+            "timestamp": 1665889424.4458413,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665889436.5908842
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665889439.9046578,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665889448.0540063
+        }
+    }
+}

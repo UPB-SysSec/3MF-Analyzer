@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\office\\snapshots\\GEN-SI-AI-SPOLYGON-STARTV-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665890087.3905652
+        },
+        "01 program-started": {
+            "timestamp": 1665890088.8628063
+        },
+        "02 program-loaded": {
+            "timestamp": 1665890090.4063163
+        },
+        "03 program-prepared": {
+            "timestamp": 1665890095.6289399,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665890107.7279582
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665890111.0893102,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665890119.2577944
+        }
+    }
+}

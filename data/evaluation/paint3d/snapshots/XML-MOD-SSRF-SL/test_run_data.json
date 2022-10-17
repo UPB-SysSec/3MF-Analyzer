@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\paint3d\\snapshots\\XML-MOD-SSRF-SL\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665910183.2974284
+        },
+        "01 program-started": {
+            "timestamp": 1665910186.7077644
+        },
+        "02 program-loaded": {
+            "timestamp": 1665910190.5827816
+        },
+        "03 program-prepared": {
+            "timestamp": 1665910195.8362541,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665910209.7954948
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665910211.2669823,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665910213.1281524
+        }
+    }
+}

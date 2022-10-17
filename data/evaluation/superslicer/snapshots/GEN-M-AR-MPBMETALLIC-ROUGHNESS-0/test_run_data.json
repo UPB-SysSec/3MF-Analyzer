@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\superslicer\\snapshots\\GEN-M-AR-MPBMETALLIC-ROUGHNESS-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665912116.3225935
+        },
+        "01 program-started": {
+            "timestamp": 1665912120.185722
+        },
+        "02 program-loaded": {
+            "timestamp": 1665912122.6406724
+        },
+        "03 program-prepared": {
+            "timestamp": 1665912127.878673,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665912138.379357
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665912178.3951383,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665912180.0890331
+        }
+    }
+}

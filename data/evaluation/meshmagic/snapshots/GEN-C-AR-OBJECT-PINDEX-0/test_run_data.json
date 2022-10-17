@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\meshmagic\\snapshots\\GEN-C-AR-OBJECT-PINDEX-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665845704.3058116
+        },
+        "01 program-started": {
+            "timestamp": 1665845704.6535397
+        },
+        "02 program-loaded": {
+            "timestamp": 1665845724.295228
+        },
+        "03 program-prepared": {
+            "timestamp": 1665845729.5022397,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665845739.1908526
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665845770.6382754,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665845790.0724406
+        }
+    }
+}

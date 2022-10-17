@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\ideamaker\\snapshots\\GEN-C-CRA-RESOURCES-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665858559.586774
+        },
+        "01 program-started": {
+            "timestamp": 1665858569.0718517
+        },
+        "02 program-loaded": {
+            "timestamp": 1665858571.0029545
+        },
+        "03 program-prepared": {
+            "timestamp": 1665858576.2653828,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665858587.6982727
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665858620.9985669,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665858622.4556298
+        }
+    }
+}

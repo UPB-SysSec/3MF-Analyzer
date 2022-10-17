@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\superslicer\\snapshots\\GEN-C-CRA-MODEL-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665908935.3518815
+        },
+        "01 program-started": {
+            "timestamp": 1665908939.261417
+        },
+        "02 program-loaded": {
+            "timestamp": 1665908941.7012413
+        },
+        "03 program-prepared": {
+            "timestamp": 1665908946.9080217,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665908956.5643775
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665908989.8689244,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665908991.516312
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\prusa\\snapshots\\GEN-M-AI-MPBMETALLICDISPLAYPROPERTIES-ID-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665933778.22473
+        },
+        "01 program-started": {
+            "timestamp": 1665933782.3377507
+        },
+        "02 program-loaded": {
+            "timestamp": 1665933784.4886882
+        },
+        "03 program-prepared": {
+            "timestamp": 1665933789.7147205,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665933800.4649522
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665933841.6635935,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665933843.3682775
+        }
+    }
+}

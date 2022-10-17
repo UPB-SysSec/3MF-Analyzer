@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\superslicer\\snapshots\\GEN-M-CRA-MPBMETALLICDISPLAYPROPERTIES-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665914190.929248
+        },
+        "01 program-started": {
+            "timestamp": 1665914194.7608128
+        },
+        "02 program-loaded": {
+            "timestamp": 1665914197.1717615
+        },
+        "03 program-prepared": {
+            "timestamp": 1665914202.3937123,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665914213.1516063
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665914253.622881,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665914255.351734
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\prusa\\snapshots\\XML-EGE-IL-R\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665940589.7902305
+        },
+        "01 program-started": {
+            "timestamp": 1665940594.059407
+        },
+        "02 program-loaded": {
+            "timestamp": 1665940596.2324982
+        },
+        "03 program-prepared": {
+            "timestamp": 1665940601.4572244,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665940610.0863566
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665940645.1891859,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665940646.9942133
+        }
+    }
+}

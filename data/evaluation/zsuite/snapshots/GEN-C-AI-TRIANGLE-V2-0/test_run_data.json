@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\zsuite\\snapshots\\GEN-C-AI-TRIANGLE-V2-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665958027.5506456
+        },
+        "01 program-started": {
+            "timestamp": 1665958042.4028337
+        },
+        "02 program-loaded": {
+            "timestamp": 1665958043.8826294
+        },
+        "03 program-prepared": {
+            "timestamp": 1665958049.1116421,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665958067.3385823
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665958098.9743001,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665958101.2149043
+        }
+    }
+}

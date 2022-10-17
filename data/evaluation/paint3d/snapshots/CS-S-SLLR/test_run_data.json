@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\paint3d\\snapshots\\CS-S-SLLR\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665896109.5652902
+        },
+        "01 program-started": {
+            "timestamp": 1665896112.9752266
+        },
+        "02 program-loaded": {
+            "timestamp": 1665896114.8253794
+        },
+        "03 program-prepared": {
+            "timestamp": 1665896120.0475202,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665896135.7817984
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665896170.2737474,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665896172.0908964
+        }
+    }
+}

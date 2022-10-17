@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\prusa\\snapshots\\GEN-M-AR-MTRANSLUCENT-REFRACTIVEINDEX-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665935711.1308787
+        },
+        "01 program-started": {
+            "timestamp": 1665935715.2910783
+        },
+        "02 program-loaded": {
+            "timestamp": 1665935717.473826
+        },
+        "03 program-prepared": {
+            "timestamp": 1665935722.6964297,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665935733.6019542
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665935773.5312233,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665935775.3564253
+        }
+    }
+}

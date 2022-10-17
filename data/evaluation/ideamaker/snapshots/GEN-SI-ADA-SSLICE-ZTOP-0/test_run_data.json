@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\ideamaker\\snapshots\\GEN-SI-ADA-SSLICE-ZTOP-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665874899.5219264
+        },
+        "01 program-started": {
+            "timestamp": 1665874908.9897118
+        },
+        "02 program-loaded": {
+            "timestamp": 1665874910.893013
+        },
+        "03 program-prepared": {
+            "timestamp": 1665874916.17204,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665874928.358357
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665874959.4322205,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665874960.9065013
+        }
+    }
+}
