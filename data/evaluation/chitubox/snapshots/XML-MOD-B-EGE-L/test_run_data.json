@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\chitubox\\snapshots\\XML-MOD-B-EGE-L\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665858456.1111236
+        },
+        "01 program-started": {
+            "timestamp": 1665858475.9215024
+        },
+        "02 program-loaded": {
+            "timestamp": 1665858479.421611
+        },
+        "03 program-prepared": {
+            "timestamp": 1665858484.6538215,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665858498.185739
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665858500.5272,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665858502.0367355
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\flashprint\\snapshots\\CS-P-NEBS\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665883751.4235408
+        },
+        "01 program-started": {
+            "timestamp": 1665883754.411427
+        },
+        "02 program-loaded": {
+            "timestamp": 1665883755.9060683
+        },
+        "03 program-prepared": {
+            "timestamp": 1665883761.1438015,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665883771.0862126
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665883775.1933143,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665883783.420957
+        }
+    }
+}

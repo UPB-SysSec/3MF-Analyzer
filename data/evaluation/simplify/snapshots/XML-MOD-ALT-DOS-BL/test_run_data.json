@@ -1,0 +1,38 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\simplify\\snapshots\\XML-MOD-ALT-DOS-BL\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665940277.0986402
+        },
+        "01 program-started": {
+            "timestamp": 1665940280.1646395
+        },
+        "02 program-loaded": {
+            "timestamp": 1665940282.051779
+        },
+        "03 program-prepared": {
+            "timestamp": 1665940287.258299,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665940296.2782404
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665940334.7796578,
+            "screenshot": true,
+            "snapshot": true,
+            "snapshot_error": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'take snapshot' because it timed out"
+            ],
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665940345.2904007
+        }
+    }
+}

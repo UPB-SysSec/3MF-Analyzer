@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\chitubox\\snapshots\\GEN-SI-ADA-SSEGMENT-V2-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665854301.9071205
+        },
+        "01 program-started": {
+            "timestamp": 1665854321.6401148
+        },
+        "02 program-loaded": {
+            "timestamp": 1665854325.1194484
+        },
+        "03 program-prepared": {
+            "timestamp": 1665854330.348447,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665854344.8750324
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665854347.24484,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665854348.704192
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\chitubox\\snapshots\\DOS-FUZ-LIB3MF\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665840739.2203047
+        },
+        "01 program-started": {
+            "timestamp": 1665840759.0147462
+        },
+        "02 program-loaded": {
+            "timestamp": 1665840762.5007393
+        },
+        "03 program-prepared": {
+            "timestamp": 1665840767.7304802,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665840785.2656572,
+            "screenshot": true,
+            "snapshot": true,
+            "snapshot_error": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'take snapshot' because it timed out"
+            ],
+            "related_exception": [
+                "<class 'selenium.common.exceptions.WebDriverException'>",
+                "An unknown error occurred in the remote end while processing the command.",
+                null,
+                null
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665840795.6323879
+        }
+    }
+}

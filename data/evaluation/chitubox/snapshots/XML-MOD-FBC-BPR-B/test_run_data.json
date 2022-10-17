@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\chitubox\\snapshots\\XML-MOD-FBC-BPR-B\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665859238.2658281
+        },
+        "01 program-started": {
+            "timestamp": 1665859258.080013
+        },
+        "02 program-loaded": {
+            "timestamp": 1665859261.549675
+        },
+        "03 program-prepared": {
+            "timestamp": 1665859266.7766955,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665859283.330099
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665859285.8026686,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665859287.3279243
+        }
+    }
+}

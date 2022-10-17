@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\flashprint\\snapshots\\DOS-FUZ-LIB3MF\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665884002.3866205
+        },
+        "01 program-started": {
+            "timestamp": 1665884005.42187
+        },
+        "02 program-loaded": {
+            "timestamp": 1665884006.9096296
+        },
+        "03 program-prepared": {
+            "timestamp": 1665884012.1162522,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665884020.0109837
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665884024.0735133,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665884032.2695322
+        }
+    }
+}

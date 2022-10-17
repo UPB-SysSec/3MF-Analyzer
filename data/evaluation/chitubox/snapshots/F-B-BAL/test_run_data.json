@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\chitubox\\snapshots\\F-B-BAL\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665841085.1263433
+        },
+        "01 program-started": {
+            "timestamp": 1665841104.8973825
+        },
+        "02 program-loaded": {
+            "timestamp": 1665841108.3862643
+        },
+        "03 program-prepared": {
+            "timestamp": 1665841113.6127832,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665841127.0912828
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665841158.5594296,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665841160.0043707
+        }
+    }
+}

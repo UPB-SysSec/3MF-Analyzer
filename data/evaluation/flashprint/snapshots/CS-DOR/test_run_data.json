@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\flashprint\\snapshots\\CS-DOR\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665883669.1178272
+        },
+        "01 program-started": {
+            "timestamp": 1665883672.2151775
+        },
+        "02 program-loaded": {
+            "timestamp": 1665883673.6961195
+        },
+        "03 program-prepared": {
+            "timestamp": 1665883678.9341016,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665883688.1258001
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665883692.2213671,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665883700.3858707
+        }
+    }
+}

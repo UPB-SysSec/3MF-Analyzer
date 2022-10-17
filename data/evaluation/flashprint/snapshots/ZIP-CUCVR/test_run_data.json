@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\flashprint\\snapshots\\ZIP-CUCVR\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665898978.3331864
+        },
+        "01 program-started": {
+            "timestamp": 1665898981.352626
+        },
+        "02 program-loaded": {
+            "timestamp": 1665898982.863175
+        },
+        "03 program-prepared": {
+            "timestamp": 1665898988.0695226,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665898998.6517534
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665899002.770223,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665899010.953768
+        }
+    }
+}

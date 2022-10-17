@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\flashprint\\snapshots\\F-B-BAL\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665884241.111856
+        },
+        "01 program-started": {
+            "timestamp": 1665884244.1308649
+        },
+        "02 program-loaded": {
+            "timestamp": 1665884245.6186533
+        },
+        "03 program-prepared": {
+            "timestamp": 1665884250.8421664,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665884259.3514163
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665884295.4352977,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665884303.6527376
+        }
+    }
+}

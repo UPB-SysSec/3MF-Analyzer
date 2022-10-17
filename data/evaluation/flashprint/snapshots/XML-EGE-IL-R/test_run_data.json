@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\flashprint\\snapshots\\XML-EGE-IL-R\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665896260.6843255
+        },
+        "01 program-started": {
+            "timestamp": 1665896263.6409345
+        },
+        "02 program-loaded": {
+            "timestamp": 1665896265.1392925
+        },
+        "03 program-prepared": {
+            "timestamp": 1665896270.3457484,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665896278.2928672
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665896282.4114099,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665896290.5719995
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\flashprint\\snapshots\\XML-MOD-FBC-AV\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665897259.53459
+        },
+        "01 program-started": {
+            "timestamp": 1665897262.5536873
+        },
+        "02 program-loaded": {
+            "timestamp": 1665897264.0211885
+        },
+        "03 program-prepared": {
+            "timestamp": 1665897269.2435215,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665897277.4316382
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665897281.49415,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665897289.7052615
+        }
+    }
+}

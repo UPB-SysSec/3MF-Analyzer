@@ -1,0 +1,38 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\cura\\snapshots\\GEN-M-CDA-MCOLORGROUP-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665873260.1582131
+        },
+        "01 program-started": {
+            "timestamp": 1665873265.3490968
+        },
+        "02 program-loaded": {
+            "timestamp": 1665873281.1978495
+        },
+        "03 program-prepared": {
+            "timestamp": 1665873286.4045918,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665873297.0494177
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665873329.1994321,
+            "screenshot": true,
+            "snapshot": true,
+            "snapshot_error": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'take snapshot' because it timed out"
+            ],
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665873339.968997
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\flashprint\\snapshots\\DOS-FUZ-SAVITAR-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665884041.9314704
+        },
+        "01 program-started": {
+            "timestamp": 1665884044.966469
+        },
+        "02 program-loaded": {
+            "timestamp": 1665884046.4472945
+        },
+        "03 program-prepared": {
+            "timestamp": 1665884051.7661777,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665884060.2860613
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665884064.3854878,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665884072.5502162
+        }
+    }
+}

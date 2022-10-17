@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\flashprint\\snapshots\\XML-MOD-SSRF-SL\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665897698.4421864
+        },
+        "01 program-started": {
+            "timestamp": 1665897701.5420864
+        },
+        "02 program-loaded": {
+            "timestamp": 1665897703.034385
+        },
+        "03 program-prepared": {
+            "timestamp": 1665897708.2442238,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665897716.482795
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665897720.5883408,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665897728.769707
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\flashprint\\snapshots\\GEN-SI-ADA-SSEGMENT-V2-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665893806.7460926
+        },
+        "01 program-started": {
+            "timestamp": 1665893809.7184436
+        },
+        "02 program-loaded": {
+            "timestamp": 1665893811.193331
+        },
+        "03 program-prepared": {
+            "timestamp": 1665893816.399808,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665893825.770204
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665893829.872429,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665893838.056929
+        }
+    }
+}
