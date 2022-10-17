@@ -1,8 +1,11 @@
 """Small classes that hold information."""
-
+from abc import abstractmethod
 from dataclasses import dataclass, field
 from enum import Enum
+from typing import Any
 
+from appium.webdriver import Remote as RemoteDriver
+from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.by import By as _By
 
 
@@ -78,3 +81,48 @@ class State:
     MODEL_NOT_LOADED = "05 model-not-loaded"
     MODEL_LOADED = "05 model-loaded"
     PROGRAM_STOPPED = "06 program-stopped"
+
+
+@dataclass
+class Action:
+    """An action to be executed later."""
+
+    value: Any
+
+    @abstractmethod
+    def execute(self, driver: RemoteDriver):
+        """Executes the action using the given driver.
+        Might utilize the value."""
+
+
+class Click(Action):
+    """value is the ExpectElement to click on, can be None"""
+
+    def execute(self, driver: RemoteDriver):
+        self.value: ExpectElement
+        try:
+            driver.find_element(self.value.by, self.value.value).click()
+        except Exception as err:
+            raise ActionUnsuccessful(f"Cannot click on {self.value}") from err
+
+
+class PressKeys(Action):
+    """value is the keys string to press"""
+
+    def execute(self, driver: RemoteDriver):
+        self.value: str
+        try:
+            ActionChains(driver).send_keys(self.value).perform()
+        except Exception as err:
+            raise ActionUnsuccessful(f"Cannot click on {self.value}") from err
+
+
+class ChangeType:
+    """Defines state names that can be detected using ExpectElements."""
+
+    PROGRAM_LOADED = "program loaded"
+    MODEL_LOADED = "file loaded"
+    MODEL_LOADING = "file loading"
+    INTERACTIVE_ELEMENT_APPEARED = "question asked"
+    ERROR_DETECTED = "error"
+    DETECT_ROOT_WINDOW_only_legacy_start_mode = "program starting"

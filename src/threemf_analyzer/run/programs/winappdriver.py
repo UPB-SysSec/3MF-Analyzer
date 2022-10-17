@@ -21,7 +21,16 @@ from selenium.webdriver.remote.webelement import WebElement
 from ...dataclasses import DiskFile, File
 from ...evaluate.screenshots import _compare_images, _convert_image_to_ndarray
 from .base import Program
-from .utilclasses import ActionUnsuccessful, Be, By, Capabilities, Context, ExpectElement, State
+from .utilclasses import (
+    Action,
+    ActionUnsuccessful,
+    Be,
+    By,
+    Capabilities,
+    Context,
+    ExpectElement,
+    State,
+)
 from .utils import _run_ps_command, _stop_process, _try_action_until_timeout
 
 if sys.platform == "win32":
@@ -179,6 +188,36 @@ class WinAppDriverProgram(Program):
             catch=(WebDriverException,),
             rate=1,
         )
+
+    def _do_while_element_exists(
+        self, action_name: str, action: Action, element: ExpectElement = None
+    ):
+        """Executes an action as long as an element exists.
+        Can be used to get rid of conditional elements.
+        The action should remove the element.
+
+        If no element is given the action is execution as long as it is successful
+        (i.e. the element targeted by the action is still there)."""
+
+        def __callback():
+            try:
+                if element:
+                    # try to find the element
+                    self._find_elements({"element to be removed": [element]})
+                # try to remove the element using the action.
+                # As soon as no error is raised from the action
+                # the element is no longer there and we can abort (i.e. not raise an error).
+                action.execute(self.driver)
+            except (WebDriverException, ActionUnsuccessful):
+                # if an exception was raise the element is not available (our goal)
+                # and we can return (no error raised) which aborts the loop
+                return
+
+            # As long as calling action works the element is still there
+            # and we have to try again. Raising an error continues the loop
+            raise ActionUnsuccessful()
+
+        _try_action_until_timeout(action_name, __callback, 60, (ActionUnsuccessful,), 1)
 
     def _transform_status_names(self, keys: list[str], format_values: dict[str, str] = None):
         """Creates a new dict with only the given keys, if they are in the original.

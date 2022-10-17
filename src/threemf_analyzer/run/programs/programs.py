@@ -21,7 +21,17 @@ from stl import mesh
 from ... import LIB3MF_DIR
 from ...dataclasses import File
 from .base import Program
-from .utilclasses import ActionUnsuccessful, Be, By, Capabilities, Context, ExpectElement, State
+from .utilclasses import (
+    ActionUnsuccessful,
+    Be,
+    By,
+    Capabilities,
+    Click,
+    Context,
+    ExpectElement,
+    PressKeys,
+    State,
+)
 from .utils import _run_ps_command, _try_action_until_timeout, sleep
 from .winappdriver import AutomatedProgram, WinAppDriverProgram
 
@@ -391,6 +401,16 @@ class IdeaMaker(
     def _start_program(self):
         sleep(3)
         super()._start_program()
+
+    def _post_load_model(self):
+        self._do_while_element_exists(
+            "answer question",
+            Click(ExpectElement(By.NAME, "No")),
+            element=ExpectElement(
+                By.NAME,
+                "Model's size exceeds the printer's maximum build volume, apply auto-scale?",
+            ),
+        )
 
 
 class Lib3mf(Program):
@@ -885,7 +905,7 @@ class Zsuite(
 
     def _pre_load_model(self):
         sleep(2)
-        self.driver.find_element(By.NAME, "LPD").click()
+        self._do_while_element_exists("click LDP", Click(ExpectElement(By.NAME, "LPD")))
         self._wait_for_change(
             {
                 "file load ready": [
