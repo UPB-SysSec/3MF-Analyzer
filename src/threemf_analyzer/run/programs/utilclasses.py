@@ -2,7 +2,7 @@
 from abc import abstractmethod
 from dataclasses import dataclass, field
 from enum import Enum
-from typing import Any
+from typing import Any, Callable
 
 from appium.webdriver import Remote as RemoteDriver
 from selenium.webdriver.common.action_chains import ActionChains
@@ -58,6 +58,9 @@ class ExpectElement:
     expect: Be = Be.AVAILABLE
     parents: list["ExpectElement"] = field(default_factory=lambda: [])
     context: Context = Context.SELF
+    ocr_bounding_box: Callable = field(
+        default=lambda left, upper, right, lower: (left, upper, right, lower)
+    )
 
 
 class Capabilities(Enum):

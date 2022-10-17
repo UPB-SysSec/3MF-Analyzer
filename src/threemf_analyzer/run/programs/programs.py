@@ -155,12 +155,6 @@ class Chitubox(
     ],
     additional_attributes={
         "open_file_dialogue_keys": Keys.CONTROL + "o" + Keys.CONTROL,
-        "ocr_bounding_box": lambda self, left, upper, right, lower: (
-            0,
-            lower - (lower // 8),
-            right // 2,
-            lower,
-        ),
         "window_title": "CHITUBOXPro",
         "window_load_timeout": 15,
     },
@@ -182,7 +176,18 @@ class Chitubox(
                 ],
                 "program loaded": [ExpectElement(By.NAME, "Select")],
                 "file loaded": [ExpectElement(By.XPATH, "//*[contains(@Name, '{name}')]")],
-                "error": [ExpectElement(By.OCR, "Cann't open file")],
+                "error": [
+                    ExpectElement(
+                        By.OCR,
+                        "Cann't open file",
+                        ocr_bounding_box=lambda left, upper, right, lower: (
+                            0,
+                            lower - (lower // 8),
+                            right // 2,
+                            lower,
+                        ),
+                    )
+                ],
             },
         )
 
@@ -206,32 +211,77 @@ class Chitubox(
         sleep(2)
 
 
-#########
-# Does not start on VM... (no OpenGL 4 support, only 3.3)
-#########
-# class Craftware(WinAppDriverProgram):
-#     def __init__(self) -> None:
-#         super().__init__(
-#             "craftware",
-#             # r"E:\Program Files\Ultimaker Cura 5.1.1\Ultimaker-Cura.exe",
-#             r"C:\Program Files\Craftunique\CraftWare Pro\bin\craftApp.exe",
-#             "Ultimaker-Cura",
-#             {
-#                 "program loaded": [(By.NAME, "Marketplace")],
-#                 "file loaded": [(By.NAME, "Slice")],
-#                 "error": [
-#                     (By.NAME, "Unable to Open File"),
-#                     (By.NAME, "No Models in File"),
-#                 ],
-#             },
-#         )
+class Craftware(
+    WinAppDriverProgram,
+    metaclass=AutomatedProgram,
+    capabilities=[Capabilities.OPEN_MODEL_VIA_FILE_DIALOGUE, Capabilities.DETECT_CHANGE_OCR],
+    additional_attributes={
+        "open_file_dialogue_keys": Keys.CONTROL + "o" + Keys.CONTROL,
+    },
+):
+    def __init__(self) -> None:
+        super().__init__(
+            "craftware",
+            r"C:\Program Files\Craftunique\CraftWare Pro\bin\craftApp.exe",
+            "craftApp",
+            {
+                "program loaded": [ExpectElement(By.NAME, "CraftWare Pro")],
+                "file loaded": [
+                    ExpectElement(
+                        By.OCR,
+                        "mm",  # millimeter from the model size in the lower left
+                        ocr_bounding_box=lambda left, upper, right, lower: (
+                            0,
+                            lower - (lower // 8),
+                            right // 2,
+                            lower,
+                        ),
+                    )
+                ],
+                "error": [
+                    ExpectElement(
+                        By.OCR,
+                        "error",
+                        ocr_bounding_box=lambda left, upper, right, lower: (
+                            left,
+                            upper,
+                            right,
+                            lower // 2,
+                        ),
+                    )
+                ],
+            },
+        )
 
-#     def _load_model(self, model: File):
-#         ActionChains(self.driver).send_keys(Keys.CONTROL + "o" + Keys.CONTROL).perform()
-#         sleep(2)
-#         self.driver.find_element_by_name("File name:").click()
-#         ActionChains(self.driver).send_keys(model.abspath).perform()
-#         ActionChains(self.driver).send_keys(Keys.ALT + "o" + Keys.ALT).perform()
+    def _wait_model_load(self, model: File, file_load_timeout: int):
+        # we might have to disable a popup, but we can't detect it with WAD
+        # so we just press escape every timeout_steps seconds while checking
+        rest_timeout = file_load_timeout
+        timeout_steps = 5
+        while rest_timeout > timeout_steps:
+            rest_timeout -= timeout_steps
+            ActionChains(self.driver).send_keys(Keys.ESCAPE * 6).perform()
+            try:
+                change_type = self._wait_for_change(
+                    names=self._transform_status_names(
+                        ["error", "file loaded"],
+                        self._get_format_strings(model),
+                    ),
+                    timeout=timeout_steps,
+                )
+            except ActionUnsuccessful:
+                pass
+            else:
+                if change_type == "error":
+                    raise ActionUnsuccessful("error msg detected in window")
+                else:
+                    break
+        super()._wait_model_load(model, rest_timeout)
+
+    def _post_model_load_success(self):
+        sleep(2)
+        ActionChains(self.driver).send_keys("F").perform()
+        sleep(2)
 
 
 class Cura(
@@ -314,12 +364,6 @@ class Fusion(
         "open_file_dialogue_keys": Keys.CONTROL + "i" + Keys.CONTROL,
         "window_title": "Autodesk Fusion 360",
         "window_load_timeout": 20,
-        "ocr_bounding_box": lambda self, left, upper, right, lower: (
-            right // 2,
-            lower // 2,
-            right,
-            lower,
-        ),
     },
 ):
     """
@@ -345,7 +389,18 @@ class Fusion(
                 ],
                 "program loaded": [ExpectElement(By.NAME, "BROWSER")],
                 "file loaded": [ExpectElement(By.NAME, "INSERT MESH")],
-                "error": [ExpectElement(By.OCR, "error")],
+                "error": [
+                    ExpectElement(
+                        By.OCR,
+                        "error",
+                        ocr_bounding_box=lambda left, upper, right, lower: (
+                            right // 2,
+                            lower // 2,
+                            right,
+                            lower,
+                        ),
+                    )
+                ],
             },
         )
 
@@ -376,12 +431,6 @@ class IdeaMaker(
     ],
     additional_attributes={
         "open_file_dialogue_keys": Keys.CONTROL + "i" + Keys.CONTROL,
-        "ocr_bounding_box": lambda self, left, upper, right, lower: (
-            right // 3,
-            lower // 3,
-            right,
-            lower,
-        ),
         "window_title": "ideaMaker 4.2.3 (RAISE3D E2)",
         "window_load_timeout": 5,
     },
@@ -394,7 +443,18 @@ class IdeaMaker(
             {
                 "program loaded": [ExpectElement(By.NAME, "RaiseCloud")],
                 "file loaded": [ExpectElement(By.NAME, "Move", Be.AVAILABLE_ENABLED)],
-                "error": [ExpectElement(By.OCR, "invalid")],
+                "error": [
+                    ExpectElement(
+                        By.OCR,
+                        "invalid",
+                        ocr_bounding_box=lambda left, upper, right, lower: (
+                            right // 3,
+                            lower // 3,
+                            right,
+                            lower,
+                        ),
+                    )
+                ],
             },
         )
 
@@ -497,24 +557,49 @@ class Lib3mf(Program):
         return {}
 
 
-#########
-# Does not start on VM... (prob. OpenGL version)
-#########
-# class Lychee(WinAppDriverProgram):
-#     def __init__(self) -> None:
-#         super().__init__(
-#             "lychee",
-#             r"C:\Users\jrossel\Desktop\programs\lychee.lnk",
-#             "LycheeSlicer",
-#             {
-#                 # "program loaded": [(By.NAME, "RaiseCloud")],
-#                 # "file loaded": [(By.NAME, "Move", Be.AVAILABLE_ENABLED)],
-#                 # "error": [
-#                 #     (By.NAME, "Load file failed {abspath}"),
-#                 # ], TODO element to focusable (idea OCR?)
-#             },
-#             Keys.CONTROL + "o" + Keys.CONTROL,
-#         )
+class Lychee(
+    WinAppDriverProgram,
+    metaclass=AutomatedProgram,
+    capabilities=[Capabilities.OPEN_MODEL_VIA_FILE_DIALOGUE, Capabilities.START_PROGRAM_LEGACY],
+    additional_attributes={
+        "open_file_dialogue_keys": Keys.CONTROL + "i" + Keys.CONTROL,
+        "window_title": "Lychee Slicer",
+    },
+):
+    def __init__(self) -> None:
+        super().__init__(
+            "lychee",
+            r"C:\Program Files\LycheeSlicer\LycheeSlicer.exe",
+            "LycheeSlicer",
+            {
+                # "program starting": [
+                #     ExpectElement(
+                #         By.NAME,
+                #         "Lychee Slicer",
+                #         parents=[
+                #             ExpectElement(By.NAME, "Desktop 1", context=Context.ROOT),
+                #         ],
+                #     )
+                # ],
+                "program loaded": [ExpectElement(By.NAME, "Add Files")],
+                "program tries recovery": [ExpectElement(By.NAME, "Recovery")],
+                # "file loading": [ExpectElement(By.NAME, "Loading...")],
+                "file loaded": [ExpectElement(By.NAME, "Layout")],
+                "error": [ExpectElement(By.NAME, "File might be damaged. Try to fix it.")],
+            },
+        )
+
+    def _wait_program_load(self, model: File, program_start_timeout: int):
+        change_type = self._wait_for_change(
+            names=self._transform_status_names(
+                ["program tries recovery", "program loaded"],
+                self._get_format_strings(model),
+            ),
+            timeout=program_start_timeout,
+        )
+        if change_type == "program tries recovery":
+            self._do_while_element_exists("deny recovery", Click(ExpectElement(By.NAME, "Decline")))
+        super()._wait_program_load(model, program_start_timeout)
 
 
 class MeshMagic(
@@ -606,14 +691,6 @@ class MeshMixer(
     WinAppDriverProgram,
     metaclass=AutomatedProgram,
     capabilities=[Capabilities.DETECT_CHANGE_OCR],
-    additional_attributes={
-        "ocr_bounding_box": lambda self, left, upper, right, lower: (
-            right // 4,
-            lower // 4,
-            (right // 4) * 3,
-            (lower // 4) * 3,
-        ),
-    },
 ):
     def __init__(self) -> None:
         super().__init__(
@@ -622,7 +699,19 @@ class MeshMixer(
             "meshmixer",
             {
                 "program loaded": [ExpectElement(By.NAME, "Autodesk Meshmixer")],
-                "file loading": [ExpectElement(By.OCR, "computing...", Be.NOTAVAILABLE)],
+                "file loading": [
+                    ExpectElement(
+                        By.OCR,
+                        "computing...",
+                        Be.NOTAVAILABLE,
+                        ocr_bounding_box=lambda left, upper, right, lower: (
+                            right // 4,
+                            lower // 4,
+                            (right // 4) * 3,
+                            (lower // 4) * 3,
+                        ),
+                    )
+                ],
                 "file loaded": [ExpectElement(By.NAME, "Autodesk Meshmixer - {name}")],
                 "error": [ExpectElement(By.NAME, "Error opening file :")],
             },
@@ -928,11 +1017,13 @@ class Zsuite(
 
 ALL_PROGRAMS = [
     Chitubox,
+    Craftware,
     Cura,
     FlashPrint,
     Fusion,
     IdeaMaker,
     Lib3mf,
+    Lychee,
     MeshMagic,
     MeshMixer,
     Office,

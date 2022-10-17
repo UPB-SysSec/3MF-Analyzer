@@ -94,7 +94,7 @@ class WinAppDriverProgram(Program):
 
         def __by_ocr(element: ExpectElement):
             logging.info("Try to find '%s' using OCR", element.value)
-            target = self._text_on_screen(element.value)
+            target = self._text_on_screen(element)
             if target is True and element.expect == Be.AVAILABLE:
                 logging.info("Found '%s' using OCR", element.value)
                 return change_type if return_change_type else element.value
@@ -131,20 +131,19 @@ class WinAppDriverProgram(Program):
             for element in elements:
 
                 if element.by == By.OCR:
-                    if (result := __by_ocr(element)) is not None:
-                        return result
-                    else:
-                        continue
+                    exec_func = __by_ocr
+                else:
+                    exec_func = __by_wad
 
-                if self.driver:
-                    for handle in self.driver.window_handles:
+                if handles := self.driver.window_handles:
+                    for handle in handles:
                         self.driver.switch_to.window(handle)
-                        if (result := __by_wad(element)) is not None:
+                        if (result := exec_func(element)) is not None:
                             return result
                         else:
                             continue
                 else:
-                    if (result := __by_wad(element)) is not None:
+                    if (result := exec_func(element)) is not None:
                         return result
                     else:
                         continue
@@ -232,19 +231,12 @@ class WinAppDriverProgram(Program):
                 result[k] = []
                 element: ExpectElement
                 for element in self.status_change_names[k]:
-                    result[k].append(
-                        ExpectElement(
-                            by=element.by,
-                            value=element.value.format(**format_values),
-                            expect=element.expect,
-                            parents=element.parents,
-                        )
-                    )
+                    element.value = element.value.format(**format_values)
+                    result[k].append(element)
         return result
 
-    def _text_on_screen(self, text: str):
-        """Uses OCR to detect text on screen.
-        Requires Capabilities.DETECT_CHANGE_OCR and an ocr_bounding_box function."""
+    def _text_on_screen(self, element: ExpectElement):
+        """Uses OCR to detect text on screen. Requires Capabilities.DETECT_CHANGE_OCR."""
         raise NotImplementedError(
             "Use Capabilities.DETECT_CHANGE_OCR to enable OCR text detection."
         )
@@ -512,26 +504,24 @@ class AutomatedProgram(ABCMeta):
 
         if Capabilities.DETECT_CHANGE_OCR in capabilities:
 
-            def _text_on_screen(self, text: str):
+            def _text_on_screen(self, element: ExpectElement):
                 """Checks if the specified text appears on the screenshot of the program."""
                 for screenshot in self.screenshot():
                     with open(self.current_screenshot_path, "wb") as file:
                         file.write(screenshot)
                     img = Image.open(self.current_screenshot_path)
-                    img = img.crop(self.ocr_bounding_box(*img.getbbox()))
+                    img = img.crop(element.ocr_bounding_box(*img.getbbox()))
                     img.save(self.current_screenshot_path)
                     detected_text = " ".join(
                         OCR_READER.readtext(self.current_screenshot_path, detail=0)
                     )
-                    logging.debug("target text is: '%s'", text)
+                    logging.debug("target text is: '%s'", element.value)
                     logging.debug("detected text is: '%s'", detected_text)
-                    if text.lower() in detected_text.lower():
+                    if element.value.lower() in detected_text.lower():
                         return True
                 return False
 
             attributes["_text_on_screen"] = _text_on_screen
-
-            __require_attribute(Capabilities.OPEN_MODEL_VIA_FILE_DIALOGUE, ["ocr_bounding_box"])
 
         if Capabilities.START_PROGRAM_LEGACY in capabilities:
 

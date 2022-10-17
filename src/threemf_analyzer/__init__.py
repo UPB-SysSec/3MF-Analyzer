@@ -21,7 +21,7 @@ Path(LOG_DIR).mkdir(parents=True, exist_ok=True)
 fh = logging.FileHandler(join(LOG_DIR, f"{datetime.now().strftime('%Y%m%dT%H%M%S')}.log"), mode="w")
 fh.setLevel(logging.DEBUG)
 logging.basicConfig(
-    level=logging.INFO,
+    level=logging.DEBUG,
     format="%(asctime)s %(levelname)8s | %(name)s: %(message)s",
     handlers=[fh, logging.StreamHandler(sys.stdout)],
 )

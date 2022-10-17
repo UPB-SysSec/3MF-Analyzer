@@ -104,6 +104,7 @@ def modify_all_eval_info(
                         tests: {{}}
                         """
                     yaml_file.write(dedent(stem))
+            program_infos = None
             if programs_infos is not None:
                 program_infos = programs_infos.get(entry)
             if verification_results:
