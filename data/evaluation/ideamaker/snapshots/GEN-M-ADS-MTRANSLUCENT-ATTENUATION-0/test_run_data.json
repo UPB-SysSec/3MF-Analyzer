@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\ideamaker\\snapshots\\GEN-M-ADS-MTRANSLUCENT-ATTENUATION-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665863043.0102415
+        },
+        "01 program-started": {
+            "timestamp": 1665863052.4954288
+        },
+        "02 program-loaded": {
+            "timestamp": 1665863054.4393113
+        },
+        "03 program-prepared": {
+            "timestamp": 1665863059.7249486,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665863072.0742404
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665863104.823672,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665863106.3669367
+        }
+    }
+}

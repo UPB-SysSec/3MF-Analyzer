@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\3dviewer\\snapshots\\OPC-LFI-2\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665950154.0517473
+        },
+        "01 program-started": {
+            "timestamp": 1665950155.1019301
+        },
+        "02 program-loaded": {
+            "timestamp": 1665950157.992544
+        },
+        "03 program-prepared": {
+            "timestamp": 1665950163.3551831,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665950181.01127
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665950182.512222,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665950184.5417624
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\superslicer\\snapshots\\CS-DOR\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665904504.9583616
+        },
+        "01 program-started": {
+            "timestamp": 1665904508.8369277
+        },
+        "02 program-loaded": {
+            "timestamp": 1665904511.349686
+        },
+        "03 program-prepared": {
+            "timestamp": 1665904516.5720599,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665904527.0136447
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665904558.997476,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665904560.6931653
+        }
+    }
+}

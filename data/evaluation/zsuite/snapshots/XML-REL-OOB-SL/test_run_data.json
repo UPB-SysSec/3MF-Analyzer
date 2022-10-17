@@ -1,0 +1,33 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\zsuite\\snapshots\\XML-REL-OOB-SL\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665976045.1184812
+        },
+        "01 program-started": {
+            "timestamp": 1665976059.8940861
+        },
+        "02 program-loaded": {
+            "timestamp": 1665976061.366848
+        },
+        "03 program-prepared": {
+            "timestamp": 1665976066.5896506,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665976071.554581,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'selenium.common.exceptions.NoSuchElementException'>",
+                "An element could not be located on the page using the given search parameters.",
+                null,
+                null
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665976073.549591
+        }
+    }
+}

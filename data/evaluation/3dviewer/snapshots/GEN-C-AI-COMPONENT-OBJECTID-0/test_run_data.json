@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\3dviewer\\snapshots\\GEN-C-AI-COMPONENT-OBJECTID-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665938217.9593167
+        },
+        "01 program-started": {
+            "timestamp": 1665938219.8227596
+        },
+        "02 program-loaded": {
+            "timestamp": 1665938221.6331356
+        },
+        "03 program-prepared": {
+            "timestamp": 1665938227.042661,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665938246.5208893
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665938280.53769,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect no change or error' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665938282.4965546
+        }
+    }
+}

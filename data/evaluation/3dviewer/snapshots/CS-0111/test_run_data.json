@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\3dviewer\\snapshots\\CS-0111\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665935722.0295813
+        },
+        "01 program-started": {
+            "timestamp": 1665935723.9082067
+        },
+        "02 program-loaded": {
+            "timestamp": 1665935725.755215
+        },
+        "03 program-prepared": {
+            "timestamp": 1665935731.0122123,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665935750.9936757
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665935782.455012,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect no change or error' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665935784.517948
+        }
+    }
+}

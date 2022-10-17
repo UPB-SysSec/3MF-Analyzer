@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\3dviewer\\snapshots\\GEN-M-AI-MTEXTURE2DGROUP-TEXID-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665944110.5719326
+        },
+        "01 program-started": {
+            "timestamp": 1665944112.4906278
+        },
+        "02 program-loaded": {
+            "timestamp": 1665944114.1253576
+        },
+        "03 program-prepared": {
+            "timestamp": 1665944119.5195212,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665944139.5155296
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665944171.8199725,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect no change or error' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665944173.8315735
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\ideamaker\\snapshots\\GEN-P-ADA-OBJECT-PUUID-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665872302.69087
+        },
+        "01 program-started": {
+            "timestamp": 1665872312.1625624
+        },
+        "02 program-loaded": {
+            "timestamp": 1665872314.1102903
+        },
+        "03 program-prepared": {
+            "timestamp": 1665872319.3641508,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665872331.605465
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665872363.5198393,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665872364.992492
+        }
+    }
+}

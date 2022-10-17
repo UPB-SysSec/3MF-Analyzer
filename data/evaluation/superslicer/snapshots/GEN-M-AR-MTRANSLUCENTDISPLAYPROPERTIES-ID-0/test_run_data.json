@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\superslicer\\snapshots\\GEN-M-AR-MTRANSLUCENTDISPLAYPROPERTIES-ID-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665913009.1930776
+        },
+        "01 program-started": {
+            "timestamp": 1665913012.9934862
+        },
+        "02 program-loaded": {
+            "timestamp": 1665913015.3542068
+        },
+        "03 program-prepared": {
+            "timestamp": 1665913020.5608976,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665913031.2801218
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665913071.3947144,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665913073.1229203
+        }
+    }
+}

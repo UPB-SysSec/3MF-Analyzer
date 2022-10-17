@@ -1,0 +1,37 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\slic3r\\snapshots\\GEN-CM-AR-METADATA-NAME-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665893825.9049711
+        },
+        "01 program-started": {
+            "timestamp": 1665893830.5334666
+        },
+        "02 program-loaded": {
+            "timestamp": 1665893832.595705
+        },
+        "03 program-prepared": {
+            "timestamp": 1665893837.8177936,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665893849.388979,
+            "screenshot": true,
+            "snapshot": true,
+            "snapshot_error": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'take snapshot' because it timed out"
+            ],
+            "related_exception": [
+                "<class 'selenium.common.exceptions.NoSuchWindowException'>",
+                "Currently selected window has been closed",
+                null,
+                null
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665893859.8381066
+        }
+    }
+}
