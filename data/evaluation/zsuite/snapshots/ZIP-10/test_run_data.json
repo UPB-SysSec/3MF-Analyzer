@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\zsuite\\snapshots\\ZIP-10\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665976308.1828744
+        },
+        "01 program-started": {
+            "timestamp": 1665976323.044625
+        },
+        "02 program-loaded": {
+            "timestamp": 1665976324.5241594
+        },
+        "03 program-prepared": {
+            "timestamp": 1665976329.7625313,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665976347.0367763
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665976350.0041478,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665976352.1785386
+        }
+    }
+}

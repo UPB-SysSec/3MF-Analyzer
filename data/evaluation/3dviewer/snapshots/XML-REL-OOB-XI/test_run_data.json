@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\3dviewer\\snapshots\\XML-REL-OOB-XI\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665953236.4919636
+        },
+        "01 program-started": {
+            "timestamp": 1665953238.3707519
+        },
+        "02 program-loaded": {
+            "timestamp": 1665953240.0656629
+        },
+        "03 program-prepared": {
+            "timestamp": 1665953245.3188488,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665953264.3131788
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665953265.6929266,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665953268.1389616
+        }
+    }
+}

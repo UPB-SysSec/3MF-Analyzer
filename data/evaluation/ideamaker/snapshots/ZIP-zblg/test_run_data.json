@@ -1,0 +1,38 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\ideamaker\\snapshots\\ZIP-zblg\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665888485.9348187
+        },
+        "01 program-started": {
+            "timestamp": 1665888495.4595678
+        },
+        "02 program-loaded": {
+            "timestamp": 1665888497.4280734
+        },
+        "03 program-prepared": {
+            "timestamp": 1665888502.6696486,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665888895.026618
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665888927.1881676,
+            "screenshot": true,
+            "snapshot": true,
+            "snapshot_error": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'take snapshot' because it timed out"
+            ],
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665888937.6577513
+        }
+    }
+}

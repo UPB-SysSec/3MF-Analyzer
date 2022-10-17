@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\ideamaker\\snapshots\\GEN-C-ADA-TRIANGLE-PID-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665847056.5609612
+        },
+        "01 program-started": {
+            "timestamp": 1665847066.0778098
+        },
+        "02 program-loaded": {
+            "timestamp": 1665847068.0797513
+        },
+        "03 program-prepared": {
+            "timestamp": 1665847073.3405354,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665847085.065817
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665847123.6228187,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665847125.235813
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\ideamaker\\snapshots\\GEN-SI-ADA-SVERTEX-X-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665875384.5033019
+        },
+        "01 program-started": {
+            "timestamp": 1665875394.016076
+        },
+        "02 program-loaded": {
+            "timestamp": 1665875396.0186052
+        },
+        "03 program-prepared": {
+            "timestamp": 1665875401.2742066,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665875648.3697534
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665875703.3236396,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665875707.9289412
+        }
+    }
+}

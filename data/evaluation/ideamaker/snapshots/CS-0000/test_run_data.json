@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\ideamaker\\snapshots\\CS-0000\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665839317.33764
+        },
+        "01 program-started": {
+            "timestamp": 1665839328.2382119
+        },
+        "02 program-loaded": {
+            "timestamp": 1665839334.05176
+        },
+        "03 program-prepared": {
+            "timestamp": 1665839339.7943718,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665839832.3353062
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665839884.5560346,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665839893.2259917
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\ideamaker\\snapshots\\GEN-M-ADA-BASEMATERIALS-DISPLAYPROPERTIESID-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665859902.430318
+        },
+        "01 program-started": {
+            "timestamp": 1665859911.9506683
+        },
+        "02 program-loaded": {
+            "timestamp": 1665859913.9010124
+        },
+        "03 program-prepared": {
+            "timestamp": 1665859919.1645384,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665859931.7562413
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665859962.9781644,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665859964.4682636
+        }
+    }
+}

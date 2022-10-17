@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\superslicer\\snapshots\\GEN-SI-AR-OBJECT-SMESHRESOLUTION-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665915965.5954344
+        },
+        "01 program-started": {
+            "timestamp": 1665915969.6149716
+        },
+        "02 program-loaded": {
+            "timestamp": 1665915972.0371063
+        },
+        "03 program-prepared": {
+            "timestamp": 1665915977.259474,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665915988.092136
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665916020.8539364,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665916022.5812252
+        }
+    }
+}

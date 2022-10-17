@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\ideamaker\\snapshots\\GEN-C-ADS-OBJECT-NAME-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665848907.9581134
+        },
+        "01 program-started": {
+            "timestamp": 1665848917.43291
+        },
+        "02 program-loaded": {
+            "timestamp": 1665848919.453678
+        },
+        "03 program-prepared": {
+            "timestamp": 1665848924.71686,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665848936.2449932
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665848967.6698253,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665848969.1772041
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\ideamaker\\snapshots\\OPC-LFI-2\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665879638.2933857
+        },
+        "01 program-started": {
+            "timestamp": 1665879647.809293
+        },
+        "02 program-loaded": {
+            "timestamp": 1665879649.763165
+        },
+        "03 program-prepared": {
+            "timestamp": 1665879655.0209386,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665879666.149959
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665879697.51175,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665879699.047526
+        }
+    }
+}

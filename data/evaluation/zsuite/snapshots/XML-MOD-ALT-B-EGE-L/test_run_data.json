@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\zsuite\\snapshots\\XML-MOD-ALT-B-EGE-L\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665972109.7296555
+        },
+        "01 program-started": {
+            "timestamp": 1665972124.6901278
+        },
+        "02 program-loaded": {
+            "timestamp": 1665972126.1772876
+        },
+        "03 program-prepared": {
+            "timestamp": 1665972131.403902,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665972149.1462622
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665972185.1781795,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665972187.418946
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\ideamaker\\snapshots\\XML-MOD-ALT-DOS-BL\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665881896.1093116
+        },
+        "01 program-started": {
+            "timestamp": 1665881905.605788
+        },
+        "02 program-loaded": {
+            "timestamp": 1665881907.542456
+        },
+        "03 program-prepared": {
+            "timestamp": 1665881912.8363504,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665881924.4835038
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665881955.5195043,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665881957.053511
+        }
+    }
+}

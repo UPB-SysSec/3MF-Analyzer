@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\superslicer\\snapshots\\GEN-M-CR-RESOURCES-MCOLORGROUP-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665913800.6085482
+        },
+        "01 program-started": {
+            "timestamp": 1665913804.502965
+        },
+        "02 program-loaded": {
+            "timestamp": 1665913806.9305456
+        },
+        "03 program-prepared": {
+            "timestamp": 1665913812.1525903,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665913822.5161977
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665913862.790446,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665913864.4641657
+        }
+    }
+}
