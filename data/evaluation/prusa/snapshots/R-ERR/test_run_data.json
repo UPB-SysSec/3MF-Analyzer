@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\prusa\\snapshots\\R-ERR\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665940063.92507
+        },
+        "01 program-started": {
+            "timestamp": 1665940068.0535967
+        },
+        "02 program-loaded": {
+            "timestamp": 1665940070.2275412
+        },
+        "03 program-prepared": {
+            "timestamp": 1665940075.449949,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665940084.2821367
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665940115.8569632,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665940117.613322
+        }
+    }
+}

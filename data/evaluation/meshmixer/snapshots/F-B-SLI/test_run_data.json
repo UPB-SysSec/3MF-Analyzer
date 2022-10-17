@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\meshmixer\\snapshots\\F-B-SLI\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665860569.7922306
+        },
+        "01 program-started": {
+            "timestamp": 1665860571.9438097
+        },
+        "02 program-loaded": {
+            "timestamp": 1665860579.897458
+        },
+        "03 program-prepared": {
+            "timestamp": 1665860585.1404681,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665860594.2110224
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665860601.240507,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665860609.5076811
+        }
+    }
+}

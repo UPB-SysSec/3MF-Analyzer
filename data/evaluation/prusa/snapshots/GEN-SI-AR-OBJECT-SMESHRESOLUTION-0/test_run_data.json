@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\prusa\\snapshots\\GEN-SI-AR-OBJECT-SMESHRESOLUTION-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665938889.5335805
+        },
+        "01 program-started": {
+            "timestamp": 1665938893.8026295
+        },
+        "02 program-loaded": {
+            "timestamp": 1665938895.995132
+        },
+        "03 program-prepared": {
+            "timestamp": 1665938901.2329433,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665938911.9649143
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665938950.0286098,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665938951.7579637
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\paint3d\\snapshots\\GEN-M-AR-BASEMATERIALS-DISPLAYPROPERTIESID-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665902804.652399
+        },
+        "01 program-started": {
+            "timestamp": 1665902809.4530442
+        },
+        "02 program-loaded": {
+            "timestamp": 1665902812.198308
+        },
+        "03 program-prepared": {
+            "timestamp": 1665902817.4363606,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665902832.6357217
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665902864.1511855,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665902866.131695
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\meshmagic\\snapshots\\GEN-C-CDA-VERTICES-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665847805.934934
+        },
+        "01 program-started": {
+            "timestamp": 1665847806.2977073
+        },
+        "02 program-loaded": {
+            "timestamp": 1665847825.9337575
+        },
+        "03 program-prepared": {
+            "timestamp": 1665847831.1407542,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665847840.7205815
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665847872.0647476,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665847891.437095
+        }
+    }
+}

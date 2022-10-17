@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\prusa\\snapshots\\GEN-M-CRA-MTRANSLUCENTDISPLAYPROPERTIES-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665937143.1514049
+        },
+        "01 program-started": {
+            "timestamp": 1665937147.2488382
+        },
+        "02 program-loaded": {
+            "timestamp": 1665937149.4368892
+        },
+        "03 program-prepared": {
+            "timestamp": 1665937154.6592972,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665937165.5573673
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665937205.4463813,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665937207.2041142
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\meshmagic\\snapshots\\GEN-C-AR-VERTEX-Y-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665846470.9172032
+        },
+        "01 program-started": {
+            "timestamp": 1665846471.2645097
+        },
+        "02 program-loaded": {
+            "timestamp": 1665846491.020267
+        },
+        "03 program-prepared": {
+            "timestamp": 1665846496.2269118,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665846505.419747
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665846537.424769,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665846556.8545525
+        }
+    }
+}

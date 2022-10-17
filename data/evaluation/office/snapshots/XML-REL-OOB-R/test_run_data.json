@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\office\\snapshots\\XML-REL-OOB-R\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665894425.6081634
+        },
+        "01 program-started": {
+            "timestamp": 1665894427.111915
+        },
+        "02 program-loaded": {
+            "timestamp": 1665894428.6313696
+        },
+        "03 program-prepared": {
+            "timestamp": 1665894433.8540409,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665894444.7890935
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665894448.2042108,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665894456.4504013
+        }
+    }
+}

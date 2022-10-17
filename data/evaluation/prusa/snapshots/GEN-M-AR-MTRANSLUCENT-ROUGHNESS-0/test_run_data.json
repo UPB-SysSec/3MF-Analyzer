@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\prusa\\snapshots\\GEN-M-AR-MTRANSLUCENT-ROUGHNESS-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665935785.0073624
+        },
+        "01 program-started": {
+            "timestamp": 1665935789.198789
+        },
+        "02 program-loaded": {
+            "timestamp": 1665935791.3875775
+        },
+        "03 program-prepared": {
+            "timestamp": 1665935796.633866,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665935807.030584
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665935847.1579342,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665935848.973632
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\prusa\\snapshots\\GEN-M-CR-RESOURCES-MTEXTURE2DGROUP-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665936830.5418181
+        },
+        "01 program-started": {
+            "timestamp": 1665936834.545252
+        },
+        "02 program-loaded": {
+            "timestamp": 1665936836.7251687
+        },
+        "03 program-prepared": {
+            "timestamp": 1665936841.947435,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665936852.4681194
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665936892.6203148,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665936894.3495183
+        }
+    }
+}

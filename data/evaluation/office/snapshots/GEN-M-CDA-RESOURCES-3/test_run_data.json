@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\office\\snapshots\\GEN-M-CDA-RESOURCES-3\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665888018.1925623
+        },
+        "01 program-started": {
+            "timestamp": 1665888019.6805732
+        },
+        "02 program-loaded": {
+            "timestamp": 1665888021.1884992
+        },
+        "03 program-prepared": {
+            "timestamp": 1665888026.4108074,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665888037.9428055
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665888041.1154647,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665888049.2788212
+        }
+    }
+}

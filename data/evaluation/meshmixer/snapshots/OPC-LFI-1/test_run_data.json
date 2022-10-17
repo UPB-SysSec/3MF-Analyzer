@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\meshmixer\\snapshots\\OPC-LFI-1\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665874223.8765204
+        },
+        "01 program-started": {
+            "timestamp": 1665874226.0576215
+        },
+        "02 program-loaded": {
+            "timestamp": 1665874234.0463922
+        },
+        "03 program-prepared": {
+            "timestamp": 1665874239.2817159,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665874248.5064385
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665874255.7013884,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665874264.0561938
+        }
+    }
+}

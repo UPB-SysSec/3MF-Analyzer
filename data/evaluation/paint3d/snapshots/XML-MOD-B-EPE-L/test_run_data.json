@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\paint3d\\snapshots\\XML-MOD-B-EPE-L\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665909436.6336844
+        },
+        "01 program-started": {
+            "timestamp": 1665909440.0277154
+        },
+        "02 program-loaded": {
+            "timestamp": 1665909443.4808536
+        },
+        "03 program-prepared": {
+            "timestamp": 1665909448.7030282,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665909462.5510259
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665909463.9925134,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665909465.8135502
+        }
+    }
+}

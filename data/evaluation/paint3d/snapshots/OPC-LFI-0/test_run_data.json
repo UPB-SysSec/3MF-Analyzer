@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\paint3d\\snapshots\\OPC-LFI-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665907979.9100692
+        },
+        "01 program-started": {
+            "timestamp": 1665907983.3981738
+        },
+        "02 program-loaded": {
+            "timestamp": 1665907987.1012516
+        },
+        "03 program-prepared": {
+            "timestamp": 1665907992.3548272,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665908006.0421665
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665908007.4703488,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665908009.3341699
+        }
+    }
+}

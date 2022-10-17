@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\meshmagic\\snapshots\\ZIP-zblg\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665858721.4302142
+        },
+        "01 program-started": {
+            "timestamp": 1665858721.7775564
+        },
+        "02 program-loaded": {
+            "timestamp": 1665858741.5699272
+        },
+        "03 program-prepared": {
+            "timestamp": 1665858746.7772477,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665858755.0471864
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665858786.185711,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665858805.1786654
+        }
+    }
+}

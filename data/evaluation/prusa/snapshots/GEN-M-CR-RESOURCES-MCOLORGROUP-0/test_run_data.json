@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\prusa\\snapshots\\GEN-M-CR-RESOURCES-MCOLORGROUP-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665936638.5929775
+        },
+        "01 program-started": {
+            "timestamp": 1665936642.7607849
+        },
+        "02 program-loaded": {
+            "timestamp": 1665936644.940567
+        },
+        "03 program-prepared": {
+            "timestamp": 1665936650.163349,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665936660.7722456
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665936700.3997371,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665936702.2048728
+        }
+    }
+}

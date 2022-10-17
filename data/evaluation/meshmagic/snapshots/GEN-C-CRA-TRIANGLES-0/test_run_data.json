@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\meshmagic\\snapshots\\GEN-C-CRA-TRIANGLES-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665849397.3458161
+        },
+        "01 program-started": {
+            "timestamp": 1665849397.6932955
+        },
+        "02 program-loaded": {
+            "timestamp": 1665849417.2128868
+        },
+        "03 program-prepared": {
+            "timestamp": 1665849422.4195406,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665849431.584133
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665849463.378062,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665849482.8700385
+        }
+    }
+}

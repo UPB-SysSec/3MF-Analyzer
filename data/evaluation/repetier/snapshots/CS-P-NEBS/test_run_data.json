@@ -1,0 +1,37 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\repetier\\snapshots\\CS-P-NEBS\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665944459.6205027
+        },
+        "01 program-started": {
+            "timestamp": 1665944464.9831812
+        },
+        "02 program-loaded": {
+            "timestamp": 1665944466.833709
+        },
+        "03 program-prepared": {
+            "timestamp": 1665944472.0716038,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665944484.6696825,
+            "screenshot": true,
+            "snapshot": true,
+            "snapshot_error": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'take snapshot' because it timed out"
+            ],
+            "related_exception": [
+                "<class 'selenium.common.exceptions.NoSuchWindowException'>",
+                "A request to switch to a window could not be satisfied because the window could not be found.",
+                null,
+                null
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665944495.4123595
+        }
+    }
+}

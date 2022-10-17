@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\office\\snapshots\\GEN-C-AI-OBJECT-PID-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665881446.9850016
+        },
+        "01 program-started": {
+            "timestamp": 1665881448.4731848
+        },
+        "02 program-loaded": {
+            "timestamp": 1665881449.9981039
+        },
+        "03 program-prepared": {
+            "timestamp": 1665881455.2203016,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665881466.4149966
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665881469.6804972,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665881477.855456
+        }
+    }
+}

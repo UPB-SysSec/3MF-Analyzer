@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\meshmixer\\snapshots\\XML-REL-OOB-PE-R\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1665877731.7931092
+        },
+        "01 program-started": {
+            "timestamp": 1665877733.9781237
+        },
+        "02 program-loaded": {
+            "timestamp": 1665877741.9467812
+        },
+        "03 program-prepared": {
+            "timestamp": 1665877747.185427,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1665877756.6417797
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1665877763.7607243,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1665877772.1027539
+        }
+    }
+}
