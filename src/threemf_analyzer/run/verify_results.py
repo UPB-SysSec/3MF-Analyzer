@@ -74,89 +74,87 @@ def _trivial_server_log(file_path) -> bool:
 
 
 def _verify_programs(program: Program, files: list[File], results: dict, rerun_tests: dict):
-    ...
-    # TODO
-    # for file in files:
-    #     output_dir = join(EVALUATION_DIR, program.name, "snapshots", file.test_id)
-    #     try:
-    #         with open(join(output_dir, "snapshot_intervals.txt"), "r", encoding="utf-8") as infile:
-    #             snapshot_intervals = [int(ival) for ival in infile.read().split(",")]
-    #     except OSError:
-    #         logging.warning(
-    #             "%s with %s has not snapshot_interval.txt file. Aborting.",
-    #             program.id,
-    #             file.test_id,
-    #         )
-    #         rerun_tests.append(file.test_id)
-    #         continue
 
-    #     if isfile(join(output_dir, "error-info.txt")):
-    #         with open(join(output_dir, "error-info.txt"), "r", encoding="utf-8") as err_file:
-    #             results[program.id][file.test_id] = {
-    #                 "critical": True,
-    #                 "problems": [err_file.read()],
-    #             }
-    #             rerun_tests.append(file.test_id)
-    #             continue
+    for file in files:
+        output_dir = join(EVALUATION_DIR, program.name, "snapshots", file.test_id)
 
-    #     res = {
-    #         "missing_process_info": 0,
-    #         "missing_screenshot": 0,
-    #         "problems": [],
-    #     }
+        data_file_path = join(output_dir, "test_run_data.json")
+        if not isfile(data_file_path):
+            results[program.name][file.test_id] = {
+                "critical": True,
+                "problems": ["No test_run_data.json file found."],
+            }
+            rerun_tests.append(file.test_id)
+            logging.warning(
+                "%s with %s has not test_run_data.json file. Aborting.",
+                program.name,
+                file.test_id,
+            )
+            continue
+        else:
+            with open(data_file_path, encoding="utf-8") as in_file:
+                test_run_data = json.load(in_file)
 
-    #     interval_filenames = [
-    #         f"{number+1:02}_{timeinterval}s-after-start"
-    #         for number, timeinterval in enumerate(snapshot_intervals)
-    #     ]
+        res = {
+            "missing_process_info": 0,
+            "missing_screenshot": 0,
+            "problems": [],
+        }
 
-    #     # check generated JSON process information
-    #     if len(glob(join(output_dir, "*.json"))) == 0:
-    #         res["critical"] = True
-    #         res["problems"].append("No process information files.")
-    #         del res["missing_process_info"]
-    #     else:
-    #         for filename in ["00_at-init"] + interval_filenames:
-    #             if _empty_json(join(output_dir, filename + ".json")):
-    #                 logging.info(
-    #                     "%s with %s is missing %s.json", program.name, file.test_id, filename
-    #                 )
-    #                 res["missing_process_info"] += 1
-    #         if res["missing_process_info"] >= len(["00_at-init"] + interval_filenames) - 1:
-    #             res["critical"] = True
-    #             res["problems"].append("Too many missing process information files.")
+        for state in sorted(test_run_data.get("states", {}).keys()):
+            screenshot_file_name = f"screenshot_{state.replace(' ', '_')}_0.png"
+            screenshot_file_path = join(output_dir, screenshot_file_name)
+            snapshot_file_name = f"snapshot_{state.replace(' ', '_')}"
+            snapshot_file_path = join(output_dir, snapshot_file_name)
 
-    #     # check generated screenshots
-    #     if len(glob(join(output_dir, "*.png"))) == 0:
-    #         res["critical"] = True
-    #         res["problems"].append("No screenshot files.")
-    #         del res["missing_screenshot"]
-    #     else:
-    #         for filename in interval_filenames:
-    #             if _empty_screenshot(join(output_dir, filename + ".png")):
-    #                 logging.info(
-    #                     "%s with %s is missing %s.png", program.name, file.test_id, filename
-    #                 )
-    #                 res["missing_screenshot"] += 1
-    #         if res["missing_screenshot"] >= len(interval_filenames) - 1:
-    #             res["critical"] = True
-    #             res["problems"].append("Too many missing/broken screenshot files.")
+            if test_run_data["states"][state].get("screenshot"):
 
-    #     if res.get("critical"):
-    #         rerun_tests.append(file.test_id)
+                if not isfile(screenshot_file_path) or _empty_screenshot(screenshot_file_path):
+                    logging.info(
+                        "%s with %s is missing %s", program.name, file.test_id, screenshot_file_name
+                    )
+                    res["missing_screenshot"] += 1
 
-    #     # check server log
-    #     serverlog_file_path = join(output_dir, "local-server.log")
-    #     res["has_server_log"] = not _empty_file(serverlog_file_path)
-    #     res["server_log_interesting"] = not _trivial_server_log(serverlog_file_path)
+            if test_run_data["states"][state].get("snapshot"):
+                if not isfile(snapshot_file_path) or _empty_json(snapshot_file_path):
+                    logging.info(
+                        "%s with %s is missing %s", program.name, file.test_id, snapshot_file_name
+                    )
+                    res["missing_process_info"] += 1
 
-    #     # remove superfluous information (not there == falsy)
-    #     for key, value in copy(res).items():
-    #         if not value:
-    #             del res[key]
+        if res["missing_process_info"] > 0:
+            res["critical"] = True
+            res["problems"].append("Too many missing process information files.")
 
-    #     # set result to actual object
-    #     results[program.id][file.test_id] = res
+        if res["missing_screenshot"] > 0:
+            res["critical"] = True
+            res["problems"].append("Too many missing/broken screenshot files.")
+
+        if len(glob(join(output_dir, "snapshot_*"))) == 0:
+            res["critical"] = True
+            res["problems"].append("No process information files.")
+            del res["missing_process_info"]
+
+        if len(glob(join(output_dir, "*.png"))) == 0:
+            res["critical"] = True
+            res["problems"].append("No screenshot files.")
+            del res["missing_screenshot"]
+
+        if res.get("critical"):
+            rerun_tests.append(file.test_id)
+
+        # check server log
+        serverlog_file_path = join(output_dir, "local-server.log")
+        res["has_server_log"] = not _empty_file(serverlog_file_path)
+        res["server_log_interesting"] = not _trivial_server_log(serverlog_file_path)
+
+        # remove superfluous information (not there == falsy)
+        for key, value in copy(res).items():
+            if not value:
+                del res[key]
+
+        # set result to actual object
+        results[program.name][file.test_id] = res
 
 
 def verify_results(

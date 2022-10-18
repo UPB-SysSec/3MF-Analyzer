@@ -18,13 +18,20 @@ ROOT_DIR = abspath(join(dirname(__file__), "..", ".."))
 # setup logging
 LOG_DIR = join(ROOT_DIR, ".logs")
 Path(LOG_DIR).mkdir(parents=True, exist_ok=True)
-fh = logging.FileHandler(join(LOG_DIR, f"{datetime.now().strftime('%Y%m%dT%H%M%S')}.log"), mode="w")
-fh.setLevel(logging.DEBUG)
-logging.basicConfig(
-    level=logging.DEBUG,
-    format="%(asctime)s %(levelname)8s | %(name)s: %(message)s",
-    handlers=[fh, logging.StreamHandler(sys.stdout)],
+fmt = logging.Formatter("%(asctime)s %(levelname)8s | %(name)s: %(message)s")
+stream_handler = logging.StreamHandler(sys.stdout)
+stream_handler.setLevel(logging.INFO)
+stream_handler.setFormatter(fmt)
+file_handler = logging.FileHandler(
+    join(LOG_DIR, f"{datetime.now().strftime('%Y%m%dT%H%M%S')}.log"), mode="w"
 )
+file_handler.setLevel(logging.DEBUG)
+file_handler.setFormatter(fmt)
+
+logger = logging.getLogger()
+logger.setLevel(logging.DEBUG)
+logger.addHandler(stream_handler)
+logger.addHandler(file_handler)
 
 # directories in the src folder
 SFTA_DIR = join(ROOT_DIR, "src", "PS-SFTA")
