@@ -560,9 +560,11 @@ class Lib3mf(Program):
 class Lychee(
     WinAppDriverProgram,
     metaclass=AutomatedProgram,
-    capabilities=[Capabilities.OPEN_MODEL_VIA_FILE_DIALOGUE, Capabilities.START_PROGRAM_LEGACY],
+    capabilities=[
+        Capabilities.START_PROGRAM_LEGACY,
+        Capabilities.DETECT_CHANGE_OCR,
+    ],
     additional_attributes={
-        "open_file_dialogue_keys": Keys.CONTROL + "i" + Keys.CONTROL,
         "window_title": "Lychee Slicer",
     },
 ):
@@ -581,13 +583,63 @@ class Lychee(
                 #         ],
                 #     )
                 # ],
-                "program loaded": [ExpectElement(By.NAME, "Add Files")],
-                "program tries recovery": [ExpectElement(By.NAME, "Recovery")],
+                "program loaded": [
+                    ExpectElement(
+                        By.OCR,
+                        "Add Files",
+                        ocr_bounding_box=lambda left, upper, right, lower: (
+                            left + (right // 3),
+                            upper + (lower // 3),
+                            right - (right // 3),
+                            lower - (lower // 3),
+                        ),
+                    )
+                ],
+                "program tries recovery": [
+                    ExpectElement(
+                        By.OCR,
+                        "Recovery",
+                        ocr_bounding_box=lambda left, upper, right, lower: (
+                            left + (right // 3),
+                            upper + (lower // 3),
+                            right - (right // 3),
+                            lower - (lower // 3),
+                        ),
+                    )
+                ],
                 # "file loading": [ExpectElement(By.NAME, "Loading...")],
-                "file loaded": [ExpectElement(By.NAME, "Layout")],
-                "error": [ExpectElement(By.NAME, "File might be damaged. Try to fix it.")],
+                "file loaded": [
+                    ExpectElement(
+                        By.OCR,
+                        "Layout",
+                        ocr_bounding_box=lambda left, upper, right, lower: (
+                            left,
+                            upper,
+                            right,
+                            lower // 8,
+                        ),
+                    )
+                ],
+                "error": [
+                    ExpectElement(
+                        By.OCR,
+                        "error",
+                        ocr_bounding_box=lambda left, upper, right, lower: (
+                            left + (right // 3),
+                            upper + (lower // 3),
+                            right - (right // 3),
+                            lower - (lower // 3),
+                        ),
+                    )
+                ],
             },
         )
+
+    def _prepare_window(self):
+        self._focus_window()
+        sleep(2)
+        ActionChains(self.driver).click().perform()
+        sleep(1)
 
     def _wait_program_load(self, model: File, program_start_timeout: int):
         change_type = self._wait_for_change(
@@ -598,8 +650,23 @@ class Lychee(
             timeout=program_start_timeout,
         )
         if change_type == "program tries recovery":
-            self._do_while_element_exists("deny recovery", Click(ExpectElement(By.NAME, "Decline")))
+            self._do_while_element_exists(
+                "deny recovery",
+                Click(
+                    ExpectElement(By.AUTOMATION_ID, "menuRecoveryCancelBtn", context=Context.ROOT)
+                ),
+            )
         super()._wait_program_load(model, program_start_timeout)
+
+    def _take_screenshot(self) -> Iterable[bytes]:
+        yield self.driver.get_screenshot_as_png()
+
+    def _load_model(self, model: File):
+        ActionChains(self.driver).send_keys(Keys.CONTROL + "i" + Keys.CONTROL).perform()
+        sleep(2)
+        self.driver.find_element_by_name("File name:").click()
+        ActionChains(self.driver).send_keys(model.abspath).perform()
+        self.driver.find_element(By.AUTOMATION_ID, "1").click()
 
 
 class MeshMagic(

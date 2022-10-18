@@ -270,6 +270,12 @@ class WinAppDriverProgram(Program):
     def _post_wait_program_load(self):
         """Function that is called after _wait_program_load"""
 
+    def _prepare_window(self):
+        """Prepares the window for model loading."""
+        self._focus_window()
+        self.driver.maximize_window()
+        sleep(5)  # sometimes maximizing freezes the window, this makes sure its no problem
+
     def _pre_load_model(self):
         """Function that is called before _load_model"""
 
@@ -367,9 +373,7 @@ class WinAppDriverProgram(Program):
         else:
             yield self.timestamp(State.PROGRAM_LOADED, output_dir, only_timestamp=True)
 
-        self._focus_window()
-        self.driver.maximize_window()
-        sleep(5)  # sometimes maximizing freezes the window, this makes sure its no problem
+        self._prepare_window()
 
         yield self.timestamp(State.PROGRAM_PREPARED, output_dir)
 
