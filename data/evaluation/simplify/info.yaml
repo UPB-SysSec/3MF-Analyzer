@@ -1,4 +1,4 @@
-name: meshmagic
+name: simplify
 company: ""
 version: ""
 
@@ -135,6 +135,12 @@ tests:
     has_server_log: true
   XML-MOD-ALT-DOS-BL:
     info: TODO
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-ALT-DOS-BL-PE-R:
     info: TODO
@@ -177,6 +183,12 @@ tests:
     has_server_log: true
   XML-MOD-DOS-BL:
     info: TODO
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-DOS-BL-PE-R:
     info: TODO
@@ -1173,10 +1185,6 @@ tests:
     has_server_log: true
   ZIP-zblg:
     info: TODO
-    missing_screenshot: 1
-    problems:
-    - Too many missing/broken screenshot files.
-    critical: true
     has_server_log: true
   ZIP-zbsm:
     info: TODO

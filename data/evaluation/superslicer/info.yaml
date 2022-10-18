@@ -1,4 +1,4 @@
-name: meshmagic
+name: superslicer
 company: ""
 version: ""
 
@@ -135,6 +135,10 @@ tests:
     has_server_log: true
   XML-MOD-ALT-DOS-BL:
     info: TODO
+    missing_screenshot: 1
+    problems:
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-ALT-DOS-BL-PE-R:
     info: TODO
@@ -177,6 +181,10 @@ tests:
     has_server_log: true
   XML-MOD-DOS-BL:
     info: TODO
+    missing_screenshot: 1
+    problems:
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-DOS-BL-PE-R:
     info: TODO
@@ -1173,10 +1181,6 @@ tests:
     has_server_log: true
   ZIP-zblg:
     info: TODO
-    missing_screenshot: 1
-    problems:
-    - Too many missing/broken screenshot files.
-    critical: true
     has_server_log: true
   ZIP-zbsm:
     info: TODO

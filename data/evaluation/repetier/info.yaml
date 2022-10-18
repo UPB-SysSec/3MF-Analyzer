@@ -1,4 +1,4 @@
-name: meshmagic
+name: repetier
 company: ""
 version: ""
 
@@ -17,6 +17,12 @@ tests:
     has_server_log: true
   CS-P-NEBS:
     info: TODO
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   CS-S-NEBS:
     info: TODO
@@ -127,6 +133,7 @@ tests:
   XML-MOD-ALT-B-EPE-R:
     info: TODO
     has_server_log: true
+    server_log_interesting: true
   XML-MOD-ALT-B-IGE:
     info: TODO
     has_server_log: true
@@ -139,18 +146,22 @@ tests:
   XML-MOD-ALT-DOS-BL-PE-R:
     info: TODO
     has_server_log: true
+    server_log_interesting: true
   XML-MOD-ALT-DOS-C:
     info: TODO
     has_server_log: true
   XML-MOD-ALT-FBC-BPR-A:
     info: TODO
     has_server_log: true
+    server_log_interesting: true
   XML-MOD-ALT-FBC-BPR-B:
     info: TODO
     has_server_log: true
+    server_log_interesting: true
   XML-MOD-ALT-OOB-R:
     info: TODO
     has_server_log: true
+    server_log_interesting: true
   XML-MOD-B-EGE-L:
     info: TODO
     has_server_log: true
@@ -169,6 +180,7 @@ tests:
   XML-MOD-B-EPE-R:
     info: TODO
     has_server_log: true
+    server_log_interesting: true
   XML-MOD-B-IGE:
     info: TODO
     has_server_log: true
@@ -181,6 +193,7 @@ tests:
   XML-MOD-DOS-BL-PE-R:
     info: TODO
     has_server_log: true
+    server_log_interesting: true
   XML-MOD-DOS-C:
     info: TODO
     has_server_log: true
@@ -190,33 +203,42 @@ tests:
   XML-MOD-FBC-AV:
     info: TODO
     has_server_log: true
+    server_log_interesting: true
   XML-MOD-FBC-BPR-A:
     info: TODO
     has_server_log: true
+    server_log_interesting: true
   XML-MOD-FBC-BPR-B:
     info: TODO
     has_server_log: true
+    server_log_interesting: true
   XML-MOD-FBC-E:
     info: TODO
     has_server_log: true
+    server_log_interesting: true
   XML-MOD-FBC-E-L:
     info: TODO
     has_server_log: true
   XML-MOD-OOB-NNSL:
     info: TODO
     has_server_log: true
+    server_log_interesting: true
   XML-MOD-OOB-PE-R:
     info: TODO
     has_server_log: true
+    server_log_interesting: true
   XML-MOD-OOB-R:
     info: TODO
     has_server_log: true
+    server_log_interesting: true
   XML-MOD-OOB-SL:
     info: TODO
     has_server_log: true
+    server_log_interesting: true
   XML-MOD-OOB-XI:
     info: TODO
     has_server_log: true
+    server_log_interesting: true
   XML-MOD-SSRF-NNSL:
     info: TODO
     has_server_log: true
@@ -1173,10 +1195,6 @@ tests:
     has_server_log: true
   ZIP-zblg:
     info: TODO
-    missing_screenshot: 1
-    problems:
-    - Too many missing/broken screenshot files.
-    critical: true
     has_server_log: true
   ZIP-zbsm:
     info: TODO

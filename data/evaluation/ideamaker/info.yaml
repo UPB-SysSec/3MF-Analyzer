@@ -1,4 +1,4 @@
-name: meshmagic
+name: ideamaker
 company: ""
 version: ""
 
@@ -8,6 +8,10 @@ tests:
     has_server_log: true
   CS-DOR:
     info: TODO
+    missing_screenshot: 1
+    problems:
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   CS-MUDT:
     info: TODO
@@ -1173,8 +1177,10 @@ tests:
     has_server_log: true
   ZIP-zblg:
     info: TODO
+    missing_process_info: 1
     missing_screenshot: 1
     problems:
+    - Too many missing process information files.
     - Too many missing/broken screenshot files.
     critical: true
     has_server_log: true

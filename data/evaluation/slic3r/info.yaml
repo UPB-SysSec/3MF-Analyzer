@@ -1,4 +1,4 @@
-name: meshmagic
+name: slic3r
 company: ""
 version: ""
 
@@ -8,6 +8,12 @@ tests:
     has_server_log: true
   CS-DOR:
     info: TODO
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   CS-MUDT:
     info: TODO
@@ -45,6 +51,12 @@ tests:
     has_server_log: true
   DOS-FUZ-SLIC3R-0:
     info: TODO
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   DOS-FUZ-SLIC3R-1:
     info: TODO
@@ -135,6 +147,10 @@ tests:
     has_server_log: true
   XML-MOD-ALT-DOS-BL:
     info: TODO
+    missing_screenshot: 1
+    problems:
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-ALT-DOS-BL-PE-R:
     info: TODO
@@ -156,12 +172,24 @@ tests:
     has_server_log: true
   XML-MOD-B-EGE-LX:
     info: TODO
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-B-EGE-R:
     info: TODO
     has_server_log: true
   XML-MOD-B-EGE-RX:
     info: TODO
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-B-EPE-L:
     info: TODO
@@ -177,6 +205,10 @@ tests:
     has_server_log: true
   XML-MOD-DOS-BL:
     info: TODO
+    missing_screenshot: 1
+    problems:
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-DOS-BL-PE-R:
     info: TODO
@@ -372,6 +404,12 @@ tests:
     has_server_log: true
   GEN-C-AI-COMPONENT-TRANSFORM-0:
     info: TODO
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   GEN-C-AI-ITEM-OBJECTID-0:
     info: TODO
@@ -531,12 +569,24 @@ tests:
     has_server_log: true
   GEN-C-CR-MESH-VERTICES-0:
     info: TODO
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   GEN-C-CR-MODEL-BUILD-0:
     info: TODO
     has_server_log: true
   GEN-C-CR-MODEL-RESOURCES-0:
     info: TODO
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   GEN-C-CR-RESOURCES-BASEMATERIALS-0:
     info: TODO
@@ -570,18 +620,36 @@ tests:
     has_server_log: true
   GEN-C-CRA-RESOURCES-0:
     info: TODO
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   GEN-C-CRA-TRIANGLES-0:
     info: TODO
     has_server_log: true
   GEN-C-CRA-VERTICES-0:
     info: TODO
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   GEN-CM-ADS-METADATA-NAME-0:
     info: TODO
     has_server_log: true
   GEN-CM-AR-METADATA-NAME-0:
     info: TODO
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   GEN-CM-CDA-ITEM-0:
     info: TODO
@@ -693,6 +761,12 @@ tests:
     has_server_log: true
   GEN-M-AI-ITEM-TRANSFORM-0:
     info: TODO
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   GEN-M-AI-MCOLOR-COLOR-0:
     info: TODO
@@ -1095,6 +1169,10 @@ tests:
     has_server_log: true
   CS-0000:
     info: TODO
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   CS-0001:
     info: TODO
@@ -1173,10 +1251,6 @@ tests:
     has_server_log: true
   ZIP-zblg:
     info: TODO
-    missing_screenshot: 1
-    problems:
-    - Too many missing/broken screenshot files.
-    critical: true
     has_server_log: true
   ZIP-zbsm:
     info: TODO

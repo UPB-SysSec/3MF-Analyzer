@@ -1,4 +1,4 @@
-name: meshmagic
+name: prusa
 company: ""
 version: ""
 
@@ -1134,6 +1134,10 @@ tests:
     has_server_log: true
   CS-1101:
     info: TODO
+    problems:
+    - No process information files.
+    - No screenshot files.
+    critical: true
     has_server_log: true
   CS-1110:
     info: TODO
@@ -1173,10 +1177,6 @@ tests:
     has_server_log: true
   ZIP-zblg:
     info: TODO
-    missing_screenshot: 1
-    problems:
-    - Too many missing/broken screenshot files.
-    critical: true
     has_server_log: true
   ZIP-zbsm:
     info: TODO

@@ -1,4 +1,4 @@
-name: meshmagic
+name: fusion
 company: ""
 version: ""
 
@@ -36,6 +36,10 @@ tests:
     has_server_log: true
   DOS-FUZ-LIB3MF:
     info: TODO
+    missing_screenshot: 1
+    problems:
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   DOS-FUZ-SAVITAR-0:
     info: TODO
@@ -1173,10 +1177,6 @@ tests:
     has_server_log: true
   ZIP-zblg:
     info: TODO
-    missing_screenshot: 1
-    problems:
-    - Too many missing/broken screenshot files.
-    critical: true
     has_server_log: true
   ZIP-zbsm:
     info: TODO
