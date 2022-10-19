@@ -130,16 +130,6 @@ def _verify_programs(program: Program, files: list[File], results: dict, rerun_t
             res["critical"] = True
             res["problems"].append("Too many missing/broken screenshot files.")
 
-        if len(glob(join(output_dir, "snapshot_*"))) == 0:
-            res["critical"] = True
-            res["problems"].append("No process information files.")
-            del res["missing_process_info"]
-
-        if len(glob(join(output_dir, "*.png"))) == 0:
-            res["critical"] = True
-            res["problems"].append("No screenshot files.")
-            del res["missing_screenshot"]
-
         if res.get("critical"):
             rerun_tests.append(file.test_id)
 
