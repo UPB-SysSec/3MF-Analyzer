@@ -16,7 +16,8 @@ from selenium.common.exceptions import WebDriverException
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.remote.webelement import WebElement
-from stl import mesh
+from stl.mesh import Mesh
+from stl.stl import Mode
 
 from ... import LIB3MF_DIR
 from ...dataclasses import File
@@ -475,7 +476,7 @@ class IdeaMaker(
 
 class Lib3mf(Program):
     def __init__(self) -> None:
-        super().__init__("lib3mf", None, None)
+        super().__init__("lib3mf")
         self.stl_file_path = None
 
     def test(
@@ -495,12 +496,16 @@ class Lib3mf(Program):
             wrapper = Lib3MF.Wrapper(join(LIB3MF_DIR, "Bin", "lib3mf"))
         except ImportError as err:
             logging.error("lib3mf not imported, because: %s", err)
-            yield self.timestamp(State.PROGRAM_NOT_LOADED, output_dir, only_timestamp=True)
+            yield self.timestamp(
+                State.PROGRAM_NOT_LOADED, output_dir, only_timestamp=True, capture_exception=err
+            )
             return
         except Exception as err:  # pylint:disable=broad-except
             logging.error("lib3mf not loaded, due to unexpected error")
             logging.error(err)
-            yield self.timestamp(State.PROGRAM_NOT_LOADED, output_dir, only_timestamp=True)
+            yield self.timestamp(
+                State.PROGRAM_NOT_LOADED, output_dir, only_timestamp=True, capture_exception=err
+            )
             return
         else:
             yield self.timestamp(State.PROGRAM_LOADED, output_dir, only_timestamp=True)
@@ -514,13 +519,17 @@ class Lib3mf(Program):
             writer = model.QueryWriter("stl")
             self.stl_file_path = join(output_dir, f"{file.stem}.stl")
             writer.WriteToFile(self.stl_file_path)
-        except (ActionUnsuccessful, WebDriverException) as err:
+        except Lib3MF.ELib3MFException as err:
             logging.info("model not loaded, because: %s", err)
-            yield self.timestamp(State.MODEL_NOT_LOADED, output_dir)
+            yield self.timestamp(
+                State.MODEL_NOT_LOADED, output_dir, only_timestamp=True, capture_exception=err
+            )
         except Exception as err:  # pylint:disable=broad-except
             logging.error("model not loaded, due to unexpected error")
             logging.error(err)
-            yield self.timestamp(State.MODEL_NOT_LOADED, output_dir, only_timestamp=True)
+            yield self.timestamp(
+                State.MODEL_NOT_LOADED, output_dir, only_timestamp=True, capture_exception=err
+            )
         else:
             yield self.timestamp(State.MODEL_LOADED, output_dir)
 
@@ -536,25 +545,25 @@ class Lib3mf(Program):
         """Uses matplotlib to render the STL and saves it as PNG"""
 
         if self.stl_file_path is None:
-            return b""
+            return [b""]
 
         figure = pyplot.figure()
-        axes = mplot3d.Axes3D(figure)
+        axes = figure.add_subplot(projection="3d")
 
-        your_mesh = mesh.Mesh.from_file(self.stl_file_path)
-        mpl_collection = mplot3d.art3d.Poly3DCollection(your_mesh.vectors)
+        mesh = Mesh.from_file(self.stl_file_path, mode=Mode.BINARY)
+        mpl_collection = mplot3d.art3d.Poly3DCollection(mesh.vectors)
         mpl_collection.set_edgecolor("black")
         axes.add_collection3d(mpl_collection)
 
-        scale = your_mesh.points.flatten()
+        scale = mesh.points.flatten()
         axes.auto_scale_xyz(scale, scale, scale)
 
         with BytesIO() as file:
             figure.savefig(file, format="png")
-            return file.getvalue()
+            return [file.getvalue()]
 
     def _take_snapshot(self) -> bytes:
-        return {}
+        return b""
 
 
 class Lychee(
