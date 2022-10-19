@@ -154,7 +154,7 @@ class Program(ABC):
         if take_snapshot:
             data["snapshot"] = True
             try:
-                self.snapshot(str(Path(output_directory, f"snapshot_{name.replace(' ','_')}")))
+                self.snapshot(str(Path(output_directory, f"snapshot_{name.replace(' ','_')}.json")))
             except ActionUnsuccessful as err:
                 logging.error(
                     "Tried to take snapshot for timestamp '%s', but failed with '%s'", name, err
