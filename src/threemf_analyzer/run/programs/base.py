@@ -107,11 +107,12 @@ class Program(ABC):
             "take snapshot", self._take_snapshot, self.snapshot_timeout
         )
 
-        if write_path is not None:
-            with open(write_path, "wb") as out_file:
-                out_file.write(snapshot)
-        else:
-            return json.loads(snapshot.decode("utf-8", "ignore"))
+        if snapshot:
+            if write_path is not None:
+                with open(write_path, "wb") as out_file:
+                    out_file.write(snapshot)
+            else:
+                return json.loads(snapshot.decode("utf-8", "ignore"))
 
     def timestamp(
         self,
