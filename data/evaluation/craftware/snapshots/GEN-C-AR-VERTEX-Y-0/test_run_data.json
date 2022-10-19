@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\craftware\\snapshots\\GEN-C-AR-VERTEX-Y-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1666087376.8158267
+        },
+        "01 program-started": {
+            "timestamp": 1666087379.672148
+        },
+        "02 program-loaded": {
+            "timestamp": 1666087382.9411232
+        },
+        "03 program-prepared": {
+            "timestamp": 1666087388.0314534,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1666087399.6840239
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1666087476.9257088,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1666087504.7001636
+        }
+    }
+}

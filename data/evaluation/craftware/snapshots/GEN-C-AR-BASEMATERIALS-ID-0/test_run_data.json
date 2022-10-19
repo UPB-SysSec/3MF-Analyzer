@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\craftware\\snapshots\\GEN-C-AR-BASEMATERIALS-ID-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1666085402.1644285
+        },
+        "01 program-started": {
+            "timestamp": 1666085405.0201206
+        },
+        "02 program-loaded": {
+            "timestamp": 1666085408.2226686
+        },
+        "03 program-prepared": {
+            "timestamp": 1666085413.3096838,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1666085425.0897937
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1666085502.3248653,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1666085530.076754
+        }
+    }
+}

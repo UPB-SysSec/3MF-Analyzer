@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\craftware\\snapshots\\XML-MOD-SSRF-XI\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1666116334.031656
+        },
+        "01 program-started": {
+            "timestamp": 1666116337.2998354
+        },
+        "02 program-loaded": {
+            "timestamp": 1666116340.0989926
+        },
+        "03 program-prepared": {
+            "timestamp": 1666116345.1852252,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1666116356.4287941
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1666116433.727306,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1666116461.4979236
+        }
+    }
+}

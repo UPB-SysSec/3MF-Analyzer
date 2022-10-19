@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\craftware\\snapshots\\GEN-C-ADA-OBJECT-PID-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1666081538.4223123
+        },
+        "01 program-started": {
+            "timestamp": 1666081541.7237628
+        },
+        "02 program-loaded": {
+            "timestamp": 1666081544.451743
+        },
+        "03 program-prepared": {
+            "timestamp": 1666081549.5349932,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1666081561.1363556
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1666081638.483765,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1666081666.277948
+        }
+    }
+}

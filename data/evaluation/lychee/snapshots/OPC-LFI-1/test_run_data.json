@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\lychee\\snapshots\\OPC-LFI-1\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1666173913.6597831
+        },
+        "01 program-started": {
+            "timestamp": 1666173919.4885774
+        },
+        "02 program-loaded": {
+            "timestamp": 1666173930.9728093
+        },
+        "03 program-prepared": {
+            "timestamp": 1666173934.2840755,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1666173943.5366971
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1666173946.26191,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1666173947.5352983
+        }
+    }
+}

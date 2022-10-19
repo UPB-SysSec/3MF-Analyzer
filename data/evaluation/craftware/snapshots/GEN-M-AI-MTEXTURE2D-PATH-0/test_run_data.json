@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\craftware\\snapshots\\GEN-M-AI-MTEXTURE2D-PATH-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1666096027.488097
+        },
+        "01 program-started": {
+            "timestamp": 1666096030.3802981
+        },
+        "02 program-loaded": {
+            "timestamp": 1666096033.5112965
+        },
+        "03 program-prepared": {
+            "timestamp": 1666096038.6029344,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1666096050.6756492
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1666096127.53852,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1666096155.2823486
+        }
+    }
+}

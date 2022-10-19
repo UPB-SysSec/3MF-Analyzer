@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\craftware\\snapshots\\GEN-SI-CRA-SPOLYGON-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1666108990.913619
+        },
+        "01 program-started": {
+            "timestamp": 1666108993.8336186
+        },
+        "02 program-loaded": {
+            "timestamp": 1666108997.0776155
+        },
+        "03 program-prepared": {
+            "timestamp": 1666109002.162046,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1666109014.2846634
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1666109091.8000493,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1666109119.5939572
+        }
+    }
+}

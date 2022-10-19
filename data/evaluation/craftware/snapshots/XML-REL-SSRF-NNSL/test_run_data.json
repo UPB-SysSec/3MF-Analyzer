@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\craftware\\snapshots\\XML-REL-SSRF-NNSL\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1666119212.448663
+        },
+        "01 program-started": {
+            "timestamp": 1666119215.317536
+        },
+        "02 program-loaded": {
+            "timestamp": 1666119218.4474545
+        },
+        "03 program-prepared": {
+            "timestamp": 1666119223.5322883,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1666119234.7572172
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1666119312.1102827,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1666119339.8831716
+        }
+    }
+}

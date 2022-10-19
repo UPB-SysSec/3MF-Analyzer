@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\lychee\\snapshots\\XML-MOD-SSRF-XI\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1666176486.7051537
+        },
+        "01 program-started": {
+            "timestamp": 1666176492.5320926
+        },
+        "02 program-loaded": {
+            "timestamp": 1666176503.94117
+        },
+        "03 program-prepared": {
+            "timestamp": 1666176507.2656841,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1666176516.7514756
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1666176519.5274775,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1666176520.8154747
+        }
+    }
+}

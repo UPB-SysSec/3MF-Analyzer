@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\craftware\\snapshots\\GEN-SI-AI-SSLICESTACK-ZBOTTOM-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1666106140.1838226
+        },
+        "01 program-started": {
+            "timestamp": 1666106143.042122
+        },
+        "02 program-loaded": {
+            "timestamp": 1666106146.2102883
+        },
+        "03 program-prepared": {
+            "timestamp": 1666106151.2939749,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1666106163.890408
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1666106240.826012,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1666106268.5640352
+        }
+    }
+}

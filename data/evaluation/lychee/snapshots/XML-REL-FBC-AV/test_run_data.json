@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\lychee\\snapshots\\XML-REL-FBC-AV\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1666177011.5458174
+        },
+        "01 program-started": {
+            "timestamp": 1666177017.3624394
+        },
+        "02 program-loaded": {
+            "timestamp": 1666177028.816034
+        },
+        "03 program-prepared": {
+            "timestamp": 1666177032.1331956,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1666177041.595913
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1666177044.368005,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1666177045.6684523
+        }
+    }
+}

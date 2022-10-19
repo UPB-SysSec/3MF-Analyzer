@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\lychee\\snapshots\\XML-MOD-DOS-BL\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1666175722.7662377
+        },
+        "01 program-started": {
+            "timestamp": 1666175729.5682247
+        },
+        "02 program-loaded": {
+            "timestamp": 1666175741.0887349
+        },
+        "03 program-prepared": {
+            "timestamp": 1666175744.4187312,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1666175753.8624294
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1666175788.7804294,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1666175790.0884302
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\craftware\\snapshots\\GEN-C-CRA-RESOURCES-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1666090997.7220654
+        },
+        "01 program-started": {
+            "timestamp": 1666091000.6036477
+        },
+        "02 program-loaded": {
+            "timestamp": 1666091003.8320909
+        },
+        "03 program-prepared": {
+            "timestamp": 1666091008.923419,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1666091020.4456966
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1666091097.8181427,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1666091125.5951233
+        }
+    }
+}

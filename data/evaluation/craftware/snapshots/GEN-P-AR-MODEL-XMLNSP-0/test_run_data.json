@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\craftware\\snapshots\\GEN-P-AR-MODEL-XMLNSP-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1666103220.9919887
+        },
+        "01 program-started": {
+            "timestamp": 1666103223.8755157
+        },
+        "02 program-loaded": {
+            "timestamp": 1666103227.1091669
+        },
+        "03 program-prepared": {
+            "timestamp": 1666103232.1966615,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1666103244.2854047
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1666103321.2127697,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1666103349.0177202
+        }
+    }
+}

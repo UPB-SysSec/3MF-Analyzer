@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\craftware\\snapshots\\GEN-C-AI-BASEMATERIALS-ID-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1666083239.3416839
+        },
+        "01 program-started": {
+            "timestamp": 1666083242.1842272
+        },
+        "02 program-loaded": {
+            "timestamp": 1666083245.3924482
+        },
+        "03 program-prepared": {
+            "timestamp": 1666083250.4846587,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1666083262.2964447
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1666083339.1378229,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1666083366.8596282
+        }
+    }
+}

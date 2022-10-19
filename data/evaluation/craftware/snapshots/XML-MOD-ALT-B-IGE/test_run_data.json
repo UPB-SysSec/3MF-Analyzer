@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\craftware\\snapshots\\XML-MOD-ALT-B-IGE\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1666112045.047806
+        },
+        "01 program-started": {
+            "timestamp": 1666112047.9253464
+        },
+        "02 program-loaded": {
+            "timestamp": 1666112051.1833785
+        },
+        "03 program-prepared": {
+            "timestamp": 1666112056.2804682,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1666112067.6769474
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1666112144.9183962,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1666112172.644607
+        }
+    }
+}

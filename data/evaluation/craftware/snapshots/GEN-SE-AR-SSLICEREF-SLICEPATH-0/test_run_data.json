@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\craftware\\snapshots\\GEN-SE-AR-SSLICEREF-SLICEPATH-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1666103950.1819768
+        },
+        "01 program-started": {
+            "timestamp": 1666103953.0169802
+        },
+        "02 program-loaded": {
+            "timestamp": 1666103956.274998
+        },
+        "03 program-prepared": {
+            "timestamp": 1666103961.3621228,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1666103973.9721646
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1666104051.432705,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1666104079.1400352
+        }
+    }
+}

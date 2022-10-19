@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\craftware\\snapshots\\GEN-C-AI-COMPONENT-TRANSFORM-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1666083515.770894
+        },
+        "01 program-started": {
+            "timestamp": 1666083519.0742168
+        },
+        "02 program-loaded": {
+            "timestamp": 1666083522.339224
+        },
+        "03 program-prepared": {
+            "timestamp": 1666083527.430182,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1666083539.4164987
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1666083616.7024076,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1666083644.4719713
+        }
+    }
+}

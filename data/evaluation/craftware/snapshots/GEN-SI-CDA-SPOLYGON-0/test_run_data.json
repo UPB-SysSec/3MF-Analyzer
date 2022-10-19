@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\craftware\\snapshots\\GEN-SI-CDA-SPOLYGON-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1666107774.9444547
+        },
+        "01 program-started": {
+            "timestamp": 1666107778.216491
+        },
+        "02 program-loaded": {
+            "timestamp": 1666107780.9713333
+        },
+        "03 program-prepared": {
+            "timestamp": 1666107786.0527332,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1666107798.2611878
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1666107874.602584,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1666107902.2997768
+        }
+    }
+}

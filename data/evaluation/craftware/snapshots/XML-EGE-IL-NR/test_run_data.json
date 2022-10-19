@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\craftware\\snapshots\\XML-EGE-IL-NR\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1666111221.7629585
+        },
+        "01 program-started": {
+            "timestamp": 1666111224.5611548
+        },
+        "02 program-loaded": {
+            "timestamp": 1666111227.8673334
+        },
+        "03 program-prepared": {
+            "timestamp": 1666111232.9462674,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1666111243.8532183
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1666111320.8124175,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1666111348.5355723
+        }
+    }
+}

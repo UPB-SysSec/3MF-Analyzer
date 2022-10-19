@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\craftware\\snapshots\\CS-1010\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1666077871.2649314
+        },
+        "01 program-started": {
+            "timestamp": 1666077874.5725596
+        },
+        "02 program-loaded": {
+            "timestamp": 1666077877.3387852
+        },
+        "03 program-prepared": {
+            "timestamp": 1666077882.4238694,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1666077894.9782364
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1666077972.2608063,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1666078000.0288093
+        }
+    }
+}

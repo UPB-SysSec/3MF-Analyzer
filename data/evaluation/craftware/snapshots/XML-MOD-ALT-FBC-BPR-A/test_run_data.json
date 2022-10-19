@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\craftware\\snapshots\\XML-MOD-ALT-FBC-BPR-A\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1666112731.812979
+        },
+        "01 program-started": {
+            "timestamp": 1666112734.606501
+        },
+        "02 program-loaded": {
+            "timestamp": 1666112737.9375117
+        },
+        "03 program-prepared": {
+            "timestamp": 1666112743.019428,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1666112754.492231
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1666112831.7265656,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1666112859.4817765
+        }
+    }
+}

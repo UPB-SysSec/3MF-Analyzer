@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\craftware\\snapshots\\GEN-SI-ADA-SPOLYGON-STARTV-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1666104454.9487581
+        },
+        "01 program-started": {
+            "timestamp": 1666104457.7923882
+        },
+        "02 program-loaded": {
+            "timestamp": 1666104460.987328
+        },
+        "03 program-prepared": {
+            "timestamp": 1666104466.0733452,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1666104478.5079408
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1666104555.9206605,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1666104583.7457213
+        }
+    }
+}

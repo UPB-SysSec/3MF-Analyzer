@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\craftware\\snapshots\\GEN-SI-ADA-SSLICESTACK-ID-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1666104869.723541
+        },
+        "01 program-started": {
+            "timestamp": 1666104872.6108868
+        },
+        "02 program-loaded": {
+            "timestamp": 1666104875.7305374
+        },
+        "03 program-prepared": {
+            "timestamp": 1666104880.815594,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1666104893.2376928
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1666104970.4285784,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1666104998.1785455
+        }
+    }
+}

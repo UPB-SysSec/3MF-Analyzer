@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\craftware\\snapshots\\GEN-SI-ADA-SSEGMENT-V2-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1666104593.6440277
+        },
+        "01 program-started": {
+            "timestamp": 1666104596.470436
+        },
+        "02 program-loaded": {
+            "timestamp": 1666104599.6524851
+        },
+        "03 program-prepared": {
+            "timestamp": 1666104604.7396264,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1666104617.2380536
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1666104694.065575,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1666104721.789576
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\craftware\\snapshots\\XML-MOD-FBC-E\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1666115201.0655532
+        },
+        "01 program-started": {
+            "timestamp": 1666115203.9502199
+        },
+        "02 program-loaded": {
+            "timestamp": 1666115207.1979477
+        },
+        "03 program-prepared": {
+            "timestamp": 1666115212.2889202,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1666115223.613743
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1666115301.261968,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1666115329.108904
+        }
+    }
+}

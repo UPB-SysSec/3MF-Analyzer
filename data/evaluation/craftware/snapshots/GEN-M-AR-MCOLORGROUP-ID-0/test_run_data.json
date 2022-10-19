@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\craftware\\snapshots\\GEN-M-AR-MCOLORGROUP-ID-0\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1666097234.482221
+        },
+        "01 program-started": {
+            "timestamp": 1666097237.777222
+        },
+        "02 program-loaded": {
+            "timestamp": 1666097240.5422387
+        },
+        "03 program-prepared": {
+            "timestamp": 1666097245.6259043,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1666097257.6487243
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1666097334.3273098,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1666097362.0893152
+        }
+    }
+}

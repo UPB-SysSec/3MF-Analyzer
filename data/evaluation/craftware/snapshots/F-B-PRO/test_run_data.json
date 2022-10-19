@@ -1,0 +1,34 @@
+{
+    "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\craftware\\snapshots\\F-B-PRO\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1666080364.2229276
+        },
+        "01 program-started": {
+            "timestamp": 1666080367.10385
+        },
+        "02 program-loaded": {
+            "timestamp": 1666080370.2756402
+        },
+        "03 program-prepared": {
+            "timestamp": 1666080375.3732376,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1666080386.7994163
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1666080463.9578476,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1666080491.7201233
+        }
+    }
+}
