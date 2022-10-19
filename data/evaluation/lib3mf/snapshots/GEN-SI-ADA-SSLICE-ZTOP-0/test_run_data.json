@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\GEN-SI-ADA-SSLICE-ZTOP-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665927476.3394165
+            "timestamp": 1666179191.5600603
         },
         "02 program-loaded": {
-            "timestamp": 1665927476.3394165
+            "timestamp": 1666179191.5660625
         },
         "03 program-prepared": {
-            "timestamp": 1665927476.3394165
+            "timestamp": 1666179191.5660625
         },
         "05 model-not-loaded": {
-            "timestamp": 1665927476.3487232
+            "timestamp": 1666179191.58207,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "Duplicate Z-top-value in a slice."
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665927476.3497295
+            "timestamp": 1666179191.5830789
         }
     }
 }

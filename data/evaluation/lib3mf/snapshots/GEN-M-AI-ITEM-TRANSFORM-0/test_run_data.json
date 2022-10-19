@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\GEN-M-AI-ITEM-TRANSFORM-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665927077.8376544
+            "timestamp": 1666178758.3382323
         },
         "02 program-loaded": {
-            "timestamp": 1665927077.8476207
+            "timestamp": 1666178758.3442297
         },
         "03 program-prepared": {
-            "timestamp": 1665927077.8476207
+            "timestamp": 1666178758.3452296
         },
         "05 model-not-loaded": {
-            "timestamp": 1665927077.8476207
+            "timestamp": 1666178758.3632326,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "Too many values (>12) have been found in a matrix string"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665927077.8566625
+            "timestamp": 1666178758.364233
         }
     }
 }

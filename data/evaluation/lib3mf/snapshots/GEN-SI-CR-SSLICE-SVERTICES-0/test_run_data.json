@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\GEN-SI-CR-SSLICE-SVERTICES-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665927620.4978204
+            "timestamp": 1666179343.493447
         },
         "02 program-loaded": {
-            "timestamp": 1665927620.5069966
+            "timestamp": 1666179343.5004385
         },
         "03 program-prepared": {
-            "timestamp": 1665927620.5069966
+            "timestamp": 1666179343.5014396
         },
         "05 model-not-loaded": {
-            "timestamp": 1665927620.5168436
+            "timestamp": 1666179343.5164335,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "Invalid index for slice segment or polygon."
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665927620.5171657
+            "timestamp": 1666179343.517444
         }
     }
 }

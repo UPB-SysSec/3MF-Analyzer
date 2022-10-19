@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\GEN-C-ADA-BASEMATERIALS-ID-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665926513.908246
+            "timestamp": 1666178157.794098
         },
         "02 program-loaded": {
-            "timestamp": 1665926513.9107258
+            "timestamp": 1666178157.8000934
         },
         "03 program-prepared": {
-            "timestamp": 1665926513.9107258
+            "timestamp": 1666178157.8000934
         },
         "05 model-not-loaded": {
-            "timestamp": 1665926513.9198296
+            "timestamp": 1666178157.8031058,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "Duplicate Resource ID"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665926513.9323785
+            "timestamp": 1666178157.8040998
         }
     }
 }

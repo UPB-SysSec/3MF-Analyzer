@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\GEN-C-CR-MODEL-BUILD-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665926849.3383396
+            "timestamp": 1666178510.0639472
         },
         "02 program-loaded": {
-            "timestamp": 1665926849.344554
+            "timestamp": 1666178510.0689466
         },
         "03 program-prepared": {
-            "timestamp": 1665926849.344554
+            "timestamp": 1666178510.0699553
         },
         "05 model-not-loaded": {
-            "timestamp": 1665926849.3473632
+            "timestamp": 1666178510.0849557,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "No build section in model file"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665926849.3473632
+            "timestamp": 1666178510.0849557
         }
     }
 }

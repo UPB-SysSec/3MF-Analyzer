@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\GEN-SI-AR-MODEL-XMLNSS-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665927539.3868387
+            "timestamp": 1666179257.2160761
         },
         "02 program-loaded": {
-            "timestamp": 1665927539.391024
+            "timestamp": 1666179257.2220716
         },
         "03 program-prepared": {
-            "timestamp": 1665927539.391024
+            "timestamp": 1666179257.2220716
         },
         "05 model-not-loaded": {
-            "timestamp": 1665927539.3992
+            "timestamp": 1666179257.2370713,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "The prefix of a required extension is invalid"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665927539.3992
+            "timestamp": 1666179257.2380645
         }
     }
 }

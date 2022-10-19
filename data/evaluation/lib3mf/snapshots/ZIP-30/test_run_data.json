@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\ZIP-30\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665927987.3490791
+            "timestamp": 1666179722.6400294
         },
         "02 program-loaded": {
-            "timestamp": 1665927987.3516974
+            "timestamp": 1666179722.6460302
         },
         "03 program-prepared": {
-            "timestamp": 1665927987.3516974
+            "timestamp": 1666179722.6470232
         },
         "05 model-not-loaded": {
-            "timestamp": 1665927987.3571682
+            "timestamp": 1666179722.660022,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "The call parameter to the function was invalid"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665927987.3585086
+            "timestamp": 1666179722.660022
         }
     }
 }

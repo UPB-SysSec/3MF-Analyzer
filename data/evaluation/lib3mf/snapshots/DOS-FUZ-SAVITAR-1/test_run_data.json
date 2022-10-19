@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\DOS-FUZ-SAVITAR-1\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665926471.2779057
+            "timestamp": 1666178112.268844
         },
         "02 program-loaded": {
-            "timestamp": 1665926471.280205
+            "timestamp": 1666178112.274845
         },
         "03 program-prepared": {
-            "timestamp": 1665926471.280205
+            "timestamp": 1666178112.274845
         },
         "05 model-not-loaded": {
-            "timestamp": 1665926471.2861538
+            "timestamp": 1666178112.2788503,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "Invalid XML attribute name"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665926471.2988722
+            "timestamp": 1666178112.2798433
         }
     }
 }

@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\GEN-SI-CR-RESOURCES-SSLICESTACK-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665927607.6322773
+            "timestamp": 1666179329.5480716
         },
         "02 program-loaded": {
-            "timestamp": 1665927607.6351922
+            "timestamp": 1666179329.5540624
         },
         "03 program-prepared": {
-            "timestamp": 1665927607.6351922
+            "timestamp": 1666179329.5550637
         },
         "05 model-not-loaded": {
-            "timestamp": 1665927607.6417549
+            "timestamp": 1666179329.570064,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "Could not find Slicestack Resource"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665927607.6417549
+            "timestamp": 1666179329.5710695
         }
     }
 }

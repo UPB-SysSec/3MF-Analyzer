@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\GEN-SI-CDA-SSLICESTACK-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665927599.1608667
+            "timestamp": 1666179320.5990646
         },
         "02 program-loaded": {
-            "timestamp": 1665927599.1699307
+            "timestamp": 1666179320.6060643
         },
         "03 program-prepared": {
-            "timestamp": 1665927599.1699307
+            "timestamp": 1666179320.6070645
         },
         "05 model-not-loaded": {
-            "timestamp": 1665927599.1769624
+            "timestamp": 1666179320.6220644,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "The z-coordinates of slices within a slicestack are not increasing."
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665927599.1769624
+            "timestamp": 1666179320.6220644
         }
     }
 }

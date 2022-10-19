@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\OPC-LFI-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665927650.0406876
+            "timestamp": 1666179375.62166
         },
         "02 program-loaded": {
-            "timestamp": 1665927650.049125
+            "timestamp": 1666179375.6276565
         },
         "03 program-prepared": {
-            "timestamp": 1665927650.049125
+            "timestamp": 1666179375.6276565
         },
         "05 model-not-loaded": {
-            "timestamp": 1665927650.0547895
+            "timestamp": 1666179375.6426601,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "Could not find Object associated to Component"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665927650.0547895
+            "timestamp": 1666179375.6436603
         }
     }
 }

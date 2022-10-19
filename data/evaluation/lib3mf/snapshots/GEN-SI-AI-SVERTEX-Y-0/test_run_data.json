@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\GEN-SI-AI-SVERTEX-Y-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665927535.2445683
+            "timestamp": 1666179253.0910716
         },
         "02 program-loaded": {
-            "timestamp": 1665927535.2539566
+            "timestamp": 1666179253.097064
         },
         "03 program-prepared": {
-            "timestamp": 1665927535.2539566
+            "timestamp": 1666179253.0980644
         },
         "05 model-not-loaded": {
-            "timestamp": 1665927535.2610834
+            "timestamp": 1666179253.1120653,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "Wanted to convert string with non-numeric characters to double"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665927535.2610834
+            "timestamp": 1666179253.113063
         }
     }
 }

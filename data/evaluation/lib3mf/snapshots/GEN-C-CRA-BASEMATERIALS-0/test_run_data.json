@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\GEN-C-CRA-BASEMATERIALS-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665926874.3809855
+            "timestamp": 1666178535.5805726
         },
         "02 program-loaded": {
-            "timestamp": 1665926874.384241
+            "timestamp": 1666178535.5855818
         },
         "03 program-prepared": {
-            "timestamp": 1665926874.384241
+            "timestamp": 1666178535.586565
         },
         "05 model-not-loaded": {
-            "timestamp": 1665926874.4019704
+            "timestamp": 1666178535.6005812,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "A Resource Index is invalid"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665926874.4019704
+            "timestamp": 1666178535.601563
         }
     }
 }

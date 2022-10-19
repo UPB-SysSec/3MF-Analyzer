@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\GEN-C-CRA-VERTICES-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665926908.4544966
+            "timestamp": 1666178572.09888
         },
         "02 program-loaded": {
-            "timestamp": 1665926908.4573214
+            "timestamp": 1666178572.103876
         },
         "03 program-prepared": {
-            "timestamp": 1665926908.4573214
+            "timestamp": 1666178572.1048837
         },
         "05 model-not-loaded": {
-            "timestamp": 1665926908.4631245
+            "timestamp": 1666178572.1188784,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "Invalid model node index"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665926908.4760573
+            "timestamp": 1666178572.1198866
         }
     }
 }

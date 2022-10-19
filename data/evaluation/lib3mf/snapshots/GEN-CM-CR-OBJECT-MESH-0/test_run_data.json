@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\GEN-CM-CR-OBJECT-MESH-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665926943.0595806
+            "timestamp": 1666178609.9053166
         },
         "02 program-loaded": {
-            "timestamp": 1665926943.0686858
+            "timestamp": 1666178609.9113157
         },
         "03 program-prepared": {
-            "timestamp": 1665926943.0686858
+            "timestamp": 1666178609.912317
         },
         "05 model-not-loaded": {
-            "timestamp": 1665926943.0768204
+            "timestamp": 1666178609.926317,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "An object has no supported content type"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665926943.0875328
+            "timestamp": 1666178609.9273164
         }
     }
 }

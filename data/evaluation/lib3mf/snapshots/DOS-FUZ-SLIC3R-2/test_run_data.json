@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\DOS-FUZ-SLIC3R-2\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665926483.8313518
+            "timestamp": 1666178125.4333863
         },
         "02 program-loaded": {
-            "timestamp": 1665926483.8335688
+            "timestamp": 1666178125.4423962
         },
         "03 program-prepared": {
-            "timestamp": 1665926483.8335688
+            "timestamp": 1666178125.4433866
         },
         "05 model-not-loaded": {
-            "timestamp": 1665926483.8500404
+            "timestamp": 1666178125.4473877,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "Invalid Element in namespace."
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665926483.8500404
+            "timestamp": 1666178125.4473877
         }
     }
 }

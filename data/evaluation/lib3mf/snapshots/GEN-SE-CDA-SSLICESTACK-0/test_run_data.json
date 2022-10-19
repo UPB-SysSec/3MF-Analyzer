@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\GEN-SE-CDA-SSLICESTACK-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665927459.8180208
+            "timestamp": 1666179174.9350643
         },
         "02 program-loaded": {
-            "timestamp": 1665927459.8180208
+            "timestamp": 1666179174.9410758
         },
         "03 program-prepared": {
-            "timestamp": 1665927459.8180208
+            "timestamp": 1666179174.9410758
         },
         "05 model-not-loaded": {
-            "timestamp": 1665927459.8336482
+            "timestamp": 1666179174.9700632,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "z-position of slicerefs is not increasing"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665927459.8336482
+            "timestamp": 1666179174.9710648
         }
     }
 }

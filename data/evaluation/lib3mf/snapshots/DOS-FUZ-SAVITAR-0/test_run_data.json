@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\DOS-FUZ-SAVITAR-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665926467.1784997
+            "timestamp": 1666178108.106557
         },
         "02 program-loaded": {
-            "timestamp": 1665926467.1805851
+            "timestamp": 1666178108.1155539
         },
         "03 program-prepared": {
-            "timestamp": 1665926467.1805851
+            "timestamp": 1666178108.11656
         },
         "05 model-not-loaded": {
-            "timestamp": 1665926467.1865332
+            "timestamp": 1666178108.1205537,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "Invalid model node index"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665926467.2004464
+            "timestamp": 1666178108.1205537
         }
     }
 }
