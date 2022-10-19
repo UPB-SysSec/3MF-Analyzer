@@ -10,7 +10,7 @@ def sanitize_args(args: dict) -> tuple[list[str], list[str]]:
     programs = parse_programs(args["programs"])
     files = parse_tests(args["tests"])
 
-    program_ids = [program.id for program in programs]
+    program_ids = [program_cls().name for program_cls in programs]
     test_ids = [file.test_id for file in files]
     return program_ids, test_ids
 
