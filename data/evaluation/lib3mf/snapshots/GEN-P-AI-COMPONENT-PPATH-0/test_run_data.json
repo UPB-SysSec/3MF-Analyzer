@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\GEN-P-AI-COMPONENT-PPATH-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665927391.7517378
+            "timestamp": 1666179101.3960783
         },
         "02 program-loaded": {
-            "timestamp": 1665927391.7549622
+            "timestamp": 1666179101.3987172
         },
         "03 program-prepared": {
-            "timestamp": 1665927391.7549622
+            "timestamp": 1666179101.3987172
         },
         "05 model-not-loaded": {
-            "timestamp": 1665927391.7634199
+            "timestamp": 1666179101.4051852,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "Could not find Object associated to Component"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665927391.7644193
+            "timestamp": 1666179101.4051852
         }
     }
 }

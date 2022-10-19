@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\CS-DOID\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665926424.4628036
+            "timestamp": 1666178062.6251233
         },
         "02 program-loaded": {
-            "timestamp": 1665926424.4714122
+            "timestamp": 1666178062.6311202
         },
         "03 program-prepared": {
-            "timestamp": 1665926424.4714122
+            "timestamp": 1666178062.6321285
         },
         "05 model-not-loaded": {
-            "timestamp": 1665926424.4803834
+            "timestamp": 1666178062.6361268,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "Duplicate Resource ID"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665926424.492854
+            "timestamp": 1666178062.6371315
         }
     }
 }

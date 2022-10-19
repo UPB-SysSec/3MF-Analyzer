@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\GEN-SI-AI-SPOLYGON-STARTV-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665927510.483544
+            "timestamp": 1666179228.2690656
         },
         "02 program-loaded": {
-            "timestamp": 1665927510.4927132
+            "timestamp": 1666179228.275063
         },
         "03 program-prepared": {
-            "timestamp": 1665927510.4927132
+            "timestamp": 1666179228.2760637
         },
         "05 model-not-loaded": {
-            "timestamp": 1665927510.5023572
+            "timestamp": 1666179228.2920618,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "Wanted to convert too large number string to integer"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665927510.5023572
+            "timestamp": 1666179228.293076
         }
     }
 }

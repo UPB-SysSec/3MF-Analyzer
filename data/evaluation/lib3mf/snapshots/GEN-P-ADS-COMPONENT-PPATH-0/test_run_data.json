@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\GEN-P-ADS-COMPONENT-PPATH-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665927378.5088105
+            "timestamp": 1666179087.6119275
         },
         "02 program-loaded": {
-            "timestamp": 1665927378.511847
+            "timestamp": 1666179087.618919
         },
         "03 program-prepared": {
-            "timestamp": 1665927378.511847
+            "timestamp": 1666179087.6199188
         },
         "05 model-not-loaded": {
-            "timestamp": 1665927378.5196137
+            "timestamp": 1666179087.6349173,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "Duplicate getPath attribute"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665927378.5196137
+            "timestamp": 1666179087.6359196
         }
     }
 }

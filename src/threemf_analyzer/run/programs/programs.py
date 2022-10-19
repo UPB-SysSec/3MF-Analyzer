@@ -16,7 +16,8 @@ from selenium.common.exceptions import WebDriverException
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.remote.webelement import WebElement
-from stl import mesh
+from stl.mesh import Mesh
+from stl.stl import Mode
 
 from ... import LIB3MF_DIR
 from ...dataclasses import File
@@ -425,12 +426,12 @@ class IdeaMaker(
     WinAppDriverProgram,
     metaclass=AutomatedProgram,
     capabilities=[
-        Capabilities.OPEN_MODEL_VIA_FILE_DIALOGUE,
+        # Capabilities.OPEN_MODEL_VIA_FILE_DIALOGUE,
         Capabilities.DETECT_CHANGE_OCR,
         Capabilities.START_PROGRAM_LEGACY,
     ],
     additional_attributes={
-        "open_file_dialogue_keys": Keys.CONTROL + "i" + Keys.CONTROL,
+        # "open_file_dialogue_keys": Keys.CONTROL + "i" + Keys.CONTROL,
         "window_title": "ideaMaker 4.2.3 (RAISE3D E2)",
         "window_load_timeout": 5,
     },
@@ -441,8 +442,34 @@ class IdeaMaker(
             r"E:\Program Files\Raise3D\ideaMaker\ideaMaker.exe",
             "ideaMaker",
             {
-                "program loaded": [ExpectElement(By.NAME, "RaiseCloud")],
-                "file loaded": [ExpectElement(By.NAME, "Move", Be.AVAILABLE_ENABLED)],
+                "program starting": [
+                    ExpectElement(
+                        By.NAME,
+                        "ideaMaker 4.2.3 (RAISE3D E2)",
+                        parents=[
+                            ExpectElement(By.NAME, "Desktop 1", context=Context.ROOT),
+                        ],
+                    )
+                ],
+                "program loaded": [
+                    ExpectElement(
+                        By.NAME,
+                        "RaiseCloud",
+                        parents=[
+                            ExpectElement(By.NAME, "Desktop 1", context=Context.ROOT),
+                        ],
+                    )
+                ],
+                "file loaded": [
+                    ExpectElement(
+                        By.NAME,
+                        "Move",
+                        Be.AVAILABLE_ENABLED,
+                        parents=[
+                            ExpectElement(By.NAME, "Desktop 1", context=Context.ROOT),
+                        ],
+                    )
+                ],
                 "error": [
                     ExpectElement(
                         By.OCR,
@@ -457,25 +484,49 @@ class IdeaMaker(
                 ],
             },
         )
+        self.window_title = ""  # just for the linter, value is set in meta-class attributes
 
     def _start_program(self):
         sleep(3)
         super()._start_program()
 
+    def _load_model(self, model: File):
+        # window = self.root.find_element(By.NAME, self.window_title)
+        ActionChains(self.root).send_keys(Keys.CONTROL + "i" + Keys.CONTROL).perform()
+        sleep(2)
+        ActionChains(self.root).send_keys(Keys.ALT + "n" + Keys.ALT).send_keys(
+            model.abspath
+        ).send_keys(Keys.ALT + "o" + Keys.ALT).perform()
+
     def _post_load_model(self):
-        self._do_while_element_exists(
-            "answer question",
-            Click(ExpectElement(By.NAME, "No")),
-            element=ExpectElement(
-                By.NAME,
-                "Model's size exceeds the printer's maximum build volume, apply auto-scale?",
-            ),
-        )
+        def __callback():
+            try:
+                self._find_elements(
+                    {
+                        "element to be removed": [
+                            ExpectElement(
+                                By.NAME,
+                                "No",
+                                parents=[
+                                    ExpectElement(By.NAME, "Desktop 1", context=Context.ROOT),
+                                    ExpectElement(By.NAME, "ideaMaker"),
+                                ],
+                            )
+                        ]
+                    },
+                    return_change_type=False,
+                ).click()
+            except (WebDriverException, ActionUnsuccessful):
+                return
+
+            raise ActionUnsuccessful()
+
+        _try_action_until_timeout("answer question", __callback, 60, (ActionUnsuccessful,), 1)
 
 
 class Lib3mf(Program):
     def __init__(self) -> None:
-        super().__init__("lib3mf", None, None)
+        super().__init__("lib3mf")
         self.stl_file_path = None
 
     def test(
@@ -495,12 +546,16 @@ class Lib3mf(Program):
             wrapper = Lib3MF.Wrapper(join(LIB3MF_DIR, "Bin", "lib3mf"))
         except ImportError as err:
             logging.error("lib3mf not imported, because: %s", err)
-            yield self.timestamp(State.PROGRAM_NOT_LOADED, output_dir, only_timestamp=True)
+            yield self.timestamp(
+                State.PROGRAM_NOT_LOADED, output_dir, only_timestamp=True, capture_exception=err
+            )
             return
         except Exception as err:  # pylint:disable=broad-except
             logging.error("lib3mf not loaded, due to unexpected error")
             logging.error(err)
-            yield self.timestamp(State.PROGRAM_NOT_LOADED, output_dir, only_timestamp=True)
+            yield self.timestamp(
+                State.PROGRAM_NOT_LOADED, output_dir, only_timestamp=True, capture_exception=err
+            )
             return
         else:
             yield self.timestamp(State.PROGRAM_LOADED, output_dir, only_timestamp=True)
@@ -514,13 +569,17 @@ class Lib3mf(Program):
             writer = model.QueryWriter("stl")
             self.stl_file_path = join(output_dir, f"{file.stem}.stl")
             writer.WriteToFile(self.stl_file_path)
-        except (ActionUnsuccessful, WebDriverException) as err:
+        except Lib3MF.ELib3MFException as err:
             logging.info("model not loaded, because: %s", err)
-            yield self.timestamp(State.MODEL_NOT_LOADED, output_dir)
+            yield self.timestamp(
+                State.MODEL_NOT_LOADED, output_dir, only_timestamp=True, capture_exception=err
+            )
         except Exception as err:  # pylint:disable=broad-except
             logging.error("model not loaded, due to unexpected error")
             logging.error(err)
-            yield self.timestamp(State.MODEL_NOT_LOADED, output_dir, only_timestamp=True)
+            yield self.timestamp(
+                State.MODEL_NOT_LOADED, output_dir, only_timestamp=True, capture_exception=err
+            )
         else:
             yield self.timestamp(State.MODEL_LOADED, output_dir)
 
@@ -536,25 +595,25 @@ class Lib3mf(Program):
         """Uses matplotlib to render the STL and saves it as PNG"""
 
         if self.stl_file_path is None:
-            return b""
+            return [b""]
 
         figure = pyplot.figure()
-        axes = mplot3d.Axes3D(figure)
+        axes = figure.add_subplot(projection="3d")
 
-        your_mesh = mesh.Mesh.from_file(self.stl_file_path)
-        mpl_collection = mplot3d.art3d.Poly3DCollection(your_mesh.vectors)
+        mesh = Mesh.from_file(self.stl_file_path, mode=Mode.BINARY)
+        mpl_collection = mplot3d.art3d.Poly3DCollection(mesh.vectors)
         mpl_collection.set_edgecolor("black")
         axes.add_collection3d(mpl_collection)
 
-        scale = your_mesh.points.flatten()
+        scale = mesh.points.flatten()
         axes.auto_scale_xyz(scale, scale, scale)
 
         with BytesIO() as file:
             figure.savefig(file, format="png")
-            return file.getvalue()
+            return [file.getvalue()]
 
     def _take_snapshot(self) -> bytes:
-        return {}
+        return b""
 
 
 class Lychee(
@@ -908,7 +967,10 @@ class Prusa(
             {
                 "program loaded": [ExpectElement(By.NAME, "GLCanvas")],
                 "file loaded": [ExpectElement(By.NAME, "{stem}")],
-                "question asked": [ExpectElement(By.NAME, "Multi-part object detected")],
+                "question asked": [
+                    ExpectElement(By.NAME, "Multi-part object detected"),
+                    ExpectElement(By.NAME, "PrusaSlicer - Object too large?"),
+                ],
                 "error": [ExpectElement(By.NAME, "PrusaSlicer error")],
             },
         )
@@ -931,8 +993,9 @@ class Prusa(
                 return_change_type=False,
             )
             ActionChains(self.driver).click(on_element=element).perform()
-            ActionChains(self.driver).send_keys(Keys.ALT + "y" + Keys.ALT).perform()
-            ActionChains(self.driver).send_keys(Keys.ALT + "y" + Keys.ALT).perform()
+            ActionChains(self.driver).send_keys(
+                Keys.ENTER * 4 + (Keys.ALT + "y" + Keys.ALT) * 2
+            ).perform()
             super()._wait_model_load(model, file_load_timeout)
 
 
@@ -986,8 +1049,30 @@ class Simplify(
                 "error": [
                     ExpectElement(By.XPATH, "//*[contains(@Name, 'Error parsing 3MF file')]")
                 ],
+                "question asked": [ExpectElement(By.NAME, "Auto Scale Option")],
             },
         )
+
+    def _wait_model_load(self, model: File, file_load_timeout: int):
+        change_type = self._wait_for_change(
+            names=self._transform_status_names(
+                ["error", "file loaded", "question asked"],
+                self._get_format_strings(model),
+            ),
+            timeout=file_load_timeout,
+        )
+        if change_type == "question asked":
+            element = self._wait_for_change(
+                names=self._transform_status_names(
+                    ["question asked"],
+                    self._get_format_strings(model),
+                ),
+                timeout=file_load_timeout,
+                return_change_type=False,
+            )
+            ActionChains(self.driver).click(on_element=element).perform()
+            ActionChains(self.driver).send_keys(Keys.ENTER * 4).perform()
+            super()._wait_model_load(model, file_load_timeout)
 
 
 class Slic3r(
@@ -1023,6 +1108,10 @@ class SuperSlicer(Prusa):
         self.executable_path = r"C:\Users\jrossel\Desktop\programs\superslicer.lnk"
         self.process_name = "superslicer"
         self.status_change_names["error"] = [ExpectElement(By.NAME, "SuperSlicer error")]
+        self.status_change_names["question asked"] = [
+            ExpectElement(By.NAME, "Multi-part object detected"),
+            ExpectElement(By.NAME, "SuperSlicer - Object too large?"),
+        ]
 
 
 class Zsuite(

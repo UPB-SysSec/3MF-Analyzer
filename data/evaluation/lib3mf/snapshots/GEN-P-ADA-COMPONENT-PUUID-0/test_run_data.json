@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\GEN-P-ADA-COMPONENT-PUUID-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665927365.8797884
+            "timestamp": 1666179074.4860785
         },
         "02 program-loaded": {
-            "timestamp": 1665927365.882888
+            "timestamp": 1666179074.4915202
         },
         "03 program-prepared": {
-            "timestamp": 1665927365.882888
+            "timestamp": 1666179074.4925153
         },
         "05 model-not-loaded": {
-            "timestamp": 1665927365.8921216
+            "timestamp": 1666179074.507516,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "Duplicate UUID attribute"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665927365.8921216
+            "timestamp": 1666179074.5085146
         }
     }
 }

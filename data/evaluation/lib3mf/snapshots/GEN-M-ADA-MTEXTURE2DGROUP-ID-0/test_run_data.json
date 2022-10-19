@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\GEN-M-ADA-MTEXTURE2DGROUP-ID-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665927016.724856
+            "timestamp": 1666178691.7133338
         },
         "02 program-loaded": {
-            "timestamp": 1665927016.7335753
+            "timestamp": 1666178691.7203312
         },
         "03 program-prepared": {
-            "timestamp": 1665927016.7335753
+            "timestamp": 1666178691.7203312
         },
         "05 model-not-loaded": {
-            "timestamp": 1665927016.7431755
+            "timestamp": 1666178691.7393334,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "Duplicate Resource ID"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665927016.757239
+            "timestamp": 1666178691.7403336
         }
     }
 }

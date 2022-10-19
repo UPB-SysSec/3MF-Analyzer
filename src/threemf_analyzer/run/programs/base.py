@@ -107,11 +107,12 @@ class Program(ABC):
             "take snapshot", self._take_snapshot, self.snapshot_timeout
         )
 
-        if write_path is not None:
-            with open(write_path, "wb") as out_file:
-                out_file.write(snapshot)
-        else:
-            return json.loads(snapshot.decode("utf-8", "ignore"))
+        if snapshot:
+            if write_path is not None:
+                with open(write_path, "wb") as out_file:
+                    out_file.write(snapshot)
+            else:
+                return json.loads(snapshot.decode("utf-8", "ignore"))
 
     def timestamp(
         self,
@@ -154,7 +155,7 @@ class Program(ABC):
         if take_snapshot:
             data["snapshot"] = True
             try:
-                self.snapshot(str(Path(output_directory, f"snapshot_{name.replace(' ','_')}")))
+                self.snapshot(str(Path(output_directory, f"snapshot_{name.replace(' ','_')}.json")))
             except ActionUnsuccessful as err:
                 logging.error(
                     "Tried to take snapshot for timestamp '%s', but failed with '%s'", name, err

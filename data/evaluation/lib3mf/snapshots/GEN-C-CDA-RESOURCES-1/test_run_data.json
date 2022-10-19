@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\GEN-C-CDA-RESOURCES-1\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665926819.5141847
+            "timestamp": 1666178477.2888408
         },
         "02 program-loaded": {
-            "timestamp": 1665926819.5232189
+            "timestamp": 1666178477.2938323
         },
         "03 program-prepared": {
-            "timestamp": 1665926819.5232189
+            "timestamp": 1666178477.2948406
         },
         "05 model-not-loaded": {
-            "timestamp": 1665926819.5333354
+            "timestamp": 1666178477.309834,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "Duplicate Resource ID"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665926819.5431345
+            "timestamp": 1666178477.309834
         }
     }
 }

@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\GEN-C-CR-RESOURCES-BASEMATERIALS-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665926857.587852
+            "timestamp": 1666178518.3341033
         },
         "02 program-loaded": {
-            "timestamp": 1665926857.5928326
+            "timestamp": 1666178518.3391316
         },
         "03 program-prepared": {
-            "timestamp": 1665926857.5938368
+            "timestamp": 1666178518.3401225
         },
         "05 model-not-loaded": {
-            "timestamp": 1665926857.606066
+            "timestamp": 1666178518.3550985,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "Resource not found"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665926857.606066
+            "timestamp": 1666178518.3560977
         }
     }
 }

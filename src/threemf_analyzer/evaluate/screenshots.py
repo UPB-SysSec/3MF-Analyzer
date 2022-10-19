@@ -59,12 +59,16 @@ def _get_reference_images(
 ):
     for test_id in test_ids:
         if test_id in reference_tests:
-            image_paths = sorted(glob(join(snapshots_dir, test_id, "*.png")))
+            image_paths = sorted(glob(join(snapshots_dir, test_id, "screenshot_05*.png")))
             if len(image_paths) == 0:
                 continue
-            # take the last screenshot as it has the highest probability to have the actual model
-            # there take only one to reduce iterations of the compare algorithm.
-            image_path = image_paths[-1]
+            if len(image_paths) > 1:
+                logging.error(
+                    "There is more than one screenshot in state '05'. This shouldn't happen."
+                )
+                continue
+
+            image_path = image_paths[0]
             yield {
                 "test_id": test_id,
                 "test_name": reference_tests.get(test_id, {}).get("name"),
@@ -83,9 +87,9 @@ def _get_images_to_compare(test_ids: str, reference_tests: dict, snapshots_dir: 
     for test_id in test_ids:
         if test_id in reference_tests:
             continue
-        image_paths = sorted(glob(join(snapshots_dir, test_id, "*.png")))
-        if len(image_paths) > 0:
-            yield (test_id, image_paths[-1])
+        image_paths = sorted(glob(join(snapshots_dir, test_id, "screenshot_05*.png")))
+        if len(image_paths) == 1:
+            yield (test_id, image_paths[0])
 
 
 def _compare_worker(reference_images_cache: dict, input_queue: Queue, result_queue: Queue):
@@ -117,11 +121,10 @@ def _compare_worker(reference_images_cache: dict, input_queue: Queue, result_que
 
 
 def _compare_to_reference_cases(program_id: str, test_ids: list[str], pool_size: int = 16) -> None:
-    """Takes every testcase in test_ids compares them with the reference testcases
+    """Takes every test case in test_ids compares them with the reference testcases
     (those need to be available in the snapshots directory as well).
     Given a certain similarity threshold the highest matching reference screenshot is linked to the
-    info.yaml again. This is mainly to lessen the work needed to look at every single screenshot
-    for the evaluation.
+    info.yaml again.
     """
     logging.info("%s | Start", program_id)
 
@@ -172,25 +175,25 @@ def _compare_to_reference_cases(program_id: str, test_ids: list[str], pool_size:
         for _ in range(number_queued_items):
             _, comp_test_id, reference_image_scoring = result_queue.get()
 
-            heighest_scoring_ref_id = ("", -2)
+            highest_scoring_ref_id = ("", -2)
             for reference_image_id, score in reference_image_scoring.items():
-                if score > heighest_scoring_ref_id[1]:
-                    heighest_scoring_ref_id = (reference_image_id, score)
+                if score > highest_scoring_ref_id[1]:
+                    highest_scoring_ref_id = (reference_image_id, score)
 
-            if heighest_scoring_ref_id[1] >= -1:
+            if highest_scoring_ref_id[1] >= -1:
                 tests[comp_test_id]["image_similarity"] = {
                     "similar_to": {
-                        "test_id": heighest_scoring_ref_id[0],
-                        "test_name": reference_images_cache[heighest_scoring_ref_id[0]]["name"],
+                        "test_id": highest_scoring_ref_id[0],
+                        "test_name": reference_images_cache[highest_scoring_ref_id[0]]["name"],
                     },
-                    "score": str(heighest_scoring_ref_id[1]),
+                    "score": str(highest_scoring_ref_id[1]),
                 }
                 logging.info(
                     "%s | %s is similar to %s (%s)",
                     program_id,
                     comp_test_id,
-                    heighest_scoring_ref_id[0],
-                    heighest_scoring_ref_id[1],
+                    highest_scoring_ref_id[0],
+                    highest_scoring_ref_id[1],
                 )
         logging.debug("%s | Result gathering done", program_id)
 

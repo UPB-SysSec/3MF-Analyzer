@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\ZIP-SL-S\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665928021.5577402
+            "timestamp": 1666179759.430581
         },
         "02 program-loaded": {
-            "timestamp": 1665928021.560755
+            "timestamp": 1666179759.4365716
         },
         "03 program-prepared": {
-            "timestamp": 1665928021.560755
+            "timestamp": 1666179759.4365716
         },
         "05 model-not-loaded": {
-            "timestamp": 1665928021.5670543
+            "timestamp": 1666179759.4475658,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "No model node in XML Stream"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665928021.5680497
+            "timestamp": 1666179759.4475658
         }
     }
 }

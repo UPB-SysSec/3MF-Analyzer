@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\GEN-SI-AI-SSLICESTACK-ZBOTTOM-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665927526.980671
+            "timestamp": 1666179244.815064
         },
         "02 program-loaded": {
-            "timestamp": 1665927526.9829464
+            "timestamp": 1666179244.821064
         },
         "03 program-prepared": {
-            "timestamp": 1665927526.9829464
+            "timestamp": 1666179244.8220613
         },
         "05 model-not-loaded": {
-            "timestamp": 1665927526.989746
+            "timestamp": 1666179244.8370633,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "Wanted to convert string with non-numeric characters to double"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665927526.9915066
+            "timestamp": 1666179244.8370633
         }
     }
 }

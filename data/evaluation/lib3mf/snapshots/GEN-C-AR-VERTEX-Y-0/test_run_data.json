@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\GEN-C-AR-VERTEX-Y-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665926768.8157058
+            "timestamp": 1666178424.0812824
         },
         "02 program-loaded": {
-            "timestamp": 1665926768.8250568
+            "timestamp": 1666178424.0922804
         },
         "03 program-prepared": {
-            "timestamp": 1665926768.8250568
+            "timestamp": 1666178424.0922804
         },
         "05 model-not-loaded": {
-            "timestamp": 1665926768.832831
+            "timestamp": 1666178424.1082826,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "Model Vertex is missing a coordinate"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665926768.8439531
+            "timestamp": 1666178424.1082826
         }
     }
 }

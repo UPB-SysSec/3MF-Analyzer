@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\GEN-C-CDA-OBJECT-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665926807.1618443
+            "timestamp": 1666178464.8348498
         },
         "02 program-loaded": {
-            "timestamp": 1665926807.170075
+            "timestamp": 1666178464.8398485
         },
         "03 program-prepared": {
-            "timestamp": 1665926807.170075
+            "timestamp": 1666178464.8408566
         },
         "05 model-not-loaded": {
-            "timestamp": 1665926807.1797526
+            "timestamp": 1666178464.8908572,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "Model Object Content was ambiguous"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665926807.1908317
+            "timestamp": 1666178464.8918502
         }
     }
 }

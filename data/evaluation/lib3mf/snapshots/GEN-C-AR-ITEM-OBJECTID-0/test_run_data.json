@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\GEN-C-AR-ITEM-OBJECTID-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665926704.7529447
+            "timestamp": 1666178355.4157314
         },
         "02 program-loaded": {
-            "timestamp": 1665926704.7622135
+            "timestamp": 1666178355.4217322
         },
         "03 program-prepared": {
-            "timestamp": 1665926704.7622135
+            "timestamp": 1666178355.4227293
         },
         "05 model-not-loaded": {
-            "timestamp": 1665926704.7700334
+            "timestamp": 1666178355.4377332,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "Build item Object ID was not specified"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665926704.7700334
+            "timestamp": 1666178355.4387398
         }
     }
 }

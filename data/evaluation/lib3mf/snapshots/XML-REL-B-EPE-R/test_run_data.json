@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\XML-REL-B-EPE-R\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665927896.5561326
+            "timestamp": 1666179631.416272
         },
         "02 program-loaded": {
-            "timestamp": 1665927896.5603557
+            "timestamp": 1666179631.422273
         },
         "03 program-prepared": {
-            "timestamp": 1665927896.5603557
+            "timestamp": 1666179631.422273
         },
         "05 model-not-loaded": {
-            "timestamp": 1665927896.5647388
+            "timestamp": 1666179631.4392788,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "Space in XML attribute name"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665927896.5661128
+            "timestamp": 1666179631.4392788
         }
     }
 }

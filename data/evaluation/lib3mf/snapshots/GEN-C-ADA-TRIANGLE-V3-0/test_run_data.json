@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\GEN-C-ADA-TRIANGLE-V3-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665926568.5326152
+            "timestamp": 1666178214.42498
         },
         "02 program-loaded": {
-            "timestamp": 1665926568.5414894
+            "timestamp": 1666178214.4309883
         },
         "03 program-prepared": {
-            "timestamp": 1665926568.5414894
+            "timestamp": 1666178214.4309883
         },
         "05 model-not-loaded": {
-            "timestamp": 1665926568.547613
+            "timestamp": 1666178214.4339805,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "Invalid model node index"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665926568.5606973
+            "timestamp": 1666178214.4349802
         }
     }
 }

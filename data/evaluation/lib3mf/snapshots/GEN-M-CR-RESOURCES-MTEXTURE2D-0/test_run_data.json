@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\GEN-M-CR-RESOURCES-MTEXTURE2D-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665927331.2829862
+            "timestamp": 1666179036.7121637
         },
         "02 program-loaded": {
-            "timestamp": 1665927331.2867568
+            "timestamp": 1666179036.7181633
         },
         "03 program-prepared": {
-            "timestamp": 1665927331.2867568
+            "timestamp": 1666179036.7191632
         },
         "05 model-not-loaded": {
-            "timestamp": 1665927331.293261
+            "timestamp": 1666179036.740162,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "No valid Model Resource has been given"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665927331.293261
+            "timestamp": 1666179036.740162
         }
     }
 }

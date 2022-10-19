@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\GEN-C-AI-BASEMATERIALS-ID-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665926607.67551
+            "timestamp": 1666178257.1690564
         },
         "02 program-loaded": {
-            "timestamp": 1665926607.6783733
+            "timestamp": 1666178257.1750536
         },
         "03 program-prepared": {
-            "timestamp": 1665926607.6783733
+            "timestamp": 1666178257.17606
         },
         "05 model-not-loaded": {
-            "timestamp": 1665926607.6879487
+            "timestamp": 1666178257.191071,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "Wanted to convert too large number string to integer"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665926607.6879487
+            "timestamp": 1666178257.1920557
         }
     }
 }

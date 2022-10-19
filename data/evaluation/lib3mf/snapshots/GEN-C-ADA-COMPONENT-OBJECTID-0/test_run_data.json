@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\GEN-C-ADA-COMPONENT-OBJECTID-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665926518.0564923
+            "timestamp": 1666178161.9361339
         },
         "02 program-loaded": {
-            "timestamp": 1665926518.0597587
+            "timestamp": 1666178161.9411325
         },
         "03 program-prepared": {
-            "timestamp": 1665926518.0597587
+            "timestamp": 1666178161.9421322
         },
         "05 model-not-loaded": {
-            "timestamp": 1665926518.0700982
+            "timestamp": 1666178161.946136,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "Component Object ID is ambiguous "
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665926518.0819812
+            "timestamp": 1666178161.9471364
         }
     }
 }

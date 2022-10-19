@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\CS-0101\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665926377.87648
+            "timestamp": 1666178013.389206
         },
         "02 program-loaded": {
-            "timestamp": 1665926377.87648
+            "timestamp": 1666178013.3952234
         },
         "03 program-prepared": {
-            "timestamp": 1665926377.87648
+            "timestamp": 1666178013.3962033
         },
         "05 model-not-loaded": {
-            "timestamp": 1665926377.8921046
+            "timestamp": 1666178013.3991992,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "Could not create OPC Part"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665926377.904834
+            "timestamp": 1666178013.4002025
         }
     }
 }

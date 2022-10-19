@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\XML-MOD-SSRF-XI\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665927880.0909965
+            "timestamp": 1666179614.8274288
         },
         "02 program-loaded": {
-            "timestamp": 1665927880.0909965
+            "timestamp": 1666179614.8344278
         },
         "03 program-prepared": {
-            "timestamp": 1665927880.0909965
+            "timestamp": 1666179614.835436
         },
         "05 model-not-loaded": {
-            "timestamp": 1665927880.1066213
+            "timestamp": 1666179614.8504343,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "No build section in model file"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665927880.1066213
+            "timestamp": 1666179614.8504343
         }
     }
 }

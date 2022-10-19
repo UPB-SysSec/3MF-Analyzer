@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\XML-REL-SSRF-SL\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665927970.8736382
+            "timestamp": 1666179706.108873
         },
         "02 program-loaded": {
-            "timestamp": 1665927970.8765519
+            "timestamp": 1666179706.1168733
         },
         "03 program-prepared": {
-            "timestamp": 1665927970.8765519
+            "timestamp": 1666179706.1178727
         },
         "05 model-not-loaded": {
-            "timestamp": 1665927970.882558
+            "timestamp": 1666179706.1328745,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "Resource not found"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665927970.882558
+            "timestamp": 1666179706.1338718
         }
     }
 }

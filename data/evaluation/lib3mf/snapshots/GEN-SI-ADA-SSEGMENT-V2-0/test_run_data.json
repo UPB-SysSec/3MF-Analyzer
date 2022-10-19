@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\GEN-SI-ADA-SSEGMENT-V2-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665927472.2347357
+            "timestamp": 1666179187.4340622
         },
         "02 program-loaded": {
-            "timestamp": 1665927472.2373908
+            "timestamp": 1666179187.440075
         },
         "03 program-prepared": {
-            "timestamp": 1665927472.2373908
+            "timestamp": 1666179187.440075
         },
         "05 model-not-loaded": {
-            "timestamp": 1665927472.243674
+            "timestamp": 1666179187.455064,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "Invalid index for slice segment or polygon."
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665927472.2447598
+            "timestamp": 1666179187.4560714
         }
     }
 }

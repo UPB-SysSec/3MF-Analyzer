@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\XML-MOD-ALT-FBC-BPR-B\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665927772.1717875
+            "timestamp": 1666179505.1581414
         },
         "02 program-loaded": {
-            "timestamp": 1665927772.1741562
+            "timestamp": 1666179505.1631396
         },
         "03 program-prepared": {
-            "timestamp": 1665927772.1741562
+            "timestamp": 1666179505.1641397
         },
         "05 model-not-loaded": {
-            "timestamp": 1665927772.1802287
+            "timestamp": 1666179505.22814,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "Space in XML attribute name"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665927772.1817012
+            "timestamp": 1666179505.229141
         }
     }
 }

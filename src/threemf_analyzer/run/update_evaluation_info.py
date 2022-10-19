@@ -87,8 +87,7 @@ def modify_all_eval_info(
     verification_results: dict[str, dict[str, dict[str, Any]]] = None,
     programs_infos: dict[str, dict[str, str]] = None,
 ):
-    """Updates the evaluation info.yaml and the description yaml files with new data.
-    programs is only needed if program_infos is also given."""
+    """Updates the evaluation info.yaml and the description yaml files with new data."""
     base_dir = join(EVALUATION_DIR)
 
     for entry in os.listdir(base_dir):

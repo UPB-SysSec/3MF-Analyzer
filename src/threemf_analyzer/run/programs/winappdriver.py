@@ -135,7 +135,7 @@ class WinAppDriverProgram(Program):
                 else:
                     exec_func = __by_wad
 
-                if handles := self.driver.window_handles:
+                if self.driver and (handles := self.driver.window_handles):
                     for handle in handles:
                         self.driver.switch_to.window(handle)
                         if (result := exec_func(element)) is not None:
@@ -570,6 +570,6 @@ class AutomatedProgram(ABCMeta):
             attributes["_get_windows_by_title"] = _get_windows_by_title
             attributes["_start_program"] = _start_program
 
-            __require_attribute(Capabilities.OPEN_MODEL_VIA_FILE_DIALOGUE, ["window_title"])
+            __require_attribute(Capabilities.START_PROGRAM_LEGACY, ["window_title"])
 
         return super().__new__(cls, clsname, bases, attributes)

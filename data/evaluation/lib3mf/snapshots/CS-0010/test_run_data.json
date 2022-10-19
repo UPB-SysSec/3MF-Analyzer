@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\CS-0010\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665926364.842314
+            "timestamp": 1666177999.9269218
         },
         "02 program-loaded": {
-            "timestamp": 1665926364.8444672
+            "timestamp": 1666177999.9329188
         },
         "03 program-prepared": {
-            "timestamp": 1665926364.8444672
+            "timestamp": 1666177999.9329188
         },
         "05 model-not-loaded": {
-            "timestamp": 1665926364.8633869
+            "timestamp": 1666177999.9369228,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "Could not read OPC Relationship Set"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665926364.8633869
+            "timestamp": 1666177999.9379215
         }
     }
 }

@@ -2,19 +2,24 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\lib3mf\\snapshots\\GEN-C-CDA-MODEL-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665926798.8799903
+            "timestamp": 1666178456.5436378
         },
         "02 program-loaded": {
-            "timestamp": 1665926798.8859906
+            "timestamp": 1666178456.550633
         },
         "03 program-prepared": {
-            "timestamp": 1665926798.886991
+            "timestamp": 1666178456.550633
         },
         "05 model-not-loaded": {
-            "timestamp": 1665926798.8930995
+            "timestamp": 1666178456.56463,
+            "related_exception": [
+                "<class 'Lib3MF.ELib3MFException'>",
+                5,
+                "Duplicate resources section in model file"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665926798.8930995
+            "timestamp": 1666178456.5656297
         }
     }
 }
