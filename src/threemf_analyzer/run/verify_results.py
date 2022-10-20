@@ -104,7 +104,7 @@ def _verify_programs(program: Program, files: list[File], results: dict, rerun_t
         for state in sorted(test_run_data.get("states", {}).keys()):
             screenshot_file_name = f"screenshot_{state.replace(' ', '_')}_0.png"
             screenshot_file_path = join(output_dir, screenshot_file_name)
-            snapshot_file_name = f"snapshot_{state.replace(' ', '_')}"
+            snapshot_file_name = f"snapshot_{state.replace(' ', '_')}.json"
             snapshot_file_path = join(output_dir, snapshot_file_name)
 
             if test_run_data["states"][state].get("screenshot"):
