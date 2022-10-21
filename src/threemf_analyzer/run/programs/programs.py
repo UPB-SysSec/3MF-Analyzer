@@ -613,7 +613,13 @@ class Lib3mf(Program):
             return [file.getvalue()]
 
     def _take_snapshot(self) -> bytes:
-        return b""
+        return b"""
+        {
+            "ProductVersion": "2.1.1",
+            "Description": "lib3mf",
+            "Product": "lib3mf",
+        }
+        """
 
 
 class Lychee(
