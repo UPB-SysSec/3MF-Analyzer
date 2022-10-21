@@ -834,7 +834,7 @@ class MeshMixer(
                 "file loading": [
                     ExpectElement(
                         By.OCR,
-                        "computing...",
+                        "computing",
                         Be.NOTAVAILABLE,
                         ocr_bounding_box=lambda left, upper, right, lower: (
                             right // 4,
