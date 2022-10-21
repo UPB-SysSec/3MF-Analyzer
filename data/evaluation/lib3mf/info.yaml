@@ -5,25 +5,20 @@ version: ""
 tests:
   CS-DOID:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   CS-DOR:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   CS-MUDT:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-PYR-0
@@ -33,13 +28,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   CS-SE:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-PYR-0
@@ -49,13 +44,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-  CS-P-NEBS:
-    info: TODO
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
+  CS-P-NEBS:
+    info: TODO
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -65,13 +60,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-  CS-S-NEBS:
-    info: TODO
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
+  CS-S-NEBS:
+    info: TODO
     image_similarity:
       similar_to:
         test_id: R-PYR-0
@@ -81,13 +76,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-  CS-P-SLLR:
-    info: TODO
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
+  CS-P-SLLR:
+    info: TODO
     image_similarity:
       similar_to:
         test_id: R-PYR-1
@@ -97,13 +92,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-  CS-S-SLLR:
-    info: TODO
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
+  CS-S-SLLR:
+    info: TODO
     image_similarity:
       similar_to:
         test_id: R-PYR-0
@@ -113,45 +108,45 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   CS-S:
     info: TODO
   DOS-BL-MBR:
     info: TODO
   DOS-CR-SE:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   DOS-FUZ-LIB3MF:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   DOS-FUZ-SAVITAR-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   DOS-FUZ-SAVITAR-1:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   DOS-FUZ-SLIC3R-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -161,122 +156,122 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   DOS-FUZ-SLIC3R-1:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   DOS-FUZ-SLIC3R-2:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   R-CYL:
     info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
   R-PYR-0:
     info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
   R-PYR-1:
     info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
   R-CUB:
     info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
   R-HOU:
     info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
   R-SPEC-C-0:
     info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
   R-SPEC-M-0:
     info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
   R-SPEC-P-0:
     info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
   R-ERR:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   F-B-BAL:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: empty
@@ -286,13 +281,13 @@ tests:
       status: loaded nothing
       is_outlier: false
       confidence: high
-  F-B-MAT:
-    info: TODO
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
+  F-B-MAT:
+    info: TODO
     image_similarity:
       similar_to:
         test_id: R-SPEC-P-0
@@ -302,27 +297,27 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   F-B-PRO:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   F-B-SLI:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   F-EAP:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -332,312 +327,312 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   R-SPEC-SI-0:
     info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
   R-SPEC-CM-0:
     info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
   R-SPEC-SE-0:
     info: TODO
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
-    interpretation:
-      status: aborted
-      is_outlier: false
-      confidence: high
   XML-EGE-I-R:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-EGE-I-NR:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-EGE-IL-R:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-EGE-IL-NR:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-MOD-ALT-B-EGE-L:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-MOD-ALT-B-EGE-R:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-MOD-ALT-B-EPE-L:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-MOD-ALT-B-EPE-R:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-MOD-ALT-B-IGE:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-MOD-ALT-B-IPE:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-MOD-ALT-DOS-BL:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-MOD-ALT-DOS-BL-PE-R:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-MOD-ALT-DOS-C:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-MOD-ALT-FBC-BPR-A:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-MOD-ALT-FBC-BPR-B:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-MOD-ALT-OOB-R:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-MOD-B-EGE-L:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-MOD-B-EGE-LX:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-MOD-B-EGE-R:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-MOD-B-EGE-RX:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-MOD-B-EPE-L:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-MOD-B-EPE-R:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-MOD-B-IGE:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-MOD-B-IPE:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-MOD-DOS-BL:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-MOD-DOS-BL-PE-R:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-MOD-DOS-C:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-MOD-DOS-PL:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-MOD-FBC-AV:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-MOD-FBC-BPR-A:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-MOD-FBC-BPR-B:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-MOD-FBC-E:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-MOD-FBC-E-L:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-MOD-OOB-NNSL:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-MOD-OOB-PE-R:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-MOD-OOB-R:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-MOD-OOB-SL:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-MOD-OOB-XI:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   XML-MOD-SSRF-NNSL:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -647,13 +642,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   XML-MOD-SSRF-SL:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -663,181 +658,181 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-  XML-MOD-SSRF-XI:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  XML-REL-B-EGE-L:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  XML-REL-B-EGE-R:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  XML-REL-B-EPE-L:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  XML-REL-B-EPE-R:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  XML-REL-B-IGE:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  XML-REL-B-IPE:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  XML-REL-DOS-BL:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  XML-REL-DOS-BL-PE-R:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  XML-REL-DOS-C:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  XML-REL-DOS-PL:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  XML-REL-FBC-AV:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  XML-REL-FBC-BPR-A:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  XML-REL-FBC-BPR-B:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  XML-REL-FBC-E:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  XML-REL-FBC-E-L:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  XML-REL-OOB-NNSL:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  XML-REL-OOB-PE-R:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  XML-REL-OOB-R:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  XML-REL-OOB-SL:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  XML-REL-OOB-XI:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  XML-REL-SSRF-NNSL:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  XML-REL-SSRF-SL:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  XML-REL-SSRF-XI:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  GEN-C-ADA-BASE-DISPLAYCOLOR-0:
-    info: TODO
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
+  XML-MOD-SSRF-XI:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  XML-REL-B-EGE-L:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  XML-REL-B-EGE-R:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  XML-REL-B-EPE-L:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  XML-REL-B-EPE-R:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  XML-REL-B-IGE:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  XML-REL-B-IPE:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  XML-REL-DOS-BL:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  XML-REL-DOS-BL-PE-R:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  XML-REL-DOS-C:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  XML-REL-DOS-PL:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  XML-REL-FBC-AV:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  XML-REL-FBC-BPR-A:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  XML-REL-FBC-BPR-B:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  XML-REL-FBC-E:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  XML-REL-FBC-E-L:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  XML-REL-OOB-NNSL:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  XML-REL-OOB-PE-R:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  XML-REL-OOB-R:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  XML-REL-OOB-SL:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  XML-REL-OOB-XI:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  XML-REL-SSRF-NNSL:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  XML-REL-SSRF-SL:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  XML-REL-SSRF-XI:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  GEN-C-ADA-BASE-DISPLAYCOLOR-0:
+    info: TODO
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -847,27 +842,27 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-  GEN-C-ADA-BASEMATERIALS-ID-0:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  GEN-C-ADA-COMPONENT-OBJECTID-0:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  GEN-C-ADA-COMPONENT-TRANSFORM-0:
-    info: TODO
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
+  GEN-C-ADA-BASEMATERIALS-ID-0:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  GEN-C-ADA-COMPONENT-OBJECTID-0:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  GEN-C-ADA-COMPONENT-TRANSFORM-0:
+    info: TODO
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -877,20 +872,20 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-C-ADA-ITEM-OBJECTID-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-C-ADA-MODEL-UNIT-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -900,41 +895,41 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-C-ADA-OBJECT-ID-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-C-ADA-OBJECT-PID-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-C-ADA-OBJECT-PINDEX-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-C-ADA-OBJECT-TYPE-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-C-ADA-TRIANGLE-P1-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -944,13 +939,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-C-ADA-TRIANGLE-PID-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -960,34 +955,34 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-  GEN-C-ADA-TRIANGLE-V1-0:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  GEN-C-ADA-TRIANGLE-V2-0:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  GEN-C-ADA-TRIANGLE-V3-0:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  GEN-C-ADA-VERTEX-X-0:
-    info: TODO
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
+  GEN-C-ADA-TRIANGLE-V1-0:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  GEN-C-ADA-TRIANGLE-V2-0:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  GEN-C-ADA-TRIANGLE-V3-0:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  GEN-C-ADA-VERTEX-X-0:
+    info: TODO
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -997,13 +992,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-  GEN-C-ADA-VERTEX-Y-0:
-    info: TODO
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
+  GEN-C-ADA-VERTEX-Y-0:
+    info: TODO
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -1013,13 +1008,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-  GEN-C-ADA-VERTEX-Z-0:
-    info: TODO
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
+  GEN-C-ADA-VERTEX-Z-0:
+    info: TODO
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1029,13 +1024,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-C-ADS-BASE-NAME-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1045,13 +1040,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-C-ADS-MODEL-XMLLANG-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1061,13 +1056,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-C-ADS-MODEL-XMLNS-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1077,13 +1072,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-C-ADS-OBJECT-NAME-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1093,13 +1088,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-C-AI-BASE-DISPLAYCOLOR-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1109,41 +1104,41 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-C-AI-BASEMATERIALS-ID-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-C-AI-COMPONENT-OBJECTID-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-C-AI-COMPONENT-TRANSFORM-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-C-AI-ITEM-OBJECTID-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-C-AI-MODEL-UNIT-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1153,34 +1148,34 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-C-AI-OBJECT-ID-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-C-AI-OBJECT-PID-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-C-AI-OBJECT-PINDEX-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-C-AI-OBJECT-TYPE-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1190,13 +1185,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-C-AI-TRIANGLE-P1-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1206,13 +1201,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-C-AI-TRIANGLE-PID-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1222,34 +1217,34 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-  GEN-C-AI-TRIANGLE-V1-0:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  GEN-C-AI-TRIANGLE-V2-0:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  GEN-C-AI-TRIANGLE-V3-0:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  GEN-C-AI-VERTEX-X-0:
-    info: TODO
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
+  GEN-C-AI-TRIANGLE-V1-0:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  GEN-C-AI-TRIANGLE-V2-0:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  GEN-C-AI-TRIANGLE-V3-0:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  GEN-C-AI-VERTEX-X-0:
+    info: TODO
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1259,13 +1254,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-  GEN-C-AI-VERTEX-Y-0:
-    info: TODO
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
+  GEN-C-AI-VERTEX-Y-0:
+    info: TODO
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -1275,13 +1270,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-  GEN-C-AI-VERTEX-Z-0:
-    info: TODO
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
+  GEN-C-AI-VERTEX-Z-0:
+    info: TODO
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1291,13 +1286,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-C-AR-BASE-DISPLAYCOLOR-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1307,13 +1302,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-C-AR-BASE-NAME-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1323,27 +1318,27 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-  GEN-C-AR-BASEMATERIALS-ID-0:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  GEN-C-AR-COMPONENT-OBJECTID-0:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  GEN-C-AR-COMPONENT-TRANSFORM-0:
-    info: TODO
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
+  GEN-C-AR-BASEMATERIALS-ID-0:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  GEN-C-AR-COMPONENT-OBJECTID-0:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  GEN-C-AR-COMPONENT-TRANSFORM-0:
+    info: TODO
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1353,20 +1348,20 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-C-AR-ITEM-OBJECTID-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-C-AR-MODEL-UNIT-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1376,13 +1371,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-C-AR-MODEL-XMLLANG-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1392,13 +1387,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-C-AR-MODEL-XMLNS-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1408,20 +1403,20 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-C-AR-OBJECT-ID-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-C-AR-OBJECT-NAME-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1431,13 +1426,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-C-AR-OBJECT-PID-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1447,13 +1442,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-C-AR-OBJECT-PINDEX-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1463,13 +1458,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-C-AR-OBJECT-TYPE-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1479,13 +1474,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-C-AR-TRIANGLE-P1-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1495,13 +1490,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-C-AR-TRIANGLE-PID-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1511,55 +1506,55 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-C-AR-TRIANGLE-V1-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-C-AR-TRIANGLE-V2-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-C-AR-TRIANGLE-V3-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-C-AR-VERTEX-X-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-C-AR-VERTEX-Y-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-C-AR-VERTEX-Z-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-C-CDA-BASEMATERIALS-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1569,13 +1564,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-  GEN-C-CDA-BUILD-0:
-    info: TODO
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
+  GEN-C-CDA-BUILD-0:
+    info: TODO
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1585,13 +1580,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-  GEN-C-CDA-COMPONENTS-0:
-    info: TODO
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
+  GEN-C-CDA-COMPONENTS-0:
+    info: TODO
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1601,13 +1596,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-  GEN-C-CDA-MESH-0:
-    info: TODO
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
+  GEN-C-CDA-MESH-0:
+    info: TODO
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1617,13 +1612,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-C-CDA-MESH-1:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1633,55 +1628,55 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-C-CDA-MODEL-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-C-CDA-MODEL-1:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-C-CDA-OBJECT-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-C-CDA-OBJECT-1:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-C-CDA-RESOURCES-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-C-CDA-RESOURCES-1:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-C-CDA-TRIANGLES-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1691,13 +1686,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-  GEN-C-CDA-VERTICES-0:
-    info: TODO
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
+  GEN-C-CDA-VERTICES-0:
+    info: TODO
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1707,20 +1702,20 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-C-CR-BASEMATERIALS-BASE-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-C-CR-COMPONENTS-COMPONENT-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1730,13 +1725,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-C-CR-MESH-TRIANGLES-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1746,48 +1741,48 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-  GEN-C-CR-MESH-VERTICES-0:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  GEN-C-CR-MODEL-BUILD-0:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  GEN-C-CR-MODEL-RESOURCES-0:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  GEN-C-CR-RESOURCES-BASEMATERIALS-0:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  GEN-C-CR-RESOURCES-OBJECT-0:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  GEN-C-CR-TRIANGLES-TRIANGLE-0:
-    info: TODO
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
+  GEN-C-CR-MESH-VERTICES-0:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  GEN-C-CR-MODEL-BUILD-0:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  GEN-C-CR-MODEL-RESOURCES-0:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  GEN-C-CR-RESOURCES-BASEMATERIALS-0:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  GEN-C-CR-RESOURCES-OBJECT-0:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  GEN-C-CR-TRIANGLES-TRIANGLE-0:
+    info: TODO
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1797,27 +1792,27 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-C-CR-VERTICES-VERTEX-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-C-CRA-BASEMATERIALS-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-C-CRA-BUILD-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: empty
@@ -1827,13 +1822,13 @@ tests:
       status: loaded nothing
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-C-CRA-COMPONENTS-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: empty
@@ -1843,13 +1838,13 @@ tests:
       status: loaded nothing
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-C-CRA-MESH-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1859,34 +1854,34 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-C-CRA-MODEL-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-C-CRA-OBJECT-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-C-CRA-RESOURCES-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-C-CRA-TRIANGLES-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
@@ -1896,20 +1891,20 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-C-CRA-VERTICES-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-CM-ADS-METADATA-NAME-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -1919,13 +1914,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-CM-AR-METADATA-NAME-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -1935,13 +1930,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-CM-CDA-ITEM-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -1951,13 +1946,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-CM-CDA-METADATAGROUP-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -1967,13 +1962,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-CM-CDA-MODEL-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -1983,13 +1978,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-CM-CDA-OBJECT-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -1999,13 +1994,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-CM-CR-MODEL-METADATA-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -2015,20 +2010,20 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-CM-CR-OBJECT-MESH-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-CM-CR-OBJECT-METADATAGROUP-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -2038,13 +2033,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-CM-CRA-ITEM-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -2054,13 +2049,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-CM-CRA-METADATAGROUP-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -2070,13 +2065,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-  GEN-M-ADA-BASEMATERIALS-DISPLAYPROPERTIESID-0:
-    info: TODO
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
+  GEN-M-ADA-BASEMATERIALS-DISPLAYPROPERTIESID-0:
+    info: TODO
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2086,13 +2081,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-  GEN-M-ADA-ITEM-TRANSFORM-0:
-    info: TODO
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
+  GEN-M-ADA-ITEM-TRANSFORM-0:
+    info: TODO
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -2102,13 +2097,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-ADA-MCOLOR-COLOR-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2118,20 +2113,20 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-ADA-MCOLORGROUP-ID-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-M-ADA-MPBMETALLIC-METALLICNESS-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2141,13 +2136,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-ADA-MPBMETALLIC-ROUGHNESS-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2157,13 +2152,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-ADA-MPBMETALLICDISPLAYPROPERTIES-ID-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2173,13 +2168,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-ADA-MTEX2COORD-U-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2189,13 +2184,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-ADA-MTEX2COORD-V-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2205,13 +2200,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-ADA-MTEXTURE2D-CONTENTTYPE-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2221,20 +2216,20 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-ADA-MTEXTURE2D-ID-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-M-ADA-MTEXTURE2D-TILESTYLEU-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2244,13 +2239,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-ADA-MTEXTURE2D-TILESTYLEV-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2260,27 +2255,27 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-ADA-MTEXTURE2DGROUP-ID-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-M-ADA-MTEXTURE2DGROUP-TEXID-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-M-ADA-MTRANSLUCENT-ROUGHNESS-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2290,13 +2285,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-ADA-MTRANSLUCENTDISPLAYPROPERTIES-ID-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2306,13 +2301,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-ADA-TRIANGLE-P2-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2322,13 +2317,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-ADA-TRIANGLE-P3-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2338,13 +2333,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-ADS-MODEL-REQUIREDEXTENSIONS-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2354,13 +2349,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-ADS-MODEL-XMLNSM-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2370,13 +2365,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-ADS-MPBMETALLIC-NAME-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2386,13 +2381,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-ADS-MTEXTURE2D-PATH-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2402,13 +2397,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-ADS-MTRANSLUCENT-ATTENUATION-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2418,13 +2413,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-ADS-MTRANSLUCENT-NAME-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2434,13 +2429,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-ADS-MTRANSLUCENT-REFRACTIVEINDEX-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2450,13 +2445,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-AI-BASEMATERIALS-DISPLAYPROPERTIESID-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2466,20 +2461,20 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-AI-ITEM-TRANSFORM-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-M-AI-MCOLOR-COLOR-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2489,20 +2484,20 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-AI-MCOLORGROUP-ID-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-M-AI-MPBMETALLIC-METALLICNESS-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2512,13 +2507,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-AI-MPBMETALLIC-ROUGHNESS-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2528,13 +2523,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-AI-MPBMETALLICDISPLAYPROPERTIES-ID-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2544,13 +2539,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-AI-MTEX2COORD-U-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2560,13 +2555,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-AI-MTEX2COORD-V-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2576,34 +2571,34 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-AI-MTEXTURE2D-CONTENTTYPE-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-M-AI-MTEXTURE2D-ID-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-M-AI-MTEXTURE2D-PATH-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-M-AI-MTEXTURE2D-TILESTYLEU-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2613,13 +2608,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-AI-MTEXTURE2D-TILESTYLEV-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2629,27 +2624,27 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-AI-MTEXTURE2DGROUP-ID-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-M-AI-MTEXTURE2DGROUP-TEXID-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-M-AI-MTRANSLUCENT-ROUGHNESS-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2659,13 +2654,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-AI-MTRANSLUCENTDISPLAYPROPERTIES-ID-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2675,13 +2670,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-AI-TRIANGLE-P2-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2691,13 +2686,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-AI-TRIANGLE-P3-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2707,13 +2702,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-AR-BASEMATERIALS-DISPLAYPROPERTIESID-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2723,13 +2718,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-  GEN-M-AR-ITEM-TRANSFORM-0:
-    info: TODO
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
+  GEN-M-AR-ITEM-TRANSFORM-0:
+    info: TODO
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2739,13 +2734,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-AR-MCOLOR-COLOR-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2755,20 +2750,20 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-AR-MCOLORGROUP-ID-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-M-AR-MODEL-REQUIREDEXTENSIONS-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2778,20 +2773,20 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-AR-MODEL-XMLNSM-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-M-AR-MPBMETALLIC-METALLICNESS-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2801,13 +2796,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-AR-MPBMETALLIC-NAME-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2817,13 +2812,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-AR-MPBMETALLIC-ROUGHNESS-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2833,13 +2828,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-AR-MPBMETALLICDISPLAYPROPERTIES-ID-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2849,13 +2844,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-AR-MTEX2COORD-U-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2865,13 +2860,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-AR-MTEX2COORD-V-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2881,34 +2876,34 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-AR-MTEXTURE2D-CONTENTTYPE-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-M-AR-MTEXTURE2D-ID-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-M-AR-MTEXTURE2D-PATH-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-M-AR-MTEXTURE2D-TILESTYLEU-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2918,13 +2913,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-AR-MTEXTURE2D-TILESTYLEV-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2934,27 +2929,27 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-AR-MTEXTURE2DGROUP-ID-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-M-AR-MTEXTURE2DGROUP-TEXID-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-M-AR-MTRANSLUCENT-ATTENUATION-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2964,13 +2959,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-AR-MTRANSLUCENT-NAME-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2980,13 +2975,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-AR-MTRANSLUCENT-REFRACTIVEINDEX-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -2996,13 +2991,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-AR-MTRANSLUCENT-ROUGHNESS-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -3012,13 +3007,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-AR-MTRANSLUCENTDISPLAYPROPERTIES-ID-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -3028,13 +3023,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-AR-TRIANGLE-P2-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -3044,13 +3039,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-AR-TRIANGLE-P3-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -3060,13 +3055,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-CDA-MCOLORGROUP-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -3076,13 +3071,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-CDA-MPBMETALLICDISPLAYPROPERTIES-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -3092,13 +3087,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-CDA-MTEXTURE2DGROUP-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -3108,13 +3103,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-CDA-MTRANSLUCENTDISPLAYPROPERTIES-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -3124,20 +3119,20 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-CDA-RESOURCES-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-M-CDA-RESOURCES-1:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -3147,13 +3142,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-CDA-RESOURCES-2:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -3163,27 +3158,27 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-  GEN-M-CDA-RESOURCES-3:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  GEN-M-CDA-RESOURCES-4:
-    info: TODO
-    has_server_log: true
-    interpretation:
-      status: indecisive
-      is_outlier: false
-      confidence: none
-  GEN-M-CR-BUILD-ITEM-0:
-    info: TODO
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
+  GEN-M-CDA-RESOURCES-3:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  GEN-M-CDA-RESOURCES-4:
+    info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
+  GEN-M-CR-BUILD-ITEM-0:
+    info: TODO
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -3193,13 +3188,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-CR-MCOLORGROUP-MCOLOR-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -3209,13 +3204,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-CR-MTEXTURE2DGROUP-MTEX2COORD-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -3225,13 +3220,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-CR-RESOURCES-MCOLORGROUP-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -3241,13 +3236,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-CR-RESOURCES-MPBMETALLICDISPLAYPROPERTIES-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -3257,20 +3252,20 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-CR-RESOURCES-MTEXTURE2D-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-M-CR-RESOURCES-MTEXTURE2DGROUP-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -3280,13 +3275,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-CR-RESOURCES-MTRANSLUCENTDISPLAYPROPERTIES-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -3296,13 +3291,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-CRA-MCOLORGROUP-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -3312,13 +3307,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-CRA-MPBMETALLICDISPLAYPROPERTIES-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -3328,13 +3323,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-CRA-MTEXTURE2DGROUP-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -3344,13 +3339,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-M-CRA-MTRANSLUCENTDISPLAYPROPERTIES-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
@@ -3360,34 +3355,34 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-P-ADA-BUILD-PUUID-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-P-ADA-COMPONENT-PUUID-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-P-ADA-ITEM-PUUID-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-P-ADA-OBJECT-PUUID-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-P-0
@@ -3397,20 +3392,20 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-P-ADS-COMPONENT-PPATH-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-P-ADS-MODEL-XMLNSP-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-P-0
@@ -3420,13 +3415,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-P-AI-BUILD-PUUID-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-P-0
@@ -3436,20 +3431,20 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-P-AI-COMPONENT-PPATH-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-P-AI-COMPONENT-PUUID-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-P-0
@@ -3459,13 +3454,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-P-AI-ITEM-PUUID-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-P-0
@@ -3475,13 +3470,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-P-AI-OBJECT-PUUID-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-P-0
@@ -3491,13 +3486,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-P-AR-BUILD-PUUID-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-P-0
@@ -3507,13 +3502,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-  GEN-P-AR-COMPONENT-PPATH-0:
-    info: TODO
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
+  GEN-P-AR-COMPONENT-PPATH-0:
+    info: TODO
     image_similarity:
       similar_to:
         test_id: R-SPEC-P-0
@@ -3523,13 +3518,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-P-AR-COMPONENT-PUUID-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-P-0
@@ -3539,13 +3534,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-P-AR-ITEM-PUUID-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-P-0
@@ -3555,20 +3550,20 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-P-AR-MODEL-XMLNSP-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-P-AR-OBJECT-PUUID-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-P-0
@@ -3578,20 +3573,20 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-SE-ADA-SSLICEREF-SLICESTACKID-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-SE-ADS-SSLICEREF-SLICEPATH-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -3601,83 +3596,83 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-SE-AI-SSLICEREF-SLICEPATH-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-SE-AI-SSLICEREF-SLICESTACKID-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-SE-AR-SSLICEREF-SLICEPATH-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-SE-AR-SSLICEREF-SLICESTACKID-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-SE-CDA-SSLICESTACK-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-SI-ADA-OBJECT-SSLICESTACKID-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-SI-ADA-SPOLYGON-STARTV-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-SI-ADA-SSEGMENT-V2-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-SI-ADA-SSLICE-ZTOP-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-SI-ADA-SSLICESTACK-ID-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-SI-ADA-SSLICESTACK-ZBOTTOM-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -3687,13 +3682,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-SI-ADA-SVERTEX-X-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -3703,13 +3698,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-SI-ADA-SVERTEX-Y-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -3719,13 +3714,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-SI-ADS-MODEL-XMLNSS-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -3735,13 +3730,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-SI-ADS-OBJECT-SMESHRESOLUTION-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -3751,76 +3746,76 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-SI-AI-OBJECT-SSLICESTACKID-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-SI-AI-SPOLYGON-STARTV-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-SI-AI-SSEGMENT-V2-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-SI-AI-SSLICE-ZTOP-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-SI-AI-SSLICESTACK-ID-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-SI-AI-SSLICESTACK-ZBOTTOM-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-SI-AI-SVERTEX-X-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-SI-AI-SVERTEX-Y-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-SI-AR-MODEL-XMLNSS-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-SI-AR-OBJECT-SMESHRESOLUTION-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -3830,13 +3825,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-SI-AR-OBJECT-SSLICESTACKID-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -3846,20 +3841,20 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-SI-AR-SPOLYGON-STARTV-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-SI-AR-SSEGMENT-V2-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -3869,27 +3864,27 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-SI-AR-SSLICE-ZTOP-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-SI-AR-SSLICESTACK-ID-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-SI-AR-SSLICESTACK-ZBOTTOM-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -3899,13 +3894,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-SI-AR-SVERTEX-X-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -3915,13 +3910,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-SI-AR-SVERTEX-Y-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -3931,27 +3926,27 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-SI-CDA-RESOURCES-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-SI-CDA-SPOLYGON-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-SI-CDA-SSLICE-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -3961,13 +3956,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-SI-CDA-SSLICE-1:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -3977,20 +3972,20 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-SI-CDA-SSLICESTACK-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-SI-CDA-SVERTICES-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -4000,20 +3995,20 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-SI-CR-RESOURCES-SSLICESTACK-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-SI-CR-SPOLYGON-SSEGMENT-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -4023,13 +4018,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-SI-CR-SSLICE-SPOLYGON-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -4039,20 +4034,20 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-SI-CR-SSLICE-SVERTICES-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-SI-CR-SSLICESTACK-SSLICE-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -4062,27 +4057,27 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-SI-CR-SVERTICES-SVERTEX-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-SI-CRA-SPOLYGON-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   GEN-SI-CRA-SSLICE-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -4092,13 +4087,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-SI-CRA-SSLICESTACK-0:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -4108,41 +4103,41 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   GEN-SI-CRA-SVERTICES-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   CS-0000:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   CS-0001:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   CS-0010:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   CS-0011:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CYL
@@ -4152,62 +4147,62 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   CS-0100:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   CS-0101:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   CS-0110:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   CS-0111:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   CS-1000:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   CS-1001:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   CS-1010:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   CS-1011:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CYL
@@ -4217,13 +4212,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   CS-1100:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-PYR-0
@@ -4233,13 +4228,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   CS-1101:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-PYR-0
@@ -4249,13 +4244,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   CS-1110:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-PYR-0
@@ -4265,13 +4260,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   CS-1111:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-PYR-0
@@ -4281,48 +4276,48 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   OPC-LFI-0:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   OPC-LFI-1:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   OPC-LFI-2:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   ZIP-SL-S:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   ZIP-SL-C:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   ZIP-CBR:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-PYR-0
@@ -4332,13 +4327,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   ZIP-CLCVR:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-PYR-0
@@ -4348,13 +4343,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   ZIP-CUCVR:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CYL
@@ -4364,13 +4359,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   ZIP-SFT:
     info: TODO
-    missing_process_info: 1
-    problems:
-    - Too many missing process information files.
-    critical: true
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CYL
@@ -4380,13 +4375,13 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-  ZIP-64:
-    info: TODO
     missing_process_info: 1
     problems:
     - Too many missing process information files.
     critical: true
     has_server_log: true
+  ZIP-64:
+    info: TODO
     image_similarity:
       similar_to:
         test_id: R-CUB
@@ -4396,46 +4391,51 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    problems:
+    - Too many missing process information files.
+    critical: true
+    has_server_log: true
   ZIP-zblg:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   ZIP-zbsm:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   ZIP-10:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   ZIP-20:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   ZIP-30:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
   ZIP-34:
     info: TODO
-    has_server_log: true
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
+    has_server_log: true
 deprecated: {}
