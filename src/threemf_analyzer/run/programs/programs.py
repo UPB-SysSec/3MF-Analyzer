@@ -1060,25 +1060,31 @@ class Simplify(
         )
 
     def _wait_model_load(self, model: File, file_load_timeout: int):
-        change_type = self._wait_for_change(
+        self._do_while_element_exists(
+            "answer question",
+            Click(ExpectElement(By.NAME, "Yes Enter")),
+            element=ExpectElement(By.NAME, "Auto Scale Option"),
+        )
+        self._wait_for_change(
             names=self._transform_status_names(
-                ["error", "file loaded", "question asked"],
+                ["error", "file loaded"],
+                # ["question asked", "error", "file loaded"],
                 self._get_format_strings(model),
             ),
             timeout=file_load_timeout,
         )
-        if change_type == "question asked":
-            element = self._wait_for_change(
-                names=self._transform_status_names(
-                    ["question asked"],
-                    self._get_format_strings(model),
-                ),
-                timeout=file_load_timeout,
-                return_change_type=False,
-            )
-            ActionChains(self.driver).click(on_element=element).perform()
-            ActionChains(self.driver).send_keys(Keys.ENTER * 4).perform()
-            super()._wait_model_load(model, file_load_timeout)
+        # if change_type == "question asked":
+        #     element = self._wait_for_change(
+        #         names=self._transform_status_names(
+        #             ["question asked"],
+        #             self._get_format_strings(model),
+        #         ),
+        #         timeout=file_load_timeout,
+        #         return_change_type=False,
+        #     )
+        #     ActionChains(self.driver).click(on_element=element).perform()
+        #     ActionChains(self.driver).send_keys(Keys.ENTER * 4).perform()
+        #     super()._wait_model_load(model, file_load_timeout)
 
 
 class Slic3r(
