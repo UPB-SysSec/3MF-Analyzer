@@ -2,32 +2,30 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\zsuite\\snapshots\\GEN-C-AR-OBJECT-ID-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665958899.5445862
+            "timestamp": 1666366473.8848927
         },
         "01 program-started": {
-            "timestamp": 1665958914.3665833
+            "timestamp": 1666366488.7511013
         },
         "02 program-loaded": {
-            "timestamp": 1665958915.8447652
+            "timestamp": 1666366490.2060983
         },
         "03 program-prepared": {
-            "timestamp": 1665958921.070474,
+            "timestamp": 1666366495.4380982,
             "screenshot": true,
             "snapshot": true
         },
         "05 model-not-loaded": {
-            "timestamp": 1665958926.1111603,
+            "timestamp": 1666366523.0460026,
             "screenshot": true,
             "snapshot": true,
             "related_exception": [
-                "<class 'selenium.common.exceptions.NoSuchElementException'>",
-                "An element could not be located on the page using the given search parameters.",
-                null,
-                null
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
             ]
         },
         "06 program-stopped": {
-            "timestamp": 1665958928.136161
+            "timestamp": 1666366524.9230006
         }
     }
 }

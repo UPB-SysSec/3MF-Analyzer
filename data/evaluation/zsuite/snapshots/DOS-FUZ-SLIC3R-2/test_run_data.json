@@ -2,32 +2,33 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\zsuite\\snapshots\\DOS-FUZ-SLIC3R-2\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665955778.742546
+            "timestamp": 1666366030.980094
         },
         "01 program-started": {
-            "timestamp": 1665955793.5458093
+            "timestamp": 1666366045.8318965
         },
         "02 program-loaded": {
-            "timestamp": 1665955795.0132504
+            "timestamp": 1666366047.3380952
         },
         "03 program-prepared": {
-            "timestamp": 1665955800.2424273,
+            "timestamp": 1666366052.6028132,
             "screenshot": true,
             "snapshot": true
         },
+        "04 model-started-loading": {
+            "timestamp": 1666366074.2822733
+        },
         "05 model-not-loaded": {
-            "timestamp": 1665955805.2423615,
+            "timestamp": 1666366077.32893,
             "screenshot": true,
             "snapshot": true,
             "related_exception": [
-                "<class 'selenium.common.exceptions.NoSuchElementException'>",
-                "An element could not be located on the page using the given search parameters.",
-                null,
-                null
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
             ]
         },
         "06 program-stopped": {
-            "timestamp": 1665955807.299364
+            "timestamp": 1666366079.5180013
         }
     }
 }

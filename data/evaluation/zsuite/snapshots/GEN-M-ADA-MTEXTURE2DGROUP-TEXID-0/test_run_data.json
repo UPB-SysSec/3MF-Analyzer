@@ -2,32 +2,33 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\zsuite\\snapshots\\GEN-M-ADA-MTEXTURE2DGROUP-TEXID-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665962734.1472993
+            "timestamp": 1666366836.0579348
         },
         "01 program-started": {
-            "timestamp": 1665962748.980472
+            "timestamp": 1666366850.866102
         },
         "02 program-loaded": {
-            "timestamp": 1665962750.4604714
+            "timestamp": 1666366852.321099
         },
         "03 program-prepared": {
-            "timestamp": 1665962755.6929827,
+            "timestamp": 1666366857.5596116,
             "screenshot": true,
             "snapshot": true
         },
+        "04 model-started-loading": {
+            "timestamp": 1666366880.0921135
+        },
         "05 model-not-loaded": {
-            "timestamp": 1665962760.7185564,
+            "timestamp": 1666366882.9431121,
             "screenshot": true,
             "snapshot": true,
             "related_exception": [
-                "<class 'selenium.common.exceptions.NoSuchElementException'>",
-                "An element could not be located on the page using the given search parameters.",
-                null,
-                null
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
             ]
         },
         "06 program-stopped": {
-            "timestamp": 1665962762.7505615
+            "timestamp": 1666366885.0952566
         }
     }
 }
