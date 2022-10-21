@@ -1,6 +1,6 @@
 """Different utility functions."""
 
-import fnmatch
+import fnmatch as match
 import logging
 import os
 import queue
@@ -298,10 +298,57 @@ def parse_tests(test_ids: str) -> list[File]:
     else:
         for test_id in test_ids.split(","):
             test_id = test_id.strip()
-            for matched_id in fnmatch.filter(all_tests.keys(), test_id):
+            for matched_id in match.filter(all_tests.keys(), test_id):
                 _add_file(matched_id, files)
 
     files = sorted(list(files))
     logging.info("Target files: %s", files)
     assert len(files) > 0, "No matching test files found"
     return files
+
+
+def reduce_test_ids_to_globs(all_test_ids: list[str], target_test_ids: list[str]) -> list[str]:
+    """Reduces the list of test ids using globs if possible"""
+
+    def _list_prefixes(ids: list[str]):
+        """Returns all possible prefixes of a list of IDs, including the IDs themselves."""
+        prefixes = set()
+        for test_id in ids:
+            prefix = ""
+            for element in test_id.split("-"):
+                if prefix == "":
+                    prefix = element
+                else:
+                    prefix += "-" + element
+                prefixes.add(prefix)
+        return sorted(prefixes)
+
+    prefixes = _list_prefixes(target_test_ids)
+    result = set()
+
+    for prefix in prefixes:
+        # check that this prefix is not already matched by something in the result list
+        already_matched = False
+        for res in result:
+            if match.fnmatch(prefix, res):
+                already_matched = True
+                break
+        if already_matched:
+            continue
+
+        _prefix = f"{prefix}*"
+        if set(match.filter(all_test_ids, _prefix)) == set(match.filter(target_test_ids, _prefix)):
+            if prefix in all_test_ids:
+                result.add(prefix)
+            else:
+                result.add(_prefix)
+
+    # build set of alle matched ids, so we can substract it from the original and add the remaining
+    # (missing) IDs to the result set
+    matching = set()
+    for prefix in result:
+        matching.update(set(match.filter(all_test_ids, prefix)))
+    missing = set(target_test_ids).difference(matching)
+    result.update(missing)
+
+    return sorted(result)

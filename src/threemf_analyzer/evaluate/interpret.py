@@ -3,6 +3,7 @@ import logging
 from os.path import isfile, join
 
 from .. import EVALUATION_DIR, yaml
+from ..utils import get_all_tests, reduce_test_ids_to_globs
 
 
 def _get_status(test_infos, ref_screenshots_config):
@@ -130,10 +131,27 @@ def _interpret(program_id: str, test_ids: list[str]) -> None:
     with open(join(program_dir_path, "info.yaml"), "w", encoding="utf8") as yaml_file:
         yaml.dump(content, yaml_file)
 
+    rerun_tests = []
+    for test_id, test_data in tests.items():
+        if test_data.get("rerun") is True:
+            rerun_tests.append(test_id)
+    return rerun_tests
+
 
 def interpret_data(program_ids: list[str], test_ids: list[str]) -> None:
     """Compares all testcases of all given programs with the references cases.
     For more infos see: `_compare_to_reference_cases` function."""
 
+    rerun_flags = []
+    all_test_ids = get_all_tests().keys()
+
     for program_id in program_ids:
-        _interpret(program_id, test_ids)
+        rerun_tests = _interpret(program_id, test_ids)
+        if rerun_tests:
+            rerun_flags.append(
+                f'-p "{program_id}" '
+                f"-t \"{','.join(reduce_test_ids_to_globs(all_test_ids, rerun_tests))}\""
+            )
+
+    if rerun_flags:
+        print("\nTests marked to rerun:\n    " + "\n    ".join(rerun_flags) + "\n")
