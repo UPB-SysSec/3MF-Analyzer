@@ -11,6 +11,10 @@ tests:
         test_id: error
         test_name: Manual reference screenshot
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   CS-DOR:
     info: TODO
     has_server_log: true
@@ -19,6 +23,10 @@ tests:
         test_id: error
         test_name: Manual reference screenshot
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   CS-MUDT:
     info: TODO
     has_server_log: true
@@ -27,6 +35,10 @@ tests:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
       score: '0.964408627233366'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   CS-SE:
     info: TODO
     has_server_log: true
@@ -35,6 +47,10 @@ tests:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
       score: '0.9998520722485742'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   CS-P-NEBS:
     info: TODO
     has_server_log: true
@@ -43,6 +59,10 @@ tests:
         test_id: R-CYL
         test_name: Cylinder Model
       score: '0.8949310324621659'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: low
   CS-S-NEBS:
     info: TODO
     has_server_log: true
@@ -51,6 +71,10 @@ tests:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
       score: '0.9997978466755416'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   CS-P-SLLR:
     info: TODO
     has_server_log: true
@@ -59,6 +83,10 @@ tests:
         test_id: R-PYR-1
         test_name: Pyramid Model 1
       score: '0.999614746637312'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   CS-S-SLLR:
     info: TODO
     has_server_log: true
@@ -67,6 +95,10 @@ tests:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
       score: '0.9992291485451977'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   CS-S:
     info: TODO
   DOS-BL-MBR:
@@ -79,6 +111,10 @@ tests:
         test_id: error
         test_name: Manual reference screenshot
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   DOS-FUZ-LIB3MF:
     info: TODO
     missing_screenshot: 1
@@ -86,6 +122,10 @@ tests:
     - Too many missing/broken screenshot files.
     critical: true
     has_server_log: true
+    interpretation:
+      status: aborted
+      is_outlier: true
+      confidence: high
   DOS-FUZ-SAVITAR-0:
     info: TODO
     has_server_log: true
@@ -94,6 +134,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   DOS-FUZ-SAVITAR-1:
     info: TODO
     has_server_log: true
@@ -102,6 +146,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   DOS-FUZ-SLIC3R-0:
     info: TODO
     has_server_log: true
@@ -110,6 +158,10 @@ tests:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
       score: '0.7777297442449825'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
   DOS-FUZ-SLIC3R-1:
     info: TODO
     has_server_log: true
@@ -118,6 +170,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   DOS-FUZ-SLIC3R-2:
     info: TODO
     has_server_log: true
@@ -126,33 +182,73 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   R-CYL:
     info: TODO
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
   R-PYR-0:
     info: TODO
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
   R-PYR-1:
     info: TODO
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
   R-CUB:
     info: TODO
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
   R-HOU:
     info: TODO
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
   R-SPEC-C-0:
     info: TODO
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
   R-SPEC-M-0:
     info: TODO
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
   R-SPEC-P-0:
     info: TODO
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
   R-ERR:
     info: TODO
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
   F-B-BAL:
     info: TODO
     has_server_log: true
@@ -161,6 +257,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9984244491507481'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   F-B-MAT:
     info: TODO
     has_server_log: true
@@ -169,6 +269,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.838495910562371'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: low
   F-B-PRO:
     info: TODO
     has_server_log: true
@@ -177,6 +281,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   F-B-SLI:
     info: TODO
     has_server_log: true
@@ -185,6 +293,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   F-EAP:
     info: TODO
     has_server_log: true
@@ -193,15 +305,31 @@ tests:
         test_id: R-CUB
         test_name: Cube Model
       score: '0.998827469445136'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   R-SPEC-SI-0:
     info: TODO
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
   R-SPEC-CM-0:
     info: TODO
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
   R-SPEC-SE-0:
     info: TODO
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
   XML-EGE-I-R:
     info: TODO
     has_server_log: true
@@ -210,6 +338,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-EGE-I-NR:
     info: TODO
     has_server_log: true
@@ -218,6 +350,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-EGE-IL-R:
     info: TODO
     has_server_log: true
@@ -226,6 +362,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-EGE-IL-NR:
     info: TODO
     has_server_log: true
@@ -234,6 +374,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-ALT-B-EGE-L:
     info: TODO
     has_server_log: true
@@ -242,6 +386,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-ALT-B-EGE-R:
     info: TODO
     has_server_log: true
@@ -250,6 +398,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-ALT-B-EPE-L:
     info: TODO
     has_server_log: true
@@ -258,6 +410,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-ALT-B-EPE-R:
     info: TODO
     has_server_log: true
@@ -266,6 +422,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-ALT-B-IGE:
     info: TODO
     has_server_log: true
@@ -274,6 +434,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-ALT-B-IPE:
     info: TODO
     has_server_log: true
@@ -282,6 +446,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-ALT-DOS-BL:
     info: TODO
     has_server_log: true
@@ -290,6 +458,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-ALT-DOS-BL-PE-R:
     info: TODO
     has_server_log: true
@@ -298,6 +470,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-ALT-DOS-C:
     info: TODO
     has_server_log: true
@@ -306,6 +482,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-ALT-FBC-BPR-A:
     info: TODO
     has_server_log: true
@@ -314,6 +494,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-ALT-FBC-BPR-B:
     info: TODO
     has_server_log: true
@@ -322,6 +506,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-ALT-OOB-R:
     info: TODO
     has_server_log: true
@@ -330,6 +518,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-B-EGE-L:
     info: TODO
     has_server_log: true
@@ -338,6 +530,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-B-EGE-LX:
     info: TODO
     has_server_log: true
@@ -346,6 +542,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-B-EGE-R:
     info: TODO
     has_server_log: true
@@ -354,6 +554,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-B-EGE-RX:
     info: TODO
     has_server_log: true
@@ -362,6 +566,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-B-EPE-L:
     info: TODO
     has_server_log: true
@@ -370,6 +578,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-B-EPE-R:
     info: TODO
     has_server_log: true
@@ -378,6 +590,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-B-IGE:
     info: TODO
     has_server_log: true
@@ -386,6 +602,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-B-IPE:
     info: TODO
     has_server_log: true
@@ -394,6 +614,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-DOS-BL:
     info: TODO
     has_server_log: true
@@ -402,6 +626,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-DOS-BL-PE-R:
     info: TODO
     has_server_log: true
@@ -410,6 +638,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-DOS-C:
     info: TODO
     has_server_log: true
@@ -418,6 +650,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-DOS-PL:
     info: TODO
     has_server_log: true
@@ -426,6 +662,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-FBC-AV:
     info: TODO
     has_server_log: true
@@ -434,6 +674,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-FBC-BPR-A:
     info: TODO
     has_server_log: true
@@ -442,6 +686,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-FBC-BPR-B:
     info: TODO
     has_server_log: true
@@ -450,6 +698,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-FBC-E:
     info: TODO
     has_server_log: true
@@ -458,6 +710,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-FBC-E-L:
     info: TODO
     has_server_log: true
@@ -466,6 +722,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-OOB-NNSL:
     info: TODO
     has_server_log: true
@@ -474,6 +734,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-OOB-PE-R:
     info: TODO
     has_server_log: true
@@ -482,6 +746,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-OOB-R:
     info: TODO
     has_server_log: true
@@ -490,6 +758,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-OOB-SL:
     info: TODO
     has_server_log: true
@@ -498,6 +770,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-OOB-XI:
     info: TODO
     has_server_log: true
@@ -506,6 +782,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-SSRF-NNSL:
     info: TODO
     has_server_log: true
@@ -514,6 +794,10 @@ tests:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999490702065421'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-MOD-SSRF-SL:
     info: TODO
     has_server_log: true
@@ -522,6 +806,10 @@ tests:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999511200947983'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-MOD-SSRF-XI:
     info: TODO
     has_server_log: true
@@ -530,6 +818,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-REL-B-EGE-L:
     info: TODO
     has_server_log: true
@@ -538,6 +830,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-REL-B-EGE-R:
     info: TODO
     has_server_log: true
@@ -546,6 +842,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-REL-B-EPE-L:
     info: TODO
     has_server_log: true
@@ -554,6 +854,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-REL-B-EPE-R:
     info: TODO
     has_server_log: true
@@ -562,6 +866,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-REL-B-IGE:
     info: TODO
     has_server_log: true
@@ -570,6 +878,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-REL-B-IPE:
     info: TODO
     has_server_log: true
@@ -578,6 +890,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-REL-DOS-BL:
     info: TODO
     has_server_log: true
@@ -586,6 +902,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-REL-DOS-BL-PE-R:
     info: TODO
     has_server_log: true
@@ -594,6 +914,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-REL-DOS-C:
     info: TODO
     has_server_log: true
@@ -602,6 +926,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-REL-DOS-PL:
     info: TODO
     has_server_log: true
@@ -610,6 +938,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-REL-FBC-AV:
     info: TODO
     has_server_log: true
@@ -618,6 +950,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-REL-FBC-BPR-A:
     info: TODO
     has_server_log: true
@@ -626,6 +962,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-REL-FBC-BPR-B:
     info: TODO
     has_server_log: true
@@ -634,6 +974,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-REL-FBC-E:
     info: TODO
     has_server_log: true
@@ -642,6 +986,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-REL-FBC-E-L:
     info: TODO
     has_server_log: true
@@ -650,6 +998,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9991446059131635'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-REL-OOB-NNSL:
     info: TODO
     has_server_log: true
@@ -658,6 +1010,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-REL-OOB-PE-R:
     info: TODO
     has_server_log: true
@@ -666,6 +1022,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-REL-OOB-R:
     info: TODO
     has_server_log: true
@@ -674,6 +1034,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-REL-OOB-SL:
     info: TODO
     has_server_log: true
@@ -682,6 +1046,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-REL-OOB-XI:
     info: TODO
     has_server_log: true
@@ -690,6 +1058,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-REL-SSRF-NNSL:
     info: TODO
     has_server_log: true
@@ -698,6 +1070,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-REL-SSRF-SL:
     info: TODO
     has_server_log: true
@@ -706,6 +1082,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-REL-SSRF-XI:
     info: TODO
     has_server_log: true
@@ -714,6 +1094,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-ADA-BASE-DISPLAYCOLOR-0:
     info: TODO
     has_server_log: true
@@ -722,6 +1106,10 @@ tests:
         test_id: R-HOU
         test_name: House Model
       score: '0.9998391039053731'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-C-ADA-BASEMATERIALS-ID-0:
     info: TODO
     has_server_log: true
@@ -730,6 +1118,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-ADA-COMPONENT-OBJECTID-0:
     info: TODO
     has_server_log: true
@@ -738,6 +1130,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-ADA-COMPONENT-TRANSFORM-0:
     info: TODO
     has_server_log: true
@@ -746,6 +1142,10 @@ tests:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
       score: '0.7507047555796411'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
   GEN-C-ADA-ITEM-OBJECTID-0:
     info: TODO
     has_server_log: true
@@ -754,6 +1154,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-ADA-MODEL-UNIT-0:
     info: TODO
     has_server_log: true
@@ -762,6 +1166,10 @@ tests:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.7674365713533615'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
   GEN-C-ADA-OBJECT-ID-0:
     info: TODO
     has_server_log: true
@@ -770,6 +1178,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-ADA-OBJECT-PID-0:
     info: TODO
     has_server_log: true
@@ -778,6 +1190,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-ADA-OBJECT-PINDEX-0:
     info: TODO
     has_server_log: true
@@ -786,6 +1202,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-ADA-OBJECT-TYPE-0:
     info: TODO
     has_server_log: true
@@ -794,6 +1214,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-ADA-TRIANGLE-P1-0:
     info: TODO
     has_server_log: true
@@ -802,6 +1226,10 @@ tests:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9991295894122637'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-C-ADA-TRIANGLE-PID-0:
     info: TODO
     has_server_log: true
@@ -810,6 +1238,10 @@ tests:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9998407712435654'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-C-ADA-TRIANGLE-V1-0:
     info: TODO
     has_server_log: true
@@ -818,6 +1250,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-ADA-TRIANGLE-V2-0:
     info: TODO
     has_server_log: true
@@ -826,6 +1262,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-ADA-TRIANGLE-V3-0:
     info: TODO
     has_server_log: true
@@ -834,6 +1274,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-ADA-VERTEX-X-0:
     info: TODO
     has_server_log: true
@@ -842,6 +1286,10 @@ tests:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.8506109215994176'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: low
   GEN-C-ADA-VERTEX-Y-0:
     info: TODO
     has_server_log: true
@@ -850,6 +1298,10 @@ tests:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
       score: '0.8026952798501272'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: low
   GEN-C-ADA-VERTEX-Z-0:
     info: TODO
     has_server_log: true
@@ -858,6 +1310,10 @@ tests:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.8093335704546785'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: low
   GEN-C-ADS-BASE-NAME-0:
     info: TODO
     has_server_log: true
@@ -866,6 +1322,10 @@ tests:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9996931706477066'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-C-ADS-MODEL-XMLLANG-0:
     info: TODO
     has_server_log: true
@@ -874,6 +1334,10 @@ tests:
         test_id: R-HOU
         test_name: House Model
       score: '0.9998598099239545'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-C-ADS-MODEL-XMLNS-0:
     info: TODO
     has_server_log: true
@@ -882,6 +1346,10 @@ tests:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9998170429216062'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-C-ADS-OBJECT-NAME-0:
     info: TODO
     has_server_log: true
@@ -890,6 +1358,10 @@ tests:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9998409070248687'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-C-AI-BASE-DISPLAYCOLOR-0:
     info: TODO
     has_server_log: true
@@ -898,6 +1370,10 @@ tests:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9997080525556082'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-C-AI-BASEMATERIALS-ID-0:
     info: TODO
     has_server_log: true
@@ -906,6 +1382,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-AI-COMPONENT-OBJECTID-0:
     info: TODO
     has_server_log: true
@@ -914,6 +1394,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-AI-COMPONENT-TRANSFORM-0:
     info: TODO
     has_server_log: true
@@ -922,6 +1406,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-AI-ITEM-OBJECTID-0:
     info: TODO
     has_server_log: true
@@ -930,6 +1418,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-AI-MODEL-UNIT-0:
     info: TODO
     has_server_log: true
@@ -938,6 +1430,10 @@ tests:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9997159780923298'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-C-AI-OBJECT-ID-0:
     info: TODO
     has_server_log: true
@@ -946,6 +1442,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-AI-OBJECT-PID-0:
     info: TODO
     has_server_log: true
@@ -954,6 +1454,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-AI-OBJECT-PINDEX-0:
     info: TODO
     has_server_log: true
@@ -962,6 +1466,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-AI-OBJECT-TYPE-0:
     info: TODO
     has_server_log: true
@@ -970,6 +1478,10 @@ tests:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9995675561156616'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-C-AI-TRIANGLE-P1-0:
     info: TODO
     has_server_log: true
@@ -978,6 +1490,10 @@ tests:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9997654277767015'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-C-AI-TRIANGLE-PID-0:
     info: TODO
     has_server_log: true
@@ -986,6 +1502,10 @@ tests:
         test_id: R-HOU
         test_name: House Model
       score: '0.9997511944302567'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-C-AI-TRIANGLE-V1-0:
     info: TODO
     has_server_log: true
@@ -994,6 +1514,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-AI-TRIANGLE-V2-0:
     info: TODO
     has_server_log: true
@@ -1002,6 +1526,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-AI-TRIANGLE-V3-0:
     info: TODO
     has_server_log: true
@@ -1010,6 +1538,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-AI-VERTEX-X-0:
     info: TODO
     has_server_log: true
@@ -1018,6 +1550,10 @@ tests:
         test_id: R-HOU
         test_name: House Model
       score: '0.9992174324763431'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-C-AI-VERTEX-Y-0:
     info: TODO
     has_server_log: true
@@ -1026,6 +1562,10 @@ tests:
         test_id: R-SPEC-SI-0
         test_name: Full/Reference model for slice specification (SI)
       score: '0.8052885877429553'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: low
   GEN-C-AI-VERTEX-Z-0:
     info: TODO
     has_server_log: true
@@ -1034,6 +1574,10 @@ tests:
         test_id: R-HOU
         test_name: House Model
       score: '0.9957983069683325'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-C-AR-BASE-DISPLAYCOLOR-0:
     info: TODO
     has_server_log: true
@@ -1042,6 +1586,10 @@ tests:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9989544668104875'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-C-AR-BASE-NAME-0:
     info: TODO
     has_server_log: true
@@ -1050,6 +1598,10 @@ tests:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9995211218313674'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-C-AR-BASEMATERIALS-ID-0:
     info: TODO
     has_server_log: true
@@ -1058,6 +1610,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-AR-COMPONENT-OBJECTID-0:
     info: TODO
     has_server_log: true
@@ -1066,6 +1622,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-AR-COMPONENT-TRANSFORM-0:
     info: TODO
     has_server_log: true
@@ -1074,6 +1634,10 @@ tests:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
       score: '0.8038288078858413'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: low
   GEN-C-AR-ITEM-OBJECTID-0:
     info: TODO
     has_server_log: true
@@ -1082,6 +1646,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-AR-MODEL-UNIT-0:
     info: TODO
     has_server_log: true
@@ -1090,6 +1658,10 @@ tests:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9998331318712382'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-C-AR-MODEL-XMLLANG-0:
     info: TODO
     has_server_log: true
@@ -1098,6 +1670,10 @@ tests:
         test_id: R-HOU
         test_name: House Model
       score: '0.9996149570790328'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-C-AR-MODEL-XMLNS-0:
     info: TODO
     has_server_log: true
@@ -1106,6 +1682,10 @@ tests:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9998613148492184'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-C-AR-OBJECT-ID-0:
     info: TODO
     has_server_log: true
@@ -1114,6 +1694,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-AR-OBJECT-NAME-0:
     info: TODO
     has_server_log: true
@@ -1122,6 +1706,10 @@ tests:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9997978188283493'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-C-AR-OBJECT-PID-0:
     info: TODO
     has_server_log: true
@@ -1130,6 +1718,10 @@ tests:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9995053999936508'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-C-AR-OBJECT-PINDEX-0:
     info: TODO
     has_server_log: true
@@ -1138,6 +1730,10 @@ tests:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9997810245759231'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-C-AR-OBJECT-TYPE-0:
     info: TODO
     has_server_log: true
@@ -1146,6 +1742,10 @@ tests:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.999825245933175'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-C-AR-TRIANGLE-P1-0:
     info: TODO
     has_server_log: true
@@ -1154,6 +1754,10 @@ tests:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9998448329515596'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-C-AR-TRIANGLE-PID-0:
     info: TODO
     has_server_log: true
@@ -1162,6 +1766,10 @@ tests:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9998336899520645'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-C-AR-TRIANGLE-V1-0:
     info: TODO
     has_server_log: true
@@ -1170,6 +1778,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-AR-TRIANGLE-V2-0:
     info: TODO
     has_server_log: true
@@ -1178,6 +1790,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-AR-TRIANGLE-V3-0:
     info: TODO
     has_server_log: true
@@ -1186,6 +1802,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-AR-VERTEX-X-0:
     info: TODO
     has_server_log: true
@@ -1194,6 +1814,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-AR-VERTEX-Y-0:
     info: TODO
     has_server_log: true
@@ -1202,6 +1826,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-AR-VERTEX-Z-0:
     info: TODO
     has_server_log: true
@@ -1210,6 +1838,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9990234559987263'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-CDA-BASEMATERIALS-0:
     info: TODO
     has_server_log: true
@@ -1218,6 +1850,10 @@ tests:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.999014155535099'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-C-CDA-BUILD-0:
     info: TODO
     has_server_log: true
@@ -1226,6 +1862,10 @@ tests:
         test_id: R-HOU
         test_name: House Model
       score: '0.994031346538878'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-C-CDA-COMPONENTS-0:
     info: TODO
     has_server_log: true
@@ -1234,6 +1874,10 @@ tests:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
       score: '0.8037912665319945'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: low
   GEN-C-CDA-MESH-0:
     info: TODO
     has_server_log: true
@@ -1242,6 +1886,10 @@ tests:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
       score: '0.7938751791816812'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
   GEN-C-CDA-MESH-1:
     info: TODO
     has_server_log: true
@@ -1250,6 +1898,10 @@ tests:
         test_id: R-HOU
         test_name: House Model
       score: '0.999062556176287'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-C-CDA-MODEL-0:
     info: TODO
     has_server_log: true
@@ -1258,6 +1910,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9993828881235043'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-CDA-MODEL-1:
     info: TODO
     has_server_log: true
@@ -1266,6 +1922,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-CDA-OBJECT-0:
     info: TODO
     has_server_log: true
@@ -1274,6 +1934,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-CDA-OBJECT-1:
     info: TODO
     has_server_log: true
@@ -1282,6 +1946,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-CDA-RESOURCES-0:
     info: TODO
     has_server_log: true
@@ -1290,6 +1958,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-CDA-RESOURCES-1:
     info: TODO
     has_server_log: true
@@ -1298,6 +1970,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-CDA-TRIANGLES-0:
     info: TODO
     has_server_log: true
@@ -1306,6 +1982,10 @@ tests:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9996627536382311'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-C-CDA-VERTICES-0:
     info: TODO
     has_server_log: true
@@ -1314,6 +1994,10 @@ tests:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
       score: '0.7925135771332071'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
   GEN-C-CR-BASEMATERIALS-BASE-0:
     info: TODO
     has_server_log: true
@@ -1322,6 +2006,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-CR-COMPONENTS-COMPONENT-0:
     info: TODO
     has_server_log: true
@@ -1330,6 +2018,10 @@ tests:
         test_id: R-CYL
         test_name: Cylinder Model
       score: '0.8948326616365595'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: low
   GEN-C-CR-MESH-TRIANGLES-0:
     info: TODO
     has_server_log: true
@@ -1338,6 +2030,10 @@ tests:
         test_id: R-CYL
         test_name: Cylinder Model
       score: '0.8949374949693275'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: low
   GEN-C-CR-MESH-VERTICES-0:
     info: TODO
     has_server_log: true
@@ -1346,6 +2042,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-CR-MODEL-BUILD-0:
     info: TODO
     has_server_log: true
@@ -1354,6 +2054,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-CR-MODEL-RESOURCES-0:
     info: TODO
     has_server_log: true
@@ -1362,6 +2066,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-CR-RESOURCES-BASEMATERIALS-0:
     info: TODO
     has_server_log: true
@@ -1370,6 +2078,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-CR-RESOURCES-OBJECT-0:
     info: TODO
     has_server_log: true
@@ -1378,6 +2090,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-CR-TRIANGLES-TRIANGLE-0:
     info: TODO
     has_server_log: true
@@ -1386,6 +2102,10 @@ tests:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9997693602381281'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-C-CR-VERTICES-VERTEX-0:
     info: TODO
     has_server_log: true
@@ -1394,6 +2114,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-CRA-BASEMATERIALS-0:
     info: TODO
     has_server_log: true
@@ -1402,6 +2126,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-CRA-BUILD-0:
     info: TODO
     has_server_log: true
@@ -1410,6 +2138,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-CRA-COMPONENTS-0:
     info: TODO
     has_server_log: true
@@ -1418,6 +2150,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-CRA-MESH-0:
     info: TODO
     has_server_log: true
@@ -1426,6 +2162,10 @@ tests:
         test_id: R-CYL
         test_name: Cylinder Model
       score: '0.8949290765665114'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: low
   GEN-C-CRA-MODEL-0:
     info: TODO
     has_server_log: true
@@ -1434,6 +2174,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-CRA-OBJECT-0:
     info: TODO
     has_server_log: true
@@ -1442,6 +2186,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-CRA-RESOURCES-0:
     info: TODO
     has_server_log: true
@@ -1450,6 +2198,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-C-CRA-TRIANGLES-0:
     info: TODO
     has_server_log: true
@@ -1458,6 +2210,10 @@ tests:
         test_id: R-CYL
         test_name: Cylinder Model
       score: '0.8949374949693275'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: low
   GEN-C-CRA-VERTICES-0:
     info: TODO
     has_server_log: true
@@ -1466,6 +2222,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-CM-ADS-METADATA-NAME-0:
     info: TODO
     has_server_log: true
@@ -1474,6 +2234,10 @@ tests:
         test_id: R-SPEC-SI-0
         test_name: Full/Reference model for slice specification (SI)
       score: '0.9998696326230078'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-CM-AR-METADATA-NAME-0:
     info: TODO
     has_server_log: true
@@ -1482,6 +2246,10 @@ tests:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9995153436670293'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-CM-CDA-ITEM-0:
     info: TODO
     has_server_log: true
@@ -1490,6 +2258,10 @@ tests:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9997585701270911'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-CM-CDA-METADATAGROUP-0:
     info: TODO
     has_server_log: true
@@ -1498,6 +2270,10 @@ tests:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9998545703810006'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-CM-CDA-MODEL-0:
     info: TODO
     has_server_log: true
@@ -1506,6 +2282,10 @@ tests:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
       score: '0.9998788500855629'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-CM-CDA-OBJECT-0:
     info: TODO
     has_server_log: true
@@ -1514,6 +2294,10 @@ tests:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
       score: '0.9998788500855629'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-CM-CR-MODEL-METADATA-0:
     info: TODO
     has_server_log: true
@@ -1522,6 +2306,10 @@ tests:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9995289836089153'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-CM-CR-OBJECT-MESH-0:
     info: TODO
     has_server_log: true
@@ -1530,6 +2318,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-CM-CR-OBJECT-METADATAGROUP-0:
     info: TODO
     has_server_log: true
@@ -1538,6 +2330,10 @@ tests:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
       score: '0.9998788500855629'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-CM-CRA-ITEM-0:
     info: TODO
     has_server_log: true
@@ -1546,6 +2342,10 @@ tests:
         test_id: R-SPEC-SI-0
         test_name: Full/Reference model for slice specification (SI)
       score: '0.9998606534164652'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-CM-CRA-METADATAGROUP-0:
     info: TODO
     has_server_log: true
@@ -1554,6 +2354,10 @@ tests:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9998218182553646'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-ADA-BASEMATERIALS-DISPLAYPROPERTIESID-0:
     info: TODO
     has_server_log: true
@@ -1562,6 +2366,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9995543086895938'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-ADA-ITEM-TRANSFORM-0:
     info: TODO
     has_server_log: true
@@ -1570,6 +2378,10 @@ tests:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
       score: '0.7472223856081823'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
   GEN-M-ADA-MCOLOR-COLOR-0:
     info: TODO
     has_server_log: true
@@ -1578,6 +2390,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9996673095656171'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-ADA-MCOLORGROUP-ID-0:
     info: TODO
     has_server_log: true
@@ -1586,6 +2402,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-M-ADA-MPBMETALLIC-METALLICNESS-0:
     info: TODO
     has_server_log: true
@@ -1594,6 +2414,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9991117673314632'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-ADA-MPBMETALLIC-ROUGHNESS-0:
     info: TODO
     has_server_log: true
@@ -1602,6 +2426,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9994865371214008'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-ADA-MPBMETALLICDISPLAYPROPERTIES-ID-0:
     info: TODO
     has_server_log: true
@@ -1610,6 +2438,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9984760047693242'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-ADA-MTEX2COORD-U-0:
     info: TODO
     has_server_log: true
@@ -1618,6 +2450,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9994030545335362'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-ADA-MTEX2COORD-V-0:
     info: TODO
     has_server_log: true
@@ -1626,6 +2462,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9980256857840928'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-ADA-MTEXTURE2D-CONTENTTYPE-0:
     info: TODO
     has_server_log: true
@@ -1634,6 +2474,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9990191127158378'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-ADA-MTEXTURE2D-ID-0:
     info: TODO
     has_server_log: true
@@ -1642,6 +2486,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-M-ADA-MTEXTURE2D-TILESTYLEU-0:
     info: TODO
     has_server_log: true
@@ -1650,6 +2498,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9998395977223414'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-ADA-MTEXTURE2D-TILESTYLEV-0:
     info: TODO
     has_server_log: true
@@ -1658,6 +2510,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9992048554904001'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-ADA-MTEXTURE2DGROUP-ID-0:
     info: TODO
     has_server_log: true
@@ -1666,6 +2522,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-M-ADA-MTEXTURE2DGROUP-TEXID-0:
     info: TODO
     has_server_log: true
@@ -1674,6 +2534,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-M-ADA-MTRANSLUCENT-ROUGHNESS-0:
     info: TODO
     has_server_log: true
@@ -1682,6 +2546,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9991665880845694'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-ADA-MTRANSLUCENTDISPLAYPROPERTIES-ID-0:
     info: TODO
     has_server_log: true
@@ -1690,6 +2558,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9991421883454031'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-ADA-TRIANGLE-P2-0:
     info: TODO
     has_server_log: true
@@ -1698,6 +2570,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9991842298507919'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-ADA-TRIANGLE-P3-0:
     info: TODO
     has_server_log: true
@@ -1706,6 +2582,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.999103690519413'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-ADS-MODEL-REQUIREDEXTENSIONS-0:
     info: TODO
     has_server_log: true
@@ -1714,6 +2594,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9989484177418683'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-ADS-MODEL-XMLNSM-0:
     info: TODO
     has_server_log: true
@@ -1722,6 +2606,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9993070074278145'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-ADS-MPBMETALLIC-NAME-0:
     info: TODO
     has_server_log: true
@@ -1730,6 +2618,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9989250132499475'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-ADS-MTEXTURE2D-PATH-0:
     info: TODO
     has_server_log: true
@@ -1738,6 +2630,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9989504782923169'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-ADS-MTRANSLUCENT-ATTENUATION-0:
     info: TODO
     has_server_log: true
@@ -1746,6 +2642,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9993397619449592'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-ADS-MTRANSLUCENT-NAME-0:
     info: TODO
     has_server_log: true
@@ -1754,6 +2654,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9998529430498668'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-ADS-MTRANSLUCENT-REFRACTIVEINDEX-0:
     info: TODO
     has_server_log: true
@@ -1762,6 +2666,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9993010514397339'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-AI-BASEMATERIALS-DISPLAYPROPERTIESID-0:
     info: TODO
     has_server_log: true
@@ -1770,6 +2678,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9994373890392948'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-AI-ITEM-TRANSFORM-0:
     info: TODO
     has_server_log: true
@@ -1778,6 +2690,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-M-AI-MCOLOR-COLOR-0:
     info: TODO
     has_server_log: true
@@ -1786,6 +2702,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9994782103332535'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-AI-MCOLORGROUP-ID-0:
     info: TODO
     has_server_log: true
@@ -1794,6 +2714,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-M-AI-MPBMETALLIC-METALLICNESS-0:
     info: TODO
     has_server_log: true
@@ -1802,6 +2726,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9990157393503398'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-AI-MPBMETALLIC-ROUGHNESS-0:
     info: TODO
     has_server_log: true
@@ -1810,6 +2738,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9991327593618853'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-AI-MPBMETALLICDISPLAYPROPERTIES-ID-0:
     info: TODO
     has_server_log: true
@@ -1818,6 +2750,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9992257443877764'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-AI-MTEX2COORD-U-0:
     info: TODO
     has_server_log: true
@@ -1826,6 +2762,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9988272704595833'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-AI-MTEX2COORD-V-0:
     info: TODO
     has_server_log: true
@@ -1834,6 +2774,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9994337369988103'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-AI-MTEXTURE2D-CONTENTTYPE-0:
     info: TODO
     has_server_log: true
@@ -1842,6 +2786,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-M-AI-MTEXTURE2D-ID-0:
     info: TODO
     has_server_log: true
@@ -1850,6 +2798,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-M-AI-MTEXTURE2D-PATH-0:
     info: TODO
     has_server_log: true
@@ -1858,6 +2810,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-M-AI-MTEXTURE2D-TILESTYLEU-0:
     info: TODO
     has_server_log: true
@@ -1866,6 +2822,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9991406020981571'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-AI-MTEXTURE2D-TILESTYLEV-0:
     info: TODO
     has_server_log: true
@@ -1874,6 +2834,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9990285983149685'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-AI-MTEXTURE2DGROUP-ID-0:
     info: TODO
     has_server_log: true
@@ -1882,6 +2846,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-M-AI-MTEXTURE2DGROUP-TEXID-0:
     info: TODO
     has_server_log: true
@@ -1890,6 +2858,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-M-AI-MTRANSLUCENT-ROUGHNESS-0:
     info: TODO
     has_server_log: true
@@ -1898,6 +2870,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9984760027622116'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-AI-MTRANSLUCENTDISPLAYPROPERTIES-ID-0:
     info: TODO
     has_server_log: true
@@ -1906,6 +2882,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9992018119798352'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-AI-TRIANGLE-P2-0:
     info: TODO
     has_server_log: true
@@ -1914,6 +2894,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.999076193659381'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-AI-TRIANGLE-P3-0:
     info: TODO
     has_server_log: true
@@ -1922,6 +2906,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9992744883482209'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-AR-BASEMATERIALS-DISPLAYPROPERTIESID-0:
     info: TODO
     has_server_log: true
@@ -1930,6 +2918,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9994294132334679'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-AR-ITEM-TRANSFORM-0:
     info: TODO
     has_server_log: true
@@ -1938,6 +2930,10 @@ tests:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
       score: '0.7944186251300315'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
   GEN-M-AR-MCOLOR-COLOR-0:
     info: TODO
     has_server_log: true
@@ -1946,6 +2942,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9988584072391177'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-AR-MCOLORGROUP-ID-0:
     info: TODO
     has_server_log: true
@@ -1954,6 +2954,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-M-AR-MODEL-REQUIREDEXTENSIONS-0:
     info: TODO
     has_server_log: true
@@ -1962,6 +2966,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9992645123975028'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-AR-MODEL-XMLNSM-0:
     info: TODO
     has_server_log: true
@@ -1970,6 +2978,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-M-AR-MPBMETALLIC-METALLICNESS-0:
     info: TODO
     has_server_log: true
@@ -1978,6 +2990,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9992617564397737'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-AR-MPBMETALLIC-NAME-0:
     info: TODO
     has_server_log: true
@@ -1986,6 +3002,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9995830887305618'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-AR-MPBMETALLIC-ROUGHNESS-0:
     info: TODO
     has_server_log: true
@@ -1994,6 +3014,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9988749710382002'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-AR-MPBMETALLICDISPLAYPROPERTIES-ID-0:
     info: TODO
     has_server_log: true
@@ -2002,6 +3026,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9999308132157876'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-AR-MTEX2COORD-U-0:
     info: TODO
     has_server_log: true
@@ -2010,6 +3038,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9992691036400156'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-AR-MTEX2COORD-V-0:
     info: TODO
     has_server_log: true
@@ -2018,6 +3050,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9993494424510353'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-AR-MTEXTURE2D-CONTENTTYPE-0:
     info: TODO
     has_server_log: true
@@ -2026,6 +3062,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-M-AR-MTEXTURE2D-ID-0:
     info: TODO
     has_server_log: true
@@ -2034,6 +3074,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-M-AR-MTEXTURE2D-PATH-0:
     info: TODO
     has_server_log: true
@@ -2042,6 +3086,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-M-AR-MTEXTURE2D-TILESTYLEU-0:
     info: TODO
     has_server_log: true
@@ -2050,6 +3098,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9994954326217561'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-AR-MTEXTURE2D-TILESTYLEV-0:
     info: TODO
     has_server_log: true
@@ -2058,6 +3110,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9989218863062864'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-AR-MTEXTURE2DGROUP-ID-0:
     info: TODO
     has_server_log: true
@@ -2066,6 +3122,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-M-AR-MTEXTURE2DGROUP-TEXID-0:
     info: TODO
     has_server_log: true
@@ -2074,6 +3134,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-M-AR-MTRANSLUCENT-ATTENUATION-0:
     info: TODO
     has_server_log: true
@@ -2082,6 +3146,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9987966462858673'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-AR-MTRANSLUCENT-NAME-0:
     info: TODO
     has_server_log: true
@@ -2090,6 +3158,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9993266281087956'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-AR-MTRANSLUCENT-REFRACTIVEINDEX-0:
     info: TODO
     has_server_log: true
@@ -2098,6 +3170,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9998806244474157'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-AR-MTRANSLUCENT-ROUGHNESS-0:
     info: TODO
     has_server_log: true
@@ -2106,6 +3182,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.999806814917463'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-AR-MTRANSLUCENTDISPLAYPROPERTIES-ID-0:
     info: TODO
     has_server_log: true
@@ -2114,6 +3194,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9998393810493373'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-AR-TRIANGLE-P2-0:
     info: TODO
     has_server_log: true
@@ -2122,6 +3206,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9990391243988707'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-AR-TRIANGLE-P3-0:
     info: TODO
     has_server_log: true
@@ -2130,6 +3218,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9994741349909193'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-CDA-MCOLORGROUP-0:
     info: TODO
     has_server_log: true
@@ -2138,6 +3230,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9998694671170145'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-CDA-MPBMETALLICDISPLAYPROPERTIES-0:
     info: TODO
     has_server_log: true
@@ -2146,6 +3242,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9996689478951334'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-CDA-MTEXTURE2DGROUP-0:
     info: TODO
     has_server_log: true
@@ -2154,6 +3254,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.99953148266564'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-CDA-MTRANSLUCENTDISPLAYPROPERTIES-0:
     info: TODO
     has_server_log: true
@@ -2162,6 +3266,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9995009853674195'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-CDA-RESOURCES-0:
     info: TODO
     has_server_log: true
@@ -2170,6 +3278,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-M-CDA-RESOURCES-1:
     info: TODO
     has_server_log: true
@@ -2178,6 +3290,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9992836191243122'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-CDA-RESOURCES-2:
     info: TODO
     has_server_log: true
@@ -2186,6 +3302,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9992506918094658'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-CDA-RESOURCES-3:
     info: TODO
     has_server_log: true
@@ -2194,6 +3314,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-M-CDA-RESOURCES-4:
     info: TODO
     has_server_log: true
@@ -2202,6 +3326,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9995040380379414'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-M-CR-BUILD-ITEM-0:
     info: TODO
     has_server_log: true
@@ -2210,6 +3338,10 @@ tests:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9737789344323456'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   GEN-M-CR-MCOLORGROUP-MCOLOR-0:
     info: TODO
     has_server_log: true
@@ -2218,6 +3350,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9995059841573288'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-CR-MTEXTURE2DGROUP-MTEX2COORD-0:
     info: TODO
     has_server_log: true
@@ -2226,6 +3362,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9984005565459259'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-CR-RESOURCES-MCOLORGROUP-0:
     info: TODO
     has_server_log: true
@@ -2234,6 +3374,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9993618064230024'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-CR-RESOURCES-MPBMETALLICDISPLAYPROPERTIES-0:
     info: TODO
     has_server_log: true
@@ -2242,6 +3386,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.998914830529652'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-CR-RESOURCES-MTEXTURE2D-0:
     info: TODO
     has_server_log: true
@@ -2250,6 +3398,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-M-CR-RESOURCES-MTEXTURE2DGROUP-0:
     info: TODO
     has_server_log: true
@@ -2258,6 +3410,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9992317739989482'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-CR-RESOURCES-MTRANSLUCENTDISPLAYPROPERTIES-0:
     info: TODO
     has_server_log: true
@@ -2266,6 +3422,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9992479407972024'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-CRA-MCOLORGROUP-0:
     info: TODO
     has_server_log: true
@@ -2274,6 +3434,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9997956046955133'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-CRA-MPBMETALLICDISPLAYPROPERTIES-0:
     info: TODO
     has_server_log: true
@@ -2282,6 +3446,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9996339338625312'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-CRA-MTEXTURE2DGROUP-0:
     info: TODO
     has_server_log: true
@@ -2290,6 +3458,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9993499643225098'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-M-CRA-MTRANSLUCENTDISPLAYPROPERTIES-0:
     info: TODO
     has_server_log: true
@@ -2298,6 +3470,10 @@ tests:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9990942389815525'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-P-ADA-BUILD-PUUID-0:
     info: TODO
     has_server_log: true
@@ -2306,6 +3482,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-P-ADA-COMPONENT-PUUID-0:
     info: TODO
     has_server_log: true
@@ -2314,6 +3494,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-P-ADA-ITEM-PUUID-0:
     info: TODO
     has_server_log: true
@@ -2322,6 +3506,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-P-ADA-OBJECT-PUUID-0:
     info: TODO
     has_server_log: true
@@ -2330,6 +3518,10 @@ tests:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
       score: '0.9999628010086155'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-P-ADS-COMPONENT-PPATH-0:
     info: TODO
     has_server_log: true
@@ -2338,6 +3530,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-P-ADS-MODEL-XMLNSP-0:
     info: TODO
     has_server_log: true
@@ -2346,6 +3542,10 @@ tests:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
       score: '0.9994527939290244'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-P-AI-BUILD-PUUID-0:
     info: TODO
     has_server_log: true
@@ -2354,6 +3554,10 @@ tests:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
       score: '0.9991024474446435'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-P-AI-COMPONENT-PPATH-0:
     info: TODO
     has_server_log: true
@@ -2362,6 +3566,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-P-AI-COMPONENT-PUUID-0:
     info: TODO
     has_server_log: true
@@ -2370,6 +3578,10 @@ tests:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
       score: '0.9998740056615023'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-P-AI-ITEM-PUUID-0:
     info: TODO
     has_server_log: true
@@ -2378,6 +3590,10 @@ tests:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
       score: '0.9998684985401617'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-P-AI-OBJECT-PUUID-0:
     info: TODO
     has_server_log: true
@@ -2386,6 +3602,10 @@ tests:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
       score: '0.9999585811301428'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-P-AR-BUILD-PUUID-0:
     info: TODO
     has_server_log: true
@@ -2394,6 +3614,10 @@ tests:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
       score: '0.9998942180381014'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-P-AR-COMPONENT-PPATH-0:
     info: TODO
     has_server_log: true
@@ -2402,6 +3626,10 @@ tests:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
       score: '0.752049474620045'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
   GEN-P-AR-COMPONENT-PUUID-0:
     info: TODO
     has_server_log: true
@@ -2410,6 +3638,10 @@ tests:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
       score: '0.9990133371440022'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-P-AR-ITEM-PUUID-0:
     info: TODO
     has_server_log: true
@@ -2418,6 +3650,10 @@ tests:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
       score: '0.9999687304183346'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-P-AR-MODEL-XMLNSP-0:
     info: TODO
     has_server_log: true
@@ -2426,6 +3662,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9991446059131635'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-P-AR-OBJECT-PUUID-0:
     info: TODO
     has_server_log: true
@@ -2434,6 +3674,10 @@ tests:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
       score: '0.666787860149673'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
   GEN-SE-ADA-SSLICEREF-SLICESTACKID-0:
     info: TODO
     has_server_log: true
@@ -2442,6 +3686,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-SE-ADS-SSLICEREF-SLICEPATH-0:
     info: TODO
     has_server_log: true
@@ -2450,6 +3698,10 @@ tests:
         test_id: R-SPEC-SI-0
         test_name: Full/Reference model for slice specification (SI)
       score: '0.9999955627889642'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-SE-AI-SSLICEREF-SLICEPATH-0:
     info: TODO
     has_server_log: true
@@ -2458,6 +3710,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-SE-AI-SSLICEREF-SLICESTACKID-0:
     info: TODO
     has_server_log: true
@@ -2466,6 +3722,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-SE-AR-SSLICEREF-SLICEPATH-0:
     info: TODO
     has_server_log: true
@@ -2474,6 +3734,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-SE-AR-SSLICEREF-SLICESTACKID-0:
     info: TODO
     has_server_log: true
@@ -2482,6 +3746,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9995040380379414'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-SE-CDA-SSLICESTACK-0:
     info: TODO
     has_server_log: true
@@ -2490,6 +3758,10 @@ tests:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
       score: '1.0'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-SI-ADA-OBJECT-SSLICESTACKID-0:
     info: TODO
     has_server_log: true
@@ -2498,6 +3770,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-SI-ADA-SPOLYGON-STARTV-0:
     info: TODO
     has_server_log: true
@@ -2506,6 +3782,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-SI-ADA-SSEGMENT-V2-0:
     info: TODO
     has_server_log: true
@@ -2514,6 +3794,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-SI-ADA-SSLICE-ZTOP-0:
     info: TODO
     has_server_log: true
@@ -2522,6 +3806,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-SI-ADA-SSLICESTACK-ID-0:
     info: TODO
     has_server_log: true
@@ -2530,6 +3818,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-SI-ADA-SSLICESTACK-ZBOTTOM-0:
     info: TODO
     has_server_log: true
@@ -2538,6 +3830,10 @@ tests:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999572464099807'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-SI-ADA-SVERTEX-X-0:
     info: TODO
     has_server_log: true
@@ -2546,6 +3842,10 @@ tests:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999877862741714'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-SI-ADA-SVERTEX-Y-0:
     info: TODO
     has_server_log: true
@@ -2554,6 +3854,10 @@ tests:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999490702065421'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-SI-ADS-MODEL-XMLNSS-0:
     info: TODO
     has_server_log: true
@@ -2562,6 +3866,10 @@ tests:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999348780386768'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-SI-ADS-OBJECT-SMESHRESOLUTION-0:
     info: TODO
     has_server_log: true
@@ -2570,6 +3878,10 @@ tests:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '1.0'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-SI-AI-OBJECT-SSLICESTACKID-0:
     info: TODO
     has_server_log: true
@@ -2578,6 +3890,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-SI-AI-SPOLYGON-STARTV-0:
     info: TODO
     has_server_log: true
@@ -2586,6 +3902,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9995040380379414'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-SI-AI-SSEGMENT-V2-0:
     info: TODO
     has_server_log: true
@@ -2594,6 +3914,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9985455990651853'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-SI-AI-SSLICE-ZTOP-0:
     info: TODO
     has_server_log: true
@@ -2602,6 +3926,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-SI-AI-SSLICESTACK-ID-0:
     info: TODO
     has_server_log: true
@@ -2610,6 +3938,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-SI-AI-SSLICESTACK-ZBOTTOM-0:
     info: TODO
     has_server_log: true
@@ -2618,6 +3950,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-SI-AI-SVERTEX-X-0:
     info: TODO
     has_server_log: true
@@ -2626,6 +3962,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-SI-AI-SVERTEX-Y-0:
     info: TODO
     has_server_log: true
@@ -2634,6 +3974,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-SI-AR-MODEL-XMLNSS-0:
     info: TODO
     has_server_log: true
@@ -2642,6 +3986,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-SI-AR-OBJECT-SMESHRESOLUTION-0:
     info: TODO
     has_server_log: true
@@ -2650,6 +3998,10 @@ tests:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
       score: '0.9995850250986493'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-SI-AR-OBJECT-SSLICESTACKID-0:
     info: TODO
     has_server_log: true
@@ -2658,6 +4010,10 @@ tests:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999511200947983'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-SI-AR-SPOLYGON-STARTV-0:
     info: TODO
     has_server_log: true
@@ -2666,6 +4022,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-SI-AR-SSEGMENT-V2-0:
     info: TODO
     has_server_log: true
@@ -2674,6 +4034,10 @@ tests:
         test_id: R-SPEC-SI-0
         test_name: Full/Reference model for slice specification (SI)
       score: '0.9999897261533268'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-SI-AR-SSLICE-ZTOP-0:
     info: TODO
     has_server_log: true
@@ -2682,6 +4046,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-SI-AR-SSLICESTACK-ID-0:
     info: TODO
     has_server_log: true
@@ -2690,6 +4058,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-SI-AR-SSLICESTACK-ZBOTTOM-0:
     info: TODO
     has_server_log: true
@@ -2698,6 +4070,10 @@ tests:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
       score: '0.9999765784460245'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-SI-AR-SVERTEX-X-0:
     info: TODO
     has_server_log: true
@@ -2706,6 +4082,10 @@ tests:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9998797200415284'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-SI-AR-SVERTEX-Y-0:
     info: TODO
     has_server_log: true
@@ -2714,6 +4094,10 @@ tests:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999944718498127'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-SI-CDA-RESOURCES-0:
     info: TODO
     has_server_log: true
@@ -2722,6 +4106,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-SI-CDA-SPOLYGON-0:
     info: TODO
     has_server_log: true
@@ -2730,6 +4118,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-SI-CDA-SSLICE-0:
     info: TODO
     has_server_log: true
@@ -2738,6 +4130,10 @@ tests:
         test_id: R-SPEC-SI-0
         test_name: Full/Reference model for slice specification (SI)
       score: '0.9999955627889642'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-SI-CDA-SSLICE-1:
     info: TODO
     has_server_log: true
@@ -2746,6 +4142,10 @@ tests:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9996364935814668'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-SI-CDA-SSLICESTACK-0:
     info: TODO
     has_server_log: true
@@ -2754,6 +4154,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-SI-CDA-SVERTICES-0:
     info: TODO
     has_server_log: true
@@ -2762,6 +4166,10 @@ tests:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9998797200415284'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-SI-CR-RESOURCES-SSLICESTACK-0:
     info: TODO
     has_server_log: true
@@ -2770,6 +4178,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-SI-CR-SPOLYGON-SSEGMENT-0:
     info: TODO
     has_server_log: true
@@ -2778,6 +4190,10 @@ tests:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
       score: '0.9994769255629926'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-SI-CR-SSLICE-SPOLYGON-0:
     info: TODO
     has_server_log: true
@@ -2786,6 +4202,10 @@ tests:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999944718498127'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-SI-CR-SSLICE-SVERTICES-0:
     info: TODO
     has_server_log: true
@@ -2794,6 +4214,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-SI-CR-SSLICESTACK-SSLICE-0:
     info: TODO
     has_server_log: true
@@ -2802,6 +4226,10 @@ tests:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999311924109574'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-SI-CR-SVERTICES-SVERTEX-0:
     info: TODO
     has_server_log: true
@@ -2810,6 +4238,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-SI-CRA-SPOLYGON-0:
     info: TODO
     has_server_log: true
@@ -2818,6 +4250,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   GEN-SI-CRA-SSLICE-0:
     info: TODO
     has_server_log: true
@@ -2826,6 +4262,10 @@ tests:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999944092778594'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-SI-CRA-SSLICESTACK-0:
     info: TODO
     has_server_log: true
@@ -2834,6 +4274,10 @@ tests:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999429681698019'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-SI-CRA-SVERTICES-0:
     info: TODO
     has_server_log: true
@@ -2842,6 +4286,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   CS-0000:
     info: TODO
     has_server_log: true
@@ -2850,6 +4298,10 @@ tests:
         test_id: error
         test_name: Manual reference screenshot
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   CS-0001:
     info: TODO
     has_server_log: true
@@ -2858,6 +4310,10 @@ tests:
         test_id: error
         test_name: Manual reference screenshot
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   CS-0010:
     info: TODO
     has_server_log: true
@@ -2866,6 +4322,10 @@ tests:
         test_id: error
         test_name: Manual reference screenshot
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   CS-0011:
     info: TODO
     has_server_log: true
@@ -2874,6 +4334,10 @@ tests:
         test_id: R-CYL
         test_name: Cylinder Model
       score: '0.9997821219288191'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   CS-0100:
     info: TODO
     has_server_log: true
@@ -2882,6 +4346,10 @@ tests:
         test_id: error
         test_name: Manual reference screenshot
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   CS-0101:
     info: TODO
     has_server_log: true
@@ -2890,6 +4358,10 @@ tests:
         test_id: error
         test_name: Manual reference screenshot
       score: '0.9993828881235043'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   CS-0110:
     info: TODO
     has_server_log: true
@@ -2898,6 +4370,10 @@ tests:
         test_id: error
         test_name: Manual reference screenshot
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   CS-0111:
     info: TODO
     has_server_log: true
@@ -2906,6 +4382,10 @@ tests:
         test_id: error
         test_name: Manual reference screenshot
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   CS-1000:
     info: TODO
     has_server_log: true
@@ -2914,6 +4394,10 @@ tests:
         test_id: error
         test_name: Manual reference screenshot
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   CS-1001:
     info: TODO
     has_server_log: true
@@ -2922,6 +4406,10 @@ tests:
         test_id: error
         test_name: Manual reference screenshot
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   CS-1010:
     info: TODO
     has_server_log: true
@@ -2930,6 +4418,10 @@ tests:
         test_id: error
         test_name: Manual reference screenshot
       score: '0.9998788500855629'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   CS-1011:
     info: TODO
     has_server_log: true
@@ -2938,6 +4430,10 @@ tests:
         test_id: R-CYL
         test_name: Cylinder Model
       score: '0.9997614317307956'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   CS-1100:
     info: TODO
     has_server_log: true
@@ -2946,6 +4442,10 @@ tests:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
       score: '0.9998527963760819'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   CS-1101:
     info: TODO
     has_server_log: true
@@ -2954,6 +4454,10 @@ tests:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
       score: '0.9998195654709945'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   CS-1110:
     info: TODO
     has_server_log: true
@@ -2962,6 +4466,10 @@ tests:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
       score: '0.9986408865202756'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   CS-1111:
     info: TODO
     has_server_log: true
@@ -2970,6 +4478,10 @@ tests:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
       score: '0.9998625358548127'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   OPC-LFI-0:
     info: TODO
     has_server_log: true
@@ -2978,6 +4490,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   OPC-LFI-1:
     info: TODO
     has_server_log: true
@@ -2986,6 +4502,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9985455990651853'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   OPC-LFI-2:
     info: TODO
     has_server_log: true
@@ -2994,6 +4514,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   ZIP-SL-S:
     info: TODO
     has_server_log: true
@@ -3002,6 +4526,10 @@ tests:
         test_id: error
         test_name: Manual reference screenshot
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   ZIP-SL-C:
     info: TODO
     has_server_log: true
@@ -3010,6 +4538,10 @@ tests:
         test_id: error
         test_name: Manual reference screenshot
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   ZIP-CBR:
     info: TODO
     has_server_log: true
@@ -3018,6 +4550,10 @@ tests:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
       score: '0.9999728170363448'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   ZIP-CLCVR:
     info: TODO
     has_server_log: true
@@ -3026,6 +4562,10 @@ tests:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
       score: '0.9987620364347127'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   ZIP-CUCVR:
     info: TODO
     has_server_log: true
@@ -3034,6 +4574,10 @@ tests:
         test_id: R-CYL
         test_name: Cylinder Model
       score: '0.9998825733546945'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   ZIP-SFT:
     info: TODO
     has_server_log: true
@@ -3042,6 +4586,10 @@ tests:
         test_id: R-CYL
         test_name: Cylinder Model
       score: '0.9993977649324203'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   ZIP-64:
     info: TODO
     has_server_log: true
@@ -3050,6 +4598,10 @@ tests:
         test_id: R-CUB
         test_name: Cube Model
       score: '0.9999085795239714'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   ZIP-zblg:
     info: TODO
     has_server_log: true
@@ -3058,6 +4610,10 @@ tests:
         test_id: error
         test_name: Manual reference screenshot
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   ZIP-zbsm:
     info: TODO
     has_server_log: true
@@ -3066,6 +4622,10 @@ tests:
         test_id: error
         test_name: Manual reference screenshot
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   ZIP-10:
     info: TODO
     has_server_log: true
@@ -3074,6 +4634,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   ZIP-20:
     info: TODO
     has_server_log: true
@@ -3082,6 +4646,10 @@ tests:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9991446059131635'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   ZIP-30:
     info: TODO
     has_server_log: true
@@ -3090,6 +4658,10 @@ tests:
         test_id: error
         test_name: Manual reference screenshot
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   ZIP-34:
     info: TODO
     has_server_log: true
@@ -3098,4 +4670,8 @@ tests:
         test_id: error
         test_name: Manual reference screenshot
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
 deprecated: {}
