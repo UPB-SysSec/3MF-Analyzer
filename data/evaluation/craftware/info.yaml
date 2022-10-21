@@ -33,7 +33,7 @@ tests:
       similar_to:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
-      score: '0.9946847009877383'
+      score: '0.9946847009877385'
     interpretation:
       status: loaded
       is_outlier: false
@@ -57,7 +57,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: '0.9924970923424854'
+      score: '0.9924970923424855'
     interpretation:
       status: loaded
       is_outlier: false
@@ -152,7 +152,7 @@ tests:
       similar_to:
         test_id: R-CYL
         test_name: Cylinder Model
-      score: '0.880045069254532'
+      score: '0.8800450692545312'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -251,7 +251,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: '0.9902640599839223'
+      score: '0.9902640599839224'
     interpretation:
       status: aborted
       is_outlier: false
@@ -330,11 +330,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999984827757'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999997917925'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -366,11 +366,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999864741196'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999874641563'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -378,11 +378,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.999999998305157'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999993937252'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -392,7 +392,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: '0.999999987942003'
+      score: '0.9999999879420028'
     interpretation:
       status: aborted
       is_outlier: false
@@ -402,11 +402,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999870265758'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999880159643'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -438,11 +438,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999876906563'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999892327623'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -522,11 +522,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999865133219'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999876490558'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -534,11 +534,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999977645473'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999988224415'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -546,11 +546,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999982570394'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999986277833'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -558,11 +558,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999983698568'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999985084337'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -582,11 +582,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999983698568'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999985084337'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -594,11 +594,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999975682664'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999986269239'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -606,11 +606,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999977157829'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999987051715'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -618,11 +618,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999874179376'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999877886991'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -666,11 +666,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.999999998455279'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999998452564'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -678,11 +678,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999869667384'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999880248932'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -702,11 +702,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999877204769'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999879664868'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -726,11 +726,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999972018908'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999983375482'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -774,11 +774,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999984579033'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -788,7 +788,7 @@ tests:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
-      score: '0.9970270034575687'
+      score: '0.9970270034575689'
     interpretation:
       status: loaded
       is_outlier: false
@@ -834,11 +834,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999980404147'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999992811215'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -846,11 +846,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999978543567'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999978772719'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -858,11 +858,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999875419815'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999887826874'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -918,11 +918,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.999999987771561'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999879089737'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1002,11 +1002,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999972018908'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999983375482'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1014,11 +1014,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999876294215'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999889106798'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1086,11 +1086,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999974213035'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999987090987'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1100,7 +1100,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: '0.9942281818082817'
+      score: '0.9942281818082818'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1256,7 +1256,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: '0.9999999988186976'
+      score: '0.9999999988186974'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1280,7 +1280,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: '0.9949892880167632'
+      score: '0.9949892880167633'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1316,7 +1316,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: '0.996015063020589'
+      score: '0.9960150630205892'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1340,7 +1340,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: '0.995423307084185'
+      score: '0.9954233070841852'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1410,11 +1410,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999869667384'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999880248932'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1496,7 +1496,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: '0.9959413541550501'
+      score: '0.9959413541550504'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1556,7 +1556,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: '0.9831377010550865'
+      score: '0.9831377010550867'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -1602,11 +1602,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999981699272'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999994794165'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1614,11 +1614,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999975348827'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999985251625'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1638,11 +1638,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.999999987881661'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999890390315'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1676,7 +1676,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: '0.9957190100756869'
+      score: '0.9957190100756871'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1782,11 +1782,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999873143312'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999874895075'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1808,7 +1808,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: '0.9999999986681255'
+      score: '0.9999999986681257'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1880,7 +1880,7 @@ tests:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
-      score: '0.9767950945443487'
+      score: '0.9767950945443488'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -1892,7 +1892,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: '0.9082263466719921'
+      score: '0.9082263466719913'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -1902,11 +1902,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999877141901'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999888027765'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1976,7 +1976,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: '0.9071491893186876'
+      score: '0.9071491893186868'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -2034,11 +2034,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999872372213'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999874239687'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2096,7 +2096,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: '0.9897882462414441'
+      score: '0.9897882462414443'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -2132,7 +2132,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: '0.997079782473459'
+      score: '0.9970797824734592'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2204,7 +2204,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: '0.9891322685975634'
+      score: '0.9891322685975636'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -2216,7 +2216,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: '0.9999999879176658'
+      score: '0.9999999879176659'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2240,7 +2240,7 @@ tests:
       similar_to:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
-      score: '0.995181979178207'
+      score: '0.9951819791782073'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2252,7 +2252,7 @@ tests:
       similar_to:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
-      score: '0.9970748189804596'
+      score: '0.9970748189804597'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2288,7 +2288,7 @@ tests:
       similar_to:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
-      score: '0.9965920235425957'
+      score: '0.9965920235425958'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2360,7 +2360,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: '0.9908601740104788'
+      score: '0.990860174010479'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2420,7 +2420,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: '0.9929927545917769'
+      score: '0.992992754591777'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2432,7 +2432,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: '0.9912432744692267'
+      score: '0.9912432744692268'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2456,7 +2456,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: '0.9952251743530584'
+      score: '0.9952251743530585'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2540,7 +2540,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: '0.9925840339380251'
+      score: '0.9925840339380252'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2706,11 +2706,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999870265758'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999880159643'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2778,11 +2778,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999982063349'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999983160847'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2816,7 +2816,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: '0.9938499170212617'
+      score: '0.9938499170212618'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2828,7 +2828,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: '0.9938690787259324'
+      score: '0.9938690787259327'
     interpretation:
       status: loaded
       is_outlier: false
@@ -2850,11 +2850,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999869579287'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.999999987182238'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2970,11 +2970,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.999999986732164'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.999999988019874'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3078,11 +3078,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999982983717'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999984081299'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3104,7 +3104,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: '0.9937754992152678'
+      score: '0.9937754992152679'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3248,7 +3248,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: '0.9944071263231179'
+      score: '0.9944071263231181'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3318,11 +3318,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999975070554'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999985658592'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3332,7 +3332,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: '0.9962805301720205'
+      score: '0.9962805301720207'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3368,7 +3368,7 @@ tests:
       similar_to:
         test_id: R-HOU
         test_name: House Model
-      score: '0.9929022440699987'
+      score: '0.9929022440699989'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3390,11 +3390,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999876906563'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999892327623'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3498,11 +3498,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999978259705'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999988839705'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3558,11 +3558,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999876490887'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.999999988019823'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3620,7 +3620,7 @@ tests:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
-      score: '0.9946776600759638'
+      score: '0.994677660075964'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3654,11 +3654,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999974213035'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999987090987'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3668,7 +3668,7 @@ tests:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
-      score: '0.9956639487553335'
+      score: '0.9956639487553337'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3678,11 +3678,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999877786775'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999882097086'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3704,7 +3704,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: '0.9999999985308431'
+      score: '0.9999999985308433'
     interpretation:
       status: aborted
       is_outlier: false
@@ -3714,11 +3714,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999875432702'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999877089928'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3762,11 +3762,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999879412088'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999881482918'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3798,11 +3798,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999877142133'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999879625947'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3884,7 +3884,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: '0.9999999879911462'
+      score: '0.9999999879911463'
     interpretation:
       status: aborted
       is_outlier: false
@@ -3978,11 +3978,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999983221597'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999986933608'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -4050,11 +4050,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999881051355'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999883704701'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -4064,7 +4064,7 @@ tests:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
-      score: '0.9940795775619539'
+      score: '0.9940795775619541'
     interpretation:
       status: loaded
       is_outlier: false
@@ -4388,7 +4388,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: '0.9999999985924076'
+      score: '0.9999999985924077'
     interpretation:
       status: aborted
       is_outlier: false
@@ -4410,11 +4410,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999984221815'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999986704917'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -4436,7 +4436,7 @@ tests:
       similar_to:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
-      score: '0.995218681371635'
+      score: '0.9952186813716353'
     interpretation:
       status: loaded
       is_outlier: false
@@ -4494,11 +4494,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9999999983273905'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9999999987278241'
     interpretation:
-      status: aborted
+      status: loaded nothing
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -4556,7 +4556,7 @@ tests:
       similar_to:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
-      score: '0.9918984580221674'
+      score: '0.9918984580221676'
     interpretation:
       status: loaded
       is_outlier: false
