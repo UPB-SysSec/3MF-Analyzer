@@ -617,7 +617,7 @@ class Lib3mf(Program):
         {
             "ProductVersion": "2.1.1",
             "Description": "lib3mf",
-            "Product": "lib3mf",
+            "Product": "lib3mf"
         }
         """
 
