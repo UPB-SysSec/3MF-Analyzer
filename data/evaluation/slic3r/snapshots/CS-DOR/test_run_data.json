@@ -2,36 +2,16 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\slic3r\\snapshots\\CS-DOR\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665889637.126913
+            "timestamp": 1666363579.773191
         },
-        "01 program-started": {
-            "timestamp": 1665889641.6928277
-        },
-        "02 program-loaded": {
-            "timestamp": 1665889643.7431455
-        },
-        "03 program-prepared": {
-            "timestamp": 1665889648.965365,
-            "screenshot": true,
-            "snapshot": true
-        },
-        "05 model-not-loaded": {
-            "timestamp": 1665889660.9162593,
-            "screenshot": true,
-            "snapshot": true,
-            "snapshot_error": [
-                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
-                "Could not finish action: 'take snapshot' because it timed out"
-            ],
+        "02 program-not-loaded": {
+            "timestamp": 1666363585.167222,
             "related_exception": [
-                "<class 'selenium.common.exceptions.NoSuchWindowException'>",
-                "Currently selected window has been closed",
+                "<class 'selenium.common.exceptions.WebDriverException'>",
+                "Failed to locate opened application window with appId: C:\\Users\\jrossel\\Desktop\\programs\\slic3r.lnk, and processId: 5392",
                 null,
                 null
             ]
-        },
-        "06 program-stopped": {
-            "timestamp": 1665889671.630208
         }
     }
 }
