@@ -120,7 +120,7 @@ def _compare_worker(reference_images_cache: dict, input_queue: Queue, result_que
         input_queue.task_done()
 
 
-def _compare_to_reference_cases(program_id: str, test_ids: list[str], pool_size: int = 16) -> None:
+def _compare_to_reference_cases(program_id: str, test_ids: list[str], pool_size: int = 8) -> None:
     """Takes every test case in test_ids compares them with the reference testcases
     (those need to be available in the snapshots directory as well).
     Given a certain similarity threshold the highest matching reference screenshot is linked to the
@@ -129,9 +129,13 @@ def _compare_to_reference_cases(program_id: str, test_ids: list[str], pool_size:
     logging.info("%s | Start", program_id)
 
     _info_path = join(EVALUATION_DIR, program_id, "info.yaml")
-    with open(_info_path, "r", encoding="utf8") as yaml_file:
-        info_content = yaml.load(yaml_file)
-        tests = info_content.get("tests", {})
+    try:
+        with open(_info_path, "r", encoding="utf8") as yaml_file:
+            info_content = yaml.load(yaml_file)
+            tests = info_content.get("tests", {})
+    except FileNotFoundError:
+        logging.error("There is no info.yaml for '%s'. Skipping.", program_id)
+        return
 
     snapshots_dir = join(EVALUATION_DIR, program_id, "snapshots")
     reference_screenshots_dir = join(EVALUATION_DIR, program_id, "reference_screenshots")
