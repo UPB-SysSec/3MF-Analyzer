@@ -25,7 +25,7 @@ tests:
         test_name: Pyramid Model 0
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -37,7 +37,7 @@ tests:
         test_name: Pyramid Model 0
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -49,9 +49,9 @@ tests:
         test_name: House Model
       score: '0.9791196407989107'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   CS-S-NEBS:
     info: TODO
@@ -61,7 +61,7 @@ tests:
         test_name: Pyramid Model 0
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -73,7 +73,7 @@ tests:
         test_name: Pyramid Model 1
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -85,7 +85,7 @@ tests:
         test_name: Pyramid Model 0
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -129,9 +129,9 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '0.7981634341958374'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   DOS-FUZ-SLIC3R-1:
     info: TODO
@@ -150,58 +150,58 @@ tests:
   R-CYL:
     info: TODO
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   R-PYR-0:
     info: TODO
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   R-PYR-1:
     info: TODO
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   R-CUB:
     info: TODO
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   R-HOU:
     info: TODO
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   R-SPEC-C-0:
     info: TODO
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   R-SPEC-M-0:
     info: TODO
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   R-SPEC-P-0:
     info: TODO
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   R-ERR:
     info: TODO
@@ -230,9 +230,9 @@ tests:
         test_name: Full/Reference model for production specification (P)
       score: '0.85084576495512'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: low
     has_server_log: true
   F-B-PRO:
     info: TODO
@@ -256,30 +256,30 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
   R-SPEC-SI-0:
     info: TODO
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   R-SPEC-CM-0:
     info: TODO
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   R-SPEC-SE-0:
     info: TODO
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   XML-EGE-I-R:
     info: TODO
@@ -555,7 +555,7 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -567,7 +567,7 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -747,7 +747,7 @@ tests:
         test_name: House Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -773,9 +773,9 @@ tests:
         test_name: Cube Model
       score: '0.8125766215704562'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: low
     has_server_log: true
   GEN-C-ADA-ITEM-OBJECTID-0:
     info: TODO
@@ -792,7 +792,7 @@ tests:
         test_name: House Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -832,7 +832,7 @@ tests:
         test_name: House Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -844,7 +844,7 @@ tests:
         test_name: House Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -877,9 +877,9 @@ tests:
         test_name: House Model
       score: '0.957652014289943'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   GEN-C-ADA-VERTEX-Y-0:
     info: TODO
@@ -889,9 +889,9 @@ tests:
         test_name: Cube Model
       score: '0.7922591814629236'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   GEN-C-ADA-VERTEX-Z-0:
     info: TODO
@@ -901,9 +901,9 @@ tests:
         test_name: House Model
       score: '0.9550520578921746'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   GEN-C-ADS-BASE-NAME-0:
     info: TODO
@@ -913,7 +913,7 @@ tests:
         test_name: House Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -925,7 +925,7 @@ tests:
         test_name: House Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -937,7 +937,7 @@ tests:
         test_name: House Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -949,7 +949,7 @@ tests:
         test_name: House Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -961,7 +961,7 @@ tests:
         test_name: House Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1001,7 +1001,7 @@ tests:
         test_name: House Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1034,7 +1034,7 @@ tests:
         test_name: House Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1046,7 +1046,7 @@ tests:
         test_name: House Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1058,7 +1058,7 @@ tests:
         test_name: House Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1091,7 +1091,7 @@ tests:
         test_name: House Model
       score: '0.9988836266400047'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1103,9 +1103,9 @@ tests:
         test_name: Cube Model
       score: '0.7835994239786843'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   GEN-C-AI-VERTEX-Z-0:
     info: TODO
@@ -1115,7 +1115,7 @@ tests:
         test_name: House Model
       score: '0.9960234090241524'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1127,7 +1127,7 @@ tests:
         test_name: House Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1139,7 +1139,7 @@ tests:
         test_name: House Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1165,9 +1165,9 @@ tests:
         test_name: House Model
       score: '0.9649014736985813'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   GEN-C-AR-ITEM-OBJECTID-0:
     info: TODO
@@ -1184,7 +1184,7 @@ tests:
         test_name: House Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1196,7 +1196,7 @@ tests:
         test_name: House Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1208,7 +1208,7 @@ tests:
         test_name: House Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1227,7 +1227,7 @@ tests:
         test_name: House Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1239,7 +1239,7 @@ tests:
         test_name: House Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1251,7 +1251,7 @@ tests:
         test_name: House Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1263,7 +1263,7 @@ tests:
         test_name: House Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1275,7 +1275,7 @@ tests:
         test_name: House Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1287,7 +1287,7 @@ tests:
         test_name: House Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1341,7 +1341,7 @@ tests:
         test_name: House Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1353,7 +1353,7 @@ tests:
         test_name: House Model
       score: '0.9996706177682081'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1365,9 +1365,9 @@ tests:
         test_name: House Model
       score: '0.9843069564489172'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   GEN-C-CDA-MESH-0:
     info: TODO
@@ -1377,9 +1377,9 @@ tests:
         test_name: House Model
       score: '0.7902528633416388'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   GEN-C-CDA-MESH-1:
     info: TODO
@@ -1389,7 +1389,7 @@ tests:
         test_name: House Model
       score: '0.9999999393831098'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1443,7 +1443,7 @@ tests:
         test_name: House Model
       score: '0.9999999393831098'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1455,9 +1455,9 @@ tests:
         test_name: House Model
       score: '0.7900720156831079'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   GEN-C-CR-BASEMATERIALS-BASE-0:
     info: TODO
@@ -1474,9 +1474,9 @@ tests:
         test_name: House Model
       score: '0.9791196407989107'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   GEN-C-CR-MESH-TRIANGLES-0:
     info: TODO
@@ -1486,9 +1486,9 @@ tests:
         test_name: House Model
       score: '0.9791196407989107'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   GEN-C-CR-MESH-VERTICES-0:
     info: TODO
@@ -1533,7 +1533,7 @@ tests:
         test_name: House Model
       score: '0.9999999110545444'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1583,9 +1583,9 @@ tests:
         test_name: House Model
       score: '0.9791196407989107'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   GEN-C-CRA-MODEL-0:
     info: TODO
@@ -1616,9 +1616,9 @@ tests:
         test_name: House Model
       score: '0.9791196407989107'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   GEN-C-CRA-VERTICES-0:
     info: TODO
@@ -1635,7 +1635,7 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1647,7 +1647,7 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1659,7 +1659,7 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1671,7 +1671,7 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1683,7 +1683,7 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1695,7 +1695,7 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1707,7 +1707,7 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1726,7 +1726,7 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1738,7 +1738,7 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1750,7 +1750,7 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1762,7 +1762,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1774,9 +1774,9 @@ tests:
         test_name: Cube Model
       score: '0.810237653462159'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: low
     has_server_log: true
   GEN-M-ADA-MCOLOR-COLOR-0:
     info: TODO
@@ -1786,7 +1786,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1805,7 +1805,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1817,7 +1817,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1829,7 +1829,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1841,7 +1841,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1853,7 +1853,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1865,7 +1865,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1884,7 +1884,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1896,7 +1896,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1922,7 +1922,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1934,7 +1934,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1946,7 +1946,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1958,7 +1958,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1970,7 +1970,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1982,7 +1982,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1994,7 +1994,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2006,7 +2006,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2018,7 +2018,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2030,7 +2030,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2042,7 +2042,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2054,7 +2054,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2073,7 +2073,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2092,7 +2092,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2104,7 +2104,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2116,7 +2116,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2128,7 +2128,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2140,7 +2140,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2173,7 +2173,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2185,7 +2185,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2211,7 +2211,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2223,7 +2223,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2235,7 +2235,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2247,7 +2247,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2259,7 +2259,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2271,9 +2271,9 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '0.9771769765824876'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   GEN-M-AR-MCOLOR-COLOR-0:
     info: TODO
@@ -2283,7 +2283,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2302,7 +2302,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2321,7 +2321,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2333,7 +2333,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2345,7 +2345,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2357,7 +2357,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2369,7 +2369,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2381,7 +2381,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2414,7 +2414,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2426,7 +2426,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2452,7 +2452,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2464,7 +2464,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2476,7 +2476,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2488,7 +2488,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2500,7 +2500,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2512,7 +2512,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2524,7 +2524,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2536,7 +2536,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2548,7 +2548,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2560,7 +2560,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2572,7 +2572,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2591,7 +2591,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2603,7 +2603,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2629,9 +2629,9 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '0.9680483703169752'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   GEN-M-CR-MCOLORGROUP-MCOLOR-0:
     info: TODO
@@ -2641,7 +2641,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2653,7 +2653,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2665,7 +2665,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2677,7 +2677,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2696,7 +2696,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2708,7 +2708,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2720,7 +2720,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2732,7 +2732,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2744,7 +2744,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2756,7 +2756,7 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2789,7 +2789,7 @@ tests:
         test_name: Full/Reference model for production specification (P)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2808,7 +2808,7 @@ tests:
         test_name: Full/Reference model for production specification (P)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2820,7 +2820,7 @@ tests:
         test_name: Full/Reference model for production specification (P)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2839,7 +2839,7 @@ tests:
         test_name: Full/Reference model for production specification (P)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2851,7 +2851,7 @@ tests:
         test_name: Full/Reference model for production specification (P)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2863,7 +2863,7 @@ tests:
         test_name: Full/Reference model for production specification (P)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2875,7 +2875,7 @@ tests:
         test_name: Full/Reference model for production specification (P)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2887,9 +2887,9 @@ tests:
         test_name: Full/Reference model for production specification (P)
       score: '0.7856521528385823'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   GEN-P-AR-COMPONENT-PUUID-0:
     info: TODO
@@ -2899,7 +2899,7 @@ tests:
         test_name: Full/Reference model for production specification (P)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2911,7 +2911,7 @@ tests:
         test_name: Full/Reference model for production specification (P)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2930,7 +2930,7 @@ tests:
         test_name: Full/Reference model for production specification (P)
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -2949,7 +2949,7 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3031,7 +3031,7 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3043,7 +3043,7 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3055,7 +3055,7 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3067,7 +3067,7 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3079,7 +3079,7 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3154,7 +3154,7 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3166,7 +3166,7 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3185,7 +3185,7 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3211,7 +3211,7 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3223,7 +3223,7 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3235,7 +3235,7 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3261,7 +3261,7 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3273,7 +3273,7 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3292,7 +3292,7 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3311,7 +3311,7 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3323,7 +3323,7 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3342,7 +3342,7 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3368,7 +3368,7 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3380,7 +3380,7 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3420,7 +3420,7 @@ tests:
         test_name: Cylinder Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3481,7 +3481,7 @@ tests:
         test_name: Cylinder Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3493,7 +3493,7 @@ tests:
         test_name: Pyramid Model 0
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3505,7 +3505,7 @@ tests:
         test_name: Pyramid Model 0
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3517,7 +3517,7 @@ tests:
         test_name: Pyramid Model 0
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3529,7 +3529,7 @@ tests:
         test_name: Pyramid Model 0
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3576,7 +3576,7 @@ tests:
         test_name: Pyramid Model 0
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3588,7 +3588,7 @@ tests:
         test_name: Pyramid Model 0
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3600,7 +3600,7 @@ tests:
         test_name: Cylinder Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3612,7 +3612,7 @@ tests:
         test_name: Cylinder Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3624,7 +3624,7 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: aborted
+      status: loaded
       is_outlier: false
       confidence: high
     has_server_log: true
