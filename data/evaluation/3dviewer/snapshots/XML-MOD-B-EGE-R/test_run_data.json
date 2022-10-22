@@ -2,33 +2,40 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\3dviewer\\snapshots\\XML-MOD-B-EGE-R\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665951494.5236406
+            "timestamp": 1666385692.5913222
         },
         "01 program-started": {
-            "timestamp": 1665951496.4491248
+            "timestamp": 1666385693.7353487
         },
         "02 program-loaded": {
-            "timestamp": 1665951498.1517062
+            "timestamp": 1666385695.9044232
         },
         "03 program-prepared": {
-            "timestamp": 1665951503.387552,
-            "screenshot": true,
-            "snapshot": true
-        },
-        "04 model-started-loading": {
-            "timestamp": 1665951521.063785
-        },
-        "05 model-not-loaded": {
-            "timestamp": 1665951522.658274,
+            "timestamp": 1666385701.1577504,
             "screenshot": true,
             "snapshot": true,
-            "related_exception": [
+            "snapshot_error": [
                 "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
-                "error msg detected in window"
+                "Could not finish action: 'take snapshot' because it timed out"
+            ]
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1666385711.7728646,
+            "screenshot": true,
+            "snapshot": true,
+            "snapshot_error": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'take snapshot' because it timed out"
+            ],
+            "related_exception": [
+                "<class 'selenium.common.exceptions.NoSuchWindowException'>",
+                "Currently selected window has been closed",
+                null,
+                null
             ]
         },
         "06 program-stopped": {
-            "timestamp": 1665951524.7580712
+            "timestamp": 1666385722.2362802
         }
     }
 }

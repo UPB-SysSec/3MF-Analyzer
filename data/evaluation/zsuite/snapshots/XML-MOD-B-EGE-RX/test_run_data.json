@@ -2,32 +2,33 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\zsuite\\snapshots\\XML-MOD-B-EGE-RX\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665973355.3732955
+            "timestamp": 1666389031.3414488
         },
         "01 program-started": {
-            "timestamp": 1665973370.1730208
+            "timestamp": 1666389046.3276448
         },
         "02 program-loaded": {
-            "timestamp": 1665973371.647058
+            "timestamp": 1666389047.8196692
         },
         "03 program-prepared": {
-            "timestamp": 1665973376.8859456,
+            "timestamp": 1666389053.042941,
             "screenshot": true,
             "snapshot": true
         },
+        "04 model-started-loading": {
+            "timestamp": 1666389074.7513494
+        },
         "05 model-not-loaded": {
-            "timestamp": 1665973381.9034684,
+            "timestamp": 1666389107.7563846,
             "screenshot": true,
             "snapshot": true,
             "related_exception": [
-                "<class 'selenium.common.exceptions.NoSuchElementException'>",
-                "An element could not be located on the page using the given search parameters.",
-                null,
-                null
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
             ]
         },
         "06 program-stopped": {
-            "timestamp": 1665973383.9404671
+            "timestamp": 1666389110.1044319
         }
     }
 }

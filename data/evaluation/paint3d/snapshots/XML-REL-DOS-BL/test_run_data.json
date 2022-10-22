@@ -2,33 +2,33 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\paint3d\\snapshots\\XML-REL-DOS-BL\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665910502.943107
+            "timestamp": 1666370030.2308888
         },
         "01 program-started": {
-            "timestamp": 1665910506.3686178
+            "timestamp": 1666370033.7657487
         },
         "02 program-loaded": {
-            "timestamp": 1665910510.580021
+            "timestamp": 1666370036.9495573
         },
         "03 program-prepared": {
-            "timestamp": 1665910515.8180935,
+            "timestamp": 1666370042.1716485,
             "screenshot": true,
             "snapshot": true
         },
         "04 model-started-loading": {
-            "timestamp": 1665910529.7912824
+            "timestamp": 1666370055.847766
         },
         "05 model-not-loaded": {
-            "timestamp": 1665910531.2404299,
+            "timestamp": 1666370087.2545884,
             "screenshot": true,
             "snapshot": true,
             "related_exception": [
                 "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
-                "error msg detected in window"
+                "Could not finish action: 'detect change' because it timed out"
             ]
         },
         "06 program-stopped": {
-            "timestamp": 1665910533.1552083
+            "timestamp": 1666370089.0283878
         }
     }
 }

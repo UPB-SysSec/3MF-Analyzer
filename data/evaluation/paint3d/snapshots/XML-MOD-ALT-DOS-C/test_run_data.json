@@ -2,32 +2,33 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\paint3d\\snapshots\\XML-MOD-ALT-DOS-C\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665909135.826107
+            "timestamp": 1666368664.402943
         },
         "01 program-started": {
-            "timestamp": 1665909139.251657
+            "timestamp": 1666368667.8751764
         },
         "02 program-loaded": {
-            "timestamp": 1665909143.096139
+            "timestamp": 1666368669.460078
         },
         "03 program-prepared": {
-            "timestamp": 1665909148.3338501,
+            "timestamp": 1666368675.3228934,
             "screenshot": true,
             "snapshot": true
         },
+        "04 model-started-loading": {
+            "timestamp": 1666368689.249176
+        },
         "05 model-not-loaded": {
-            "timestamp": 1665909156.1818013,
+            "timestamp": 1666368690.60743,
             "screenshot": true,
             "snapshot": true,
             "related_exception": [
-                "<class 'selenium.common.exceptions.NoSuchElementException'>",
-                "An element could not be located on the page using the given search parameters.",
-                null,
-                null
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
             ]
         },
         "06 program-stopped": {
-            "timestamp": 1665909158.0338962
+            "timestamp": 1666368692.63441
         }
     }
 }

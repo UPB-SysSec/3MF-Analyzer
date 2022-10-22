@@ -2,29 +2,16 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\slic3r\\snapshots\\OPC-LFI-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665900173.3795214
+            "timestamp": 1666377263.5229964
         },
-        "01 program-started": {
-            "timestamp": 1665900178.0239801
-        },
-        "02 program-loaded": {
-            "timestamp": 1665900180.052608
-        },
-        "03 program-prepared": {
-            "timestamp": 1665900185.2752225,
-            "screenshot": true,
-            "snapshot": true
-        },
-        "04 model-started-loading": {
-            "timestamp": 1665900194.4462316
-        },
-        "05 model-loaded": {
-            "timestamp": 1665900197.0841358,
-            "screenshot": true,
-            "snapshot": true
-        },
-        "06 program-stopped": {
-            "timestamp": 1665900198.6254976
+        "02 program-not-loaded": {
+            "timestamp": 1666377268.8392446,
+            "related_exception": [
+                "<class 'selenium.common.exceptions.WebDriverException'>",
+                "Failed to locate opened application window with appId: C:\\Users\\jrossel\\Desktop\\programs\\slic3r.lnk, and processId: 7792",
+                null,
+                null
+            ]
         }
     }
 }
