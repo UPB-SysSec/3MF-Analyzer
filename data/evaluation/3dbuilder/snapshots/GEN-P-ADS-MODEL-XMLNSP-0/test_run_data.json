@@ -2,29 +2,33 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\3dbuilder\\snapshots\\GEN-P-ADS-MODEL-XMLNSP-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665929771.410524
+            "timestamp": 1666425924.6093
         },
         "01 program-started": {
-            "timestamp": 1665929774.1018107
+            "timestamp": 1666425927.4094405
         },
         "02 program-loaded": {
-            "timestamp": 1665929777.6511548
+            "timestamp": 1666425930.968314
         },
         "03 program-prepared": {
-            "timestamp": 1665929782.8734295,
+            "timestamp": 1666425936.205881,
             "screenshot": true,
             "snapshot": true
         },
         "04 model-started-loading": {
-            "timestamp": 1665929795.3165214
+            "timestamp": 1666425948.0239289
         },
-        "05 model-loaded": {
-            "timestamp": 1665929797.7636278,
+        "05 model-not-loaded": {
+            "timestamp": 1666425949.638666,
             "screenshot": true,
-            "snapshot": true
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665929799.1133828
+            "timestamp": 1666425950.9541256
         }
     }
 }
