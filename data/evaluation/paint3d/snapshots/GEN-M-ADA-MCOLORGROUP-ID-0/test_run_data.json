@@ -2,32 +2,33 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\paint3d\\snapshots\\GEN-M-ADA-MCOLORGROUP-ID-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665901091.0868027
+            "timestamp": 1666425941.493465
         },
         "01 program-started": {
-            "timestamp": 1665901094.4026012
+            "timestamp": 1666425944.8872254
         },
         "02 program-loaded": {
-            "timestamp": 1665901097.0367963
+            "timestamp": 1666425946.4737654
         },
         "03 program-prepared": {
-            "timestamp": 1665901102.259093,
+            "timestamp": 1666425952.329949,
             "screenshot": true,
             "snapshot": true
         },
+        "04 model-started-loading": {
+            "timestamp": 1666425966.9074717
+        },
         "05 model-not-loaded": {
-            "timestamp": 1665901110.1070552,
+            "timestamp": 1666425968.2553241,
             "screenshot": true,
             "snapshot": true,
             "related_exception": [
-                "<class 'selenium.common.exceptions.NoSuchElementException'>",
-                "An element could not be located on the page using the given search parameters.",
-                null,
-                null
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
             ]
         },
         "06 program-stopped": {
-            "timestamp": 1665901111.9362118
+            "timestamp": 1666425969.9968755
         }
     }
 }
