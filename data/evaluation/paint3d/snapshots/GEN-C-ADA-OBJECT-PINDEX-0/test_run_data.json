@@ -2,32 +2,33 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\paint3d\\snapshots\\GEN-C-ADA-OBJECT-PINDEX-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665897048.2864954
+            "timestamp": 1666425853.4669182
         },
         "01 program-started": {
-            "timestamp": 1665897051.5554805
+            "timestamp": 1666425857.6262717
         },
         "02 program-loaded": {
-            "timestamp": 1665897053.7834482
+            "timestamp": 1666425862.0296376
         },
         "03 program-prepared": {
-            "timestamp": 1665897059.0056238,
+            "timestamp": 1666425867.2532783,
             "screenshot": true,
             "snapshot": true
         },
+        "04 model-started-loading": {
+            "timestamp": 1666425881.5905397
+        },
         "05 model-not-loaded": {
-            "timestamp": 1665897066.8067338,
+            "timestamp": 1666425883.0151298,
             "screenshot": true,
             "snapshot": true,
             "related_exception": [
-                "<class 'selenium.common.exceptions.NoSuchElementException'>",
-                "An element could not be located on the page using the given search parameters.",
-                null,
-                null
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
             ]
         },
         "06 program-stopped": {
-            "timestamp": 1665897068.5536897
+            "timestamp": 1666425884.779733
         }
     }
 }
