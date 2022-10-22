@@ -2,32 +2,29 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\zsuite\\snapshots\\XML-REL-OOB-SL\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665976045.1184812
+            "timestamp": 1666392024.7511258
         },
         "01 program-started": {
-            "timestamp": 1665976059.8940861
+            "timestamp": 1666392039.5988114
         },
         "02 program-loaded": {
-            "timestamp": 1665976061.366848
+            "timestamp": 1666392041.0848112
         },
         "03 program-prepared": {
-            "timestamp": 1665976066.5896506,
+            "timestamp": 1666392046.3118663,
             "screenshot": true,
             "snapshot": true
         },
-        "05 model-not-loaded": {
-            "timestamp": 1665976071.554581,
+        "04 model-started-loading": {
+            "timestamp": 1666392068.0993333
+        },
+        "05 model-loaded": {
+            "timestamp": 1666392073.1008832,
             "screenshot": true,
-            "snapshot": true,
-            "related_exception": [
-                "<class 'selenium.common.exceptions.NoSuchElementException'>",
-                "An element could not be located on the page using the given search parameters.",
-                null,
-                null
-            ]
+            "snapshot": true
         },
         "06 program-stopped": {
-            "timestamp": 1665976073.549591
+            "timestamp": 1666392075.4894552
         }
     }
 }

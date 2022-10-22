@@ -2,32 +2,33 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\zsuite\\snapshots\\GEN-C-ADA-OBJECT-TYPE-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665956605.12769
+            "timestamp": 1666366147.8398972
         },
         "01 program-started": {
-            "timestamp": 1665956619.9839337
+            "timestamp": 1666366162.6841497
         },
         "02 program-loaded": {
-            "timestamp": 1665956621.4534338
+            "timestamp": 1666366164.1835325
         },
         "03 program-prepared": {
-            "timestamp": 1665956626.671772,
+            "timestamp": 1666366169.4399776,
             "screenshot": true,
             "snapshot": true
         },
+        "04 model-started-loading": {
+            "timestamp": 1666366191.4887273
+        },
         "05 model-not-loaded": {
-            "timestamp": 1665956631.6348858,
+            "timestamp": 1666366194.4489932,
             "screenshot": true,
             "snapshot": true,
             "related_exception": [
-                "<class 'selenium.common.exceptions.NoSuchElementException'>",
-                "An element could not be located on the page using the given search parameters.",
-                null,
-                null
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
             ]
         },
         "06 program-stopped": {
-            "timestamp": 1665956633.6578858
+            "timestamp": 1666366196.697029
         }
     }
 }

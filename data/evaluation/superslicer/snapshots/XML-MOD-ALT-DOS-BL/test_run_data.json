@@ -2,33 +2,32 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\superslicer\\snapshots\\XML-MOD-ALT-DOS-BL\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665917930.4417167
+            "timestamp": 1666380411.3740065
         },
         "01 program-started": {
-            "timestamp": 1665917934.4452055
+            "timestamp": 1666380415.0960867
         },
         "02 program-loaded": {
-            "timestamp": 1665917936.6758933
+            "timestamp": 1666380417.3625937
         },
         "03 program-prepared": {
-            "timestamp": 1665917941.8984501,
+            "timestamp": 1666380422.5867565,
             "screenshot": true,
             "snapshot": true
         },
-        "04 model-started-loading": {
-            "timestamp": 1665917951.413999
-        },
         "05 model-not-loaded": {
-            "timestamp": 1665918072.8230724,
+            "timestamp": 1666380472.0599465,
             "screenshot": true,
             "snapshot": true,
             "related_exception": [
-                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
-                "Could not finish action: 'detect change' because it timed out"
+                "<class 'selenium.common.exceptions.NoSuchWindowException'>",
+                "Currently selected window has been closed",
+                null,
+                null
             ]
         },
         "06 program-stopped": {
-            "timestamp": 1665918134.4475765
+            "timestamp": 1666380593.1714318
         }
     }
 }

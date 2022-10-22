@@ -2,32 +2,30 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\zsuite\\snapshots\\GEN-CM-CR-OBJECT-METADATAGROUP-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665961823.6319818
+            "timestamp": 1666366716.7210655
         },
         "01 program-started": {
-            "timestamp": 1665961838.4703155
+            "timestamp": 1666366731.5295222
         },
         "02 program-loaded": {
-            "timestamp": 1665961839.9392977
+            "timestamp": 1666366732.9695191
         },
         "03 program-prepared": {
-            "timestamp": 1665961845.179949,
+            "timestamp": 1666366738.1955218,
             "screenshot": true,
             "snapshot": true
         },
         "05 model-not-loaded": {
-            "timestamp": 1665961850.1459684,
+            "timestamp": 1666366765.936287,
             "screenshot": true,
             "snapshot": true,
             "related_exception": [
-                "<class 'selenium.common.exceptions.NoSuchElementException'>",
-                "An element could not be located on the page using the given search parameters.",
-                null,
-                null
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
             ]
         },
         "06 program-stopped": {
-            "timestamp": 1665961852.1359637
+            "timestamp": 1666366767.8168292
         }
     }
 }

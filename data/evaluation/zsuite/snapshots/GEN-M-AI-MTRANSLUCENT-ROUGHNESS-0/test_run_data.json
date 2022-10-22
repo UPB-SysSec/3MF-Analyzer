@@ -2,32 +2,30 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\zsuite\\snapshots\\GEN-M-AI-MTRANSLUCENT-ROUGHNESS-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665964345.6133509
+            "timestamp": 1666366956.0320768
         },
         "01 program-started": {
-            "timestamp": 1665964360.4684045
+            "timestamp": 1666366970.8739808
         },
         "02 program-loaded": {
-            "timestamp": 1665964361.9621656
+            "timestamp": 1666366972.323977
         },
         "03 program-prepared": {
-            "timestamp": 1665964367.1883152,
+            "timestamp": 1666366977.5499766,
             "screenshot": true,
             "snapshot": true
         },
         "05 model-not-loaded": {
-            "timestamp": 1665964372.2373233,
+            "timestamp": 1666367005.1262996,
             "screenshot": true,
             "snapshot": true,
             "related_exception": [
-                "<class 'selenium.common.exceptions.NoSuchElementException'>",
-                "An element could not be located on the page using the given search parameters.",
-                null,
-                null
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
             ]
         },
         "06 program-stopped": {
-            "timestamp": 1665964374.2193248
+            "timestamp": 1666367006.991534
         }
     }
 }

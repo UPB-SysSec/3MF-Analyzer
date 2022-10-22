@@ -2,33 +2,40 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\3dviewer\\snapshots\\XML-REL-SSRF-NNSL\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665953277.8174522
+            "timestamp": 1666387124.4705756
         },
         "01 program-started": {
-            "timestamp": 1665953278.9308574
+            "timestamp": 1666387125.42718
         },
         "02 program-loaded": {
-            "timestamp": 1665953281.5177891
+            "timestamp": 1666387128.0353625
         },
         "03 program-prepared": {
-            "timestamp": 1665953286.7748675,
-            "screenshot": true,
-            "snapshot": true
-        },
-        "04 model-started-loading": {
-            "timestamp": 1665953304.6550853
-        },
-        "05 model-not-loaded": {
-            "timestamp": 1665953306.1324484,
+            "timestamp": 1666387133.257377,
             "screenshot": true,
             "snapshot": true,
-            "related_exception": [
+            "snapshot_error": [
                 "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
-                "error msg detected in window"
+                "Could not finish action: 'take snapshot' because it timed out"
+            ]
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1666387143.794439,
+            "screenshot": true,
+            "snapshot": true,
+            "snapshot_error": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'take snapshot' because it timed out"
+            ],
+            "related_exception": [
+                "<class 'selenium.common.exceptions.NoSuchWindowException'>",
+                "Currently selected window has been closed",
+                null,
+                null
             ]
         },
         "06 program-stopped": {
-            "timestamp": 1665953307.9247518
+            "timestamp": 1666387154.1476147
         }
     }
 }

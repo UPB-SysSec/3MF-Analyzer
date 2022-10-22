@@ -2,32 +2,29 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\zsuite\\snapshots\\GEN-M-CR-BUILD-ITEM-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665966420.5021522
+            "timestamp": 1666367442.6023707
         },
         "01 program-started": {
-            "timestamp": 1665966435.3246417
+            "timestamp": 1666367457.4103212
         },
         "02 program-loaded": {
-            "timestamp": 1665966436.7843711
+            "timestamp": 1666367458.869321
         },
         "03 program-prepared": {
-            "timestamp": 1665966442.0100052,
+            "timestamp": 1666367464.094599,
             "screenshot": true,
             "snapshot": true
         },
-        "05 model-not-loaded": {
-            "timestamp": 1665966447.0571892,
+        "04 model-started-loading": {
+            "timestamp": 1666367486.243152
+        },
+        "05 model-loaded": {
+            "timestamp": 1666367491.1668744,
             "screenshot": true,
-            "snapshot": true,
-            "related_exception": [
-                "<class 'selenium.common.exceptions.NoSuchElementException'>",
-                "An element could not be located on the page using the given search parameters.",
-                null,
-                null
-            ]
+            "snapshot": true
         },
         "06 program-stopped": {
-            "timestamp": 1665966448.9514914
+            "timestamp": 1666367493.3211052
         }
     }
 }

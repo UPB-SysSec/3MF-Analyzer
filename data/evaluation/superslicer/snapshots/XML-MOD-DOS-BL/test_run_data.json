@@ -2,32 +2,32 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\superslicer\\snapshots\\XML-MOD-DOS-BL\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665918621.9902685
+            "timestamp": 1666381068.4786873
         },
         "01 program-started": {
-            "timestamp": 1665918625.9469569
+            "timestamp": 1666381072.2787802
         },
         "02 program-loaded": {
-            "timestamp": 1665918628.345836
+            "timestamp": 1666381074.5880558
         },
         "03 program-prepared": {
-            "timestamp": 1665918633.5523958,
+            "timestamp": 1666381079.8109312,
             "screenshot": true,
             "snapshot": true
         },
         "05 model-not-loaded": {
-            "timestamp": 1665918682.9786503,
+            "timestamp": 1666381129.3931808,
             "screenshot": true,
             "snapshot": true,
             "related_exception": [
-                "<class 'selenium.common.exceptions.WebDriverException'>",
-                "An unknown error occurred in the remote end while processing the command.",
+                "<class 'selenium.common.exceptions.NoSuchWindowException'>",
+                "Currently selected window has been closed",
                 null,
                 null
             ]
         },
         "06 program-stopped": {
-            "timestamp": 1665918777.274799
+            "timestamp": 1666381223.8737316
         }
     }
 }

@@ -2,32 +2,16 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\cura\\snapshots\\OPC-LFI-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665878104.797783
+            "timestamp": 1666342155.0258896
         },
-        "01 program-started": {
-            "timestamp": 1665878110.0512366
-        },
-        "02 program-loaded": {
-            "timestamp": 1665878126.104617
-        },
-        "03 program-prepared": {
-            "timestamp": 1665878131.3251295,
-            "screenshot": true,
-            "snapshot": true
-        },
-        "05 model-not-loaded": {
-            "timestamp": 1665878140.0837207,
-            "screenshot": true,
-            "snapshot": true,
+        "02 program-not-loaded": {
+            "timestamp": 1666342160.8575604,
             "related_exception": [
-                "<class 'selenium.common.exceptions.NoSuchWindowException'>",
-                "Currently selected window has been closed",
+                "<class 'selenium.common.exceptions.WebDriverException'>",
+                "Failed to locate opened application window with appId: E:\\Program Files\\Ultimaker Cura 5.1.1\\Ultimaker-Cura.exe, and processId: 3700",
                 null,
                 null
             ]
-        },
-        "06 program-stopped": {
-            "timestamp": 1665878169.2027256
         }
     }
 }

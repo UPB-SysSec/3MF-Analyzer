@@ -2,33 +2,40 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\3dviewer\\snapshots\\XML-MOD-B-EGE-L\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665951415.8373091
+            "timestamp": 1666385619.6188834
         },
         "01 program-started": {
-            "timestamp": 1665951417.6810694
+            "timestamp": 1666385621.5595145
         },
         "02 program-loaded": {
-            "timestamp": 1665951419.317925
+            "timestamp": 1666385623.6158502
         },
         "03 program-prepared": {
-            "timestamp": 1665951424.6187704,
-            "screenshot": true,
-            "snapshot": true
-        },
-        "04 model-started-loading": {
-            "timestamp": 1665951442.1758564
-        },
-        "05 model-not-loaded": {
-            "timestamp": 1665951443.5455177,
+            "timestamp": 1666385628.8375928,
             "screenshot": true,
             "snapshot": true,
-            "related_exception": [
+            "snapshot_error": [
                 "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
-                "error msg detected in window"
+                "Could not finish action: 'take snapshot' because it timed out"
+            ]
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1666385639.3437037,
+            "screenshot": true,
+            "snapshot": true,
+            "snapshot_error": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'take snapshot' because it timed out"
+            ],
+            "related_exception": [
+                "<class 'selenium.common.exceptions.NoSuchWindowException'>",
+                "Currently selected window has been closed",
+                null,
+                null
             ]
         },
         "06 program-stopped": {
-            "timestamp": 1665951445.6315305
+            "timestamp": 1666385649.9322107
         }
     }
 }

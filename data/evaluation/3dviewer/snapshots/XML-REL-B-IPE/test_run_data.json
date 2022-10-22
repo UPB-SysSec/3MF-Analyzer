@@ -2,33 +2,36 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\3dviewer\\snapshots\\XML-REL-B-IPE\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665952675.13271
+            "timestamp": 1666386625.564683
         },
         "01 program-started": {
-            "timestamp": 1665952676.9798772
+            "timestamp": 1666386627.5210211
         },
         "02 program-loaded": {
-            "timestamp": 1665952678.7762036
+            "timestamp": 1666386629.3542385
         },
         "03 program-prepared": {
-            "timestamp": 1665952684.1858833,
+            "timestamp": 1666386634.6086447,
             "screenshot": true,
             "snapshot": true
         },
-        "04 model-started-loading": {
-            "timestamp": 1665952702.434766
-        },
         "05 model-not-loaded": {
-            "timestamp": 1665952703.828811,
+            "timestamp": 1666386638.5345228,
             "screenshot": true,
             "snapshot": true,
-            "related_exception": [
+            "snapshot_error": [
                 "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
-                "error msg detected in window"
+                "Could not finish action: 'take snapshot' because it timed out"
+            ],
+            "related_exception": [
+                "<class 'selenium.common.exceptions.NoSuchWindowException'>",
+                "Currently selected window has been closed",
+                null,
+                null
             ]
         },
         "06 program-stopped": {
-            "timestamp": 1665952705.5927012
+            "timestamp": 1666386649.3590858
         }
     }
 }

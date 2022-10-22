@@ -2,29 +2,16 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\prusa\\snapshots\\OPC-LFI-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665939876.3992035
+            "timestamp": 1666370727.7651217
         },
-        "01 program-started": {
-            "timestamp": 1665939880.5478048
-        },
-        "02 program-loaded": {
-            "timestamp": 1665939882.7037766
-        },
-        "03 program-prepared": {
-            "timestamp": 1665939887.9264019,
-            "screenshot": true,
-            "snapshot": true
-        },
-        "04 model-started-loading": {
-            "timestamp": 1665939897.1496003
-        },
-        "05 model-loaded": {
-            "timestamp": 1665939898.5930526,
-            "screenshot": true,
-            "snapshot": true
-        },
-        "06 program-stopped": {
-            "timestamp": 1665939904.9734666
+        "02 program-not-loaded": {
+            "timestamp": 1666370733.192495,
+            "related_exception": [
+                "<class 'selenium.common.exceptions.NoSuchWindowException'>",
+                "Cannot find active window specified by capabilities: appTopLevelWindow",
+                null,
+                null
+            ]
         }
     }
 }

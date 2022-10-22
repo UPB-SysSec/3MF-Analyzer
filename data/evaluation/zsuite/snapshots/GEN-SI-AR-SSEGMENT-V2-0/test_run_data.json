@@ -2,32 +2,29 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\zsuite\\snapshots\\GEN-SI-AR-SSEGMENT-V2-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665969704.5494707
+            "timestamp": 1666367622.5821989
         },
         "01 program-started": {
-            "timestamp": 1665969719.4758801
+            "timestamp": 1666367637.384209
         },
         "02 program-loaded": {
-            "timestamp": 1665969720.9564779
+            "timestamp": 1666367638.834208
         },
         "03 program-prepared": {
-            "timestamp": 1665969726.1770997,
+            "timestamp": 1666367644.074557,
             "screenshot": true,
             "snapshot": true
         },
-        "05 model-not-loaded": {
-            "timestamp": 1665969731.1838133,
+        "04 model-started-loading": {
+            "timestamp": 1666367666.319462
+        },
+        "05 model-loaded": {
+            "timestamp": 1666367671.3679738,
             "screenshot": true,
-            "snapshot": true,
-            "related_exception": [
-                "<class 'selenium.common.exceptions.NoSuchElementException'>",
-                "An element could not be located on the page using the given search parameters.",
-                null,
-                null
-            ]
+            "snapshot": true
         },
         "06 program-stopped": {
-            "timestamp": 1665969733.215815
+            "timestamp": 1666367673.5753965
         }
     }
 }

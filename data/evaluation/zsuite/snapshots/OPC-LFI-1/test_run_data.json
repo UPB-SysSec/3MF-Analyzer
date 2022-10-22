@@ -2,32 +2,33 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\zsuite\\snapshots\\OPC-LFI-1\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665970974.143114
+            "timestamp": 1666387297.209946
         },
         "01 program-started": {
-            "timestamp": 1665970989.0308034
+            "timestamp": 1666387312.0466769
         },
         "02 program-loaded": {
-            "timestamp": 1665970990.5061042
+            "timestamp": 1666387313.5522034
         },
         "03 program-prepared": {
-            "timestamp": 1665970995.733138,
+            "timestamp": 1666387318.785388,
             "screenshot": true,
             "snapshot": true
         },
+        "04 model-started-loading": {
+            "timestamp": 1666387340.2788537
+        },
         "05 model-not-loaded": {
-            "timestamp": 1665971000.8150473,
+            "timestamp": 1666387376.1373382,
             "screenshot": true,
             "snapshot": true,
             "related_exception": [
-                "<class 'selenium.common.exceptions.NoSuchElementException'>",
-                "An element could not be located on the page using the given search parameters.",
-                null,
-                null
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
             ]
         },
         "06 program-stopped": {
-            "timestamp": 1665971002.6739976
+            "timestamp": 1666387378.4438124
         }
     }
 }

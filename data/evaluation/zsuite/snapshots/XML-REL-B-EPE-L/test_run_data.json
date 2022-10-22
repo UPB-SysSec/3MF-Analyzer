@@ -2,29 +2,33 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\zsuite\\snapshots\\XML-REL-B-EPE-L\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665975161.4498076
+            "timestamp": 1666391029.7295551
         },
         "01 program-started": {
-            "timestamp": 1665975176.2623525
+            "timestamp": 1666391044.5770333
         },
         "02 program-loaded": {
-            "timestamp": 1665975177.7458727
+            "timestamp": 1666391046.075077
         },
         "03 program-prepared": {
-            "timestamp": 1665975182.9790504,
+            "timestamp": 1666391051.3120115,
             "screenshot": true,
             "snapshot": true
         },
         "04 model-started-loading": {
-            "timestamp": 1665975200.4472282
+            "timestamp": 1666391073.4277515
         },
-        "05 model-loaded": {
-            "timestamp": 1665975205.4022212,
+        "05 model-not-loaded": {
+            "timestamp": 1666391108.26405,
             "screenshot": true,
-            "snapshot": true
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665975207.5691643
+            "timestamp": 1666391110.4400854
         }
     }
 }

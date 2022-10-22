@@ -2,32 +2,30 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\zsuite\\snapshots\\GEN-C-CDA-VERTICES-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665960267.8020306
+            "timestamp": 1666366595.0325437
         },
         "01 program-started": {
-            "timestamp": 1665960282.6317012
+            "timestamp": 1666366609.8176394
         },
         "02 program-loaded": {
-            "timestamp": 1665960284.1175416
+            "timestamp": 1666366611.2696438
         },
         "03 program-prepared": {
-            "timestamp": 1665960289.35165,
+            "timestamp": 1666366616.49064,
             "screenshot": true,
             "snapshot": true
         },
         "05 model-not-loaded": {
-            "timestamp": 1665960294.3746536,
+            "timestamp": 1666366644.3441534,
             "screenshot": true,
             "snapshot": true,
             "related_exception": [
-                "<class 'selenium.common.exceptions.NoSuchElementException'>",
-                "An element could not be located on the page using the given search parameters.",
-                null,
-                null
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
             ]
         },
         "06 program-stopped": {
-            "timestamp": 1665960296.3586078
+            "timestamp": 1666366646.2026005
         }
     }
 }

@@ -2,32 +2,29 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\zsuite\\snapshots\\GEN-M-AI-ITEM-TRANSFORM-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665963504.449262
+            "timestamp": 1666366894.6714034
         },
         "01 program-started": {
-            "timestamp": 1665963519.2489984
+            "timestamp": 1666366909.514404
         },
         "02 program-loaded": {
-            "timestamp": 1665963520.720741
+            "timestamp": 1666366910.9684043
         },
         "03 program-prepared": {
-            "timestamp": 1665963525.9591558,
+            "timestamp": 1666366916.208403,
             "screenshot": true,
             "snapshot": true
         },
-        "05 model-not-loaded": {
-            "timestamp": 1665963530.9559877,
+        "04 model-started-loading": {
+            "timestamp": 1666366939.0254903
+        },
+        "05 model-loaded": {
+            "timestamp": 1666366944.1615925,
             "screenshot": true,
-            "snapshot": true,
-            "related_exception": [
-                "<class 'selenium.common.exceptions.NoSuchElementException'>",
-                "An element could not be located on the page using the given search parameters.",
-                null,
-                null
-            ]
+            "snapshot": true
         },
         "06 program-stopped": {
-            "timestamp": 1665963533.0239894
+            "timestamp": 1666366946.3653076
         }
     }
 }
