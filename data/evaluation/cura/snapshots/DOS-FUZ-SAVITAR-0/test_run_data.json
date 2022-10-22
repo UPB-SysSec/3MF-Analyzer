@@ -2,32 +2,32 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\cura\\snapshots\\DOS-FUZ-SAVITAR-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665863277.9928882
+            "timestamp": 1666428664.640129
         },
         "01 program-started": {
-            "timestamp": 1665863283.2150683
+            "timestamp": 1666428670.5811956
         },
         "02 program-loaded": {
-            "timestamp": 1665863299.2200446
+            "timestamp": 1666428699.4908853
         },
         "03 program-prepared": {
-            "timestamp": 1665863304.4274764,
+            "timestamp": 1666428704.7055435,
             "screenshot": true,
             "snapshot": true
         },
         "05 model-not-loaded": {
-            "timestamp": 1665863317.5916677,
+            "timestamp": 1666428714.16198,
             "screenshot": true,
             "snapshot": true,
             "related_exception": [
-                "<class 'selenium.common.exceptions.WebDriverException'>",
-                "An unknown error occurred in the remote end while processing the command.",
+                "<class 'selenium.common.exceptions.NoSuchWindowException'>",
+                "Currently selected window has been closed",
                 null,
                 null
             ]
         },
         "06 program-stopped": {
-            "timestamp": 1665863343.0079935
+            "timestamp": 1666428743.9302897
         }
     }
 }

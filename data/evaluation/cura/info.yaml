@@ -57,10 +57,6 @@ tests:
       status: aborted
       is_outlier: true
       confidence: high
-    missing_screenshot: 1
-    problems:
-    - Too many missing/broken screenshot files.
-    critical: true
     has_server_log: true
   CS-S-NEBS:
     info: TODO
@@ -3221,12 +3217,6 @@ tests:
       status: aborted
       is_outlier: true
       confidence: high
-    missing_process_info: 1
-    missing_screenshot: 1
-    problems:
-    - Too many missing process information files.
-    - Too many missing/broken screenshot files.
-    critical: true
     has_server_log: true
   GEN-M-CDA-MPBMETALLICDISPLAYPROPERTIES-0:
     info: TODO
@@ -3318,12 +3308,6 @@ tests:
       status: aborted
       is_outlier: true
       confidence: high
-    missing_process_info: 1
-    missing_screenshot: 1
-    problems:
-    - Too many missing process information files.
-    - Too many missing/broken screenshot files.
-    critical: true
     has_server_log: true
   GEN-M-CR-BUILD-ITEM-0:
     info: TODO
