@@ -5,198 +5,327 @@ version: ""
 tests:
   CS-DOID:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
       score: '0.9983966247839077'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   CS-DOR:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.8242407134429366'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: low
+    has_server_log: true
   CS-MUDT:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CYL
         test_name: Cylinder Model
       score: '0.3785059821275217'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
   CS-SE:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.999999989686937'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   CS-P-NEBS:
     info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
     has_server_log: true
   CS-S-NEBS:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
       score: '0.9627653838277833'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   CS-P-SLLR:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: error
         test_name: Manual reference screenshot
       score: '0.995983606335587'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   CS-S-SLLR:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: error
         test_name: Manual reference screenshot
       score: '0.9963776539165504'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   CS-S:
     info: TODO
   DOS-BL-MBR:
     info: TODO
   DOS-CR-SE:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9999999889494141'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   DOS-FUZ-LIB3MF:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CYL
         test_name: Cylinder Model
       score: '0.9683393818910224'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   DOS-FUZ-SAVITAR-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: error
         test_name: Manual reference screenshot
       score: '0.9985269077084117'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   DOS-FUZ-SAVITAR-1:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: error
         test_name: Manual reference screenshot
       score: '0.9985418169216772'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   DOS-FUZ-SLIC3R-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.999999989686937'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   DOS-FUZ-SLIC3R-1:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   DOS-FUZ-SLIC3R-2:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: not_loaded
         test_name: Manual reference screenshot
       score: '0.999999978803513'
+    rerun: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
   R-CYL:
     info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
     has_server_log: true
   R-PYR-0:
     info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
     has_server_log: true
   R-PYR-1:
     info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
     has_server_log: true
   R-CUB:
     info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
     has_server_log: true
   R-HOU:
     info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
     has_server_log: true
   R-SPEC-C-0:
     info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
     has_server_log: true
   R-SPEC-M-0:
     info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
     has_server_log: true
   R-SPEC-P-0:
     info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
     has_server_log: true
   R-ERR:
     info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
     has_server_log: true
   F-B-BAL:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-PYR-1
         test_name: Pyramid Model 1
       score: '0.9920475324998147'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   F-B-MAT:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-PYR-1
         test_name: Pyramid Model 1
       score: '0.9920931786730948'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   F-B-PRO:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-PYR-1
         test_name: Pyramid Model 1
       score: '0.9923477183976965'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   F-B-SLI:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '1.0'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   F-EAP:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
       score: '0.9981202876500673'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   R-SPEC-SI-0:
     info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
     has_server_log: true
   R-SPEC-CM-0:
     info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
     has_server_log: true
   R-SPEC-SE-0:
     info: TODO
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
     has_server_log: true
   XML-EGE-I-R:
     info: TODO
@@ -712,2260 +841,3418 @@ tests:
     has_server_log: true
   GEN-C-ADA-BASE-DISPLAYCOLOR-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '1.0'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-ADA-BASEMATERIALS-ID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9999999966004162'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-ADA-COMPONENT-OBJECTID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.999999989686937'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-ADA-COMPONENT-TRANSFORM-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9999999966004162'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-ADA-ITEM-OBJECTID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: not_loaded
         test_name: Manual reference screenshot
       score: '0.999999999618023'
+    rerun: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
   GEN-C-ADA-MODEL-UNIT-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: error
         test_name: Manual reference screenshot
       score: '0.9978532831110739'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-ADA-OBJECT-ID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999999966004162'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-ADA-OBJECT-PID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '1.0'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-ADA-OBJECT-PINDEX-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999999966004162'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-ADA-OBJECT-TYPE-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: not_loaded
         test_name: Manual reference screenshot
       score: '1.0'
+    rerun: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
   GEN-C-ADA-TRIANGLE-P1-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-ADA-TRIANGLE-PID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9999999756747596'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-ADA-TRIANGLE-V1-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999999832114502'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-ADA-TRIANGLE-V2-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: not_loaded
         test_name: Manual reference screenshot
       score: '0.999999999618023'
+    rerun: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
   GEN-C-ADA-TRIANGLE-V3-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: not_loaded
         test_name: Manual reference screenshot
       score: '0.9994819644646256'
+    rerun: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
   GEN-C-ADA-VERTEX-X-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9999999966004162'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-ADA-VERTEX-Y-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: not_loaded
         test_name: Manual reference screenshot
       score: '0.9999999832114502'
+    rerun: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
   GEN-C-ADA-VERTEX-Z-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-ADS-BASE-NAME-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-ADS-MODEL-XMLLANG-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: error
         test_name: Manual reference screenshot
       score: '0.9974385647509351'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-ADS-MODEL-XMLNS-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: error
         test_name: Manual reference screenshot
       score: '0.9976425701880752'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-ADS-OBJECT-NAME-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999999966004162'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-AI-BASE-DISPLAYCOLOR-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
         test_name: House Model
       score: '0.997852699322581'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-AI-BASEMATERIALS-ID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9980466359613673'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-AI-COMPONENT-OBJECTID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9999999966004162'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-AI-COMPONENT-TRANSFORM-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.8158469040427075'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: low
+    has_server_log: true
   GEN-C-AI-ITEM-OBJECTID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-AI-MODEL-UNIT-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9999999966004162'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-AI-OBJECT-ID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.999999989686937'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-AI-OBJECT-PID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.998432284989023'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-AI-OBJECT-PINDEX-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9982057342289083'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-AI-OBJECT-TYPE-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.999999989686937'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-AI-TRIANGLE-P1-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9983347454000945'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-AI-TRIANGLE-PID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
         test_name: House Model
       score: '0.9982767288293478'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-AI-TRIANGLE-V1-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: not_loaded
         test_name: Manual reference screenshot
       score: '0.9999999832114502'
+    rerun: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
   GEN-C-AI-TRIANGLE-V2-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9963333511910002'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-AI-TRIANGLE-V3-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9963333511910002'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-AI-VERTEX-X-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999999798118664'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-AI-VERTEX-Y-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9999999966004162'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-AI-VERTEX-Z-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-AR-BASE-DISPLAYCOLOR-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9978104203179878'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-AR-BASE-NAME-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9984339631008885'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-AR-BASEMATERIALS-ID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9979751669296093'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-AR-COMPONENT-OBJECTID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999999798118664'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-AR-COMPONENT-TRANSFORM-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SI-0
         test_name: Full/Reference model for slice specification (SI)
       score: '0.984532946166838'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-C-AR-ITEM-OBJECTID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-AR-MODEL-UNIT-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
         test_name: House Model
       score: '0.9982963034618424'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-AR-MODEL-XMLLANG-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
         test_name: House Model
       score: '0.9981040925435525'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-AR-MODEL-XMLNS-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9982620495152809'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-AR-OBJECT-ID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: not_loaded
         test_name: Manual reference screenshot
       score: '0.9999999901249295'
+    rerun: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
   GEN-C-AR-OBJECT-NAME-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: not_loaded
         test_name: Manual reference screenshot
       score: '0.999999999618023'
+    rerun: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
   GEN-C-AR-OBJECT-PID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
         test_name: House Model
       score: '0.998349985697088'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-AR-OBJECT-PINDEX-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9983152952787918'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-AR-OBJECT-TYPE-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9983154863723027'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-AR-TRIANGLE-P1-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9983597579130182'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-AR-TRIANGLE-PID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9982334402773406'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-AR-TRIANGLE-V1-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9999999966004162'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-AR-TRIANGLE-V2-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9999999966004162'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-AR-TRIANGLE-V3-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999999966004162'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-AR-VERTEX-X-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9984405508806341'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-AR-VERTEX-Y-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-PYR-1
         test_name: Pyramid Model 1
       score: '0.9855247332844141'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-C-AR-VERTEX-Z-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9952302308029314'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-CDA-BASEMATERIALS-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9980488273409841'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-CDA-BUILD-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9682073519884039'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-C-CDA-COMPONENTS-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
       score: '0.9834424598285516'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-C-CDA-MESH-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
         test_name: House Model
       score: '0.9986298691696078'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-CDA-MESH-1:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9986237987678663'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-CDA-MODEL-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-CDA-MODEL-1:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9985585796869423'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-CDA-OBJECT-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9882496418417893'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-C-CDA-OBJECT-1:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
       score: '0.9871568216920439'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-C-CDA-RESOURCES-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9981995492090934'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-CDA-RESOURCES-1:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-PYR-1
         test_name: Pyramid Model 1
       score: '0.9844349795856765'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-C-CDA-TRIANGLES-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
         test_name: House Model
       score: '0.9982599163871508'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-CDA-VERTICES-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: not_loaded
         test_name: Manual reference screenshot
       score: '0.999999999618023'
+    rerun: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
   GEN-C-CR-BASEMATERIALS-BASE-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
         test_name: House Model
       score: '0.9977316452133961'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-CR-COMPONENTS-COMPONENT-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-PYR-1
         test_name: Pyramid Model 1
       score: '0.9855938831727195'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-C-CR-MESH-TRIANGLES-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9999999966004162'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-CR-MESH-VERTICES-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '1.0'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-CR-MODEL-BUILD-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.999999989686937'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-CR-MODEL-RESOURCES-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999999798118664'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-CR-RESOURCES-BASEMATERIALS-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9972415683197018'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-CR-RESOURCES-OBJECT-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9994819523988479'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-CR-TRIANGLES-TRIANGLE-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: not_loaded
         test_name: Manual reference screenshot
       score: '0.9999999930865209'
+    rerun: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
   GEN-C-CR-VERTICES-VERTEX-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9944509852003802'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-CRA-BASEMATERIALS-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
         test_name: House Model
       score: '0.9980647596713322'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-CRA-BUILD-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999999966004162'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-CRA-COMPONENTS-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9999999889494141'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-CRA-MESH-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999999966004162'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-CRA-MODEL-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999999798118664'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-CRA-OBJECT-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9999999966004162'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-CRA-RESOURCES-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-CRA-TRIANGLES-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9921405478559068'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-C-CRA-VERTICES-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9923527809157037'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-CM-ADS-METADATA-NAME-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-CM-AR-METADATA-NAME-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SI-0
         test_name: Full/Reference model for slice specification (SI)
       score: '0.9980335100336503'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-CM-CDA-ITEM-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SI-0
         test_name: Full/Reference model for slice specification (SI)
       score: '0.9987028477940461'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-CM-CDA-METADATAGROUP-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SI-0
         test_name: Full/Reference model for slice specification (SI)
       score: '0.9979173498537053'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-CM-CDA-MODEL-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SI-0
         test_name: Full/Reference model for slice specification (SI)
       score: '0.9985465557543425'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-CM-CDA-OBJECT-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
       score: '0.9984797328255264'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-CM-CR-MODEL-METADATA-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SI-0
         test_name: Full/Reference model for slice specification (SI)
       score: '0.9979802358861574'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-CM-CR-OBJECT-MESH-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999999832114502'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-CM-CR-OBJECT-METADATAGROUP-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: not_loaded
         test_name: Manual reference screenshot
       score: '0.999999999618023'
+    rerun: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
   GEN-CM-CRA-ITEM-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SI-0
         test_name: Full/Reference model for slice specification (SI)
       score: '0.9986738373571501'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-CM-CRA-METADATAGROUP-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
       score: '0.9979344634320144'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-ADA-BASEMATERIALS-DISPLAYPROPERTIESID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999999966004162'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-ADA-ITEM-TRANSFORM-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-ADA-MCOLOR-COLOR-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-ADA-MCOLORGROUP-ID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999999798118664'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-ADA-MPBMETALLIC-METALLICNESS-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.999999989686937'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-ADA-MPBMETALLIC-ROUGHNESS-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: not_loaded
         test_name: Manual reference screenshot
       score: '0.999999999618023'
+    rerun: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
   GEN-M-ADA-MPBMETALLICDISPLAYPROPERTIES-ID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999999966004162'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-ADA-MTEX2COORD-U-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9999999966004162'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-ADA-MTEX2COORD-V-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9999999966004162'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-ADA-MTEXTURE2D-CONTENTTYPE-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '1.0'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-ADA-MTEXTURE2D-ID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '1.0'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-ADA-MTEXTURE2D-TILESTYLEU-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-ADA-MTEXTURE2D-TILESTYLEV-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-ADA-MTEXTURE2DGROUP-ID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-ADA-MTEXTURE2DGROUP-TEXID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: not_loaded
         test_name: Manual reference screenshot
       score: '0.9999999832114502'
+    rerun: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
   GEN-M-ADA-MTRANSLUCENT-ROUGHNESS-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '1.0'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-ADA-MTRANSLUCENTDISPLAYPROPERTIES-ID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9999999966004162'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-ADA-TRIANGLE-P2-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999999966004162'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-ADA-TRIANGLE-P3-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999999930865209'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-ADS-MODEL-REQUIREDEXTENSIONS-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: error
         test_name: Manual reference screenshot
       score: '0.9962288033021308'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-ADS-MODEL-XMLNSM-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: error
         test_name: Manual reference screenshot
       score: '0.9974782523440604'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-ADS-MPBMETALLIC-NAME-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-ADS-MTEXTURE2D-PATH-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999999930865209'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-ADS-MTRANSLUCENT-ATTENUATION-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9999999966004162'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-ADS-MTRANSLUCENT-NAME-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-ADS-MTRANSLUCENT-REFRACTIVEINDEX-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9999999883016714'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-AI-BASEMATERIALS-DISPLAYPROPERTIESID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
         test_name: House Model
       score: '0.980779210513142'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-AI-ITEM-TRANSFORM-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: not_loaded
         test_name: Manual reference screenshot
       score: '0.999999999618023'
+    rerun: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
   GEN-M-AI-MCOLOR-COLOR-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9822540764897953'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-AI-MCOLORGROUP-ID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9675669981622665'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-AI-MPBMETALLIC-METALLICNESS-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9779831822557009'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-AI-MPBMETALLIC-ROUGHNESS-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
         test_name: House Model
       score: '0.98162120290758'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-AI-MPBMETALLICDISPLAYPROPERTIES-ID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9828382335939553'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-AI-MTEX2COORD-U-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9866423773081224'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-AI-MTEX2COORD-V-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9981880520820297'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-AI-MTEXTURE2D-CONTENTTYPE-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9669759306977784'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-AI-MTEXTURE2D-ID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9981805208115287'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-AI-MTEXTURE2D-PATH-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9979945316153603'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-AI-MTEXTURE2D-TILESTYLEU-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9671091570500806'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-AI-MTEXTURE2D-TILESTYLEV-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9956051016997919'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-AI-MTEXTURE2DGROUP-ID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9838037400262152'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-AI-MTEXTURE2DGROUP-TEXID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
         test_name: House Model
       score: '0.9817119933862691'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-AI-MTRANSLUCENT-ROUGHNESS-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: not_loaded
         test_name: Manual reference screenshot
       score: '0.999999999618023'
+    rerun: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
   GEN-M-AI-MTRANSLUCENTDISPLAYPROPERTIES-ID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9967457175161674'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-AI-TRIANGLE-P2-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9983328835379996'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-AI-TRIANGLE-P3-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9824828688530857'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-AR-BASEMATERIALS-DISPLAYPROPERTIESID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9807216533943025'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-AR-ITEM-TRANSFORM-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9675821040697249'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-AR-MCOLOR-COLOR-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9788142334011088'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-AR-MCOLORGROUP-ID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.967450860299463'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-AR-MODEL-REQUIREDEXTENSIONS-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9971849913408926'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-AR-MODEL-XMLNSM-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999999832114502'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-AR-MPBMETALLIC-METALLICNESS-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: not_loaded
         test_name: Manual reference screenshot
       score: '1.0'
+    rerun: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
   GEN-M-AR-MPBMETALLIC-NAME-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9838345229154973'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-AR-MPBMETALLIC-ROUGHNESS-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: not_loaded
         test_name: Manual reference screenshot
       score: '1.0'
+    rerun: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
   GEN-M-AR-MPBMETALLICDISPLAYPROPERTIES-ID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9662809307114076'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-AR-MTEX2COORD-U-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9678898579183627'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-AR-MTEX2COORD-V-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9824680987925689'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-AR-MTEXTURE2D-CONTENTTYPE-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9814538437314505'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-AR-MTEXTURE2D-ID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9789403817173155'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-AR-MTEXTURE2D-PATH-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9979518239281074'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-AR-MTEXTURE2D-TILESTYLEU-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9798462521043282'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-AR-MTEXTURE2D-TILESTYLEV-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: not_loaded
         test_name: Manual reference screenshot
       score: '0.999999999618023'
+    rerun: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
   GEN-M-AR-MTEXTURE2DGROUP-ID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
         test_name: House Model
       score: '0.9818008204628697'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-AR-MTEXTURE2DGROUP-TEXID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9805049380987323'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-AR-MTRANSLUCENT-ATTENUATION-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
         test_name: House Model
       score: '0.9814047592239767'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-AR-MTRANSLUCENT-NAME-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9977092398596256'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-AR-MTRANSLUCENT-REFRACTIVEINDEX-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: not_loaded
         test_name: Manual reference screenshot
       score: '0.999999999618023'
+    rerun: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
   GEN-M-AR-MTRANSLUCENT-ROUGHNESS-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: not_loaded
         test_name: Manual reference screenshot
       score: '0.9999999930865209'
+    rerun: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
   GEN-M-AR-MTRANSLUCENTDISPLAYPROPERTIES-ID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9807383207729617'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-AR-TRIANGLE-P2-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9824752262938244'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-AR-TRIANGLE-P3-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: not_loaded
         test_name: Manual reference screenshot
       score: '0.999999999618023'
+    rerun: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
   GEN-M-CDA-MCOLORGROUP-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9822487829678058'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-CDA-MPBMETALLICDISPLAYPROPERTIES-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9663720890162403'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-CDA-MTEXTURE2DGROUP-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.981904443566228'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-CDA-MTRANSLUCENTDISPLAYPROPERTIES-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9967737912860829'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-CDA-RESOURCES-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9921240698391184'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-CDA-RESOURCES-1:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: not_loaded
         test_name: Manual reference screenshot
       score: '1.0'
+    rerun: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
   GEN-M-CDA-RESOURCES-2:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.984301881417463'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-CDA-RESOURCES-3:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.977385739455419'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-CDA-RESOURCES-4:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9678404511925255'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-CR-BUILD-ITEM-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: not_loaded
         test_name: Manual reference screenshot
       score: '0.999999999618023'
+    rerun: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
   GEN-M-CR-MCOLORGROUP-MCOLOR-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9817471437103648'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-CR-MTEXTURE2DGROUP-MTEX2COORD-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9665462206075541'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-CR-RESOURCES-MCOLORGROUP-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9668207243485462'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-CR-RESOURCES-MPBMETALLICDISPLAYPROPERTIES-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9651431097861951'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-CR-RESOURCES-MTEXTURE2D-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9912298661801459'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-M-CR-RESOURCES-MTEXTURE2DGROUP-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9776475022599586'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-CR-RESOURCES-MTRANSLUCENTDISPLAYPROPERTIES-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9765493798326866'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-CRA-MCOLORGROUP-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9676585764014386'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-CRA-MPBMETALLICDISPLAYPROPERTIES-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-HOU
         test_name: House Model
       score: '0.9809826985392296'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-CRA-MTEXTURE2DGROUP-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.98376452190439'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-M-CRA-MTRANSLUCENTDISPLAYPROPERTIES-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
       score: '0.9808456476490618'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-P-ADA-BUILD-PUUID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '1.0'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-P-ADA-COMPONENT-PUUID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9999999966004162'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-P-ADA-ITEM-PUUID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.999999989686937'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-P-ADA-OBJECT-PUUID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-P-ADS-COMPONENT-PPATH-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-P-ADS-MODEL-XMLNSP-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: error
         test_name: Manual reference screenshot
       score: '0.9975201022859407'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-P-AI-BUILD-PUUID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9778916234388525'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-P-AI-COMPONENT-PPATH-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
       score: '0.9977164210567306'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-P-AI-COMPONENT-PUUID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
       score: '0.9977170759381008'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-P-AI-ITEM-PUUID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.977983277637414'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-P-AI-OBJECT-PUUID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9778503352071781'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-P-AR-BUILD-PUUID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9805049479738029'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-P-AR-COMPONENT-PPATH-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9774757295474827'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-P-AR-COMPONENT-PUUID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
       score: '0.9977863615967604'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-P-AR-ITEM-PUUID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
       score: '0.9779418236533419'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   GEN-P-AR-MODEL-XMLNSP-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999999832114502'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-P-AR-OBJECT-PUUID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
       score: '0.9979872872587361'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SE-ADA-SSLICEREF-SLICESTACKID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999999930865209'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SE-ADS-SSLICEREF-SLICEPATH-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SE-AI-SSLICEREF-SLICEPATH-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: not_loaded
         test_name: Manual reference screenshot
       score: '1.0'
+    rerun: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
   GEN-SE-AI-SSLICEREF-SLICESTACKID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SE-AR-SSLICEREF-SLICEPATH-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.999999989686937'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SE-AR-SSLICEREF-SLICESTACKID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SE-CDA-SSLICESTACK-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-ADA-OBJECT-SSLICESTACKID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '1.0'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-ADA-SPOLYGON-STARTV-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999999966004162'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-ADA-SSEGMENT-V2-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-ADA-SSLICE-ZTOP-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999999798118664'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-ADA-SSLICESTACK-ID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-ADA-SSLICESTACK-ZBOTTOM-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-ADA-SVERTEX-X-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '1.0'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-ADA-SVERTEX-Y-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999999798118664'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-ADS-MODEL-XMLNSS-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: error
         test_name: Manual reference screenshot
       score: '0.9974209264947889'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-ADS-OBJECT-SMESHRESOLUTION-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9999999855498303'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-AI-OBJECT-SSLICESTACKID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SI-0
         test_name: Full/Reference model for slice specification (SI)
       score: '0.9976840087379636'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-AI-SPOLYGON-STARTV-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
       score: '0.9979207122679038'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-AI-SSEGMENT-V2-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
       score: '0.9983379349634737'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-AI-SSLICE-ZTOP-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SI-0
         test_name: Full/Reference model for slice specification (SI)
       score: '0.9984299092530569'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-AI-SSLICESTACK-ID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SI-0
         test_name: Full/Reference model for slice specification (SI)
       score: '0.9982772447862348'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-AI-SSLICESTACK-ZBOTTOM-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SI-0
         test_name: Full/Reference model for slice specification (SI)
       score: '0.9977300385610015'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-AI-SVERTEX-X-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
       score: '0.9985039934031771'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-AI-SVERTEX-Y-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: not_loaded
         test_name: Manual reference screenshot
       score: '0.9999999832114502'
+    rerun: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
   GEN-SI-AR-MODEL-XMLNSS-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-AR-OBJECT-SMESHRESOLUTION-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
       score: '0.9974237165381168'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-AR-OBJECT-SSLICESTACKID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
       score: '0.9976841270922587'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-AR-SPOLYGON-STARTV-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
       score: '0.9978932971377745'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-AR-SSEGMENT-V2-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: not_loaded
         test_name: Manual reference screenshot
       score: '1.0'
+    rerun: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
   GEN-SI-AR-SSLICE-ZTOP-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
       score: '0.9984301244316176'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-AR-SSLICESTACK-ID-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SI-0
         test_name: Full/Reference model for slice specification (SI)
       score: '0.998114606639252'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-AR-SSLICESTACK-ZBOTTOM-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
       score: '0.9977614859852741'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-AR-SVERTEX-X-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
       score: '0.9985038249535022'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-AR-SVERTEX-Y-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
       score: '0.998499769510164'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-CDA-RESOURCES-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
       score: '0.9982626173513489'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-CDA-SPOLYGON-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SI-0
         test_name: Full/Reference model for slice specification (SI)
       score: '0.9982702504695409'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-CDA-SSLICE-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
       score: '0.9986846934701415'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-CDA-SSLICE-1:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
       score: '0.9987109684319443'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-CDA-SSLICESTACK-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
       score: '0.998200584583103'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-CDA-SVERTICES-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
       score: '0.9983729596669809'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-CR-RESOURCES-SSLICESTACK-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
       score: '0.9974815092333038'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-CR-SPOLYGON-SSEGMENT-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SI-0
         test_name: Full/Reference model for slice specification (SI)
       score: '0.9977470308487831'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-CR-SSLICE-SPOLYGON-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: not_loaded
         test_name: Manual reference screenshot
       score: '0.999999999618023'
+    rerun: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
   GEN-SI-CR-SSLICE-SVERTICES-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
       score: '0.9979173167067628'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-CR-SSLICESTACK-SSLICE-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: not_loaded
         test_name: Manual reference screenshot
       score: '0.9999999832114502'
+    rerun: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
   GEN-SI-CR-SVERTICES-SVERTEX-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
       score: '0.9977729137821285'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-CRA-SPOLYGON-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: not_loaded
         test_name: Manual reference screenshot
       score: '0.999999999618023'
+    rerun: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
   GEN-SI-CRA-SSLICE-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
       score: '0.9986578283342245'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-CRA-SSLICESTACK-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
       score: '0.9982016675193071'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   GEN-SI-CRA-SVERTICES-0:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
       score: '0.9983759843975202'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   CS-0000:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: not_loaded
         test_name: Manual reference screenshot
       score: '0.9999999930865209'
+    rerun: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
+    has_server_log: true
   CS-0001:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999999798118664'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   CS-0010:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CYL
         test_name: Cylinder Model
       score: '0.9978569885285437'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   CS-0011:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CYL
         test_name: Cylinder Model
       score: '0.9979618469907824'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   CS-0100:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '1.0'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   CS-0101:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9999999855498303'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   CS-0110:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CYL
         test_name: Cylinder Model
       score: '0.9979644178084899'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   CS-0111:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CYL
         test_name: Cylinder Model
       score: '0.9980310583884618'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   CS-1000:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
       score: '0.9978875852707955'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   CS-1001:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
       score: '0.9978580745833436'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   CS-1010:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CYL
         test_name: Cylinder Model
       score: '0.9562694610477983'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   CS-1011:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CYL
         test_name: Cylinder Model
       score: '0.9563608667788579'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   CS-1100:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
       score: '0.9978781175513595'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   CS-1101:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
       score: '0.9978670936786866'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   CS-1110:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CYL
         test_name: Cylinder Model
       score: '0.9564027015200739'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   CS-1111:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CYL
         test_name: Cylinder Model
       score: '0.9564174735352823'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   OPC-LFI-0:
     info: TODO
     image_similarity:
@@ -2992,106 +4279,158 @@ tests:
     has_server_log: true
   ZIP-SL-S:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: error
         test_name: Manual reference screenshot
       score: '0.9976283137118239'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   ZIP-SL-C:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: error
         test_name: Manual reference screenshot
       score: '0.9977319211731437'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   ZIP-CBR:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
       score: '0.9326867874523466'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   ZIP-CLCVR:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CYL
         test_name: Cylinder Model
       score: '0.9551838931391594'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   ZIP-CUCVR:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CYL
         test_name: Cylinder Model
       score: '0.955232496562907'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   ZIP-SFT:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-CYL
         test_name: Cylinder Model
       score: '0.9568880996272586'
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
+    has_server_log: true
   ZIP-64:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SI-0
         test_name: Full/Reference model for slice specification (SI)
       score: '0.9991083907165854'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   ZIP-zblg:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '1.0'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   ZIP-zbsm:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.999999989686937'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   ZIP-10:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999999798118664'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   ZIP-20:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999999832114502'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   ZIP-30:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
       score: '0.9999999966004162'
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
+    has_server_log: true
   ZIP-34:
     info: TODO
-    has_server_log: true
     image_similarity:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9999999966004162'
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
+    has_server_log: true
 deprecated: {}

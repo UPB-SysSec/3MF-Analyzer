@@ -5,7 +5,6 @@
 import json
 import logging
 from copy import copy
-from glob import glob
 from os.path import getsize, isfile, join
 from typing import Any
 
@@ -13,7 +12,7 @@ from PIL import Image
 
 from .. import EVALUATION_DIR
 from ..dataclasses import File
-from ..utils import get_all_tests
+from ..utils import get_all_tests, reduce_test_ids_to_globs
 from .programs.base import Program
 
 
@@ -164,55 +163,8 @@ def verify_results(
         _verify_programs(program, files, results, rerun_tests)
 
         if rerun_tests:
-
-            def _contained_in(prefix, iterable, reverse=False):
-                for test_id in iterable:
-                    if not reverse and test_id.startswith(prefix):
-                        return True
-                    if reverse and prefix.startswith(test_id):
-                        return True
-                return False
-
-            def _prefix_rates(ids: list[str]):
-                prefix_occurrences = {}
-                for test_id in ids:
-                    prefix = ""
-                    for element in test_id.split("-"):
-                        if prefix == "":
-                            prefix = element
-                        else:
-                            prefix += "-" + element
-                        if prefix not in prefix_occurrences:
-                            prefix_occurrences[prefix] = 0
-                        prefix_occurrences[prefix] += 1
-                prefix_occurrences = {
-                    k: v
-                    for k, v in sorted(
-                        prefix_occurrences.items(), key=lambda item: item[1], reverse=True
-                    )
-                }
-                return prefix_occurrences
-
-            def _reduce_to_globs(rerun_test_ids: list[str]) -> list[str]:
-                """Reduces the list of test ids using globs if possible"""
-                prefix_occurrences_rerun = _prefix_rates(rerun_test_ids)
-                prefix_occurrences_all = _prefix_rates(all_test_ids)
-                prefix_occurrences_rerun = {
-                    k: v
-                    for k, v in prefix_occurrences_rerun.items()
-                    if prefix_occurrences_all[k] == v
-                }
-                prefixes = []
-                for prefix, _ in prefix_occurrences_rerun.items():
-                    if not _contained_in(prefix, prefixes, reverse=True):
-                        prefixes.append(prefix)
-
-                return [
-                    f"{prefix}{'-*' if prefix not in all_test_ids else ''}" for prefix in prefixes
-                ]
-
             rerun_flags.append(
-                f"-p \"{program.name}\" -t \"{','.join(_reduce_to_globs(rerun_tests))}\""
+                f"-p \"{program.name}\" -t \"{','.join(reduce_test_ids_to_globs(all_test_ids, rerun_tests))}\""
             )
 
     if rerun_flags:

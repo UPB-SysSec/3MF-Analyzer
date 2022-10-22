@@ -3,17 +3,18 @@ import logging
 from os.path import isfile, join
 
 from .. import EVALUATION_DIR, yaml
+from ..utils import get_all_tests, reduce_test_ids_to_globs
 
 
-def _get_status(program_id, test_infos, ref_screenshots_config):
+def _get_status(test_infos, ref_screenshots_config):
     status = "indecisive"
     confidence = "none"
     confidence_boundaries = (("high", 0.99), ("medium", 0.9), ("low", 0.8))
-    if program_id == "craftware":
-        # the errors show only the popup
-        # based on the small image size and the text differences
-        # the similarity value is generally lower
-        confidence_boundaries = (("high", 0.8), ("medium", 0.75), ("low", 0.5))
+
+    def __get_ref_screenshot_ids(type_name: str):
+        for screenshot_id in ref_screenshots_config.get(type_name, []):
+            if screenshot_id != "none":
+                yield screenshot_id
 
     if "image_similarity" in test_infos:
         image_similarity = test_infos["image_similarity"]
@@ -25,13 +26,19 @@ def _get_status(program_id, test_infos, ref_screenshots_config):
                 confidence = _confidence
                 break
 
-        if confidence in ("medium", "high"):  # == "high":  #
-            if similar_test_id in ["R-ERR", *ref_screenshots_config.get("error", [])]:
+        if confidence == "high":
+            if similar_test_id in ["R-ERR", *__get_ref_screenshot_ids("error")]:
                 return "aborted", confidence
-            if similar_test_id in ref_screenshots_config.get("empty", []):
-                return "loaded nothing", confidence
-            if similar_test_id in ref_screenshots_config.get("loading", []):
+            if similar_test_id in __get_ref_screenshot_ids("warning"):
+                return "loaded /w warning", confidence
+            if similar_test_id in __get_ref_screenshot_ids("loading"):
                 return "loading", confidence
+            if similar_test_id in __get_ref_screenshot_ids("empty"):
+                return "loaded nothing", confidence
+            if similar_test_id in __get_ref_screenshot_ids("rerun"):
+                test_infos["rerun"] = True
+                return "indecisive", "none"
+
             status = "loaded"
 
     if test_infos.get("critical") is True and not test_infos.get("rerun") is True:
@@ -114,7 +121,7 @@ def _interpret(program_id: str, test_ids: list[str]) -> None:
         if test_data is None:
             continue
 
-        status, confidence = _get_status(program_id, test_data, ref_screenshots_config)
+        status, confidence = _get_status(test_data, ref_screenshots_config)
         test_data["interpretation"] = {
             "status": status,
             "is_outlier": _is_outlier(stats, test_id, test_data),
@@ -124,10 +131,27 @@ def _interpret(program_id: str, test_ids: list[str]) -> None:
     with open(join(program_dir_path, "info.yaml"), "w", encoding="utf8") as yaml_file:
         yaml.dump(content, yaml_file)
 
+    rerun_tests = []
+    for test_id, test_data in tests.items():
+        if test_data.get("rerun") is True:
+            rerun_tests.append(test_id)
+    return rerun_tests
+
 
 def interpret_data(program_ids: list[str], test_ids: list[str]) -> None:
     """Compares all testcases of all given programs with the references cases.
     For more infos see: `_compare_to_reference_cases` function."""
 
+    rerun_flags = []
+    all_test_ids = get_all_tests().keys()
+
     for program_id in program_ids:
-        _interpret(program_id, test_ids)
+        rerun_tests = _interpret(program_id, test_ids)
+        if rerun_tests:
+            rerun_flags.append(
+                f'-p "{program_id}" '
+                f"-t \"{','.join(reduce_test_ids_to_globs(all_test_ids, rerun_tests))}\""
+            )
+
+    if rerun_flags:
+        print("\nTests marked to rerun:\n    " + "\n    ".join(rerun_flags) + "\n")

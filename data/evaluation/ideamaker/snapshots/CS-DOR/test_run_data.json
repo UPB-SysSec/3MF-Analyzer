@@ -2,32 +2,36 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\ideamaker\\snapshots\\CS-DOR\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665843082.3113992
+            "timestamp": 1666366235.5225418
         },
         "01 program-started": {
-            "timestamp": 1665843091.8060734
+            "timestamp": 1666366243.6083708
         },
         "02 program-loaded": {
-            "timestamp": 1665843093.7261598
+            "timestamp": 1666366246.3744564
         },
         "03 program-prepared": {
-            "timestamp": 1665843099.0546129,
+            "timestamp": 1666366251.7410002,
             "screenshot": true,
             "snapshot": true
         },
         "05 model-not-loaded": {
-            "timestamp": 1665843111.811731,
+            "timestamp": 1666366281.1071916,
             "screenshot": true,
             "snapshot": true,
+            "snapshot_error": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'take snapshot' because it timed out"
+            ],
             "related_exception": [
                 "<class 'selenium.common.exceptions.NoSuchWindowException'>",
-                "A request to switch to a window could not be satisfied because the window could not be found.",
+                "Currently selected window has been closed",
                 null,
                 null
             ]
         },
         "06 program-stopped": {
-            "timestamp": 1665843118.3752775
+            "timestamp": 1666366291.5621972
         }
     }
 }

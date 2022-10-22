@@ -2,32 +2,30 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\zsuite\\snapshots\\GEN-SI-AI-SVERTEX-Y-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665969438.4129682
+            "timestamp": 1666367562.1265056
         },
         "01 program-started": {
-            "timestamp": 1665969453.2249293
+            "timestamp": 1666367576.9098012
         },
         "02 program-loaded": {
-            "timestamp": 1665969454.7014678
+            "timestamp": 1666367578.3658025
         },
         "03 program-prepared": {
-            "timestamp": 1665969459.9254491,
+            "timestamp": 1666367583.5847068,
             "screenshot": true,
             "snapshot": true
         },
         "05 model-not-loaded": {
-            "timestamp": 1665969465.016223,
+            "timestamp": 1666367611.1819165,
             "screenshot": true,
             "snapshot": true,
             "related_exception": [
-                "<class 'selenium.common.exceptions.NoSuchElementException'>",
-                "An element could not be located on the page using the given search parameters.",
-                null,
-                null
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
             ]
         },
         "06 program-stopped": {
-            "timestamp": 1665969466.8692286
+            "timestamp": 1666367613.0312462
         }
     }
 }

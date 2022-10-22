@@ -2,32 +2,33 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\zsuite\\snapshots\\GEN-SE-AI-SSLICEREF-SLICEPATH-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665968184.743865
+            "timestamp": 1666367502.9399052
         },
         "01 program-started": {
-            "timestamp": 1665968199.5549557
+            "timestamp": 1666367517.8059237
         },
         "02 program-loaded": {
-            "timestamp": 1665968201.0297902
+            "timestamp": 1666367519.3319268
         },
         "03 program-prepared": {
-            "timestamp": 1665968206.2594779,
+            "timestamp": 1666367524.5186224,
             "screenshot": true,
             "snapshot": true
         },
+        "04 model-started-loading": {
+            "timestamp": 1666367547.196388
+        },
         "05 model-not-loaded": {
-            "timestamp": 1665968211.2324774,
+            "timestamp": 1666367550.2376354,
             "screenshot": true,
             "snapshot": true,
             "related_exception": [
-                "<class 'selenium.common.exceptions.NoSuchElementException'>",
-                "An element could not be located on the page using the given search parameters.",
-                null,
-                null
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
             ]
         },
         "06 program-stopped": {
-            "timestamp": 1665968213.2384768
+            "timestamp": 1666367552.4746673
         }
     }
 }

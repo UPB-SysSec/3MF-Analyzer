@@ -2,32 +2,29 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\zsuite\\snapshots\\GEN-SI-CR-SSLICESTACK-SSLICE-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665970583.0185902
+            "timestamp": 1666367744.2820299
         },
         "01 program-started": {
-            "timestamp": 1665970597.831506
+            "timestamp": 1666367759.101582
         },
         "02 program-loaded": {
-            "timestamp": 1665970599.3021185
+            "timestamp": 1666367760.563594
         },
         "03 program-prepared": {
-            "timestamp": 1665970604.5280828,
+            "timestamp": 1666367765.7950232,
             "screenshot": true,
             "snapshot": true
         },
-        "05 model-not-loaded": {
-            "timestamp": 1665970609.559107,
+        "04 model-started-loading": {
+            "timestamp": 1666367788.7892258
+        },
+        "05 model-loaded": {
+            "timestamp": 1666367793.8190482,
             "screenshot": true,
-            "snapshot": true,
-            "related_exception": [
-                "<class 'selenium.common.exceptions.NoSuchElementException'>",
-                "An element could not be located on the page using the given search parameters.",
-                null,
-                null
-            ]
+            "snapshot": true
         },
         "06 program-stopped": {
-            "timestamp": 1665970611.5471053
+            "timestamp": 1666367796.041843
         }
     }
 }
