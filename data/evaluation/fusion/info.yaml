@@ -121,12 +121,12 @@ tests:
       status: aborted
       is_outlier: true
       confidence: high
+    status: crashed
     missing_screenshot: 1
     problems:
     - Too many missing/broken screenshot files.
     critical: true
     has_server_log: true
-    status: crashed
   DOS-FUZ-SAVITAR-0:
     info: TODO
     image_similarity:
@@ -335,57 +335,57 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9885007830770227'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-EGE-I-NR:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.969623065786827'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-EGE-IL-R:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.5617869684096479'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   XML-EGE-IL-NR:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.5599455011755928'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   XML-MOD-ALT-B-EGE-L:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9981307628358841'
     interpretation:
       status: aborted
       is_outlier: false
@@ -395,9 +395,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9985938283931671'
     interpretation:
       status: aborted
       is_outlier: false
@@ -407,9 +407,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9985938283931671'
     interpretation:
       status: aborted
       is_outlier: false
@@ -419,9 +419,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.994243685065374'
     interpretation:
       status: aborted
       is_outlier: false
@@ -431,9 +431,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9950147820244882'
     interpretation:
       status: aborted
       is_outlier: false
@@ -443,9 +443,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9982343962683893'
     interpretation:
       status: aborted
       is_outlier: false
@@ -455,9 +455,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9985938283931671'
     interpretation:
       status: aborted
       is_outlier: false
@@ -467,9 +467,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9985938283931671'
     interpretation:
       status: aborted
       is_outlier: false
@@ -479,9 +479,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9976353894204111'
     interpretation:
       status: aborted
       is_outlier: false
@@ -491,21 +491,21 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.5692192183497293'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   XML-MOD-ALT-FBC-BPR-B:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9985938283931671'
     interpretation:
       status: aborted
       is_outlier: false
@@ -515,9 +515,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9950147820244882'
     interpretation:
       status: aborted
       is_outlier: false
@@ -527,33 +527,33 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.5673777511156742'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   XML-MOD-B-EGE-LX:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.7475226702665264'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   XML-MOD-B-EGE-R:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9985938283931671'
     interpretation:
       status: aborted
       is_outlier: false
@@ -563,33 +563,33 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.5692192183497293'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   XML-MOD-B-EPE-L:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.5692192183497293'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   XML-MOD-B-EPE-R:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9982343962683893'
     interpretation:
       status: aborted
       is_outlier: false
@@ -599,9 +599,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9985938283931671'
     interpretation:
       status: aborted
       is_outlier: false
@@ -611,9 +611,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9976353894204111'
     interpretation:
       status: aborted
       is_outlier: false
@@ -623,21 +623,21 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.5673777511156742'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   XML-MOD-DOS-BL-PE-R:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.994243685065374'
     interpretation:
       status: aborted
       is_outlier: false
@@ -647,9 +647,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9985938283931671'
     interpretation:
       status: aborted
       is_outlier: false
@@ -659,9 +659,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9976353894204111'
     interpretation:
       status: aborted
       is_outlier: false
@@ -671,9 +671,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9985938283931671'
     interpretation:
       status: aborted
       is_outlier: false
@@ -683,9 +683,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9985938283931671'
     interpretation:
       status: aborted
       is_outlier: false
@@ -695,9 +695,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9982343962683893'
     interpretation:
       status: aborted
       is_outlier: false
@@ -707,9 +707,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9985938283931671'
     interpretation:
       status: aborted
       is_outlier: false
@@ -719,9 +719,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.995933033017104'
     interpretation:
       status: aborted
       is_outlier: false
@@ -731,9 +731,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9950147820244882'
     interpretation:
       status: aborted
       is_outlier: false
@@ -743,9 +743,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9985938283931671'
     interpretation:
       status: aborted
       is_outlier: false
@@ -755,9 +755,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9985938283931671'
     interpretation:
       status: aborted
       is_outlier: false
@@ -767,9 +767,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9976353894204111'
     interpretation:
       status: aborted
       is_outlier: false
@@ -779,9 +779,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9985938283931671'
     interpretation:
       status: aborted
       is_outlier: false
@@ -791,13 +791,13 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: '0.9999490702065421'
+        test_id: R-SPEC-P-0
+        test_name: Full/Reference model for production specification (P)
+      score: '0.5823594614127292'
     interpretation:
-      status: loaded
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   XML-MOD-SSRF-SL:
     info: TODO
@@ -805,7 +805,7 @@ tests:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
-      score: '0.9999511200947983'
+      score: '0.9990493111908936'
     interpretation:
       status: loaded
       is_outlier: false
@@ -815,9 +815,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9950147820244882'
     interpretation:
       status: aborted
       is_outlier: false
@@ -827,9 +827,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9982343962683893'
     interpretation:
       status: aborted
       is_outlier: false
@@ -839,9 +839,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9982343962683893'
     interpretation:
       status: aborted
       is_outlier: false
@@ -851,33 +851,33 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.5692192183497293'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   XML-REL-B-EPE-R:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.5692192183497293'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   XML-REL-B-IGE:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9982343962683893'
     interpretation:
       status: aborted
       is_outlier: false
@@ -887,9 +887,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9985938283931671'
     interpretation:
       status: aborted
       is_outlier: false
@@ -899,9 +899,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9985938283931671'
     interpretation:
       status: aborted
       is_outlier: false
@@ -911,21 +911,21 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9891601418388714'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-REL-DOS-C:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.995933033017104'
     interpretation:
       status: aborted
       is_outlier: false
@@ -935,9 +935,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9985938283931671'
     interpretation:
       status: aborted
       is_outlier: false
@@ -947,9 +947,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9985938283931671'
     interpretation:
       status: aborted
       is_outlier: false
@@ -959,9 +959,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9982343962683893'
     interpretation:
       status: aborted
       is_outlier: false
@@ -971,21 +971,21 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.5692192183497293'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   XML-REL-FBC-E:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9985938283931671'
     interpretation:
       status: aborted
       is_outlier: false
@@ -995,9 +995,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9991446059131635'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9985938283931671'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1007,9 +1007,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.994243685065374'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1019,9 +1019,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9950147820244882'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1031,9 +1031,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9985938283931671'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1043,9 +1043,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9985938283931671'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1055,9 +1055,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9985938283931671'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1067,9 +1067,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9982343962683893'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1079,9 +1079,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.9985938283931671'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1091,13 +1091,13 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.5692192183497293'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   GEN-C-ADA-BASE-DISPLAYCOLOR-0:
     info: TODO
@@ -4487,37 +4487,37 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: R-SPEC-P-0
+        test_name: Full/Reference model for production specification (P)
+      score: '0.5308667475993274'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   OPC-LFI-1:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9985455990651853'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.969623065786827'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   OPC-LFI-2:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '1.0'
+        test_id: error
+        test_name: Manual reference screenshot
+      score: '0.5617869684096479'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   ZIP-SL-S:
     info: TODO

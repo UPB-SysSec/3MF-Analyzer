@@ -887,13 +887,13 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-CM-0
-        test_name: Full/Reference model for core specification (CM)
-      score: '0.99898233741641'
+        test_id: R-SPEC-P-0
+        test_name: Full/Reference model for production specification (P)
+      score: '0.9262411430269228'
     interpretation:
-      status: loaded
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-REL-DOS-BL:
     info: TODO
@@ -935,13 +935,13 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-CM-0
-        test_name: Full/Reference model for core specification (CM)
-      score: '0.9987217313947433'
+        test_id: R-SPEC-P-0
+        test_name: Full/Reference model for production specification (P)
+      score: '0.9260673894708369'
     interpretation:
-      status: loaded
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-REL-FBC-AV:
     info: TODO
@@ -1009,11 +1009,11 @@ tests:
       similar_to:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
-      score: '0.9985249089738375'
+      score: '0.940360562909361'
     interpretation:
-      status: loaded
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-REL-OOB-PE-R:
     info: TODO
@@ -1031,13 +1031,13 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-CM-0
-        test_name: Full/Reference model for core specification (CM)
-      score: '0.9988188394235495'
+        test_id: R-SPEC-P-0
+        test_name: Full/Reference model for production specification (P)
+      score: '0.9262102829434561'
     interpretation:
-      status: loaded
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: medium
     has_server_log: true
   XML-REL-OOB-SL:
     info: TODO
@@ -4151,15 +4151,16 @@ tests:
   ZIP-zblg:
     info: TODO
     interpretation:
-      status: aborted
-      is_outlier: true
-      confidence: high
-    missing_screenshot: 1
-    problems:
-    - Too many missing/broken screenshot files.
-    critical: true
-    has_server_log: true
+      status: indecisive
+      is_outlier: false
+      confidence: low
     status: loading
+    has_server_log: true
+    image_similarity:
+      similar_to:
+        test_id: loading
+        test_name: Manual reference screenshot
+      score: '0.878826481148646'
   ZIP-zbsm:
     info: TODO
     image_similarity:

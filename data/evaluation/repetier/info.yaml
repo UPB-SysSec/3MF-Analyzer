@@ -57,6 +57,7 @@ tests:
       status: aborted
       is_outlier: true
       confidence: high
+    status: crashed
     missing_process_info: 1
     missing_screenshot: 1
     problems:
@@ -64,7 +65,6 @@ tests:
     - Too many missing/broken screenshot files.
     critical: true
     has_server_log: true
-    status: crashed
   CS-S-NEBS:
     info: TODO
     image_similarity:
@@ -339,7 +339,7 @@ tests:
       similar_to:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
-      score: '0.9963932969977859'
+      score: '0.9969878864543092'
     interpretation:
       status: loaded
       is_outlier: false
@@ -351,7 +351,7 @@ tests:
       similar_to:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
-      score: '0.9964507195304327'
+      score: '0.9967395114346363'
     interpretation:
       status: loaded
       is_outlier: false
@@ -363,7 +363,7 @@ tests:
       similar_to:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
-      score: '0.9964103777501307'
+      score: '0.9965839863691758'
     interpretation:
       status: loaded
       is_outlier: false
@@ -375,7 +375,7 @@ tests:
       similar_to:
         test_id: R-PYR-0
         test_name: Pyramid Model 0
-      score: '0.9966860667868666'
+      score: '0.9967269758600257'
     interpretation:
       status: loaded
       is_outlier: false
@@ -387,7 +387,7 @@ tests:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
-      score: '0.997546531030073'
+      score: '0.9971946815796333'
     interpretation:
       status: loaded
       is_outlier: false
@@ -399,7 +399,7 @@ tests:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
-      score: '0.9975855376962347'
+      score: '0.9974068642207877'
     interpretation:
       status: loaded
       is_outlier: false
@@ -409,13 +409,13 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: error
-        test_name: Manual reference screenshot
-      score: '0.9411169133383159'
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
+      score: '0.9974763546297852'
     interpretation:
-      status: indecisive
+      status: loaded
       is_outlier: false
-      confidence: medium
+      confidence: high
     has_server_log: true
   XML-MOD-ALT-B-EPE-R:
     info: TODO
@@ -423,7 +423,7 @@ tests:
       similar_to:
         test_id: R-SPEC-SI-0
         test_name: Full/Reference model for slice specification (SI)
-      score: '0.9975889615221883'
+      score: '0.9970381792705947'
     interpretation:
       status: loaded
       is_outlier: false
@@ -436,7 +436,7 @@ tests:
       similar_to:
         test_id: R-SPEC-SI-0
         test_name: Full/Reference model for slice specification (SI)
-      score: '0.9978096814121709'
+      score: '0.9972029593617051'
     interpretation:
       status: loaded
       is_outlier: false
@@ -448,7 +448,7 @@ tests:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
-      score: '0.9976859258200168'
+      score: '0.9976573586458489'
     interpretation:
       status: loaded
       is_outlier: false
@@ -460,7 +460,7 @@ tests:
       similar_to:
         test_id: R-SPEC-SI-0
         test_name: Full/Reference model for slice specification (SI)
-      score: '0.9975496288378485'
+      score: '0.9975802119911299'
     interpretation:
       status: loaded
       is_outlier: false
@@ -470,9 +470,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: '0.9971494678744639'
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
+      score: '0.9968773236757129'
     interpretation:
       status: loaded
       is_outlier: false
@@ -483,9 +483,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: '0.9975221781338148'
+        test_id: R-SPEC-SI-0
+        test_name: Full/Reference model for slice specification (SI)
+      score: '0.9973471866116091'
     interpretation:
       status: loaded
       is_outlier: false
@@ -495,48 +495,48 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: error
-        test_name: Manual reference screenshot
-      score: '0.9402187477333349'
+        test_id: R-SPEC-SE-0
+        test_name: Full/Reference model for slice specification (SE)
+      score: '0.9971140551657947'
     interpretation:
-      status: indecisive
+      status: loaded
       is_outlier: false
-      confidence: medium
+      confidence: high
     has_server_log: true
     server_log_interesting: true
   XML-MOD-ALT-FBC-BPR-B:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: error
-        test_name: Manual reference screenshot
-      score: '0.9402320451461093'
+        test_id: R-SPEC-SI-0
+        test_name: Full/Reference model for slice specification (SI)
+      score: '0.9971717700551336'
     interpretation:
-      status: indecisive
+      status: loaded
       is_outlier: false
-      confidence: medium
+      confidence: high
     has_server_log: true
     server_log_interesting: true
   XML-MOD-ALT-OOB-R:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: error
-        test_name: Manual reference screenshot
-      score: '0.9400832515564571'
+        test_id: R-SPEC-SI-0
+        test_name: Full/Reference model for slice specification (SI)
+      score: '0.9972978618365674'
     interpretation:
-      status: indecisive
+      status: loaded
       is_outlier: false
-      confidence: medium
+      confidence: high
     has_server_log: true
     server_log_interesting: true
   XML-MOD-B-EGE-L:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SI-0
-        test_name: Full/Reference model for slice specification (SI)
-      score: '0.997744719713805'
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
+      score: '0.9973469755933083'
     interpretation:
       status: loaded
       is_outlier: false
@@ -548,7 +548,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: '0.9551300975644539'
+      score: '0.9547913080697555'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -558,9 +558,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SI-0
-        test_name: Full/Reference model for slice specification (SI)
-      score: '0.9977205435357696'
+        test_id: R-SPEC-SE-0
+        test_name: Full/Reference model for slice specification (SE)
+      score: '0.9972949484412327'
     interpretation:
       status: loaded
       is_outlier: false
@@ -572,7 +572,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: '0.9551107591529857'
+      score: '0.9548595559593054'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -582,13 +582,13 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: error
-        test_name: Manual reference screenshot
-      score: '0.9409398703931876'
+        test_id: R-SPEC-SE-0
+        test_name: Full/Reference model for slice specification (SE)
+      score: '0.9977175032302326'
     interpretation:
-      status: indecisive
+      status: loaded
       is_outlier: false
-      confidence: medium
+      confidence: high
     has_server_log: true
   XML-MOD-B-EPE-R:
     info: TODO
@@ -596,7 +596,7 @@ tests:
       similar_to:
         test_id: R-SPEC-SI-0
         test_name: Full/Reference model for slice specification (SI)
-      score: '0.997836106715433'
+      score: '0.9974637757475634'
     interpretation:
       status: loaded
       is_outlier: false
@@ -607,9 +607,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: '0.9978761414043706'
+        test_id: R-SPEC-SI-0
+        test_name: Full/Reference model for slice specification (SI)
+      score: '0.9975647932466875'
     interpretation:
       status: loaded
       is_outlier: false
@@ -621,7 +621,7 @@ tests:
       similar_to:
         test_id: R-SPEC-SI-0
         test_name: Full/Reference model for slice specification (SI)
-      score: '0.997650915522253'
+      score: '0.9976786719915397'
     interpretation:
       status: loaded
       is_outlier: false
@@ -631,9 +631,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: '0.997875625429181'
+        test_id: R-SPEC-SI-0
+        test_name: Full/Reference model for slice specification (SI)
+      score: '0.9975145703584646'
     interpretation:
       status: loaded
       is_outlier: false
@@ -643,9 +643,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: '0.9975817577034835'
+        test_id: R-SPEC-SI-0
+        test_name: Full/Reference model for slice specification (SI)
+      score: '0.9970060439927446'
     interpretation:
       status: loaded
       is_outlier: false
@@ -658,7 +658,7 @@ tests:
       similar_to:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
-      score: '0.9979656964233447'
+      score: '0.9975388061703473'
     interpretation:
       status: loaded
       is_outlier: false
@@ -668,9 +668,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SI-0
-        test_name: Full/Reference model for slice specification (SI)
-      score: '0.9978353159066371'
+        test_id: R-SPEC-SE-0
+        test_name: Full/Reference model for slice specification (SE)
+      score: '0.997532187576427'
     interpretation:
       status: loaded
       is_outlier: false
@@ -680,39 +680,39 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: error
-        test_name: Manual reference screenshot
-      score: '0.9401085906012461'
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
+      score: '0.9968496304500084'
     interpretation:
-      status: indecisive
+      status: loaded
       is_outlier: false
-      confidence: medium
+      confidence: high
     has_server_log: true
     server_log_interesting: true
   XML-MOD-FBC-BPR-A:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: error
-        test_name: Manual reference screenshot
-      score: '0.9401660137440709'
+        test_id: R-SPEC-SI-0
+        test_name: Full/Reference model for slice specification (SI)
+      score: '0.9974043951892096'
     interpretation:
-      status: indecisive
+      status: loaded
       is_outlier: false
-      confidence: medium
+      confidence: high
     has_server_log: true
     server_log_interesting: true
   XML-MOD-FBC-BPR-B:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: error
-        test_name: Manual reference screenshot
-      score: '0.9405776536520979'
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
+      score: '0.9974898293120513'
     interpretation:
-      status: indecisive
+      status: loaded
       is_outlier: false
-      confidence: medium
+      confidence: high
     has_server_log: true
     server_log_interesting: true
   XML-MOD-FBC-E:
@@ -721,7 +721,7 @@ tests:
       similar_to:
         test_id: error
         test_name: Manual reference screenshot
-      score: '0.9401765774898839'
+      score: '0.9412260728345608'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -734,7 +734,7 @@ tests:
       similar_to:
         test_id: error
         test_name: Manual reference screenshot
-      score: '0.9309848633699962'
+      score: '0.9420523689767603'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -744,13 +744,13 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: error
-        test_name: Manual reference screenshot
-      score: '0.9404388514224623'
+        test_id: R-SPEC-SI-0
+        test_name: Full/Reference model for slice specification (SI)
+      score: '0.9975605620872785'
     interpretation:
-      status: indecisive
+      status: loaded
       is_outlier: false
-      confidence: medium
+      confidence: high
     has_server_log: true
     server_log_interesting: true
   XML-MOD-OOB-PE-R:
@@ -759,7 +759,7 @@ tests:
       similar_to:
         test_id: error
         test_name: Manual reference screenshot
-      score: '0.9403609132662507'
+      score: '0.9385474588320569'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -770,13 +770,13 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: error
-        test_name: Manual reference screenshot
-      score: '0.9404895267874501'
+        test_id: R-SPEC-SI-0
+        test_name: Full/Reference model for slice specification (SI)
+      score: '0.9974838260110476'
     interpretation:
-      status: indecisive
+      status: loaded
       is_outlier: false
-      confidence: medium
+      confidence: high
     has_server_log: true
     server_log_interesting: true
   XML-MOD-OOB-SL:
@@ -785,7 +785,7 @@ tests:
       similar_to:
         test_id: error
         test_name: Manual reference screenshot
-      score: '0.940470308482927'
+      score: '0.9368281886639946'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -796,13 +796,13 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: error
-        test_name: Manual reference screenshot
-      score: '0.940687819452603'
+        test_id: R-SPEC-SI-0
+        test_name: Full/Reference model for slice specification (SI)
+      score: '0.997553453664027'
     interpretation:
-      status: indecisive
+      status: loaded
       is_outlier: false
-      confidence: medium
+      confidence: high
     has_server_log: true
     server_log_interesting: true
   XML-MOD-SSRF-NNSL:
@@ -811,7 +811,7 @@ tests:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
-      score: '0.9976300207616133'
+      score: '0.9972147155259465'
     interpretation:
       status: loaded
       is_outlier: false
@@ -823,7 +823,7 @@ tests:
       similar_to:
         test_id: error
         test_name: Manual reference screenshot
-      score: '0.9366104693518917'
+      score: '0.93625423312613'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -833,9 +833,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: empty
-        test_name: Manual reference screenshot
-      score: '0.9551406563183635'
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: '0.955356653083295'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -847,7 +847,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: '0.997830947638725'
+      score: '0.9977137048375085'
     interpretation:
       status: loaded
       is_outlier: false
@@ -859,7 +859,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: '0.9978152075452014'
+      score: '0.9977681150580349'
     interpretation:
       status: loaded
       is_outlier: false
@@ -871,7 +871,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: '0.9980031128586626'
+      score: '0.9980932918067588'
     interpretation:
       status: loaded
       is_outlier: false
@@ -883,7 +883,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: '0.9975577975140537'
+      score: '0.9979361747705313'
     interpretation:
       status: loaded
       is_outlier: false
@@ -895,7 +895,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: '0.99788005537672'
+      score: '0.9976911209949255'
     interpretation:
       status: loaded
       is_outlier: false
@@ -907,7 +907,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: '0.9979105664853385'
+      score: '0.997994554567934'
     interpretation:
       status: loaded
       is_outlier: false
@@ -919,7 +919,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: '0.9978855417589231'
+      score: '0.9979510647319687'
     interpretation:
       status: loaded
       is_outlier: false
@@ -931,7 +931,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: '0.9971338549411943'
+      score: '0.9974048385622365'
     interpretation:
       status: loaded
       is_outlier: false
@@ -943,7 +943,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: '0.9977756940025073'
+      score: '0.9980957210450446'
     interpretation:
       status: loaded
       is_outlier: false
@@ -955,7 +955,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: '0.9979009997282521'
+      score: '0.9982321866339972'
     interpretation:
       status: loaded
       is_outlier: false
@@ -967,7 +967,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: '0.9977385161628528'
+      score: '0.9979347440481867'
     interpretation:
       status: loaded
       is_outlier: false
@@ -979,7 +979,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: '0.997539641852673'
+      score: '0.997576206641388'
     interpretation:
       status: loaded
       is_outlier: false
@@ -991,7 +991,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: '0.9976591341663534'
+      score: '0.9977775035889367'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1003,7 +1003,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: '0.9975965561381293'
+      score: '0.9979569748169563'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1015,7 +1015,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: '0.9977955849650467'
+      score: '0.9981754743193688'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1027,7 +1027,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: '0.997685994594163'
+      score: '0.9975150953204835'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1039,7 +1039,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: '0.9974890560543731'
+      score: '0.9977795622052443'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1051,7 +1051,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: '0.9974179908478151'
+      score: '0.997863641049691'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1063,7 +1063,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: '0.9975569451170704'
+      score: '0.9976551310667778'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1075,7 +1075,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: '0.9978646305472729'
+      score: '0.9978218525355147'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1087,7 +1087,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: '0.9973295206923384'
+      score: '0.9978023246846031'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1099,7 +1099,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: '0.997888090484593'
+      score: '0.997760405470103'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1111,7 +1111,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: '0.9981950473363513'
+      score: '0.997978795337904'
     interpretation:
       status: loaded
       is_outlier: false
@@ -4519,7 +4519,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: '0.9554664259957156'
+      score: '0.9550435687917741'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -4529,9 +4529,9 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-ERR
-        test_name: Error case, should fail always (no model)
-      score: '0.9557382953121518'
+        test_id: empty
+        test_name: Manual reference screenshot
+      score: '0.9554939810533706'
     interpretation:
       status: indecisive
       is_outlier: false

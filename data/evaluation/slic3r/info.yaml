@@ -18,9 +18,9 @@ tests:
   CS-DOR:
     info: TODO
     interpretation:
-      status: aborted
-      is_outlier: true
-      confidence: high
+      status: indecisive
+      is_outlier: false
+      confidence: none
     has_server_log: true
   CS-MUDT:
     info: TODO
@@ -149,9 +149,9 @@ tests:
   DOS-FUZ-SLIC3R-0:
     info: TODO
     interpretation:
-      status: aborted
-      is_outlier: true
-      confidence: high
+      status: indecisive
+      is_outlier: false
+      confidence: none
     has_server_log: true
   DOS-FUZ-SLIC3R-1:
     info: TODO
@@ -329,6 +329,10 @@ tests:
         test_name: Pyramid Model 0
       score: '0.9987850673688331'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-EGE-I-NR:
     info: TODO
     image_similarity:
@@ -337,6 +341,10 @@ tests:
         test_name: Pyramid Model 0
       score: '0.9987997514232767'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-EGE-IL-R:
     info: TODO
     image_similarity:
@@ -345,6 +353,10 @@ tests:
         test_name: Pyramid Model 0
       score: '0.9010686766523983'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-EGE-IL-NR:
     info: TODO
     image_similarity:
@@ -353,6 +365,10 @@ tests:
         test_name: Pyramid Model 0
       score: '0.9987325708882977'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-MOD-ALT-B-EGE-L:
     info: TODO
     image_similarity:
@@ -361,6 +377,10 @@ tests:
         test_name: Full/Reference model for slice specification (SE)
       score: '0.998539852220353'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-MOD-ALT-B-EGE-R:
     info: TODO
     image_similarity:
@@ -369,6 +389,10 @@ tests:
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9985211692361722'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-MOD-ALT-B-EPE-L:
     info: TODO
     image_similarity:
@@ -377,6 +401,10 @@ tests:
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9985499662424691'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-MOD-ALT-B-EPE-R:
     info: TODO
     image_similarity:
@@ -385,6 +413,10 @@ tests:
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9985312832582879'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-MOD-ALT-B-IGE:
     info: TODO
     image_similarity:
@@ -393,6 +425,10 @@ tests:
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9986777847712122'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-MOD-ALT-B-IPE:
     info: TODO
     image_similarity:
@@ -401,6 +437,10 @@ tests:
         test_name: Full/Reference model for slice specification (SE)
       score: '0.998687644357122'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-MOD-ALT-DOS-BL:
     info: TODO
     interpretation:
@@ -420,6 +460,10 @@ tests:
         test_name: Cube Model
       score: '0.9982493227483145'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-MOD-ALT-DOS-C:
     info: TODO
     image_similarity:
@@ -428,6 +472,10 @@ tests:
         test_name: Manual reference screenshot
       score: '0.998599172447375'
     has_server_log: true
+    interpretation:
+      status: loaded nothing
+      is_outlier: false
+      confidence: high
   XML-MOD-ALT-FBC-BPR-A:
     info: TODO
     image_similarity:
@@ -436,6 +484,10 @@ tests:
         test_name: Cube Model
       score: '0.9983659226163054'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-MOD-ALT-FBC-BPR-B:
     info: TODO
     image_similarity:
@@ -444,6 +496,10 @@ tests:
         test_name: Cube Model
       score: '0.9983642123971568'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-MOD-ALT-OOB-R:
     info: TODO
     image_similarity:
@@ -452,6 +508,10 @@ tests:
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9986047573041406'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-MOD-B-EGE-L:
     info: TODO
     image_similarity:
@@ -460,6 +520,10 @@ tests:
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9987801575122451'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-MOD-B-EGE-LX:
     info: TODO
     interpretation:
@@ -481,6 +545,10 @@ tests:
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9987614742607936'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-MOD-B-EGE-RX:
     info: TODO
     interpretation:
@@ -502,6 +570,10 @@ tests:
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9988221541667747'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-MOD-B-EPE-R:
     info: TODO
     image_similarity:
@@ -510,6 +582,10 @@ tests:
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9988034642774068'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-MOD-B-IGE:
     info: TODO
     image_similarity:
@@ -518,6 +594,10 @@ tests:
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9988980250156156'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-MOD-B-IPE:
     info: TODO
     image_similarity:
@@ -526,6 +606,10 @@ tests:
         test_name: Full/Reference model for slice specification (SI)
       score: '0.9989180998072023'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-MOD-DOS-BL:
     info: TODO
     interpretation:
@@ -545,6 +629,10 @@ tests:
         test_name: Full/Reference model for slice specification (SE)
       score: '0.998483165797614'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-MOD-DOS-C:
     info: TODO
     image_similarity:
@@ -553,6 +641,10 @@ tests:
         test_name: Manual reference screenshot
       score: '0.9916261924171539'
     has_server_log: true
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-DOS-PL:
     info: TODO
     image_similarity:
@@ -561,6 +653,10 @@ tests:
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9987921538150875'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-MOD-FBC-AV:
     info: TODO
     image_similarity:
@@ -569,6 +665,10 @@ tests:
         test_name: Full/Reference model for core specification (CM)
       score: '0.9988480343872266'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-MOD-FBC-BPR-A:
     info: TODO
     image_similarity:
@@ -577,6 +677,10 @@ tests:
         test_name: Full/Reference model for core specification (CM)
       score: '0.9986465466331413'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-MOD-FBC-BPR-B:
     info: TODO
     image_similarity:
@@ -585,6 +689,10 @@ tests:
         test_name: Full/Reference model for core specification (CM)
       score: '0.9986448364139928'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-MOD-FBC-E:
     info: TODO
     image_similarity:
@@ -593,6 +701,10 @@ tests:
         test_name: Full/Reference model for core specification (CM)
       score: '0.9989172237528262'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-MOD-FBC-E-L:
     info: TODO
     image_similarity:
@@ -601,6 +713,10 @@ tests:
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9988102814466311'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-MOD-OOB-NNSL:
     info: TODO
     image_similarity:
@@ -609,6 +725,10 @@ tests:
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9985802482222553'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-MOD-OOB-PE-R:
     info: TODO
     image_similarity:
@@ -617,6 +737,10 @@ tests:
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9986257775292625'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-MOD-OOB-R:
     info: TODO
     image_similarity:
@@ -625,6 +749,10 @@ tests:
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9988135288316317'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-MOD-OOB-SL:
     info: TODO
     image_similarity:
@@ -633,6 +761,10 @@ tests:
         test_name: Manual reference screenshot
       score: '0.9902803852660608'
     has_server_log: true
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-MOD-OOB-XI:
     info: TODO
     image_similarity:
@@ -641,6 +773,10 @@ tests:
         test_name: Full/Reference model for slice specification (SE)
       score: '0.998785125225883'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-MOD-SSRF-NNSL:
     info: TODO
     image_similarity:
@@ -649,6 +785,10 @@ tests:
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9985967659141515'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-MOD-SSRF-SL:
     info: TODO
     image_similarity:
@@ -657,6 +797,10 @@ tests:
         test_name: Manual reference screenshot
       score: '0.9895078004116904'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-SSRF-XI:
     info: TODO
     image_similarity:
@@ -665,6 +809,10 @@ tests:
         test_name: Manual reference screenshot
       score: '0.993453475727169'
     has_server_log: true
+    interpretation:
+      status: aborted
+      is_outlier: false
+      confidence: high
   XML-REL-B-EGE-L:
     info: TODO
     image_similarity:
@@ -673,6 +821,10 @@ tests:
         test_name: Cube Model
       score: '0.9988817035823986'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-REL-B-EGE-R:
     info: TODO
     image_similarity:
@@ -681,6 +833,10 @@ tests:
         test_name: Cube Model
       score: '0.9988633000523278'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-REL-B-EPE-L:
     info: TODO
     image_similarity:
@@ -689,6 +845,10 @@ tests:
         test_name: Cube Model
       score: '0.9988880434901306'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-REL-B-EPE-R:
     info: TODO
     image_similarity:
@@ -697,6 +857,10 @@ tests:
         test_name: Cube Model
       score: '0.9988691018423069'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-REL-B-IGE:
     info: TODO
     image_similarity:
@@ -705,6 +869,10 @@ tests:
         test_name: Cube Model
       score: '0.9990408809592525'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-REL-B-IPE:
     info: TODO
     image_similarity:
@@ -713,6 +881,10 @@ tests:
         test_name: Cube Model
       score: '0.9990574347812069'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-REL-DOS-BL:
     info: TODO
     image_similarity:
@@ -721,6 +893,10 @@ tests:
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9989171490317988'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-REL-DOS-BL-PE-R:
     info: TODO
     image_similarity:
@@ -729,6 +905,10 @@ tests:
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9986074953307513'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-REL-DOS-C:
     info: TODO
     image_similarity:
@@ -737,6 +917,10 @@ tests:
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9989441158903547'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-REL-DOS-PL:
     info: TODO
     image_similarity:
@@ -745,6 +929,10 @@ tests:
         test_name: Full/Reference model for slice specification (SE)
       score: '0.9989160251177094'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-REL-FBC-AV:
     info: TODO
     image_similarity:
@@ -753,6 +941,10 @@ tests:
         test_name: Cube Model
       score: '0.9989375632312161'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-REL-FBC-BPR-A:
     info: TODO
     image_similarity:
@@ -761,6 +953,10 @@ tests:
         test_name: Cube Model
       score: '0.9987749534659451'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-REL-FBC-BPR-B:
     info: TODO
     image_similarity:
@@ -769,6 +965,10 @@ tests:
         test_name: Cube Model
       score: '0.9987732432467964'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-REL-FBC-E:
     info: TODO
     image_similarity:
@@ -777,6 +977,10 @@ tests:
         test_name: Cube Model
       score: '0.9990046842512629'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-REL-FBC-E-L:
     info: TODO
     image_similarity:
@@ -785,6 +989,10 @@ tests:
         test_name: Cube Model
       score: '0.9988949711576973'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-REL-OOB-NNSL:
     info: TODO
     image_similarity:
@@ -793,6 +1001,10 @@ tests:
         test_name: Cube Model
       score: '0.998677091990792'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-REL-OOB-PE-R:
     info: TODO
     image_similarity:
@@ -801,6 +1013,10 @@ tests:
         test_name: Cube Model
       score: '0.9987324879667354'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-REL-OOB-R:
     info: TODO
     image_similarity:
@@ -809,6 +1025,10 @@ tests:
         test_name: Cube Model
       score: '0.9989294687326881'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-REL-OOB-SL:
     info: TODO
     image_similarity:
@@ -817,6 +1037,10 @@ tests:
         test_name: Cube Model
       score: '0.9988604637275532'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-REL-OOB-XI:
     info: TODO
     image_similarity:
@@ -825,6 +1049,10 @@ tests:
         test_name: Cube Model
       score: '0.998896786916388'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-REL-SSRF-NNSL:
     info: TODO
     image_similarity:
@@ -833,6 +1061,10 @@ tests:
         test_name: Cube Model
       score: '0.99867561442062'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-REL-SSRF-SL:
     info: TODO
     image_similarity:
@@ -841,6 +1073,10 @@ tests:
         test_name: Cube Model
       score: '0.998858873536804'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   XML-REL-SSRF-XI:
     info: TODO
     image_similarity:
@@ -849,6 +1085,10 @@ tests:
         test_name: Cube Model
       score: '0.9988952904782028'
     has_server_log: true
+    interpretation:
+      status: loaded
+      is_outlier: false
+      confidence: high
   GEN-C-ADA-BASE-DISPLAYCOLOR-0:
     info: TODO
     image_similarity:
@@ -4243,6 +4483,10 @@ tests:
         test_name: Manual reference screenshot
       score: '1.0'
     has_server_log: true
+    interpretation:
+      status: loaded nothing
+      is_outlier: false
+      confidence: high
   OPC-LFI-1:
     info: TODO
     image_similarity:
@@ -4251,6 +4495,10 @@ tests:
         test_name: Manual reference screenshot
       score: '0.9999337316572425'
     has_server_log: true
+    interpretation:
+      status: loaded nothing
+      is_outlier: false
+      confidence: high
   OPC-LFI-2:
     info: TODO
     image_similarity:
@@ -4259,6 +4507,10 @@ tests:
         test_name: Manual reference screenshot
       score: '0.9999644484614927'
     has_server_log: true
+    interpretation:
+      status: loaded nothing
+      is_outlier: false
+      confidence: high
   ZIP-SL-S:
     info: TODO
     image_similarity:

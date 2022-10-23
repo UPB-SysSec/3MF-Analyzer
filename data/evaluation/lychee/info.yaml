@@ -157,7 +157,7 @@ tests:
       similar_to:
         test_id: warning
         test_name: Manual reference screenshot
-      score: '0.9353308226989393'
+      score: '0.9353308226989401'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -169,7 +169,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: '0.9999879963039321'
+      score: '0.9999879963039319'
     interpretation:
       status: aborted
       is_outlier: false
@@ -181,7 +181,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: '0.9999770946915983'
+      score: '0.9999770946915981'
     interpretation:
       status: aborted
       is_outlier: false
@@ -268,7 +268,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: '0.9802124212967828'
+      score: '0.980212421296783'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -292,7 +292,7 @@ tests:
       similar_to:
         test_id: R-SPEC-SE-0
         test_name: Full/Reference model for slice specification (SE)
-      score: '0.9474142809919253'
+      score: '0.9474142809919258'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -302,8 +302,8 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SI-0
-        test_name: Full/Reference model for slice specification (SI)
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
       score: '1.0'
     interpretation:
       status: loaded
@@ -361,7 +361,7 @@ tests:
       similar_to:
         test_id: empty
         test_name: Manual reference screenshot
-      score: '0.9334616277441027'
+      score: '0.9334616277441034'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -383,8 +383,8 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SI-0
-        test_name: Full/Reference model for slice specification (SI)
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
       score: '0.9995472143185704'
     interpretation:
       status: loaded
@@ -395,8 +395,8 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SI-0
-        test_name: Full/Reference model for slice specification (SI)
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
       score: '1.0'
     interpretation:
       status: loaded
@@ -445,7 +445,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: '0.9999817919381423'
+      score: '0.9999817919381421'
     interpretation:
       status: aborted
       is_outlier: false
@@ -462,8 +462,8 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: none
-    has_server_log: true
     rerun: true
+    has_server_log: true
   XML-MOD-ALT-DOS-BL-PE-R:
     info: TODO
     image_similarity:
@@ -528,8 +528,8 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SI-0
-        test_name: Full/Reference model for slice specification (SI)
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
       score: '0.9995472143185704'
     interpretation:
       status: loaded
@@ -566,7 +566,7 @@ tests:
       similar_to:
         test_id: error
         test_name: Manual reference screenshot
-      score: '0.9999897383408783'
+      score: '0.9999897383408782'
     interpretation:
       status: aborted
       is_outlier: false
@@ -631,14 +631,14 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: none
-    has_server_log: true
     rerun: true
+    has_server_log: true
   XML-MOD-DOS-BL-PE-R:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SI-0
-        test_name: Full/Reference model for slice specification (SI)
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
       score: '1.0'
     interpretation:
       status: loaded
@@ -651,7 +651,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: '0.9999906391005459'
+      score: '0.9999906391005456'
     interpretation:
       status: aborted
       is_outlier: false
@@ -711,7 +711,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: '0.9999906390247295'
+      score: '0.9999906390247293'
     interpretation:
       status: aborted
       is_outlier: false
@@ -843,7 +843,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: '0.9999773970137877'
+      score: '0.9999773970137875'
     interpretation:
       status: aborted
       is_outlier: false
@@ -867,7 +867,7 @@ tests:
       similar_to:
         test_id: error
         test_name: Manual reference screenshot
-      score: '0.9999927410434463'
+      score: '0.999992741043446'
     interpretation:
       status: aborted
       is_outlier: false
@@ -879,7 +879,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: '0.9999760436748698'
+      score: '0.9999760436748696'
     interpretation:
       status: aborted
       is_outlier: false
@@ -891,7 +891,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: '0.9999773970137877'
+      score: '0.9999773970137875'
     interpretation:
       status: aborted
       is_outlier: false
@@ -908,8 +908,8 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: none
-    has_server_log: true
     rerun: true
+    has_server_log: true
   XML-REL-DOS-BL-PE-R:
     info: TODO
     image_similarity:
@@ -964,7 +964,7 @@ tests:
       similar_to:
         test_id: error
         test_name: Manual reference screenshot
-      score: '0.999991271825765'
+      score: '0.9999912718257649'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1060,7 +1060,7 @@ tests:
       similar_to:
         test_id: error
         test_name: Manual reference screenshot
-      score: '0.9999754860916142'
+      score: '0.9999754860916141'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1144,7 +1144,7 @@ tests:
       similar_to:
         test_id: error
         test_name: Manual reference screenshot
-      score: '0.999974925144487'
+      score: '0.9999749251444868'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1216,7 +1216,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: '0.9999773970137877'
+      score: '0.9999773970137875'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1240,7 +1240,7 @@ tests:
       similar_to:
         test_id: error
         test_name: Manual reference screenshot
-      score: '0.9999769553092958'
+      score: '0.9999769553092955'
     interpretation:
       status: aborted
       is_outlier: false
@@ -1384,7 +1384,7 @@ tests:
       similar_to:
         test_id: empty
         test_name: Manual reference screenshot
-      score: '0.9879769310175864'
+      score: '0.9879769310175865'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -1408,7 +1408,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: '0.9593881298789159'
+      score: '0.9593881298789163'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -1432,7 +1432,7 @@ tests:
       similar_to:
         test_id: warning
         test_name: Manual reference screenshot
-      score: '0.9889843375295935'
+      score: '0.9889843375295937'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -1456,7 +1456,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: '0.9787666412155175'
+      score: '0.9787666412155177'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -1480,7 +1480,7 @@ tests:
       similar_to:
         test_id: warning2
         test_name: Manual reference screenshot
-      score: '0.9883755393087503'
+      score: '0.9883755393087504'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -1564,7 +1564,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: '0.9896601679339314'
+      score: '0.9896601679339311'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -1612,7 +1612,7 @@ tests:
       similar_to:
         test_id: empty
         test_name: Manual reference screenshot
-      score: '0.9879764416790782'
+      score: '0.9879764416790784'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -1708,7 +1708,7 @@ tests:
       similar_to:
         test_id: warning2
         test_name: Manual reference screenshot
-      score: '0.9883865690059723'
+      score: '0.9883865690059725'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -1792,7 +1792,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: '0.9961795086396095'
+      score: '0.9961795086396092'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1816,7 +1816,7 @@ tests:
       similar_to:
         test_id: empty
         test_name: Manual reference screenshot
-      score: '0.9949375077613611'
+      score: '0.9949375077613614'
     interpretation:
       status: loaded nothing
       is_outlier: false
@@ -1828,7 +1828,7 @@ tests:
       similar_to:
         test_id: empty
         test_name: Manual reference screenshot
-      score: '0.9949427227150142'
+      score: '0.9949427227150144'
     interpretation:
       status: loaded nothing
       is_outlier: false
@@ -1840,7 +1840,7 @@ tests:
       similar_to:
         test_id: empty
         test_name: Manual reference screenshot
-      score: '0.9953955083964438'
+      score: '0.9953955083964439'
     interpretation:
       status: loaded nothing
       is_outlier: false
@@ -1852,7 +1852,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: '0.9995452413922232'
+      score: '0.999545241392223'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1972,7 +1972,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: '0.9999980270736528'
+      score: '0.9999980270736526'
     interpretation:
       status: loaded
       is_outlier: false
@@ -1996,7 +1996,7 @@ tests:
       similar_to:
         test_id: R-SPEC-C-0
         test_name: Full/Reference model for core specification (C)
-      score: '0.9757903803370281'
+      score: '0.9757903803370286'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -2020,7 +2020,7 @@ tests:
       similar_to:
         test_id: warning
         test_name: Manual reference screenshot
-      score: '0.9727861401554102'
+      score: '0.9727861401554104'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -2044,7 +2044,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: '0.9889864408330377'
+      score: '0.9889864408330379'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -2080,7 +2080,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: '0.9787463485442988'
+      score: '0.978746348544299'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -2224,7 +2224,7 @@ tests:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: '0.9889661481618189'
+      score: '0.9889661481618192'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -2258,8 +2258,8 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SI-0
-        test_name: Full/Reference model for slice specification (SI)
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
       score: '1.0'
     interpretation:
       status: loaded
@@ -2548,7 +2548,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: '0.99999506312255'
+      score: '0.9999950631225498'
     interpretation:
       status: aborted
       is_outlier: false
@@ -2692,7 +2692,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: '0.9658884861982854'
+      score: '0.9658884861982855'
     interpretation:
       status: indecisive
       is_outlier: false
@@ -2896,7 +2896,7 @@ tests:
       similar_to:
         test_id: R-SPEC-M-0
         test_name: Full/Reference model for materials specification (M)
-      score: '0.9999944961978215'
+      score: '0.9999944961978213'
     interpretation:
       status: loaded
       is_outlier: false
@@ -3539,7 +3539,7 @@ tests:
       similar_to:
         test_id: error
         test_name: Manual reference screenshot
-      score: '0.9999769553851122'
+      score: '0.999976955385112'
     interpretation:
       status: aborted
       is_outlier: false
@@ -3779,7 +3779,7 @@ tests:
       similar_to:
         test_id: error
         test_name: Manual reference screenshot
-      score: '0.9999769553092958'
+      score: '0.9999769553092955'
     interpretation:
       status: aborted
       is_outlier: false
@@ -3827,7 +3827,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: '0.9999773970137877'
+      score: '0.9999773970137875'
     interpretation:
       status: aborted
       is_outlier: false
@@ -3839,7 +3839,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: '0.9999770947674148'
+      score: '0.9999770947674146'
     interpretation:
       status: aborted
       is_outlier: false
@@ -3851,7 +3851,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: '0.9999722105697816'
+      score: '0.9999722105697814'
     interpretation:
       status: aborted
       is_outlier: false
@@ -3875,7 +3875,7 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: '0.9999773969379713'
+      score: '0.999977396937971'
     interpretation:
       status: aborted
       is_outlier: false
@@ -3957,8 +3957,8 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SI-0
-        test_name: Full/Reference model for slice specification (SI)
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
       score: '0.9999999999585387'
     interpretation:
       status: loaded
@@ -3969,8 +3969,8 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SI-0
-        test_name: Full/Reference model for slice specification (SI)
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
       score: '1.0'
     interpretation:
       status: loaded
@@ -4005,8 +4005,8 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SI-0
-        test_name: Full/Reference model for slice specification (SI)
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
       score: '1.0'
     interpretation:
       status: loaded
@@ -4017,8 +4017,8 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SI-0
-        test_name: Full/Reference model for slice specification (SI)
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
       score: '1.0'
     interpretation:
       status: loaded
@@ -4089,8 +4089,8 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SI-0
-        test_name: Full/Reference model for slice specification (SI)
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
       score: '1.0'
     interpretation:
       status: loaded
@@ -4137,8 +4137,8 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SI-0
-        test_name: Full/Reference model for slice specification (SI)
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
       score: '1.0'
     interpretation:
       status: loaded
@@ -4173,8 +4173,8 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SI-0
-        test_name: Full/Reference model for slice specification (SI)
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
       score: '1.0'
     interpretation:
       status: loaded
@@ -4209,8 +4209,8 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SI-0
-        test_name: Full/Reference model for slice specification (SI)
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
       score: '0.9999977260569622'
     interpretation:
       status: loaded
@@ -4233,8 +4233,8 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SI-0
-        test_name: Full/Reference model for slice specification (SI)
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
       score: '1.0'
     interpretation:
       status: loaded
@@ -4257,8 +4257,8 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SI-0
-        test_name: Full/Reference model for slice specification (SI)
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
       score: '1.0'
     interpretation:
       status: loaded
@@ -4269,8 +4269,8 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SI-0
-        test_name: Full/Reference model for slice specification (SI)
+        test_id: R-SPEC-CM-0
+        test_name: Full/Reference model for core specification (CM)
       score: '1.0'
     interpretation:
       status: loaded
@@ -4355,7 +4355,7 @@ tests:
       similar_to:
         test_id: error
         test_name: Manual reference screenshot
-      score: '0.9999904338178789'
+      score: '0.9999904338178787'
     interpretation:
       status: aborted
       is_outlier: false
@@ -4403,7 +4403,7 @@ tests:
       similar_to:
         test_id: error
         test_name: Manual reference screenshot
-      score: '0.9999885036934805'
+      score: '0.9999885036934802'
     interpretation:
       status: aborted
       is_outlier: false
@@ -4415,7 +4415,7 @@ tests:
       similar_to:
         test_id: error
         test_name: Manual reference screenshot
-      score: '0.9999885036934805'
+      score: '0.9999885036934802'
     interpretation:
       status: aborted
       is_outlier: false
@@ -4535,7 +4535,7 @@ tests:
       similar_to:
         test_id: error
         test_name: Manual reference screenshot
-      score: '0.9999769553092958'
+      score: '0.9999769553092955'
     interpretation:
       status: aborted
       is_outlier: false
@@ -4667,7 +4667,7 @@ tests:
       similar_to:
         test_id: error
         test_name: Manual reference screenshot
-      score: '0.9999631581349228'
+      score: '0.9999631581349225'
     interpretation:
       status: aborted
       is_outlier: false

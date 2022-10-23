@@ -7,11 +7,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: warning
+        test_id: error
         test_name: Manual reference screenshot
       score: '0.9919587460990138'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -31,7 +31,7 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: warning
+        test_id: error
         test_name: Manual reference screenshot
       score: '0.9675242492625337'
     interpretation:
@@ -131,7 +131,7 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: warning
+        test_id: error
         test_name: Manual reference screenshot
       score: '0.9695748523448432'
     interpretation:
@@ -143,7 +143,7 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: warning
+        test_id: error
         test_name: Manual reference screenshot
       score: '0.9695748523448432'
     interpretation:
@@ -179,7 +179,7 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: warning
+        test_id: error
         test_name: Manual reference screenshot
       score: '0.9711317115619481'
     interpretation:
@@ -254,11 +254,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: warning
+        test_id: error
         test_name: Manual reference screenshot
       score: '0.9919351130802456'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -337,80 +337,120 @@ tests:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
-      score: '0.9998683601456705'
+      score: '0.9810192584073251'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-EGE-I-NR:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-PYR-0
-        test_name: Pyramid Model 0
-      score: '0.9943676541597147'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9560226464767131'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-EGE-IL-R:
     info: TODO
     image_similarity:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: '0.8997408081323839'
+      score: '0.9470501717978219'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-EGE-IL-NR:
     info: TODO
     image_similarity:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
-      score: '0.9667614153582421'
+      score: '0.9479207007797364'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-ALT-B-EGE-L:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: '0.9937918200908754'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.958837317860784'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-ALT-B-EGE-R:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: '0.9933029570207491'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9587369509783588'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-ALT-B-EPE-L:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: '0.9938814043703764'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9590190782108886'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-ALT-B-EPE-R:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: '0.9937871750196772'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9587953353359233'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-ALT-B-IGE:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: '0.9942697831771709'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9592731850058402'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-ALT-B-IPE:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-CUB
-        test_name: Cube Model
-      score: '0.9942742327084898'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9593652672648947'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-ALT-DOS-BL:
     info: TODO
     interpretation:
@@ -426,106 +466,158 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: '0.9923436362152852'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9577920072302457'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-ALT-DOS-C:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: warning
+        test_id: error
         test_name: Manual reference screenshot
-      score: '0.9738823349286431'
+      score: '0.9629197526553689'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-ALT-FBC-BPR-A:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: '0.9851986500899732'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9580197792114687'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-ALT-FBC-BPR-B:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SI-0
-        test_name: Full/Reference model for slice specification (SI)
-      score: '0.985183262581605'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9580314752020398'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-ALT-OOB-R:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: '0.9939194658574347'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.958887743130543'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-B-EGE-L:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: '0.9868496259056303'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9603882043779141'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-B-EGE-LX:
     info: TODO
     image_similarity:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
-      score: '0.9919641973002069'
+      score: '0.9810011874087853'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-B-EGE-R:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: '0.986648768183038'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9596470996569492'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-B-EGE-RX:
     info: TODO
     image_similarity:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
-      score: '0.9919641973002069'
+      score: '0.9810011874087853'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-B-EPE-L:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: '0.9947668634569472'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9617691886252631'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-B-EPE-R:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: '0.9867965322970258'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9603514618906358'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-B-IGE:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: '0.98737673331232'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9596285960689409'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-B-IPE:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: '0.987411042017682'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9594214029283052'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-DOS-BL:
     info: TODO
     interpretation:
@@ -541,314 +633,470 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: '0.9857308209839463'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9587054046813133'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-DOS-C:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: warning
+        test_id: error
         test_name: Manual reference screenshot
-      score: '0.9738777001092078'
+      score: '0.962915117835934'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-DOS-PL:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: '0.9943892394379222'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.960288350597375'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-FBC-AV:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: '0.9869450510196351'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9596189081518385'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-FBC-BPR-A:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: '0.9862423906465042'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.959053505234735'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-FBC-BPR-B:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: '0.98629412418315'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9590995409140306'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-FBC-E:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SI-0
-        test_name: Full/Reference model for slice specification (SI)
-      score: '0.9872058843828384'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9597148906644517'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-FBC-E-L:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: '0.9868758563859151'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9603326294280098'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-OOB-NNSL:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: '0.9911752197312701'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9589499534717387'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-OOB-PE-R:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: '0.9861970212036874'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9592057346643008'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-OOB-R:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SI-0
-        test_name: Full/Reference model for slice specification (SI)
-      score: '0.9943515780359389'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9595595979969943'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-OOB-SL:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-CM-0
-        test_name: Full/Reference model for core specification (CM)
-      score: '0.9865396670145313'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9612681531833485'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-OOB-XI:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: '0.9868073557641502'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9595879773477441'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-SSRF-NNSL:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: '0.9862543549579474'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9587872966419001'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-SSRF-SL:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-CM-0
-        test_name: Full/Reference model for core specification (CM)
-      score: '0.986228918616006'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9612339119585968'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-MOD-SSRF-XI:
     info: TODO
     image_similarity:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
-      score: '0.9588753235113182'
+      score: '0.9479207007797364'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-REL-B-EGE-L:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-CUB
-        test_name: Cube Model
-      score: '0.9947101175635804'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9594715196915723'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-REL-B-EGE-R:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: '0.9869931062641323'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9596605858691747'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-REL-B-EPE-L:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-CUB
-        test_name: Cube Model
-      score: '0.9871434894353689'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9593610408707295'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-REL-B-EPE-R:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-CUB
-        test_name: Cube Model
-      score: '0.9950424186089516'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9592415209292391'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-REL-B-IGE:
     info: TODO
     image_similarity:
       similar_to:
         test_id: R-CUB
         test_name: Cube Model
-      score: '0.9870829288047425'
+      score: '0.9594409239899472'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-REL-B-IPE:
     info: TODO
     image_similarity:
       similar_to:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
-      score: '0.9877355262054934'
+      score: '0.9597157463820905'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-REL-DOS-BL:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SI-0
-        test_name: Full/Reference model for slice specification (SI)
-      score: '0.9871803982927354'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9594559977178545'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-REL-DOS-BL-PE-R:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-CUB
-        test_name: Cube Model
-      score: '0.9860102928222235'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9584059509736491'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-REL-DOS-C:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-CUB
-        test_name: Cube Model
-      score: '0.9873432812876161'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9593981747910894'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-REL-DOS-PL:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SI-0
-        test_name: Full/Reference model for slice specification (SI)
-      score: '0.9871802720953232'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9594009486504484'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-REL-FBC-AV:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SI-0
-        test_name: Full/Reference model for slice specification (SI)
-      score: '0.987137724249829'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9595136208178793'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-REL-FBC-BPR-A:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SI-0
-        test_name: Full/Reference model for slice specification (SI)
-      score: '0.9863462567578127'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9590606924973921'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-REL-FBC-BPR-B:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SI-0
-        test_name: Full/Reference model for slice specification (SI)
-      score: '0.9864388313907615'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9589818583193659'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-REL-FBC-E:
     info: TODO
     image_similarity:
       similar_to:
         test_id: R-SPEC-CM-0
         test_name: Full/Reference model for core specification (CM)
-      score: '0.9873986947289862'
+      score: '0.9593789149055829'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-REL-FBC-E-L:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-CUB
-        test_name: Cube Model
-      score: '0.9872050796494187'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9594496042414074'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-REL-OOB-NNSL:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SI-0
-        test_name: Full/Reference model for slice specification (SI)
-      score: '0.9863054326397137'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.959142551494444'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-REL-OOB-PE-R:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-CM-0
-        test_name: Full/Reference model for core specification (CM)
-      score: '0.9864957103776163'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9590924338838497'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-REL-OOB-R:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-CUB
-        test_name: Cube Model
-      score: '0.9871833243206782'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9594205609726493'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-REL-OOB-SL:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-CUB
-        test_name: Cube Model
-      score: '0.9915391733051803'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9595034500859414'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-REL-OOB-XI:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SI-0
-        test_name: Full/Reference model for slice specification (SI)
-      score: '0.9870263334519815'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9596252521129195'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-REL-SSRF-NNSL:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-CM-0
-        test_name: Full/Reference model for core specification (CM)
-      score: '0.9859529900011161'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9591053906748294'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-REL-SSRF-SL:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SE-0
-        test_name: Full/Reference model for slice specification (SE)
-      score: '0.9870451106093737'
+        test_id: R-PYR-1
+        test_name: Pyramid Model 1
+      score: '0.9594184925772694'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   XML-REL-SSRF-XI:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-SPEC-SI-0
-        test_name: Full/Reference model for slice specification (SI)
-      score: '0.9870429643571619'
+        test_id: R-PYR-0
+        test_name: Pyramid Model 0
+      score: '0.7837449285946538'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: none
   GEN-C-ADA-BASE-DISPLAYCOLOR-0:
     info: TODO
     image_similarity:
@@ -2125,7 +2373,7 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: warning
+        test_id: error
         test_name: Manual reference screenshot
       score: '0.982328157240552'
     interpretation:
@@ -3085,11 +3333,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: warning
+        test_id: error
         test_name: Manual reference screenshot
       score: '0.9919879187239601'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -3517,7 +3765,7 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: warning
+        test_id: error
         test_name: Manual reference screenshot
       score: '0.9823281564189955'
     interpretation:
@@ -3625,7 +3873,7 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: warning
+        test_id: error
         test_name: Manual reference screenshot
       score: '0.9855005845393895'
     interpretation:
@@ -4239,24 +4487,36 @@ tests:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
-      score: '0.9871568870859455'
+      score: '0.968307370952016'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   OPC-LFI-1:
     info: TODO
     image_similarity:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
-      score: '0.9871568870859455'
+      score: '0.968307370952016'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   OPC-LFI-2:
     info: TODO
     image_similarity:
       similar_to:
         test_id: R-SPEC-P-0
         test_name: Full/Reference model for production specification (P)
-      score: '0.9871568870859455'
+      score: '0.968307370952016'
     has_server_log: true
+    interpretation:
+      status: indecisive
+      is_outlier: false
+      confidence: medium
   ZIP-SL-S:
     info: TODO
     image_similarity:
@@ -4285,11 +4545,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: warning
+        test_id: error
         test_name: Manual reference screenshot
       score: '0.9921139081530761'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -4297,11 +4557,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: warning
+        test_id: error
         test_name: Manual reference screenshot
       score: '0.9968102607287717'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -4309,11 +4569,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: warning
+        test_id: error
         test_name: Manual reference screenshot
       score: '0.9960537016848704'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -4321,11 +4581,11 @@ tests:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: warning
+        test_id: error
         test_name: Manual reference screenshot
       score: '1.0'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
     has_server_log: true

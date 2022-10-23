@@ -19,8 +19,9 @@ tests:
     info: TODO
     interpretation:
       status: aborted
-      is_outlier: true
+      is_outlier: false
       confidence: high
+    status: crashed
     missing_process_info: 1
     missing_screenshot: 1
     problems:
@@ -28,19 +29,18 @@ tests:
     - Too many missing/broken screenshot files.
     critical: true
     has_server_log: true
-    status: crashed
   CS-MUDT:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: warning
-        test_name: Manual reference screenshot
-      score: '1.0'
+        test_id: R-CUB
+        test_name: Cube Model
+      score: '0.9196374113604152'
     rerun: true
     interpretation:
       status: indecisive
       is_outlier: false
-      confidence: none
+      confidence: medium
     has_server_log: true
   CS-SE:
     info: TODO
@@ -342,9 +342,15 @@ tests:
         test_name: Pyramid Model 0
       score: '0.9984435985494167'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-EGE-I-NR:
     info: TODO
@@ -354,9 +360,15 @@ tests:
         test_name: Pyramid Model 0
       score: '0.9983117636270065'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-EGE-IL-R:
     info: TODO
@@ -366,9 +378,15 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '0.9281414807268651'
     interpretation:
-      status: indecisive
+      status: aborted
       is_outlier: false
-      confidence: medium
+      confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-EGE-IL-NR:
     info: TODO
@@ -378,9 +396,15 @@ tests:
         test_name: Full/Reference model for materials specification (M)
       score: '0.9281414807268651'
     interpretation:
-      status: indecisive
+      status: aborted
       is_outlier: false
-      confidence: medium
+      confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-ALT-B-EGE-L:
     info: TODO
@@ -390,9 +414,15 @@ tests:
         test_name: Full/Reference model for core specification (CM)
       score: '0.9975738280674513'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-ALT-B-EGE-R:
     info: TODO
@@ -402,9 +432,15 @@ tests:
         test_name: Full/Reference model for core specification (CM)
       score: '0.9975305514073146'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-ALT-B-EPE-L:
     info: TODO
@@ -414,9 +450,15 @@ tests:
         test_name: Full/Reference model for core specification (CM)
       score: '0.9976069880662243'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-ALT-B-EPE-R:
     info: TODO
@@ -426,9 +468,15 @@ tests:
         test_name: Full/Reference model for core specification (CM)
       score: '0.9975637114060876'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-ALT-B-IGE:
     info: TODO
@@ -438,9 +486,15 @@ tests:
         test_name: Full/Reference model for core specification (CM)
       score: '0.9977452865146016'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-ALT-B-IPE:
     info: TODO
@@ -450,21 +504,27 @@ tests:
         test_name: Full/Reference model for core specification (CM)
       score: '0.9977776764079075'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-ALT-DOS-BL:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: loading
-        test_name: Manual reference screenshot
-      score: '0.9997012066670147'
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: '0.6176051470703633'
     interpretation:
-      status: loading
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   XML-MOD-ALT-DOS-BL-PE-R:
     info: TODO
@@ -474,19 +534,25 @@ tests:
         test_name: Full/Reference model for slice specification (SI)
       score: '0.9866125727134742'
     interpretation:
-      status: indecisive
+      status: aborted
       is_outlier: false
-      confidence: medium
+      confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-ALT-DOS-C:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: loading
-        test_name: Manual reference screenshot
-      score: '0.9988788023550873'
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: '1.0'
     interpretation:
-      status: loading
+      status: aborted
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -498,9 +564,15 @@ tests:
         test_name: Full/Reference model for core specification (CM)
       score: '0.9973641510114364'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-ALT-FBC-BPR-B:
     info: TODO
@@ -510,9 +582,15 @@ tests:
         test_name: Full/Reference model for core specification (CM)
       score: '0.9973411237694781'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-ALT-OOB-R:
     info: TODO
@@ -522,9 +600,15 @@ tests:
         test_name: Full/Reference model for core specification (CM)
       score: '0.9976912261829786'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-B-EGE-L:
     info: TODO
@@ -534,9 +618,15 @@ tests:
         test_name: Full/Reference model for slice specification (SI)
       score: '0.9980933512393257'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-B-EGE-LX:
     info: TODO
@@ -544,11 +634,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: '1.0'
+      score: '0.6176051470703633'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   XML-MOD-B-EGE-R:
     info: TODO
@@ -558,9 +648,15 @@ tests:
         test_name: Full/Reference model for slice specification (SI)
       score: '0.9980501080569116'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-B-EGE-RX:
     info: TODO
@@ -568,11 +664,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: '1.0'
+      score: '0.6176051470703633'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   XML-MOD-B-EPE-L:
     info: TODO
@@ -582,9 +678,15 @@ tests:
         test_name: Full/Reference model for slice specification (SI)
       score: '0.9981276179571521'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-B-EPE-R:
     info: TODO
@@ -594,9 +696,15 @@ tests:
         test_name: Full/Reference model for slice specification (SI)
       score: '0.9980845256349178'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-B-IGE:
     info: TODO
@@ -606,9 +714,15 @@ tests:
         test_name: Full/Reference model for slice specification (SI)
       score: '0.9982260403717741'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-B-IPE:
     info: TODO
@@ -618,21 +732,27 @@ tests:
         test_name: Full/Reference model for core specification (CM)
       score: '0.9982438068049302'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-DOS-BL:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: loading
-        test_name: Manual reference screenshot
-      score: '1.0'
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: '0.6176051470703633'
     interpretation:
-      status: loading
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   XML-MOD-DOS-BL-PE-R:
     info: TODO
@@ -642,9 +762,15 @@ tests:
         test_name: Full/Reference model for slice specification (SI)
       score: '0.9976101580691128'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-DOS-C:
     info: TODO
@@ -652,11 +778,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: '1.0'
+      score: '0.6176051470703633'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   XML-MOD-DOS-PL:
     info: TODO
@@ -666,9 +792,15 @@ tests:
         test_name: Full/Reference model for core specification (CM)
       score: '0.9981393358814378'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-FBC-AV:
     info: TODO
@@ -678,9 +810,15 @@ tests:
         test_name: Cube Model
       score: '0.9991056123665442'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-FBC-BPR-A:
     info: TODO
@@ -690,9 +828,15 @@ tests:
         test_name: Full/Reference model for core specification (CM)
       score: '0.9978212983550414'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-FBC-BPR-B:
     info: TODO
@@ -702,9 +846,15 @@ tests:
         test_name: Full/Reference model for core specification (CM)
       score: '0.9977982711130831'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-FBC-E:
     info: TODO
@@ -714,9 +864,15 @@ tests:
         test_name: Full/Reference model for core specification (CM)
       score: '0.998224471728811'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-FBC-E-L:
     info: TODO
@@ -726,9 +882,15 @@ tests:
         test_name: Full/Reference model for core specification (CM)
       score: '0.9980951039580016'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-OOB-NNSL:
     info: TODO
@@ -738,9 +900,15 @@ tests:
         test_name: Full/Reference model for slice specification (SI)
       score: '0.9978484762929746'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-OOB-PE-R:
     info: TODO
@@ -750,9 +918,15 @@ tests:
         test_name: Full/Reference model for slice specification (SI)
       score: '0.9978978435975316'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-OOB-R:
     info: TODO
@@ -762,9 +936,15 @@ tests:
         test_name: Full/Reference model for slice specification (SI)
       score: '0.9981858244831314'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-OOB-SL:
     info: TODO
@@ -786,9 +966,15 @@ tests:
         test_name: Full/Reference model for slice specification (SI)
       score: '0.9980988801967038'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-SSRF-NNSL:
     info: TODO
@@ -798,9 +984,15 @@ tests:
         test_name: Full/Reference model for slice specification (SI)
       score: '0.9977443505648808'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-MOD-SSRF-SL:
     info: TODO
@@ -808,11 +1000,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: '1.0'
+      score: '0.6176051470703633'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   XML-MOD-SSRF-XI:
     info: TODO
@@ -822,9 +1014,15 @@ tests:
         test_name: Full/Reference model for slice specification (SI)
       score: '0.9979962015811868'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-B-EGE-L:
     info: TODO
@@ -834,9 +1032,15 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-B-EGE-R:
     info: TODO
@@ -846,9 +1050,15 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-B-EPE-L:
     info: TODO
@@ -858,9 +1068,15 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-B-EPE-R:
     info: TODO
@@ -870,9 +1086,15 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-B-IGE:
     info: TODO
@@ -882,9 +1104,15 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-B-IPE:
     info: TODO
@@ -894,9 +1122,15 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-DOS-BL:
     info: TODO
@@ -906,9 +1140,15 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-DOS-BL-PE-R:
     info: TODO
@@ -918,9 +1158,15 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-DOS-C:
     info: TODO
@@ -930,9 +1176,15 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-DOS-PL:
     info: TODO
@@ -942,9 +1194,15 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-FBC-AV:
     info: TODO
@@ -954,9 +1212,15 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-FBC-BPR-A:
     info: TODO
@@ -966,9 +1230,15 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-FBC-BPR-B:
     info: TODO
@@ -978,9 +1248,15 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-FBC-E:
     info: TODO
@@ -990,9 +1266,15 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-FBC-E-L:
     info: TODO
@@ -1002,9 +1284,15 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-OOB-NNSL:
     info: TODO
@@ -1014,9 +1302,15 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-OOB-PE-R:
     info: TODO
@@ -1026,9 +1320,15 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-OOB-R:
     info: TODO
@@ -1038,19 +1338,25 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-OOB-SL:
     info: TODO
     image_similarity:
       similar_to:
-        test_id: R-CUB
-        test_name: Cube Model
-      score: '1.0'
+        test_id: R-ERR
+        test_name: Error case, should fail always (no model)
+      score: '0.9998826973808045'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
     has_server_log: true
@@ -1062,9 +1368,15 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-SSRF-NNSL:
     info: TODO
@@ -1074,9 +1386,15 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-SSRF-SL:
     info: TODO
@@ -1086,9 +1404,15 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   XML-REL-SSRF-XI:
     info: TODO
@@ -1098,9 +1422,15 @@ tests:
         test_name: Cube Model
       score: '1.0'
     interpretation:
-      status: loaded
+      status: aborted
       is_outlier: false
       confidence: high
+    missing_process_info: 1
+    missing_screenshot: 1
+    problems:
+    - Too many missing process information files.
+    - Too many missing/broken screenshot files.
+    critical: true
     has_server_log: true
   GEN-C-ADA-BASE-DISPLAYCOLOR-0:
     info: TODO
@@ -4492,11 +4822,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: '1.0'
+      score: '0.6176051470703633'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   OPC-LFI-1:
     info: TODO
@@ -4504,11 +4834,11 @@ tests:
       similar_to:
         test_id: R-ERR
         test_name: Error case, should fail always (no model)
-      score: '1.0'
+      score: '0.6176051470703633'
     interpretation:
-      status: aborted
+      status: indecisive
       is_outlier: false
-      confidence: high
+      confidence: none
     has_server_log: true
   OPC-LFI-2:
     info: TODO
@@ -4610,8 +4940,9 @@ tests:
     info: TODO
     interpretation:
       status: aborted
-      is_outlier: true
+      is_outlier: false
       confidence: high
+    status: crashed
     missing_process_info: 1
     missing_screenshot: 1
     problems:
@@ -4619,7 +4950,6 @@ tests:
     - Too many missing/broken screenshot files.
     critical: true
     has_server_log: true
-    status: crashed
   ZIP-zbsm:
     info: TODO
     image_similarity:

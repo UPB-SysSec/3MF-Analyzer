@@ -54,9 +54,9 @@ tests:
   CS-P-NEBS:
     info: TODO
     interpretation:
-      status: aborted
-      is_outlier: true
-      confidence: high
+      status: indecisive
+      is_outlier: false
+      confidence: none
     has_server_log: true
   CS-S-NEBS:
     info: TODO
@@ -3214,10 +3214,15 @@ tests:
   GEN-M-CDA-MCOLORGROUP-0:
     info: TODO
     interpretation:
-      status: aborted
-      is_outlier: true
+      status: loaded
+      is_outlier: false
       confidence: high
     has_server_log: true
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: '0.9956986326496664'
   GEN-M-CDA-MPBMETALLICDISPLAYPROPERTIES-0:
     info: TODO
     image_similarity:
@@ -3305,10 +3310,15 @@ tests:
   GEN-M-CDA-RESOURCES-4:
     info: TODO
     interpretation:
-      status: aborted
-      is_outlier: true
+      status: loaded
+      is_outlier: false
       confidence: high
     has_server_log: true
+    image_similarity:
+      similar_to:
+        test_id: R-SPEC-M-0
+        test_name: Full/Reference model for materials specification (M)
+      score: '0.9962122616168312'
   GEN-M-CR-BUILD-ITEM-0:
     info: TODO
     image_similarity:

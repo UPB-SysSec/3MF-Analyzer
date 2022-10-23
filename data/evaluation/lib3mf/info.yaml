@@ -3173,10 +3173,15 @@ tests:
   GEN-SI-AR-SPOLYGON-STARTV-0:
     info: TODO
     interpretation:
-      status: indecisive
+      status: loaded
       is_outlier: false
-      confidence: none
+      confidence: high
     has_server_log: true
+    image_similarity:
+      similar_to:
+        test_id: R-CUB
+        test_name: Cube Model
+      score: '1.0'
   GEN-SI-AR-SSEGMENT-V2-0:
     info: TODO
     image_similarity:
