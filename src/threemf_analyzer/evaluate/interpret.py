@@ -3,7 +3,8 @@ import logging
 from os.path import isfile, join
 
 from .. import EVALUATION_DIR, yaml
-from ..utils import get_all_tests, reduce_test_ids_to_globs
+from ..utils import get_all_tests, get_tests_type_and_scope, reduce_test_ids_to_globs
+from .utils import expect_fail
 
 
 def _get_status(test_infos, ref_screenshots_config):
@@ -96,10 +97,116 @@ def _is_outlier(stats, test_id, test_data):
     return False
 
 
+def _set_result(program_id, test_id, test_scope, test_type, evaluation_results, test_description):
+    # using the attributes from .utils.Result as string values for results in YAML
+    output_dir = join(EVALUATION_DIR, program_id, "snapshots", test_id)
+    if test_type in ["Reference", "Functionality", "Miscellaneous"]:
+        evaluation_results["result_interpretation"] = {
+            "result": "NO_INFORMATION",
+            "reason": "informational test case",
+        }
+        return
+
+    if test_type == "Denial of Service":
+        if (status := evaluation_results.get("status")) is not None:
+            if status == "loading" or status == "crashed":
+                evaluation_results["result_interpretation"] = {
+                    "result": "VULNERABLE",
+                    "reason": "status is 'loading' or 'crashed'",
+                }
+                return
+        if (interpretation := evaluation_results.get("image_interpretation")) is not None:
+            if (
+                interpretation.get("status") == "aborted"
+                and interpretation.get("confidence") == "high"
+            ):
+                evaluation_results["result_interpretation"] = {
+                    "result": "NOT_VULNERABLE",
+                    "reason": "status is 'aborted', so DOS didn't work",
+                }
+                return
+
+    if test_type == "UI Spoofing":
+        target_test = None
+        match_target = None
+        if test_id.startswith("GEN"):
+            spec = test_id.split("-")[1]
+            target_test = f"R-SPEC-{spec}-0"
+            match_target = False
+        if test_scope == "XML":
+            target_test = "R-CYL"
+            match_target = True
+        if test_scope == "OPC":
+            if test_id.startswith("OPC-LFI"):
+                target_test = "R-CUB"
+                match_target = True
+
+        if (
+            match_target is not None
+            and target_test is not None
+            and evaluation_results.get("image_interpretation", {}).get("status") == "loaded"
+            and evaluation_results.get("image_interpretation", {}).get("confidence") == "high"
+        ):
+            if expect_fail(test_description):
+                evaluation_results["result_interpretation"] = {
+                    "result": "PARTIALLY_VULNERABLE",
+                    "reason": "a model was loaded when 'fail' was expected",
+                }
+                return
+
+            if not match_target:
+                if (
+                    evaluation_results.get("image_similarity", {})
+                    .get("similar_to", {})
+                    .get("test_id")
+                    != target_test
+                ):
+                    evaluation_results["result_interpretation"] = {
+                        "result": "VULNERABLE",
+                        "reason": "the parsed model diverges from the intended output",
+                    }
+                    return
+
+            else:
+                if (
+                    evaluation_results.get("image_similarity", {})
+                    .get("similar_to", {})
+                    .get("test_id")
+                    == target_test
+                ):
+                    evaluation_results["result_interpretation"] = {
+                        "result": "VULNERABLE",
+                        "reason": "the parsed model includes to spoofed input",
+                    }
+                    return
+
+    if test_type == "Data Exfiltration":
+        # oob
+        if evaluation_results.get("server_log_interesting"):
+            serverlog_file_path = join(output_dir, "local-server.log")
+            with open(serverlog_file_path, encoding="utf-8") as logfile:
+                server_log = logfile.read()
+                if "successful" in server_log:
+                    evaluation_results["result_interpretation"] = {
+                        "result": "VULNERABLE",
+                        "reason": "string 'successful' found in server log",
+                    }
+                    return
+
+    evaluation_results["result_interpretation"] = {
+        "result": "NO_INFORMATION",
+        "reason": "no information could be derived from the recorded data",
+    }
+
+
 def _interpret(program_id: str, test_ids: list[str]) -> None:
     """"""
     logging.info("%s | Start interpretation", program_id)
     program_dir_path = join(EVALUATION_DIR, program_id)
+    all_tests = get_all_tests()
+    all_tests_scope_type = get_tests_type_and_scope(
+        ["Denial of Service", "UI Spoofing", "Data Exfiltration"]
+    )
 
     with open(join(program_dir_path, "info.yaml"), "r", encoding="utf8") as yaml_file:
         content = yaml.load(yaml_file)
@@ -122,11 +229,21 @@ def _interpret(program_id: str, test_ids: list[str]) -> None:
             continue
 
         status, confidence = _get_status(test_data, ref_screenshots_config)
-        test_data["interpretation"] = {
+        if test_data["interpretation"]:
+            del test_data["interpretation"]
+        test_data["image_interpretation"] = {
             "status": status,
             "is_outlier": _is_outlier(stats, test_id, test_data),
             "confidence": confidence,
         }
+        if test_id in all_tests_scope_type:
+            _set_result(
+                program_id,
+                test_id,
+                *all_tests_scope_type[test_id],
+                test_data,
+                all_tests.get(test_id),
+            )
 
     with open(join(program_dir_path, "info.yaml"), "w", encoding="utf8") as yaml_file:
         yaml.dump(content, yaml_file)

@@ -214,6 +214,28 @@ def get_all_tests_by_type(get_footnotes: bool = False, callback=None):
     return types
 
 
+def get_tests_type_and_scope(types: list[str]):
+    """Returns a dict with test_ids that map to a tuple of (scope, type/category)"""
+    result = {}
+
+    def _flatten_category(category: dict, all_tests: dict):
+        all_tests.update(category.get("tests", {}))
+        for _, subcategory in category.get("subtypes", {}).items():
+            _flatten_category(subcategory, all_tests)
+
+    test_cases = get_all_tests_by_type()
+    for type_name in types:
+        if type_name not in test_cases:
+            continue
+        category_tests = {}  # all tests in this category and all its sub-categories
+        _flatten_category(test_cases[type_name], category_tests)
+
+        for test_id, test_data in category_tests.items():
+            result[test_id] = (test_data["scope"], type_name)
+
+    return result
+
+
 def parse_programs(program_ids: str) -> list[type["Program"]]:
     # this docstring is used as the description for the --programs argument
     """ID's of the programs that should run the test files. Default `ALL`. "
