@@ -111,7 +111,17 @@ tests:
     further_infos: |
       Something like the billion laughs attack:
       Large object, referenced many times in the build (possible with/-out production extension?)
-      TODO: scale model up (hard to see as its rather small)
+
+  DOS-BL-MBR-2:
+    name: Billion Laughs (Model Build References) (Variant 2)
+    type: Denial of Service
+    created: true
+    conforms_to_spec: y
+    expected_behavior: Long Execution/Crash
+    further_infos: |
+      Something like the billion laughs attack:
+      Large object, referenced many times in the build (possible with/-out production extension?)
+      This variant uses components to amplify the result.
 
   DOS-CR-SE:
     name: Circular References Slicing Extension
