@@ -1,0 +1,31 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\zsuite\\snapshots\\DOS-BL-MBR\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1666592149.5602143
+        },
+        "01 program-started": {
+            "timestamp": 1666592169.6351888
+        },
+        "02 program-loaded": {
+            "timestamp": 1666592171.2305555
+        },
+        "03 program-prepared": {
+            "timestamp": 1666592176.5232215,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1666592205.2623074,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1666592207.3480933
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\simplify\\snapshots\\DOS-BL-MBR\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1666591403.603608
+        },
+        "01 program-started": {
+            "timestamp": 1666591408.2173955
+        },
+        "02 program-loaded": {
+            "timestamp": 1666591410.2882364
+        },
+        "03 program-prepared": {
+            "timestamp": 1666591415.5613189,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1666591428.0393617,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'selenium.common.exceptions.WebDriverException'>",
+                "An unknown error occurred in the remote end while processing the command.",
+                null,
+                null
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1666591444.887008
+        }
+    }
+}
