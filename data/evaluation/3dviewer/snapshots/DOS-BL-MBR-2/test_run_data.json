@@ -1,0 +1,36 @@
+{
+    "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\3dviewer\\snapshots\\DOS-BL-MBR-2\\local-server.log",
+    "states": {
+        "00 program-not-started": {
+            "timestamp": 1666592099.9081097
+        },
+        "01 program-started": {
+            "timestamp": 1666592101.6132119
+        },
+        "02 program-loaded": {
+            "timestamp": 1666592103.8851402
+        },
+        "03 program-prepared": {
+            "timestamp": 1666592109.1739292,
+            "screenshot": true,
+            "snapshot": true
+        },
+        "04 model-started-loading": {
+            "timestamp": 1666592127.0537648
+        },
+        "05 model-not-loaded": {
+            "timestamp": 1666592137.5887709,
+            "screenshot": true,
+            "snapshot": true,
+            "related_exception": [
+                "<class 'selenium.common.exceptions.NoSuchElementException'>",
+                "An element could not be located on the page using the given search parameters.",
+                null,
+                null
+            ]
+        },
+        "06 program-stopped": {
+            "timestamp": 1666592139.1929798
+        }
+    }
+}
