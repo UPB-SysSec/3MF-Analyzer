@@ -2,29 +2,33 @@
     "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\lychee\\snapshots\\GEN-C-CRA-VERTICES-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1666165487.125131
+            "timestamp": 1670846277.8471673
         },
         "01 program-started": {
-            "timestamp": 1666165492.9524639
+            "timestamp": 1670846283.674005
         },
         "02 program-loaded": {
-            "timestamp": 1666165504.3761714
+            "timestamp": 1670846306.360033
         },
         "03 program-prepared": {
-            "timestamp": 1666165507.7049289,
+            "timestamp": 1670846309.6881669,
             "screenshot": true,
             "snapshot": true
         },
         "04 model-started-loading": {
-            "timestamp": 1666165517.508091
+            "timestamp": 1670846319.424501
         },
-        "05 model-loaded": {
-            "timestamp": 1666165522.4173284,
+        "05 model-not-loaded": {
+            "timestamp": 1670846354.0858476,
             "screenshot": true,
-            "snapshot": true
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1666165523.7227461
+            "timestamp": 1670846355.3462932
         }
     }
 }

@@ -2,33 +2,33 @@
     "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\lychee\\snapshots\\GEN-P-ADA-ITEM-PUUID-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1666170661.5922954
+            "timestamp": 1670854290.9589238
         },
         "01 program-started": {
-            "timestamp": 1666170667.4233384
+            "timestamp": 1670854296.7534401
         },
         "02 program-loaded": {
-            "timestamp": 1666170691.158903
+            "timestamp": 1670854319.281809
         },
         "03 program-prepared": {
-            "timestamp": 1666170694.504863,
+            "timestamp": 1670854322.581683,
             "screenshot": true,
             "snapshot": true
         },
         "04 model-started-loading": {
-            "timestamp": 1666170704.7255926
+            "timestamp": 1670854332.7169335
         },
         "05 model-not-loaded": {
-            "timestamp": 1666170707.5518918,
+            "timestamp": 1670854366.8045378,
             "screenshot": true,
             "snapshot": true,
             "related_exception": [
                 "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
-                "error msg detected in window"
+                "Could not finish action: 'detect change' because it timed out"
             ]
         },
         "06 program-stopped": {
-            "timestamp": 1666170708.8543353
+            "timestamp": 1670854368.057817
         }
     }
 }

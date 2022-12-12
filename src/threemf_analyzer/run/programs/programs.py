@@ -672,6 +672,18 @@ class Lychee(
                         ),
                     )
                 ],
+                "program tries update": [
+                    ExpectElement(
+                        By.OCR,
+                        "Update",
+                        ocr_bounding_box=lambda left, upper, right, lower: (
+                            left + (right // 3),
+                            upper + (lower // 3),
+                            right - (right // 3),
+                            lower - (lower // 3),
+                        ),
+                    )
+                ],
                 # "file loading": [ExpectElement(By.NAME, "Loading...")],
                 "file loaded": [
                     ExpectElement(
@@ -707,20 +719,22 @@ class Lychee(
         sleep(1)
 
     def _wait_program_load(self, model: File, program_start_timeout: int):
+        now = time()
         change_type = self._wait_for_change(
             names=self._transform_status_names(
-                ["program tries recovery", "program loaded"],
+                ["program tries update", "program tries recovery", "program loaded"],
                 self._get_format_strings(model),
             ),
             timeout=program_start_timeout,
         )
-        if change_type == "program tries recovery":
+        if change_type in ["program tries update", "program tries recovery"]:
             self._do_while_element_exists(
-                "deny recovery",
-                Click(
-                    ExpectElement(By.AUTOMATION_ID, "menuRecoveryCancelBtn", context=Context.ROOT)
-                ),
+                "deny",
+                Click(ExpectElement(By.NAME, "Close")),
             )
+            duration = time() - now
+            self._wait_program_load(model, max(0, program_start_timeout - duration))
+
         super()._wait_program_load(model, program_start_timeout)
 
     def _take_screenshot(self) -> Iterable[bytes]:

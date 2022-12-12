@@ -14,7 +14,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   CS-DOR:
     info: TODO
     image_similarity:
@@ -26,7 +28,9 @@ tests:
       status: loaded nothing
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   CS-MUDT:
     info: TODO
     image_similarity:
@@ -38,7 +42,9 @@ tests:
       status: loaded nothing
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   CS-SE:
     info: TODO
     image_similarity:
@@ -50,7 +56,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   CS-P-NEBS:
     info: TODO
     image_similarity:
@@ -62,7 +70,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   CS-S-NEBS:
     info: TODO
     image_similarity:
@@ -74,7 +84,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   CS-P-SLLR:
     info: TODO
     image_similarity:
@@ -86,7 +98,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   CS-S-SLLR:
     info: TODO
     image_similarity:
@@ -98,13 +112,21 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   CS-S:
     info: TODO
   DOS-BL-MBR:
     info: TODO
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   DOS-BL-MBR-2:
     info: TODO
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   DOS-CR-SE:
     info: TODO
     image_similarity:
@@ -116,7 +138,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   DOS-FUZ-LIB3MF:
     info: TODO
     image_similarity:
@@ -128,7 +152,9 @@ tests:
       status: loading
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   DOS-FUZ-SAVITAR-0:
     info: TODO
     image_similarity:
@@ -140,7 +166,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   DOS-FUZ-SAVITAR-1:
     info: TODO
     image_similarity:
@@ -152,7 +180,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   DOS-FUZ-SLIC3R-0:
     info: TODO
     image_similarity:
@@ -164,7 +194,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: medium
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   DOS-FUZ-SLIC3R-1:
     info: TODO
     image_similarity:
@@ -176,7 +208,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   DOS-FUZ-SLIC3R-2:
     info: TODO
     image_similarity:
@@ -188,70 +222,90 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   R-CYL:
     info: TODO
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   R-PYR-0:
     info: TODO
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   R-PYR-1:
     info: TODO
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   R-CUB:
     info: TODO
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   R-HOU:
     info: TODO
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   R-SPEC-C-0:
     info: TODO
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   R-SPEC-M-0:
     info: TODO
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   R-SPEC-P-0:
     info: TODO
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   R-ERR:
     info: TODO
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   F-B-BAL:
     info: TODO
     image_similarity:
@@ -263,7 +317,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   F-B-MAT:
     info: TODO
     image_similarity:
@@ -275,7 +331,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: medium
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   F-B-PRO:
     info: TODO
     image_similarity:
@@ -287,7 +345,9 @@ tests:
       status: loaded nothing
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   F-B-SLI:
     info: TODO
     image_similarity:
@@ -299,7 +359,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: medium
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   F-EAP:
     info: TODO
     image_similarity:
@@ -311,28 +373,36 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   R-SPEC-SI-0:
     info: TODO
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   R-SPEC-CM-0:
     info: TODO
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   R-SPEC-SE-0:
     info: TODO
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-EGE-I-R:
     info: TODO
     image_similarity:
@@ -344,7 +414,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-EGE-I-NR:
     info: TODO
     image_similarity:
@@ -356,7 +428,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-EGE-IL-R:
     info: TODO
     image_similarity:
@@ -368,7 +442,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: medium
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-EGE-IL-NR:
     info: TODO
     image_similarity:
@@ -380,7 +456,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: medium
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-ALT-B-EGE-L:
     info: TODO
     image_similarity:
@@ -392,7 +470,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-ALT-B-EGE-R:
     info: TODO
     image_similarity:
@@ -404,7 +484,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-ALT-B-EPE-L:
     info: TODO
     image_similarity:
@@ -416,7 +498,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-ALT-B-EPE-R:
     info: TODO
     image_similarity:
@@ -428,7 +512,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-ALT-B-IGE:
     info: TODO
     image_similarity:
@@ -440,7 +526,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-ALT-B-IPE:
     info: TODO
     image_similarity:
@@ -452,7 +540,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-ALT-DOS-BL:
     info: TODO
     image_similarity:
@@ -465,7 +555,9 @@ tests:
       is_outlier: false
       confidence: none
     rerun: true
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-ALT-DOS-BL-PE-R:
     info: TODO
     image_similarity:
@@ -477,7 +569,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-ALT-DOS-C:
     info: TODO
     image_similarity:
@@ -489,7 +583,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-ALT-FBC-BPR-A:
     info: TODO
     image_similarity:
@@ -501,7 +597,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-ALT-FBC-BPR-B:
     info: TODO
     image_similarity:
@@ -513,7 +611,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-ALT-OOB-R:
     info: TODO
     image_similarity:
@@ -525,7 +625,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-B-EGE-L:
     info: TODO
     image_similarity:
@@ -537,7 +639,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-B-EGE-LX:
     info: TODO
     image_similarity:
@@ -549,7 +653,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-B-EGE-R:
     info: TODO
     image_similarity:
@@ -561,7 +667,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-B-EGE-RX:
     info: TODO
     image_similarity:
@@ -573,7 +681,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-B-EPE-L:
     info: TODO
     image_similarity:
@@ -585,7 +695,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-B-EPE-R:
     info: TODO
     image_similarity:
@@ -597,7 +709,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-B-IGE:
     info: TODO
     image_similarity:
@@ -609,7 +723,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-B-IPE:
     info: TODO
     image_similarity:
@@ -621,7 +737,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-DOS-BL:
     info: TODO
     image_similarity:
@@ -634,7 +752,9 @@ tests:
       is_outlier: false
       confidence: none
     rerun: true
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-DOS-BL-PE-R:
     info: TODO
     image_similarity:
@@ -646,7 +766,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-DOS-C:
     info: TODO
     image_similarity:
@@ -658,7 +780,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-DOS-PL:
     info: TODO
     image_similarity:
@@ -670,7 +794,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-FBC-AV:
     info: TODO
     image_similarity:
@@ -682,7 +808,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-FBC-BPR-A:
     info: TODO
     image_similarity:
@@ -694,7 +822,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-FBC-BPR-B:
     info: TODO
     image_similarity:
@@ -706,7 +836,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-FBC-E:
     info: TODO
     image_similarity:
@@ -718,7 +850,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-FBC-E-L:
     info: TODO
     image_similarity:
@@ -730,7 +864,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-OOB-NNSL:
     info: TODO
     image_similarity:
@@ -742,7 +878,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-OOB-PE-R:
     info: TODO
     image_similarity:
@@ -754,7 +892,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-OOB-R:
     info: TODO
     image_similarity:
@@ -766,7 +906,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-OOB-SL:
     info: TODO
     image_similarity:
@@ -778,7 +920,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-OOB-XI:
     info: TODO
     image_similarity:
@@ -790,7 +934,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-SSRF-NNSL:
     info: TODO
     image_similarity:
@@ -802,7 +948,9 @@ tests:
       status: loaded /w warning
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-SSRF-SL:
     info: TODO
     image_similarity:
@@ -814,7 +962,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-MOD-SSRF-XI:
     info: TODO
     image_similarity:
@@ -826,7 +976,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-REL-B-EGE-L:
     info: TODO
     image_similarity:
@@ -838,7 +990,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-REL-B-EGE-R:
     info: TODO
     image_similarity:
@@ -850,7 +1004,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-REL-B-EPE-L:
     info: TODO
     image_similarity:
@@ -862,7 +1018,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   XML-REL-B-EPE-R:
     info: TODO
     image_similarity:
@@ -1115,7 +1273,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-ADA-BASEMATERIALS-ID-0:
     info: TODO
     image_similarity:
@@ -1127,7 +1287,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-ADA-COMPONENT-OBJECTID-0:
     info: TODO
     image_similarity:
@@ -1139,7 +1301,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-ADA-COMPONENT-TRANSFORM-0:
     info: TODO
     image_similarity:
@@ -1151,7 +1315,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-ADA-ITEM-OBJECTID-0:
     info: TODO
     image_similarity:
@@ -1163,7 +1329,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-ADA-MODEL-UNIT-0:
     info: TODO
     image_similarity:
@@ -1175,7 +1343,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-ADA-OBJECT-ID-0:
     info: TODO
     image_similarity:
@@ -1187,7 +1357,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-ADA-OBJECT-PID-0:
     info: TODO
     image_similarity:
@@ -1199,7 +1371,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-ADA-OBJECT-PINDEX-0:
     info: TODO
     image_similarity:
@@ -1211,7 +1385,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-ADA-OBJECT-TYPE-0:
     info: TODO
     image_similarity:
@@ -1223,7 +1399,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-ADA-TRIANGLE-P1-0:
     info: TODO
     image_similarity:
@@ -1235,7 +1413,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-ADA-TRIANGLE-PID-0:
     info: TODO
     image_similarity:
@@ -1247,7 +1427,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-ADA-TRIANGLE-V1-0:
     info: TODO
     image_similarity:
@@ -1259,7 +1441,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-ADA-TRIANGLE-V2-0:
     info: TODO
     image_similarity:
@@ -1271,7 +1455,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-ADA-TRIANGLE-V3-0:
     info: TODO
     image_similarity:
@@ -1283,7 +1469,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-ADA-VERTEX-X-0:
     info: TODO
     image_similarity:
@@ -1295,7 +1483,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-ADA-VERTEX-Y-0:
     info: TODO
     image_similarity:
@@ -1307,7 +1497,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-ADA-VERTEX-Z-0:
     info: TODO
     image_similarity:
@@ -1319,7 +1511,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-ADS-BASE-NAME-0:
     info: TODO
     image_similarity:
@@ -1331,7 +1525,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-ADS-MODEL-XMLLANG-0:
     info: TODO
     image_similarity:
@@ -1343,7 +1539,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-ADS-MODEL-XMLNS-0:
     info: TODO
     image_similarity:
@@ -1355,7 +1553,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-ADS-OBJECT-NAME-0:
     info: TODO
     image_similarity:
@@ -1367,7 +1567,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AI-BASE-DISPLAYCOLOR-0:
     info: TODO
     image_similarity:
@@ -1379,7 +1581,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: medium
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AI-BASEMATERIALS-ID-0:
     info: TODO
     image_similarity:
@@ -1391,7 +1595,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: medium
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AI-COMPONENT-OBJECTID-0:
     info: TODO
     image_similarity:
@@ -1403,7 +1609,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AI-COMPONENT-TRANSFORM-0:
     info: TODO
     image_similarity:
@@ -1415,7 +1623,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: medium
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AI-ITEM-OBJECTID-0:
     info: TODO
     image_similarity:
@@ -1427,7 +1637,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AI-MODEL-UNIT-0:
     info: TODO
     image_similarity:
@@ -1439,7 +1651,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: medium
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AI-OBJECT-ID-0:
     info: TODO
     image_similarity:
@@ -1451,7 +1665,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AI-OBJECT-PID-0:
     info: TODO
     image_similarity:
@@ -1463,7 +1679,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: medium
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AI-OBJECT-PINDEX-0:
     info: TODO
     image_similarity:
@@ -1475,7 +1693,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AI-OBJECT-TYPE-0:
     info: TODO
     image_similarity:
@@ -1487,7 +1707,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: medium
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AI-TRIANGLE-P1-0:
     info: TODO
     image_similarity:
@@ -1499,7 +1721,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AI-TRIANGLE-PID-0:
     info: TODO
     image_similarity:
@@ -1511,7 +1735,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: medium
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AI-TRIANGLE-V1-0:
     info: TODO
     image_similarity:
@@ -1523,7 +1749,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: medium
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AI-TRIANGLE-V2-0:
     info: TODO
     image_similarity:
@@ -1535,7 +1763,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AI-TRIANGLE-V3-0:
     info: TODO
     image_similarity:
@@ -1547,7 +1777,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AI-VERTEX-X-0:
     info: TODO
     image_similarity:
@@ -1559,7 +1791,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AI-VERTEX-Y-0:
     info: TODO
     image_similarity:
@@ -1571,7 +1805,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: medium
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AI-VERTEX-Z-0:
     info: TODO
     image_similarity:
@@ -1583,7 +1819,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AR-BASE-DISPLAYCOLOR-0:
     info: TODO
     image_similarity:
@@ -1595,7 +1833,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AR-BASE-NAME-0:
     info: TODO
     image_similarity:
@@ -1607,7 +1847,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: medium
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AR-BASEMATERIALS-ID-0:
     info: TODO
     image_similarity:
@@ -1619,7 +1861,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: medium
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AR-COMPONENT-OBJECTID-0:
     info: TODO
     image_similarity:
@@ -1631,7 +1875,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AR-COMPONENT-TRANSFORM-0:
     info: TODO
     image_similarity:
@@ -1643,7 +1889,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: medium
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AR-ITEM-OBJECTID-0:
     info: TODO
     image_similarity:
@@ -1655,7 +1903,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AR-MODEL-UNIT-0:
     info: TODO
     image_similarity:
@@ -1667,7 +1917,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: medium
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AR-MODEL-XMLLANG-0:
     info: TODO
     image_similarity:
@@ -1679,7 +1931,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AR-MODEL-XMLNS-0:
     info: TODO
     image_similarity:
@@ -1691,7 +1945,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AR-OBJECT-ID-0:
     info: TODO
     image_similarity:
@@ -1703,7 +1959,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AR-OBJECT-NAME-0:
     info: TODO
     image_similarity:
@@ -1715,7 +1973,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: medium
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AR-OBJECT-PID-0:
     info: TODO
     image_similarity:
@@ -1727,7 +1987,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AR-OBJECT-PINDEX-0:
     info: TODO
     image_similarity:
@@ -1739,7 +2001,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AR-OBJECT-TYPE-0:
     info: TODO
     image_similarity:
@@ -1751,7 +2015,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: medium
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AR-TRIANGLE-P1-0:
     info: TODO
     image_similarity:
@@ -1763,7 +2029,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AR-TRIANGLE-PID-0:
     info: TODO
     image_similarity:
@@ -1775,7 +2043,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AR-TRIANGLE-V1-0:
     info: TODO
     image_similarity:
@@ -1787,7 +2057,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: medium
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AR-TRIANGLE-V2-0:
     info: TODO
     image_similarity:
@@ -1799,7 +2071,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AR-TRIANGLE-V3-0:
     info: TODO
     image_similarity:
@@ -1811,7 +2085,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AR-VERTEX-X-0:
     info: TODO
     image_similarity:
@@ -1823,7 +2099,9 @@ tests:
       status: loaded nothing
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AR-VERTEX-Y-0:
     info: TODO
     image_similarity:
@@ -1835,7 +2113,9 @@ tests:
       status: loaded nothing
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-AR-VERTEX-Z-0:
     info: TODO
     image_similarity:
@@ -1847,7 +2127,9 @@ tests:
       status: loaded nothing
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-CDA-BASEMATERIALS-0:
     info: TODO
     image_similarity:
@@ -1859,7 +2141,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-CDA-BUILD-0:
     info: TODO
     image_similarity:
@@ -1871,7 +2155,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-CDA-COMPONENTS-0:
     info: TODO
     image_similarity:
@@ -1883,7 +2169,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-CDA-MESH-0:
     info: TODO
     image_similarity:
@@ -1895,7 +2183,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: medium
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-CDA-MESH-1:
     info: TODO
     image_similarity:
@@ -1907,7 +2197,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-CDA-MODEL-0:
     info: TODO
     image_similarity:
@@ -1919,7 +2211,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-CDA-MODEL-1:
     info: TODO
     image_similarity:
@@ -1931,7 +2225,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: medium
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-CDA-OBJECT-0:
     info: TODO
     image_similarity:
@@ -1943,7 +2239,9 @@ tests:
       status: loaded nothing
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-CDA-OBJECT-1:
     info: TODO
     image_similarity:
@@ -1955,7 +2253,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-CDA-RESOURCES-0:
     info: TODO
     image_similarity:
@@ -1967,7 +2267,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-CDA-RESOURCES-1:
     info: TODO
     image_similarity:
@@ -1979,7 +2281,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-CDA-TRIANGLES-0:
     info: TODO
     image_similarity:
@@ -1991,7 +2295,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-CDA-VERTICES-0:
     info: TODO
     image_similarity:
@@ -2003,7 +2309,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: medium
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-CR-BASEMATERIALS-BASE-0:
     info: TODO
     image_similarity:
@@ -2015,7 +2323,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-CR-COMPONENTS-COMPONENT-0:
     info: TODO
     image_similarity:
@@ -2027,7 +2337,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: medium
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-CR-MESH-TRIANGLES-0:
     info: TODO
     image_similarity:
@@ -2039,7 +2351,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-CR-MESH-VERTICES-0:
     info: TODO
     image_similarity:
@@ -2051,7 +2365,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: medium
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-CR-MODEL-BUILD-0:
     info: TODO
     image_similarity:
@@ -2063,7 +2379,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-CR-MODEL-RESOURCES-0:
     info: TODO
     image_similarity:
@@ -2075,7 +2393,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-CR-RESOURCES-BASEMATERIALS-0:
     info: TODO
     image_similarity:
@@ -2087,7 +2407,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: medium
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-CR-RESOURCES-OBJECT-0:
     info: TODO
     image_similarity:
@@ -2099,7 +2421,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-CR-TRIANGLES-TRIANGLE-0:
     info: TODO
     image_similarity:
@@ -2111,7 +2435,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: medium
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-CR-VERTICES-VERTEX-0:
     info: TODO
     image_similarity:
@@ -2123,7 +2449,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: medium
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-CRA-BASEMATERIALS-0:
     info: TODO
     image_similarity:
@@ -2135,7 +2463,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-CRA-BUILD-0:
     info: TODO
     image_similarity:
@@ -2147,7 +2477,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-CRA-COMPONENTS-0:
     info: TODO
     image_similarity:
@@ -2159,7 +2491,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-CRA-MESH-0:
     info: TODO
     image_similarity:
@@ -2171,7 +2505,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-CRA-MODEL-0:
     info: TODO
     image_similarity:
@@ -2183,7 +2519,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-CRA-OBJECT-0:
     info: TODO
     image_similarity:
@@ -2195,7 +2533,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-CRA-RESOURCES-0:
     info: TODO
     image_similarity:
@@ -2207,7 +2547,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-CRA-TRIANGLES-0:
     info: TODO
     image_similarity:
@@ -2219,7 +2561,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-C-CRA-VERTICES-0:
     info: TODO
     image_similarity:
@@ -2231,7 +2575,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: medium
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-CM-ADS-METADATA-NAME-0:
     info: TODO
     image_similarity:
@@ -2243,7 +2589,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-CM-AR-METADATA-NAME-0:
     info: TODO
     image_similarity:
@@ -2255,7 +2603,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-CM-CDA-ITEM-0:
     info: TODO
     image_similarity:
@@ -2267,7 +2617,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-CM-CDA-METADATAGROUP-0:
     info: TODO
     image_similarity:
@@ -2279,7 +2631,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-CM-CDA-MODEL-0:
     info: TODO
     image_similarity:
@@ -2291,7 +2645,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-CM-CDA-OBJECT-0:
     info: TODO
     image_similarity:
@@ -2303,7 +2659,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-CM-CR-MODEL-METADATA-0:
     info: TODO
     image_similarity:
@@ -2315,7 +2673,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-CM-CR-OBJECT-MESH-0:
     info: TODO
     image_similarity:
@@ -2327,7 +2687,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-CM-CR-OBJECT-METADATAGROUP-0:
     info: TODO
     image_similarity:
@@ -2339,7 +2701,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-CM-CRA-ITEM-0:
     info: TODO
     image_similarity:
@@ -2351,7 +2715,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-CM-CRA-METADATAGROUP-0:
     info: TODO
     image_similarity:
@@ -2363,7 +2729,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-ADA-BASEMATERIALS-DISPLAYPROPERTIESID-0:
     info: TODO
     image_similarity:
@@ -2375,7 +2743,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-ADA-ITEM-TRANSFORM-0:
     info: TODO
     image_similarity:
@@ -2387,7 +2757,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: medium
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-ADA-MCOLOR-COLOR-0:
     info: TODO
     image_similarity:
@@ -2399,7 +2771,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-ADA-MCOLORGROUP-ID-0:
     info: TODO
     image_similarity:
@@ -2411,7 +2785,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-ADA-MPBMETALLIC-METALLICNESS-0:
     info: TODO
     image_similarity:
@@ -2423,7 +2799,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-ADA-MPBMETALLIC-ROUGHNESS-0:
     info: TODO
     image_similarity:
@@ -2435,7 +2813,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-ADA-MPBMETALLICDISPLAYPROPERTIES-ID-0:
     info: TODO
     image_similarity:
@@ -2447,7 +2827,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-ADA-MTEX2COORD-U-0:
     info: TODO
     image_similarity:
@@ -2459,7 +2841,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-ADA-MTEX2COORD-V-0:
     info: TODO
     image_similarity:
@@ -2471,7 +2855,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-ADA-MTEXTURE2D-CONTENTTYPE-0:
     info: TODO
     image_similarity:
@@ -2483,7 +2869,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-ADA-MTEXTURE2D-ID-0:
     info: TODO
     image_similarity:
@@ -2495,7 +2883,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-ADA-MTEXTURE2D-TILESTYLEU-0:
     info: TODO
     image_similarity:
@@ -2507,7 +2897,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-ADA-MTEXTURE2D-TILESTYLEV-0:
     info: TODO
     image_similarity:
@@ -2519,7 +2911,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-ADA-MTEXTURE2DGROUP-ID-0:
     info: TODO
     image_similarity:
@@ -2531,7 +2925,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-ADA-MTEXTURE2DGROUP-TEXID-0:
     info: TODO
     image_similarity:
@@ -2543,7 +2939,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-ADA-MTRANSLUCENT-ROUGHNESS-0:
     info: TODO
     image_similarity:
@@ -2555,7 +2953,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-ADA-MTRANSLUCENTDISPLAYPROPERTIES-ID-0:
     info: TODO
     image_similarity:
@@ -2567,7 +2967,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-ADA-TRIANGLE-P2-0:
     info: TODO
     image_similarity:
@@ -2579,7 +2981,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-ADA-TRIANGLE-P3-0:
     info: TODO
     image_similarity:
@@ -2591,7 +2995,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-ADS-MODEL-REQUIREDEXTENSIONS-0:
     info: TODO
     image_similarity:
@@ -2603,7 +3009,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-ADS-MODEL-XMLNSM-0:
     info: TODO
     image_similarity:
@@ -2615,7 +3023,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-ADS-MPBMETALLIC-NAME-0:
     info: TODO
     image_similarity:
@@ -2627,7 +3037,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-ADS-MTEXTURE2D-PATH-0:
     info: TODO
     image_similarity:
@@ -2639,7 +3051,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-ADS-MTRANSLUCENT-ATTENUATION-0:
     info: TODO
     image_similarity:
@@ -2651,7 +3065,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-ADS-MTRANSLUCENT-NAME-0:
     info: TODO
     image_similarity:
@@ -2663,7 +3079,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-ADS-MTRANSLUCENT-REFRACTIVEINDEX-0:
     info: TODO
     image_similarity:
@@ -2675,7 +3093,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AI-BASEMATERIALS-DISPLAYPROPERTIESID-0:
     info: TODO
     image_similarity:
@@ -2687,7 +3107,9 @@ tests:
       status: loaded /w warning
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AI-ITEM-TRANSFORM-0:
     info: TODO
     image_similarity:
@@ -2699,7 +3121,9 @@ tests:
       status: indecisive
       is_outlier: false
       confidence: medium
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AI-MCOLOR-COLOR-0:
     info: TODO
     image_similarity:
@@ -2711,7 +3135,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AI-MCOLORGROUP-ID-0:
     info: TODO
     image_similarity:
@@ -2723,7 +3149,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AI-MPBMETALLIC-METALLICNESS-0:
     info: TODO
     image_similarity:
@@ -2735,7 +3163,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AI-MPBMETALLIC-ROUGHNESS-0:
     info: TODO
     image_similarity:
@@ -2747,7 +3177,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AI-MPBMETALLICDISPLAYPROPERTIES-ID-0:
     info: TODO
     image_similarity:
@@ -2759,7 +3191,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AI-MTEX2COORD-U-0:
     info: TODO
     image_similarity:
@@ -2771,7 +3205,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AI-MTEX2COORD-V-0:
     info: TODO
     image_similarity:
@@ -2783,7 +3219,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AI-MTEXTURE2D-CONTENTTYPE-0:
     info: TODO
     image_similarity:
@@ -2795,7 +3233,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AI-MTEXTURE2D-ID-0:
     info: TODO
     image_similarity:
@@ -2807,7 +3247,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AI-MTEXTURE2D-PATH-0:
     info: TODO
     image_similarity:
@@ -2819,7 +3261,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AI-MTEXTURE2D-TILESTYLEU-0:
     info: TODO
     image_similarity:
@@ -2831,7 +3275,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AI-MTEXTURE2D-TILESTYLEV-0:
     info: TODO
     image_similarity:
@@ -2843,7 +3289,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AI-MTEXTURE2DGROUP-ID-0:
     info: TODO
     image_similarity:
@@ -2855,7 +3303,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AI-MTEXTURE2DGROUP-TEXID-0:
     info: TODO
     image_similarity:
@@ -2867,7 +3317,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AI-MTRANSLUCENT-ROUGHNESS-0:
     info: TODO
     image_similarity:
@@ -2879,7 +3331,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AI-MTRANSLUCENTDISPLAYPROPERTIES-ID-0:
     info: TODO
     image_similarity:
@@ -2891,7 +3345,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AI-TRIANGLE-P2-0:
     info: TODO
     image_similarity:
@@ -2903,7 +3359,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AI-TRIANGLE-P3-0:
     info: TODO
     image_similarity:
@@ -2915,7 +3373,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AR-BASEMATERIALS-DISPLAYPROPERTIESID-0:
     info: TODO
     image_similarity:
@@ -2927,7 +3387,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AR-ITEM-TRANSFORM-0:
     info: TODO
     image_similarity:
@@ -2939,7 +3401,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AR-MCOLOR-COLOR-0:
     info: TODO
     image_similarity:
@@ -2951,7 +3415,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AR-MCOLORGROUP-ID-0:
     info: TODO
     image_similarity:
@@ -2963,7 +3429,9 @@ tests:
       status: loaded /w warning
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AR-MODEL-REQUIREDEXTENSIONS-0:
     info: TODO
     image_similarity:
@@ -2975,7 +3443,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AR-MODEL-XMLNSM-0:
     info: TODO
     image_similarity:
@@ -2987,7 +3457,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AR-MPBMETALLIC-METALLICNESS-0:
     info: TODO
     image_similarity:
@@ -2999,7 +3471,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AR-MPBMETALLIC-NAME-0:
     info: TODO
     image_similarity:
@@ -3011,7 +3485,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AR-MPBMETALLIC-ROUGHNESS-0:
     info: TODO
     image_similarity:
@@ -3023,7 +3499,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AR-MPBMETALLICDISPLAYPROPERTIES-ID-0:
     info: TODO
     image_similarity:
@@ -3035,7 +3513,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AR-MTEX2COORD-U-0:
     info: TODO
     image_similarity:
@@ -3047,7 +3527,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AR-MTEX2COORD-V-0:
     info: TODO
     image_similarity:
@@ -3059,7 +3541,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AR-MTEXTURE2D-CONTENTTYPE-0:
     info: TODO
     image_similarity:
@@ -3071,7 +3555,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AR-MTEXTURE2D-ID-0:
     info: TODO
     image_similarity:
@@ -3083,7 +3569,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AR-MTEXTURE2D-PATH-0:
     info: TODO
     image_similarity:
@@ -3095,7 +3583,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AR-MTEXTURE2D-TILESTYLEU-0:
     info: TODO
     image_similarity:
@@ -3107,7 +3597,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AR-MTEXTURE2D-TILESTYLEV-0:
     info: TODO
     image_similarity:
@@ -3119,7 +3611,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AR-MTEXTURE2DGROUP-ID-0:
     info: TODO
     image_similarity:
@@ -3131,7 +3625,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AR-MTEXTURE2DGROUP-TEXID-0:
     info: TODO
     image_similarity:
@@ -3143,7 +3639,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AR-MTRANSLUCENT-ATTENUATION-0:
     info: TODO
     image_similarity:
@@ -3155,7 +3653,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AR-MTRANSLUCENT-NAME-0:
     info: TODO
     image_similarity:
@@ -3167,7 +3667,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AR-MTRANSLUCENT-REFRACTIVEINDEX-0:
     info: TODO
     image_similarity:
@@ -3179,7 +3681,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AR-MTRANSLUCENT-ROUGHNESS-0:
     info: TODO
     image_similarity:
@@ -3191,7 +3695,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AR-MTRANSLUCENTDISPLAYPROPERTIES-ID-0:
     info: TODO
     image_similarity:
@@ -3203,7 +3709,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AR-TRIANGLE-P2-0:
     info: TODO
     image_similarity:
@@ -3215,7 +3723,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-AR-TRIANGLE-P3-0:
     info: TODO
     image_similarity:
@@ -3227,7 +3737,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-CDA-MCOLORGROUP-0:
     info: TODO
     image_similarity:
@@ -3239,7 +3751,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-CDA-MPBMETALLICDISPLAYPROPERTIES-0:
     info: TODO
     image_similarity:
@@ -3251,7 +3765,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-CDA-MTEXTURE2DGROUP-0:
     info: TODO
     image_similarity:
@@ -3263,7 +3779,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-CDA-MTRANSLUCENTDISPLAYPROPERTIES-0:
     info: TODO
     image_similarity:
@@ -3275,7 +3793,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-CDA-RESOURCES-0:
     info: TODO
     image_similarity:
@@ -3287,7 +3807,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-CDA-RESOURCES-1:
     info: TODO
     image_similarity:
@@ -3299,7 +3821,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-CDA-RESOURCES-2:
     info: TODO
     image_similarity:
@@ -3311,7 +3835,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-CDA-RESOURCES-3:
     info: TODO
     image_similarity:
@@ -3323,7 +3849,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-CDA-RESOURCES-4:
     info: TODO
     image_similarity:
@@ -3335,7 +3863,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-CR-BUILD-ITEM-0:
     info: TODO
     image_similarity:
@@ -3347,7 +3877,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-CR-MCOLORGROUP-MCOLOR-0:
     info: TODO
     image_similarity:
@@ -3359,7 +3891,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-CR-MTEXTURE2DGROUP-MTEX2COORD-0:
     info: TODO
     image_similarity:
@@ -3371,7 +3905,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-CR-RESOURCES-MCOLORGROUP-0:
     info: TODO
     image_similarity:
@@ -3383,7 +3919,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-CR-RESOURCES-MPBMETALLICDISPLAYPROPERTIES-0:
     info: TODO
     image_similarity:
@@ -3395,7 +3933,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-CR-RESOURCES-MTEXTURE2D-0:
     info: TODO
     image_similarity:
@@ -3407,7 +3947,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-CR-RESOURCES-MTEXTURE2DGROUP-0:
     info: TODO
     image_similarity:
@@ -3419,7 +3961,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-CR-RESOURCES-MTRANSLUCENTDISPLAYPROPERTIES-0:
     info: TODO
     image_similarity:
@@ -3431,7 +3975,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-CRA-MCOLORGROUP-0:
     info: TODO
     image_similarity:
@@ -3443,7 +3989,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-CRA-MPBMETALLICDISPLAYPROPERTIES-0:
     info: TODO
     image_similarity:
@@ -3455,7 +4003,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-CRA-MTEXTURE2DGROUP-0:
     info: TODO
     image_similarity:
@@ -3467,7 +4017,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-M-CRA-MTRANSLUCENTDISPLAYPROPERTIES-0:
     info: TODO
     image_similarity:
@@ -3479,7 +4031,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-P-ADA-BUILD-PUUID-0:
     info: TODO
     image_similarity:
@@ -3491,14 +4045,18 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-P-ADA-COMPONENT-PUUID-0:
     info: TODO
     interpretation:
       status: indecisive
       is_outlier: false
       confidence: none
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-P-ADA-ITEM-PUUID-0:
     info: TODO
     image_similarity:
@@ -3510,7 +4068,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-P-ADA-OBJECT-PUUID-0:
     info: TODO
     image_similarity:
@@ -3522,7 +4082,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-P-ADS-COMPONENT-PPATH-0:
     info: TODO
     image_similarity:
@@ -3534,7 +4096,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-P-ADS-MODEL-XMLNSP-0:
     info: TODO
     image_similarity:
@@ -3546,7 +4110,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-P-AI-BUILD-PUUID-0:
     info: TODO
     image_similarity:
@@ -3558,7 +4124,9 @@ tests:
       status: loaded /w warning
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-P-AI-COMPONENT-PPATH-0:
     info: TODO
     image_similarity:
@@ -3570,7 +4138,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-P-AI-COMPONENT-PUUID-0:
     info: TODO
     image_similarity:
@@ -3582,7 +4152,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-P-AI-ITEM-PUUID-0:
     info: TODO
     image_similarity:
@@ -3594,7 +4166,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-P-AI-OBJECT-PUUID-0:
     info: TODO
     image_similarity:
@@ -3606,7 +4180,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-P-AR-BUILD-PUUID-0:
     info: TODO
     image_similarity:
@@ -3618,7 +4194,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-P-AR-COMPONENT-PPATH-0:
     info: TODO
     image_similarity:
@@ -3630,7 +4208,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-P-AR-COMPONENT-PUUID-0:
     info: TODO
     image_similarity:
@@ -3642,7 +4222,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-P-AR-ITEM-PUUID-0:
     info: TODO
     image_similarity:
@@ -3654,7 +4236,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-P-AR-MODEL-XMLNSP-0:
     info: TODO
     image_similarity:
@@ -3666,7 +4250,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-P-AR-OBJECT-PUUID-0:
     info: TODO
     image_similarity:
@@ -3678,7 +4264,9 @@ tests:
       status: loaded /w warning
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SE-ADA-SSLICEREF-SLICESTACKID-0:
     info: TODO
     image_similarity:
@@ -3690,7 +4278,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SE-ADS-SSLICEREF-SLICEPATH-0:
     info: TODO
     image_similarity:
@@ -3702,7 +4292,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SE-AI-SSLICEREF-SLICEPATH-0:
     info: TODO
     image_similarity:
@@ -3714,7 +4306,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SE-AI-SSLICEREF-SLICESTACKID-0:
     info: TODO
     image_similarity:
@@ -3726,7 +4320,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SE-AR-SSLICEREF-SLICEPATH-0:
     info: TODO
     image_similarity:
@@ -3738,7 +4334,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SE-AR-SSLICEREF-SLICESTACKID-0:
     info: TODO
     image_similarity:
@@ -3750,7 +4348,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SE-CDA-SSLICESTACK-0:
     info: TODO
     image_similarity:
@@ -3762,7 +4362,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-ADA-OBJECT-SSLICESTACKID-0:
     info: TODO
     image_similarity:
@@ -3774,7 +4376,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-ADA-SPOLYGON-STARTV-0:
     info: TODO
     image_similarity:
@@ -3786,7 +4390,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-ADA-SSEGMENT-V2-0:
     info: TODO
     image_similarity:
@@ -3798,7 +4404,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-ADA-SSLICE-ZTOP-0:
     info: TODO
     image_similarity:
@@ -3810,7 +4418,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-ADA-SSLICESTACK-ID-0:
     info: TODO
     image_similarity:
@@ -3822,7 +4432,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-ADA-SSLICESTACK-ZBOTTOM-0:
     info: TODO
     image_similarity:
@@ -3834,7 +4446,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-ADA-SVERTEX-X-0:
     info: TODO
     image_similarity:
@@ -3846,7 +4460,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-ADA-SVERTEX-Y-0:
     info: TODO
     image_similarity:
@@ -3858,7 +4474,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-ADS-MODEL-XMLNSS-0:
     info: TODO
     image_similarity:
@@ -3870,7 +4488,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-ADS-OBJECT-SMESHRESOLUTION-0:
     info: TODO
     image_similarity:
@@ -3882,7 +4502,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-AI-OBJECT-SSLICESTACKID-0:
     info: TODO
     image_similarity:
@@ -3894,7 +4516,9 @@ tests:
       status: loaded /w warning
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-AI-SPOLYGON-STARTV-0:
     info: TODO
     image_similarity:
@@ -3906,7 +4530,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-AI-SSEGMENT-V2-0:
     info: TODO
     image_similarity:
@@ -3918,7 +4544,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-AI-SSLICE-ZTOP-0:
     info: TODO
     image_similarity:
@@ -3930,7 +4558,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-AI-SSLICESTACK-ID-0:
     info: TODO
     image_similarity:
@@ -3942,7 +4572,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-AI-SSLICESTACK-ZBOTTOM-0:
     info: TODO
     image_similarity:
@@ -3954,7 +4586,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-AI-SVERTEX-X-0:
     info: TODO
     image_similarity:
@@ -3966,7 +4600,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-AI-SVERTEX-Y-0:
     info: TODO
     image_similarity:
@@ -3978,7 +4614,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-AR-MODEL-XMLNSS-0:
     info: TODO
     image_similarity:
@@ -3990,7 +4628,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-AR-OBJECT-SMESHRESOLUTION-0:
     info: TODO
     image_similarity:
@@ -4002,7 +4642,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-AR-OBJECT-SSLICESTACKID-0:
     info: TODO
     image_similarity:
@@ -4014,7 +4656,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-AR-SPOLYGON-STARTV-0:
     info: TODO
     image_similarity:
@@ -4026,7 +4670,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-AR-SSEGMENT-V2-0:
     info: TODO
     image_similarity:
@@ -4038,7 +4684,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-AR-SSLICE-ZTOP-0:
     info: TODO
     image_similarity:
@@ -4050,7 +4698,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-AR-SSLICESTACK-ID-0:
     info: TODO
     image_similarity:
@@ -4062,7 +4712,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-AR-SSLICESTACK-ZBOTTOM-0:
     info: TODO
     image_similarity:
@@ -4074,7 +4726,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-AR-SVERTEX-X-0:
     info: TODO
     image_similarity:
@@ -4086,7 +4740,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-AR-SVERTEX-Y-0:
     info: TODO
     image_similarity:
@@ -4098,7 +4754,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-CDA-RESOURCES-0:
     info: TODO
     image_similarity:
@@ -4110,7 +4768,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-CDA-SPOLYGON-0:
     info: TODO
     image_similarity:
@@ -4122,7 +4782,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-CDA-SSLICE-0:
     info: TODO
     image_similarity:
@@ -4134,7 +4796,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-CDA-SSLICE-1:
     info: TODO
     image_similarity:
@@ -4146,7 +4810,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-CDA-SSLICESTACK-0:
     info: TODO
     image_similarity:
@@ -4158,7 +4824,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-CDA-SVERTICES-0:
     info: TODO
     image_similarity:
@@ -4170,7 +4838,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-CR-RESOURCES-SSLICESTACK-0:
     info: TODO
     image_similarity:
@@ -4182,7 +4852,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-CR-SPOLYGON-SSEGMENT-0:
     info: TODO
     image_similarity:
@@ -4194,7 +4866,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-CR-SSLICE-SPOLYGON-0:
     info: TODO
     image_similarity:
@@ -4206,7 +4880,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-CR-SSLICE-SVERTICES-0:
     info: TODO
     image_similarity:
@@ -4218,7 +4894,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-CR-SSLICESTACK-SSLICE-0:
     info: TODO
     image_similarity:
@@ -4230,7 +4908,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-CR-SVERTICES-SVERTEX-0:
     info: TODO
     image_similarity:
@@ -4242,7 +4922,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-CRA-SPOLYGON-0:
     info: TODO
     image_similarity:
@@ -4254,7 +4936,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-CRA-SSLICE-0:
     info: TODO
     image_similarity:
@@ -4266,7 +4950,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-CRA-SSLICESTACK-0:
     info: TODO
     image_similarity:
@@ -4278,7 +4964,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   GEN-SI-CRA-SVERTICES-0:
     info: TODO
     image_similarity:
@@ -4290,7 +4978,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   CS-0000:
     info: TODO
     image_similarity:
@@ -4302,7 +4992,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   CS-0001:
     info: TODO
     image_similarity:
@@ -4314,7 +5006,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   CS-0010:
     info: TODO
     image_similarity:
@@ -4326,7 +5020,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   CS-0011:
     info: TODO
     image_similarity:
@@ -4338,7 +5034,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   CS-0100:
     info: TODO
     image_similarity:
@@ -4350,7 +5048,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   CS-0101:
     info: TODO
     image_similarity:
@@ -4362,7 +5062,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   CS-0110:
     info: TODO
     image_similarity:
@@ -4374,7 +5076,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   CS-0111:
     info: TODO
     image_similarity:
@@ -4386,7 +5090,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   CS-1000:
     info: TODO
     image_similarity:
@@ -4398,7 +5104,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   CS-1001:
     info: TODO
     image_similarity:
@@ -4410,7 +5118,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   CS-1010:
     info: TODO
     image_similarity:
@@ -4422,7 +5132,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   CS-1011:
     info: TODO
     image_similarity:
@@ -4434,7 +5146,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   CS-1100:
     info: TODO
     image_similarity:
@@ -4446,7 +5160,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   CS-1101:
     info: TODO
     image_similarity:
@@ -4458,7 +5174,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   CS-1110:
     info: TODO
     image_similarity:
@@ -4470,7 +5188,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   CS-1111:
     info: TODO
     image_similarity:
@@ -4482,7 +5202,9 @@ tests:
       status: loaded
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   OPC-LFI-0:
     info: TODO
     image_similarity:
@@ -4494,7 +5216,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   OPC-LFI-1:
     info: TODO
     image_similarity:
@@ -4506,7 +5230,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   OPC-LFI-2:
     info: TODO
     image_similarity:
@@ -4518,7 +5244,9 @@ tests:
       status: aborted
       is_outlier: false
       confidence: high
-    has_server_log: true
+    critical: true
+    problems:
+    - No test_run_data.json file found.
   ZIP-SL-S:
     info: TODO
     image_similarity:

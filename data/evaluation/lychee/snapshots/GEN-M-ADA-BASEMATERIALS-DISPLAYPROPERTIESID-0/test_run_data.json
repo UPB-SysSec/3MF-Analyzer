@@ -2,33 +2,33 @@
     "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\lychee\\snapshots\\GEN-M-ADA-BASEMATERIALS-DISPLAYPROPERTIESID-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1666166065.4252005
+            "timestamp": 1670847148.2215488
         },
         "01 program-started": {
-            "timestamp": 1666166071.2671666
+            "timestamp": 1670847154.0565019
         },
         "02 program-loaded": {
-            "timestamp": 1666166083.6561866
+            "timestamp": 1670847186.8952007
         },
         "03 program-prepared": {
-            "timestamp": 1666166086.9581447,
+            "timestamp": 1670847190.200038,
             "screenshot": true,
             "snapshot": true
         },
         "04 model-started-loading": {
-            "timestamp": 1666166098.9049077
+            "timestamp": 1670847201.0815318
         },
         "05 model-not-loaded": {
-            "timestamp": 1666166101.7359798,
+            "timestamp": 1670847235.4803002,
             "screenshot": true,
             "snapshot": true,
             "related_exception": [
                 "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
-                "error msg detected in window"
+                "Could not finish action: 'detect change' because it timed out"
             ]
         },
         "06 program-stopped": {
-            "timestamp": 1666166103.0223608
+            "timestamp": 1670847236.7294016
         }
     }
 }

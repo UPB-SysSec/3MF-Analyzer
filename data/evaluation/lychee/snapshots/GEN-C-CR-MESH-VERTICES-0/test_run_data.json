@@ -2,29 +2,33 @@
     "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\lychee\\snapshots\\GEN-C-CR-MESH-VERTICES-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1666164797.5516012
+            "timestamp": 1670845004.3824246
         },
         "01 program-started": {
-            "timestamp": 1666164803.3761806
+            "timestamp": 1670845010.2328024
         },
         "02 program-loaded": {
-            "timestamp": 1666164814.8370388
+            "timestamp": 1670845033.0512974
         },
         "03 program-prepared": {
-            "timestamp": 1666164818.1485589,
+            "timestamp": 1670845036.3622222,
             "screenshot": true,
             "snapshot": true
         },
         "04 model-started-loading": {
-            "timestamp": 1666164828.1135874
+            "timestamp": 1670845046.2692785
         },
-        "05 model-loaded": {
-            "timestamp": 1666164832.901551,
+        "05 model-not-loaded": {
+            "timestamp": 1670845081.0537503,
             "screenshot": true,
-            "snapshot": true
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1666164834.2060852
+            "timestamp": 1670845082.3228035
         }
     }
 }

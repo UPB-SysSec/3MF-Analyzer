@@ -2,33 +2,33 @@
     "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\lychee\\snapshots\\XML-MOD-B-EPE-R\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1666175580.7519312
+            "timestamp": 1670861993.8290393
         },
         "01 program-started": {
-            "timestamp": 1666175587.5965528
+            "timestamp": 1670861999.6608055
         },
         "02 program-loaded": {
-            "timestamp": 1666175599.224063
+            "timestamp": 1670862022.371847
         },
         "03 program-prepared": {
-            "timestamp": 1666175602.5408866,
+            "timestamp": 1670862025.7028987,
             "screenshot": true,
             "snapshot": true
         },
         "04 model-started-loading": {
-            "timestamp": 1666175612.0949445
+            "timestamp": 1670862035.156276
         },
         "05 model-not-loaded": {
-            "timestamp": 1666175614.8801165,
+            "timestamp": 1670862069.6216156,
             "screenshot": true,
             "snapshot": true,
             "related_exception": [
                 "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
-                "error msg detected in window"
+                "Could not finish action: 'detect change' because it timed out"
             ]
         },
         "06 program-stopped": {
-            "timestamp": 1666175616.1366425
+            "timestamp": 1670862070.8829992
         }
     }
 }

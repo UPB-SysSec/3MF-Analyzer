@@ -2,33 +2,33 @@
     "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\lychee\\snapshots\\XML-REL-SSRF-XI\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1666177542.0656059
+            "timestamp": 1670872130.244453
         },
         "01 program-started": {
-            "timestamp": 1666177547.9099207
+            "timestamp": 1670872136.054167
         },
         "02 program-loaded": {
-            "timestamp": 1666177559.4540246
+            "timestamp": 1670872159.0531244
         },
         "03 program-prepared": {
-            "timestamp": 1666177562.7679465,
+            "timestamp": 1670872162.3700564,
             "screenshot": true,
             "snapshot": true
         },
         "04 model-started-loading": {
-            "timestamp": 1666177572.266516
+            "timestamp": 1670872171.8222325
         },
         "05 model-not-loaded": {
-            "timestamp": 1666177575.0073357,
+            "timestamp": 1670872205.8904338,
             "screenshot": true,
             "snapshot": true,
             "related_exception": [
                 "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
-                "error msg detected in window"
+                "Could not finish action: 'detect change' because it timed out"
             ]
         },
         "06 program-stopped": {
-            "timestamp": 1666177576.2925506
+            "timestamp": 1670872207.1241257
         }
     }
 }

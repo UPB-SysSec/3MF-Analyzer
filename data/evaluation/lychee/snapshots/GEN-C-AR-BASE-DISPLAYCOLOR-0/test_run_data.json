@@ -2,33 +2,33 @@
     "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\lychee\\snapshots\\GEN-C-AR-BASE-DISPLAYCOLOR-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1666162972.7040966
+            "timestamp": 1670842164.5098531
         },
         "01 program-started": {
-            "timestamp": 1666162978.5520635
+            "timestamp": 1670842170.3320074
         },
         "02 program-loaded": {
-            "timestamp": 1666162990.987598
+            "timestamp": 1670842202.8595853
         },
         "03 program-prepared": {
-            "timestamp": 1666162994.3031695,
+            "timestamp": 1670842206.156905,
             "screenshot": true,
             "snapshot": true
         },
         "04 model-started-loading": {
-            "timestamp": 1666163005.349054
+            "timestamp": 1670842216.160038
         },
         "05 model-not-loaded": {
-            "timestamp": 1666163008.0717132,
+            "timestamp": 1670842250.5660229,
             "screenshot": true,
             "snapshot": true,
             "related_exception": [
                 "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
-                "error msg detected in window"
+                "Could not finish action: 'detect change' because it timed out"
             ]
         },
         "06 program-stopped": {
-            "timestamp": 1666163009.3527668
+            "timestamp": 1670842251.814197
         }
     }
 }

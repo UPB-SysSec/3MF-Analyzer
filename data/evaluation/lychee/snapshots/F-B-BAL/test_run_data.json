@@ -2,33 +2,33 @@
     "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\lychee\\snapshots\\F-B-BAL\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1666160895.8411374
+            "timestamp": 1670838541.069985
         },
         "01 program-started": {
-            "timestamp": 1666160901.6808372
+            "timestamp": 1670838547.8924646
         },
         "02 program-loaded": {
-            "timestamp": 1666160913.173303
+            "timestamp": 1670838570.7414284
         },
         "03 program-prepared": {
-            "timestamp": 1666160916.5004587,
+            "timestamp": 1670838574.0515292,
             "screenshot": true,
             "snapshot": true
         },
         "04 model-started-loading": {
-            "timestamp": 1666160926.0540175
+            "timestamp": 1670838583.5390203
         },
         "05 model-not-loaded": {
-            "timestamp": 1666160928.8012223,
+            "timestamp": 1670838617.5815542,
             "screenshot": true,
             "snapshot": true,
             "related_exception": [
                 "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
-                "error msg detected in window"
+                "Could not finish action: 'detect change' because it timed out"
             ]
         },
         "06 program-stopped": {
-            "timestamp": 1666160930.0738537
+            "timestamp": 1670838618.8447003
         }
     }
 }

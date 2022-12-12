@@ -2,33 +2,33 @@
     "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\lychee\\snapshots\\CS-1001\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1666159774.9434838
+            "timestamp": 1670836704.1771784
         },
         "01 program-started": {
-            "timestamp": 1666159780.8014877
+            "timestamp": 1670836711.0159173
         },
         "02 program-loaded": {
-            "timestamp": 1666159792.270277
+            "timestamp": 1670836733.9293199
         },
         "03 program-prepared": {
-            "timestamp": 1666159795.5868146,
+            "timestamp": 1670836737.2293901,
             "screenshot": true,
             "snapshot": true
         },
         "04 model-started-loading": {
-            "timestamp": 1666159806.3645928
+            "timestamp": 1670836747.9029322
         },
         "05 model-not-loaded": {
-            "timestamp": 1666159809.1356225,
+            "timestamp": 1670836782.189575,
             "screenshot": true,
             "snapshot": true,
             "related_exception": [
                 "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
-                "error msg detected in window"
+                "Could not finish action: 'detect change' because it timed out"
             ]
         },
         "06 program-stopped": {
-            "timestamp": 1666159810.438375
+            "timestamp": 1670836783.4528484
         }
     }
 }

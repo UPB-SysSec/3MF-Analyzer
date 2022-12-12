@@ -2,29 +2,33 @@
     "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\lychee\\snapshots\\GEN-C-AI-TRIANGLE-V1-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1666162680.6647398
+            "timestamp": 1670841738.2724013
         },
         "01 program-started": {
-            "timestamp": 1666162686.4869945
+            "timestamp": 1670841744.1164217
         },
         "02 program-loaded": {
-            "timestamp": 1666162698.8506124
+            "timestamp": 1670841776.7582552
         },
         "03 program-prepared": {
-            "timestamp": 1666162702.1483223,
+            "timestamp": 1670841780.0650191,
             "screenshot": true,
             "snapshot": true
         },
         "04 model-started-loading": {
-            "timestamp": 1666162713.0966644
+            "timestamp": 1670841789.9022963
         },
-        "05 model-loaded": {
-            "timestamp": 1666162717.931885,
+        "05 model-not-loaded": {
+            "timestamp": 1670841824.4424565,
             "screenshot": true,
-            "snapshot": true
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "Could not finish action: 'detect change' because it timed out"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1666162719.2238853
+            "timestamp": 1670841825.7116094
         }
     }
 }

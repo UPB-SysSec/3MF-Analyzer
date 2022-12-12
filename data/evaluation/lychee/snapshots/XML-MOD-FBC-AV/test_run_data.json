@@ -2,33 +2,33 @@
     "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\lychee\\snapshots\\XML-MOD-FBC-AV\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1666175938.439415
+            "timestamp": 1670862534.269866
         },
         "01 program-started": {
-            "timestamp": 1666175944.2782624
+            "timestamp": 1670862540.0812316
         },
         "02 program-loaded": {
-            "timestamp": 1666175956.701093
+            "timestamp": 1670862574.2129304
         },
         "03 program-prepared": {
-            "timestamp": 1666175960.0271626,
+            "timestamp": 1670862577.5036592,
             "screenshot": true,
             "snapshot": true
         },
         "04 model-started-loading": {
-            "timestamp": 1666175970.5477018
+            "timestamp": 1670862586.9131525
         },
         "05 model-not-loaded": {
-            "timestamp": 1666175973.3519046,
+            "timestamp": 1670862621.583526,
             "screenshot": true,
             "snapshot": true,
             "related_exception": [
                 "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
-                "error msg detected in window"
+                "Could not finish action: 'detect change' because it timed out"
             ]
         },
         "06 program-stopped": {
-            "timestamp": 1666175974.649964
+            "timestamp": 1670862622.842907
         }
     }
 }

@@ -2,33 +2,33 @@
     "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\lychee\\snapshots\\CS-P-NEBS\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1666160261.3206236
+            "timestamp": 1670837430.0532708
         },
         "01 program-started": {
-            "timestamp": 1666160267.1418161
+            "timestamp": 1670837435.8780642
         },
         "02 program-loaded": {
-            "timestamp": 1666160279.544852
+            "timestamp": 1670837468.6495697
         },
         "03 program-prepared": {
-            "timestamp": 1666160282.8603766,
+            "timestamp": 1670837471.967004,
             "screenshot": true,
             "snapshot": true
         },
         "04 model-started-loading": {
-            "timestamp": 1666160294.8822658
+            "timestamp": 1670837482.9925442
         },
         "05 model-not-loaded": {
-            "timestamp": 1666160297.6366065,
+            "timestamp": 1670837517.0457268,
             "screenshot": true,
             "snapshot": true,
             "related_exception": [
                 "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
-                "error msg detected in window"
+                "Could not finish action: 'detect change' because it timed out"
             ]
         },
         "06 program-stopped": {
-            "timestamp": 1666160298.9170089
+            "timestamp": 1670837518.3043754
         }
     }
 }

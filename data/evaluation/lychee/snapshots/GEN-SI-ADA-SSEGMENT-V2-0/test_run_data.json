@@ -2,33 +2,33 @@
     "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\lychee\\snapshots\\GEN-SI-ADA-SSEGMENT-V2-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1666171823.9853773
+            "timestamp": 1670856135.294357
         },
         "01 program-started": {
-            "timestamp": 1666171829.8110735
+            "timestamp": 1670856141.1050384
         },
         "02 program-loaded": {
-            "timestamp": 1666171841.2592475
+            "timestamp": 1670856164.1407645
         },
         "03 program-prepared": {
-            "timestamp": 1666171844.5950007,
+            "timestamp": 1670856167.4754653,
             "screenshot": true,
             "snapshot": true
         },
         "04 model-started-loading": {
-            "timestamp": 1666171855.182261
+            "timestamp": 1670856178.0099182
         },
         "05 model-not-loaded": {
-            "timestamp": 1666171857.8967454,
+            "timestamp": 1670856212.5560687,
             "screenshot": true,
             "snapshot": true,
             "related_exception": [
                 "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
-                "error msg detected in window"
+                "Could not finish action: 'detect change' because it timed out"
             ]
         },
         "06 program-stopped": {
-            "timestamp": 1666171859.1926088
+            "timestamp": 1670856213.7991738
         }
     }
 }

@@ -2,33 +2,33 @@
     "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\lychee\\snapshots\\DOS-FUZ-SAVITAR-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1666160672.6588545
+            "timestamp": 1670838122.9655406
         },
         "01 program-started": {
-            "timestamp": 1666160678.4908595
+            "timestamp": 1670838128.7973075
         },
         "02 program-loaded": {
-            "timestamp": 1666160689.9647083
+            "timestamp": 1670838151.603533
         },
         "03 program-prepared": {
-            "timestamp": 1666160693.2837617,
+            "timestamp": 1670838154.9066083,
             "screenshot": true,
             "snapshot": true
         },
         "04 model-started-loading": {
-            "timestamp": 1666160702.8651175
+            "timestamp": 1670838164.4193673
         },
         "05 model-not-loaded": {
-            "timestamp": 1666160705.611869,
+            "timestamp": 1670838198.3132348,
             "screenshot": true,
             "snapshot": true,
             "related_exception": [
                 "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
-                "error msg detected in window"
+                "Could not finish action: 'detect change' because it timed out"
             ]
         },
         "06 program-stopped": {
-            "timestamp": 1666160706.8963428
+            "timestamp": 1670838199.5550253
         }
     }
 }

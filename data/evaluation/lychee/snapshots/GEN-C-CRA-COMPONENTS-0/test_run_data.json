@@ -2,33 +2,33 @@
     "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\lychee\\snapshots\\GEN-C-CRA-COMPONENTS-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1666165216.7528226
+            "timestamp": 1670845752.6879733
         },
         "01 program-started": {
-            "timestamp": 1666165222.601277
+            "timestamp": 1670845759.5335426
         },
         "02 program-loaded": {
-            "timestamp": 1666165234.147112
+            "timestamp": 1670845782.4063475
         },
         "03 program-prepared": {
-            "timestamp": 1666165237.476703,
+            "timestamp": 1670845785.7068944,
             "screenshot": true,
             "snapshot": true
         },
         "04 model-started-loading": {
-            "timestamp": 1666165247.3158388
+            "timestamp": 1670845795.4852402
         },
         "05 model-not-loaded": {
-            "timestamp": 1666165250.141125,
+            "timestamp": 1670845829.770243,
             "screenshot": true,
             "snapshot": true,
             "related_exception": [
                 "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
-                "error msg detected in window"
+                "Could not finish action: 'detect change' because it timed out"
             ]
         },
         "06 program-stopped": {
-            "timestamp": 1666165251.3987792
+            "timestamp": 1670845831.040872
         }
     }
 }

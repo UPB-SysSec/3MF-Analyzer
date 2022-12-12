@@ -2,33 +2,21 @@
     "server_logfile_path": "C:\\Users\\jostr\\Documents\\GitHub\\3MF-Analyzer\\data\\evaluation\\lychee\\snapshots\\XML-REL-B-EPE-L\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1666176623.0447333
+            "timestamp": 1670863804.5035827
         },
         "01 program-started": {
-            "timestamp": 1666176628.8549135
+            "timestamp": 1670863810.3099213
         },
-        "02 program-loaded": {
-            "timestamp": 1666176640.3974612
-        },
-        "03 program-prepared": {
-            "timestamp": 1666176643.7425783,
-            "screenshot": true,
-            "snapshot": true
-        },
-        "04 model-started-loading": {
-            "timestamp": 1666176653.295425
-        },
-        "05 model-not-loaded": {
-            "timestamp": 1666176656.0305638,
-            "screenshot": true,
-            "snapshot": true,
+        "02 program-not-loaded": {
+            "timestamp": 1670863817.5441992,
             "related_exception": [
-                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
-                "error msg detected in window"
+                "<class 'ConnectionResetError'>",
+                10054,
+                "An existing connection was forcibly closed by the remote host",
+                null,
+                10054,
+                null
             ]
-        },
-        "06 program-stopped": {
-            "timestamp": 1666176657.3178618
         }
     }
 }
