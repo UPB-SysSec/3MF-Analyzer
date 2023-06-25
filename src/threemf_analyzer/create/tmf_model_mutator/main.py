@@ -302,13 +302,37 @@ def mutate_tmf_models() -> Generator[dict[str, str], None, None]:
 
     unique_results_description = set()
 
+    # def _is_unique_description(description: str):
+    #     if description.startswith("Added valid attribute"):
+    #         description = description.split(": '")[0]
+    #     is_unique = bool(description not in unique_results_description)
+    #     if is_unique:
+    #         unique_results_description.add(description)
+    #     return is_unique
+
+    test_numbers = {
+        "would be test case": 0,
+        "would not be test case": 0,
+    }
+
     def _is_unique_description(description: str):
+        # disabled version for validation of test case reduction
         if description.startswith("Added valid attribute"):
             description = description.split(": '")[0]
         is_unique = bool(description not in unique_results_description)
         if is_unique:
             unique_results_description.add(description)
-        return is_unique
+
+        if is_unique:
+            test_numbers["would be test case"] += 1
+        else:
+            test_numbers["would not be test case"] += 1
+
+        from pprint import pprint
+
+        pprint(test_numbers)
+
+        return True
 
     unique_results_xml = set()
 

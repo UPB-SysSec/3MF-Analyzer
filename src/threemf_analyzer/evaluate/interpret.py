@@ -229,7 +229,7 @@ def _interpret(program_id: str, test_ids: list[str]) -> None:
             continue
 
         status, confidence = _get_status(test_data, ref_screenshots_config)
-        if test_data["interpretation"]:
+        if test_data.get("interpretation"):
             del test_data["interpretation"]
         test_data["image_interpretation"] = {
             "status": status,
