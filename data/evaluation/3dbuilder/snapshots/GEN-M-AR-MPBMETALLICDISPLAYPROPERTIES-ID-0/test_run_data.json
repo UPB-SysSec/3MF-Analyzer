@@ -2,29 +2,33 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\3dbuilder\\snapshots\\GEN-M-AR-MPBMETALLICDISPLAYPROPERTIES-ID-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665928131.3796754
+            "timestamp": 1687416490.250033
         },
         "01 program-started": {
-            "timestamp": 1665928133.9771957
+            "timestamp": 1687416492.9532168
         },
         "02 program-loaded": {
-            "timestamp": 1665928137.525539
+            "timestamp": 1687416496.6165292
         },
         "03 program-prepared": {
-            "timestamp": 1665928142.7479336,
+            "timestamp": 1687416501.9113812,
             "screenshot": true,
             "snapshot": true
         },
         "04 model-started-loading": {
-            "timestamp": 1665928155.3197653
+            "timestamp": 1687416515.196342
         },
-        "05 model-loaded": {
-            "timestamp": 1665928157.806652,
+        "05 model-not-loaded": {
+            "timestamp": 1687416516.6923993,
             "screenshot": true,
-            "snapshot": true
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665928159.1466315
+            "timestamp": 1687416518.1775339
         }
     }
 }

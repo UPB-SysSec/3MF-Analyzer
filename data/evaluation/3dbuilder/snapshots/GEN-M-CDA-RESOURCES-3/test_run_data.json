@@ -2,29 +2,33 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\3dbuilder\\snapshots\\GEN-M-CDA-RESOURCES-3\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665929052.0402906
+            "timestamp": 1687430997.2362237
         },
         "01 program-started": {
-            "timestamp": 1665929054.6846898
+            "timestamp": 1687430999.9623487
         },
         "02 program-loaded": {
-            "timestamp": 1665929058.2343576
+            "timestamp": 1687431003.9746046
         },
         "03 program-prepared": {
-            "timestamp": 1665929063.4722388,
+            "timestamp": 1687431009.271233,
             "screenshot": true,
             "snapshot": true
         },
         "04 model-started-loading": {
-            "timestamp": 1665929075.5392191
+            "timestamp": 1687431021.8913386
         },
-        "05 model-loaded": {
-            "timestamp": 1665929078.0323465,
+        "05 model-not-loaded": {
+            "timestamp": 1687431023.4351976,
             "screenshot": true,
-            "snapshot": true
+            "snapshot": true,
+            "related_exception": [
+                "<class 'threemf_analyzer.run.programs.utilclasses.ActionUnsuccessful'>",
+                "error msg detected in window"
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665929079.4126232
+            "timestamp": 1687431024.8920588
         }
     }
 }

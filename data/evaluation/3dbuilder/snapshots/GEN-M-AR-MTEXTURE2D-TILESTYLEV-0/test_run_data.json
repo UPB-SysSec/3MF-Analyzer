@@ -2,29 +2,32 @@
     "server_logfile_path": "E:\\3MF-Analyzer\\data\\evaluation\\3dbuilder\\snapshots\\GEN-M-AR-MTEXTURE2D-TILESTYLEV-0\\local-server.log",
     "states": {
         "00 program-not-started": {
-            "timestamp": 1665928394.733833
+            "timestamp": 1687418223.2987888
         },
         "01 program-started": {
-            "timestamp": 1665928397.4564395
+            "timestamp": 1687418226.1317267
         },
         "02 program-loaded": {
-            "timestamp": 1665928400.989028
+            "timestamp": 1687418230.2413988
         },
         "03 program-prepared": {
-            "timestamp": 1665928406.2429247,
+            "timestamp": 1687418235.5377758,
             "screenshot": true,
             "snapshot": true
         },
-        "04 model-started-loading": {
-            "timestamp": 1665928418.7682557
-        },
-        "05 model-loaded": {
-            "timestamp": 1665928421.2742202,
+        "05 model-not-loaded": {
+            "timestamp": 1687418244.2551425,
             "screenshot": true,
-            "snapshot": true
+            "snapshot": true,
+            "related_exception": [
+                "<class 'selenium.common.exceptions.NoSuchElementException'>",
+                "An element could not be located on the page using the given search parameters.",
+                null,
+                null
+            ]
         },
         "06 program-stopped": {
-            "timestamp": 1665928422.6130314
+            "timestamp": 1687418247.1234515
         }
     }
 }
